@@ -1,0 +1,18 @@
+{
+  "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/posts.json",
+  "source_generated_at": "2026-07-16T15:40:09.165295+00:00",
+  "source_sample_count": 100,
+  "selected_ids": [
+    "2077763009657627055",
+    "2077754781964054825",
+    "2077776567292338285",
+    "2077753222018814360",
+    "2077749371144442022",
+    "2077760297918484667",
+    "2077750074608644127",
+    "2077777932341092422",
+    "2077770239937282526",
+    "2077770187521069152"
+  ],
+  "note": "This manifest records selection lineage without republishing the full raw collection. Public case data lives in data/use-cases.json."
+}

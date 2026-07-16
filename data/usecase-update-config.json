@@ -1,0 +1,18 @@
+{
+  "namespace": {
+    "heading_prefix": "Case",
+    "anchor_prefix": "case",
+    "section_anchor": "",
+    "numbering_order": "set-contiguous",
+    "menu_policy": "category",
+    "category_anchors": ["games-3d", "frontend-motion", "coding-integrations", "evaluation-limits"]
+  },
+  "requirements": {
+    "takeaway": true,
+    "localized_title_translation": true
+  },
+  "structured_data": {
+    "path": "data/use-cases.json",
+    "items_key": "items"
+  }
+}

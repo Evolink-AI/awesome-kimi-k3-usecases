@@ -1,0 +1,24 @@
+name: Request an attribution or factual correction
+description: Report incorrect attribution, wording, links, or source grounding
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: case
+    attributes:
+      label: Case number or URL
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change?
+      description: Explain the correction and its evidence
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Supporting public source
+    validations:
+      required: true
