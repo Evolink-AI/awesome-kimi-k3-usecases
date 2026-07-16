@@ -62,4 +62,19 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 - Localization: 11 README files, 100 translated case instances
 - Git diff check: PASS
 
-Public release still requires the separate completion gate, push, rendered README inspection, About metadata verification, and post-push readback. A post-publication result will be appended only after those checks succeed
+## Public verification
+
+**Public audit status: PASS**
+
+- Repository: https://github.com/Evolink-AI/awesome-kimi-k3-usecases
+- Visibility: public
+- Default branch: `main`
+- Initial publication commit: `15fceecfd5318c9e5f80f29dba28753368a3410d`
+- Pre-push completion gate: PASS with no blockers
+- Initial remote branch SHA: matched the local commit
+- Raw README SHA-256: matched local content
+- Rendered README: banner, cases, R2 poster images, playable video links, and `case-10` verified through GitHub's rendered README API
+- About description, homepage, and eight repository topics: verified
+- GitHub Actions `Validate repository`: success on the initial publication commit
+
+The final audit-record commit must also pass the same branch readback and validation workflow before this publication is considered complete
