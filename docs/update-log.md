@@ -1,5 +1,10 @@
 # Update Log
 
+## 2026-07-17 — Kimi K3 related reading link
+
+- Added the owner-specified EvoLink Kimi K3 article as a Related Resources jump link across all 11 README files
+- Kept the article as a link only, without adding a dedicated introduction or new availability claim
+
 ## 2026-07-17 — EvoLink conversion route correction
 
 - Replaced generic and official-provider first-run CTAs with the owner-specified EvoLink Kimi K3 model page

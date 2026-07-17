@@ -29,6 +29,7 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 
 - Canonical model destination: `https://evolink.ai/kimi-k3`
 - Canonical first-run API destination: `https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat`
+- Related reading destination: `https://evolink.ai/blog/is-kimi-k3-available-on-evolink`
 - Documented model ID: `kimi-k3`
 - Documented API route: `POST /v1/chat/completions`
 - Updated surfaces: banner link, top badges, introduction CTA, quick start, related resources, 10 localized README files, structured data, localization source, maintenance notes, update log, and automated verifier
@@ -36,7 +37,7 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 - Runtime boundary: the model page and API documentation were verified, but no independent credit-consuming API call is claimed
 - Initial link-audit result: five transient R2 `RemoteDisconnected` responses while the new EvoLink routes returned HTTP 200
 - Remediation: every transient object passed a direct HTTP range retry with 206; the auditor now uses resilient curl checks for R2 and two-worker concurrency
-- Final link-audit result: 51 checked, 0 failures
+- Final link-audit result: 52 checked, 0 failures after the related article update
 
 ## Repository and localization review
 
@@ -70,7 +71,7 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 - P2: 0 after remediation
 - Repository verifier: PASS
 - Framework usecase verifier: PASS
-- Public-link audit: 51 checked, 0 failures
+- Public-link audit: 52 checked, 0 failures
 - Active R2 media: 25 checked, 0 failures
 - Localization: 11 README files, 100 translated case instances
 - Git diff check: PASS

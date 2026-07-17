@@ -13,6 +13,7 @@ HANDLES = ["@ivanfioravanti", "@TheAhmadOsman", "@HarshithLucky3", "@chetaslua",
 CATEGORY_EMOJI = {"games-3d": "🎮", "frontend-motion": "🎨", "coding-integrations": "💻", "evaluation-limits": "🧪"}
 MODEL_PAGE = "https://evolink.ai/kimi-k3"
 API_DOCS = "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
+ARTICLE_URL = "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
 EVOLINK_URL = f"{MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta"
 BADGES = """[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
 [![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
@@ -123,6 +124,7 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         "",
         f'- [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)',
         f'- [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)',
+        f'- [{config["learn_more_article"]}]({ARTICLE_URL}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)',
         f'- {config["no_evolink_surface"]}',
         "",
         '<a id="acknowledge"></a>',

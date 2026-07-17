@@ -6,7 +6,8 @@
     "official_models_url": "https://platform.kimi.ai/docs/models",
     "official_quickstart_url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
     "evolink_model_url": "https://evolink.ai/kimi-k3",
-    "evolink_api_docs_url": "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
+    "evolink_api_docs_url": "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat",
+    "evolink_article_url": "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
   },
   "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/posts.json",
   "source_generated_at": "2026-07-16T15:40:09.165295+00:00",
