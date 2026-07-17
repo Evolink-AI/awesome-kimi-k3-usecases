@@ -1,5 +1,16 @@
 # Update Log
 
+## 2026-07-17 — Full high-confidence expansion and localized banners
+
+- Filtered the supplied `use-case-posts.json` from 101 candidates to all 70 high-confidence cases and excluded all 31 medium-confidence cases
+- Expanded the English README and ten localized editions to 70 source-backed cases each, for 770 localized case instances
+- Preserved stable case 1–6 anchors and grouped the complete numbered set under the repository's four category anchors
+- Generated nine localized 1774 × 887 banners with ChatGPT Image 2, uploaded each through a new R2 `*-v2.png` key, and reused the English `en-v2.png` banner for Portuguese as requested
+- Split translation sources by locale under `data/localizations/` and retained the aggregate localization cache for compatibility
+- Preserved source attribution, dates, numeric facts, prompt boundaries, self-reported benchmark caveats, and limitation cases across all languages
+- Preserved one post-collection unavailable source permalink as Case 67 with a visible disclosure and a reviewed link-audit exception backed by the supplied source package
+- Preserved the supplied `@filicroval` attribution through a reviewed author-profile exception because both attributed source posts remain reachable while the profile URL returns 404
+
 ## 2026-07-17 — Owner-provided English banner replacement
 
 - Replaced the English README banner with the owner-provided 1774 × 887 PNG

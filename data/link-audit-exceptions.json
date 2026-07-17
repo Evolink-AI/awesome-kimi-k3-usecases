@@ -1,0 +1,22 @@
+{
+  "exceptions": [
+    {
+      "url": "https://x.com/X2worldtech/status/2077902793449296203",
+      "allowed_statuses": [
+        404
+      ],
+      "reason": "The original high-confidence source post became unavailable after collection; preserve the exact permalink and disclose its status instead of removing the owner-required case",
+      "source_evidence": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
+      "reviewed_at": "2026-07-17"
+    },
+    {
+      "url": "https://x.com/filicroval",
+      "allowed_statuses": [
+        404
+      ],
+      "reason": "The collected author profile is unavailable while both attributed source posts remain publicly reachable; preserve the supplied attribution",
+      "source_evidence": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
+      "reviewed_at": "2026-07-17"
+    }
+  ]
+}

@@ -4,11 +4,13 @@
 
 - Public cases: `data/use-cases.json`
 - Selection lineage: `data/ingested_tweets.json`
+- Reviewed link exceptions: `data/link-audit-exceptions.json`
 - English source: `README.md`
-- Localization cache: `data/localization-cache.json`
+- Language-specific translation sources: `data/localizations/*.json`
+- Aggregate localization cache: `data/localization-cache.json`
 - Localization build: `python3 scripts/build_localizations.py`
 
-The first-publication source artifact was `/Users/cheercheung/X-info/热词搜索/kimi-k3/posts.json`, generated at `2026-07-16T15:40:09.165295+00:00`. Future public updates must record a new source artifact and fixed collection timestamp
+The current source artifact is `/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json`, filtered at `2026-07-17T15:57:58+0800` to retain all 70 high-confidence items and exclude all 31 medium-confidence items. Future public updates must record a new source artifact and fixed collection timestamp
 
 ## Case contract
 
@@ -19,11 +21,13 @@ Do not invent prompts, workflow steps, results, pricing, benchmark numbers, date
 ## Update workflow
 
 1. Collect candidates with a fixed timestamp and deduplicate by canonical source URL
-2. Classify every candidate and record a decision reason
+2. Classify every candidate, retain only high-confidence cases for publication, and record a decision reason
 3. Update `data/use-cases.json` and English README first
-4. Translate visible prose while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, and prompt text
+4. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, and prompt text
 5. Run the framework verifier, repository verifier, media audit, link audit, and `git diff --check`
 6. Fix every P0/P1 issue, then re-run the complete audit before commit or push
+
+If an owner-required source permalink becomes unavailable after collection, preserve the exact permalink, add a visible case-level disclosure, and record the reviewed HTTP status plus source-package evidence in `data/link-audit-exceptions.json`
 
 ## Validation
 

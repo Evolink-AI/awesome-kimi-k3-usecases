@@ -1,0 +1,390 @@
+{
+  "filename": "README_de.md",
+  "banner": "de-v2.png",
+  "repo_title": "Fantastische Kimi K3 Anwendungsfälle",
+  "introduction_heading": "Einführung",
+  "intro": "Willkommen bei der kuratierten Sammlung aussagekräftiger Kimi-K3-Anwendungsfälle",
+  "mission": "Wir sammeln quellengestützte Spiele, 3D-Szenen, Motion Design, Integrationen, Bewertungen und praktische Grenzen",
+  "source_boundary": "Alle 70 Fälle mit hoher Konfidenz stammen aus dem bereitgestellten Quellenpaket; die 31 Fälle mit mittlerer Konfidenz sind ausgeschlossen. Titel und Autoren verlinken auf die Originale",
+  "overview_heading": "Überblick",
+  "overview": [
+    "70 ausgewählte Fälle von Kreativen und Praktikern",
+    "Spiele, 3D, Frontend, Motion Design, Coding, Forschung, Integrationen, Bewertungen und Grenzen",
+    "Quelle, Autor, Typ, Datum und Prompt-Grenze bleiben erhalten",
+    "Einzelbeobachtungen und interne Tests werden nicht zu allgemeinen Benchmarks erklärt"
+  ],
+  "note": "Konkrete Evidenz hat Vorrang. Fehlende Prompts oder Einrichtungsschritte werden nicht erfunden",
+  "quickstart_heading": "Schnellstart",
+  "quickstart_intro": "Die von EvoLink dokumentierte Modell-ID ist `kimi-k3`; Modellseite und Chat-Completions-Dokumentation sind verfügbar",
+  "model_list": "Offizielle Kimi-Modellliste prüfen",
+  "official_quickstart": "EvoLink Kimi K3 API-Dokumentation öffnen",
+  "explore_evolink": "Kimi K3 Details und Preise auf EvoLink ansehen",
+  "manage_key": "EvoLink-API-Schlüssel erstellen oder verwalten",
+  "important": "EvoLink-Modellseite und API-Dokumentation bestätigen den öffentlichen Zugang und die ID. Dieses Repository beansprucht keinen unabhängigen bezahlten API-Test",
+  "menu_heading": "Menü",
+  "categories": {
+    "games-3d": "Interaktive Spiele und 3D",
+    "frontend-motion": "Frontend und Motion Design",
+    "coding-integrations": "Coding und Integrationen",
+    "evaluation-limits": "Bewertung und Grenzen"
+  },
+  "credits": "Danksagung und Korrekturen",
+  "resources_heading": "Verwandte Ressourcen",
+  "no_evolink_surface": "EvoLink-Modellseite und API-Dokumentation sind verifiziert; eine installierbare Kimi K3 Skill wurde nicht verifiziert",
+  "learn_more_article": "Mehr über Kimi K3 auf EvoLink erfahren",
+  "ack_heading": "Danksagung",
+  "ack_text": "Danke an alle, die ihre Arbeit mit Kimi K3 öffentlich geteilt haben",
+  "correction_text": "Für Korrekturen an Zuordnung oder Text bitte eine issue mit öffentlicher Quelle öffnen",
+  "cases": {
+    "1": {
+      "title": "Voxel-Pod-Racer mit einem Prompt bauen",
+      "takeaway": "Eine kurze Idee für einen Rennprototyp nutzen und die nächste Iteration abgrenzen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 Version eins mit einem öffentlichen Prompt erzeugte und weitere Racer, Ziellinie und Detailprüfung plant"
+    },
+    "2": {
+      "title": "Frogger mit gleichem Prompt vergleichen",
+      "takeaway": "Den Prompt konstant halten, um Modellunterschiede zu prüfen",
+      "notes": "Der Ersteller teilt eine Kimi-K3-Version als Vergleich. Prompttext und Bewertungsrubrik sind nicht veröffentlicht"
+    },
+    "3": {
+      "title": "Frogger und Gameplay-Aufnahme erzeugen",
+      "takeaway": "Spiel und Aufnahme-Workflow jeweils in einem Durchlauf testen",
+      "notes": "Der Ersteller meldet je einen One-Shot für Spiel und Aufnahme. Die genauen Prompts fehlen"
+    },
+    "4": {
+      "title": "Flugzeugträger in Three.js prototypisieren",
+      "takeaway": "Eine konkrete Start-und-Lande-Szene für interaktives 3D testen",
+      "notes": "Der Ersteller zeigt Kampfjet-Starts und -Landungen auf einem Nimitz-Träger und bewertet die 3D-Generierung positiv"
+    },
+    "5": {
+      "title": "Interaktives Motion-Frontend erstellen",
+      "takeaway": "Grafiken bauen, die auch pausiert interaktiv bleiben",
+      "notes": "Der Ersteller nennt 42 Minuten, einen Durchlauf, einfachen Code und weder harness, MCP noch skills"
+    },
+    "6": {
+      "title": "Synchronisierte Motion-Ad produzieren",
+      "takeaway": "Synchronität von Musik, Effekten und Bewegung prüfen",
+      "notes": "Der Ersteller meldet eine Spotify-artige Ad aus einem Prompt. Der genaue Prompt ist nicht veröffentlicht"
+    },
+    "7": {
+      "title": "Frontend-Design mit der BridgeBench-Lavalampe vergleichen",
+      "takeaway": "Die BridgeBench-Lavalampenaufgabe als begrenzten Frontend-Vergleich statt als allgemeine Rangliste nutzen",
+      "notes": "BridgeMind AI berichtet, dass Kimi K3 bei seiner BridgeBench-Lavalampenaufgabe Fable 5 übertraf und in der genannten Arena den ersten Platz belegte. Dies sind die vom Herausgeber gemeldeten Vergleichsergebnisse"
+    },
+    "8": {
+      "title": "Skripterstellung mit redaktioneller Stimme benchmarken",
+      "takeaway": "Passung zur redaktionellen Stimme, relative Platzierung und Kosten pro Skript in einem klar benannten internen Benchmark messen",
+      "notes": "Whats_AI meldet frühe interne Ergebnisse von 2.840 Elo, Platz eins auf der eigenen Rangliste und etwa 0,25 US-Dollar pro Skript. Dies ist der vorläufige Benchmark einer Organisation, keine allgemeine Leistungs- oder Preisgarantie"
+    },
+    "9": {
+      "title": "Ein von Paper Mario inspiriertes Spiel mit Agentenwerkzeugen bauen",
+      "takeaway": "Kimi K3 mit einem Agenten-Harness und Asset-Werkzeugen kombinieren, um sowohl 2D- als auch 3D-Spielelemente zu erzeugen",
+      "notes": "Der Ersteller berichtet, Kimi K3 mit Grok Build, Spriterrific für 2D-Assets und Geometrie für 3D-Assets in einem von Paper Mario inspirierten Spiel eingesetzt zu haben. Die Quelle zeigt den Einsatz von Werkzeugen und Skills, veröffentlicht aber keinen exakt wiederverwendbaren Prompt"
+    },
+    "10": {
+      "title": "Design, Kosten und Schwierigkeit eines Flappy-Spiels vergleichen",
+      "takeaway": "Bei Vergleichen erzeugter Spiele Schwierigkeitsgrad, Kosten, Design und Gameplay-Funktionen festhalten",
+      "notes": "Der interne Flappy-Benchmark von Command Code berichtet unterschiedliche Schwierigkeitsstufen zwischen den Modellen und nennt 0,024 US-Dollar für Kimi K3, 0,42 US-Dollar für Fable 5 und 0,15 US-Dollar für GPT-5.6 Sol. Wegen der ungleichen Einstellungen bleibt dies ein begrenzter interner Vergleich"
+    },
+    "11": {
+      "title": "Einen Ego-Shooter in einer U-Bahn erzeugen",
+      "takeaway": "Ein konkretes U-Bahn-Szenario nutzen, um das Ergebnis eines erzeugten Ego-Shooters zu prüfen",
+      "notes": "Der Ersteller zeigt einen Kimi K3 zugeschriebenen U-Bahn-FPS und weist ausdrücklich darauf hin, dass unklar ist, ob sein Influencer-Status das Ergebnis beeinflusst hat. Ein Prompt oder reproduzierbarer Workflow wird nicht bereitgestellt"
+    },
+    "12": {
+      "title": "Spieldesign mit demselben Design-Prompt vergleichen",
+      "takeaway": "Den Design-Prompt konstant halten und Tempo, Designverständnis und Spielgefühl getrennt prüfen",
+      "notes": "Command Code berichtet über einen Vergleich von Kimi K3, GPT-5.6 Sol und Fable 5 mit demselben Prompt. Laut Beitrag schnitt Kimi K3 beim Designverständnis gut ab, während die beiden anderen zu schnell spielten; dies bleibt die Bewertung des Herausgebers"
+    },
+    "13": {
+      "title": "Unabhängige Prüfung statistischer Audits verlangen",
+      "takeaway": "Modellgenerierte statistische Audits durch unabhängige Fachleute oder ein weiteres Modell prüfen lassen, bevor man sich auf die Ergebnisse verlässt",
+      "notes": "Ethan Mollick berichtet, dass Kimi K3 Max bei der Prüfung früherer wissenschaftlicher Arbeiten statistische Methoden falsch anwandte, und stimmt einer separaten Kritik zu. Dieses Negativbeispiel spricht für unabhängige Kontrolle statt ungeprüfter Übernahme"
+    },
+    "14": {
+      "title": "Motion Design vollständig als Code erstellen",
+      "takeaway": "Prüfen, ob ein One-Shot-Coding-Workflow Motion Design ohne zusätzliche Generierungswerkzeuge erzeugen kann",
+      "notes": "Der Ersteller berichtet von einem One-Shot-Motion-Design mit Kimi K3, das vollständig als Code und ohne MCP, Skills, Werkzeuge, Videogenerierung oder besondere Prompts erstellt wurde. Der genaue Prompt fehlt"
+    },
+    "15": {
+      "title": "Eine Person recherchieren und eine animierte persönliche Website bauen",
+      "takeaway": "Ein grobes Briefing für eine persönliche Website geben und anschließend Recherche, Planung, Iteration und Browser-Validierung des Modells prüfen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 Nick Saponaro recherchierte und aus einer allgemeinen Anfrage eine animierte persönliche Website einschließlich Planung, Tests, Iterationen und Browser-Prüfungen erstellte. Das Ergebnis ist eine selbst berichtete Workflow-Demonstration"
+    },
+    "16": {
+      "title": "Einen langsamen, aber starken Frontend-Durchlauf bewerten",
+      "takeaway": "Bei einer Frontend-Aufgabe die Abschlusszeit gemeinsam mit der Ausgabequalität erfassen",
+      "notes": "Der Ersteller berichtet, dass ein Frontend-Durchlauf mit Kimi K3 35 Minuten dauerte, und bezeichnet das Ergebnis als eines der besten, die er für diesen Prompt gesehen habe. Sowohl Geschwindigkeit als auch Qualitätsurteil beruhen auf der Beobachtung eines einzelnen Nutzers"
+    },
+    "17": {
+      "title": "Eine Simulation eines Schwarzen Lochs erzeugen",
+      "takeaway": "Eine wissenschaftliche Visualisierungsaufgabe nutzen, um eine erzeugte Simulation eines Schwarzen Lochs zu prüfen",
+      "notes": "Der Ersteller zeigt eine Kimi K3 zugeschriebene Simulation eines Schwarzen Lochs und nennt sie die beste, die er gesehen habe. Die Quelle enthält ein sichtbares Ergebnis, aber weder Prompt noch Rubrik oder unabhängige Validierung"
+    },
+    "18": {
+      "title": "Ein virtuelles MacBook mit funktionsfähigem macOS bauen",
+      "takeaway": "Three.js-Hardware-Rendering mit einer interaktiven Betriebssystemsimulation im Browser kombinieren",
+      "notes": "Die Quelle berichtet, dass Kimi K3 ein virtuelles MacBook in Three.js mit einer funktionsfähigen macOS-ähnlichen Umgebung erstellte. Das Artefakt wird gezeigt, Implementierungsschritte fehlen jedoch"
+    },
+    "19": {
+      "title": "Einen V8-Motor mit Blender MCP modellieren",
+      "takeaway": "Blender MCP und eine einzelne Anfrage verwenden, um ein detailliertes mechanisches 3D-Modell zu erzeugen",
+      "notes": "Der Rezensent berichtet, dass Kimi K3 mit Blender MCP aus einem Prompt einen vollständigen V8-Motor erzeugte. Der Beitrag verlinkt eine ausführlichere Bewertung, legt den genauen Prompt im bereitgestellten Datensatz jedoch nicht offen"
+    },
+    "20": {
+      "title": "Kriminalgeschichten auf Fehler bei der Vorahnung prüfen",
+      "takeaway": "Bewerten, ob ein erzeugter Krimi Hinweise, Unauffälligkeit und Vorahnung ausgewogen verbindet",
+      "notes": "Ethan Mollick berichtet, dass Kimi K3 keinen guten Krimi schrieb, weil Hinweise zugleich zu offensichtlich und zu obskur waren und die Vorahnung misslang. Er merkt außerdem an, dass andere Modelle dieselbe Grenze aufweisen"
+    },
+    "21": {
+      "title": "Modellierung und Animation des Millennium Falcon vergleichen",
+      "takeaway": "Mit abgestimmten Stilvorgaben und Aufwandsstufen 3D-Modellierung, Animation, Zeit und Kosten vergleichen",
+      "notes": "GMI Cloud berichtet über einen Vergleich von Kimi K3 und Fable 5 bei Nachbildungen des Millennium Falcon im Pixelstil und Originalstil mit maximalem Aufwand. Laut Bericht brauchte Kimi K3 länger, kostete aber im ersten Test etwa ein Drittel und in einem weiteren weniger als die Hälfte; dies sind vom Anbieter gemeldete Ergebnisse"
+    },
+    "22": {
+      "title": "Komplexe Frontend-Modellierung, Partikel und Shader testen",
+      "takeaway": "Mit einem öffentlichen Frontend-Prompt Modellierungspräzision, Partikeleffekte und Inline-Shader-Generierung in einem Durchlauf prüfen",
+      "notes": "Der Ersteller berichtet von einem Kimi-K3-Frontend-Ergebnis in einem Durchlauf mit präziser Modellierung, Partikeleffekten und komplexem Inline-Shader-Code und erklärt, dass der Test-Prompt an der verlinkten Quelle öffentlich ist"
+    },
+    "23": {
+      "title": "Eine spielbare Kampfarena aus einer Referenz bauen",
+      "takeaway": "Mit einer einzigen Referenz die One-Shot-Generierung einer vollständigen spielbaren Arena testen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 in einem Durchlauf aus einer Referenz eine spielbare Kampfarena erzeugte. Der Beitrag enthält zusätzlich eine Ranglistenbehauptung, der konkrete Anwendungsfall ist jedoch das gezeigte Arena-Artefakt"
+    },
+    "24": {
+      "title": "Drei selbstspielende Retrospiele als HTML-Dateien bauen",
+      "takeaway": "Grafik, Gegner, Regeln und autonomes Spielen in eigenständigen HTML-Spieldateien verlangen",
+      "notes": "Die Quelle berichtet über einen Atomic-Chat-Vergleich, bei dem Modelle Road Fighter, Battle City und Q*bert als selbstspielende HTML-Dateien bauten. Der Kosten- und Qualitätsvergleich stammt vom Herausgeber und wurde hier nicht unabhängig reproduziert"
+    },
+    "25": {
+      "title": "Einen GPU-Compiler von einer DSL bis PTX bauen",
+      "takeaway": "Eine vollständige Compiler-Aufgabe verwenden, die DSL, Compiler-Pässe, PTX-Erzeugung und einen Tensor-Core-Pfad umfasst",
+      "notes": "Die Quelle berichtet, dass Kimi K3 einen GPU-Compiler von Grund auf baute, von DSL und Pässen bis zur PTX-Erzeugung, und dessen Tensor-Core-Pfad mit Triton vergleicht. Der bereitgestellte Datensatz enthält keine unabhängigen Benchmark-Details"
+    },
+    "26": {
+      "title": "Ein Werkzeug für prozedurale Musik in einem Versuch erzeugen",
+      "takeaway": "Die One-Shot-Generierung eines interaktiven Generators für prozedurale Musik testen und das sichtbare Ergebnis vorsichtig vergleichen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 in einem Versuch ein Werkzeug für prozedurale Musik erzeugte, und vergleicht es positiv mit Ergebnissen von Fable 5 und GPT-5.6 Sol. Dies ist die eigene Testreihe des Erstellers, kein standardisierter Benchmark"
+    },
+    "27": {
+      "title": "Ein Chamäleon-Versteckspiel als One-Shot bauen",
+      "takeaway": "Ein Einzeldatei-Spiel mit Farbanpassung, prozeduralen Bereichen, Ton und Rundenwertung erzeugen",
+      "notes": "AIMLAPI berichtet über einen One-Shot-Vergleich mit demselben Prompt für ein Versteckspiel und nennt Kosten von 3,11 US-Dollar für Kimi K3 sowie 12,23 US-Dollar für Fable 5. Die Funktions- und Kostenangaben sind vom Anbieter gemeldete Ergebnisse"
+    },
+    "28": {
+      "title": "Eine Sammlung von zehn Kimi-K3-Projekten prüfen",
+      "takeaway": "Eine verlinkte Projektübersicht nutzen, um konkrete Artefakte für eine separate Prüfung zu entdecken",
+      "notes": "Der Autor kuratiert zehn Kimi-K3-Beispiele mit Medien, darunter einen Game-Boy-Advance-Emulator. Dieser Eintrag ist eine Sammlung und kein einzelner reproduzierbarer Workflow; jedes verlinkte Beispiel sollte unabhängig geprüft werden"
+    },
+    "29": {
+      "title": "Eine anspruchsvolle Landingpage über vier Modelle vergleichen",
+      "takeaway": "Eine Landingpage-Anfrage konstant halten und Animationstiefe sowie Vollständigkeit der Modellausgaben prüfen",
+      "notes": "Der Ersteller berichtet, Kimi K3, Fable, Grok und GPT Terra denselben anspruchsvollen Landingpage-Prompt gegeben zu haben, und bewertet Kimi K3 als stärkstes Ergebnis. Dies ist ein selbst berichteter Vergleich aus einer einzelnen Aufgabe"
+    },
+    "30": {
+      "title": "Mechanik und Kosten von Retrospielen benchmarken",
+      "takeaway": "Gameplay, Physik, Mechaniken, autonomes Verhalten, Tokenverbrauch und Kosten bei denselben Retrospiel-Aufgaben vergleichen",
+      "notes": "Die Quelle berichtet über Tests mit denselben Prompts für Road Fighter, Battle City und Q*bert und nennt 0,28 US-Dollar für Kimi K3, 0,28 US-Dollar für GPT-5.6 und 0,54 US-Dollar für Opus 4.8. Dies sind die Benchmark-Zahlen des Herausgebers"
+    },
+    "31": {
+      "title": "Spielgenerierung mit Fable 5 vergleichen",
+      "takeaway": "Ein direkt gegenübergestelltes Beispiel erzeugter Spiele als enge Bewertung statt als allgemeines Modellurteil nutzen",
+      "notes": "Higgsfield präsentiert einen Vergleich der Spielgenerierung von Kimi K3 und Fable 5. Der bereitgestellte Datensatz enthält Vergleichsmedien, aber weder Prompt noch Bewertungsrubrik oder detaillierte Bedingungen"
+    },
+    "32": {
+      "title": "Einen Echtzeit-Raytracer für Schwarze Löcher in WebGL2 bauen",
+      "takeaway": "Die Generierung eines nativen WebGL2-Raytracers für geodätische Bahnen in einer HTML-Datei mit einem Prompt testen",
+      "notes": "Der Autor beschreibt einen Coding-Benchmark, der einen funktionsfähigen Einzeldatei-Raytracer für Lichtablenkung an einem Schwarzen Loch in nativem WebGL2 verlangt. Der bereitgestellte Datensatz belegt Aufgabe und teilnehmende Modelle, aber keine vollständige unabhängige Ergebnisprüfung"
+    },
+    "33": {
+      "title": "Eine Three.js-Produktseite aus zwei Bildern erstellen",
+      "takeaway": "Zwei Referenzbilder und eine ausdrückliche Three.js-Vorgabe zur Erzeugung einer Produktpräsentation nutzen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 aus zwei Bildern eine Produktseite entwarf und die ausdrücklich angeforderte Three.js-Version erzeugte. Weitere Prompt- oder Implementierungsdetails fehlen"
+    },
+    "34": {
+      "title": "Komplexe Frontend- und Entwicklungsaufgaben mit Opus 4.8 vergleichen",
+      "takeaway": "Mehrere komplexe Coding-Aufgaben nutzen, um Stärken und Schwächen zu erkennen, statt ein Modell allgemein für überlegen zu erklären",
+      "notes": "Der Rezensent berichtet über direkte Tests von Kimi K3 gegen Opus 4.8 und bewertet beide bei komplexer Frontend- und Entwicklungsarbeit mit gemischten Ergebnissen als ungefähr vergleichbar. Dies bleibt die Einschätzung eines einzelnen Rezensenten"
+    },
+    "35": {
+      "title": "Benchmarks und einen Landingpage-Test prüfen",
+      "takeaway": "Benchmark-Kontext mit einem konkreten Landingpage-Generierungstest verbinden und beide Evidenzarten getrennt halten",
+      "notes": "Das Video behandelt Benchmarks, einen Landingpage-Test und Beobachtungen zum Frontend-Design von Kimi K3. Der bereitgestellte Datensatz enthält weder den vollständigen Test-Prompt noch eine Bewertungsrubrik"
+    },
+    "36": {
+      "title": "Ein 2,5D-Spiel im Paper-Mario-Stil mit einer Agenten-Toolchain bauen",
+      "takeaway": "Kimi K3 mit Grok Build oder Claude Code und Spriterrific zu einem 2,5D-Spieleworkflow verbinden",
+      "notes": "Der Ersteller bietet einen vollständigen Rundgang mit Grok Build und Kimi K3 und zeigt die Sprite-Generierung mit Spriterrific. Die Quelle benennt die Werkzeuge, liefert jedoch keine exakt wiederverwendbaren Prompts"
+    },
+    "37": {
+      "title": "Induktionsschluss mit Graph-zu-Formel-Aufgaben bewerten",
+      "takeaway": "Korrektheit, Verhalten bei zurückgehaltenen Daten und Formelkomplexität bei Aufgaben zur Induktion erster Ordnung messen",
+      "notes": "Der Autor berichtet über einen Benchmark von Kimi K3 und weiteren Modellen mit der ICML-INDUCTION-Aufgabe: Aus 6 bis 10 kleinen Graphen mit je 8 bis 10 Elementen sollte eine Formel erster Ordnung abgeleitet werden. Der Beitrag aktualisiert frühere Ergebnisse; hier wird keine neue unabhängige Reproduktion behauptet"
+    },
+    "38": {
+      "title": "Berichte über Spiele, Landingpages, 3D-Arbeiten und langen Kontext prüfen",
+      "takeaway": "Eine Übersicht aus mehreren Quellen verwenden, um konkrete Artefakte zu vergleichen und neben Kostenangaben auch Geschwindigkeitsgrenzen festzuhalten",
+      "notes": "Der Autor fasst berichtete Kimi-K3-Tests zu Spielen, Landingpages, 3D-Generierung und Langkontextarbeit zusammen und kommt zum Schluss, dass das Modell einen Versuch wert sei, Fable 5 aber noch nicht ersetze. Alle Zahlen sind Sekundärberichte innerhalb dieser Übersicht"
+    },
+    "39": {
+      "title": "Einen luxuriösen Brotschneider und seine Produktseite erfinden",
+      "takeaway": "Produktidee, Explosionsdarstellung, Demonstration und Landingpage in einem Designartefakt verbinden",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 einen Brotschneider im Guillotinenstil erfand, ihn als Luxusprodukt inszenierte und eine Landingpage mit Explosionsdarstellung und Demonstration erstellte"
+    },
+    "40": {
+      "title": "Einen komplexen Plan prüfen und seine Maßnahmen hinterfragen",
+      "takeaway": "Ein zweites Modell nutzen, um heruntergespielte Befunde, falsche Maßnahmen und zurückzuweisende Schlussfolgerungen zu erkennen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 einen stark überarbeiteten Plan prüfte und feststellte, dass schwerwiegende Probleme heruntergespielt wurden, etwa ein Drittel der vorgeschlagenen Maßnahmen korrigiert werden musste und ein Befund widerlegt wurde. Dies sind Ergebnisse dieses spezifischen Audits"
+    },
+    "41": {
+      "title": "ASCII-Diagramme für PPO-artiges Reinforcement Learning vergleichen",
+      "takeaway": "Einen ASCII-Diagramm-Prompt konstant halten und vergleichen, wie Modelle die Reinforcement-Learning-Schleife darstellen",
+      "notes": "Die Quelle liefert den Prompt für ein ASCII-Diagramm einer PPO-artigen Reinforcement-Learning-Schleife und zeigt Kimi K3 Max neben Fable 5 High. Die Bewertung bleibt ein visueller Vergleich aus einer einzelnen Aufgabe"
+    },
+    "42": {
+      "title": "In Blender modellieren und dabei Kapazitätsfehler erfassen",
+      "takeaway": "Teilfortschritt in Blender gemeinsam mit der Zuverlässigkeit des Dienstes bewerten, statt nur das Artefakt zu beurteilen",
+      "notes": "Der Ersteller zeigt Modellierungsfortschritt von Kimi K3 in Blender und berichtet zugleich von wiederholten Kapazitätsfehlern. Die Arbeit ist in der Quelle unvollständig, daher sollten Teilergebnis und Zuverlässigkeitsgrenze gemeinsam betrachtet werden"
+    },
+    "43": {
+      "title": "Ein browserbasiertes 3D-Wuxia-Rollenspiel bauen",
+      "takeaway": "Nahkampf, Quests, Inventar, Wetter, Innenräume, Blender-Umgebungsarbeit und angepasste Assets verbinden",
+      "notes": "Die Quelle berichtet über ein Kimi-K3-Browser-Rollenspiel mit Nahkampf, Quests, Inventar, dynamischem Wetter und begehbaren Innenräumen sowie Blender-Modellierung, verbesserten Kollisionen, PBR-Neutexturierung und angepassten offenen Assets"
+    },
+    "44": {
+      "title": "Ein Minecraft-ähnliches Mehrspieler-Browserspiel bauen",
+      "takeaway": "In einem begrenzten Zeit- und Kostenrahmen ein spielbares Online-Mehrspieler-Browserspiel erzeugen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 in einer Stunde für 6,57 US-Dollar ein im Browser spielbares Minecraft-ähnliches Mehrspielerspiel baute. Dies sind selbst berichtete Laufdaten eines einzelnen Artefakts"
+    },
+    "45": {
+      "title": "Ein rekursives Pelikan-GIF von zehn Sekunden erzeugen",
+      "takeaway": "Mit einem vollständig spezifizierten Briefing für eine Endlosschleife narrative Kontinuität und Rekursion in einem GIF prüfen",
+      "notes": "Die Quelle enthält einen Prompt für ein zehnsekündiges Endlosschleifen-GIF, in dem ein Pelikan Fahrrad fährt und beim Heranzoomen per Text dasselbe Video empfängt. Der Ersteller zeigt die daraus entstandene Animation von Kimi K3"
+    },
+    "46": {
+      "title": "Einen Game-Boy-Advance-Emulator auf Basis von mGBA WASM bauen",
+      "takeaway": "Ein lizenziertes 3D-Modell mit einem echten Emulatorkern verbinden und Oberfläche sowie Gameplay rekursiv verbessern",
+      "notes": "Das zitierte Kimi-K3-Projekt passt ein lizenziertes AGB-001-Modell an, integriert einen mGBA-WASM-Kern und verbessert Oberfläche und Gameplay durch rekursive Selbstverbesserung. Der Beitrag zitiert eine Projektbeschreibung und ist keine unabhängige Reproduktion"
+    },
+    "47": {
+      "title": "Flappy-Bird-Generierung in einer Arena vergleichen",
+      "takeaway": "Eine Arena-Aufgabe zum Vergleich zweier erzeugter Flappy-Bird-Ergebnisse nutzen und das Urteil auf diese Aufgabe begrenzen",
+      "notes": "Der Ersteller berichtet über einen Arena-Vergleich von Kimi K3 und Opus 4.8 bei einer Flappy-Bird-Aufgabe und bewertet Kimi K3 als deutlich besser. Der Datensatz enthält weder den vollständigen Prompt noch eine Rubrik"
+    },
+    "48": {
+      "title": "Ein kooperatives Splitscreen-Browserspiel nachbauen",
+      "takeaway": "Mit einer Anfrage browserbasierte Splitscreen-Kooperation und Echtzeitinteraktion mit der Umgebung erzeugen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 mit einem Prompt ein von It Takes Two inspiriertes Browserspiel erzeugte, in dem Mario und Luigi im Splitscreen miteinander und in Echtzeit mit der Umgebung interagieren"
+    },
+    "49": {
+      "title": "Ein spielbares Game mit dem Designmodus von Command Code erzeugen",
+      "takeaway": "Den Designbefehl von Command Code für einen One-Shot-Spielebau nutzen und festhalten, ob das Ergebnis spielbar ist",
+      "notes": "Der Ersteller berichtet über einen One-Shot-Vergleich im Designmodus von Command Code und erklärt, der Kimi-K3-Durchlauf habe für 0,038 US-Dollar ein spielbares Game erzeugt. Dieses Kosten- und Qualitätsresultat ist selbst berichtet"
+    },
+    "50": {
+      "title": "Mehrere Themen aus chinesischsprachigen Quellen recherchieren",
+      "takeaway": "Mit lang laufenden Rechercheaufgaben Gründlichkeit und Latenz über Modellgenerationen hinweg vergleichen",
+      "notes": "Der Autor berichtet, Kimi K3 bei zahlreichen Recherchethemen mit chinesischsprachigen Quellen getestet und es gründlicher, aber langsamer als K2.6 gefunden zu haben. Der Beitrag erwähnt außerdem eine damals hohe Dienstauslastung"
+    },
+    "51": {
+      "title": "Ein zusammenhängendes Wuxia-Browser-Rollenspiel erstellen",
+      "takeaway": "Fortbewegung, Kampf, Quests, Inventar, Wetter, Erkundung und 3D-Umgebungsarbeit in einem Spiel integrieren",
+      "notes": "Die Quelle berichtet über ein Wuxia-artiges Kimi-K3-Browser-Rollenspiel, das Nahkampf, Quests, Inventar, dynamisches Wetter, begehbare Innenräume und eine zusammenhängende 3D-Gameplay-Struktur verbindet"
+    },
+    "52": {
+      "title": "Ein visuelles Bongard-Induktionsproblem mit einem Werkzeug lösen",
+      "takeaway": "Prüfen, ob Werkzeugeinsatz dabei hilft, die visuelle Regel einer Bongard-Denkaufgabe abzuleiten",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 mit einem Werkzeug ein Bongard-Problem löste, das Grok 4.5 und Muse Spark 1.1 im selben Vergleich nicht lösten. Dies ist das Aufgabenergebnis eines Nutzers und kein allgemeiner Reasoning-Benchmark"
+    },
+    "53": {
+      "title": "Frontend-Geschmack und 3D-Design mit GPT-5.6 Sol vergleichen",
+      "takeaway": "Funktionen, visuellen Geschmack, Eleganz und 3D-Umsetzung in einem begrenzten Frontend-Vergleich prüfen",
+      "notes": "Der Ersteller vergleicht Kimi K3 und GPT-5.6 Sol beim Frontend-Design und bewertet Kimi K3 hinsichtlich visuellem Geschmack, Eleganz und 3D-Fähigkeit als stärker. Die Einschätzung ist subjektiv und auf die Aufgabe begrenzt"
+    },
+    "54": {
+      "title": "Ein spielbares Hollow-Knight-Crossover bauen",
+      "takeaway": "Vorhandene Spiel-Assets nutzen, um einen spielbaren Kampf zwischen dem Knight und Kimi zu erstellen",
+      "notes": "Der Ersteller, der nach eigener Aussage bei Kimi arbeitet, berichtet, aus Hollow-Knight-Assets ein Spiel gebaut zu haben, in dem der Knight gegen Kimi kämpft, und stellt einen öffentlichen Spiellink bereit. Zuordnung und Bewertung sollten diese Verbindung berücksichtigen"
+    },
+    "55": {
+      "title": "Eine Seitenansicht des BMW M4 CS als SVG erzeugen",
+      "takeaway": "Ein bestimmtes Fahrzeug und eine feste Perspektive nutzen, um die Ausgabe einer Vektorillustration zu prüfen",
+      "notes": "Der Ersteller zeigt eine Kimi K3 Max zugeschriebene SVG-Seitenansicht eines BMW M4 CS. Die Quelle enthält das Artefakt, aber weder Prompt noch Produktionsschritte"
+    },
+    "56": {
+      "title": "macOS im Browser mit funktionsfähigen Apps nachbauen",
+      "takeaway": "Eine Betriebssystemsimulation im Browser mit Musik-, Browser- und E-Mail-Anwendungen erstellen",
+      "notes": "Die Quelle berichtet, dass mit Kimi K3 ein browserbasierter macOS-Klon mit Musik, Browser, E-Mail und weiteren Funktionen erstellt wurde. Implementierungsdetails fehlen"
+    },
+    "57": {
+      "title": "Website-Generierung über drei Modelle vergleichen",
+      "takeaway": "Sichtbare Website-Ausgaben nutzen, um Kimi K3, Fable 5 und GPT-5.6 Sol in einem Test zu vergleichen",
+      "notes": "Der Ersteller präsentiert einen Vergleich der Website-Generierung von Kimi K3, Fable 5 und GPT-5.6 Sol. Der bereitgestellte Datensatz legt weder den vollständigen Prompt noch eine Bewertungsrubrik offen"
+    },
+    "58": {
+      "title": "Gargantua durch Screenshot-Feedback nachbilden",
+      "takeaway": "Wiederholte Screenshots als Beobachtungen nutzen, um eine wissenschaftliche Visualisierung zu diagnostizieren und zu verfeinern",
+      "notes": "Die Quelle berichtet, dass Kimi K3 den Gargantua aus Interstellar mithilfe von 62 selbst erstellten Screenshots nachbildete, jedes Ergebnis las, Probleme diagnostizierte und iterativ darauf reagierte"
+    },
+    "59": {
+      "title": "Prozedurale 3D-Spielgenerierung und Kosten vergleichen",
+      "takeaway": "Einen Prompt über Modelle hinweg konstant halten und erzeugte Roulette-, Spielautomaten- und Flippersysteme samt Kosten pro Lauf prüfen",
+      "notes": "Der Herausgeber berichtet über einen Mehrmodellvergleich prozeduraler 3D-Spiele und nennt unter anderem 0,71 US-Dollar für Kimi K3 sowie 0,30 US-Dollar für Grok 4.5. Alle Platzierungen und Kosten sind Ergebnisse des Durchlaufs dieses Herausgebers"
+    },
+    "60": {
+      "title": "Ein 3D-Browserspiel im Stil von Fall Guys als One-Shot bauen",
+      "takeaway": "Mit einer One-Shot-Anfrage ein spielbares 3D-Hindernisspiel erzeugen und das Projekt zur Prüfung offenlegen",
+      "notes": "Der Ersteller berichtet von einem One-Shot-Bau eines Fall-Guys-artigen Browserspiels mit Kimi K3 und erklärt, Prompt und GitHub-Projekt seien in der Quelle verlinkt. Dieser Datensatz gibt den Prompt nicht wieder"
+    },
+    "61": {
+      "title": "Einen apokalyptischen Lissabon-FPS bauen und selbst testen",
+      "takeaway": "Einen Ein-Prompt-Durchlauf mit maximalem Aufwand verwenden, der vor der Lieferung eines spielbaren FPS testet, Screenshots erstellt und iteriert",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 nach etwa einer Stunde und wiederholten Tests, Screenshots und Iterationen einen spielbaren apokalyptischen Lissabon-Browser-FPS erzeugte. Diese Zeit- und Prozessangaben sind selbst berichtet"
+    },
+    "62": {
+      "title": "Eine macOS-Simulation mit funktionsfähigem FaceTime bauen",
+      "takeaway": "Mit einer virtuellen Betriebssystemaufgabe prüfen, ob eine erzeugte App-Interaktion funktioniert",
+      "notes": "Der Ersteller zeigt eine Kimi K3 zugeschriebene macOS-artige Umgebung und berichtet, dass deren FaceTime-Funktion arbeitet. Die Quelle enthält weder Einrichtung noch Validierungsschritte"
+    },
+    "63": {
+      "title": "Ein Spiel im Animal-Crossing-Stil aus einer einfachen Anfrage erzeugen",
+      "takeaway": "Mit einem minimalen Spielbriefing Spielbarkeit, Gameplay-Schleife und Parallaxeffekte prüfen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 aus einem sehr einfachen Prompt ein vollständig spielbares Spiel im Animal-Crossing-Stil mit Gameplay-Schleife und Parallaxeffekten erzeugte. Der genaue Wortlaut ist im bereitgestellten Datensatz nicht enthalten"
+    },
+    "64": {
+      "title": "Einen Frontend-Vergleicher für zwei Aufgaben hinzufügen",
+      "takeaway": "Ein Werkzeug bauen, das zwei abgeschlossene Aufgaben auswählt, nebeneinander zeigt und Ansichten sowie Interaktionen synchronisiert",
+      "notes": "Der Ersteller berichtet, Kimi K3 um einen Frontend-Vergleichsworkflow mit Aufgabenauswahl, zwei Browserfenstern, Objekt- und Streifmodus, synchronisierten Blickwinkeln und Interaktionstests gebeten zu haben. Der Beitrag erwähnt außerdem breitere Modellgrenzen"
+    },
+    "65": {
+      "title": "Ein Mario-ähnliches Spiel aus einem Ein-Satz-Briefing erzeugen",
+      "takeaway": "Mit einer minimalen One-Shot-Anfrage Spielbarkeit, Leveldesign, Pixelgrafik und Parallaxeffekte prüfen",
+      "notes": "Der Ersteller berichtet, dass Kimi K3 aus einem einzigen Briefing ein funktionierendes Mario-ähnliches Spiel ohne offensichtliche Fehler samt Levelstruktur und Parallaxeffekten erzeugte. Derselbe Bericht kritisiert Musik- und Grafikqualität"
+    },
+    "66": {
+      "title": "Eine Visualisierung eines Schwarzen Lochs mit 62 Screenshots verfeinern",
+      "takeaway": "Eine Screenshot-Feedbackschleife nutzen, um eine visuelle Simulation über viele Iterationen zu lesen, zu diagnostizieren und zu korrigieren",
+      "notes": "Die Quelle berichtet, dass Kimi K3 den Gargantua aus Interstellar rekonstruierte, indem es seine Ausgabe über 62 Screenshots beobachtete und verfeinerte. Dies belegt die berichtete Feedbackschleife, nicht eine unabhängige physikalische Genauigkeit"
+    },
+    "67": {
+      "title": "Einen funktionierenden Zombie-Ego-Shooter bauen",
+      "takeaway": "Ein konkretes Zombie-Shooter-Ziel nutzen, um ein vollständiges spielbares FPS-Artefakt zu prüfen",
+      "notes": "Die Quelle zeigt einen vollständig funktionsfähigen Zombie-FPS, der Kimi K3 zugeschrieben wird. Sie enthält weder Prompt noch Implementierungsdetails oder eine externe Gameplay-Bewertung"
+    },
+    "68": {
+      "title": "Ein Marketing-PDF zum Post-Training erstellen",
+      "takeaway": "Ein benanntes Produkt und Ausgabeformat verwenden, um ein Marketingdokument zu erzeugen",
+      "notes": "Der Ersteller berichtet, Kimi K3 um ein Marketing-PDF zu Thinking Machines' Post-Training-Produkt Inkling gebeten zu haben, und teilt das Ergebnis sowie Lob für den Prozess im Hintergrund. Prompt und Bewertungskriterien fehlen"
+    },
+    "69": {
+      "title": "Detailgrad und Beleuchtung einer 3D-Arsenalszene vergleichen",
+      "takeaway": "Objektdichte, Beleuchtung und Szenendetail in einem begrenzten Vergleich von Kimi K3 und Opus 4.8 prüfen",
+      "notes": "Die Quelle berichtet, dass Kimi K3 eine detaillierte Arsenalszene mit gefüllten Regalen, Kisten und realistischer Beleuchtung erzeugte, während Opus 4.8 einen spärlichen Raum lieferte. Dies ist ein Vergleichsbericht eines Dritten, kein unabhängiger Benchmark"
+    },
+    "70": {
+      "title": "Eine Benutzeroberfläche aus einem Prompt erstellen",
+      "takeaway": "Mit einer einzelnen Anfrage ein vollständiges UI-Design erzeugen und prüfen",
+      "notes": "Der Ersteller zeigt ein UI-Design aus einem Ein-Prompt-Durchlauf mit Kimi K3 und bewertet es stark positiv und subjektiv. Der genaue Prompt und die Rubrik sind nicht enthalten"
+    }
+  }
+}

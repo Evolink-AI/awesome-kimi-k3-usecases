@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ja.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ja-v2.png" alt="月面風景とEvoLinkの案内を含む日本語版Kimi K3バナー" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
@@ -28,14 +28,14 @@ Kimi K3 の実例を厳選したリポジトリです
 
 **公開情報に基づくゲーム、3D、モーションデザイン、統合、評価、実用上の制約を収録します**
 
-初版の10件は提供されたソースパッケージのみから選定し、タイトルと著者名から原典へ移動できます
+提供されたソースパッケージからhigh-confidenceと判定された70件をすべて収録し、medium-confidenceの31件は除外しています。タイトルと著者名から原典へ移動できます
 
 [EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 概要
 
-- クリエイターと実務家による10件の事例
-- ゲーム、Three.js、モーション、CLI、速度、ビジョン、エージェント制約を収録
+- クリエイターと実務家によるhigh-confidenceの70事例をすべて収録
+- ゲーム、Three.js、モーション、フロントエンド、コーディング、研究、評価、実用上の制約を幅広く収録
 - 各事例で出典、著者、種別、日付、プロンプト境界を保持
 - 個人の報告をベンチマークとして扱いません
 
@@ -50,6 +50,19 @@ EvoLinkの文書化されたモデルIDは `kimi-k3` で、モデルページと
 2. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
 3. [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
+```bash
+curl --request POST \
+  --url "https://direct.evolink.ai/v1/chat/completions" \
+  --header "Authorization: Bearer $EVOLINK_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "kimi-k3",
+    "messages": [
+      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
+    ]
+  }'
+```
+
 > [!IMPORTANT]
 > EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。本リポジトリは独自の有料APIテストを主張しません
 
@@ -57,14 +70,39 @@ EvoLinkの文書化されたモデルIDは `kimi-k3` で、モデルページと
 
 | Section | Cases |
 |---|---|
-| [インタラクティブゲームと3D](#games-3d) | 4 |
-| [フロントエンドとモーションデザイン](#frontend-motion) | 2 |
-| [コーディングと統合](#coding-integrations) | 2 |
-| [評価と制約](#evaluation-limits) | 2 |
+| [インタラクティブゲームと3D](#games-3d) | 22 |
+| [フロントエンドとモーションデザイン](#frontend-motion) | 15 |
+| [コーディングと統合](#coding-integrations) | 8 |
+| [評価と制約](#evaluation-limits) | 25 |
 | [謝辞](#acknowledge) | 謝辞と訂正 |
 
 <a id="games-3d"></a>
 ## 🎮 インタラクティブゲームと3D
+
+| Case | What it shows | Type |
+|---|---|---|
+| [1つのプロンプトでボクセルレースを作る](#case-1) | 短いアイデアからレースを試作し、次の改善範囲を決めます | Demo |
+| [同じプロンプトでFroggerを比較する](#case-2) | プロンプトを固定してモデル間の差を確認します | Evaluation |
+| [Froggerと録画を生成する](#case-3) | ゲームとプレイ録画の両方をワンショットで試します | Demo |
+| [Three.jsで空母を試作する](#case-4) | 具体的な発着艦シーンで対話型3D生成を試します | Demo |
+| [エージェントツールでPaper Mario風ゲームを作る](#case-9) | Kimi K3をエージェントharnessやアセットツールと組み合わせ、2Dと3Dのゲーム要素を生成します | Demo |
+| [地下鉄を舞台にした一人称シューティングを生成する](#case-11) | 具体的な地下鉄という舞台を使い、生成されたFPSの結果を確認します | Demo |
+| [Blender MCPでV8エンジンをモデリングする](#case-19) | Blender MCPと1回の依頼を使って精密な機械3Dモデルを生成します | Integration |
+| [1つの参照からプレイ可能なバトルアリーナを作る](#case-23) | 単一の参照を使い、完全にプレイ可能なアリーナのワンショット生成を試します | Demo |
+| [自動プレイするレトロゲーム3本をHTMLファイルで作る](#case-24) | 単体HTMLゲーム内にグラフィック、敵、ルール、自動プレイを実装させます | Benchmark |
+| [ワンショットでカメレオンのかくれんぼゲームを作る](#case-27) | 色合わせ、手続き生成エリア、音声、複数ラウンド得点を備えた単一ファイルゲームを生成します | Benchmark |
+| [エージェント・ツールチェーンでPaper Mario風2.5Dゲームを作る](#case-36) | Kimi K3をGrok BuildまたはClaude Code、Spriterrificと組み合わせます | Tutorial |
+| [ブラウザで動く3D武侠RPGを作る](#case-43) | 近接戦闘、クエスト、インベントリ、天候、屋内探索、Blender環境制作、アセット調整を組み合わせます | Demo |
+| [ブラウザで動くMinecraft風マルチプレイゲームを作る](#case-44) | 時間と費用を限定した実行でオンラインマルチプレイのブラウザゲームを生成します | Demo |
+| [画面分割の協力型ブラウザゲームを再現する](#case-48) | 1回の依頼で画面分割協力プレイとリアルタイム環境操作を生成します | Demo |
+| [Command Codeのdesignモードでプレイ可能なゲームを生成する](#case-49) | designコマンドをワンショット制作に使い、プレイ可能か記録します | Demo |
+| [一体感のある武侠ブラウザRPGを構築する](#case-51) | 移動、戦闘、クエスト、インベントリ、天候、探索、3D環境制作を1つに統合します | Demo |
+| [プレイ可能なHollow Knightクロスオーバーを作る](#case-54) | 既存ゲームのアセットでKnightとKimiが戦うゲームを制作します | Demo |
+| [Fall Guys風3Dブラウザゲームをワンショットで作る](#case-60) | 1回の依頼でプレイ可能な3D障害物ゲームを生成し、プロジェクトを確認可能にします | Demo |
+| [終末後のLisbon FPSを作って自己テストする](#case-61) | 最大effortの1プロンプト実行で、提供までテスト、撮影、反復させます | Demo |
+| [簡単な依頼からAnimal Crossing風ゲームを生成する](#case-63) | 最小限の要件からプレイ可能性、ゲームループ、パララックス効果を確認します | Demo |
+| [1文の要件からMario風ゲームを生成する](#case-65) | 最小限のワンショット依頼でプレイ可能性、ステージ設計、ピクセルアート、パララックスを確認します | Demo |
+| [動作するゾンビFPSを作る](#case-67) | 具体的なゾンビシューティング目標で、完全にプレイ可能なFPSを確認します | Demo |
 
 <a id="case-1"></a>
 ### Case 1: [1つのプロンプトでボクセルレースを作る](https://x.com/ivanfioravanti/status/2077763009657627055) (by [@ivanfioravanti](https://x.com/ivanfioravanti))
@@ -132,9 +170,228 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-9"></a>
+### Case 9: [エージェントツールでPaper Mario風ゲームを作る](https://x.com/chongdashu/status/2077886028866531655) (by [@chongdashu](https://x.com/chongdashu))
+
+**Kimi K3をエージェントharnessやアセットツールと組み合わせ、2Dと3Dのゲーム要素を生成します**
+
+作者はPaper Mario風ゲームでKimi K3、Grok Build、2D用Spriterrific、3D用geometryを使ったと報告しています。ツール利用は示されていますが、正確な再利用可能プロンプトはありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-11"></a>
+### Case 11: [地下鉄を舞台にした一人称シューティングを生成する](https://x.com/bijanbowen/status/2077881805751873997) (by [@bijanbowen](https://x.com/bijanbowen))
+
+**具体的な地下鉄という舞台を使い、生成されたFPSの結果を確認します**
+
+作者はKimi K3による地下鉄FPSを示し、インフルエンサーであることが結果に影響した可能性を明記しています。プロンプトや再現可能な手順はありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-19"></a>
+### Case 19: [Blender MCPでV8エンジンをモデリングする](https://x.com/aisearchio/status/2077962156147146925) (by [@aisearchio](https://x.com/aisearchio))
+
+**Blender MCPと1回の依頼を使って精密な機械3Dモデルを生成します**
+
+レビュー担当者はKimi K3がBlender MCPと1つのプロンプトから完全なV8エンジンを生成したと報告しています。詳細レビューへのリンクはありますが正確なプロンプトはありません
+
+Type: Integration | Date: 2026-07-17
+
+---
+
+<a id="case-23"></a>
+### Case 23: [1つの参照からプレイ可能なバトルアリーナを作る](https://x.com/VORTEX_Promos/status/2077879705378730074) (by [@VORTEX_Promos](https://x.com/VORTEX_Promos))
+
+**単一の参照を使い、完全にプレイ可能なアリーナのワンショット生成を試します**
+
+作者はKimi K3が1つの参照からワンショットでアリーナを生成したと報告しています。別のランキング主張もありますが、具体的な活用例は実演された成果物です
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-24"></a>
+### Case 24: [自動プレイするレトロゲーム3本をHTMLファイルで作る](https://x.com/rohanpaul_ai/status/2077889084761206860) (by [@rohanpaul_ai](https://x.com/rohanpaul_ai))
+
+**単体HTMLゲーム内にグラフィック、敵、ルール、自動プレイを実装させます**
+
+Atomic Chatの比較ではRoad Fighter、Battle City、Q*bertを自動プレイHTMLとして作ったと報告されています。費用と品質は公開元の報告で、ここでは独立再現していません
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-27"></a>
+### Case 27: [ワンショットでカメレオンのかくれんぼゲームを作る](https://x.com/aimlapi/status/2077898742179459274) (by [@aimlapi](https://x.com/aimlapi))
+
+**色合わせ、手続き生成エリア、音声、複数ラウンド得点を備えた単一ファイルゲームを生成します**
+
+AIMLAPIは同じプロンプトのワンショット比較で、費用をKimi K3が3.11ドル、Fable 5が12.23ドルと報告しています。機能と費用はプロバイダー報告です
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-36"></a>
+### Case 36: [エージェント・ツールチェーンでPaper Mario風2.5Dゲームを作る](https://x.com/chongdashu/status/2077981621223837739) (by [@chongdashu](https://x.com/chongdashu))
+
+**Kimi K3をGrok BuildまたはClaude Code、Spriterrificと組み合わせます**
+
+作者はGrok BuildとKimi K3の手順とSpriterrificによるスプライト生成を示しています。ツールは特定されていますが正確な再利用プロンプトはありません
+
+Type: Tutorial | Date: 2026-07-17
+
+---
+
+<a id="case-43"></a>
+### Case 43: [ブラウザで動く3D武侠RPGを作る](https://x.com/AngryTomtweets/status/2077868163136450619) (by [@AngryTomtweets](https://x.com/AngryTomtweets))
+
+**近接戦闘、クエスト、インベントリ、天候、屋内探索、Blender環境制作、アセット調整を組み合わせます**
+
+ソースは近接戦闘、クエスト、インベントリ、動的天候、屋内に加え、Blenderモデリング、衝突判定改善、PBR再テクスチャリング、公開アセット調整を報告しています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-44"></a>
+### Case 44: [ブラウザで動くMinecraft風マルチプレイゲームを作る](https://x.com/Alezander907/status/2077926014710407407) (by [@Alezander907](https://x.com/Alezander907))
+
+**時間と費用を限定した実行でオンラインマルチプレイのブラウザゲームを生成します**
+
+作者はKimi K3がゲームを1時間、6.57ドルで作ったと報告しています。1成果物の自己申告数値です
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-48"></a>
+### Case 48: [画面分割の協力型ブラウザゲームを再現する](https://x.com/ridark_eth/status/2077882889803378969) (by [@ridark_eth](https://x.com/ridark_eth))
+
+**1回の依頼で画面分割協力プレイとリアルタイム環境操作を生成します**
+
+作者はKimi K3がIt Takes Two風ゲームを1プロンプトで生成し、MarioとLuigiが画面分割で環境とリアルタイムに相互作用すると報告しています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-49"></a>
+### Case 49: [Command Codeのdesignモードでプレイ可能なゲームを生成する](https://x.com/naymur_dev/status/2077873562661335207) (by [@naymur_dev](https://x.com/naymur_dev))
+
+**designコマンドをワンショット制作に使い、プレイ可能か記録します**
+
+作者はCommand Codeのdesignモード比較で、Kimi K3が0.038ドルでプレイ可能なゲームを生成したと報告しています。費用と品質は自己申告です
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-51"></a>
+### Case 51: [一体感のある武侠ブラウザRPGを構築する](https://x.com/TokenGremlin/status/2077855657068310620) (by [@TokenGremlin](https://x.com/TokenGremlin))
+
+**移動、戦闘、クエスト、インベントリ、天候、探索、3D環境制作を1つに統合します**
+
+ソースは近接戦闘、クエスト、インベントリ、動的天候、探索可能な屋内、一体感のある3D構造を組み合わせたRPGを報告しています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-54"></a>
+### Case 54: [プレイ可能なHollow Knightクロスオーバーを作る](https://x.com/wangfeng0315/status/2077933531200991583) (by [@wangfeng0315](https://x.com/wangfeng0315))
+
+**既存ゲームのアセットでKnightとKimiが戦うゲームを制作します**
+
+Kimi勤務と明記する作者はHollow Knightのアセットからゲームを作り、公開プレイリンクを提供しています。帰属と評価では所属関係を考慮します
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-60"></a>
+### Case 60: [Fall Guys風3Dブラウザゲームをワンショットで作る](https://x.com/aayushman2703/status/2077857886441783526) (by [@aayushman2703](https://x.com/aayushman2703))
+
+**1回の依頼でプレイ可能な3D障害物ゲームを生成し、プロジェクトを確認可能にします**
+
+作者はワンショット制作を報告し、プロンプトとGitHubプロジェクトをソースから参照できるとしています。この記録ではプロンプトを転載していません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-61"></a>
+### Case 61: [終末後のLisbon FPSを作って自己テストする](https://x.com/goncalo_canhoto/status/2077863166655037668) (by [@goncalo_canhoto](https://x.com/goncalo_canhoto))
+
+**最大effortの1プロンプト実行で、提供までテスト、撮影、反復させます**
+
+作者はKimi K3がテスト、スクリーンショット、反復を重ね、約1時間でプレイ可能なLisbonブラウザFPSを生成したと報告しています。時間と工程は自己申告です
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-63"></a>
+### Case 63: [簡単な依頼からAnimal Crossing風ゲームを生成する](https://x.com/gagarot200/status/2077949230287896830) (by [@gagarot200](https://x.com/gagarot200))
+
+**最小限の要件からプレイ可能性、ゲームループ、パララックス効果を確認します**
+
+作者は非常に簡単なプロンプトから、ゲームループとパララックスを備えた完全にプレイ可能なゲームを生成したと報告しています。正確な文言は記録にありません
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-65"></a>
+### Case 65: [1文の要件からMario風ゲームを生成する](https://x.com/izutorishima/status/2077939370154475992) (by [@izutorishima](https://x.com/izutorishima))
+
+**最小限のワンショット依頼でプレイ可能性、ステージ設計、ピクセルアート、パララックスを確認します**
+
+作者は明らかなバグのないゲームを生成し、ステージ構造とパララックスも備えたと報告しています。同時に音楽とグラフィック品質を批判しています
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-67"></a>
+### Case 67: [動作するゾンビFPSを作る](https://x.com/X2worldtech/status/2077902793449296203) (by [@X2worldtech](https://x.com/X2worldtech))
+
+**具体的なゾンビシューティング目標で、完全にプレイ可能なFPSを確認します**
+
+ソースはKimi K3による完全動作のゾンビFPSを示しています。プロンプト、実装詳細、外部評価はありません
+
+> [!WARNING]
+> The original source permalink returned HTTP 404 during the 2026-07-17 audit. Attribution and evidence are preserved from the supplied high-confidence source package.
+
+Type: Demo | Date: 2026-07-16
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 フロントエンドとモーションデザイン
+
+| Case | What it shows | Type |
+|---|---|---|
+| [対話できるモーショングラフィックを作る](#case-5) | 停止中も操作できるグラフィックをワンショットで構築します | Demo |
+| [同期したモーション広告を作る](#case-6) | 音楽、効果、動きの同期を確認します | Demo |
+| [モーションデザインをすべてコードで制作する](#case-14) | 補助的な生成ツールなしのワンショット・コーディングでモーションデザインを作れるか試します | Demo |
+| [人物を調査してアニメーション付き個人サイトを作る](#case-15) | 広い個人サイト要件を与え、モデルの調査、計画、反復、ブラウザ検証を確認します | Tutorial |
+| [ブラックホール・シミュレーションを生成する](#case-17) | 科学可視化課題を使い、生成されたブラックホール・シミュレーションを確認します | Demo |
+| [複雑なフロントエンドのモデリング、粒子、シェーダーを試す](#case-22) | 公開プロンプトを使い、1回の実行でモデリング精度、粒子効果、インラインシェーダー生成を確認します | Demo |
+| [手続き型音楽ツールを1回で生成する](#case-26) | 対話型の手続き型音楽生成器をワンショットで作り、可視結果は慎重に比較します | Demo |
+| [2枚の画像からThree.js製品ページを作る](#case-33) | 2枚の参照画像と明示的なThree.js要件で製品プレゼンテーションを生成します | Demo |
+| [高級パン切り器と製品ページを発案する](#case-39) | 製品発案、分解図、実演、ランディングページを1つの成果物にまとめます | Demo |
+| [10秒の再帰的ペリカンGIFを生成する](#case-45) | 完全指定したループアニメーション要件で物語的連続性と再帰構造を確認します | Demo |
+| [BMW M4 CSの側面SVGを生成する](#case-55) | 特定の車種と視点を指定し、ベクターイラスト出力を確認します | Demo |
+| [スクリーンショットのフィードバックでGargantuaを再現する](#case-58) | 繰り返すスクリーンショットを観測情報に使い、科学可視化を診断・改善します | Tutorial |
+| [62枚のスクリーンショットでブラックホール可視化を改善する](#case-66) | スクリーンショットのフィードバックループで、多数の反復を通じてシミュレーションを診断・修正します | Tutorial |
+| [ポストトレーニング製品のマーケティングPDFを作る](#case-68) | 製品名と納品形式を指定してマーケティング文書を生成します | Demo |
+| [1つのプロンプトからユーザーインターフェースを作る](#case-70) | 1回の依頼で完全なUIデザインを生成し、結果を確認します | Demo |
 
 <a id="case-5"></a>
 ### Case 5: [対話できるモーショングラフィックを作る](https://x.com/chetaslua/status/2077749371144442022) (by [@chetaslua](https://x.com/chetaslua))
@@ -166,33 +423,249 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-14"></a>
+### Case 14: [モーションデザインをすべてコードで制作する](https://x.com/chetaslua/status/2077952938564354503) (by [@chetaslua](https://x.com/chetaslua))
+
+**補助的な生成ツールなしのワンショット・コーディングでモーションデザインを作れるか試します**
+
+作者はMCP、skill、ツール、動画生成、特別なプロンプトを使わず、すべてコードで作ったKimi K3のワンショット結果を報告しています。正確なプロンプトはありません
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-15"></a>
+### Case 15: [人物を調査してアニメーション付き個人サイトを作る](https://x.com/nicky_sap/status/2077857190707429411) (by [@nicky_sap](https://x.com/nicky_sap))
+
+**広い個人サイト要件を与え、モデルの調査、計画、反復、ブラウザ検証を確認します**
+
+作者はKimi K3がNick Saponaroを調査し、幅広い依頼からサイトを作成し、計画、テスト、反復、ブラウザ確認まで行ったと報告しています。自己申告の実演です
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-17"></a>
+### Case 17: [ブラックホール・シミュレーションを生成する](https://x.com/chetaslua/status/2077961850352971796) (by [@chetaslua](https://x.com/chetaslua))
+
+**科学可視化課題を使い、生成されたブラックホール・シミュレーションを確認します**
+
+作者はKimi K3による成果物を示し、これまで見た中で最高と評価しています。可視結果はありますが、プロンプト、基準、独立検証はありません
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-22"></a>
+### Case 22: [複雑なフロントエンドのモデリング、粒子、シェーダーを試す](https://x.com/karminski3/status/2077889959223337099) (by [@karminski3](https://x.com/karminski3))
+
+**公開プロンプトを使い、1回の実行でモデリング精度、粒子効果、インラインシェーダー生成を確認します**
+
+作者は精密なモデリング、粒子効果、複雑なインラインシェーダーコードを含む1回実行結果を報告し、テスト用プロンプトはリンク先で公開されていると述べています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-26"></a>
+### Case 26: [手続き型音楽ツールを1回で生成する](https://x.com/mirochill/status/2077723551331758478) (by [@mirochill](https://x.com/mirochill))
+
+**対話型の手続き型音楽生成器をワンショットで作り、可視結果は慎重に比較します**
+
+作者はKimi K3が1回で生成し、Fable 5とGPT-5.6 Solより良かったと報告しています。標準化ベンチマークではなく作者自身のテストセットです
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-33"></a>
+### Case 33: [2枚の画像からThree.js製品ページを作る](https://x.com/1littlecoder/status/2077890296806031665) (by [@1littlecoder](https://x.com/1littlecoder))
+
+**2枚の参照画像と明示的なThree.js要件で製品プレゼンテーションを生成します**
+
+作者はKimi K3が2枚の画像から製品ページを設計し、依頼したThree.js版を生成したと報告しています。追加のプロンプトや実装詳細はありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-39"></a>
+### Case 39: [高級パン切り器と製品ページを発案する](https://x.com/filicroval/status/2077871090731221438) (by [@filicroval](https://x.com/filicroval))
+
+**製品発案、分解図、実演、ランディングページを1つの成果物にまとめます**
+
+作者はKimi K3がギロチン式パン切り器を発案し、高級品として位置付け、分解図と実演を含むページを作ったと報告しています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-45"></a>
+### Case 45: [10秒の再帰的ペリカンGIFを生成する](https://x.com/1littlecoder/status/2077880380900937865) (by [@1littlecoder](https://x.com/1littlecoder))
+
+**完全指定したループアニメーション要件で物語的連続性と再帰構造を確認します**
+
+ソースには、自転車に乗ったペリカンが同じ動画をテキストで受け取り、カメラがズームする10秒ループGIFのプロンプトがあり、Kimi K3の結果も示されています
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-55"></a>
+### Case 55: [BMW M4 CSの側面SVGを生成する](https://x.com/HarshithLucky3/status/2077765821380886942) (by [@HarshithLucky3](https://x.com/HarshithLucky3))
+
+**特定の車種と視点を指定し、ベクターイラスト出力を確認します**
+
+作者はKimi K3 MaxによるBMW M4 CSの側面SVGを示しています。成果物はありますが、プロンプトや制作手順はありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-58"></a>
+### Case 58: [スクリーンショットのフィードバックでGargantuaを再現する](https://x.com/AngryTomtweets/status/2077868981659324444) (by [@AngryTomtweets](https://x.com/AngryTomtweets))
+
+**繰り返すスクリーンショットを観測情報に使い、科学可視化を診断・改善します**
+
+ソースはKimi K3が62枚の自己取得スクリーンショットを読み、問題を診断し、反復的に対応してInterstellarのGargantuaを再現したと報告しています
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-66"></a>
+### Case 66: [62枚のスクリーンショットでブラックホール可視化を改善する](https://x.com/TokenGremlin/status/2077855959201042645) (by [@TokenGremlin](https://x.com/TokenGremlin))
+
+**スクリーンショットのフィードバックループで、多数の反復を通じてシミュレーションを診断・修正します**
+
+ソースはKimi K3が62枚のスクリーンショットにわたりInterstellarのGargantuaを再構築したと報告しています。独立した物理精度ではなく、報告された反復手順を示します
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-68"></a>
+### Case 68: [ポストトレーニング製品のマーケティングPDFを作る](https://x.com/Satvik_Pen/status/2077859673517023313) (by [@Satvik_Pen](https://x.com/Satvik_Pen))
+
+**製品名と納品形式を指定してマーケティング文書を生成します**
+
+作者はThinking MachinesのInklingポストトレーニングに関するPDFを依頼し、結果と制作過程を高く評価しています。プロンプトや評価基準はありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-70"></a>
+### Case 70: [1つのプロンプトからユーザーインターフェースを作る](https://x.com/BrianMRey/status/2077891942088671689) (by [@BrianMRey](https://x.com/BrianMRey))
+
+**1回の依頼で完全なUIデザインを生成し、結果を確認します**
+
+作者は1プロンプトのKimi K3実行によるUIを示し、主観的に非常に高く評価しています。正確なプロンプトと評価基準はありません
+
+Type: Demo | Date: 2026-07-16
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 コーディングと統合
 
-<a id="case-7"></a>
-### Case 7: [Kimi CLIからKimi K3を使う](https://x.com/TheAhmadOsman/status/2077750074608644127) (by [@TheAhmadOsman](https://x.com/TheAhmadOsman))
+| Case | What it shows | Type |
+|---|---|---|
+| [動作するmacOSを備えた仮想MacBookを作る](#case-18) | Three.jsのハードウェア描画とブラウザ上で操作できるOSシミュレーションを組み合わせます | Demo |
+| [DSLからPTXまでのGPUコンパイラを作る](#case-25) | DSL、コンパイラパス、PTX生成、Tensor Core経路を含むエンドツーエンド課題を使います | Demo |
+| [WebGL2でリアルタイム・ブラックホール光線追跡を作る](#case-32) | 単一HTML内でネイティブWebGL2の測地線光線追跡を1プロンプトで生成できるか試します | Benchmark |
+| [mGBA WASMを使ってGame Boy Advanceエミュレーターを作る](#case-46) | ライセンス済み3Dモデルと実在のエミュレーターコアを統合し、UIとプレイ体験を再帰的に改善します | Integration |
+| [中国語ソースから複数テーマを調査する](#case-50) | 長時間の調査課題でモデル世代間の網羅性と待ち時間を比較します | Evaluation |
+| [動作するアプリ付きmacOSをブラウザに再現する](#case-56) | 音楽、ブラウザ、メールの各アプリを含むブラウザOSシミュレーションを作ります | Demo |
+| [動作するFaceTime付きmacOSシミュレーションを作る](#case-62) | 仮想OS課題で生成されたアプリ操作が機能するか試します | Demo |
+| [2つのタスクを並べるフロントエンド効果比較機能を追加する](#case-64) | 完了済みタスクを2つ選び、横並び表示し、ビューと操作を同期するツールを作ります | Tutorial |
 
-**最新の文書とモデル選択を確認してCLIを使います**
+<a id="case-18"></a>
+### Case 18: [動作するmacOSを備えた仮想MacBookを作る](https://x.com/scottstts/status/2077890054299541890) (by [@scottstts](https://x.com/scottstts))
 
-作者はKimi CLIでの提供を告知しています。本リポジトリは導入や認証手順を推測しません
+**Three.jsのハードウェア描画とブラウザ上で操作できるOSシミュレーションを組み合わせます**
 
-<img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-07.jpg" alt="Case 7 source media" height="360">
+ソースはKimi K3がThree.jsで仮想MacBookと動作するmacOS風環境を作成したと報告しています。成果物は示されていますが実装手順はありません
 
-Type: Integration | Date: 2026-07-16
+Type: Demo | Date: 2026-07-16
 
 ---
 
-<a id="case-8"></a>
-### Case 8: [Moonshot API経由の速度を観測する](https://x.com/scaling01/status/2077777932341092422) (by [@scaling01](https://x.com/scaling01))
+<a id="case-25"></a>
+### Case 25: [DSLからPTXまでのGPUコンパイラを作る](https://x.com/rohanpaul_ai/status/2077886618657231220) (by [@rohanpaul_ai](https://x.com/rohanpaul_ai))
 
-**プロバイダー、経路、毎秒トークン数を記録します**
+**DSL、コンパイラパス、PTX生成、Tensor Core経路を含むエンドツーエンド課題を使います**
 
-利用者1名が毎秒28トークンを報告しています。単一観測であり、ベンチマークや保証ではありません
+ソースはKimi K3がDSLと各パスからPTX生成までGPUコンパイラを一から構築し、そのTensor Core経路をTritonと比較したと報告しています。独立ベンチマーク詳細はありません
 
-<img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-08.jpg" alt="Case 8 source media" height="360">
+Type: Demo | Date: 2026-07-16
 
-Type: Evaluation | Date: 2026-07-16
+---
+
+<a id="case-32"></a>
+### Case 32: [WebGL2でリアルタイム・ブラックホール光線追跡を作る](https://x.com/AlicanKiraz0/status/2077885419744612597) (by [@AlicanKiraz0](https://x.com/AlicanKiraz0))
+
+**単一HTML内でネイティブWebGL2の測地線光線追跡を1プロンプトで生成できるか試します**
+
+作者は動作するブラックホール光曲がり光線追跡を求めるベンチマークを説明しています。課題と参加モデルは確認できますが、完全で独立した結果監査はありません
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-46"></a>
+### Case 46: [mGBA WASMを使ってGame Boy Advanceエミュレーターを作る](https://x.com/teortaxesTex/status/2077925090168062272) (by [@teortaxesTex](https://x.com/teortaxesTex))
+
+**ライセンス済み3Dモデルと実在のエミュレーターコアを統合し、UIとプレイ体験を再帰的に改善します**
+
+プロジェクトはライセンス済みAGB-001モデルを調整し、mGBA WASMコアを統合し、再帰的自己改善を行っています。独立再現ではなくプロジェクト説明の引用です
+
+Type: Integration | Date: 2026-07-17
+
+---
+
+<a id="case-50"></a>
+### Case 50: [中国語ソースから複数テーマを調査する](https://x.com/tphuang/status/2077911994607239400) (by [@tphuang](https://x.com/tphuang))
+
+**長時間の調査課題でモデル世代間の網羅性と待ち時間を比較します**
+
+作者は多くのテーマを中国語ソースで試し、K2.6より詳細だが遅いと報告しています。当時はサービス需要が高かったことも記しています
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-56"></a>
+### Case 56: [動作するアプリ付きmacOSをブラウザに再現する](https://x.com/twid/status/2077924755357974989) (by [@twid](https://x.com/twid))
+
+**音楽、ブラウザ、メールの各アプリを含むブラウザOSシミュレーションを作ります**
+
+ソースはKimi K3で音楽、ブラウザ、メールなどを備えたブラウザ版macOSクローンを作成したと報告しています。実装詳細はありません
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-62"></a>
+### Case 62: [動作するFaceTime付きmacOSシミュレーションを作る](https://x.com/LinearUncle/status/2077919552239997078) (by [@LinearUncle](https://x.com/LinearUncle))
+
+**仮想OS課題で生成されたアプリ操作が機能するか試します**
+
+作者はmacOS風環境を示し、FaceTime機能が動作すると報告しています。セットアップや検証手順はありません
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-64"></a>
+### Case 64: [2つのタスクを並べるフロントエンド効果比較機能を追加する](https://x.com/MinLiBuilds/status/2077939461510615376) (by [@MinLiBuilds](https://x.com/MinLiBuilds))
+
+**完了済みタスクを2つ選び、横並び表示し、ビューと操作を同期するツールを作ります**
+
+作者はタスク選択、2つのブラウザペイン、objectとroamingモード、視点同期、操作テストを備えた比較ワークフローを追加させたと報告しています。投稿はモデル制約にも触れています
+
+Type: Tutorial | Date: 2026-07-17
 
 ---
 
@@ -200,25 +673,306 @@ Type: Evaluation | Date: 2026-07-16
 <a id="evaluation-limits"></a>
 ## 🧪 評価と制約
 
-<a id="case-9"></a>
-### Case 9: [自分の業務でビジョンを試す](https://x.com/mitsuhiko/status/2077770239937282526) (by [@mitsuhiko](https://x.com/mitsuhiko))
+| Case | What it shows | Type |
+|---|---|---|
+| [BridgeBenchの溶岩ランプ課題でフロントエンドデザインを比較する](#case-7) | BridgeBenchの溶岩ランプ課題を、普遍的な順位ではなく範囲を限定した比較として使います | Benchmark |
+| [編集方針に沿う台本執筆をベンチマークする](#case-8) | 明示した社内ベンチマーク内で、編集トーンへの適合度、相対順位、台本1本当たりの費用を測定します | Benchmark |
+| [Flappy系ゲームのデザイン、費用、難易度を比較する](#case-10) | 生成ゲームの比較では難易度設定、費用、デザイン、ゲームプレイ機能を記録します | Benchmark |
+| [同じデザインプロンプトでゲーム設計を比較する](#case-12) | デザインプロンプトを固定し、進行速度、デザイン感覚、プレイ感を分けて確認します | Benchmark |
+| [統計監査には独立したレビューを必須にする](#case-13) | モデルが生成した統計監査は、知見を採用する前に独立した専門家または別モデルのレビューと組み合わせます | Limit |
+| [遅いが高品質なフロントエンド実行を評価する](#case-16) | フロントエンド課題では出力品質とともに完了時間を記録します | Evaluation |
+| [殺人ミステリー執筆で伏線の失敗を検証する](#case-20) | 生成ミステリーが手がかり、難解さ、伏線のバランスを取れているか評価します | Limit |
+| [ミレニアム・ファルコンのモデリングとアニメーションを比較する](#case-21) | 同じスタイル要件とeffort設定で、3Dモデリング、アニメーション、時間、費用を比較します | Benchmark |
+| [Kimi K3プロジェクト10件のコレクションをレビューする](#case-28) | リンク付きまとめから具体的な成果物を見つけ、個別に検証します | Evaluation |
+| [高度なランディングページを4モデルで比較する](#case-29) | 要件を固定し、モデル出力間でアニメーションの深さと完成度を確認します | Evaluation |
+| [レトロゲームの仕組みと費用をベンチマークする](#case-30) | 同じ課題でプレイ、物理、仕組み、自律動作、トークン使用量、費用を比較します | Benchmark |
+| [Fable 5とゲーム生成を比較する](#case-31) | 生成ゲームの並列例を、モデル全般の結論ではなく狭い範囲の評価として使います | Evaluation |
+| [複雑なフロントエンドと開発課題をOpus 4.8と比較する](#case-34) | 複数の複雑な課題で勝敗を確認し、一方を普遍的に優れているとは断定しません | Evaluation |
+| [ベンチマークとランディングページテストをレビューする](#case-35) | ベンチマーク文脈と具体的テストを組み合わせつつ、2種類の証拠を分けて扱います | Evaluation |
+| [グラフから論理式を導く課題で帰納推論を評価する](#case-37) | 一階論理の帰納課題で正答率、ホールドアウト挙動、論理式の複雑さを測定します | Benchmark |
+| [報告されたゲーム、ランディングページ、3D、長文脈をレビューする](#case-38) | 複数ソースのまとめで成果物を比較し、費用主張と速度制約を記録します | Evaluation |
+| [複雑な計画を監査して改善策に異議を唱える](#case-40) | 第2のモデルで過小評価された指摘、誤った改善策、退けるべき結論を特定します | Evaluation |
+| [PPO型強化学習のASCII図を比較する](#case-41) | ASCII図のプロンプトを固定し、各モデルが強化学習ループをどう表現するか比較します | Evaluation |
+| [容量エラーを記録しながらBlenderでモデリングする](#case-42) | 成果物だけでなくBlenderの部分的進捗とサービス信頼性を合わせて評価します | Limit |
+| [ArenaでFlappy Bird生成を比較する](#case-47) | Arena課題で2つの生成結果を比較し、判断をその課題だけに限定します | Evaluation |
+| [ツールを使ってBongard視覚帰納問題を解く](#case-52) | ツール利用がBongard推論課題の視覚規則導出に役立つか試します | Evaluation |
+| [フロントエンドの美的感覚と3DデザインをGPT-5.6 Solと比較する](#case-53) | 限定的な比較で機能、視覚的な好み、洗練度、3D表現を確認します | Evaluation |
+| [3モデルのウェブサイト生成を比較する](#case-57) | 可視化された出力を使い、1テストでKimi K3、Fable 5、GPT-5.6 Solを比較します | Evaluation |
+| [手続き型3Dゲーム生成と費用を比較する](#case-59) | プロンプトを固定し、ルーレット、スロット、ピンボールと各実行費用を確認します | Benchmark |
+| [3D兵器庫シーンの密度と照明を比較する](#case-69) | 限定的なKimi K3とOpus 4.8の比較で、物体密度、照明、シーン詳細を確認します | Evaluation |
 
-**代表的な作業で評価してから一般化します**
+<a id="case-7"></a>
+### Case 7: [BridgeBenchの溶岩ランプ課題でフロントエンドデザインを比較する](https://x.com/bridgemindai/status/2077868061953007908) (by [@bridgemindai](https://x.com/bridgemindai))
 
-Armin Ronacherは自身の作業で高い視覚品質を報告しました。個人的な観測でありベンチマークではありません
+**BridgeBenchの溶岩ランプ課題を、普遍的な順位ではなく範囲を限定した比較として使います**
+
+BridgeMind AIはKimi K3が同課題でFable 5を上回り、引用されたArenaで1位になったと報告しています。公開元が報告した比較結果です
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-8"></a>
+### Case 8: [編集方針に沿う台本執筆をベンチマークする](https://x.com/Whats_AI/status/2077860441380798908) (by [@Whats_AI](https://x.com/Whats_AI))
+
+**明示した社内ベンチマーク内で、編集トーンへの適合度、相対順位、台本1本当たりの費用を測定します**
+
+Whats_AIは初期社内結果として2,840 Elo、1位、台本1本当たり約0.25ドルと報告しています。一般性能や価格の保証ではなく、1組織の予備的ベンチマークです
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-10"></a>
+### Case 10: [Flappy系ゲームのデザイン、費用、難易度を比較する](https://x.com/MrAhmadAwais/status/2077915347974557862) (by [@MrAhmadAwais](https://x.com/MrAhmadAwais))
+
+**生成ゲームの比較では難易度設定、費用、デザイン、ゲームプレイ機能を記録します**
+
+Command Codeの社内ベンチマークは異なる難易度設定でKimi K3を0.024ドル、Fable 5を0.42ドル、GPT-5.6 Solを0.15ドルとしています。設定が同一でない限定的な社内比較です
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-12"></a>
+### Case 12: [同じデザインプロンプトでゲーム設計を比較する](https://x.com/CommandCodeAI/status/2077921526213746948) (by [@CommandCodeAI](https://x.com/CommandCodeAI))
+
+**デザインプロンプトを固定し、進行速度、デザイン感覚、プレイ感を分けて確認します**
+
+Command CodeはKimi K3、GPT-5.6 Sol、Fable 5を同じプロンプトで比較し、Kimi K3のデザイン感覚を高く、他2つの速度を速すぎると評価しています。公開元による評価です
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-13"></a>
+### Case 13: [統計監査には独立したレビューを必須にする](https://x.com/emollick/status/2077869293031624793) (by [@emollick](https://x.com/emollick))
+
+**モデルが生成した統計監査は、知見を採用する前に独立した専門家または別モデルのレビューと組み合わせます**
+
+Ethan MollickはKimi K3 Maxが過去研究の監査で統計を誤用したと報告し、別の批判にも同意しています。この否定的事例は独立検証の必要性を示します
+
+Type: Limit | Date: 2026-07-16
+
+---
+
+<a id="case-16"></a>
+### Case 16: [遅いが高品質なフロントエンド実行を評価する](https://x.com/Lentils80/status/2077387333154857151) (by [@Lentils80](https://x.com/Lentils80))
+
+**フロントエンド課題では出力品質とともに完了時間を記録します**
+
+作者は実行に35分かかり、そのプロンプトで見た中でも最高水準の出力だったと報告しています。速度と品質はいずれも1利用者の観測です
+
+Type: Evaluation | Date: 2026-07-15
+
+---
+
+<a id="case-20"></a>
+### Case 20: [殺人ミステリー執筆で伏線の失敗を検証する](https://x.com/emollick/status/2077951790868238616) (by [@emollick](https://x.com/emollick))
+
+**生成ミステリーが手がかり、難解さ、伏線のバランスを取れているか評価します**
+
+Ethan MollickはKimi K3が良い殺人ミステリーを書けず、手がかりを明白すぎる一方で難解にもして、伏線にも失敗したと報告しています。他モデルにも同じ制約があると述べています
+
+Type: Limit | Date: 2026-07-17
+
+---
+
+<a id="case-21"></a>
+### Case 21: [ミレニアム・ファルコンのモデリングとアニメーションを比較する](https://x.com/gmi_cloud/status/2077903360263676090) (by [@gmi_cloud](https://x.com/gmi_cloud))
+
+**同じスタイル要件とeffort設定で、3Dモデリング、アニメーション、時間、費用を比較します**
+
+GMI Cloudは最大effortでKimi K3とFable 5を比較し、Kimi K3は時間が長かったものの、最初のテストでは約3分の1、別のテストでは半分未満の費用だったとしています。プロバイダー報告です
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-28"></a>
+### Case 28: [Kimi K3プロジェクト10件のコレクションをレビューする](https://x.com/minchoi/status/2077957907857994006) (by [@minchoi](https://x.com/minchoi))
+
+**リンク付きまとめから具体的な成果物を見つけ、個別に検証します**
+
+作者はGame Boy Advanceエミュレーターを含む、メディア付き事例10件をまとめています。単一の再現可能な手順ではないため、各リンク先を個別に確認する必要があります
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-29"></a>
+### Case 29: [高度なランディングページを4モデルで比較する](https://x.com/doutorcaleb/status/2077904020471947773) (by [@doutorcaleb](https://x.com/doutorcaleb))
+
+**要件を固定し、モデル出力間でアニメーションの深さと完成度を確認します**
+
+作者はKimi K3、Fable、Grok、GPT Terraに同じ高度なプロンプトを与え、Kimi K3を最も良いと評価しています。1課題の自己申告比較です
 
 Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="case-10"></a>
-### Case 10: [最大努力時のループを監視する](https://x.com/emollick/status/2077770187521069152) (by [@emollick](https://x.com/emollick))
+<a id="case-30"></a>
+### Case 30: [レトロゲームの仕組みと費用をベンチマークする](https://x.com/adxtyahq/status/2077860500462055570) (by [@adxtyahq](https://x.com/adxtyahq))
 
-**完了済み作業を再訪する場合は停止条件を設けます**
+**同じ課題でプレイ、物理、仕組み、自律動作、トークン使用量、費用を比較します**
 
-Ethan Mollickは反復修正を報告しました。原因がモデル、harness、相互作用のどれかは分離されていません
+ソースはRoad Fighter、Battle City、Q*bertを同じプロンプトで試し、Kimi K3を0.28ドル、GPT-5.6を0.28ドル、Opus 4.8を0.54ドルと報告しています。公開元の数値です
 
-Type: Limit | Date: 2026-07-16
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-31"></a>
+### Case 31: [Fable 5とゲーム生成を比較する](https://x.com/higgsfield_ai/status/2077943629633712490) (by [@higgsfield_ai](https://x.com/higgsfield_ai))
+
+**生成ゲームの並列例を、モデル全般の結論ではなく狭い範囲の評価として使います**
+
+HiggsfieldはKimi K3とFable 5の比較を提示しています。メディアはありますが、プロンプト、採点基準、詳細条件はありません
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-34"></a>
+### Case 34: [複雑なフロントエンドと開発課題をOpus 4.8と比較する](https://x.com/op7418/status/2077969583018066116) (by [@op7418](https://x.com/op7418))
+
+**複数の複雑な課題で勝敗を確認し、一方を普遍的に優れているとは断定しません**
+
+レビュー担当者は直接比較し、勝敗は混在するものの概ね同等と評価しています。1人のレビュー担当者による評価です
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-35"></a>
+### Case 35: [ベンチマークとランディングページテストをレビューする](https://x.com/adamuchigabriel/status/2077880433925120471) (by [@adamuchigabriel](https://x.com/adamuchigabriel))
+
+**ベンチマーク文脈と具体的テストを組み合わせつつ、2種類の証拠を分けて扱います**
+
+動画はベンチマーク議論、ランディングページテスト、フロントエンド所見を提示しています。完全なテストプロンプトや採点基準はありません
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-37"></a>
+### Case 37: [グラフから論理式を導く課題で帰納推論を評価する](https://x.com/s_batzoglou/status/2077884096307454119) (by [@s_batzoglou](https://x.com/s_batzoglou))
+
+**一階論理の帰納課題で正答率、ホールドアウト挙動、論理式の複雑さを測定します**
+
+作者はICML INDUCTION課題で、それぞれ8〜10要素を持つ6〜10個の小規模グラフから一階論理式を推論させたと報告しています。以前の研究からの更新で、ここでは独立再現を主張しません
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-38"></a>
+### Case 38: [報告されたゲーム、ランディングページ、3D、長文脈をレビューする](https://x.com/servasyy_ai/status/2077903775113834689) (by [@servasyy_ai](https://x.com/servasyy_ai))
+
+**複数ソースのまとめで成果物を比較し、費用主張と速度制約を記録します**
+
+作者は複数領域の報告済みテストをまとめ、試す価値はあるがFable 5の代替にはまだならないと結論しています。数値は二次報告です
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-40"></a>
+### Case 40: [複雑な計画を監査して改善策に異議を唱える](https://x.com/doodlestein/status/2077901883637665958) (by [@doodlestein](https://x.com/doodlestein))
+
+**第2のモデルで過小評価された指摘、誤った改善策、退けるべき結論を特定します**
+
+作者はKimi K3が重大問題の過小評価を見つけ、提案改善策の約3分の1に修正が必要で、1つの指摘を否定したと報告しています。特定の監査結果です
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-41"></a>
+### Case 41: [PPO型強化学習のASCII図を比較する](https://x.com/dejavucoder/status/2077872015856615541) (by [@dejavucoder](https://x.com/dejavucoder))
+
+**ASCII図のプロンプトを固定し、各モデルが強化学習ループをどう表現するか比較します**
+
+ソースはPPO型強化学習ループをASCIIで描くプロンプトを公開し、Kimi K3 MaxとFable 5 Highを並べています。1課題の視覚比較です
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-42"></a>
+### Case 42: [容量エラーを記録しながらBlenderでモデリングする](https://x.com/Angaisb_/status/2077910845523214668) (by [@Angaisb_](https://x.com/Angaisb_))
+
+**成果物だけでなくBlenderの部分的進捗とサービス信頼性を合わせて評価します**
+
+作者はモデリング進捗と、繰り返す容量エラーを報告しています。作業は未完了なので部分結果と信頼性制約を合わせて考慮します
+
+Type: Limit | Date: 2026-07-17
+
+---
+
+<a id="case-47"></a>
+### Case 47: [ArenaでFlappy Bird生成を比較する](https://x.com/jun_song/status/2077396996865003739) (by [@jun_song](https://x.com/jun_song))
+
+**Arena課題で2つの生成結果を比較し、判断をその課題だけに限定します**
+
+作者はKimi K3とOpus 4.8を比較し、Kimi K3が大幅に良かったと評価しています。完全なプロンプトや基準はありません
+
+Type: Evaluation | Date: 2026-07-15
+
+---
+
+<a id="case-52"></a>
+### Case 52: [ツールを使ってBongard視覚帰納問題を解く](https://x.com/IntuitMachine/status/2077885406528311561) (by [@IntuitMachine](https://x.com/IntuitMachine))
+
+**ツール利用がBongard推論課題の視覚規則導出に役立つか試します**
+
+作者は同じ比較でGrok 4.5とMuse Spark 1.1が解けなかった問題をKimi K3がツールで解いたと報告しています。一般ベンチマークではなく1利用者の結果です
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-53"></a>
+### Case 53: [フロントエンドの美的感覚と3DデザインをGPT-5.6 Solと比較する](https://x.com/filicroval/status/2077736407506751952) (by [@filicroval](https://x.com/filicroval))
+
+**限定的な比較で機能、視覚的な好み、洗練度、3D表現を確認します**
+
+作者はKimi K3を視覚的な好み、洗練度、3D能力で高く評価しています。主観的かつ課題固有の評価です
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-57"></a>
+### Case 57: [3モデルのウェブサイト生成を比較する](https://x.com/pengchujin/status/2077962916226298340) (by [@pengchujin](https://x.com/pengchujin))
+
+**可視化された出力を使い、1テストでKimi K3、Fable 5、GPT-5.6 Solを比較します**
+
+作者は3モデルの比較を提示しています。完全なプロンプトや採点基準はありません
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-59"></a>
+### Case 59: [手続き型3Dゲーム生成と費用を比較する](https://x.com/adxtyahq/status/2077958193511362856) (by [@adxtyahq](https://x.com/adxtyahq))
+
+**プロンプトを固定し、ルーレット、スロット、ピンボールと各実行費用を確認します**
+
+公開元は複数モデル比較でKimi K3を0.71ドル、Grok 4.5を0.30ドルなどと報告しています。順位と費用は公開元の実行結果です
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-69"></a>
+### Case 69: [3D兵器庫シーンの密度と照明を比較する](https://x.com/hakki_alkan/status/2077887013332636032) (by [@hakki_alkan](https://x.com/hakki_alkan))
+
+**限定的なKimi K3とOpus 4.8の比較で、物体密度、照明、シーン詳細を確認します**
+
+ソースはKimi K3が商品棚、箱、現実的な照明を備えた詳細な兵器庫を、Opus 4.8が疎な部屋を生成したと報告しています。独立ベンチマークではなく第三者報告です
+
+Type: Evaluation | Date: 2026-07-16
 
 ---
 
@@ -239,8 +993,58 @@ Kimi K3の成果を公開した皆さまに感謝します
 - [@HarshithLucky3](https://x.com/HarshithLucky3)
 - [@chetaslua](https://x.com/chetaslua)
 - [@abhinavflac](https://x.com/abhinavflac)
-- [@scaling01](https://x.com/scaling01)
-- [@mitsuhiko](https://x.com/mitsuhiko)
+- [@bridgemindai](https://x.com/bridgemindai)
+- [@Whats_AI](https://x.com/Whats_AI)
+- [@chongdashu](https://x.com/chongdashu)
+- [@MrAhmadAwais](https://x.com/MrAhmadAwais)
+- [@bijanbowen](https://x.com/bijanbowen)
+- [@CommandCodeAI](https://x.com/CommandCodeAI)
 - [@emollick](https://x.com/emollick)
+- [@nicky_sap](https://x.com/nicky_sap)
+- [@Lentils80](https://x.com/Lentils80)
+- [@scottstts](https://x.com/scottstts)
+- [@aisearchio](https://x.com/aisearchio)
+- [@gmi_cloud](https://x.com/gmi_cloud)
+- [@karminski3](https://x.com/karminski3)
+- [@VORTEX_Promos](https://x.com/VORTEX_Promos)
+- [@rohanpaul_ai](https://x.com/rohanpaul_ai)
+- [@mirochill](https://x.com/mirochill)
+- [@aimlapi](https://x.com/aimlapi)
+- [@minchoi](https://x.com/minchoi)
+- [@doutorcaleb](https://x.com/doutorcaleb)
+- [@adxtyahq](https://x.com/adxtyahq)
+- [@higgsfield_ai](https://x.com/higgsfield_ai)
+- [@AlicanKiraz0](https://x.com/AlicanKiraz0)
+- [@1littlecoder](https://x.com/1littlecoder)
+- [@op7418](https://x.com/op7418)
+- [@adamuchigabriel](https://x.com/adamuchigabriel)
+- [@s_batzoglou](https://x.com/s_batzoglou)
+- [@servasyy_ai](https://x.com/servasyy_ai)
+- [@filicroval](https://x.com/filicroval)
+- [@doodlestein](https://x.com/doodlestein)
+- [@dejavucoder](https://x.com/dejavucoder)
+- [@Angaisb_](https://x.com/Angaisb_)
+- [@AngryTomtweets](https://x.com/AngryTomtweets)
+- [@Alezander907](https://x.com/Alezander907)
+- [@teortaxesTex](https://x.com/teortaxesTex)
+- [@jun_song](https://x.com/jun_song)
+- [@ridark_eth](https://x.com/ridark_eth)
+- [@naymur_dev](https://x.com/naymur_dev)
+- [@tphuang](https://x.com/tphuang)
+- [@TokenGremlin](https://x.com/TokenGremlin)
+- [@IntuitMachine](https://x.com/IntuitMachine)
+- [@wangfeng0315](https://x.com/wangfeng0315)
+- [@twid](https://x.com/twid)
+- [@pengchujin](https://x.com/pengchujin)
+- [@aayushman2703](https://x.com/aayushman2703)
+- [@goncalo_canhoto](https://x.com/goncalo_canhoto)
+- [@LinearUncle](https://x.com/LinearUncle)
+- [@gagarot200](https://x.com/gagarot200)
+- [@MinLiBuilds](https://x.com/MinLiBuilds)
+- [@izutorishima](https://x.com/izutorishima)
+- [@X2worldtech](https://x.com/X2worldtech)
+- [@Satvik_Pen](https://x.com/Satvik_Pen)
+- [@hakki_alkan](https://x.com/hakki_alkan)
+- [@BrianMRey](https://x.com/BrianMRey)
 
-帰属や記述の訂正は公開ソースを添えてissueを作成してください
+*帰属や記述の訂正は公開ソースを添えてissueを作成してください*

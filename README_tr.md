@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/tr.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/tr-v2.png" alt="Ay manzarası ve EvoLink çağrısı içeren Türkçe Kimi K3 bannerı" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
 [![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
@@ -28,16 +28,16 @@ Kimi K3 için yüksek sinyalli kullanım örnekleri deposuna hoş geldiniz
 
 **Kamuya açık kaynaklara dayanan oyunları, 3D sahneleri, hareketli tasarımları, entegrasyonları, değerlendirmeleri ve pratik sınırları topluyoruz**
 
-İlk sürümdeki on örnek yalnızca sağlanan kaynak paketinden seçildi. Başlıklar ve yazarlar özgün kaynaklara bağlanır
+Sağlanan paketteki yüksek güvenli 70 örneğin tamamı dahil edildi; orta güvenli 31 örnek dışarıda bırakıldı. Başlıklar ve yazarlar özgün kaynaklara bağlanır
 
 [EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 Genel bakış
 
-- Üreticiler ve uygulayıcılardan seçilen 10 örnek
-- Oyunlar, Three.js, motion graphics, CLI, hız, vision ve ajan sınırları
+- Geniş görev kapsamına sahip yüksek güvenli 70 örneğin tamamı
+- Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi
 - Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur
-- Tekil gözlemler benchmark olarak sunulmaz
+- Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz
 
 > [!NOTE]
 > Somut kanıt önceliklidir; eksik prompt veya kurulum adımları yeniden oluşturulmaz
@@ -50,6 +50,19 @@ EvoLink tarafından belgelenen model kimliği `kimi-k3`; model sayfası ve Chat 
 2. [EvoLink API anahtarı oluştur veya yönet](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
 3. [EvoLink Kimi K3 API belgelerini aç](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
+```bash
+curl --request POST \
+  --url "https://direct.evolink.ai/v1/chat/completions" \
+  --header "Authorization: Bearer $EVOLINK_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "kimi-k3",
+    "messages": [
+      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
+    ]
+  }'
+```
+
 > [!IMPORTANT]
 > EvoLink model sayfası ve API belgeleri genel rotayı ve kimliği doğrular. Bu depo bağımsız ücretli API testi yaptığını iddia etmez
 
@@ -57,14 +70,39 @@ EvoLink tarafından belgelenen model kimliği `kimi-k3`; model sayfası ve Chat 
 
 | Section | Cases |
 |---|---|
-| [Etkileşimli oyunlar ve 3D](#games-3d) | 4 |
-| [Frontend ve hareketli tasarım](#frontend-motion) | 2 |
-| [Kodlama ve entegrasyonlar](#coding-integrations) | 2 |
-| [Değerlendirme ve sınırlar](#evaluation-limits) | 2 |
+| [Etkileşimli oyunlar ve 3D](#games-3d) | 22 |
+| [Frontend ve hareketli tasarım](#frontend-motion) | 15 |
+| [Kodlama ve entegrasyonlar](#coding-integrations) | 8 |
+| [Değerlendirme ve sınırlar](#evaluation-limits) | 25 |
 | [Teşekkürler](#acknowledge) | Katkılar ve düzeltmeler |
 
 <a id="games-3d"></a>
 ## 🎮 Etkileşimli oyunlar ve 3D
+
+| Case | What it shows | Type |
+|---|---|---|
+| [Tek prompt ile voxel pod racer oluştur](#case-1) | Kısa bir fikirle yarış prototipi kur ve sonraki sürümü sınırla | Demo |
+| [Frogger'ı aynı prompt ile karşılaştır](#case-2) | Model farklarını görmek için promptu sabit tut | Evaluation |
+| [Frogger ve oynanış kaydını üret](#case-3) | Oyunu ve kayıt akışını ayrı tek geçişlerle dene | Demo |
+| [Three.js ile uçak gemisi prototiple](#case-4) | Belirli bir kalkış ve dönüş sahnesiyle etkileşimli 3D'yi dene | Demo |
+| [Ajan araçlarıyla Paper Mario esintili bir oyun kur](#case-9) | Hem 2D hem de 3D oyun öğeleri üretmek için Kimi K3'ü bir ajan harness'ı ve varlık araçlarıyla birleştir | Demo |
+| [Metroda geçen bir birinci şahıs nişancı oyunu üret](#case-11) | Üretilen birinci şahıs nişancı sonucunu incelemek için somut bir metro ortamı kullan | Demo |
+| [Blender MCP ile V8 motoru modelle](#case-19) | Ayrıntılı mekanik 3D model üretmek için Blender MCP ve tek bir istek kullan | Integration |
+| [Tek referanstan oynanabilir savaş arenası kur](#case-23) | Eksiksiz oynanabilir bir arenanın tek geçişte üretimini denemek için tek referans kullan | Demo |
+| [Üç kendi kendine oynayan retro oyunu HTML dosyaları olarak kur](#case-24) | Bağımsız HTML oyun dosyalarında grafik, düşman, kural ve özerk oynanış şartı koy | Benchmark |
+| [Tek geçişte bukalemun saklambaç oyunu kur](#case-27) | Renk eşleme, prosedürel bölgeler, ses ve çok turlu skor içeren tek dosyalı oyun üret | Benchmark |
+| [Ajan araç zinciriyle Paper Mario benzeri 2.5D oyun kur](#case-36) | 2.5D oyun workflow'u oluşturmak için Kimi K3'ü Grok Build veya Claude Code ve Spriterrific ile kullan | Tutorial |
+| [Tarayıcı tabanlı 3D wuxia RPG kur](#case-43) | Yakın dövüş, görevler, envanter, hava durumu, iç mekânlar, Blender ortam işi ve uyarlanmış varlıkları birleştir | Demo |
+| [Tarayıcıda çok oyunculu Minecraft benzeri oyun kur](#case-44) | Süre ve maliyeti sınırlandırılmış bir çalışmada oynanabilir çevrimiçi çok oyunculu tarayıcı oyunu üret | Demo |
+| [Bölünmüş ekranlı işbirlikçi tarayıcı oyununu yeniden kur](#case-48) | Tek istekle tarayıcı tabanlı bölünmüş ekran işbirliği ve gerçek zamanlı çevre etkileşimi üret | Demo |
+| [Command Code Design Mode ile oynanabilir oyun üret](#case-49) | Tek geçişli oyun yapımı için Command Code'un design komutunu kullan ve sonucun oynanabilir olup olmadığını kaydet | Demo |
+| [Bütünlüklü bir wuxia tarayıcı RPG'si oluştur](#case-51) | Hareket, savaş, görevler, envanter, hava, keşif ve 3D ortam işini tek oyunda birleştir | Demo |
+| [Oynanabilir Hollow Knight crossover'ı oluştur](#case-54) | Knight ile Kimi arasında oynanabilir savaş oluşturmak için mevcut oyun varlıklarını kullan | Demo |
+| [Tek geçişte Fall Guys tarzı 3D tarayıcı oyunu kur](#case-60) | Oynanabilir 3D engel oyunu üretmek ve projeyi incelemeye açmak için tek geçişli istek kullan | Demo |
+| [Kıyamet sonrası Lizbon FPS'si kurup kendi kendine test ettir](#case-61) | Oynanabilir FPS sunmadan önce test eden, ekran görüntüsü alan ve yineleyen tek promptlu maksimum efor çalışması kullan | Demo |
+| [Basit istekten Animal Crossing tarzı oyun üret](#case-63) | Oynanabilirlik, gameplay loop ve parallax efektlerini incelemek için minimal oyun brief'i kullan | Demo |
+| [Tek cümlelik brief'ten Mario tarzı oyun üret](#case-65) | Oynanabilirlik, bölüm tasarımı, pixel art ve parallax'ı incelemek için minimal tek geçişli istek kullan | Demo |
+| [Çalışan bir zombi birinci şahıs nişancı oyunu kur](#case-67) | Eksiksiz oynanabilir FPS eserini incelemek için somut bir zombi nişancı hedefi kullan | Demo |
 
 <a id="case-1"></a>
 ### Case 1: [Tek prompt ile voxel pod racer oluştur](https://x.com/ivanfioravanti/status/2077763009657627055) (by [@ivanfioravanti](https://x.com/ivanfioravanti))
@@ -132,9 +170,228 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-9"></a>
+### Case 9: [Ajan araçlarıyla Paper Mario esintili bir oyun kur](https://x.com/chongdashu/status/2077886028866531655) (by [@chongdashu](https://x.com/chongdashu))
+
+**Hem 2D hem de 3D oyun öğeleri üretmek için Kimi K3'ü bir ajan harness'ı ve varlık araçlarıyla birleştir**
+
+Üretici Paper Mario esintili oyunda Kimi K3 ile Grok Build'i, 2D varlıklar için Spriterrific'i ve 3D varlıklar için geometriyi kullandığını bildiriyor. Kaynak araç ve skill kullanımını gösteriyor ancak yeniden kullanılabilir tam prompt yayımlamıyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-11"></a>
+### Case 11: [Metroda geçen bir birinci şahıs nişancı oyunu üret](https://x.com/bijanbowen/status/2077881805751873997) (by [@bijanbowen](https://x.com/bijanbowen))
+
+**Üretilen birinci şahıs nişancı sonucunu incelemek için somut bir metro ortamı kullan**
+
+Üretici Kimi K3'e atfedilen bir metro FPS gösteriyor ve influencer statüsünün sonucu etkileyip etkilemediğinden emin olmadığını açıkça belirtiyor. Prompt veya yeniden üretilebilir workflow sağlanmıyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-19"></a>
+### Case 19: [Blender MCP ile V8 motoru modelle](https://x.com/aisearchio/status/2077962156147146925) (by [@aisearchio](https://x.com/aisearchio))
+
+**Ayrıntılı mekanik 3D model üretmek için Blender MCP ve tek bir istek kullan**
+
+İncelemeci, Kimi K3'ün Blender MCP ile tek prompttan eksiksiz bir V8 motoru ürettiğini bildiriyor. Gönderi daha kapsamlı incelemeye bağlantı verse de sağlanan kayıtta tam prompt yok
+
+Type: Integration | Date: 2026-07-17
+
+---
+
+<a id="case-23"></a>
+### Case 23: [Tek referanstan oynanabilir savaş arenası kur](https://x.com/VORTEX_Promos/status/2077879705378730074) (by [@VORTEX_Promos](https://x.com/VORTEX_Promos))
+
+**Eksiksiz oynanabilir bir arenanın tek geçişte üretimini denemek için tek referans kullan**
+
+Üretici Kimi K3'ün tek referanstan tek geçişte oynanabilir savaş arenası ürettiğini bildiriyor. Gönderide ayrı bir leaderboard iddiası da var ancak somut kullanım örneği gösterilen arena eseridir
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-24"></a>
+### Case 24: [Üç kendi kendine oynayan retro oyunu HTML dosyaları olarak kur](https://x.com/rohanpaul_ai/status/2077889084761206860) (by [@rohanpaul_ai](https://x.com/rohanpaul_ai))
+
+**Bağımsız HTML oyun dosyalarında grafik, düşman, kural ve özerk oynanış şartı koy**
+
+Kaynak, modellerin Road Fighter, Battle City ve Q*bert'i kendi kendine oynayan HTML dosyaları olarak kurduğu Atomic Chat karşılaştırmasını bildiriyor. Maliyet ve kalite karşılaştırması yayıncıya aittir ve burada bağımsız olarak yeniden üretilmemiştir
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-27"></a>
+### Case 27: [Tek geçişte bukalemun saklambaç oyunu kur](https://x.com/aimlapi/status/2077898742179459274) (by [@aimlapi](https://x.com/aimlapi))
+
+**Renk eşleme, prosedürel bölgeler, ses ve çok turlu skor içeren tek dosyalı oyun üret**
+
+AIMLAPI aynı promptla tek geçişli saklambaç karşılaştırması bildiriyor ve Kimi K3 için $3.11, Fable 5 için $12.23 maliyet listeliyor. Özellik ve maliyet iddiaları sağlayıcı sonuçlarıdır
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-36"></a>
+### Case 36: [Ajan araç zinciriyle Paper Mario benzeri 2.5D oyun kur](https://x.com/chongdashu/status/2077981621223837739) (by [@chongdashu](https://x.com/chongdashu))
+
+**2.5D oyun workflow'u oluşturmak için Kimi K3'ü Grok Build veya Claude Code ve Spriterrific ile kullan**
+
+Üretici Grok Build ve Kimi K3 ile tam walkthrough sağlıyor ve Spriterrific ile sprite üretimini gösteriyor. Kaynak araçları tanımlıyor ancak yeniden kullanılabilir tam promptlar sunmuyor
+
+Type: Tutorial | Date: 2026-07-17
+
+---
+
+<a id="case-43"></a>
+### Case 43: [Tarayıcı tabanlı 3D wuxia RPG kur](https://x.com/AngryTomtweets/status/2077868163136450619) (by [@AngryTomtweets](https://x.com/AngryTomtweets))
+
+**Yakın dövüş, görevler, envanter, hava durumu, iç mekânlar, Blender ortam işi ve uyarlanmış varlıkları birleştir**
+
+Kaynak yakın dövüş, görev, envanter, dinamik hava ve keşfedilebilir iç mekânlara sahip Kimi K3 tarayıcı RPG'si; ayrıca Blender modelleme, collision iyileştirme, PBR yeniden dokulama ve uyarlanmış açık varlıklar bildiriyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-44"></a>
+### Case 44: [Tarayıcıda çok oyunculu Minecraft benzeri oyun kur](https://x.com/Alezander907/status/2077926014710407407) (by [@Alezander907](https://x.com/Alezander907))
+
+**Süre ve maliyeti sınırlandırılmış bir çalışmada oynanabilir çevrimiçi çok oyunculu tarayıcı oyunu üret**
+
+Üretici Kimi K3'ün bir saatte $6.57 maliyetle tarayıcıda oynanabilir çok oyunculu Minecraft benzeri oyun yaptığını bildiriyor. Bunlar tek esere ait öz bildirime dayalı çalışma rakamlarıdır
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-48"></a>
+### Case 48: [Bölünmüş ekranlı işbirlikçi tarayıcı oyununu yeniden kur](https://x.com/ridark_eth/status/2077882889803378969) (by [@ridark_eth](https://x.com/ridark_eth))
+
+**Tek istekle tarayıcı tabanlı bölünmüş ekran işbirliği ve gerçek zamanlı çevre etkileşimi üret**
+
+Üretici Kimi K3'ün tek promptla It Takes Two esintili, Mario ve Luigi'nin bölünmüş ekranda ve çevreyle gerçek zamanlı etkileştiği tarayıcı oyunu ürettiğini bildiriyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-49"></a>
+### Case 49: [Command Code Design Mode ile oynanabilir oyun üret](https://x.com/naymur_dev/status/2077873562661335207) (by [@naymur_dev](https://x.com/naymur_dev))
+
+**Tek geçişli oyun yapımı için Command Code'un design komutunu kullan ve sonucun oynanabilir olup olmadığını kaydet**
+
+Üretici Command Code design mode ile tek geçişli karşılaştırma yaptığını ve Kimi K3 çalışmasının $0.038 karşılığında oynanabilir oyun ürettiğini bildiriyor. Bu maliyet ve kalite sonucu öz bildirime dayanır
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-51"></a>
+### Case 51: [Bütünlüklü bir wuxia tarayıcı RPG'si oluştur](https://x.com/TokenGremlin/status/2077855657068310620) (by [@TokenGremlin](https://x.com/TokenGremlin))
+
+**Hareket, savaş, görevler, envanter, hava, keşif ve 3D ortam işini tek oyunda birleştir**
+
+Kaynak yakın dövüş, görevler, envanter, dinamik hava, keşfedilebilir iç mekânlar ve bütünlüklü 3D oynanış yapısını birleştiren Kimi K3 wuxia tarzı tarayıcı RPG'si bildiriyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-54"></a>
+### Case 54: [Oynanabilir Hollow Knight crossover'ı oluştur](https://x.com/wangfeng0315/status/2077933531200991583) (by [@wangfeng0315](https://x.com/wangfeng0315))
+
+**Knight ile Kimi arasında oynanabilir savaş oluşturmak için mevcut oyun varlıklarını kullan**
+
+Kimi'de çalıştığını belirten üretici, Hollow Knight varlıklarından Knight'ın Kimi ile savaştığı bir oyun kurduğunu bildiriyor ve açık oynama bağlantısı sunuyor. Atıf ve değerlendirmede bu bağlantı dikkate alınmalıdır
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-60"></a>
+### Case 60: [Tek geçişte Fall Guys tarzı 3D tarayıcı oyunu kur](https://x.com/aayushman2703/status/2077857886441783526) (by [@aayushman2703](https://x.com/aayushman2703))
+
+**Oynanabilir 3D engel oyunu üretmek ve projeyi incelemeye açmak için tek geçişli istek kullan**
+
+Üretici Kimi K3'ün tek geçişte Fall Guys tarzı tarayıcı oyunu yaptığını ve prompt ile GitHub projesinin kaynakta bağlantılı olduğunu bildiriyor. Bu kayıt promptu yeniden yayımlamıyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-61"></a>
+### Case 61: [Kıyamet sonrası Lizbon FPS'si kurup kendi kendine test ettir](https://x.com/goncalo_canhoto/status/2077863166655037668) (by [@goncalo_canhoto](https://x.com/goncalo_canhoto))
+
+**Oynanabilir FPS sunmadan önce test eden, ekran görüntüsü alan ve yineleyen tek promptlu maksimum efor çalışması kullan**
+
+Üretici Kimi K3'ün yaklaşık bir saatte, tekrarlanan testler, ekran görüntüleri ve yinelemelerle oynanabilir Apocalyptic Lisbon tarayıcı FPS'si ürettiğini bildiriyor. Süre ve süreç ayrıntıları öz bildirime dayanır
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-63"></a>
+### Case 63: [Basit istekten Animal Crossing tarzı oyun üret](https://x.com/gagarot200/status/2077949230287896830) (by [@gagarot200](https://x.com/gagarot200))
+
+**Oynanabilirlik, gameplay loop ve parallax efektlerini incelemek için minimal oyun brief'i kullan**
+
+Üretici Kimi K3'ün çok basit prompttan gameplay loop ve parallax efektleri içeren tamamen oynanabilir Animal Crossing tarzı oyun ürettiğini bildiriyor. Tam ifade sağlanan kayıtta yok
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-65"></a>
+### Case 65: [Tek cümlelik brief'ten Mario tarzı oyun üret](https://x.com/izutorishima/status/2077939370154475992) (by [@izutorishima](https://x.com/izutorishima))
+
+**Oynanabilirlik, bölüm tasarımı, pixel art ve parallax'ı incelemek için minimal tek geçişli istek kullan**
+
+Üretici Kimi K3'ün tek brief'ten belirgin hatasız çalışan, bölüm yapısı ve parallax içeren Mario tarzı oyun ürettiğini bildiriyor. Aynı rapor müzik ve grafik kalitesini eleştiriyor
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-67"></a>
+### Case 67: [Çalışan bir zombi birinci şahıs nişancı oyunu kur](https://x.com/X2worldtech/status/2077902793449296203) (by [@X2worldtech](https://x.com/X2worldtech))
+
+**Eksiksiz oynanabilir FPS eserini incelemek için somut bir zombi nişancı hedefi kullan**
+
+Kaynak Kimi K3'e atfedilen tam çalışan bir zombi FPS gösteriyor. Prompt, uygulama ayrıntıları veya dış oynanış değerlendirmesi sunulmuyor
+
+> [!WARNING]
+> The original source permalink returned HTTP 404 during the 2026-07-17 audit. Attribution and evidence are preserved from the supplied high-confidence source package.
+
+Type: Demo | Date: 2026-07-16
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 Frontend ve hareketli tasarım
+
+| Case | What it shows | Type |
+|---|---|---|
+| [Etkileşimli motion frontend oluştur](#case-5) | Duraklatıldığında da etkileşimli kalan grafikler üret | Demo |
+| [Senkron hareketli reklam üret](#case-6) | Müzik, efekt ve hareket senkronunu kontrol et | Demo |
+| [Hareketli tasarımı bütünüyle kodla oluştur](#case-14) | Tek geçişli kodlama workflow'unun yardımcı üretim araçları olmadan hareketli tasarım üretip üretemediğini dene | Demo |
+| [Bir kişiyi araştırıp animasyonlu kişisel site kur](#case-15) | Geniş bir kişisel site brief'i ver; ardından modelin araştırma, planlama, yineleme ve tarayıcı doğrulamasını incele | Tutorial |
+| [Kara delik simülasyonu oluştur](#case-17) | Üretilmiş bir kara delik simülasyonunu incelemek için bilimsel görselleştirme görevi kullan | Demo |
+| [Karmaşık frontend modelleme, parçacıklar ve shader'ları dene](#case-22) | Tek geçişte modelleme hassasiyetini, parçacık efektlerini ve inline shader üretimini incelemek için açık bir frontend promptu kullan | Demo |
+| [Tek denemede prosedürel müzik aracı üret](#case-26) | Etkileşimli prosedürel müzik üretecinin tek geçişli üretimini dene ve görünür sonucu temkinli karşılaştır | Demo |
+| [İki görselden Three.js ürün sayfası oluştur](#case-33) | Ürün sunumu üretmek için iki referans görseli ve açık bir Three.js şartı kullan | Demo |
+| [Lüks bir ekmek kesici ve ürün sayfası tasarla](#case-39) | Ürün fikri, patlatılmış görünüm, gösterim ve landing page'i tek tasarım eserinde birleştir | Demo |
+| [On saniyelik özyinelemeli pelikan GIF'i üret](#case-45) | GIF'te anlatı sürekliliği ve özyinelemeyi incelemek için tamamen belirtilmiş döngülü animasyon brief'i kullan | Demo |
+| [BMW M4 CS'nin yandan görünüş SVG'sini üret](#case-55) | Vektör illüstrasyon çıktısını incelemek için belirli araç ve bakış açısı kullan | Demo |
+| [Ekran görüntüsü geri bildirimiyle Gargantua'yı yeniden oluştur](#case-58) | Bilimsel görselleştirmeyi teşhis edip geliştirmek için art arda ekran görüntülerini gözlem olarak kullan | Tutorial |
+| [Kara delik görselleştirmesini 62 ekran görüntüsüyle iyileştir](#case-66) | Çok sayıda yinelemede görsel simülasyonu okumak, teşhis etmek ve düzeltmek için ekran görüntüsü feedback loop'u kullan | Tutorial |
+| [Post-training için pazarlama PDF'i oluştur](#case-68) | Pazarlama belgesi üretmek için adı belirtilmiş ürün ve teslim formatı kullan | Demo |
+| [Tek promptla kullanıcı arayüzü oluştur](#case-70) | Eksiksiz UI tasarımı üretmek ve incelemek için tek istek kullan | Demo |
 
 <a id="case-5"></a>
 ### Case 5: [Etkileşimli motion frontend oluştur](https://x.com/chetaslua/status/2077749371144442022) (by [@chetaslua](https://x.com/chetaslua))
@@ -166,33 +423,249 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-14"></a>
+### Case 14: [Hareketli tasarımı bütünüyle kodla oluştur](https://x.com/chetaslua/status/2077952938564354503) (by [@chetaslua](https://x.com/chetaslua))
+
+**Tek geçişli kodlama workflow'unun yardımcı üretim araçları olmadan hareketli tasarım üretip üretemediğini dene**
+
+Üretici MCP, skill, araç, video üretimi veya özel prompt olmadan tamamen kodla yapılmış tek geçişli bir Kimi K3 hareketli tasarım sonucu bildiriyor. Tam prompt verilmemiş
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-15"></a>
+### Case 15: [Bir kişiyi araştırıp animasyonlu kişisel site kur](https://x.com/nicky_sap/status/2077857190707429411) (by [@nicky_sap](https://x.com/nicky_sap))
+
+**Geniş bir kişisel site brief'i ver; ardından modelin araştırma, planlama, yineleme ve tarayıcı doğrulamasını incele**
+
+Üretici Kimi K3'ün Nick Saponaro'yu araştırdığını ve geniş bir istekten planlama, test, yineleme ve tarayıcı kontrolleri içeren animasyonlu kişisel site ürettiğini bildiriyor. Sonuç, üreticinin kendi workflow gösterimidir
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-17"></a>
+### Case 17: [Kara delik simülasyonu oluştur](https://x.com/chetaslua/status/2077961850352971796) (by [@chetaslua](https://x.com/chetaslua))
+
+**Üretilmiş bir kara delik simülasyonunu incelemek için bilimsel görselleştirme görevi kullan**
+
+Üretici Kimi K3'e atfedilen bir kara delik simülasyonu gösteriyor ve gördüklerinin en iyisi olduğunu söylüyor. Görünür sonuç var; prompt, rubric veya bağımsız doğrulama yok
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-22"></a>
+### Case 22: [Karmaşık frontend modelleme, parçacıklar ve shader'ları dene](https://x.com/karminski3/status/2077889959223337099) (by [@karminski3](https://x.com/karminski3))
+
+**Tek geçişte modelleme hassasiyetini, parçacık efektlerini ve inline shader üretimini incelemek için açık bir frontend promptu kullan**
+
+Üretici hassas modelleme, parçacık efektleri ve karmaşık inline shader kodunu kapsayan tek geçişli Kimi K3 frontend sonucu bildiriyor ve test promptunun bağlantılı kaynakta açık olduğunu söylüyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-26"></a>
+### Case 26: [Tek denemede prosedürel müzik aracı üret](https://x.com/mirochill/status/2077723551331758478) (by [@mirochill](https://x.com/mirochill))
+
+**Etkileşimli prosedürel müzik üretecinin tek geçişli üretimini dene ve görünür sonucu temkinli karşılaştır**
+
+Üretici Kimi K3'ün tek denemede prosedürel müzik aracı ürettiğini ve bunu Fable 5 ile GPT-5.6 Sol sonuçlarından daha iyi bulduğunu bildiriyor. Bu, standart bir benchmark değil, üreticinin kendi test setidir
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-33"></a>
+### Case 33: [İki görselden Three.js ürün sayfası oluştur](https://x.com/1littlecoder/status/2077890296806031665) (by [@1littlecoder](https://x.com/1littlecoder))
+
+**Ürün sunumu üretmek için iki referans görseli ve açık bir Three.js şartı kullan**
+
+Üretici Kimi K3'ün iki görselden ürün sayfası tasarladığını ve özellikle istenen Three.js sürümünü ürettiğini bildiriyor. Ek prompt veya uygulama ayrıntısı yok
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-39"></a>
+### Case 39: [Lüks bir ekmek kesici ve ürün sayfası tasarla](https://x.com/filicroval/status/2077871090731221438) (by [@filicroval](https://x.com/filicroval))
+
+**Ürün fikri, patlatılmış görünüm, gösterim ve landing page'i tek tasarım eserinde birleştir**
+
+Üretici Kimi K3'ün giyotin tarzı ekmek kesici icat ettiğini, lüks ürün olarak sunduğunu ve patlatılmış görünüm ile gösterim içeren landing page hazırladığını bildiriyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-45"></a>
+### Case 45: [On saniyelik özyinelemeli pelikan GIF'i üret](https://x.com/1littlecoder/status/2077880380900937865) (by [@1littlecoder](https://x.com/1littlecoder))
+
+**GIF'te anlatı sürekliliği ve özyinelemeyi incelemek için tamamen belirtilmiş döngülü animasyon brief'i kullan**
+
+Kaynak bisiklete binen ve kamera yaklaşırken mesajla aynı videoyu alan pelikanı anlatan on saniyelik döngülü GIF promptunu içeriyor. Üretici Kimi K3 animasyonunu gösteriyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-55"></a>
+### Case 55: [BMW M4 CS'nin yandan görünüş SVG'sini üret](https://x.com/HarshithLucky3/status/2077765821380886942) (by [@HarshithLucky3](https://x.com/HarshithLucky3))
+
+**Vektör illüstrasyon çıktısını incelemek için belirli araç ve bakış açısı kullan**
+
+Üretici Kimi K3 Max'e atfedilen yandan görünüş BMW M4 CS SVG'si gösteriyor. Sağlanan kaynakta eser var ancak prompt veya üretim adımları yok
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-58"></a>
+### Case 58: [Ekran görüntüsü geri bildirimiyle Gargantua'yı yeniden oluştur](https://x.com/AngryTomtweets/status/2077868981659324444) (by [@AngryTomtweets](https://x.com/AngryTomtweets))
+
+**Bilimsel görselleştirmeyi teşhis edip geliştirmek için art arda ekran görüntülerini gözlem olarak kullan**
+
+Kaynak Kimi K3'ün Interstellar'daki Gargantua'yı kendi çektiği 62 ekran görüntüsüyle; her sonucu okuyup sorunları teşhis ederek ve yinelemeli davranarak yeniden oluşturduğunu bildiriyor
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-66"></a>
+### Case 66: [Kara delik görselleştirmesini 62 ekran görüntüsüyle iyileştir](https://x.com/TokenGremlin/status/2077855959201042645) (by [@TokenGremlin](https://x.com/TokenGremlin))
+
+**Çok sayıda yinelemede görsel simülasyonu okumak, teşhis etmek ve düzeltmek için ekran görüntüsü feedback loop'u kullan**
+
+Kaynak Kimi K3'ün Interstellar'daki Gargantua'yı 62 ekran görüntüsü boyunca çıktısını gözlemleyip geliştirerek yeniden kurduğunu bildiriyor. Bu, bağımsız fiziksel doğruluk değil bildirilen feedback loop'u gösterir
+
+Type: Tutorial | Date: 2026-07-16
+
+---
+
+<a id="case-68"></a>
+### Case 68: [Post-training için pazarlama PDF'i oluştur](https://x.com/Satvik_Pen/status/2077859673517023313) (by [@Satvik_Pen](https://x.com/Satvik_Pen))
+
+**Pazarlama belgesi üretmek için adı belirtilmiş ürün ve teslim formatı kullan**
+
+Üretici Kimi K3'ten Thinking Machines'in Inkling post-training ürünü hakkında pazarlama PDF'i istediğini, sonucu paylaştığını ve perde arkası süreci övdüğünü bildiriyor. Prompt veya değerlendirme ölçütleri sunulmuyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
+<a id="case-70"></a>
+### Case 70: [Tek promptla kullanıcı arayüzü oluştur](https://x.com/BrianMRey/status/2077891942088671689) (by [@BrianMRey](https://x.com/BrianMRey))
+
+**Eksiksiz UI tasarımı üretmek ve incelemek için tek istek kullan**
+
+Üretici tek promptlu Kimi K3 çalışmasına atfedilen UI tasarımını gösteriyor ve son derece olumlu öznel değerlendirme yapıyor. Tam prompt ve rubric sunulmuyor
+
+Type: Demo | Date: 2026-07-16
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 Kodlama ve entegrasyonlar
 
-<a id="case-7"></a>
-### Case 7: [Kimi CLI üzerinden Kimi K3'e eriş](https://x.com/TheAhmadOsman/status/2077750074608644127) (by [@TheAhmadOsman](https://x.com/TheAhmadOsman))
+| Case | What it shows | Type |
+|---|---|---|
+| [İşlevsel macOS içeren sanal MacBook kur](#case-18) | Three.js donanım render'ını etkileşimli bir tarayıcı işletim sistemi simülasyonuyla birleştir | Demo |
+| [DSL'den PTX'e GPU derleyicisi geliştir](#case-25) | DSL, compiler pass'leri, PTX üretimi ve Tensor Core yolunu kapsayan uçtan uca derleyici görevi kullan | Demo |
+| [WebGL2'de gerçek zamanlı kara delik raytracer'ı kur](#case-32) | Tek HTML dosyasında yerel WebGL2 geodesic raytracer'ın tek promptla üretimini dene | Benchmark |
+| [mGBA WASM çevresinde Game Boy Advance emülatörü kur](#case-46) | Lisanslı 3D model ve gerçek emülatör çekirdeğini birleştir; ardından arayüz ve oynanışı özyinelemeli olarak geliştir | Integration |
+| [Çince kaynaklardan birden çok konuyu araştır](#case-50) | Model kuşakları arasında kapsamlılık ve gecikmeyi karşılaştırmak için uzun süren araştırma görevleri kullan | Evaluation |
+| [Çalışan uygulamalarla macOS'u tarayıcıda klonla](#case-56) | Müzik, tarayıcı ve email uygulamalarını içeren tarayıcı işletim sistemi simülasyonu kur | Demo |
+| [Çalışan FaceTime içeren macOS simülasyonu kur](#case-62) | Üretilmiş bir uygulama etkileşiminin çalışıp çalışmadığını sınamak için sanal işletim sistemi görevi kullan | Demo |
+| [Çift görevli frontend efekt karşılaştırıcısı ekle](#case-64) | Tamamlanmış iki görevi seçen, yan yana gösteren, görünümleri ve etkileşimleri senkronlayan araç kur | Tutorial |
 
-**CLI kullanmadan önce güncel belge ve model seçiciyi kontrol et**
+<a id="case-18"></a>
+### Case 18: [İşlevsel macOS içeren sanal MacBook kur](https://x.com/scottstts/status/2077890054299541890) (by [@scottstts](https://x.com/scottstts))
 
-Üretici Kimi CLI desteğini duyuruyor. Depo kurulum veya kimlik doğrulama adımlarını tahmin etmiyor
+**Three.js donanım render'ını etkileşimli bir tarayıcı işletim sistemi simülasyonuyla birleştir**
 
-<img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-07.jpg" alt="Case 7 source media" height="360">
+Kaynak, Kimi K3'ün Three.js içinde işlevsel macOS tarzı ortama sahip sanal bir MacBook oluşturduğunu bildiriyor. Eser gösteriliyor ancak uygulama adımları sunulmuyor
 
-Type: Integration | Date: 2026-07-16
+Type: Demo | Date: 2026-07-16
 
 ---
 
-<a id="case-8"></a>
-### Case 8: [Moonshot API ile OpenRouter hızını gözle](https://x.com/scaling01/status/2077777932341092422) (by [@scaling01](https://x.com/scaling01))
+<a id="case-25"></a>
+### Case 25: [DSL'den PTX'e GPU derleyicisi geliştir](https://x.com/rohanpaul_ai/status/2077886618657231220) (by [@rohanpaul_ai](https://x.com/rohanpaul_ai))
 
-**Sağlayıcı, rota ve saniyedeki token değerini kaydet**
+**DSL, compiler pass'leri, PTX üretimi ve Tensor Core yolunu kapsayan uçtan uca derleyici görevi kullan**
 
-Bir kullanıcı saniyede 28 token gözlemliyor. Bu tek gözlemdir, benchmark veya garanti değildir
+Kaynak, Kimi K3'ün DSL ve pass'lerinden PTX üretimine kadar sıfırdan GPU derleyicisi yaptığını ve Tensor Core yolunu Triton ile karşılaştırdığını bildiriyor. Sağlanan kayıtta bağımsız benchmark ayrıntıları yok
 
-<img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-08.jpg" alt="Case 8 source media" height="360">
+Type: Demo | Date: 2026-07-16
 
-Type: Evaluation | Date: 2026-07-16
+---
+
+<a id="case-32"></a>
+### Case 32: [WebGL2'de gerçek zamanlı kara delik raytracer'ı kur](https://x.com/AlicanKiraz0/status/2077885419744612597) (by [@AlicanKiraz0](https://x.com/AlicanKiraz0))
+
+**Tek HTML dosyasında yerel WebGL2 geodesic raytracer'ın tek promptla üretimini dene**
+
+Yazar, yerel WebGL2'de çalışan tek dosyalı kara delik ışık bükülmesi raytracer'ı gerektiren bir coding benchmark tanımlıyor. Kayıt görevi ve katılan modelleri gösteriyor ancak tam bağımsız sonuç denetimi sunmuyor
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-46"></a>
+### Case 46: [mGBA WASM çevresinde Game Boy Advance emülatörü kur](https://x.com/teortaxesTex/status/2077925090168062272) (by [@teortaxesTex](https://x.com/teortaxesTex))
+
+**Lisanslı 3D model ve gerçek emülatör çekirdeğini birleştir; ardından arayüz ve oynanışı özyinelemeli olarak geliştir**
+
+Belirtilen Kimi K3 projesi lisanslı AGB-001 modelini uyarlar, mGBA WASM çekirdeğini entegre eder ve arayüz ile oynanışı recursive self-improvement yoluyla geliştirir. Gönderi bağımsız yeniden üretim değil proje açıklaması aktarıyor
+
+Type: Integration | Date: 2026-07-17
+
+---
+
+<a id="case-50"></a>
+### Case 50: [Çince kaynaklardan birden çok konuyu araştır](https://x.com/tphuang/status/2077911994607239400) (by [@tphuang](https://x.com/tphuang))
+
+**Model kuşakları arasında kapsamlılık ve gecikmeyi karşılaştırmak için uzun süren araştırma görevleri kullan**
+
+Yazar Kimi K3'ü Çince kaynaklarla birçok araştırma konusunda test ettiğini, K2.6'dan daha kapsamlı ancak daha yavaş bulduğunu bildiriyor. Gönderi o sıradaki yoğun hizmet talebini de belirtiyor
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-56"></a>
+### Case 56: [Çalışan uygulamalarla macOS'u tarayıcıda klonla](https://x.com/twid/status/2077924755357974989) (by [@twid](https://x.com/twid))
+
+**Müzik, tarayıcı ve email uygulamalarını içeren tarayıcı işletim sistemi simülasyonu kur**
+
+Kaynak Kimi K3 ile müzik, tarayıcı, email ve diğer işlevlere sahip tarayıcı tabanlı macOS klonu yapıldığını bildiriyor. Uygulama ayrıntıları sağlanmıyor
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-62"></a>
+### Case 62: [Çalışan FaceTime içeren macOS simülasyonu kur](https://x.com/LinearUncle/status/2077919552239997078) (by [@LinearUncle](https://x.com/LinearUncle))
+
+**Üretilmiş bir uygulama etkileşiminin çalışıp çalışmadığını sınamak için sanal işletim sistemi görevi kullan**
+
+Üretici Kimi K3'e atfedilen macOS tarzı ortamı gösteriyor ve FaceTime özelliğinin çalıştığını bildiriyor. Kurulum veya doğrulama adımları sunulmuyor
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-64"></a>
+### Case 64: [Çift görevli frontend efekt karşılaştırıcısı ekle](https://x.com/MinLiBuilds/status/2077939461510615376) (by [@MinLiBuilds](https://x.com/MinLiBuilds))
+
+**Tamamlanmış iki görevi seçen, yan yana gösteren, görünümleri ve etkileşimleri senkronlayan araç kur**
+
+Üretici Kimi K3'ten görev seçimi, çift tarayıcı paneli, object ve roaming modları, senkron bakış açıları ve etkileşim testleri içeren frontend karşılaştırma workflow'u istediğini bildiriyor. Gönderi daha geniş model sınırlarını da belirtiyor
+
+Type: Tutorial | Date: 2026-07-17
 
 ---
 
@@ -200,25 +673,306 @@ Type: Evaluation | Date: 2026-07-16
 <a id="evaluation-limits"></a>
 ## 🧪 Değerlendirme ve sınırlar
 
-<a id="case-9"></a>
-### Case 9: [Vision kalitesini kendi işinde dene](https://x.com/mitsuhiko/status/2077770239937282526) (by [@mitsuhiko](https://x.com/mitsuhiko))
+| Case | What it shows | Type |
+|---|---|---|
+| [BridgeBench lav lambası görevinde frontend tasarımını karşılaştır](#case-7) | BridgeBench lav lambası görevini evrensel sıralama yerine sınırları belli tek bir frontend tasarım karşılaştırması olarak kullan | Benchmark |
+| [Editoryal sesle senaryo yazımını ölç](#case-8) | Açıkça tanımlanmış bir iç benchmark içinde editoryal sese uyumu, göreli sıralamayı ve senaryo başına maliyeti ölç | Benchmark |
+| [Flappy türü oyunların tasarımını, maliyetini ve zorluğunu karşılaştır](#case-10) | Üretilen oyunları karşılaştırırken zorluk ayarlarını, maliyeti, tasarımı ve oynanış özelliklerini kaydet | Benchmark |
+| [Oyun tasarımını aynı tasarım promptuyla karşılaştır](#case-12) | Tasarım promptunu sabit tut; tempo, tasarım anlayışı ve oynanış hissini ayrı ayrı incele | Benchmark |
+| [İstatistiksel denetimde bağımsız inceleme şartı koy](#case-13) | Bulgulara güvenmeden önce modelin istatistiksel denetimini bağımsız uzman veya başka bir model incelemesiyle eşleştir | Limit |
+| [Yavaş ama güçlü bir frontend çalışmasını değerlendir](#case-16) | Bir frontend görevini test ederken çıktı kalitesiyle birlikte tamamlanma süresini de kaydet | Evaluation |
+| [Polisiye yazımını önceden sezdirme hataları açısından dene](#case-20) | Üretilen bir gizemin ipuçları, kapalılık ve önceden sezdirme arasında denge kurup kurmadığını değerlendir | Limit |
+| [Millennium Falcon modelleme ve animasyonunu karşılaştır](#case-21) | 3D modelleme, animasyon, süre ve maliyeti karşılaştırmak için eşleşen stil istekleri ve efor ayarları kullan | Benchmark |
+| [On Kimi K3 projesinden oluşan koleksiyonu incele](#case-28) | Ayrı ayrı doğrulanacak somut eserleri keşfetmek için bağlantılı proje derlemesini kullan | Evaluation |
+| [Gelişmiş bir landing page'i dört modelde karşılaştır](#case-29) | Landing page isteğini sabit tut; model çıktılarında animasyon derinliğini ve tamamlanmayı incele | Evaluation |
+| [Retro oyun mekaniklerini ve maliyetini ölç](#case-30) | Aynı retro oyun görevlerinde oynanış, fizik, mekanik, özerk davranış, token kullanımı ve maliyeti karşılaştır | Benchmark |
+| [Oyun üretimini Fable 5 ile karşılaştır](#case-31) | Yan yana üretilmiş oyun örneğini geniş model hükmü değil dar bir değerlendirme olarak kullan | Evaluation |
+| [Karmaşık frontend ve geliştirme görevlerini Opus 4.8 ile karşılaştır](#case-34) | Bir modeli evrensel olarak üstün ilan etmek yerine kazanım ve kayıpları görmek için birden çok karmaşık kodlama görevi kullan | Evaluation |
+| [Benchmark'ları ve landing page testini incele](#case-35) | İki kanıt türünü ayrı tutarak benchmark bağlamını somut landing page üretim testiyle birleştir | Evaluation |
+| [Grafikten formüle görevlerle tümevarım muhakemesini ölç](#case-37) | Birinci dereceden tümevarım görevlerinde doğruluk, holdout davranışı ve formül karmaşıklığını ölç | Benchmark |
+| [Bildirilen oyunları, landing page'leri, 3D işleri ve uzun bağlamı incele](#case-38) | Somut eserleri karşılaştırmak ve hız sınırlarını maliyet iddialarıyla birlikte belirtmek için çok kaynaklı derleme kullan | Evaluation |
+| [Karmaşık bir planı denetle ve çözümlerine itiraz et](#case-40) | Hafife alınmış bulguları, yanlış çözümleri ve reddedilmesi gereken sonuçları bulmak için ikinci model kullan | Evaluation |
+| [PPO tarzı reinforcement-learning ASCII diyagramlarını karşılaştır](#case-41) | ASCII diyagram promptunu sabit tut ve modellerin reinforcement-learning döngüsünü nasıl temsil ettiğini karşılaştır | Evaluation |
+| [Kapasite hatalarını izleyerek Blender'da modelle](#case-42) | Yalnız eseri değil hizmet güvenilirliğini de değerlendirerek kısmi Blender ilerlemesini incele | Limit |
+| [Bir arenada Flappy Bird üretimini karşılaştır](#case-47) | İki Flappy Bird sonucunu karşılaştırmak için arena görevi kullan ve yargıyı göreve özgü tut | Evaluation |
+| [Bir araçla Bongard görsel tümevarım problemini çöz](#case-52) | Bongard muhakeme görevinde araç kullanımının görsel kuralı çıkarmaya yardım edip etmediğini dene | Evaluation |
+| [Frontend zevkini ve 3D tasarımı GPT-5.6 Sol ile karşılaştır](#case-53) | Sınırları belli frontend karşılaştırmasında özellikleri, görsel zevki, zarafeti ve 3D uygulamayı incele | Evaluation |
+| [Web sitesi üretimini üç model arasında karşılaştır](#case-57) | Tek testte Kimi K3, Fable 5 ve GPT-5.6 Sol'u karşılaştırmak için görünür web sitesi çıktılarını kullan | Evaluation |
+| [Prosedürel 3D oyun üretimini ve maliyeti karşılaştır](#case-59) | Promptu modeller arasında sabit tut; üretilen rulet, slot makinesi ve pinball sistemlerini çalışma başına maliyetle incele | Benchmark |
+| [3D cephanelik sahnesinin ayrıntı ve ışığını karşılaştır](#case-69) | Sınırları belli Kimi K3 ve Opus 4.8 karşılaştırmasında nesne yoğunluğu, aydınlatma ve sahne ayrıntısını incele | Evaluation |
 
-**Genellemeden önce temsilî görevlerde değerlendir**
+<a id="case-7"></a>
+### Case 7: [BridgeBench lav lambası görevinde frontend tasarımını karşılaştır](https://x.com/bridgemindai/status/2077868061953007908) (by [@bridgemindai](https://x.com/bridgemindai))
 
-Armin Ronacher kendi iş yükünde güçlü vision kalitesi bildiriyor. Bu kişisel gözlemdir, benchmark değildir
+**BridgeBench lav lambası görevini evrensel sıralama yerine sınırları belli tek bir frontend tasarım karşılaştırması olarak kullan**
+
+BridgeMind AI, Kimi K3'ün BridgeBench lav lambası görevinde Fable 5'i geçtiğini ve belirtilen arenada birinci olduğunu bildiriyor. Bunlar yayıncının bildirdiği karşılaştırma sonuçlarıdır
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-8"></a>
+### Case 8: [Editoryal sesle senaryo yazımını ölç](https://x.com/Whats_AI/status/2077860441380798908) (by [@Whats_AI](https://x.com/Whats_AI))
+
+**Açıkça tanımlanmış bir iç benchmark içinde editoryal sese uyumu, göreli sıralamayı ve senaryo başına maliyeti ölç**
+
+Whats_AI ilk iç sonuçlarında 2,840 Elo, kendi tablosunda birincilik ve senaryo başına yaklaşık $0.25 bildiriyor. Bunlar tek bir kuruluşun ön sonuçlarıdır; genel performans veya fiyat garantisi değildir
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-10"></a>
+### Case 10: [Flappy türü oyunların tasarımını, maliyetini ve zorluğunu karşılaştır](https://x.com/MrAhmadAwais/status/2077915347974557862) (by [@MrAhmadAwais](https://x.com/MrAhmadAwais))
+
+**Üretilen oyunları karşılaştırırken zorluk ayarlarını, maliyeti, tasarımı ve oynanış özelliklerini kaydet**
+
+Command Code'un iç Flappy benchmark'ı modeller arasında farklı zorluk ayarları bildiriyor ve Kimi K3 için $0.024, Fable 5 için $0.42, GPT-5.6 Sol için $0.15 listeliyor. Eşit olmayan ayarlar bu iç karşılaştırmayı sınırlar
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-12"></a>
+### Case 12: [Oyun tasarımını aynı tasarım promptuyla karşılaştır](https://x.com/CommandCodeAI/status/2077921526213746948) (by [@CommandCodeAI](https://x.com/CommandCodeAI))
+
+**Tasarım promptunu sabit tut; tempo, tasarım anlayışı ve oynanış hissini ayrı ayrı incele**
+
+Command Code, Kimi K3, GPT-5.6 Sol ve Fable 5'i aynı promptla karşılaştırdığını bildiriyor. Gönderiye göre Kimi K3 tasarım anlayışında iyi performans gösterirken diğer ikisi fazla hızlı oynadı; bu yayıncının değerlendirmesidir
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-13"></a>
+### Case 13: [İstatistiksel denetimde bağımsız inceleme şartı koy](https://x.com/emollick/status/2077869293031624793) (by [@emollick](https://x.com/emollick))
+
+**Bulgulara güvenmeden önce modelin istatistiksel denetimini bağımsız uzman veya başka bir model incelemesiyle eşleştir**
+
+Ethan Mollick, Kimi K3 Max'in önceki akademik çalışmayı denetlerken istatistiği yanlış uyguladığını bildiriyor ve ayrı bir eleştiriye katılıyor. Bu olumsuz örnek, denetlenmemiş kabul yerine bağımsız kontrolü destekliyor
+
+Type: Limit | Date: 2026-07-16
+
+---
+
+<a id="case-16"></a>
+### Case 16: [Yavaş ama güçlü bir frontend çalışmasını değerlendir](https://x.com/Lentils80/status/2077387333154857151) (by [@Lentils80](https://x.com/Lentils80))
+
+**Bir frontend görevini test ederken çıktı kalitesiyle birlikte tamamlanma süresini de kaydet**
+
+Üretici bir Kimi K3 frontend çalışmasının 35 dakika sürdüğünü ve çıktının bu prompt için gördüklerinin en iyilerinden biri olduğunu bildiriyor. Hız ve kalite yargıları tek bir kullanıcının gözlemidir
+
+Type: Evaluation | Date: 2026-07-15
+
+---
+
+<a id="case-20"></a>
+### Case 20: [Polisiye yazımını önceden sezdirme hataları açısından dene](https://x.com/emollick/status/2077951790868238616) (by [@emollick](https://x.com/emollick))
+
+**Üretilen bir gizemin ipuçları, kapalılık ve önceden sezdirme arasında denge kurup kurmadığını değerlendir**
+
+Ethan Mollick, Kimi K3'ün iyi bir cinayet gizemi yazamadığını; ipuçlarını hem fazla açık hem fazla kapalı yaptığını ve önceden sezdirmenin başarısız olduğunu bildiriyor. Diğer modellerin de bu sınıra sahip olduğunu ekliyor
+
+Type: Limit | Date: 2026-07-17
+
+---
+
+<a id="case-21"></a>
+### Case 21: [Millennium Falcon modelleme ve animasyonunu karşılaştır](https://x.com/gmi_cloud/status/2077903360263676090) (by [@gmi_cloud](https://x.com/gmi_cloud))
+
+**3D modelleme, animasyon, süre ve maliyeti karşılaştırmak için eşleşen stil istekleri ve efor ayarları kullan**
+
+GMI Cloud, Kimi K3 ve Fable 5'i maksimum eforla piksel ve özgün tarz Millennium Falcon üretimlerinde karşılaştırdığını bildiriyor. Kimi K3'ün daha uzun sürdüğünü ancak ilk testte yaklaşık üçte bir, diğerinde yarıdan az maliyetli olduğunu söylüyor; bunlar sağlayıcı sonuçlarıdır
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-28"></a>
+### Case 28: [On Kimi K3 projesinden oluşan koleksiyonu incele](https://x.com/minchoi/status/2077957907857994006) (by [@minchoi](https://x.com/minchoi))
+
+**Ayrı ayrı doğrulanacak somut eserleri keşfetmek için bağlantılı proje derlemesini kullan**
+
+Yazar Game Boy Advance emülatörü dahil medyalı on Kimi K3 örneği derliyor. Bu tek yeniden üretilebilir workflow değil bir koleksiyondur; her bağlantılı örnek bağımsız kontrol edilmelidir
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-29"></a>
+### Case 29: [Gelişmiş bir landing page'i dört modelde karşılaştır](https://x.com/doutorcaleb/status/2077904020471947773) (by [@doutorcaleb](https://x.com/doutorcaleb))
+
+**Landing page isteğini sabit tut; model çıktılarında animasyon derinliğini ve tamamlanmayı incele**
+
+Üretici aynı gelişmiş landing page promptunu Kimi K3, Fable, Grok ve GPT Terra'ya verdiğini ve Kimi K3'ü en güçlü bulduğunu bildiriyor. Bu, tek görevden öz bildirime dayalı bir karşılaştırmadır
 
 Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="case-10"></a>
-### Case 10: [Maksimum çabada döngüleri izle](https://x.com/emollick/status/2077770187521069152) (by [@emollick](https://x.com/emollick))
+<a id="case-30"></a>
+### Case 30: [Retro oyun mekaniklerini ve maliyetini ölç](https://x.com/adxtyahq/status/2077860500462055570) (by [@adxtyahq](https://x.com/adxtyahq))
 
-**Tamamlanan iş tekrar ele alınıyorsa durdurma ölçütü koy**
+**Aynı retro oyun görevlerinde oynanış, fizik, mekanik, özerk davranış, token kullanımı ve maliyeti karşılaştır**
 
-Ethan Mollick tekrarlanan değişiklikler gözlüyor. Kaynak model, harness veya etkileşimlerini ayırmıyor
+Kaynak Road Fighter, Battle City ve Q*bert için aynı prompt testleri bildiriyor; Kimi K3 için $0.28, GPT-5.6 için $0.28 ve Opus 4.8 için $0.54 listeliyor. Bunlar yayıncının benchmark rakamlarıdır
 
-Type: Limit | Date: 2026-07-16
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-31"></a>
+### Case 31: [Oyun üretimini Fable 5 ile karşılaştır](https://x.com/higgsfield_ai/status/2077943629633712490) (by [@higgsfield_ai](https://x.com/higgsfield_ai))
+
+**Yan yana üretilmiş oyun örneğini geniş model hükmü değil dar bir değerlendirme olarak kullan**
+
+Higgsfield, Kimi K3 ile Fable 5 oyun üretimi karşılaştırması sunuyor. Sağlanan kayıt karşılaştırma medyası içeriyor ancak prompt, puanlama rubric'i veya ayrıntılı koşullar içermiyor
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-34"></a>
+### Case 34: [Karmaşık frontend ve geliştirme görevlerini Opus 4.8 ile karşılaştır](https://x.com/op7418/status/2077969583018066116) (by [@op7418](https://x.com/op7418))
+
+**Bir modeli evrensel olarak üstün ilan etmek yerine kazanım ve kayıpları görmek için birden çok karmaşık kodlama görevi kullan**
+
+İncelemeci doğrudan Kimi K3 ve Opus 4.8 testleri yaptığını, karmaşık frontend ve geliştirmede karışık sonuçlarla kabaca denk olduklarını bildiriyor. Bu tek bir incelemecinin değerlendirmesidir
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-35"></a>
+### Case 35: [Benchmark'ları ve landing page testini incele](https://x.com/adamuchigabriel/status/2077880433925120471) (by [@adamuchigabriel](https://x.com/adamuchigabriel))
+
+**İki kanıt türünü ayrı tutarak benchmark bağlamını somut landing page üretim testiyle birleştir**
+
+Video Kimi K3 için benchmark tartışması, landing page testi ve frontend tasarım gözlemleri sunuyor. Sağlanan kayıtta tam test promptu veya puanlama rubric'i yok
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-37"></a>
+### Case 37: [Grafikten formüle görevlerle tümevarım muhakemesini ölç](https://x.com/s_batzoglou/status/2077884096307454119) (by [@s_batzoglou](https://x.com/s_batzoglou))
+
+**Birinci dereceden tümevarım görevlerinde doğruluk, holdout davranışı ve formül karmaşıklığını ölç**
+
+Yazar, birinci dereceden formül çıkarmak için her biri 8–10 öğeli 6–10 küçük grafik kullanılan ICML INDUCTION görevinde Kimi K3 ve diğer modelleri benchmark ettiğini bildiriyor. Gönderi önceki çalışmanın sonuçlarını güncelliyor; burada yeni bağımsız yeniden üretim iddia edilmiyor
+
+Type: Benchmark | Date: 2026-07-16
+
+---
+
+<a id="case-38"></a>
+### Case 38: [Bildirilen oyunları, landing page'leri, 3D işleri ve uzun bağlamı incele](https://x.com/servasyy_ai/status/2077903775113834689) (by [@servasyy_ai](https://x.com/servasyy_ai))
+
+**Somut eserleri karşılaştırmak ve hız sınırlarını maliyet iddialarıyla birlikte belirtmek için çok kaynaklı derleme kullan**
+
+Yazar oyunlar, landing page'ler, 3D üretim ve uzun bağlam çalışmalarına ilişkin Kimi K3 testlerini özetliyor ve denemeye değer olduğunu ancak henüz Fable 5'in yerini tutmadığını söylüyor. Tüm rakamlar bu derlemedeki ikincil bildirimlerdir
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-40"></a>
+### Case 40: [Karmaşık bir planı denetle ve çözümlerine itiraz et](https://x.com/doodlestein/status/2077901883637665958) (by [@doodlestein](https://x.com/doodlestein))
+
+**Hafife alınmış bulguları, yanlış çözümleri ve reddedilmesi gereken sonuçları bulmak için ikinci model kullan**
+
+Üretici Kimi K3'ün yoğun biçimde iyileştirilmiş bir planı incelediğini; ağır sorunların hafife alındığını, önerilen çözümlerin yaklaşık üçte birinin düzeltilmesi gerektiğini ve bir bulgunun çürütüldüğünü bildiriyor. Bunlar o denetime özgü sonuçlardır
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-41"></a>
+### Case 41: [PPO tarzı reinforcement-learning ASCII diyagramlarını karşılaştır](https://x.com/dejavucoder/status/2077872015856615541) (by [@dejavucoder](https://x.com/dejavucoder))
+
+**ASCII diyagram promptunu sabit tut ve modellerin reinforcement-learning döngüsünü nasıl temsil ettiğini karşılaştır**
+
+Kaynak PPO tarzı reinforcement-learning döngüsünü ASCII olarak çizme promptunu veriyor ve Kimi K3 Max'i Fable 5 High yanında gösteriyor. Yargı, tek görevin görsel karşılaştırması olarak kalır
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-42"></a>
+### Case 42: [Kapasite hatalarını izleyerek Blender'da modelle](https://x.com/Angaisb_/status/2077910845523214668) (by [@Angaisb_](https://x.com/Angaisb_))
+
+**Yalnız eseri değil hizmet güvenilirliğini de değerlendirerek kısmi Blender ilerlemesini incele**
+
+Üretici Kimi K3'ün Blender modelleme ilerlemesini gösteriyor ve tekrarlanan kapasite hataları bildiriyor. Sağlanan kaynakta iş tamamlanmamış; kısmi sonuç ve güvenilirlik sınırı birlikte ele alınmalıdır
+
+Type: Limit | Date: 2026-07-17
+
+---
+
+<a id="case-47"></a>
+### Case 47: [Bir arenada Flappy Bird üretimini karşılaştır](https://x.com/jun_song/status/2077396996865003739) (by [@jun_song](https://x.com/jun_song))
+
+**İki Flappy Bird sonucunu karşılaştırmak için arena görevi kullan ve yargıyı göreve özgü tut**
+
+Üretici bir Flappy Bird görevinde Kimi K3 ve Opus 4.8 Arena karşılaştırması bildiriyor ve Kimi K3'ü belirgin biçimde daha iyi buluyor. Kayıtta tam prompt veya rubric yok
+
+Type: Evaluation | Date: 2026-07-15
+
+---
+
+<a id="case-52"></a>
+### Case 52: [Bir araçla Bongard görsel tümevarım problemini çöz](https://x.com/IntuitMachine/status/2077885406528311561) (by [@IntuitMachine](https://x.com/IntuitMachine))
+
+**Bongard muhakeme görevinde araç kullanımının görsel kuralı çıkarmaya yardım edip etmediğini dene**
+
+Üretici Kimi K3'ün aynı karşılaştırmada Grok 4.5 ve Muse Spark 1.1'in çözemediği Bongard problemini araç kullanarak çözdüğünü bildiriyor. Bu tek kullanıcı görevi sonucudur, genel muhakeme benchmark'ı değildir
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-53"></a>
+### Case 53: [Frontend zevkini ve 3D tasarımı GPT-5.6 Sol ile karşılaştır](https://x.com/filicroval/status/2077736407506751952) (by [@filicroval](https://x.com/filicroval))
+
+**Sınırları belli frontend karşılaştırmasında özellikleri, görsel zevki, zarafeti ve 3D uygulamayı incele**
+
+Üretici Kimi K3 ve GPT-5.6 Sol'u frontend tasarımında karşılaştırıyor; Kimi K3'ü görsel zevk, zarafet ve 3D yeteneğinde daha güçlü buluyor. Değerlendirme öznel ve göreve özgüdür
+
+Type: Evaluation | Date: 2026-07-16
+
+---
+
+<a id="case-57"></a>
+### Case 57: [Web sitesi üretimini üç model arasında karşılaştır](https://x.com/pengchujin/status/2077962916226298340) (by [@pengchujin](https://x.com/pengchujin))
+
+**Tek testte Kimi K3, Fable 5 ve GPT-5.6 Sol'u karşılaştırmak için görünür web sitesi çıktılarını kullan**
+
+Üretici Kimi K3, Fable 5 ve GPT-5.6 Sol arasında web sitesi üretimi karşılaştırması sunuyor. Sağlanan kayıt eksiksiz promptu veya puanlama rubric'ini göstermiyor
+
+Type: Evaluation | Date: 2026-07-17
+
+---
+
+<a id="case-59"></a>
+### Case 59: [Prosedürel 3D oyun üretimini ve maliyeti karşılaştır](https://x.com/adxtyahq/status/2077958193511362856) (by [@adxtyahq](https://x.com/adxtyahq))
+
+**Promptu modeller arasında sabit tut; üretilen rulet, slot makinesi ve pinball sistemlerini çalışma başına maliyetle incele**
+
+Yayıncı çok modelli prosedürel 3D oyun karşılaştırması bildiriyor ve Kimi K3 için $0.71, Grok 4.5 için $0.30 dahil maliyetler listeliyor. Tüm sıralama ve maliyetler o yayıncının çalışmasına aittir
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-69"></a>
+### Case 69: [3D cephanelik sahnesinin ayrıntı ve ışığını karşılaştır](https://x.com/hakki_alkan/status/2077887013332636032) (by [@hakki_alkan](https://x.com/hakki_alkan))
+
+**Sınırları belli Kimi K3 ve Opus 4.8 karşılaştırmasında nesne yoğunluğu, aydınlatma ve sahne ayrıntısını incele**
+
+Kaynak Kimi K3'ün dolu raflar, kutular ve gerçekçi aydınlatmayla ayrıntılı cephanelik sahnesi; Opus 4.8'in ise seyrek bir oda ürettiğini bildiriyor. Bu üçüncü taraf karşılaştırma raporudur, bağımsız benchmark değildir
+
+Type: Evaluation | Date: 2026-07-16
 
 ---
 
@@ -239,8 +993,58 @@ Kimi K3 çalışmalarını kamuya açık paylaşan herkese teşekkür ederiz
 - [@HarshithLucky3](https://x.com/HarshithLucky3)
 - [@chetaslua](https://x.com/chetaslua)
 - [@abhinavflac](https://x.com/abhinavflac)
-- [@scaling01](https://x.com/scaling01)
-- [@mitsuhiko](https://x.com/mitsuhiko)
+- [@bridgemindai](https://x.com/bridgemindai)
+- [@Whats_AI](https://x.com/Whats_AI)
+- [@chongdashu](https://x.com/chongdashu)
+- [@MrAhmadAwais](https://x.com/MrAhmadAwais)
+- [@bijanbowen](https://x.com/bijanbowen)
+- [@CommandCodeAI](https://x.com/CommandCodeAI)
 - [@emollick](https://x.com/emollick)
+- [@nicky_sap](https://x.com/nicky_sap)
+- [@Lentils80](https://x.com/Lentils80)
+- [@scottstts](https://x.com/scottstts)
+- [@aisearchio](https://x.com/aisearchio)
+- [@gmi_cloud](https://x.com/gmi_cloud)
+- [@karminski3](https://x.com/karminski3)
+- [@VORTEX_Promos](https://x.com/VORTEX_Promos)
+- [@rohanpaul_ai](https://x.com/rohanpaul_ai)
+- [@mirochill](https://x.com/mirochill)
+- [@aimlapi](https://x.com/aimlapi)
+- [@minchoi](https://x.com/minchoi)
+- [@doutorcaleb](https://x.com/doutorcaleb)
+- [@adxtyahq](https://x.com/adxtyahq)
+- [@higgsfield_ai](https://x.com/higgsfield_ai)
+- [@AlicanKiraz0](https://x.com/AlicanKiraz0)
+- [@1littlecoder](https://x.com/1littlecoder)
+- [@op7418](https://x.com/op7418)
+- [@adamuchigabriel](https://x.com/adamuchigabriel)
+- [@s_batzoglou](https://x.com/s_batzoglou)
+- [@servasyy_ai](https://x.com/servasyy_ai)
+- [@filicroval](https://x.com/filicroval)
+- [@doodlestein](https://x.com/doodlestein)
+- [@dejavucoder](https://x.com/dejavucoder)
+- [@Angaisb_](https://x.com/Angaisb_)
+- [@AngryTomtweets](https://x.com/AngryTomtweets)
+- [@Alezander907](https://x.com/Alezander907)
+- [@teortaxesTex](https://x.com/teortaxesTex)
+- [@jun_song](https://x.com/jun_song)
+- [@ridark_eth](https://x.com/ridark_eth)
+- [@naymur_dev](https://x.com/naymur_dev)
+- [@tphuang](https://x.com/tphuang)
+- [@TokenGremlin](https://x.com/TokenGremlin)
+- [@IntuitMachine](https://x.com/IntuitMachine)
+- [@wangfeng0315](https://x.com/wangfeng0315)
+- [@twid](https://x.com/twid)
+- [@pengchujin](https://x.com/pengchujin)
+- [@aayushman2703](https://x.com/aayushman2703)
+- [@goncalo_canhoto](https://x.com/goncalo_canhoto)
+- [@LinearUncle](https://x.com/LinearUncle)
+- [@gagarot200](https://x.com/gagarot200)
+- [@MinLiBuilds](https://x.com/MinLiBuilds)
+- [@izutorishima](https://x.com/izutorishima)
+- [@X2worldtech](https://x.com/X2worldtech)
+- [@Satvik_Pen](https://x.com/Satvik_Pen)
+- [@hakki_alkan](https://x.com/hakki_alkan)
+- [@BrianMRey](https://x.com/BrianMRey)
 
-Atıf veya metin düzeltmesi için kamuya açık kaynakla bir issue açın
+*Atıf veya metin düzeltmesi için kamuya açık kaynakla bir issue açın*

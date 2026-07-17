@@ -3,66 +3,59 @@
 
 from __future__ import annotations
 
+import json
 import re
 import subprocess
 import sys
-import time
-import urllib.error
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 URL_RE = re.compile(r'https://[^\s)>"]+')
+CODE_BLOCK_RE = re.compile(r"```.*?```", re.DOTALL)
 
 
 def check(url: str) -> tuple[str, int | str]:
+    command = [
+        "curl", "-L", "-sS", "--retry", "8", "--retry-all-errors",
+        "--retry-delay", "1", "--connect-timeout", "10", "--max-time", "30",
+        "--user-agent", "awesome-kimi-k3-usecases-link-audit/1.0",
+    ]
     if url.startswith("https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/"):
-        result = subprocess.run(
-            [
-                "curl", "-L", "-sS", "--retry", "5", "--retry-all-errors",
-                "--connect-timeout", "10", "--max-time", "30", "-r", "0-0",
-                "-o", "/dev/null", "-w", "%{http_code}", url,
-            ],
-            check=False,
-            capture_output=True,
-            text=True,
-        )
-        if result.returncode == 0 and result.stdout.isdigit():
-            return url, int(result.stdout)
-        return url, result.stderr.strip() or f"curl-exit-{result.returncode}"
-    headers = {"User-Agent": "awesome-kimi-k3-usecases-link-audit/1.0", "Range": "bytes=0-0"}
-    last_error: str = "UnknownError"
-    for attempt in range(8):
-        request = urllib.request.Request(url, headers=headers, method="GET")
-        try:
-            with urllib.request.urlopen(request, timeout=20) as response:
-                return url, response.status
-        except urllib.error.HTTPError as error:
-            if error.code < 500:
-                return url, error.code
-            last_error = str(error.code)
-        except Exception as error:  # noqa: BLE001
-            last_error = type(error).__name__
-        time.sleep(1.0 * (attempt + 1))
-    return url, last_error
+        command.extend(["-r", "0-0"])
+    command.extend(["-o", "/dev/null", "-w", "%{http_code}", url])
+    result = subprocess.run(command, check=False, capture_output=True, text=True)
+    status_text = result.stdout[-3:]
+    if result.returncode == 0 and status_text.isdigit():
+        return url, int(status_text)
+    return url, result.stderr.strip() or f"curl-exit-{result.returncode}"
 
 
 def main() -> int:
+    exception_data = json.loads((ROOT / "data/link-audit-exceptions.json").read_text(encoding="utf-8"))
+    exceptions = {
+        item["url"]: set(item["allowed_statuses"])
+        for item in exception_data.get("exceptions", [])
+    }
     urls: set[str] = set()
     for path in [ROOT / "README.md", *sorted(ROOT.glob("README_*.md"))]:
-        urls.update(URL_RE.findall(path.read_text(encoding="utf-8")))
+        text = CODE_BLOCK_RE.sub("", path.read_text(encoding="utf-8"))
+        urls.update(URL_RE.findall(text))
     urls = {url.rstrip(".,") for url in urls if "img.shields.io" not in url}
     with ThreadPoolExecutor(max_workers=2) as pool:
         results = sorted(pool.map(check, urls))
     failures = []
+    accepted = []
     for url, status in results:
         ok = isinstance(status, int) and status in {200, 206, 301, 302, 303, 307, 308}
-        print(f"{'PASS' if ok else 'FAIL'} {status} {url}")
-        if not ok:
+        excepted = isinstance(status, int) and status in exceptions.get(url, set())
+        print(f"{'PASS' if ok else 'EXCEPT' if excepted else 'FAIL'} {status} {url}")
+        if excepted:
+            accepted.append((url, status))
+        if not ok and not excepted:
             failures.append((url, status))
-    print(f"checked={len(results)} failures={len(failures)}")
+    print(f"checked={len(results)} accepted_exceptions={len(accepted)} failures={len(failures)}")
     return 1 if failures else 0
 
 
