@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-17 — Complete source media and centralized navigation
+
+- Restored source-backed media for all 70 high-confidence cases, including 53 video cases and 17 image cases
+- Uploaded 73 new source images or video posters to R2 and rendered 79 total media assets in each of the 11 README editions
+- Centralized all 70 case links in one Menu table near the top and removed repeated navigation tables from the four category sections
+- Replaced one-creator-per-line Acknowledge bullets with one comma-separated inline creator list
+- Added a reproducible source-media sync script, stricter media and layout verification, and a dedicated audit report
+- Passed repository verification and a 277-URL public audit with zero unhandled failures
+
 ## 2026-07-17 — Full high-confidence expansion and localized banners
 
 - Filtered the supplied `use-case-posts.json` from 101 candidates to all 70 high-confidence cases and excluded all 31 medium-confidence cases

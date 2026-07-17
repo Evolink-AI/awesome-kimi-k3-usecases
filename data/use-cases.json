@@ -41,7 +41,18 @@
         "view_count": 4552,
         "bookmark_count": 11,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01-poster.jpg",
+          "play_label": "Play case 1 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077761899270144000/img/2MCTcVK3iLhf4jQK.jpg"
+      ]
     },
     {
       "public_number": 2,
@@ -70,7 +81,18 @@
         "view_count": 12999,
         "bookmark_count": 15,
         "retweet_count": 5
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02-poster.jpg",
+          "play_label": "Play case 2 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077754716163907584/img/8pIJpxOP9SFiW9hp.jpg"
+      ]
     },
     {
       "public_number": 3,
@@ -99,7 +121,18 @@
         "view_count": 1991,
         "bookmark_count": 1,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03-poster.jpg",
+          "play_label": "Play case 3 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077776327554293760/img/-Ije69H06mPqCZAR.jpg"
+      ]
     },
     {
       "public_number": 4,
@@ -128,7 +161,18 @@
         "view_count": 8872,
         "bookmark_count": 20,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04-poster.jpg",
+          "play_label": "Play case 4 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077751968232345600/img/7YwlkQwyigRZYa_9.jpg"
+      ]
     },
     {
       "public_number": 5,
@@ -157,7 +201,18 @@
         "view_count": 32404,
         "bookmark_count": 52,
         "retweet_count": 14
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05-poster.jpg",
+          "play_label": "Play case 5 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077748815151661056/img/f_CvV-7FeeC_paqi.jpg"
+      ]
     },
     {
       "public_number": 6,
@@ -186,7 +241,18 @@
         "view_count": 1721,
         "bookmark_count": 6,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06-poster.jpg",
+          "play_label": "Play case 6 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077760016312893440/img/UFciQKLwcJtPQhMv.jpg"
+      ]
     },
     {
       "public_number": 7,
@@ -207,13 +273,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 852,
         "view_count": 32881,
         "bookmark_count": 121,
         "retweet_count": 53
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/bridgemindai/status/2077868061953007908/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07-poster.jpg",
+          "play_label": "Watch case 7 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077866912072056832/img/ZVHwDha-o65UNqz4.jpg"
+      ]
     },
     {
       "public_number": 8,
@@ -234,13 +311,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 711,
         "view_count": 73316,
         "bookmark_count": 173,
         "retweet_count": 60
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-08-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYLDKrW4AAuu98.jpg"
+      ]
     },
     {
       "public_number": 9,
@@ -261,13 +347,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 669,
         "view_count": 21452,
         "bookmark_count": 333,
         "retweet_count": 47
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/chongdashu/status/2077886028866531655/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09-poster.jpg",
+          "play_label": "Watch case 9 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077884883179847680/img/Jyvr-dmCPprscyxH.jpg"
+      ]
     },
     {
       "public_number": 10,
@@ -288,13 +385,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 522,
         "view_count": 79925,
         "bookmark_count": 143,
         "retweet_count": 31
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/MrAhmadAwais/status/2077915347974557862/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10-poster.jpg",
+          "play_label": "Watch case 10 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077914122835128321/img/RbYe3b4aUNp-JXNs.jpg"
+      ]
     },
     {
       "public_number": 11,
@@ -315,13 +423,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 496,
         "view_count": 26509,
         "bookmark_count": 58,
         "retweet_count": 27
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/bijanbowen/status/2077881805751873997/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11-poster.jpg",
+          "play_label": "Watch case 11 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077881040559833089/img/94_tERWzVRQAWgMD.jpg"
+      ]
     },
     {
       "public_number": 12,
@@ -342,13 +461,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 416,
         "view_count": 37397,
         "bookmark_count": 106,
         "retweet_count": 38
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/CommandCodeAI/status/2077921526213746948/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12-poster.jpg",
+          "play_label": "Watch case 12 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077921477115236352/img/UaSl1bWcIdurW1TK.jpg"
+      ]
     },
     {
       "public_number": 13,
@@ -369,13 +499,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 342,
         "view_count": 34055,
         "bookmark_count": 64,
         "retweet_count": 26
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-13-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYS70aXYAAu5uk.jpg"
+      ]
     },
     {
       "public_number": 14,
@@ -396,13 +535,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 331,
         "view_count": 20500,
         "bookmark_count": 147,
         "retweet_count": 18
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/chetaslua/status/2077952938564354503/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14-poster.jpg",
+          "play_label": "Watch case 14 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077951515902484480/img/eYYLbQlvimZkA4XG.jpg"
+      ]
     },
     {
       "public_number": 15,
@@ -423,13 +573,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 257,
         "view_count": 56843,
         "bookmark_count": 327,
         "retweet_count": 6
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/nicky_sap/status/2077857190707429411/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15-poster.jpg",
+          "play_label": "Watch case 15 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077856137287000064/img/zgktaT0jPxEtjNus.jpg"
+      ]
     },
     {
       "public_number": 16,
@@ -450,13 +611,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 220,
         "view_count": 13777,
         "bookmark_count": 56,
         "retweet_count": 11
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/Lentils80/status/2077387333154857151/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16-poster.jpg",
+          "play_label": "Watch case 16 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077386295857287169/img/IcP8fIhSORr9XfdB.jpg"
+      ]
     },
     {
       "public_number": 17,
@@ -477,13 +649,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 201,
         "view_count": 9894,
         "bookmark_count": 36,
         "retweet_count": 6
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/chetaslua/status/2077961850352971796/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17-poster.jpg",
+          "play_label": "Watch case 17 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077961398928527360/img/uO4k-SIOGKJb-S80.jpg"
+      ]
     },
     {
       "public_number": 18,
@@ -504,13 +687,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 160,
         "view_count": 7654,
         "bookmark_count": 33,
         "retweet_count": 8
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/scottstts/status/2077890054299541890/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18-poster.jpg",
+          "play_label": "Watch case 18 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077889730713178112/img/0bi_tyi7fudNuGhI.jpg"
+      ]
     },
     {
       "public_number": 19,
@@ -531,13 +725,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 136,
         "view_count": 6940,
         "bookmark_count": 50,
         "retweet_count": 15
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/aisearchio/status/2077962156147146925/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19-poster.jpg",
+          "play_label": "Watch case 19 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077960974536224768/img/tKzDcdKUw7zX4lWS.jpg"
+      ]
     },
     {
       "public_number": 20,
@@ -558,13 +763,27 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 133,
         "view_count": 12514,
         "bookmark_count": 29,
         "retweet_count": 7
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-01.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-02.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNZdgi2WEAAM_Xu.jpg",
+        "https://pbs.twimg.com/media/HNZdhfRXgAEGTNC.png"
+      ]
     },
     {
       "public_number": 21,
@@ -585,13 +804,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 123,
         "view_count": 8358,
         "bookmark_count": 29,
         "retweet_count": 16
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/gmi_cloud/status/2077903360263676090/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21-poster.jpg",
+          "play_label": "Watch case 21 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077899665329336320/img/RP3xMdPIUZ6_DHPS.jpg"
+      ]
     },
     {
       "public_number": 22,
@@ -612,13 +842,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 121,
         "view_count": 14792,
         "bookmark_count": 28,
         "retweet_count": 12
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/karminski3/status/2077889959223337099/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22-poster.jpg",
+          "play_label": "Watch case 22 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077889163169529857/img/7whCcPJEqIAspe-K.jpg"
+      ]
     },
     {
       "public_number": 23,
@@ -639,13 +880,29 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 111,
         "view_count": 1330,
         "bookmark_count": 0,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/VORTEX_Promos/status/2077879705378730074/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-poster.jpg",
+          "play_label": "Watch case 23 source video on X"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077879537770106880/img/2ihMvPyuwH2sYEuL.jpg",
+        "https://pbs.twimg.com/media/HNYcjF5WQAEY4sO.jpg"
+      ]
     },
     {
       "public_number": 24,
@@ -666,13 +923,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 107,
         "view_count": 14354,
         "bookmark_count": 22,
         "retweet_count": 10
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/rohanpaul_ai/status/2077889084761206860/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24-poster.jpg",
+          "play_label": "Watch case 24 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077887033461395456/img/aeAuzBbhryqcElAf.jpg"
+      ]
     },
     {
       "public_number": 25,
@@ -693,13 +961,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 105,
         "view_count": 12524,
         "bookmark_count": 24,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-25-01.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYinZ_akAACXRs.png"
+      ]
     },
     {
       "public_number": 26,
@@ -720,13 +997,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 99,
         "view_count": 7137,
         "bookmark_count": 20,
         "retweet_count": 7
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/mirochill/status/2077723551331758478/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26-poster.jpg",
+          "play_label": "Watch case 26 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/2077723435967369216/pu/img/PuB5Ns3y9RnZhSgZ.jpg"
+      ]
     },
     {
       "public_number": 27,
@@ -747,13 +1035,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 81,
         "view_count": 15025,
         "bookmark_count": 24,
         "retweet_count": 16
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/aimlapi/status/2077898742179459274/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27-poster.jpg",
+          "play_label": "Watch case 27 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077898460422893568/img/HVGZK102gIaqsI5f.jpg"
+      ]
     },
     {
       "public_number": 28,
@@ -774,13 +1073,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 78,
         "view_count": 13868,
         "bookmark_count": 45,
         "retweet_count": 8
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/minchoi/status/2077957907857994006/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28-poster.jpg",
+          "play_label": "Watch case 28 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077954091645321216/img/4PwsezC11IU_uSqm.jpg"
+      ]
     },
     {
       "public_number": 29,
@@ -801,13 +1111,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 75,
         "view_count": 3594,
         "bookmark_count": 41,
         "retweet_count": 5
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/doutorcaleb/status/2077904020471947773/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29-poster.jpg",
+          "play_label": "Watch case 29 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077901245222699008/img/TcpZaKAwlSRxCkWT.jpg"
+      ]
     },
     {
       "public_number": 30,
@@ -828,13 +1149,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 71,
         "view_count": 12506,
         "bookmark_count": 22,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/adxtyahq/status/2077860500462055570/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30-poster.jpg",
+          "play_label": "Watch case 30 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077858639122186240/img/PWT-aCzWEjiuzJTP.jpg"
+      ]
     },
     {
       "public_number": 31,
@@ -855,13 +1187,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 71,
         "view_count": 10183,
         "bookmark_count": 9,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/higgsfield_ai/status/2077943629633712490/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31-poster.jpg",
+          "play_label": "Watch case 31 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077938285989793792/img/T07rOSgz_ASXKzu8.jpg"
+      ]
     },
     {
       "public_number": 32,
@@ -882,13 +1225,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 65,
         "view_count": 6584,
         "bookmark_count": 31,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/AlicanKiraz0/status/2077885419744612597/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32-poster.jpg",
+          "play_label": "Watch case 32 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077883559797223424/img/2heSAlxTImoZzuZf.jpg"
+      ]
     },
     {
       "public_number": 33,
@@ -909,13 +1263,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 65,
         "view_count": 3709,
         "bookmark_count": 19,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/1littlecoder/status/2077890296806031665/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33-poster.jpg",
+          "play_label": "Watch case 33 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077890163016138752/img/YiCUMdXA2XG5TQP0.jpg"
+      ]
     },
     {
       "public_number": 34,
@@ -936,13 +1301,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 63,
         "view_count": 20556,
         "bookmark_count": 36,
         "retweet_count": 9
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/op7418/status/2077969583018066116/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34-poster.jpg",
+          "play_label": "Watch case 34 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077969151256338432/img/656pF38Q0f6haapo.jpg"
+      ]
     },
     {
       "public_number": 35,
@@ -963,13 +1339,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 62,
         "view_count": 2885,
         "bookmark_count": 46,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/adamuchigabriel/status/2077880433925120471/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35-poster.jpg",
+          "play_label": "Watch case 35 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077879919086800896/img/UGHXUEz84MMr_KeG.jpg"
+      ]
     },
     {
       "public_number": 36,
@@ -990,13 +1377,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 61,
         "view_count": 1913,
         "bookmark_count": 41,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/chongdashu/status/2077981621223837739/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36-poster.jpg",
+          "play_label": "Watch case 36 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077904589378961408/img/B-jOz4sWZUSbKYYH.jpg"
+      ]
     },
     {
       "public_number": 37,
@@ -1017,13 +1415,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 59,
         "view_count": 6529,
         "bookmark_count": 16,
         "retweet_count": 8
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-37-01.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYfJeQWwAEmkHZ.png"
+      ]
     },
     {
       "public_number": 38,
@@ -1044,13 +1451,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 55,
         "view_count": 27138,
         "bookmark_count": 34,
         "retweet_count": 9
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-38-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYyWema8AAbvaV.jpg"
+      ]
     },
     {
       "public_number": 39,
@@ -1071,13 +1487,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 51,
         "view_count": 3873,
         "bookmark_count": 13,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/filicroval/status/2077871090731221438/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39-poster.jpg",
+          "play_label": "Watch case 39 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077870412797501440/img/M7rOvHtJKC8iIT-2.jpg"
+      ]
     },
     {
       "public_number": 40,
@@ -1098,13 +1525,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 50,
         "view_count": 14406,
         "bookmark_count": 15,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-40-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYvWG2W8AAnk0j.jpg"
+      ]
     },
     {
       "public_number": 41,
@@ -1125,13 +1561,27 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 49,
         "view_count": 5049,
         "bookmark_count": 8,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-01.png"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-02.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYVdKFagAAKktT.png",
+        "https://pbs.twimg.com/media/HNYVjWYbUAApwW2.jpg"
+      ]
     },
     {
       "public_number": 42,
@@ -1152,13 +1602,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 49,
         "view_count": 1534,
         "bookmark_count": 5,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-42-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNY4m6pWIAAJaeu.jpg"
+      ]
     },
     {
       "public_number": 43,
@@ -1179,13 +1638,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 48,
         "view_count": 4189,
         "bookmark_count": 20,
         "retweet_count": 8
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/AngryTomtweets/status/2077868163136450619/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43-poster.jpg",
+          "play_label": "Watch case 43 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077868057528037376/img/iGPTw4Wd3r5IvETJ.jpg"
+      ]
     },
     {
       "public_number": 44,
@@ -1206,13 +1676,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 46,
         "view_count": 8185,
         "bookmark_count": 6,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/Alezander907/status/2077926014710407407/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44-poster.jpg",
+          "play_label": "Watch case 44 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077925778831097856/img/8OZqkgxfQz97pIKI.jpg"
+      ]
     },
     {
       "public_number": 45,
@@ -1233,13 +1714,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 41,
         "view_count": 3544,
         "bookmark_count": 7,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/1littlecoder/status/2077880380900937865",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45-poster.jpg",
+          "play_label": "Watch case 45 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/tweet_video_thumb/HNYdCtBbMAA-512.jpg"
+      ]
     },
     {
       "public_number": 46,
@@ -1260,13 +1752,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 38,
         "view_count": 2698,
         "bookmark_count": 8,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-46-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNZFlYmW4AAdsHO.jpg"
+      ]
     },
     {
       "public_number": 47,
@@ -1287,13 +1788,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 35,
         "view_count": 2600,
         "bookmark_count": 6,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/jun_song/status/2077396996865003739/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47-poster.jpg",
+          "play_label": "Watch case 47 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077396898324094976/img/qG_Luc6NN43kmRjB.jpg"
+      ]
     },
     {
       "public_number": 48,
@@ -1314,13 +1826,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 33,
         "view_count": 3951,
         "bookmark_count": 20,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/ridark_eth/status/2077882889803378969/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48-poster.jpg",
+          "play_label": "Watch case 48 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077882192072429568/img/6kvGFRfOhkMnpIUP.jpg"
+      ]
     },
     {
       "public_number": 49,
@@ -1341,13 +1864,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 33,
         "view_count": 2482,
         "bookmark_count": 5,
         "retweet_count": 5
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/naymur_dev/status/2077873562661335207/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49-poster.jpg",
+          "play_label": "Watch case 49 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077871552469827584/img/9-FIvSDK63yrKI7e.jpg"
+      ]
     },
     {
       "public_number": 50,
@@ -1368,13 +1902,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 32,
         "view_count": 2199,
         "bookmark_count": 1,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-50-01.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNY5tvKXsAAdXw-.png"
+      ]
     },
     {
       "public_number": 51,
@@ -1395,13 +1938,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 32,
         "view_count": 1407,
         "bookmark_count": 7,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/TokenGremlin/status/2077855657068310620/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51-poster.jpg",
+          "play_label": "Watch case 51 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077855632787427329/img/E7x5fJ--xCOtNsSS.jpg"
+      ]
     },
     {
       "public_number": 52,
@@ -1422,13 +1976,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 30,
         "view_count": 2451,
         "bookmark_count": 10,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-52-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYhP7NWAAALSBc.jpg"
+      ]
     },
     {
       "public_number": 53,
@@ -1449,13 +2012,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 29,
         "view_count": 2924,
         "bookmark_count": 3,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/filicroval/status/2077736407506751952/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53-poster.jpg",
+          "play_label": "Watch case 53 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077735108757291008/img/qMD1Uz7uAy7Skqzl.jpg"
+      ]
     },
     {
       "public_number": 54,
@@ -1476,13 +2050,29 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 28,
         "view_count": 6657,
         "bookmark_count": 3,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/wangfeng0315/status/2077933531200991583/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-poster.jpg",
+          "play_label": "Watch case 54 source video on X"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/2077933487005577216/pu/img/gGnHFOkB8kOFxQJ3.jpg",
+        "https://pbs.twimg.com/media/HNZNf99awAABa-B.jpg"
+      ]
     },
     {
       "public_number": 55,
@@ -1503,13 +2093,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 27,
         "view_count": 1269,
         "bookmark_count": 1,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-55-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNW0XERaEAA0d0s.jpg"
+      ]
     },
     {
       "public_number": 56,
@@ -1530,13 +2129,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 25,
         "view_count": 2713,
         "bookmark_count": 7,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/twid/status/2077924755357974989/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56-poster.jpg",
+          "play_label": "Watch case 56 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077924432409210880/img/tDfvKEtf7xnfdIeu.jpg"
+      ]
     },
     {
       "public_number": 57,
@@ -1557,13 +2167,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 23,
         "view_count": 6944,
         "bookmark_count": 15,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/pengchujin/status/2077962916226298340/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57-poster.jpg",
+          "play_label": "Watch case 57 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077962684688187392/img/iMrKjO5qZizP8tCW.jpg"
+      ]
     },
     {
       "public_number": 58,
@@ -1584,13 +2205,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 23,
         "view_count": 3893,
         "bookmark_count": 10,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/AngryTomtweets/status/2077868981659324444/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58-poster.jpg",
+          "play_label": "Watch case 58 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077868906161864704/img/ZnBWoO3A6RZ2j8bD.jpg"
+      ]
     },
     {
       "public_number": 59,
@@ -1611,13 +2243,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 21,
         "view_count": 4318,
         "bookmark_count": 10,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/adxtyahq/status/2077958193511362856/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59-poster.jpg",
+          "play_label": "Watch case 59 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077958018738876416/img/KvlrZtC-IEVUUxWR.jpg"
+      ]
     },
     {
       "public_number": 60,
@@ -1638,13 +2281,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 21,
         "view_count": 602,
         "bookmark_count": 1,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/aayushman2703/status/2077857886441783526/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60-poster.jpg",
+          "play_label": "Watch case 60 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077857827679502336/img/GkPmnN7Cn_8luyPp.jpg"
+      ]
     },
     {
       "public_number": 61,
@@ -1665,13 +2319,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 20,
         "view_count": 2522,
         "bookmark_count": 14,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-61-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYJGhyWgAApt_h.jpg"
+      ]
     },
     {
       "public_number": 62,
@@ -1692,13 +2355,22 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 18,
         "view_count": 6098,
         "bookmark_count": 14,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-62-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNZAPgiaAAA1Rlg.jpg"
+      ]
     },
     {
       "public_number": 63,
@@ -1719,13 +2391,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 18,
         "view_count": 4547,
         "bookmark_count": 13,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/gagarot200/status/2077949230287896830/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63-poster.jpg",
+          "play_label": "Watch case 63 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077949157290225665/img/dlbOPy9iTyW0m4Qe.jpg"
+      ]
     },
     {
       "public_number": 64,
@@ -1746,13 +2429,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 16,
         "view_count": 8498,
         "bookmark_count": 8,
         "retweet_count": 4
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/MinLiBuilds/status/2077939461510615376/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64-poster.jpg",
+          "play_label": "Watch case 64 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077936456396660737/img/FbeOekM4rc4GUTjv.jpg"
+      ]
     },
     {
       "public_number": 65,
@@ -1773,13 +2467,32 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 16,
         "view_count": 2813,
         "bookmark_count": 2,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-01.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-02.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-03.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNZRveIbMAAV2i5.jpg",
+        "https://pbs.twimg.com/media/HNZR9CSbAAAdW_p.jpg",
+        "https://pbs.twimg.com/media/HNZSAdhaMAA2MZF.jpg"
+      ]
     },
     {
       "public_number": 66,
@@ -1800,13 +2513,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 15,
         "view_count": 1208,
         "bookmark_count": 3,
         "retweet_count": 3
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/TokenGremlin/status/2077855959201042645/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66-poster.jpg",
+          "play_label": "Watch case 66 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077855877424443392/img/Ozfo2CWLgPvq9vxz.jpg"
+      ]
     },
     {
       "public_number": 67,
@@ -1828,13 +2552,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 15,
         "view_count": 415,
         "bookmark_count": 0,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/X2worldtech/status/2077902793449296203",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67-poster.jpg",
+          "play_label": "Watch case 67 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077902395447681024/img/poMW75OdhBViO9j3.jpg"
+      ]
     },
     {
       "public_number": 68,
@@ -1855,13 +2590,37 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "image",
       "source_engagement": {
         "like_count": 14,
         "view_count": 852,
         "bookmark_count": 3,
         "retweet_count": 0
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-01.png"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-02.png"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-03.png"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-04.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNYJ013WYAE4YAK.png",
+        "https://pbs.twimg.com/media/HNYJ5WVWUAAiFwR.png",
+        "https://pbs.twimg.com/media/HNYJ_W4XgAApUHd.png",
+        "https://pbs.twimg.com/media/HNYKCRuXUAAyqJD.png"
+      ]
     },
     {
       "public_number": 69,
@@ -1882,13 +2641,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 13,
         "view_count": 2373,
         "bookmark_count": 2,
         "retweet_count": 1
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/Bhavani_00007/status/2077798166729208223/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69-poster.jpg",
+          "play_label": "Watch case 69 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077797964614152192/img/hfB099fHA5GaaHc-.jpg"
+      ]
     },
     {
       "public_number": 70,
@@ -1909,13 +2679,24 @@
       "prompt_boundary": "No verified reusable prompt is included in this curated record.",
       "prompt_public": false,
       "prompt_text": "",
-      "media_type": "none",
+      "media_type": "video",
       "source_engagement": {
         "like_count": 11,
         "view_count": 444,
         "bookmark_count": 3,
         "retweet_count": 2
-      }
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://x.com/jumperz/status/2077841331037094042/video/1",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70-poster.jpg",
+          "play_label": "Watch case 70 source video on X"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2077840186197598208/img/UU6tnG-vHjCfTuI-.jpg"
+      ]
     }
   ]
 }

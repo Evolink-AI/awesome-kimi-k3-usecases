@@ -9,12 +9,13 @@
 - Language-specific translation sources: `data/localizations/*.json`
 - Aggregate localization cache: `data/localization-cache.json`
 - Localization build: `python3 scripts/build_localizations.py`
+- Source-media sync: `python3 scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`
 
 The current source artifact is `/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json`, filtered at `2026-07-17T15:57:58+0800` to retain all 70 high-confidence items and exclude all 31 medium-confidence items. Future public updates must record a new source artifact and fixed collection timestamp
 
 ## Case contract
 
-Every public case requires a contiguous number, stable `case-N` anchor, source URL, author URL, translated title, reader-action takeaway, source-grounded notes, allowed type, ISO date, category, decision reason, dedup key, and explicit prompt boundary
+Every public case requires a contiguous number, stable `case-N` anchor, source URL, author URL, translated title, reader-action takeaway, source-grounded notes, allowed type, ISO date, category, decision reason, dedup key, explicit prompt boundary, source-media lineage, and at least one rendered media asset
 
 Do not invent prompts, workflow steps, results, pricing, benchmark numbers, dates, or attribution. A creator report must remain labeled as a report. A single observation must not be presented as a benchmark
 
@@ -23,9 +24,10 @@ Do not invent prompts, workflow steps, results, pricing, benchmark numbers, date
 1. Collect candidates with a fixed timestamp and deduplicate by canonical source URL
 2. Classify every candidate, retain only high-confidence cases for publication, and record a decision reason
 3. Update `data/use-cases.json` and English README first
-4. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, and prompt text
-5. Run the framework verifier, repository verifier, media audit, link audit, and `git diff --check`
-6. Fix every P0/P1 issue, then re-run the complete audit before commit or push
+4. Run `scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`, upload the prepared files to the approved R2 namespace, and verify every public object before rebuilding READMEs
+5. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, prompt text, and media order
+6. Run the framework verifier, repository verifier, media audit, link audit, and `git diff --check`
+7. Fix every P0/P1 issue, then re-run the complete audit before commit or push
 
 If an owner-required source permalink becomes unavailable after collection, preserve the exact permalink, add a visible case-level disclosure, and record the reviewed HTTP status plus source-package evidence in `data/link-audit-exceptions.json`
 
@@ -40,7 +42,9 @@ git diff --check
 
 ## Media
 
-README media uses Cloudflare R2 under `github-repo-media/awesome-kimi-k3-usecases`. Videos are linked through R2-hosted poster frames and playable video URLs rather than embedded directly. Local source media under `media/cases/` is ignored after upload, while language banners remain versioned as repository assets
+README media uses Cloudflare R2 under `github-repo-media/awesome-kimi-k3-usecases`. Every public case must render at least one source-backed visual. Videos use R2-hosted poster frames with playable links rather than direct video embeds, while image cases preserve every usable source image. Local staging media under `media/cases/` and `media/source-cases/` is ignored after upload, while language banners remain versioned as repository assets
+
+The complete case index belongs inside the top `## 📑 Menu`. Do not repeat case tables inside category sections. Creator links in Acknowledge remain one comma-separated inline list rather than one creator per bullet
 
 ## Related surfaces
 

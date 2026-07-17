@@ -5,6 +5,7 @@ node_modules/
 .codex/
 .learnings/
 media/cases/
+media/source-cases/
 github-repo-review-action-list.md
 __pycache__/
 *.pyc

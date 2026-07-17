@@ -61,17 +61,36 @@ BADGES = """[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-D
 
 def media_block(item: dict) -> str:
     number = item["public_number"]
-    nn = f"{number:02d}"
-    media_type = item["media_type"]
-    if media_type == "video":
-        return (
-            f'<a href="{R2}/media/cases/case-{nn}.mp4"><img src="{R2}/media/cases/case-{nn}-poster.jpg" '
-            f'alt="Case {number} video poster" height="360"></a>\n\n'
-            f'[Play case {number} demo video]({R2}/media/cases/case-{nn}.mp4)'
+    blocks: list[str] = []
+    image_number = 0
+    for asset in item.get("media_assets", []):
+        if asset["kind"] == "video":
+            blocks.extend([
+                f'<a href="{asset["url"]}"><img src="{asset["poster_url"]}" '
+                f'alt="Case {number} source video poster" height="360"></a>',
+                f'[{asset["play_label"]}]({asset["url"]})',
+            ])
+        elif asset["kind"] == "image":
+            image_number += 1
+            blocks.append(
+                f'<a href="{asset["url"]}"><img src="{asset["url"]}" '
+                f'alt="Case {number} source image {image_number}" height="360"></a>'
+            )
+    return "\n\n".join(blocks)
+
+
+def append_case_menu(lines: list[str], items: list[dict], category_names: dict[str, str], translations: dict | None = None) -> None:
+    lines.extend([
+        "",
+        "| Case | Category | What it shows | Type |",
+        "|---|---|---|---|",
+    ])
+    for item in items:
+        content = translations[str(item["public_number"])] if translations else item
+        lines.append(
+            f'| [{content["title"]}](#case-{item["public_number"]}) | '
+            f'{category_names[item["category_key"]]} | {content["takeaway"]} | {item["type"]} |'
         )
-    if media_type == "image":
-        return f'<img src="{R2}/media/cases/case-{nn}.jpg" alt="Case {number} source media" height="360">'
-    return ""
 
 
 def render_english(items: list[dict]) -> str:
@@ -134,6 +153,7 @@ def render_english(items: list[dict]) -> str:
         count = sum(1 for item in items if item["category_key"] == key)
         lines.append(f'| [{CATEGORY_EMOJI[key]} {CATEGORY_ENGLISH[key]}](#{key}) | {count} Cases |')
     lines.append("| [Acknowledge](#acknowledge) | Credits and correction policy |")
+    append_case_menu(lines, items, CATEGORY_ENGLISH)
 
     for key in categories:
         category_items = [item for item in items if item["category_key"] == key]
@@ -142,12 +162,7 @@ def render_english(items: list[dict]) -> str:
             f'<a id="{key}"></a>',
             f'## {CATEGORY_EMOJI[key]} {CATEGORY_ENGLISH[key]}',
             "",
-            "| Case | What it shows | Type |",
-            "|---|---|---|",
         ])
-        for item in category_items:
-            lines.append(f'| [{item["title"]}](#case-{item["public_number"]}) | {item["takeaway"]} | {item["type"]} |')
-        lines.append("")
         for item in category_items:
             lines.extend([
                 f'<a id="case-{item["public_number"]}"></a>',
@@ -182,7 +197,7 @@ def render_english(items: list[dict]) -> str:
         "",
         "Thanks to the source creators represented here:",
         "",
-        *[f'- [{handle}](https://x.com/{handle[1:]})' for handle in handles],
+        ", ".join(f'[{handle}](https://x.com/{handle[1:]})' for handle in handles),
         "",
         "*We cannot guarantee that every case is attributed to the earliest original creator. If attribution or wording needs correction, please open a correction issue with a public source*",
         "",
@@ -249,6 +264,7 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         count = sum(1 for item in items if item["category_key"] == key)
         lines.append(f'| [{config["categories"][key]}](#{key}) | {count} |')
     lines.append(f'| [{config["ack_heading"]}](#acknowledge) | {config["credits"]} |')
+    append_case_menu(lines, items, config["categories"], config["cases"])
 
     for key in categories:
         category_items = [item for item in items if item["category_key"] == key]
@@ -257,16 +273,7 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
             f'<a id="{key}"></a>',
             f'## {CATEGORY_EMOJI[key]} {config["categories"][key]}',
             "",
-            "| Case | What it shows | Type |",
-            "|---|---|---|",
         ])
-        for item in category_items:
-            translated = config["cases"][str(item["public_number"])]
-            lines.append(
-                f'| [{translated["title"]}](#case-{item["public_number"]}) | '
-                f'{translated["takeaway"]} | {item["type"]} |'
-            )
-        lines.append("")
         for item in category_items:
             translated = config["cases"][str(item["public_number"])]
             lines.extend([
@@ -300,7 +307,7 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         "",
         config["ack_text"],
         "",
-        *[f'- [{handle}](https://x.com/{handle[1:]})' for handle in handles],
+        ", ".join(f'[{handle}](https://x.com/{handle[1:]})' for handle in handles),
         "",
         f'*{config["correction_text"]}*',
         "",

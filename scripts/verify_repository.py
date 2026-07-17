@@ -66,6 +66,24 @@ def main() -> int:
         errors.append("structured data contains a non-high-confidence decision")
     if any(item.get("quality_tier") != "high" for item in items):
         errors.append("structured data contains a non-high quality tier")
+    if any(item.get("media_type") not in {"video", "image"} for item in items):
+        errors.append("structured data contains a case without source media")
+    if sum(item.get("media_type") == "video" for item in items) != 53:
+        errors.append("structured media classification does not contain 53 video cases")
+    if sum(item.get("media_type") == "image" for item in items) != 17:
+        errors.append("structured media classification does not contain 17 image cases")
+    if any(not item.get("media_assets") for item in items):
+        errors.append("structured data contains a case without media assets")
+    if any(not item.get("media_source_urls") for item in items):
+        errors.append("structured data contains a case without source-media lineage")
+    if sum(len(item.get("media_assets", [])) for item in items) != 79:
+        errors.append("structured data does not contain the expected 79 media assets")
+    for item in items:
+        for asset in item.get("media_assets", []):
+            if asset.get("kind") == "video" and not asset.get("poster_url", "").startswith(R2_PREFIX):
+                errors.append(f'case {item.get("public_number")}: video poster is not on repository R2')
+            if asset.get("kind") == "image" and not asset.get("url", "").startswith(R2_PREFIX):
+                errors.append(f'case {item.get("public_number")}: source image is not on repository R2')
     if sum(bool(item.get("prompt_public")) for item in items) != 1:
         errors.append("exactly one case must expose a public prompt")
     if items and items[0].get("prompt_text") != "Voxel star wars pod-racers run":
@@ -114,6 +132,8 @@ def main() -> int:
     english_cases = None
     english_meta = None
     english_titles = None
+    handles = list(dict.fromkeys(item["author_handle"] for item in items))
+    expected_creator_line = ", ".join(f'[{handle}](https://x.com/{handle[1:]})' for handle in handles)
     for index, filename in enumerate(FILENAMES):
         text = (ROOT / filename).read_text(encoding="utf-8")
         for marker in ("TBD", "TODO", "lorem ipsum", "<placeholder>"):
@@ -146,7 +166,37 @@ def main() -> int:
         if 'Authorization: Bearer $EVOLINK_API_KEY' not in text:
             errors.append(f"{filename}: Quick API example lacks environment-key Bearer authentication")
         if text.count("](#case-") != EXPECTED_CASES:
-            errors.append(f"{filename}: category summary tables do not link all {EXPECTED_CASES} cases")
+            errors.append(f"{filename}: centralized Menu does not link all {EXPECTED_CASES} cases")
+        first_category = text.find('<a id="games-3d"></a>')
+        menu_start = text.find("## 📑")
+        if menu_start == -1 or first_category == -1 or menu_start > first_category:
+            errors.append(f"{filename}: centralized Menu is not before the case sections")
+        else:
+            menu_text = text[menu_start:first_category]
+            case_text = text[first_category:]
+            if menu_text.count("](#case-") != EXPECTED_CASES:
+                errors.append(f"{filename}: centralized Menu does not contain all case links")
+            if "](#case-" in case_text:
+                errors.append(f"{filename}: case menu tables are repeated inside category sections")
+            if menu_text.count("| Case | Category | What it shows | Type |") != 1:
+                errors.append(f"{filename}: centralized case menu table is missing or duplicated")
+        acknowledge = text.split('<a id="acknowledge"></a>', 1)[-1]
+        if re.search(r'^- \[@', acknowledge, re.MULTILINE):
+            errors.append(f"{filename}: Acknowledge creators are still one-per-line bullets")
+        if expected_creator_line not in acknowledge:
+            errors.append(f"{filename}: Acknowledge creators are not the canonical comma-separated list")
+        for item in items:
+            visual_urls = [
+                asset["poster_url"] if asset["kind"] == "video" else asset["url"]
+                for asset in item.get("media_assets", [])
+            ]
+            if not visual_urls:
+                errors.append(f'{filename}: case {item["public_number"]} has no rendered source media')
+            for url in visual_urls:
+                if text.count(f'src="{url}"') != 1:
+                    errors.append(
+                        f'{filename}: case {item["public_number"]} media is missing or duplicated: {url}'
+                    )
         if text.count("The original source permalink returned HTTP 404 during the 2026-07-17 audit") != 1:
             errors.append(f"{filename}: unavailable source disclosure must appear exactly once")
         if "https://evolink.ai/?utm_" in text:

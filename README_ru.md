@@ -76,33 +76,81 @@ curl --request POST \
 | [Оценка и ограничения](#evaluation-limits) | 25 |
 | [Благодарности](#acknowledge) | Благодарности и исправления |
 
+| Case | Category | What it shows | Type |
+|---|---|---|---|
+| [Создать voxel pod racer одним prompt](#case-1) | Интерактивные игры и 3D | Использовать короткую идею для прототипа гонки и определить следующую итерацию | Demo |
+| [Сравнить Frogger на одном prompt](#case-2) | Интерактивные игры и 3D | Зафиксировать prompt и сравнить различия между моделями | Evaluation |
+| [Создать Frogger и запись игры](#case-3) | Интерактивные игры и 3D | Отдельно проверить одношаговую генерацию игры и записи | Demo |
+| [Создать прототип авианосца в Three.js](#case-4) | Интерактивные игры и 3D | Проверить интерактивное 3D на конкретной сцене запуска и посадки | Demo |
+| [Создать интерактивный motion-frontend](#case-5) | Frontend и motion-дизайн | Сделать графику, которая остается интерактивной на паузе | Demo |
+| [Создать синхронизированную motion-рекламу](#case-6) | Frontend и motion-дизайн | Проверить синхронизацию музыки, эффектов и движения | Demo |
+| [Сравнить frontend-дизайн в задании BridgeBench с лавовой лампой](#case-7) | Оценка и ограничения | Использовать задание BridgeBench с лавовой лампой как ограниченное сравнение frontend-дизайна, а не универсальный рейтинг | Benchmark |
+| [Оценить написание сценариев в редакционном стиле](#case-8) | Оценка и ограничения | Измерять соответствие редакционному голосу, относительное место и стоимость сценария внутри четко обозначенного внутреннего benchmark | Benchmark |
+| [Создать игру в духе Paper Mario с агентскими инструментами](#case-9) | Интерактивные игры и 3D | Объединить Kimi K3 с агентским harness и инструментами для ассетов, чтобы получить игровые элементы в 2D и 3D | Demo |
+| [Сравнить дизайн, стоимость и сложность игры типа Flappy](#case-10) | Оценка и ограничения | При сравнении сгенерированных игр записывать настройки сложности, стоимость, дизайн и игровые возможности | Benchmark |
+| [Создать шутер от первого лица в метро](#case-11) | Интерактивные игры и 3D | Использовать конкретную обстановку метро для проверки сгенерированного шутера от первого лица | Demo |
+| [Сравнить игровой дизайн с одним и тем же design prompt](#case-12) | Оценка и ограничения | Зафиксировать design prompt и отдельно проверять темп, чувство дизайна и игровой процесс | Benchmark |
+| [Требовать независимую проверку статистического аудита](#case-13) | Оценка и ограничения | Перед использованием выводов дополнять статистический аудит модели независимой экспертной проверкой или проверкой другой моделью | Limit |
+| [Создать motion-дизайн полностью кодом](#case-14) | Frontend и motion-дизайн | Проверить, способен ли одношаговый coding workflow создать motion-дизайн без вспомогательных инструментов генерации | Demo |
+| [Исследовать человека и создать анимированный персональный сайт](#case-15) | Frontend и motion-дизайн | Дать широкое задание на персональный сайт, затем проверить исследование, планирование, итерации и browser validation модели | Tutorial |
+| [Оценить медленный, но сильный frontend-запуск](#case-16) | Оценка и ограничения | При тестировании frontend-задачи записывать время выполнения вместе с качеством результата | Evaluation |
+| [Создать симуляцию черной дыры](#case-17) | Frontend и motion-дизайн | Использовать задачу научной визуализации для проверки сгенерированной симуляции черной дыры | Demo |
+| [Создать виртуальный MacBook с работающей macOS](#case-18) | Код и интеграции | Объединить Three.js-рендеринг устройства с интерактивной симуляцией операционной системы в браузере | Demo |
+| [Смоделировать двигатель V8 через Blender MCP](#case-19) | Интерактивные игры и 3D | Использовать Blender MCP и один запрос для генерации детальной механической 3D-модели | Integration |
+| [Проверить детективный текст на провалы с предзнаменованиями](#case-20) | Оценка и ограничения | Оценить, балансирует ли сгенерированный детектив между подсказками, неочевидностью и предзнаменованиями | Limit |
+| [Сравнить моделирование и анимацию Millennium Falcon](#case-21) | Оценка и ограничения | Использовать одинаковые запросы по стилю и настройки усилий для сравнения 3D-моделирования, анимации, времени и стоимости | Benchmark |
+| [Проверить сложное frontend-моделирование, частицы и shaders](#case-22) | Frontend и motion-дизайн | Использовать публичный frontend prompt, чтобы за один проход проверить точность моделирования, эффекты частиц и генерацию inline shaders | Demo |
+| [Создать игровую боевую арену по одному reference](#case-23) | Интерактивные игры и 3D | Использовать один reference для проверки одношаговой генерации полной игровой арены | Demo |
+| [Создать три самостоятельно играющие ретроигры в HTML-файлах](#case-24) | Интерактивные игры и 3D | Требовать графику, врагов, правила и автономную игру внутри самостоятельных HTML-файлов | Benchmark |
+| [Создать GPU-компилятор от DSL до PTX](#case-25) | Код и интеграции | Использовать сквозную задачу компилятора, охватывающую DSL, compiler passes, генерацию PTX и путь Tensor Core | Demo |
+| [Создать инструмент процедурной музыки с одной попытки](#case-26) | Frontend и motion-дизайн | Проверить одношаговую генерацию интерактивного генератора процедурной музыки и осторожно сравнить видимый результат | Demo |
+| [Создать одношаговую игру в прятки с хамелеоном](#case-27) | Интерактивные игры и 3D | Создать однофайловую игру с подбором цвета, процедурными зонами, звуком и подсчетом очков по раундам | Benchmark |
+| [Обозреть подборку из десяти проектов Kimi K3](#case-28) | Оценка и ограничения | Использовать связанную подборку проектов для поиска конкретных артефактов, которые затем проверяются отдельно | Evaluation |
+| [Сравнить продвинутый landing page у четырех моделей](#case-29) | Оценка и ограничения | Зафиксировать запрос на landing page и сравнить глубину анимации и завершенность результатов моделей | Evaluation |
+| [Оценить механику и стоимость ретроигр](#case-30) | Оценка и ограничения | Сравнивать игровой процесс, физику, механику, автономное поведение, расход tokens и стоимость на одинаковых ретроигровых задачах | Benchmark |
+| [Сравнить генерацию игр с Fable 5](#case-31) | Оценка и ограничения | Использовать параллельный пример сгенерированных игр как узкую оценку, а не общий вердикт о модели | Evaluation |
+| [Создать WebGL2 raytracer черной дыры в реальном времени](#case-32) | Код и интеграции | Проверить генерацию по одному prompt нативного WebGL2 geodesic raytracer в одном HTML-файле | Benchmark |
+| [Создать product page в Three.js по двум изображениям](#case-33) | Frontend и motion-дизайн | Использовать два reference-изображения и явное требование Three.js для создания презентации продукта | Demo |
+| [Сравнить сложные frontend- и development-задачи с Opus 4.8](#case-34) | Оценка и ограничения | Использовать несколько сложных coding-задач для поиска побед и проигрышей, не объявляя одну модель универсально лучшей | Evaluation |
+| [Рассмотреть benchmarks и тест landing page](#case-35) | Оценка и ограничения | Объединить контекст benchmark с конкретным тестом генерации landing page, сохраняя раздельность двух типов доказательств | Evaluation |
+| [Создать игру в духе Paper Mario в 2.5D с агентским toolchain](#case-36) | Интерактивные игры и 3D | Использовать Kimi K3 с Grok Build или Claude Code и Spriterrific для сборки 2.5D game workflow | Tutorial |
+| [Оценить индуктивное рассуждение на задачах граф-в-формулу](#case-37) | Оценка и ограничения | Измерять правильность, поведение на holdout и сложность формулы в задачах first-order induction | Benchmark |
+| [Обозреть заявленные игры, landing pages, 3D-работы и long context](#case-38) | Оценка и ограничения | Использовать мульти-source roundup для сравнения конкретных артефактов и отмечать ограничения скорости рядом с заявлениями о стоимости | Evaluation |
+| [Изобрести роскошный резак для хлеба и его product page](#case-39) | Frontend и motion-дизайн | Объединить идею продукта, exploded view, демонстрацию и landing page в одном дизайн-артефакте | Demo |
+| [Проверить сложный план и оспорить его способы исправления](#case-40) | Оценка и ограничения | Использовать вторую модель для поиска заниженных выводов, неверных remedies и заключений, которые следует отвергнуть | Evaluation |
+| [Сравнить ASCII-диаграммы reinforcement-learning цикла в стиле PPO](#case-41) | Оценка и ограничения | Зафиксировать prompt ASCII-диаграммы и сравнить представление reinforcement-learning цикла моделями | Evaluation |
+| [Моделировать в Blender с учетом ошибок capacity](#case-42) | Оценка и ограничения | Оценивать частичный прогресс Blender вместе с надежностью сервиса, а не только артефакт | Limit |
+| [Создать браузерную 3D wuxia RPG](#case-43) | Интерактивные игры и 3D | Объединить ближний бой, quests, inventory, погоду, interiors, работу со средой Blender и адаптированные assets | Demo |
+| [Создать браузерную multiplayer-игру в духе Minecraft](#case-44) | Интерактивные игры и 3D | В ограниченном по времени и стоимости запуске создать игровую онлайн multiplayer-игру для браузера | Demo |
+| [Создать десятисекундный рекурсивный GIF с пеликаном](#case-45) | Frontend и motion-дизайн | Использовать полностью заданное описание зацикленной анимации для проверки непрерывности сюжета и рекурсии GIF | Demo |
+| [Создать эмулятор Game Boy Advance на основе mGBA WASM](#case-46) | Код и интеграции | Интегрировать лицензированную 3D-модель и настоящее ядро эмулятора, затем рекурсивно улучшать интерфейс и игровой процесс | Integration |
+| [Сравнить генерацию Flappy Bird на арене](#case-47) | Оценка и ограничения | Использовать arena-задачу для сравнения двух результатов Flappy Bird, сохраняя оценку специфичной для этой задачи | Evaluation |
+| [Воссоздать браузерную кооперативную игру с разделенным экраном](#case-48) | Интерактивные игры и 3D | Одним запросом создать браузерную кооперацию с разделенным экраном и взаимодействием с окружением в реальном времени | Demo |
+| [Создать играбельную игру через Design Mode в Command Code](#case-49) | Интерактивные игры и 3D | Использовать design command Command Code для одношаговой сборки игры и записывать, является ли результат играбельным | Demo |
+| [Исследовать несколько тем по китайскоязычным источникам](#case-50) | Код и интеграции | Использовать длительные research-задачи для сравнения полноты и latency разных поколений моделей | Evaluation |
+| [Собрать целостную браузерную wuxia RPG](#case-51) | Интерактивные игры и 3D | Интегрировать перемещение, бой, quests, inventory, погоду, исследование и работу над 3D-средой в одной игре | Demo |
+| [Решить визуальную индуктивную задачу Bongard с инструментом](#case-52) | Оценка и ограничения | Проверить, помогает ли использование инструмента вывести визуальное правило в задаче рассуждения Bongard | Evaluation |
+| [Сравнить frontend-вкус и 3D-дизайн с GPT-5.6 Sol](#case-53) | Оценка и ограничения | Проверять возможности, визуальный вкус, элегантность и 3D-исполнение в ограниченном frontend-сравнении | Evaluation |
+| [Создать игровую crossover-игру Hollow Knight](#case-54) | Интерактивные игры и 3D | Использовать существующие game assets для создания игровой битвы Knight против Kimi | Demo |
+| [Создать SVG BMW M4 CS в боковом ракурсе](#case-55) | Frontend и motion-дизайн | Использовать конкретный автомобиль и ракурс для проверки векторной иллюстрации | Demo |
+| [Клонировать macOS в браузере с работающими приложениями](#case-56) | Код и интеграции | Создать браузерную симуляцию операционной системы с приложениями музыки, браузера и email | Demo |
+| [Сравнить генерацию сайтов у трех моделей](#case-57) | Оценка и ограничения | Использовать видимые результаты сайтов для сравнения Kimi K3, Fable 5 и GPT-5.6 Sol в одном тесте | Evaluation |
+| [Воссоздать Gargantua через обратную связь по скриншотам](#case-58) | Frontend и motion-дизайн | Использовать последовательные скриншоты как наблюдения для диагностики и улучшения научной визуализации | Tutorial |
+| [Сравнить процедурную генерацию 3D-игр и стоимость](#case-59) | Оценка и ограничения | Зафиксировать prompt между моделями и проверять сгенерированные системы рулетки, slot machine и pinball со стоимостью каждого запуска | Benchmark |
+| [Создать 3D-браузерную игру в духе Fall Guys за один проход](#case-60) | Интерактивные игры и 3D | Одним запросом создать игровую 3D-игру с препятствиями и открыть проект для проверки | Demo |
+| [Создать и самостоятельно протестировать апокалиптический FPS в Лиссабоне](#case-61) | Интерактивные игры и 3D | Использовать запуск максимального усилия по одному prompt, который тестирует, делает скриншоты и итерирует до выдачи играбельного FPS | Demo |
+| [Создать симуляцию macOS с работающим FaceTime](#case-62) | Код и интеграции | Использовать задачу виртуальной ОС, чтобы проверить работу сгенерированного взаимодействия приложения | Demo |
+| [Создать игру в стиле Animal Crossing по простому запросу](#case-63) | Интерактивные игры и 3D | Использовать минимальный game brief для проверки играбельности, gameplay loop и parallax-эффектов | Demo |
+| [Добавить frontend-компаратор эффектов двух задач](#case-64) | Код и интеграции | Создать инструмент, который выбирает две завершенные задачи, показывает их рядом и синхронизирует views и interactions | Tutorial |
+| [Создать игру в духе Mario по brief из одного предложения](#case-65) | Интерактивные игры и 3D | Минимальным одношаговым запросом проверить играбельность, дизайн уровня, pixel art и parallax | Demo |
+| [Улучшить визуализацию черной дыры с помощью 62 скриншотов](#case-66) | Frontend и motion-дизайн | Использовать цикл обратной связи по скриншотам для чтения, диагностики и исправления визуальной симуляции на множестве итераций | Tutorial |
+| [Создать работающий zombie-шутер от первого лица](#case-67) | Интерактивные игры и 3D | Использовать конкретную цель zombie-shooter для проверки полного игрового FPS-артефакта | Demo |
+| [Создать маркетинговый PDF о post-training](#case-68) | Frontend и motion-дизайн | Использовать названный продукт и формат результата для генерации маркетингового документа | Demo |
+| [Сравнить детализацию и освещение 3D-сцены арсенала](#case-69) | Оценка и ограничения | Проверять плотность объектов, освещение и детализацию сцены в ограниченном сравнении Kimi K3 и Opus 4.8 | Evaluation |
+| [Создать пользовательский интерфейс по одному prompt](#case-70) | Frontend и motion-дизайн | Использовать один запрос для генерации и проверки полного UI-дизайна | Demo |
+
 <a id="games-3d"></a>
 ## 🎮 Интерактивные игры и 3D
-
-| Case | What it shows | Type |
-|---|---|---|
-| [Создать voxel pod racer одним prompt](#case-1) | Использовать короткую идею для прототипа гонки и определить следующую итерацию | Demo |
-| [Сравнить Frogger на одном prompt](#case-2) | Зафиксировать prompt и сравнить различия между моделями | Evaluation |
-| [Создать Frogger и запись игры](#case-3) | Отдельно проверить одношаговую генерацию игры и записи | Demo |
-| [Создать прототип авианосца в Three.js](#case-4) | Проверить интерактивное 3D на конкретной сцене запуска и посадки | Demo |
-| [Создать игру в духе Paper Mario с агентскими инструментами](#case-9) | Объединить Kimi K3 с агентским harness и инструментами для ассетов, чтобы получить игровые элементы в 2D и 3D | Demo |
-| [Создать шутер от первого лица в метро](#case-11) | Использовать конкретную обстановку метро для проверки сгенерированного шутера от первого лица | Demo |
-| [Смоделировать двигатель V8 через Blender MCP](#case-19) | Использовать Blender MCP и один запрос для генерации детальной механической 3D-модели | Integration |
-| [Создать игровую боевую арену по одному reference](#case-23) | Использовать один reference для проверки одношаговой генерации полной игровой арены | Demo |
-| [Создать три самостоятельно играющие ретроигры в HTML-файлах](#case-24) | Требовать графику, врагов, правила и автономную игру внутри самостоятельных HTML-файлов | Benchmark |
-| [Создать одношаговую игру в прятки с хамелеоном](#case-27) | Создать однофайловую игру с подбором цвета, процедурными зонами, звуком и подсчетом очков по раундам | Benchmark |
-| [Создать игру в духе Paper Mario в 2.5D с агентским toolchain](#case-36) | Использовать Kimi K3 с Grok Build или Claude Code и Spriterrific для сборки 2.5D game workflow | Tutorial |
-| [Создать браузерную 3D wuxia RPG](#case-43) | Объединить ближний бой, quests, inventory, погоду, interiors, работу со средой Blender и адаптированные assets | Demo |
-| [Создать браузерную multiplayer-игру в духе Minecraft](#case-44) | В ограниченном по времени и стоимости запуске создать игровую онлайн multiplayer-игру для браузера | Demo |
-| [Воссоздать браузерную кооперативную игру с разделенным экраном](#case-48) | Одним запросом создать браузерную кооперацию с разделенным экраном и взаимодействием с окружением в реальном времени | Demo |
-| [Создать играбельную игру через Design Mode в Command Code](#case-49) | Использовать design command Command Code для одношаговой сборки игры и записывать, является ли результат играбельным | Demo |
-| [Собрать целостную браузерную wuxia RPG](#case-51) | Интегрировать перемещение, бой, quests, inventory, погоду, исследование и работу над 3D-средой в одной игре | Demo |
-| [Создать игровую crossover-игру Hollow Knight](#case-54) | Использовать существующие game assets для создания игровой битвы Knight против Kimi | Demo |
-| [Создать 3D-браузерную игру в духе Fall Guys за один проход](#case-60) | Одним запросом создать игровую 3D-игру с препятствиями и открыть проект для проверки | Demo |
-| [Создать и самостоятельно протестировать апокалиптический FPS в Лиссабоне](#case-61) | Использовать запуск максимального усилия по одному prompt, который тестирует, делает скриншоты и итерирует до выдачи играбельного FPS | Demo |
-| [Создать игру в стиле Animal Crossing по простому запросу](#case-63) | Использовать минимальный game brief для проверки играбельности, gameplay loop и parallax-эффектов | Demo |
-| [Создать игру в духе Mario по brief из одного предложения](#case-65) | Минимальным одношаговым запросом проверить играбельность, дизайн уровня, pixel art и parallax | Demo |
-| [Создать работающий zombie-шутер от первого лица](#case-67) | Использовать конкретную цель zombie-shooter для проверки полного игрового FPS-артефакта | Demo |
 
 <a id="case-1"></a>
 ### Case 1: [Создать voxel pod racer одним prompt](https://x.com/ivanfioravanti/status/2077763009657627055) (by [@ivanfioravanti](https://x.com/ivanfioravanti))
@@ -117,7 +165,7 @@ curl --request POST \
 Voxel star wars pod-racers run
 ```
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01-poster.jpg" alt="Case 1 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01-poster.jpg" alt="Case 1 source video poster" height="360"></a>
 
 [Play case 1 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-01.mp4)
 
@@ -132,7 +180,7 @@ Type: Demo | Date: 2026-07-16
 
 Автор показывает версию Kimi K3 как сравнение. Текст prompt и критерии оценки не опубликованы
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02-poster.jpg" alt="Case 2 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02-poster.jpg" alt="Case 2 source video poster" height="360"></a>
 
 [Play case 2 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-02.mp4)
 
@@ -147,7 +195,7 @@ Type: Evaluation | Date: 2026-07-16
 
 Автор сообщает об одном проходе для игры и одном для записи. Точные prompts отсутствуют
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03-poster.jpg" alt="Case 3 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03-poster.jpg" alt="Case 3 source video poster" height="360"></a>
 
 [Play case 3 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-03.mp4)
 
@@ -162,7 +210,7 @@ Type: Demo | Date: 2026-07-16
 
 Автор показывает запуск и возвращение самолетов на авианосце класса Nimitz и положительно оценивает 3D-генерацию
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04-poster.jpg" alt="Case 4 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04-poster.jpg" alt="Case 4 source video poster" height="360"></a>
 
 [Play case 4 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-04.mp4)
 
@@ -177,6 +225,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает об использовании Kimi K3 с Grok Build, Spriterrific для 2D-ассетов и геометрией для 3D-ассетов в игре в духе Paper Mario. Источник демонстрирует инструменты и skills, но не публикует точный повторно используемый prompt
 
+<a href="https://x.com/chongdashu/status/2077886028866531655/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09-poster.jpg" alt="Case 9 source video poster" height="360"></a>
+
+[Watch case 9 source video on X](https://x.com/chongdashu/status/2077886028866531655/video/1)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -187,6 +239,10 @@ Type: Demo | Date: 2026-07-16
 **Использовать конкретную обстановку метро для проверки сгенерированного шутера от первого лица**
 
 Автор показывает FPS в метро, приписанный Kimi K3, и прямо отмечает неопределенность в том, повлиял ли на результат статус инфлюенсера. Prompt и воспроизводимый workflow отсутствуют
+
+<a href="https://x.com/bijanbowen/status/2077881805751873997/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11-poster.jpg" alt="Case 11 source video poster" height="360"></a>
+
+[Watch case 11 source video on X](https://x.com/bijanbowen/status/2077881805751873997/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -199,6 +255,10 @@ Type: Demo | Date: 2026-07-16
 
 Обозреватель сообщает, что Kimi K3 по одному prompt создал полный двигатель V8 с Blender MCP. Публикация ссылается на более полный обзор, но в предоставленной записи точный prompt не раскрыт
 
+<a href="https://x.com/aisearchio/status/2077962156147146925/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19-poster.jpg" alt="Case 19 source video poster" height="360"></a>
+
+[Watch case 19 source video on X](https://x.com/aisearchio/status/2077962156147146925/video/1)
+
 Type: Integration | Date: 2026-07-17
 
 ---
@@ -209,6 +269,12 @@ Type: Integration | Date: 2026-07-17
 **Использовать один reference для проверки одношаговой генерации полной игровой арены**
 
 Автор сообщает, что Kimi K3 за один проход создал игровую боевую арену по одному reference. Публикация также содержит отдельное утверждение о leaderboard, но конкретный use case — показанный артефакт арены
+
+<a href="https://x.com/VORTEX_Promos/status/2077879705378730074/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-poster.jpg" alt="Case 23 source video poster" height="360"></a>
+
+[Watch case 23 source video on X](https://x.com/VORTEX_Promos/status/2077879705378730074/video/1)
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-01.jpg" alt="Case 23 source image 1" height="360"></a>
 
 Type: Demo | Date: 2026-07-16
 
@@ -221,6 +287,10 @@ Type: Demo | Date: 2026-07-16
 
 Источник сообщает о сравнении Atomic Chat, где модели создали Road Fighter, Battle City и Q*bert как самостоятельно играющие HTML-файлы. Сравнение цены и качества дано издателем и независимо здесь не воспроизводилось
 
+<a href="https://x.com/rohanpaul_ai/status/2077889084761206860/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24-poster.jpg" alt="Case 24 source video poster" height="360"></a>
+
+[Watch case 24 source video on X](https://x.com/rohanpaul_ai/status/2077889084761206860/video/1)
+
 Type: Benchmark | Date: 2026-07-16
 
 ---
@@ -231,6 +301,10 @@ Type: Benchmark | Date: 2026-07-16
 **Создать однофайловую игру с подбором цвета, процедурными зонами, звуком и подсчетом очков по раундам**
 
 AIMLAPI сообщает об одношаговом сравнении игры в прятки с одним prompt и указывает стоимость $3.11 для Kimi K3 и $12.23 для Fable 5. Возможности и стоимость заявлены провайдером
+
+<a href="https://x.com/aimlapi/status/2077898742179459274/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27-poster.jpg" alt="Case 27 source video poster" height="360"></a>
+
+[Watch case 27 source video on X](https://x.com/aimlapi/status/2077898742179459274/video/1)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -243,6 +317,10 @@ Type: Benchmark | Date: 2026-07-16
 
 Автор дает полный walkthrough с Grok Build и Kimi K3 и показывает генерацию sprites через Spriterrific. Источник называет инструменты, но не предоставляет точные повторно используемые prompts
 
+<a href="https://x.com/chongdashu/status/2077981621223837739/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36-poster.jpg" alt="Case 36 source video poster" height="360"></a>
+
+[Watch case 36 source video on X](https://x.com/chongdashu/status/2077981621223837739/video/1)
+
 Type: Tutorial | Date: 2026-07-17
 
 ---
@@ -253,6 +331,10 @@ Type: Tutorial | Date: 2026-07-17
 **Объединить ближний бой, quests, inventory, погоду, interiors, работу со средой Blender и адаптированные assets**
 
 Источник сообщает о браузерной RPG Kimi K3 с ближним боем, quests, inventory, динамической погодой и исследуемыми interiors, а также Blender-моделированием, улучшением collision, PBR retexturing и адаптированными открытыми assets
+
+<a href="https://x.com/AngryTomtweets/status/2077868163136450619/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43-poster.jpg" alt="Case 43 source video poster" height="360"></a>
+
+[Watch case 43 source video on X](https://x.com/AngryTomtweets/status/2077868163136450619/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -265,6 +347,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает, что Kimi K3 за один час и $6.57 создал доступную в браузере multiplayer-игру в духе Minecraft. Это самостоятельно заявленные параметры одного запуска
 
+<a href="https://x.com/Alezander907/status/2077926014710407407/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44-poster.jpg" alt="Case 44 source video poster" height="360"></a>
+
+[Watch case 44 source video on X](https://x.com/Alezander907/status/2077926014710407407/video/1)
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -275,6 +361,10 @@ Type: Demo | Date: 2026-07-17
 **Одним запросом создать браузерную кооперацию с разделенным экраном и взаимодействием с окружением в реальном времени**
 
 Автор сообщает, что Kimi K3 по одному prompt создал браузерную игру в духе It Takes Two, где Mario и Luigi взаимодействуют в split-screen и с окружением в реальном времени
+
+<a href="https://x.com/ridark_eth/status/2077882889803378969/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48-poster.jpg" alt="Case 48 source video poster" height="360"></a>
+
+[Watch case 48 source video on X](https://x.com/ridark_eth/status/2077882889803378969/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -287,6 +377,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает об одношаговом сравнении в design mode Command Code и говорит, что запуск Kimi K3 создал играбельную игру за $0.038. Эти стоимость и качество заявлены самим автором
 
+<a href="https://x.com/naymur_dev/status/2077873562661335207/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49-poster.jpg" alt="Case 49 source video poster" height="360"></a>
+
+[Watch case 49 source video on X](https://x.com/naymur_dev/status/2077873562661335207/video/1)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -297,6 +391,10 @@ Type: Demo | Date: 2026-07-16
 **Интегрировать перемещение, бой, quests, inventory, погоду, исследование и работу над 3D-средой в одной игре**
 
 Источник сообщает о wuxia-style браузерной RPG Kimi K3, объединяющей ближний бой, quests, inventory, динамическую погоду, исследуемые interiors и целостную структуру 3D gameplay
+
+<a href="https://x.com/TokenGremlin/status/2077855657068310620/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51-poster.jpg" alt="Case 51 source video poster" height="360"></a>
+
+[Watch case 51 source video on X](https://x.com/TokenGremlin/status/2077855657068310620/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -309,6 +407,12 @@ Type: Demo | Date: 2026-07-16
 
 Автор, заявляющий о работе в Kimi, сообщает о создании игры из assets Hollow Knight, где Knight сражается с Kimi, и дает публичную ссылку. При атрибуции и оценке следует учитывать эту связь
 
+<a href="https://x.com/wangfeng0315/status/2077933531200991583/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-poster.jpg" alt="Case 54 source video poster" height="360"></a>
+
+[Watch case 54 source video on X](https://x.com/wangfeng0315/status/2077933531200991583/video/1)
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-01.jpg" alt="Case 54 source image 1" height="360"></a>
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -319,6 +423,10 @@ Type: Demo | Date: 2026-07-17
 **Одним запросом создать игровую 3D-игру с препятствиями и открыть проект для проверки**
 
 Автор сообщает об одношаговой сборке Kimi K3 браузерной игры в духе Fall Guys и говорит, что prompt и GitHub-проект доступны по ссылке источника. Эта запись prompt не воспроизводит
+
+<a href="https://x.com/aayushman2703/status/2077857886441783526/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60-poster.jpg" alt="Case 60 source video poster" height="360"></a>
+
+[Watch case 60 source video on X](https://x.com/aayushman2703/status/2077857886441783526/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -331,6 +439,8 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает, что Kimi K3 примерно за один час создал играбельный браузерный FPS Apocalyptic Lisbon, многократно тестируя, делая скриншоты и итерируя. Время и процесс заявлены самим автором
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-61-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-61-01.jpg" alt="Case 61 source image 1" height="360"></a>
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -342,6 +452,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает, что Kimi K3 по очень простому prompt создал полностью игровую игру в стиле Animal Crossing с gameplay loop и parallax-эффектами. Точная формулировка в записи отсутствует
 
+<a href="https://x.com/gagarot200/status/2077949230287896830/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63-poster.jpg" alt="Case 63 source video poster" height="360"></a>
+
+[Watch case 63 source video on X](https://x.com/gagarot200/status/2077949230287896830/video/1)
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -352,6 +466,12 @@ Type: Demo | Date: 2026-07-17
 **Минимальным одношаговым запросом проверить играбельность, дизайн уровня, pixel art и parallax**
 
 Автор сообщает, что Kimi K3 по одному brief создал работающую игру в духе Mario без очевидных ошибок, со структурой уровня и parallax. В том же отчете критикуется качество музыки и графики
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-01.jpg" alt="Case 65 source image 1" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-02.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-02.jpg" alt="Case 65 source image 2" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-03.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-65-03.jpg" alt="Case 65 source image 3" height="360"></a>
 
 Type: Demo | Date: 2026-07-17
 
@@ -367,6 +487,10 @@ Type: Demo | Date: 2026-07-17
 > [!WARNING]
 > The original source permalink returned HTTP 404 during the 2026-07-17 audit. Attribution and evidence are preserved from the supplied high-confidence source package.
 
+<a href="https://x.com/X2worldtech/status/2077902793449296203"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67-poster.jpg" alt="Case 67 source video poster" height="360"></a>
+
+[Watch case 67 source video on X](https://x.com/X2worldtech/status/2077902793449296203)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -375,24 +499,6 @@ Type: Demo | Date: 2026-07-16
 <a id="frontend-motion"></a>
 ## 🎨 Frontend и motion-дизайн
 
-| Case | What it shows | Type |
-|---|---|---|
-| [Создать интерактивный motion-frontend](#case-5) | Сделать графику, которая остается интерактивной на паузе | Demo |
-| [Создать синхронизированную motion-рекламу](#case-6) | Проверить синхронизацию музыки, эффектов и движения | Demo |
-| [Создать motion-дизайн полностью кодом](#case-14) | Проверить, способен ли одношаговый coding workflow создать motion-дизайн без вспомогательных инструментов генерации | Demo |
-| [Исследовать человека и создать анимированный персональный сайт](#case-15) | Дать широкое задание на персональный сайт, затем проверить исследование, планирование, итерации и browser validation модели | Tutorial |
-| [Создать симуляцию черной дыры](#case-17) | Использовать задачу научной визуализации для проверки сгенерированной симуляции черной дыры | Demo |
-| [Проверить сложное frontend-моделирование, частицы и shaders](#case-22) | Использовать публичный frontend prompt, чтобы за один проход проверить точность моделирования, эффекты частиц и генерацию inline shaders | Demo |
-| [Создать инструмент процедурной музыки с одной попытки](#case-26) | Проверить одношаговую генерацию интерактивного генератора процедурной музыки и осторожно сравнить видимый результат | Demo |
-| [Создать product page в Three.js по двум изображениям](#case-33) | Использовать два reference-изображения и явное требование Three.js для создания презентации продукта | Demo |
-| [Изобрести роскошный резак для хлеба и его product page](#case-39) | Объединить идею продукта, exploded view, демонстрацию и landing page в одном дизайн-артефакте | Demo |
-| [Создать десятисекундный рекурсивный GIF с пеликаном](#case-45) | Использовать полностью заданное описание зацикленной анимации для проверки непрерывности сюжета и рекурсии GIF | Demo |
-| [Создать SVG BMW M4 CS в боковом ракурсе](#case-55) | Использовать конкретный автомобиль и ракурс для проверки векторной иллюстрации | Demo |
-| [Воссоздать Gargantua через обратную связь по скриншотам](#case-58) | Использовать последовательные скриншоты как наблюдения для диагностики и улучшения научной визуализации | Tutorial |
-| [Улучшить визуализацию черной дыры с помощью 62 скриншотов](#case-66) | Использовать цикл обратной связи по скриншотам для чтения, диагностики и исправления визуальной симуляции на множестве итераций | Tutorial |
-| [Создать маркетинговый PDF о post-training](#case-68) | Использовать названный продукт и формат результата для генерации маркетингового документа | Demo |
-| [Создать пользовательский интерфейс по одному prompt](#case-70) | Использовать один запрос для генерации и проверки полного UI-дизайна | Demo |
-
 <a id="case-5"></a>
 ### Case 5: [Создать интерактивный motion-frontend](https://x.com/chetaslua/status/2077749371144442022) (by [@chetaslua](https://x.com/chetaslua))
 
@@ -400,7 +506,7 @@ Type: Demo | Date: 2026-07-16
 
 Автор указывает 42 минуты, один проход, простой код и отсутствие harness, MCP и skills
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05-poster.jpg" alt="Case 5 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05-poster.jpg" alt="Case 5 source video poster" height="360"></a>
 
 [Play case 5 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-05.mp4)
 
@@ -415,7 +521,7 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает о рекламе в стиле Spotify, созданной одним prompt. Точный prompt не опубликован
 
-<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06-poster.jpg" alt="Case 6 video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06-poster.jpg" alt="Case 6 source video poster" height="360"></a>
 
 [Play case 6 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-06.mp4)
 
@@ -430,6 +536,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает об одношаговом результате Kimi K3, полностью созданном кодом без MCP, skills, инструментов, генерации видео и специальных prompts. Точный prompt не приведен
 
+<a href="https://x.com/chetaslua/status/2077952938564354503/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14-poster.jpg" alt="Case 14 source video poster" height="360"></a>
+
+[Watch case 14 source video on X](https://x.com/chetaslua/status/2077952938564354503/video/1)
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -440,6 +550,10 @@ Type: Demo | Date: 2026-07-17
 **Дать широкое задание на персональный сайт, затем проверить исследование, планирование, итерации и browser validation модели**
 
 Автор сообщает, что Kimi K3 исследовал Nick Saponaro и по широкому запросу создал анимированный персональный сайт, включая планирование, тестирование, итерации и проверки в браузере. Это самостоятельно заявленная демонстрация workflow
+
+<a href="https://x.com/nicky_sap/status/2077857190707429411/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15-poster.jpg" alt="Case 15 source video poster" height="360"></a>
+
+[Watch case 15 source video on X](https://x.com/nicky_sap/status/2077857190707429411/video/1)
 
 Type: Tutorial | Date: 2026-07-16
 
@@ -452,6 +566,10 @@ Type: Tutorial | Date: 2026-07-16
 
 Автор показывает симуляцию черной дыры, приписанную Kimi K3, и называет ее лучшей из увиденных. Источник дает видимый результат, но не prompt, rubric или независимую проверку
 
+<a href="https://x.com/chetaslua/status/2077961850352971796/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17-poster.jpg" alt="Case 17 source video poster" height="360"></a>
+
+[Watch case 17 source video on X](https://x.com/chetaslua/status/2077961850352971796/video/1)
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -462,6 +580,10 @@ Type: Demo | Date: 2026-07-17
 **Использовать публичный frontend prompt, чтобы за один проход проверить точность моделирования, эффекты частиц и генерацию inline shaders**
 
 Автор сообщает об однопроходном frontend-результате Kimi K3 с точным моделированием, эффектами частиц и сложным кодом inline shader и указывает, что тестовый prompt опубликован по ссылке источника
+
+<a href="https://x.com/karminski3/status/2077889959223337099/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22-poster.jpg" alt="Case 22 source video poster" height="360"></a>
+
+[Watch case 22 source video on X](https://x.com/karminski3/status/2077889959223337099/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -474,6 +596,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает, что Kimi K3 с одной попытки создал инструмент процедурной музыки, и положительно сравнивает его с результатами Fable 5 и GPT-5.6 Sol. Это собственный набор тестов автора, а не стандартизированный benchmark
 
+<a href="https://x.com/mirochill/status/2077723551331758478/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26-poster.jpg" alt="Case 26 source video poster" height="360"></a>
+
+[Watch case 26 source video on X](https://x.com/mirochill/status/2077723551331758478/video/1)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -484,6 +610,10 @@ Type: Demo | Date: 2026-07-16
 **Использовать два reference-изображения и явное требование Three.js для создания презентации продукта**
 
 Автор сообщает, что Kimi K3 разработал product page по двум изображениям и создал явно запрошенную версию на Three.js. Дополнительные детали prompt или реализации не приведены
+
+<a href="https://x.com/1littlecoder/status/2077890296806031665/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33-poster.jpg" alt="Case 33 source video poster" height="360"></a>
+
+[Watch case 33 source video on X](https://x.com/1littlecoder/status/2077890296806031665/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -496,6 +626,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор сообщает, что Kimi K3 изобрел гильотинный резак для хлеба, представил его как люксовый продукт и создал landing page с exploded view и демонстрацией
 
+<a href="https://x.com/filicroval/status/2077871090731221438/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39-poster.jpg" alt="Case 39 source video poster" height="360"></a>
+
+[Watch case 39 source video on X](https://x.com/filicroval/status/2077871090731221438/video/1)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -506,6 +640,10 @@ Type: Demo | Date: 2026-07-16
 **Использовать полностью заданное описание зацикленной анимации для проверки непрерывности сюжета и рекурсии GIF**
 
 Источник содержит prompt на зацикленный десятисекундный GIF: пеликан едет на велосипеде и при приближении камеры получает текстовым сообщением то же видео. Автор показывает полученную анимацию Kimi K3
+
+<a href="https://x.com/1littlecoder/status/2077880380900937865"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45-poster.jpg" alt="Case 45 source video poster" height="360"></a>
+
+[Watch case 45 source video on X](https://x.com/1littlecoder/status/2077880380900937865)
 
 Type: Demo | Date: 2026-07-16
 
@@ -518,6 +656,8 @@ Type: Demo | Date: 2026-07-16
 
 Автор показывает SVG BMW M4 CS сбоку, приписанный Kimi K3 Max. В источнике есть артефакт, но нет prompt или производственных шагов
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-55-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-55-01.jpg" alt="Case 55 source image 1" height="360"></a>
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -528,6 +668,10 @@ Type: Demo | Date: 2026-07-16
 **Использовать последовательные скриншоты как наблюдения для диагностики и улучшения научной визуализации**
 
 Источник сообщает, что Kimi K3 воссоздал Gargantua из Interstellar через 62 собственных скриншота, читая каждый результат, диагностируя проблемы и итеративно действуя
+
+<a href="https://x.com/AngryTomtweets/status/2077868981659324444/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58-poster.jpg" alt="Case 58 source video poster" height="360"></a>
+
+[Watch case 58 source video on X](https://x.com/AngryTomtweets/status/2077868981659324444/video/1)
 
 Type: Tutorial | Date: 2026-07-16
 
@@ -540,6 +684,10 @@ Type: Tutorial | Date: 2026-07-16
 
 Источник сообщает, что Kimi K3 реконструировал Gargantua из Interstellar, наблюдая и улучшая результат на протяжении 62 скриншотов. Это демонстрирует заявленный цикл обратной связи, а не независимую физическую точность
 
+<a href="https://x.com/TokenGremlin/status/2077855959201042645/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66-poster.jpg" alt="Case 66 source video poster" height="360"></a>
+
+[Watch case 66 source video on X](https://x.com/TokenGremlin/status/2077855959201042645/video/1)
+
 Type: Tutorial | Date: 2026-07-16
 
 ---
@@ -550,6 +698,14 @@ Type: Tutorial | Date: 2026-07-16
 **Использовать названный продукт и формат результата для генерации маркетингового документа**
 
 Автор сообщает, что запросил у Kimi K3 маркетинговый PDF о post-training Inkling компании Thinking Machines, показывает результат и хвалит внутренний процесс. Prompt и критерии оценки не приведены
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-01.png" alt="Case 68 source image 1" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-02.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-02.png" alt="Case 68 source image 2" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-03.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-03.png" alt="Case 68 source image 3" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-04.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-68-04.png" alt="Case 68 source image 4" height="360"></a>
 
 Type: Demo | Date: 2026-07-16
 
@@ -562,6 +718,10 @@ Type: Demo | Date: 2026-07-16
 
 Автор показывает UI-дизайн, приписанный одношаговому запуску Kimi K3, и дает резко положительную субъективную оценку. Точный prompt и rubric отсутствуют
 
+<a href="https://x.com/jumperz/status/2077841331037094042/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70-poster.jpg" alt="Case 70 source video poster" height="360"></a>
+
+[Watch case 70 source video on X](https://x.com/jumperz/status/2077841331037094042/video/1)
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -570,23 +730,16 @@ Type: Demo | Date: 2026-07-16
 <a id="coding-integrations"></a>
 ## 💻 Код и интеграции
 
-| Case | What it shows | Type |
-|---|---|---|
-| [Создать виртуальный MacBook с работающей macOS](#case-18) | Объединить Three.js-рендеринг устройства с интерактивной симуляцией операционной системы в браузере | Demo |
-| [Создать GPU-компилятор от DSL до PTX](#case-25) | Использовать сквозную задачу компилятора, охватывающую DSL, compiler passes, генерацию PTX и путь Tensor Core | Demo |
-| [Создать WebGL2 raytracer черной дыры в реальном времени](#case-32) | Проверить генерацию по одному prompt нативного WebGL2 geodesic raytracer в одном HTML-файле | Benchmark |
-| [Создать эмулятор Game Boy Advance на основе mGBA WASM](#case-46) | Интегрировать лицензированную 3D-модель и настоящее ядро эмулятора, затем рекурсивно улучшать интерфейс и игровой процесс | Integration |
-| [Исследовать несколько тем по китайскоязычным источникам](#case-50) | Использовать длительные research-задачи для сравнения полноты и latency разных поколений моделей | Evaluation |
-| [Клонировать macOS в браузере с работающими приложениями](#case-56) | Создать браузерную симуляцию операционной системы с приложениями музыки, браузера и email | Demo |
-| [Создать симуляцию macOS с работающим FaceTime](#case-62) | Использовать задачу виртуальной ОС, чтобы проверить работу сгенерированного взаимодействия приложения | Demo |
-| [Добавить frontend-компаратор эффектов двух задач](#case-64) | Создать инструмент, который выбирает две завершенные задачи, показывает их рядом и синхронизирует views и interactions | Tutorial |
-
 <a id="case-18"></a>
 ### Case 18: [Создать виртуальный MacBook с работающей macOS](https://x.com/scottstts/status/2077890054299541890) (by [@scottstts](https://x.com/scottstts))
 
 **Объединить Three.js-рендеринг устройства с интерактивной симуляцией операционной системы в браузере**
 
 Источник сообщает, что Kimi K3 создал виртуальный MacBook в Three.js с функциональной средой в стиле macOS. Артефакт показан, но шаги реализации отсутствуют
+
+<a href="https://x.com/scottstts/status/2077890054299541890/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18-poster.jpg" alt="Case 18 source video poster" height="360"></a>
+
+[Watch case 18 source video on X](https://x.com/scottstts/status/2077890054299541890/video/1)
 
 Type: Demo | Date: 2026-07-16
 
@@ -599,6 +752,8 @@ Type: Demo | Date: 2026-07-16
 
 Источник сообщает, что Kimi K3 с нуля создал GPU-компилятор: от DSL и passes до генерации PTX, а также сравнил путь Tensor Core с Triton. Независимые подробности benchmark в предоставленной записи отсутствуют
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-25-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-25-01.png" alt="Case 25 source image 1" height="360"></a>
+
 Type: Demo | Date: 2026-07-16
 
 ---
@@ -609,6 +764,10 @@ Type: Demo | Date: 2026-07-16
 **Проверить генерацию по одному prompt нативного WebGL2 geodesic raytracer в одном HTML-файле**
 
 Автор описывает coding benchmark: рабочий однофайловый raytracer искривления света черной дырой на нативном WebGL2. Запись подтверждает задачу и участвующие модели, но не полный независимый аудит результатов
+
+<a href="https://x.com/AlicanKiraz0/status/2077885419744612597/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32-poster.jpg" alt="Case 32 source video poster" height="360"></a>
+
+[Watch case 32 source video on X](https://x.com/AlicanKiraz0/status/2077885419744612597/video/1)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -621,6 +780,8 @@ Type: Benchmark | Date: 2026-07-16
 
 Указанный проект Kimi K3 адаптирует лицензированную модель AGB-001, интегрирует ядро mGBA WASM и улучшает интерфейс и игровой процесс через recursive self-improvement. Публикация цитирует описание проекта, а не независимое воспроизведение
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-46-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-46-01.jpg" alt="Case 46 source image 1" height="360"></a>
+
 Type: Integration | Date: 2026-07-17
 
 ---
@@ -631,6 +792,8 @@ Type: Integration | Date: 2026-07-17
 **Использовать длительные research-задачи для сравнения полноты и latency разных поколений моделей**
 
 Автор сообщает о тестировании Kimi K3 на множестве research-тем по китайскоязычным источникам: результат оказался полнее K2.6, но медленнее. В публикации также отмечается высокая нагрузка на сервис в тот момент
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-50-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-50-01.png" alt="Case 50 source image 1" height="360"></a>
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -643,6 +806,10 @@ Type: Evaluation | Date: 2026-07-17
 
 Источник сообщает, что Kimi K3 использовали для создания браузерного клона macOS с музыкой, браузером, email и другими функциями. Детали реализации не приведены
 
+<a href="https://x.com/twid/status/2077924755357974989/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56-poster.jpg" alt="Case 56 source video poster" height="360"></a>
+
+[Watch case 56 source video on X](https://x.com/twid/status/2077924755357974989/video/1)
+
 Type: Demo | Date: 2026-07-17
 
 ---
@@ -653,6 +820,8 @@ Type: Demo | Date: 2026-07-17
 **Использовать задачу виртуальной ОС, чтобы проверить работу сгенерированного взаимодействия приложения**
 
 Автор показывает среду в стиле macOS, приписанную Kimi K3, и сообщает, что функция FaceTime работает. Шаги настройки или проверки отсутствуют
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-62-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-62-01.jpg" alt="Case 62 source image 1" height="360"></a>
 
 Type: Demo | Date: 2026-07-17
 
@@ -665,6 +834,10 @@ Type: Demo | Date: 2026-07-17
 
 Автор сообщает о запросе Kimi K3 на frontend workflow сравнения с выбором задач, двумя browser panes, object и roaming modes, синхронизированными viewpoints и тестами interactions. Публикация также отмечает более широкие ограничения модели
 
+<a href="https://x.com/MinLiBuilds/status/2077939461510615376/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64-poster.jpg" alt="Case 64 source video poster" height="360"></a>
+
+[Watch case 64 source video on X](https://x.com/MinLiBuilds/status/2077939461510615376/video/1)
+
 Type: Tutorial | Date: 2026-07-17
 
 ---
@@ -673,40 +846,16 @@ Type: Tutorial | Date: 2026-07-17
 <a id="evaluation-limits"></a>
 ## 🧪 Оценка и ограничения
 
-| Case | What it shows | Type |
-|---|---|---|
-| [Сравнить frontend-дизайн в задании BridgeBench с лавовой лампой](#case-7) | Использовать задание BridgeBench с лавовой лампой как ограниченное сравнение frontend-дизайна, а не универсальный рейтинг | Benchmark |
-| [Оценить написание сценариев в редакционном стиле](#case-8) | Измерять соответствие редакционному голосу, относительное место и стоимость сценария внутри четко обозначенного внутреннего benchmark | Benchmark |
-| [Сравнить дизайн, стоимость и сложность игры типа Flappy](#case-10) | При сравнении сгенерированных игр записывать настройки сложности, стоимость, дизайн и игровые возможности | Benchmark |
-| [Сравнить игровой дизайн с одним и тем же design prompt](#case-12) | Зафиксировать design prompt и отдельно проверять темп, чувство дизайна и игровой процесс | Benchmark |
-| [Требовать независимую проверку статистического аудита](#case-13) | Перед использованием выводов дополнять статистический аудит модели независимой экспертной проверкой или проверкой другой моделью | Limit |
-| [Оценить медленный, но сильный frontend-запуск](#case-16) | При тестировании frontend-задачи записывать время выполнения вместе с качеством результата | Evaluation |
-| [Проверить детективный текст на провалы с предзнаменованиями](#case-20) | Оценить, балансирует ли сгенерированный детектив между подсказками, неочевидностью и предзнаменованиями | Limit |
-| [Сравнить моделирование и анимацию Millennium Falcon](#case-21) | Использовать одинаковые запросы по стилю и настройки усилий для сравнения 3D-моделирования, анимации, времени и стоимости | Benchmark |
-| [Обозреть подборку из десяти проектов Kimi K3](#case-28) | Использовать связанную подборку проектов для поиска конкретных артефактов, которые затем проверяются отдельно | Evaluation |
-| [Сравнить продвинутый landing page у четырех моделей](#case-29) | Зафиксировать запрос на landing page и сравнить глубину анимации и завершенность результатов моделей | Evaluation |
-| [Оценить механику и стоимость ретроигр](#case-30) | Сравнивать игровой процесс, физику, механику, автономное поведение, расход tokens и стоимость на одинаковых ретроигровых задачах | Benchmark |
-| [Сравнить генерацию игр с Fable 5](#case-31) | Использовать параллельный пример сгенерированных игр как узкую оценку, а не общий вердикт о модели | Evaluation |
-| [Сравнить сложные frontend- и development-задачи с Opus 4.8](#case-34) | Использовать несколько сложных coding-задач для поиска побед и проигрышей, не объявляя одну модель универсально лучшей | Evaluation |
-| [Рассмотреть benchmarks и тест landing page](#case-35) | Объединить контекст benchmark с конкретным тестом генерации landing page, сохраняя раздельность двух типов доказательств | Evaluation |
-| [Оценить индуктивное рассуждение на задачах граф-в-формулу](#case-37) | Измерять правильность, поведение на holdout и сложность формулы в задачах first-order induction | Benchmark |
-| [Обозреть заявленные игры, landing pages, 3D-работы и long context](#case-38) | Использовать мульти-source roundup для сравнения конкретных артефактов и отмечать ограничения скорости рядом с заявлениями о стоимости | Evaluation |
-| [Проверить сложный план и оспорить его способы исправления](#case-40) | Использовать вторую модель для поиска заниженных выводов, неверных remedies и заключений, которые следует отвергнуть | Evaluation |
-| [Сравнить ASCII-диаграммы reinforcement-learning цикла в стиле PPO](#case-41) | Зафиксировать prompt ASCII-диаграммы и сравнить представление reinforcement-learning цикла моделями | Evaluation |
-| [Моделировать в Blender с учетом ошибок capacity](#case-42) | Оценивать частичный прогресс Blender вместе с надежностью сервиса, а не только артефакт | Limit |
-| [Сравнить генерацию Flappy Bird на арене](#case-47) | Использовать arena-задачу для сравнения двух результатов Flappy Bird, сохраняя оценку специфичной для этой задачи | Evaluation |
-| [Решить визуальную индуктивную задачу Bongard с инструментом](#case-52) | Проверить, помогает ли использование инструмента вывести визуальное правило в задаче рассуждения Bongard | Evaluation |
-| [Сравнить frontend-вкус и 3D-дизайн с GPT-5.6 Sol](#case-53) | Проверять возможности, визуальный вкус, элегантность и 3D-исполнение в ограниченном frontend-сравнении | Evaluation |
-| [Сравнить генерацию сайтов у трех моделей](#case-57) | Использовать видимые результаты сайтов для сравнения Kimi K3, Fable 5 и GPT-5.6 Sol в одном тесте | Evaluation |
-| [Сравнить процедурную генерацию 3D-игр и стоимость](#case-59) | Зафиксировать prompt между моделями и проверять сгенерированные системы рулетки, slot machine и pinball со стоимостью каждого запуска | Benchmark |
-| [Сравнить детализацию и освещение 3D-сцены арсенала](#case-69) | Проверять плотность объектов, освещение и детализацию сцены в ограниченном сравнении Kimi K3 и Opus 4.8 | Evaluation |
-
 <a id="case-7"></a>
 ### Case 7: [Сравнить frontend-дизайн в задании BridgeBench с лавовой лампой](https://x.com/bridgemindai/status/2077868061953007908) (by [@bridgemindai](https://x.com/bridgemindai))
 
 **Использовать задание BridgeBench с лавовой лампой как ограниченное сравнение frontend-дизайна, а не универсальный рейтинг**
 
 BridgeMind AI сообщает, что Kimi K3 обошел Fable 5 в задании BridgeBench с лавовой лампой и занял первое место на указанной арене. Это результаты сравнения по данным издателя
+
+<a href="https://x.com/bridgemindai/status/2077868061953007908/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07-poster.jpg" alt="Case 7 source video poster" height="360"></a>
+
+[Watch case 7 source video on X](https://x.com/bridgemindai/status/2077868061953007908/video/1)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -719,6 +868,8 @@ Type: Benchmark | Date: 2026-07-16
 
 Whats_AI сообщает о ранних внутренних результатах: 2,840 Elo, первое место в своей таблице и около $0.25 за сценарий. Это предварительный benchmark одной организации, а не общая гарантия производительности или цены
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-08-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-08-01.jpg" alt="Case 8 source image 1" height="360"></a>
+
 Type: Benchmark | Date: 2026-07-16
 
 ---
@@ -729,6 +880,10 @@ Type: Benchmark | Date: 2026-07-16
 **При сравнении сгенерированных игр записывать настройки сложности, стоимость, дизайн и игровые возможности**
 
 Внутренний Flappy benchmark Command Code сообщает о разных настройках сложности у моделей и указывает $0.024 для Kimi K3, $0.42 для Fable 5 и $0.15 для GPT-5.6 Sol. Неравные настройки ограничивают применимость этого внутреннего сравнения
+
+<a href="https://x.com/MrAhmadAwais/status/2077915347974557862/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10-poster.jpg" alt="Case 10 source video poster" height="360"></a>
+
+[Watch case 10 source video on X](https://x.com/MrAhmadAwais/status/2077915347974557862/video/1)
 
 Type: Benchmark | Date: 2026-07-17
 
@@ -741,6 +896,10 @@ Type: Benchmark | Date: 2026-07-17
 
 Command Code сообщает о сравнении Kimi K3, GPT-5.6 Sol и Fable 5 с одним prompt. По данным публикации, Kimi K3 показал хорошее чувство дизайна, а две другие модели играли слишком быстро; это оценка издателя
 
+<a href="https://x.com/CommandCodeAI/status/2077921526213746948/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12-poster.jpg" alt="Case 12 source video poster" height="360"></a>
+
+[Watch case 12 source video on X](https://x.com/CommandCodeAI/status/2077921526213746948/video/1)
+
 Type: Benchmark | Date: 2026-07-17
 
 ---
@@ -751,6 +910,8 @@ Type: Benchmark | Date: 2026-07-17
 **Перед использованием выводов дополнять статистический аудит модели независимой экспертной проверкой или проверкой другой моделью**
 
 Ethan Mollick сообщает, что Kimi K3 Max неверно применил статистику при аудите прежней академической работы, и соглашается с отдельной критикой. Этот отрицательный пример говорит в пользу независимой проверки
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-13-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-13-01.jpg" alt="Case 13 source image 1" height="360"></a>
 
 Type: Limit | Date: 2026-07-16
 
@@ -763,6 +924,10 @@ Type: Limit | Date: 2026-07-16
 
 Автор сообщает, что frontend-запуск Kimi K3 занял 35 минут, и называет результат одним из лучших для этого prompt. И скорость, и оценка качества являются наблюдением одного пользователя
 
+<a href="https://x.com/Lentils80/status/2077387333154857151/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16-poster.jpg" alt="Case 16 source video poster" height="360"></a>
+
+[Watch case 16 source video on X](https://x.com/Lentils80/status/2077387333154857151/video/1)
+
 Type: Evaluation | Date: 2026-07-15
 
 ---
@@ -773,6 +938,10 @@ Type: Evaluation | Date: 2026-07-15
 **Оценить, балансирует ли сгенерированный детектив между подсказками, неочевидностью и предзнаменованиями**
 
 Ethan Mollick сообщает, что Kimi K3 не написал хороший детектив: подсказки были одновременно слишком очевидными и слишком туманными, а предзнаменования не сработали. Он также отмечает это ограничение у других моделей
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-01.jpg" alt="Case 20 source image 1" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-02.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-20-02.png" alt="Case 20 source image 2" height="360"></a>
 
 Type: Limit | Date: 2026-07-17
 
@@ -785,6 +954,10 @@ Type: Limit | Date: 2026-07-17
 
 GMI Cloud сообщает о сравнении Kimi K3 и Fable 5 при воссоздании Millennium Falcon в пиксельном и оригинальном стилях с максимальным усилием. По их данным, Kimi K3 работал дольше, но стоил около одной трети в первом тесте и менее половины в другом; это результаты провайдера
 
+<a href="https://x.com/gmi_cloud/status/2077903360263676090/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21-poster.jpg" alt="Case 21 source video poster" height="360"></a>
+
+[Watch case 21 source video on X](https://x.com/gmi_cloud/status/2077903360263676090/video/1)
+
 Type: Benchmark | Date: 2026-07-16
 
 ---
@@ -795,6 +968,10 @@ Type: Benchmark | Date: 2026-07-16
 **Использовать связанную подборку проектов для поиска конкретных артефактов, которые затем проверяются отдельно**
 
 Автор собрал десять примеров Kimi K3 с медиа, включая эмулятор Game Boy Advance. Это коллекция, а не единый воспроизводимый workflow, поэтому каждый связанный пример следует проверять отдельно
+
+<a href="https://x.com/minchoi/status/2077957907857994006/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28-poster.jpg" alt="Case 28 source video poster" height="360"></a>
+
+[Watch case 28 source video on X](https://x.com/minchoi/status/2077957907857994006/video/1)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -807,6 +984,10 @@ Type: Evaluation | Date: 2026-07-17
 
 Автор сообщает, что дал один продвинутый prompt на landing page моделям Kimi K3, Fable, Grok и GPT Terra и считает результат Kimi K3 сильнейшим. Это самостоятельно заявленное сравнение одной задачи
 
+<a href="https://x.com/doutorcaleb/status/2077904020471947773/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29-poster.jpg" alt="Case 29 source video poster" height="360"></a>
+
+[Watch case 29 source video on X](https://x.com/doutorcaleb/status/2077904020471947773/video/1)
+
 Type: Evaluation | Date: 2026-07-16
 
 ---
@@ -817,6 +998,10 @@ Type: Evaluation | Date: 2026-07-16
 **Сравнивать игровой процесс, физику, механику, автономное поведение, расход tokens и стоимость на одинаковых ретроигровых задачах**
 
 Источник сообщает о тестах Road Fighter, Battle City и Q*bert с одним prompt и указывает $0.28 для Kimi K3, $0.28 для GPT-5.6 и $0.54 для Opus 4.8. Это benchmark-цифры издателя
+
+<a href="https://x.com/adxtyahq/status/2077860500462055570/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30-poster.jpg" alt="Case 30 source video poster" height="360"></a>
+
+[Watch case 30 source video on X](https://x.com/adxtyahq/status/2077860500462055570/video/1)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -829,6 +1014,10 @@ Type: Benchmark | Date: 2026-07-16
 
 Higgsfield представляет сравнение генерации игр Kimi K3 и Fable 5. В предоставленной записи есть сравнительное медиа, но нет prompt, scoring rubric или подробных условий
 
+<a href="https://x.com/higgsfield_ai/status/2077943629633712490/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31-poster.jpg" alt="Case 31 source video poster" height="360"></a>
+
+[Watch case 31 source video on X](https://x.com/higgsfield_ai/status/2077943629633712490/video/1)
+
 Type: Evaluation | Date: 2026-07-17
 
 ---
@@ -839,6 +1028,10 @@ Type: Evaluation | Date: 2026-07-17
 **Использовать несколько сложных coding-задач для поиска побед и проигрышей, не объявляя одну модель универсально лучшей**
 
 Обозреватель сообщает о прямых тестах Kimi K3 и Opus 4.8 и считает их примерно сопоставимыми на сложных frontend- и development-задачах, со смешанными результатами. Это оценка одного обозревателя
+
+<a href="https://x.com/op7418/status/2077969583018066116/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34-poster.jpg" alt="Case 34 source video poster" height="360"></a>
+
+[Watch case 34 source video on X](https://x.com/op7418/status/2077969583018066116/video/1)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -851,6 +1044,10 @@ Type: Evaluation | Date: 2026-07-17
 
 Видео обсуждает benchmarks, тест landing page и наблюдения о frontend-дизайне Kimi K3. Полный тестовый prompt и scoring rubric в предоставленной записи отсутствуют
 
+<a href="https://x.com/adamuchigabriel/status/2077880433925120471/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35-poster.jpg" alt="Case 35 source video poster" height="360"></a>
+
+[Watch case 35 source video on X](https://x.com/adamuchigabriel/status/2077880433925120471/video/1)
+
 Type: Evaluation | Date: 2026-07-16
 
 ---
@@ -861,6 +1058,8 @@ Type: Evaluation | Date: 2026-07-16
 **Измерять правильность, поведение на holdout и сложность формулы в задачах first-order induction**
 
 Автор сообщает о benchmark Kimi K3 и других моделей на задаче ICML INDUCTION: по 6–10 малым графам с 8–10 элементами нужно вывести формулу первого порядка. Публикация обновляет более ранние результаты; независимое воспроизведение здесь не заявляется
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-37-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-37-01.png" alt="Case 37 source image 1" height="360"></a>
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -873,6 +1072,8 @@ Type: Benchmark | Date: 2026-07-16
 
 Автор суммирует опубликованные тесты Kimi K3 по играм, landing pages, 3D-генерации и long-context работе и заключает, что модель стоит попробовать, но она пока не заменяет Fable 5. Все цифры — вторичные сообщения этого roundup
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-38-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-38-01.jpg" alt="Case 38 source image 1" height="360"></a>
+
 Type: Evaluation | Date: 2026-07-16
 
 ---
@@ -883,6 +1084,8 @@ Type: Evaluation | Date: 2026-07-16
 **Использовать вторую модель для поиска заниженных выводов, неверных remedies и заключений, которые следует отвергнуть**
 
 Автор сообщает, что Kimi K3 проверил тщательно доработанный план и обнаружил занижение серьезных проблем, необходимость исправить около одной трети предложенных remedies и опровержение одного вывода. Это результаты конкретного аудита
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-40-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-40-01.jpg" alt="Case 40 source image 1" height="360"></a>
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -895,6 +1098,10 @@ Type: Evaluation | Date: 2026-07-16
 
 Источник публикует prompt на ASCII-схему reinforcement-learning цикла в стиле PPO и показывает Kimi K3 Max рядом с Fable 5 High. Оценка остается визуальным сравнением одной задачи
 
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-01.png" alt="Case 41 source image 1" height="360"></a>
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-02.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-41-02.jpg" alt="Case 41 source image 2" height="360"></a>
+
 Type: Evaluation | Date: 2026-07-16
 
 ---
@@ -905,6 +1112,8 @@ Type: Evaluation | Date: 2026-07-16
 **Оценивать частичный прогресс Blender вместе с надежностью сервиса, а не только артефакт**
 
 Автор показывает прогресс моделирования Kimi K3 в Blender и сообщает о повторяющихся ошибках capacity. Работа в источнике не завершена, поэтому частичный результат и ограничение надежности следует рассматривать вместе
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-42-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-42-01.jpg" alt="Case 42 source image 1" height="360"></a>
 
 Type: Limit | Date: 2026-07-17
 
@@ -917,6 +1126,10 @@ Type: Limit | Date: 2026-07-17
 
 Автор сообщает о сравнении Kimi K3 и Opus 4.8 на задаче Flappy Bird в Arena и оценивает Kimi K3 значительно выше. Полный prompt или rubric в записи отсутствует
 
+<a href="https://x.com/jun_song/status/2077396996865003739/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47-poster.jpg" alt="Case 47 source video poster" height="360"></a>
+
+[Watch case 47 source video on X](https://x.com/jun_song/status/2077396996865003739/video/1)
+
 Type: Evaluation | Date: 2026-07-15
 
 ---
@@ -927,6 +1140,8 @@ Type: Evaluation | Date: 2026-07-15
 **Проверить, помогает ли использование инструмента вывести визуальное правило в задаче рассуждения Bongard**
 
 Автор сообщает, что Kimi K3 с помощью инструмента решил задачу Bongard, которую Grok 4.5 и Muse Spark 1.1 не решили в том же сравнении. Это результат одной пользовательской задачи, а не общий reasoning benchmark
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-52-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-52-01.jpg" alt="Case 52 source image 1" height="360"></a>
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -939,6 +1154,10 @@ Type: Evaluation | Date: 2026-07-16
 
 Автор сравнивает Kimi K3 и GPT-5.6 Sol во frontend-дизайне и считает Kimi K3 сильнее по визуальному вкусу, элегантности и 3D-возможностям. Оценка субъективна и специфична для задачи
 
+<a href="https://x.com/filicroval/status/2077736407506751952/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53-poster.jpg" alt="Case 53 source video poster" height="360"></a>
+
+[Watch case 53 source video on X](https://x.com/filicroval/status/2077736407506751952/video/1)
+
 Type: Evaluation | Date: 2026-07-16
 
 ---
@@ -949,6 +1168,10 @@ Type: Evaluation | Date: 2026-07-16
 **Использовать видимые результаты сайтов для сравнения Kimi K3, Fable 5 и GPT-5.6 Sol в одном тесте**
 
 Автор представляет сравнение генерации сайтов Kimi K3, Fable 5 и GPT-5.6 Sol. Полный prompt и scoring rubric в предоставленной записи не раскрыты
+
+<a href="https://x.com/pengchujin/status/2077962916226298340/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57-poster.jpg" alt="Case 57 source video poster" height="360"></a>
+
+[Watch case 57 source video on X](https://x.com/pengchujin/status/2077962916226298340/video/1)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -961,6 +1184,10 @@ Type: Evaluation | Date: 2026-07-17
 
 Издатель сообщает о многомодельном сравнении процедурных 3D-игр и указывает стоимость, включая $0.71 для Kimi K3 и $0.30 для Grok 4.5. Все рейтинги и цены относятся к запуску этого издателя
 
+<a href="https://x.com/adxtyahq/status/2077958193511362856/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59-poster.jpg" alt="Case 59 source video poster" height="360"></a>
+
+[Watch case 59 source video on X](https://x.com/adxtyahq/status/2077958193511362856/video/1)
+
 Type: Benchmark | Date: 2026-07-17
 
 ---
@@ -971,6 +1198,10 @@ Type: Benchmark | Date: 2026-07-17
 **Проверять плотность объектов, освещение и детализацию сцены в ограниченном сравнении Kimi K3 и Opus 4.8**
 
 Источник сообщает, что Kimi K3 создал детальную сцену арсенала с заполненными полками, коробками и реалистичным освещением, а Opus 4.8 — пустую комнату. Это сторонний отчет о сравнении, не независимый benchmark
+
+<a href="https://x.com/Bhavani_00007/status/2077798166729208223/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69-poster.jpg" alt="Case 69 source video poster" height="360"></a>
+
+[Watch case 69 source video on X](https://x.com/Bhavani_00007/status/2077798166729208223/video/1)
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -988,63 +1219,6 @@ Type: Evaluation | Date: 2026-07-16
 
 Спасибо всем, кто публично поделился работами с Kimi K3
 
-- [@ivanfioravanti](https://x.com/ivanfioravanti)
-- [@TheAhmadOsman](https://x.com/TheAhmadOsman)
-- [@HarshithLucky3](https://x.com/HarshithLucky3)
-- [@chetaslua](https://x.com/chetaslua)
-- [@abhinavflac](https://x.com/abhinavflac)
-- [@bridgemindai](https://x.com/bridgemindai)
-- [@Whats_AI](https://x.com/Whats_AI)
-- [@chongdashu](https://x.com/chongdashu)
-- [@MrAhmadAwais](https://x.com/MrAhmadAwais)
-- [@bijanbowen](https://x.com/bijanbowen)
-- [@CommandCodeAI](https://x.com/CommandCodeAI)
-- [@emollick](https://x.com/emollick)
-- [@nicky_sap](https://x.com/nicky_sap)
-- [@Lentils80](https://x.com/Lentils80)
-- [@scottstts](https://x.com/scottstts)
-- [@aisearchio](https://x.com/aisearchio)
-- [@gmi_cloud](https://x.com/gmi_cloud)
-- [@karminski3](https://x.com/karminski3)
-- [@VORTEX_Promos](https://x.com/VORTEX_Promos)
-- [@rohanpaul_ai](https://x.com/rohanpaul_ai)
-- [@mirochill](https://x.com/mirochill)
-- [@aimlapi](https://x.com/aimlapi)
-- [@minchoi](https://x.com/minchoi)
-- [@doutorcaleb](https://x.com/doutorcaleb)
-- [@adxtyahq](https://x.com/adxtyahq)
-- [@higgsfield_ai](https://x.com/higgsfield_ai)
-- [@AlicanKiraz0](https://x.com/AlicanKiraz0)
-- [@1littlecoder](https://x.com/1littlecoder)
-- [@op7418](https://x.com/op7418)
-- [@adamuchigabriel](https://x.com/adamuchigabriel)
-- [@s_batzoglou](https://x.com/s_batzoglou)
-- [@servasyy_ai](https://x.com/servasyy_ai)
-- [@filicroval](https://x.com/filicroval)
-- [@doodlestein](https://x.com/doodlestein)
-- [@dejavucoder](https://x.com/dejavucoder)
-- [@Angaisb_](https://x.com/Angaisb_)
-- [@AngryTomtweets](https://x.com/AngryTomtweets)
-- [@Alezander907](https://x.com/Alezander907)
-- [@teortaxesTex](https://x.com/teortaxesTex)
-- [@jun_song](https://x.com/jun_song)
-- [@ridark_eth](https://x.com/ridark_eth)
-- [@naymur_dev](https://x.com/naymur_dev)
-- [@tphuang](https://x.com/tphuang)
-- [@TokenGremlin](https://x.com/TokenGremlin)
-- [@IntuitMachine](https://x.com/IntuitMachine)
-- [@wangfeng0315](https://x.com/wangfeng0315)
-- [@twid](https://x.com/twid)
-- [@pengchujin](https://x.com/pengchujin)
-- [@aayushman2703](https://x.com/aayushman2703)
-- [@goncalo_canhoto](https://x.com/goncalo_canhoto)
-- [@LinearUncle](https://x.com/LinearUncle)
-- [@gagarot200](https://x.com/gagarot200)
-- [@MinLiBuilds](https://x.com/MinLiBuilds)
-- [@izutorishima](https://x.com/izutorishima)
-- [@X2worldtech](https://x.com/X2worldtech)
-- [@Satvik_Pen](https://x.com/Satvik_Pen)
-- [@hakki_alkan](https://x.com/hakki_alkan)
-- [@BrianMRey](https://x.com/BrianMRey)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey)
 
 *Для исправления атрибуции или текста откройте issue и приложите публичный источник*
