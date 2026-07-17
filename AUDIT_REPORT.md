@@ -50,6 +50,8 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 ## Media review
 
 - All 11 banners are 1774 × 887 PNG files with a 2:1 ratio
+- The English source banner was replaced with the owner-provided moon-landscape design and uploaded through the new `images/en-v2.png` R2 key
+- The English banner keeps the verified EvoLink Kimi K3 model-page click target; the 10 existing localized banners remain unchanged
 - Six source videos use poster-frame plus playable-link presentation and are not directly embedded
 - Six videos, six poster frames, two source screenshots, and the banner set were uploaded to the approved R2 namespace
 - Public Markdown uses R2 URLs under `github-repo-media/awesome-kimi-k3-usecases`

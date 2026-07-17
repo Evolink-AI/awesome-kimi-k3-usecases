@@ -108,7 +108,7 @@ def main() -> int:
             if any(a == b for a, b in zip(titles, english_titles or [])):
                 errors.append(f"{filename}: at least one title is unchanged from English")
 
-    image_names = ["en.png", "es.png", "pt.png", "ja.png", "ko.png", "de.png", "fr.png", "tr.png", "zh-TW.png", "zh.png", "ru.png"]
+    image_names = ["en-v2.png", "es.png", "pt.png", "ja.png", "ko.png", "de.png", "fr.png", "tr.png", "zh-TW.png", "zh.png", "ru.png"]
     for image in image_names:
         path = ROOT / "images" / image
         if not path.is_file() or path.stat().st_size < 50_000:

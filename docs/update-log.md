@@ -1,5 +1,12 @@
 # Update Log
 
+## 2026-07-17 — Owner-provided English banner replacement
+
+- Replaced the English README banner with the owner-provided 1774 × 887 PNG
+- Kept the existing model-page click target and banner UTM attribution
+- Used a new R2 object key to avoid stale GitHub camo cache reuse
+- Preserved the existing localized banners because no translated replacements were requested
+
 ## 2026-07-17 — Kimi K3 related reading link
 
 - Added the owner-specified EvoLink Kimi K3 article as a Related Resources jump link across all 11 README files
