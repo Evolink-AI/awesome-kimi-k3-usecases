@@ -111,4 +111,18 @@ Final results:
 
 ## Public verification
 
-Post-push verification is intentionally pending at this pre-push audit stage. After publication, this section must be updated with the pushed commit SHA, remote branch readback, raw README equality, rendered README/media checks, and GitHub Actions result before the update is called published
+**Post-push public status: PASS**
+
+- Repository: https://github.com/Evolink-AI/awesome-kimi-k3-usecases
+- Visibility: public
+- Default branch: `main`
+- Published content commit: `16c93cd417f6705199ea34ab4774de265b0acf58`
+- Remote branch SHA after content push: exact match
+- Local and raw GitHub README SHA-256: `a8a700b7618b01d0acbfb94d9d30c115bb6e3670a6207f3f3867808d55056904`, exact match
+- GitHub rendered README HTML: 173,331 bytes and contains `case-70`, Quick API Access, the EvoLink article link, `en-v2.png`, and the Case 67 source-status warning
+- GitHub rendered media audit: 21 images checked, 0 failures; English banner, six case posters, license/API badges, and all language badges passed through GitHub camo and canonical-origin checks
+- GitHub Actions `Validate repository`: success for the published content commit
+- Actions run: https://github.com/Evolink-AI/awesome-kimi-k3-usecases/actions/runs/29588772566
+- GitHub About: public, homepage `https://evolink.ai/kimi-k3`, description populated, eight topics populated
+
+The follow-up audit-record commit must pass the same branch readback and validation workflow before final completion is claimed
