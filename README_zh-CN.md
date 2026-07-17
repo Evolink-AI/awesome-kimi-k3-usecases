@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://evolink.ai/?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/zh.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/zh.png" alt="Kimi K3 usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Official Models](https://img.shields.io/badge/Kimi-Official_Models-111111)](https://platform.kimi.ai/docs/models)
-[![Official Quick Start](https://img.shields.io/badge/Kimi_K3-Quick_Start-22c55e)](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
+[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
+[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 [![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
 [![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
@@ -30,7 +30,7 @@
 
 首版 10 个案例只来自指定文件夹，标题和作者名称均链接原始帖子与个人主页
 
-[EvoLink](https://evolink.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
+[EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 概览
 
@@ -44,15 +44,14 @@
 
 ## ⚡ 快速开始
 
-官方模型 ID 为 `kimi-k3`，官方文档提供模型列表与专用快速指南
+EvoLink 文档记录的模型 ID 为 `kimi-k3`，模型详情页与 Chat Completions API 文档均已提供
 
-1. [查看 Kimi 官方模型列表](https://platform.kimi.ai/docs/models)
-2. [按照官方指南运行 Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-3. [探索 EvoLink 模型访问](https://evolink.ai/?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_access)
-4. [创建或管理 EvoLink API 密钥](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+1. [查看 EvoLink 上的 Kimi K3 详情与价格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
+2. [创建或管理 EvoLink API 密钥](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+3. [查看 EvoLink Kimi K3 API 文档](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 > [!IMPORTANT]
-> 本案例库尚未独立验证 EvoLink 上的 Kimi K3，因此不提供专用 endpoint、价格或调用示例
+> EvoLink 模型页与 API 文档验证了公开路由和模型 ID，本案例库不声称已独立完成付费 API 测试
 
 ## 📑 目录
 
@@ -225,9 +224,9 @@ Type: Limit | Date: 2026-07-16
 
 ## 相关资源
 
-- [查看 Kimi 官方模型列表](https://platform.kimi.ai/docs/models)
-- [按照官方指南运行 Kimi K3](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-- 首版未验证 Kimi K3 专用的 EvoLink API 页面或可安装 skill
+- [查看 EvoLink 上的 Kimi K3 详情与价格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
+- [查看 EvoLink Kimi K3 API 文档](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
+- EvoLink 模型页与 API 文档已验证，但尚未验证可安装的 Kimi K3 skill
 
 <a id="acknowledge"></a>
 ## 🙏 致谢

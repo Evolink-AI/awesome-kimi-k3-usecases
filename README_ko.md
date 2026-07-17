@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://evolink.ai/?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ko.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ko.png" alt="Kimi K3 usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Official Models](https://img.shields.io/badge/Kimi-Official_Models-111111)](https://platform.kimi.ai/docs/models)
-[![Official Quick Start](https://img.shields.io/badge/Kimi_K3-Quick_Start-22c55e)](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
+[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
+[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 [![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
 [![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
@@ -30,7 +30,7 @@ Kimi K3의 근거가 분명한 활용 사례를 모은 저장소입니다
 
 초판 10개 사례는 제공된 소스 패키지에서만 선정했으며 제목과 작성자 링크가 원문으로 연결됩니다
 
-[EvoLink](https://evolink.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
+[EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 개요
 
@@ -44,15 +44,14 @@ Kimi K3의 근거가 분명한 활용 사례를 모은 저장소입니다
 
 ## ⚡ 빠른 시작
 
-공식 모델 ID는 `kimi-k3`이며 공식 문서에 모델 목록과 전용 가이드가 있습니다
+EvoLink에 문서화된 모델 ID는 `kimi-k3`이며 모델 페이지와 Chat Completions API 문서를 이용할 수 있습니다
 
-1. [Kimi 공식 모델 목록 확인](https://platform.kimi.ai/docs/models)
-2. [공식 가이드로 Kimi K3 실행](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-3. [EvoLink 모델 접근 살펴보기](https://evolink.ai/?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_access)
-4. [EvoLink API 키 생성 또는 관리](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+1. [EvoLink에서 Kimi K3 세부 정보와 가격 보기](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
+2. [EvoLink API 키 생성 또는 관리](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+3. [EvoLink Kimi K3 API 문서 열기](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 > [!IMPORTANT]
-> 이 저장소는 EvoLink에서 Kimi K3를 독립 검증하지 않았으므로 전용 엔드포인트, 가격 또는 호출 예제를 제공하지 않습니다
+> EvoLink 모델 페이지와 API 문서가 공개 경로와 ID를 확인합니다. 이 저장소는 독립적인 유료 API 테스트를 주장하지 않습니다
 
 ## 📑 메뉴
 
@@ -225,9 +224,9 @@ Type: Limit | Date: 2026-07-16
 
 ## 관련 자료
 
-- [Kimi 공식 모델 목록 확인](https://platform.kimi.ai/docs/models)
-- [공식 가이드로 Kimi K3 실행](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-- 초판에서는 Kimi K3 전용 EvoLink API 페이지나 설치형 skill을 확인하지 못했습니다
+- [EvoLink에서 Kimi K3 세부 정보와 가격 보기](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
+- [EvoLink Kimi K3 API 문서 열기](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
+- EvoLink 모델 페이지와 API 문서는 확인되었지만 설치형 Kimi K3 skill은 확인되지 않았습니다
 
 <a id="acknowledge"></a>
 ## 🙏 감사의 말

@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://evolink.ai/?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ru.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ru.png" alt="Kimi K3 usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Official Models](https://img.shields.io/badge/Kimi-Official_Models-111111)](https://platform.kimi.ai/docs/models)
-[![Official Quick Start](https://img.shields.io/badge/Kimi_K3-Quick_Start-22c55e)](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
+[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
+[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 [![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
 [![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
@@ -30,7 +30,7 @@
 
 Все десять кейсов первого выпуска взяты только из предоставленного пакета. Заголовки и авторы ведут к оригиналам
 
-[EvoLink](https://evolink.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
+[EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 Обзор
 
@@ -44,15 +44,14 @@
 
 ## ⚡ Быстрый старт
 
-Официальный ID модели — `kimi-k3`. В документации есть список моделей и отдельное руководство
+Документированный EvoLink ID модели — `kimi-k3`; доступны страница модели и документация Chat Completions API
 
-1. [Проверить официальный список моделей Kimi](https://platform.kimi.ai/docs/models)
-2. [Запустить Kimi K3 по официальному руководству](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-3. [Посмотреть доступ к моделям на EvoLink](https://evolink.ai/?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_access)
-4. [Создать или настроить ключ EvoLink API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+1. [Посмотреть Kimi K3 и цены на EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
+2. [Создать или настроить ключ EvoLink API](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+3. [Открыть документацию EvoLink Kimi K3 API](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 > [!IMPORTANT]
-> Репозиторий не проверял Kimi K3 на EvoLink и поэтому не указывает отдельный endpoint, цену или пример запроса
+> Страница модели и документация EvoLink подтверждают публичный маршрут и ID. Репозиторий не заявляет о независимом платном API-тесте
 
 ## 📑 Меню
 
@@ -225,9 +224,9 @@ Type: Limit | Date: 2026-07-16
 
 ## Связанные ресурсы
 
-- [Проверить официальный список моделей Kimi](https://platform.kimi.ai/docs/models)
-- [Запустить Kimi K3 по официальному руководству](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-- Для первого выпуска не подтверждены отдельная страница EvoLink API или устанавливаемый skill для Kimi K3
+- [Посмотреть Kimi K3 и цены на EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
+- [Открыть документацию EvoLink Kimi K3 API](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
+- Страница модели и документация EvoLink API проверены; устанавливаемый skill Kimi K3 не проверен
 
 <a id="acknowledge"></a>
 ## 🙏 Благодарности

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -17,9 +18,23 @@ URL_RE = re.compile(r'https://[^\s)>"]+')
 
 
 def check(url: str) -> tuple[str, int | str]:
+    if url.startswith("https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/"):
+        result = subprocess.run(
+            [
+                "curl", "-L", "-sS", "--retry", "5", "--retry-all-errors",
+                "--connect-timeout", "10", "--max-time", "30", "-r", "0-0",
+                "-o", "/dev/null", "-w", "%{http_code}", url,
+            ],
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode == 0 and result.stdout.isdigit():
+            return url, int(result.stdout)
+        return url, result.stderr.strip() or f"curl-exit-{result.returncode}"
     headers = {"User-Agent": "awesome-kimi-k3-usecases-link-audit/1.0", "Range": "bytes=0-0"}
     last_error: str = "UnknownError"
-    for attempt in range(5):
+    for attempt in range(8):
         request = urllib.request.Request(url, headers=headers, method="GET")
         try:
             with urllib.request.urlopen(request, timeout=20) as response:
@@ -39,7 +54,7 @@ def main() -> int:
     for path in [ROOT / "README.md", *sorted(ROOT.glob("README_*.md"))]:
         urls.update(URL_RE.findall(path.read_text(encoding="utf-8")))
     urls = {url.rstrip(".,") for url in urls if "img.shields.io" not in url}
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         results = sorted(pool.map(check, urls))
     failures = []
     for url, status in results:

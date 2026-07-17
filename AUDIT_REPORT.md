@@ -1,7 +1,7 @@
 # Awesome Kimi K3 Use Cases Audit Report
 
 Audit date: 2026-07-17
-Scope: first-publication repository contract, source grounding, localization, media, GitHub front door, maintainability, and pre-publication readiness
+Scope: first-publication repository contract plus the recurring EvoLink conversion-route correction, source grounding, localization, media, GitHub front door, maintainability, and publication readiness
 
 ## Audit method
 
@@ -23,7 +23,20 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 - The 28 tokens-per-second value is labeled as a single observation rather than a benchmark or guarantee
 - Vision quality remains scoped to one practitioner's workload
 - Maximum-effort looping remains attributed to an unresolved model-and-harness interaction rather than the model alone
-- Kimi K3 availability, pricing, endpoint, and model ID on EvoLink are not claimed because they were not independently verified
+- EvoLink Kimi K3 availability, model ID, model details, and API route now link to the owner-specified EvoLink model page and API documentation; the repository still does not claim an independent paid API smoke test
+
+## 2026-07-17 conversion-route correction audit
+
+- Canonical model destination: `https://evolink.ai/kimi-k3`
+- Canonical first-run API destination: `https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat`
+- Documented model ID: `kimi-k3`
+- Documented API route: `POST /v1/chat/completions`
+- Updated surfaces: banner link, top badges, introduction CTA, quick start, related resources, 10 localized README files, structured data, localization source, maintenance notes, update log, and automated verifier
+- Removed routes: generic `https://evolink.ai/` CTA and the former official-provider quick-start link from every public README
+- Runtime boundary: the model page and API documentation were verified, but no independent credit-consuming API call is claimed
+- Initial link-audit result: five transient R2 `RemoteDisconnected` responses while the new EvoLink routes returned HTTP 200
+- Remediation: every transient object passed a direct HTTP range retry with 206; the auditor now uses resilient curl checks for R2 and two-worker concurrency
+- Final link-audit result: 51 checked, 0 failures
 
 ## Repository and localization review
 
@@ -57,7 +70,7 @@ The audit used the active EvoLink usecase repository template, the model-repo pi
 - P2: 0 after remediation
 - Repository verifier: PASS
 - Framework usecase verifier: PASS
-- Public-link audit: 49 checked, 0 failures
+- Public-link audit: 51 checked, 0 failures
 - Active R2 media: 25 checked, 0 failures
 - Localization: 11 README files, 100 translated case instances
 - Git diff check: PASS

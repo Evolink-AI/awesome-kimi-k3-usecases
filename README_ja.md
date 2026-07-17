@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href="https://evolink.ai/?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ja.png" alt="Kimi K3 usecase repository banner" width="760"></a>
+<a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/ja.png" alt="Kimi K3 usecase repository banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Official Models](https://img.shields.io/badge/Kimi-Official_Models-111111)](https://platform.kimi.ai/docs/models)
-[![Official Quick Start](https://img.shields.io/badge/Kimi_K3-Quick_Start-22c55e)](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
+[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
+[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 [![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
 [![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
@@ -30,7 +30,7 @@ Kimi K3 の実例を厳選したリポジトリです
 
 初版の10件は提供されたソースパッケージのみから選定し、タイトルと著者名から原典へ移動できます
 
-[EvoLink](https://evolink.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
+[EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
 
 ## 📊 概要
 
@@ -44,15 +44,14 @@ Kimi K3 の実例を厳選したリポジトリです
 
 ## ⚡ クイックスタート
 
-公式モデルIDは `kimi-k3` です。公式ドキュメントにモデル一覧と専用ガイドがあります
+EvoLinkの文書化されたモデルIDは `kimi-k3` で、モデルページとChat Completions API文書が利用できます
 
-1. [Kimi公式モデル一覧を確認](https://platform.kimi.ai/docs/models)
-2. [公式ガイドでKimi K3を実行](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-3. [EvoLinkのモデルアクセスを確認](https://evolink.ai/?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_access)
-4. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+1. [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
+2. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+3. [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 > [!IMPORTANT]
-> 本リポジトリはEvoLink上のKimi K3を独自検証しておらず、専用エンドポイント、価格、呼び出し例を掲載しません
+> EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。本リポジトリは独自の有料APIテストを主張しません
 
 ## 📑 目次
 
@@ -225,9 +224,9 @@ Type: Limit | Date: 2026-07-16
 
 ## 関連リソース
 
-- [Kimi公式モデル一覧を確認](https://platform.kimi.ai/docs/models)
-- [公式ガイドでKimi K3を実行](https://platform.kimi.ai/docs/guide/kimi-k3-quickstart)
-- 初版ではKimi K3専用のEvoLink APIページやインストール可能なskillを確認できませんでした
+- [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
+- [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
+- EvoLinkのモデルページとAPI文書は確認済みですが、インストール可能なKimi K3 skillは未確認です
 
 <a id="acknowledge"></a>
 ## 🙏 謝辞

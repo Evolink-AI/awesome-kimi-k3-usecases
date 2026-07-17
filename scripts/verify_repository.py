@@ -19,6 +19,8 @@ CASE_RE = re.compile(
 )
 META_RE = re.compile(r"^Type: (Demo|Tutorial|Evaluation|Integration|Benchmark|Limit) \| Date: (\d{4}-\d{2}-\d{2})$", re.MULTILINE)
 R2_PREFIX = "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/"
+MODEL_PAGE_PREFIX = "https://evolink.ai/kimi-k3"
+API_DOCS_PREFIX = "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
 
 
 def fail(errors: list[str]) -> int:
@@ -81,6 +83,14 @@ def main() -> int:
             errors.append(f"{filename}: public prompt boundary differs")
         if R2_PREFIX not in text:
             errors.append(f"{filename}: no R2 public media URL")
+        if MODEL_PAGE_PREFIX not in text:
+            errors.append(f"{filename}: missing exact EvoLink Kimi K3 model page")
+        if API_DOCS_PREFIX not in text:
+            errors.append(f"{filename}: missing exact EvoLink Kimi K3 API docs")
+        if "https://evolink.ai/?utm_" in text:
+            errors.append(f"{filename}: stale generic EvoLink CTA")
+        if "https://platform.moonshot.ai/docs/guide/start-using-kimi-api" in text:
+            errors.append(f"{filename}: stale primary quick-start route")
         if re.search(r'<(?:img|video)[^>]+src="[^"]+\.mp4', text):
             errors.append(f"{filename}: directly embeds video instead of poster-link policy")
         titles = [row[1] for row in cases]
@@ -109,6 +119,8 @@ def main() -> int:
     print("localized_case_instances=100")
     print("public_prompt_cases=1")
     print("r2_policy=pass")
+    print("evolink_model_route=pass")
+    print("evolink_api_docs_route=pass")
     return 0
 
 

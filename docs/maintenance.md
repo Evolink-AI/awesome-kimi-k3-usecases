@@ -40,4 +40,4 @@ README media uses Cloudflare R2 under `github-repo-media/awesome-kimi-k3-usecase
 
 ## Related surfaces
 
-This repository links only verified model resources. Kimi K3 availability on EvoLink, any installable skill, and any provider-specific API smoke test must be verified in the appropriate release pipeline before the README can claim them
+This repository links the verified EvoLink Kimi K3 model page and OpenAI-compatible Chat Completions documentation. Any installable skill or independent paid API smoke-test claim must still be verified in the appropriate release pipeline before the README can claim it
