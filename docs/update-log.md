@@ -1,5 +1,17 @@
 # Update Log
 
+## 2026-07-18 — KimiK3.io locale routing and Quick Start placement
+
+- Added KimiK3.io to Related Resources in all 11 README editions
+- Routed Simplified and Traditional Chinese to `https://kimik3.io/zh`, Russian to `https://kimik3.io/ru/`, and every other locale to `https://kimik3.io/`
+- Moved the full Quick Start section to the penultimate position immediately before Acknowledge
+- Kept a compact model page, API key, and API docs conversion path before the case collection
+- Extended repository verification to enforce locale routes, centralized navigation, and the owner-selected Quick Start position
+- Migrated the remaining 47 playable source videos from X links to the repository R2 namespace, bringing R2 playable coverage to 53/53 video cases
+- Added a tracked 70-case source-fidelity manifest with 79 expected public visuals and an `all-source-media` policy
+- Added full-set R2 content auditing for 79 visuals and 53 playable videos, including content-type and file-signature checks
+- Added scope-bound public-link reporting and verified 282 unique URLs with one recorded exception and zero unhandled failures
+
 ## 2026-07-17 — Complete source media and centralized navigation
 
 - Restored source-backed media for all 70 high-confidence cases, including 53 video cases and 17 image cases

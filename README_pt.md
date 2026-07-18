@@ -42,29 +42,7 @@ Esta edição inclui todos os 70 casos de alta confiança do pacote fornecido e 
 > [!NOTE]
 > A coleção prioriza evidência concreta e não reconstrói prompts ou etapas ausentes
 
-## ⚡ Início rápido
-
-O ID documentado pela EvoLink é `kimi-k3`; a página do modelo e a documentação de Chat Completions estão disponíveis
-
-1. [Ver detalhes e preços do Kimi K3 na EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
-2. [Criar ou gerenciar uma chave API da EvoLink](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
-3. [Abrir a documentação da API Kimi K3 na EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
-
-```bash
-curl --request POST \
-  --url "https://direct.evolink.ai/v1/chat/completions" \
-  --header "Authorization: Bearer $EVOLINK_API_KEY" \
-  --header "Content-Type: application/json" \
-  --data '{
-    "model": "kimi-k3",
-    "messages": [
-      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
-    ]
-  }'
-```
-
-> [!IMPORTANT]
-> A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Este repositório não afirma ter feito um teste pago independente
+**1. [Ver detalhes e preços do Kimi K3 na EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link) · 2. [Criar ou gerenciar uma chave API da EvoLink](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key) · 3. [Abrir a documentação da API Kimi K3 na EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)**
 
 ## 📑 Menu
 
@@ -74,6 +52,8 @@ curl --request POST \
 | [Frontend e motion design](#frontend-motion) | 15 |
 | [Código e integrações](#coding-integrations) | 8 |
 | [Avaliação e limites](#evaluation-limits) | 25 |
+| [Recursos relacionados](#related-resources) | Recursos relacionados |
+| [Início rápido](#quick-api-access) | Início rápido |
 | [Agradecimentos](#acknowledge) | Créditos e correções |
 
 | Case | Category | What it shows | Type |
@@ -225,9 +205,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata usar Kimi K3 com Grok Build, Spriterrific para assets 2D e geometria para assets 3D em um jogo inspirado em Paper Mario. A fonte demonstra uso de ferramentas e skills, mas não publica um prompt reutilizável exato
 
-<a href="https://x.com/chongdashu/status/2077886028866531655/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09-poster.jpg" alt="Case 9 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09-poster.jpg" alt="Case 9 source video poster" height="360"></a>
 
-[Watch case 9 source video on X](https://x.com/chongdashu/status/2077886028866531655/video/1)
+[Play case 9 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-09.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -240,9 +220,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador mostra um FPS no metrô atribuído ao Kimi K3 e observa explicitamente a incerteza sobre se o status de influenciador afetou o resultado. Nenhum prompt ou fluxo reproduzível é fornecido
 
-<a href="https://x.com/bijanbowen/status/2077881805751873997/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11-poster.jpg" alt="Case 11 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11-poster.jpg" alt="Case 11 source video poster" height="360"></a>
 
-[Watch case 11 source video on X](https://x.com/bijanbowen/status/2077881805751873997/video/1)
+[Play case 11 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-11.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -255,9 +235,9 @@ Type: Demo | Date: 2026-07-16
 
 O avaliador relata que Kimi K3 gerou um motor V8 completo com Blender MCP a partir de um prompt. A publicação leva a uma análise mais completa, mas não expõe o prompt exato no registro fornecido
 
-<a href="https://x.com/aisearchio/status/2077962156147146925/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19-poster.jpg" alt="Case 19 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19-poster.jpg" alt="Case 19 source video poster" height="360"></a>
 
-[Watch case 19 source video on X](https://x.com/aisearchio/status/2077962156147146925/video/1)
+[Play case 19 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-19.mp4)
 
 Type: Integration | Date: 2026-07-17
 
@@ -270,9 +250,9 @@ Type: Integration | Date: 2026-07-17
 
 O criador relata que Kimi K3 produziu uma arena de batalha jogável em uma execução a partir de uma referência. Uma afirmação separada de leaderboard aparece na publicação, mas o caso concreto é o artefato demonstrado
 
-<a href="https://x.com/VORTEX_Promos/status/2077879705378730074/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-poster.jpg" alt="Case 23 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-poster.jpg" alt="Case 23 source video poster" height="360"></a>
 
-[Watch case 23 source video on X](https://x.com/VORTEX_Promos/status/2077879705378730074/video/1)
+[Play case 23 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23.mp4)
 
 <a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-23-01.jpg" alt="Case 23 source image 1" height="360"></a>
 
@@ -287,9 +267,9 @@ Type: Demo | Date: 2026-07-16
 
 A fonte relata uma comparação do Atomic Chat em que modelos criaram Road Fighter, Battle City e Q*bert como arquivos HTML autônomos. Sua comparação de custo e qualidade é relatada pela editora e não foi reproduzida de forma independente aqui
 
-<a href="https://x.com/rohanpaul_ai/status/2077889084761206860/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24-poster.jpg" alt="Case 24 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24-poster.jpg" alt="Case 24 source video poster" height="360"></a>
 
-[Watch case 24 source video on X](https://x.com/rohanpaul_ai/status/2077889084761206860/video/1)
+[Play case 24 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-24.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -302,9 +282,9 @@ Type: Benchmark | Date: 2026-07-16
 
 A AIMLAPI relata uma comparação em uma execução com o mesmo prompt para um jogo de esconde-esconde e lista custos de US$ 3,11 para Kimi K3 e US$ 12,23 para Fable 5. As alegações de recursos e custos são resultados relatados pelo provedor
 
-<a href="https://x.com/aimlapi/status/2077898742179459274/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27-poster.jpg" alt="Case 27 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27-poster.jpg" alt="Case 27 source video poster" height="360"></a>
 
-[Watch case 27 source video on X](https://x.com/aimlapi/status/2077898742179459274/video/1)
+[Play case 27 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-27.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -317,9 +297,9 @@ Type: Benchmark | Date: 2026-07-16
 
 O criador fornece um tutorial completo usando Grok Build e Kimi K3 e mostra a geração de sprites com Spriterrific. A fonte identifica as ferramentas, mas não fornece prompts reutilizáveis exatos
 
-<a href="https://x.com/chongdashu/status/2077981621223837739/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36-poster.jpg" alt="Case 36 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36-poster.jpg" alt="Case 36 source video poster" height="360"></a>
 
-[Watch case 36 source video on X](https://x.com/chongdashu/status/2077981621223837739/video/1)
+[Play case 36 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-36.mp4)
 
 Type: Tutorial | Date: 2026-07-17
 
@@ -332,9 +312,9 @@ Type: Tutorial | Date: 2026-07-17
 
 A fonte relata um RPG de navegador com Kimi K3 que inclui combate corpo a corpo, missões, inventário, clima dinâmico e interiores exploráveis, além de modelagem no Blender, melhorias de colisão, novas texturas PBR e assets abertos adaptados
 
-<a href="https://x.com/AngryTomtweets/status/2077868163136450619/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43-poster.jpg" alt="Case 43 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43-poster.jpg" alt="Case 43 source video poster" height="360"></a>
 
-[Watch case 43 source video on X](https://x.com/AngryTomtweets/status/2077868163136450619/video/1)
+[Play case 43 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-43.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -347,9 +327,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata que Kimi K3 criou um jogo multiplayer no estilo Minecraft, jogável no navegador, em uma hora e por US$ 6,57. São números autorrelatados de uma execução e um artefato
 
-<a href="https://x.com/Alezander907/status/2077926014710407407/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44-poster.jpg" alt="Case 44 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44-poster.jpg" alt="Case 44 source video poster" height="360"></a>
 
-[Watch case 44 source video on X](https://x.com/Alezander907/status/2077926014710407407/video/1)
+[Play case 44 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-44.mp4)
 
 Type: Demo | Date: 2026-07-17
 
@@ -362,9 +342,9 @@ Type: Demo | Date: 2026-07-17
 
 O criador relata que Kimi K3 produziu, com um prompt, um jogo de navegador inspirado em It Takes Two, com Mario e Luigi interagindo em tela dividida e com o ambiente em tempo real
 
-<a href="https://x.com/ridark_eth/status/2077882889803378969/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48-poster.jpg" alt="Case 48 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48-poster.jpg" alt="Case 48 source video poster" height="360"></a>
 
-[Watch case 48 source video on X](https://x.com/ridark_eth/status/2077882889803378969/video/1)
+[Play case 48 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-48.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -377,9 +357,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata uma comparação em uma execução usando o modo de design da Command Code e diz que a execução com Kimi K3 produziu um jogo jogável por US$ 0,038. Esse resultado de custo e qualidade é autorrelatado
 
-<a href="https://x.com/naymur_dev/status/2077873562661335207/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49-poster.jpg" alt="Case 49 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49-poster.jpg" alt="Case 49 source video poster" height="360"></a>
 
-[Watch case 49 source video on X](https://x.com/naymur_dev/status/2077873562661335207/video/1)
+[Play case 49 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-49.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -392,9 +372,9 @@ Type: Demo | Date: 2026-07-16
 
 A fonte relata um RPG de navegador no estilo wuxia com Kimi K3 que combina combate corpo a corpo, missões, inventário, clima dinâmico, interiores exploráveis e uma estrutura coesa de jogabilidade 3D
 
-<a href="https://x.com/TokenGremlin/status/2077855657068310620/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51-poster.jpg" alt="Case 51 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51-poster.jpg" alt="Case 51 source video poster" height="360"></a>
 
-[Watch case 51 source video on X](https://x.com/TokenGremlin/status/2077855657068310620/video/1)
+[Play case 51 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-51.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -407,9 +387,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador, que afirma trabalhar na Kimi, relata ter criado um jogo com assets de Hollow Knight em que o Cavaleiro enfrenta Kimi e fornece um link público para jogar. A atribuição e a avaliação devem considerar essa afiliação
 
-<a href="https://x.com/wangfeng0315/status/2077933531200991583/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-poster.jpg" alt="Case 54 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-poster.jpg" alt="Case 54 source video poster" height="360"></a>
 
-[Watch case 54 source video on X](https://x.com/wangfeng0315/status/2077933531200991583/video/1)
+[Play case 54 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54.mp4)
 
 <a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-54-01.jpg" alt="Case 54 source image 1" height="360"></a>
 
@@ -424,9 +404,9 @@ Type: Demo | Date: 2026-07-17
 
 O criador relata uma criação em uma execução com Kimi K3 de um jogo de navegador no estilo Fall Guys e diz que o prompt e o projeto no GitHub estão vinculados na fonte. Este registro não reproduz esse prompt
 
-<a href="https://x.com/aayushman2703/status/2077857886441783526/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60-poster.jpg" alt="Case 60 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60-poster.jpg" alt="Case 60 source video poster" height="360"></a>
 
-[Watch case 60 source video on X](https://x.com/aayushman2703/status/2077857886441783526/video/1)
+[Play case 60 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-60.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -452,9 +432,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata que Kimi K3 gerou um jogo totalmente jogável no estilo Animal Crossing, com ciclo de jogo e efeitos de paralaxe, a partir de um prompt muito simples. A formulação exata não consta no registro fornecido
 
-<a href="https://x.com/gagarot200/status/2077949230287896830/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63-poster.jpg" alt="Case 63 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63-poster.jpg" alt="Case 63 source video poster" height="360"></a>
 
-[Watch case 63 source video on X](https://x.com/gagarot200/status/2077949230287896830/video/1)
+[Play case 63 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-63.mp4)
 
 Type: Demo | Date: 2026-07-17
 
@@ -487,9 +467,9 @@ A fonte mostra um FPS de zumbis totalmente funcional atribuído ao Kimi K3. Não
 > [!WARNING]
 > The original source permalink returned HTTP 404 during the 2026-07-17 audit. Attribution and evidence are preserved from the supplied high-confidence source package.
 
-<a href="https://x.com/X2worldtech/status/2077902793449296203"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67-poster.jpg" alt="Case 67 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67-poster.jpg" alt="Case 67 source video poster" height="360"></a>
 
-[Watch case 67 source video on X](https://x.com/X2worldtech/status/2077902793449296203)
+[Play case 67 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-67.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -536,9 +516,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata um resultado de motion design em uma execução com Kimi K3, feito totalmente em código, sem MCP, skills, ferramentas, geração de vídeo ou prompts especiais. O prompt exato não é fornecido
 
-<a href="https://x.com/chetaslua/status/2077952938564354503/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14-poster.jpg" alt="Case 14 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14-poster.jpg" alt="Case 14 source video poster" height="360"></a>
 
-[Watch case 14 source video on X](https://x.com/chetaslua/status/2077952938564354503/video/1)
+[Play case 14 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-14.mp4)
 
 Type: Demo | Date: 2026-07-17
 
@@ -551,9 +531,9 @@ Type: Demo | Date: 2026-07-17
 
 O criador relata que Kimi K3 pesquisou Nick Saponaro e produziu um site pessoal animado a partir de um pedido amplo, incluindo planejamento, testes, iteração e verificações no navegador. O resultado é uma demonstração de fluxo autorrelatada
 
-<a href="https://x.com/nicky_sap/status/2077857190707429411/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15-poster.jpg" alt="Case 15 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15-poster.jpg" alt="Case 15 source video poster" height="360"></a>
 
-[Watch case 15 source video on X](https://x.com/nicky_sap/status/2077857190707429411/video/1)
+[Play case 15 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-15.mp4)
 
 Type: Tutorial | Date: 2026-07-16
 
@@ -566,9 +546,9 @@ Type: Tutorial | Date: 2026-07-16
 
 O criador mostra uma simulação de buraco negro atribuída ao Kimi K3 e a chama de melhor que já viu. A fonte traz um resultado visível, mas não prompt, rubrica ou validação independente
 
-<a href="https://x.com/chetaslua/status/2077961850352971796/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17-poster.jpg" alt="Case 17 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17-poster.jpg" alt="Case 17 source video poster" height="360"></a>
 
-[Watch case 17 source video on X](https://x.com/chetaslua/status/2077961850352971796/video/1)
+[Play case 17 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-17.mp4)
 
 Type: Demo | Date: 2026-07-17
 
@@ -581,9 +561,9 @@ Type: Demo | Date: 2026-07-17
 
 O criador relata um resultado de frontend em uma passagem com Kimi K3, abrangendo modelagem precisa, efeitos de partículas e código complexo de shader inline, e afirma que o prompt de teste é público na fonte vinculada
 
-<a href="https://x.com/karminski3/status/2077889959223337099/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22-poster.jpg" alt="Case 22 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22-poster.jpg" alt="Case 22 source video poster" height="360"></a>
 
-[Watch case 22 source video on X](https://x.com/karminski3/status/2077889959223337099/video/1)
+[Play case 22 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-22.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -596,9 +576,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata que Kimi K3 gerou uma ferramenta de música procedural em uma tentativa e a compara favoravelmente com resultados de Fable 5 e GPT-5.6 Sol. É o conjunto de testes do próprio criador, não um benchmark padronizado
 
-<a href="https://x.com/mirochill/status/2077723551331758478/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26-poster.jpg" alt="Case 26 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26-poster.jpg" alt="Case 26 source video poster" height="360"></a>
 
-[Watch case 26 source video on X](https://x.com/mirochill/status/2077723551331758478/video/1)
+[Play case 26 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-26.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -611,9 +591,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata que Kimi K3 projetou uma página de produto a partir de duas imagens e produziu a versão em Three.js explicitamente solicitada. Nenhum outro detalhe de prompt ou implementação é fornecido
 
-<a href="https://x.com/1littlecoder/status/2077890296806031665/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33-poster.jpg" alt="Case 33 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33-poster.jpg" alt="Case 33 source video poster" height="360"></a>
 
-[Watch case 33 source video on X](https://x.com/1littlecoder/status/2077890296806031665/video/1)
+[Play case 33 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-33.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -626,9 +606,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador relata que Kimi K3 inventou um cortador de pão em estilo guilhotina, apresentou-o como produto de luxo e produziu uma landing page com vista explodida e demonstração
 
-<a href="https://x.com/filicroval/status/2077871090731221438/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39-poster.jpg" alt="Case 39 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39-poster.jpg" alt="Case 39 source video poster" height="360"></a>
 
-[Watch case 39 source video on X](https://x.com/filicroval/status/2077871090731221438/video/1)
+[Play case 39 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-39.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -641,9 +621,9 @@ Type: Demo | Date: 2026-07-16
 
 A fonte inclui um prompt para um GIF em loop de dez segundos, com um pelicano andando de bicicleta e recebendo o mesmo vídeo por mensagem enquanto a câmera aproxima. O criador mostra a animação resultante do Kimi K3
 
-<a href="https://x.com/1littlecoder/status/2077880380900937865"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45-poster.jpg" alt="Case 45 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45-poster.jpg" alt="Case 45 source video poster" height="360"></a>
 
-[Watch case 45 source video on X](https://x.com/1littlecoder/status/2077880380900937865)
+[Play case 45 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-45.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -669,9 +649,9 @@ Type: Demo | Date: 2026-07-16
 
 A fonte relata que Kimi K3 recriou Gargantua, de Interstellar, por meio de 62 capturas de tela próprias, lendo cada resultado, diagnosticando problemas e agindo de forma iterativa
 
-<a href="https://x.com/AngryTomtweets/status/2077868981659324444/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58-poster.jpg" alt="Case 58 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58-poster.jpg" alt="Case 58 source video poster" height="360"></a>
 
-[Watch case 58 source video on X](https://x.com/AngryTomtweets/status/2077868981659324444/video/1)
+[Play case 58 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-58.mp4)
 
 Type: Tutorial | Date: 2026-07-16
 
@@ -684,9 +664,9 @@ Type: Tutorial | Date: 2026-07-16
 
 A fonte relata que Kimi K3 reconstruiu Gargantua, de Interstellar, observando e refinando sua saída ao longo de 62 capturas de tela. Isso demonstra o ciclo de feedback relatado, não precisão física independente
 
-<a href="https://x.com/TokenGremlin/status/2077855959201042645/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66-poster.jpg" alt="Case 66 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66-poster.jpg" alt="Case 66 source video poster" height="360"></a>
 
-[Watch case 66 source video on X](https://x.com/TokenGremlin/status/2077855959201042645/video/1)
+[Play case 66 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-66.mp4)
 
 Type: Tutorial | Date: 2026-07-16
 
@@ -718,9 +698,9 @@ Type: Demo | Date: 2026-07-16
 
 O criador mostra um design de interface atribuído a uma execução com um prompt no Kimi K3 e faz uma avaliação subjetiva muito positiva. O prompt exato e a rubrica não foram incluídos
 
-<a href="https://x.com/jumperz/status/2077841331037094042/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70-poster.jpg" alt="Case 70 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70-poster.jpg" alt="Case 70 source video poster" height="360"></a>
 
-[Watch case 70 source video on X](https://x.com/jumperz/status/2077841331037094042/video/1)
+[Play case 70 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-70.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -737,9 +717,9 @@ Type: Demo | Date: 2026-07-16
 
 A fonte relata que Kimi K3 criou um MacBook virtual em Three.js com um ambiente funcional no estilo macOS. Ela demonstra o artefato, mas não fornece etapas de implementação
 
-<a href="https://x.com/scottstts/status/2077890054299541890/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18-poster.jpg" alt="Case 18 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18-poster.jpg" alt="Case 18 source video poster" height="360"></a>
 
-[Watch case 18 source video on X](https://x.com/scottstts/status/2077890054299541890/video/1)
+[Play case 18 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-18.mp4)
 
 Type: Demo | Date: 2026-07-16
 
@@ -765,9 +745,9 @@ Type: Demo | Date: 2026-07-16
 
 O autor descreve um benchmark de programação que exige um raytracer funcional de curvatura da luz por buraco negro em arquivo único e WebGL2 nativo. O registro fornecido estabelece a tarefa e os modelos participantes, mas não uma auditoria independente completa dos resultados
 
-<a href="https://x.com/AlicanKiraz0/status/2077885419744612597/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32-poster.jpg" alt="Case 32 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32-poster.jpg" alt="Case 32 source video poster" height="360"></a>
 
-[Watch case 32 source video on X](https://x.com/AlicanKiraz0/status/2077885419744612597/video/1)
+[Play case 32 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-32.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -806,9 +786,9 @@ Type: Evaluation | Date: 2026-07-17
 
 A fonte relata que Kimi K3 foi usado para criar um clone do macOS no navegador com música, navegador, e-mail e outras funções. Ela não fornece detalhes de implementação
 
-<a href="https://x.com/twid/status/2077924755357974989/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56-poster.jpg" alt="Case 56 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56-poster.jpg" alt="Case 56 source video poster" height="360"></a>
 
-[Watch case 56 source video on X](https://x.com/twid/status/2077924755357974989/video/1)
+[Play case 56 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-56.mp4)
 
 Type: Demo | Date: 2026-07-17
 
@@ -834,9 +814,9 @@ Type: Demo | Date: 2026-07-17
 
 O criador relata ter pedido ao Kimi K3 um fluxo de comparação de frontend com seleção de tarefas, dois painéis de navegador, modos de objeto e navegação, pontos de vista sincronizados e testes de interação. A publicação também observa limitações mais amplas do modelo
 
-<a href="https://x.com/MinLiBuilds/status/2077939461510615376/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64-poster.jpg" alt="Case 64 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64-poster.jpg" alt="Case 64 source video poster" height="360"></a>
 
-[Watch case 64 source video on X](https://x.com/MinLiBuilds/status/2077939461510615376/video/1)
+[Play case 64 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-64.mp4)
 
 Type: Tutorial | Date: 2026-07-17
 
@@ -853,9 +833,9 @@ Type: Tutorial | Date: 2026-07-17
 
 A BridgeMind AI relata que Kimi K3 superou Fable 5 em sua tarefa de lava lamp do BridgeBench e ficou em primeiro na arena citada. São resultados comparativos relatados pela editora
 
-<a href="https://x.com/bridgemindai/status/2077868061953007908/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07-poster.jpg" alt="Case 7 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07-poster.jpg" alt="Case 7 source video poster" height="360"></a>
 
-[Watch case 7 source video on X](https://x.com/bridgemindai/status/2077868061953007908/video/1)
+[Play case 7 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-07.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -881,9 +861,9 @@ Type: Benchmark | Date: 2026-07-16
 
 O benchmark interno Flappy da Command Code relata configurações de dificuldade diferentes entre modelos e lista Kimi K3 a US$ 0,024, Fable 5 a US$ 0,42 e GPT-5.6 Sol a US$ 0,15. As configurações desiguais tornam esta uma comparação interna delimitada
 
-<a href="https://x.com/MrAhmadAwais/status/2077915347974557862/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10-poster.jpg" alt="Case 10 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10-poster.jpg" alt="Case 10 source video poster" height="360"></a>
 
-[Watch case 10 source video on X](https://x.com/MrAhmadAwais/status/2077915347974557862/video/1)
+[Play case 10 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-10.mp4)
 
 Type: Benchmark | Date: 2026-07-17
 
@@ -896,9 +876,9 @@ Type: Benchmark | Date: 2026-07-17
 
 A Command Code relata uma comparação com o mesmo prompt entre Kimi K3, GPT-5.6 Sol e Fable 5. A publicação diz que Kimi K3 foi bem em senso de design, enquanto os outros dois jogavam rápido demais; essa continua sendo a avaliação da editora
 
-<a href="https://x.com/CommandCodeAI/status/2077921526213746948/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12-poster.jpg" alt="Case 12 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12-poster.jpg" alt="Case 12 source video poster" height="360"></a>
 
-[Watch case 12 source video on X](https://x.com/CommandCodeAI/status/2077921526213746948/video/1)
+[Play case 12 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-12.mp4)
 
 Type: Benchmark | Date: 2026-07-17
 
@@ -924,9 +904,9 @@ Type: Limit | Date: 2026-07-16
 
 O criador relata que uma execução de frontend com Kimi K3 levou 35 minutos e descreve a saída como uma das melhores vistas para aquele prompt. Tanto a velocidade quanto a qualidade são observações de um único usuário
 
-<a href="https://x.com/Lentils80/status/2077387333154857151/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16-poster.jpg" alt="Case 16 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16-poster.jpg" alt="Case 16 source video poster" height="360"></a>
 
-[Watch case 16 source video on X](https://x.com/Lentils80/status/2077387333154857151/video/1)
+[Play case 16 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-16.mp4)
 
 Type: Evaluation | Date: 2026-07-15
 
@@ -954,9 +934,9 @@ Type: Limit | Date: 2026-07-17
 
 A GMI Cloud relata a comparação entre Kimi K3 e Fable 5 em recriações pixeladas e no estilo original da Millennium Falcon com esforço máximo. Diz que Kimi K3 levou mais tempo, mas custou cerca de um terço no primeiro teste e menos da metade em outro; são resultados relatados pelo provedor
 
-<a href="https://x.com/gmi_cloud/status/2077903360263676090/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21-poster.jpg" alt="Case 21 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21-poster.jpg" alt="Case 21 source video poster" height="360"></a>
 
-[Watch case 21 source video on X](https://x.com/gmi_cloud/status/2077903360263676090/video/1)
+[Play case 21 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-21.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -969,9 +949,9 @@ Type: Benchmark | Date: 2026-07-16
 
 O autor seleciona dez exemplos de Kimi K3 com mídia, incluindo um emulador de Game Boy Advance. Este registro é uma coleção, não um único fluxo reproduzível, portanto cada exemplo vinculado deve ser verificado de forma independente
 
-<a href="https://x.com/minchoi/status/2077957907857994006/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28-poster.jpg" alt="Case 28 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28-poster.jpg" alt="Case 28 source video poster" height="360"></a>
 
-[Watch case 28 source video on X](https://x.com/minchoi/status/2077957907857994006/video/1)
+[Play case 28 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-28.mp4)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -984,9 +964,9 @@ Type: Evaluation | Date: 2026-07-17
 
 O criador relata ter dado o mesmo prompt avançado de landing page a Kimi K3, Fable, Grok e GPT Terra, e considera Kimi K3 o resultado mais forte. É uma comparação autorrelatada de uma tarefa
 
-<a href="https://x.com/doutorcaleb/status/2077904020471947773/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29-poster.jpg" alt="Case 29 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29-poster.jpg" alt="Case 29 source video poster" height="360"></a>
 
-[Watch case 29 source video on X](https://x.com/doutorcaleb/status/2077904020471947773/video/1)
+[Play case 29 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-29.mp4)
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -999,9 +979,9 @@ Type: Evaluation | Date: 2026-07-16
 
 A fonte relata testes com o mesmo prompt para Road Fighter, Battle City e Q*bert e lista US$ 0,28 para Kimi K3, US$ 0,28 para GPT-5.6 e US$ 0,54 para Opus 4.8. Estes são números do benchmark da editora
 
-<a href="https://x.com/adxtyahq/status/2077860500462055570/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30-poster.jpg" alt="Case 30 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30-poster.jpg" alt="Case 30 source video poster" height="360"></a>
 
-[Watch case 30 source video on X](https://x.com/adxtyahq/status/2077860500462055570/video/1)
+[Play case 30 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-30.mp4)
 
 Type: Benchmark | Date: 2026-07-16
 
@@ -1014,9 +994,9 @@ Type: Benchmark | Date: 2026-07-16
 
 A Higgsfield apresenta uma comparação de geração de jogos entre Kimi K3 e Fable 5. O registro fornecido inclui a mídia comparativa, mas não prompt, rubrica de pontuação ou condições detalhadas
 
-<a href="https://x.com/higgsfield_ai/status/2077943629633712490/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31-poster.jpg" alt="Case 31 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31-poster.jpg" alt="Case 31 source video poster" height="360"></a>
 
-[Watch case 31 source video on X](https://x.com/higgsfield_ai/status/2077943629633712490/video/1)
+[Play case 31 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-31.mp4)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -1029,9 +1009,9 @@ Type: Evaluation | Date: 2026-07-17
 
 O avaliador relata testes diretos entre Kimi K3 e Opus 4.8 e os considera aproximadamente comparáveis em frontend e desenvolvimento complexos, com resultados mistos. Essa continua sendo a avaliação de uma pessoa
 
-<a href="https://x.com/op7418/status/2077969583018066116/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34-poster.jpg" alt="Case 34 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34-poster.jpg" alt="Case 34 source video poster" height="360"></a>
 
-[Watch case 34 source video on X](https://x.com/op7418/status/2077969583018066116/video/1)
+[Play case 34 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-34.mp4)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -1044,9 +1024,9 @@ Type: Evaluation | Date: 2026-07-17
 
 O vídeo apresenta discussão de benchmarks, um teste de landing page e observações de design de frontend para Kimi K3. O registro fornecido não traz o prompt completo nem a rubrica de pontuação
 
-<a href="https://x.com/adamuchigabriel/status/2077880433925120471/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35-poster.jpg" alt="Case 35 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35-poster.jpg" alt="Case 35 source video poster" height="360"></a>
 
-[Watch case 35 source video on X](https://x.com/adamuchigabriel/status/2077880433925120471/video/1)
+[Play case 35 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-35.mp4)
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -1126,9 +1106,9 @@ Type: Limit | Date: 2026-07-17
 
 O criador relata uma comparação de Arena entre Kimi K3 e Opus 4.8 em uma tarefa de Flappy Bird e considera Kimi K3 significativamente melhor. Nenhum prompt completo ou rubrica consta no registro
 
-<a href="https://x.com/jun_song/status/2077396996865003739/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47-poster.jpg" alt="Case 47 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47-poster.jpg" alt="Case 47 source video poster" height="360"></a>
 
-[Watch case 47 source video on X](https://x.com/jun_song/status/2077396996865003739/video/1)
+[Play case 47 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-47.mp4)
 
 Type: Evaluation | Date: 2026-07-15
 
@@ -1154,9 +1134,9 @@ Type: Evaluation | Date: 2026-07-16
 
 O criador compara Kimi K3 e GPT-5.6 Sol em design de frontend e considera Kimi K3 mais forte em gosto visual, elegância e capacidade 3D. A avaliação é subjetiva e específica à tarefa
 
-<a href="https://x.com/filicroval/status/2077736407506751952/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53-poster.jpg" alt="Case 53 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53-poster.jpg" alt="Case 53 source video poster" height="360"></a>
 
-[Watch case 53 source video on X](https://x.com/filicroval/status/2077736407506751952/video/1)
+[Play case 53 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-53.mp4)
 
 Type: Evaluation | Date: 2026-07-16
 
@@ -1169,9 +1149,9 @@ Type: Evaluation | Date: 2026-07-16
 
 O criador apresenta uma comparação de geração de sites entre Kimi K3, Fable 5 e GPT-5.6 Sol. O registro fornecido não expõe o prompt completo nem uma rubrica de pontuação
 
-<a href="https://x.com/pengchujin/status/2077962916226298340/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57-poster.jpg" alt="Case 57 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57-poster.jpg" alt="Case 57 source video poster" height="360"></a>
 
-[Watch case 57 source video on X](https://x.com/pengchujin/status/2077962916226298340/video/1)
+[Play case 57 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-57.mp4)
 
 Type: Evaluation | Date: 2026-07-17
 
@@ -1184,9 +1164,9 @@ Type: Evaluation | Date: 2026-07-17
 
 A editora relata uma comparação multimodelo de jogos 3D procedurais e lista custos como US$ 0,71 para Kimi K3 e US$ 0,30 para Grok 4.5. Trate todos os rankings e custos como resultados da execução da editora
 
-<a href="https://x.com/adxtyahq/status/2077958193511362856/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59-poster.jpg" alt="Case 59 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59-poster.jpg" alt="Case 59 source video poster" height="360"></a>
 
-[Watch case 59 source video on X](https://x.com/adxtyahq/status/2077958193511362856/video/1)
+[Play case 59 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-59.mp4)
 
 Type: Benchmark | Date: 2026-07-17
 
@@ -1199,20 +1179,47 @@ Type: Benchmark | Date: 2026-07-17
 
 A fonte relata que Kimi K3 produziu uma cena detalhada de arsenal com prateleiras abastecidas, caixas e iluminação realista, enquanto Opus 4.8 produziu uma sala vazia. É um relato comparativo de terceiros, não um benchmark independente
 
-<a href="https://x.com/Bhavani_00007/status/2077798166729208223/video/1"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69-poster.jpg" alt="Case 69 source video poster" height="360"></a>
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69-poster.jpg" alt="Case 69 source video poster" height="360"></a>
 
-[Watch case 69 source video on X](https://x.com/Bhavani_00007/status/2077798166729208223/video/1)
+[Play case 69 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-69.mp4)
 
 Type: Evaluation | Date: 2026-07-16
 
 ---
 
+<a id="related-resources"></a>
 ## Recursos relacionados
 
 - [Ver detalhes e preços do Kimi K3 na EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
 - [Abrir a documentação da API Kimi K3 na EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
 - [Saiba mais sobre o Kimi K3 na EvoLink](https://evolink.ai/blog/is-kimi-k3-available-on-evolink?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)
+- [KimiK3.io](https://kimik3.io/)
 - A página do modelo e a documentação da API da EvoLink estão verificadas; nenhuma skill instalável de Kimi K3 foi verificada
+
+<a id="quick-api-access"></a>
+## ⚡ Início rápido
+
+O ID documentado pela EvoLink é `kimi-k3`; a página do modelo e a documentação de Chat Completions estão disponíveis
+
+1. [Ver detalhes e preços do Kimi K3 na EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
+2. [Criar ou gerenciar uma chave API da EvoLink](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+3. [Abrir a documentação da API Kimi K3 na EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
+
+```bash
+curl --request POST \
+  --url "https://direct.evolink.ai/v1/chat/completions" \
+  --header "Authorization: Bearer $EVOLINK_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "kimi-k3",
+    "messages": [
+      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
+    ]
+  }'
+```
+
+> [!IMPORTANT]
+> A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Este repositório não afirma ter feito um teste pago independente
 
 <a id="acknowledge"></a>
 ## 🙏 Agradecimentos

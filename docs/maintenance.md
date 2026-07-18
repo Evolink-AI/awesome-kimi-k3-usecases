@@ -3,6 +3,7 @@
 ## Source of truth
 
 - Public cases: `data/use-cases.json`
+- Source-fidelity expected set: `data/source-fidelity-manifest.json`
 - Selection lineage: `data/ingested_tweets.json`
 - Reviewed link exceptions: `data/link-audit-exceptions.json`
 - English source: `README.md`
@@ -10,6 +11,7 @@
 - Aggregate localization cache: `data/localization-cache.json`
 - Localization build: `python3 scripts/build_localizations.py`
 - Source-media sync: `python3 scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`
+- Source-fidelity build: `python3 scripts/build_source_fidelity_package.py --source /path/to/use-case-posts.json --package .codex/audits/source-fidelity-package.json`
 
 The current source artifact is `/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json`, filtered at `2026-07-17T15:57:58+0800` to retain all 70 high-confidence items and exclude all 31 medium-confidence items. Future public updates must record a new source artifact and fixed collection timestamp
 
@@ -25,9 +27,10 @@ Do not invent prompts, workflow steps, results, pricing, benchmark numbers, date
 2. Classify every candidate, retain only high-confidence cases for publication, and record a decision reason
 3. Update `data/use-cases.json` and English README first
 4. Run `scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`, upload the prepared files to the approved R2 namespace, and verify every public object before rebuilding READMEs
-5. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, prompt text, and media order
-6. Run the framework verifier, repository verifier, media audit, link audit, and `git diff --check`
-7. Fix every P0/P1 issue, then re-run the complete audit before commit or push
+5. Build `data/source-fidelity-manifest.json` and the run-local handoff package with `scripts/build_source_fidelity_package.py`, then pass the framework handoff verifier before README mutation
+6. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, prompt text, and media order
+7. Run the framework verifier, repository verifier, R2 source-media audit, public-link audit, and `git diff --check`
+8. Fix every P0/P1 issue, then re-run the complete audit before commit or push
 
 If an owner-required source permalink becomes unavailable after collection, preserve the exact permalink, add a visible case-level disclosure, and record the reviewed HTTP status plus source-package evidence in `data/link-audit-exceptions.json`
 
@@ -36,13 +39,15 @@ If an owner-required source permalink becomes unavailable after collection, pres
 ```bash
 python3 scripts/build_localizations.py
 python3 scripts/verify_repository.py
+python3 scripts/audit_r2_source_media.py --report .codex/audits/r2-source-media-audit.md
+python3 scripts/audit_public_links.py --report .codex/audits/public-link-audit.md
 python3 /path/to/model-repo-pipeline/bundled-skills/usecase-update-loop/scripts/verify_usecase_update.py --repo .
 git diff --check
 ```
 
 ## Media
 
-README media uses Cloudflare R2 under `github-repo-media/awesome-kimi-k3-usecases`. Every public case must render at least one source-backed visual. Videos use R2-hosted poster frames with playable links rather than direct video embeds, while image cases preserve every usable source image. Local staging media under `media/cases/` and `media/source-cases/` is ignored after upload, while language banners remain versioned as repository assets
+README media uses Cloudflare R2 under `github-repo-media/awesome-kimi-k3-usecases`. Every public case must render the complete expected visual set from `data/source-fidelity-manifest.json`. Videos use R2-hosted poster frames with playable R2 MP4 links rather than direct video embeds, while image cases preserve every usable source image. Local staging media under `media/cases/` and `media/source-cases/` is ignored after upload, while language banners remain versioned as repository assets
 
 The complete case index belongs inside the top `## 📑 Menu`. Do not repeat case tables inside category sections. Creator links in Acknowledge remain one comma-separated inline list rather than one creator per bullet
 

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import subprocess
@@ -33,6 +34,9 @@ def check(url: str) -> tuple[str, int | str]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--report", type=Path)
+    args = parser.parse_args()
     exception_data = json.loads((ROOT / "data/link-audit-exceptions.json").read_text(encoding="utf-8"))
     exceptions = {
         item["url"]: set(item["allowed_statuses"])
@@ -47,15 +51,44 @@ def main() -> int:
         results = sorted(pool.map(check, urls))
     failures = []
     accepted = []
+    result_lines = []
     for url, status in results:
         ok = isinstance(status, int) and status in {200, 206, 301, 302, 303, 307, 308}
         excepted = isinstance(status, int) and status in exceptions.get(url, set())
-        print(f"{'PASS' if ok else 'EXCEPT' if excepted else 'FAIL'} {status} {url}")
+        result_lines.append(f"{'PASS' if ok else 'EXCEPT' if excepted else 'FAIL'} {status} {url}")
         if excepted:
             accepted.append((url, status))
         if not ok and not excepted:
             failures.append((url, status))
-    print(f"checked={len(results)} accepted_exceptions={len(accepted)} failures={len(failures)}")
+    summary = f"checked={len(results)} accepted_exceptions={len(accepted)} failures={len(failures)}"
+    print("\n".join([*result_lines, summary]))
+    if args.report:
+        head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+        ).stdout.strip() or "unavailable"
+        report = [
+            "# Public Link Audit v1",
+            "",
+            f"- Status: `{'passed' if not failures else 'failed'}`",
+            f"- Target commit: `{head}`",
+            f"- Checked URLs: {len(results)}",
+            f"- Accepted exceptions: {len(accepted)}",
+            f"- Failures: {len(failures)}",
+            f"- Command exit code: {0 if not failures else 1}",
+            f"- Result: {'pass' if not failures else 'fail'}",
+            "",
+            "## Results",
+            "",
+            "```text",
+            *result_lines,
+            "```",
+        ]
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text("\n".join(report) + "\n", encoding="utf-8")
     return 1 if failures else 0
 
 

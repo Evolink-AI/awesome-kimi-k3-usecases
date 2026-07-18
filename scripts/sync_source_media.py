@@ -65,6 +65,11 @@ def image_signature_is_valid(path: Path) -> bool:
     )
 
 
+def video_signature_is_valid(path: Path) -> bool:
+    payload = path.read_bytes()[:32]
+    return len(payload) >= 12 and payload[4:8] == b"ftyp"
+
+
 def download_image(url: str, target_stem: Path) -> Path:
     target = target_stem.with_suffix(extension(url))
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -85,6 +90,45 @@ def download_image(url: str, target_stem: Path) -> Path:
     if partial.stat().st_size < 1_000 or not image_signature_is_valid(partial):
         partial.unlink(missing_ok=True)
         raise ValueError(f"downloaded file is not a valid source image: {url}")
+    partial.replace(target)
+    return target
+
+
+def video_resolution(url: str) -> tuple[int, int]:
+    match = re.search(r"/(\d+)x(\d+)/", url)
+    if not match:
+        return (0, 0)
+    return (int(match.group(1)), int(match.group(2)))
+
+
+def select_video_variant(urls: list[str]) -> str:
+    variants = [url for url in urls if "video.twimg.com/" in url and ".mp4" in url]
+    if not variants:
+        raise ValueError("source item has no direct MP4 variant")
+    preferred = [url for url in variants if max(video_resolution(url)) <= 1280]
+    candidates = preferred or variants
+    return max(candidates, key=lambda url: video_resolution(url)[0] * video_resolution(url)[1])
+
+
+def download_video(url: str, target: Path) -> Path:
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if target.is_file() and target.stat().st_size >= 10_000 and video_signature_is_valid(target):
+        return target
+    partial = target.with_suffix(target.suffix + ".part")
+    result = subprocess.run(
+        [
+            "curl", "--location", "--fail", "--silent", "--show-error",
+            "--retry", "5", "--retry-all-errors", "--retry-delay", "1",
+            "--output", str(partial), url,
+        ],
+        check=False,
+    )
+    if result.returncode != 0:
+        partial.unlink(missing_ok=True)
+        raise ValueError(f"curl failed to download video: {url}")
+    if partial.stat().st_size < 10_000 or not video_signature_is_valid(partial):
+        partial.unlink(missing_ok=True)
+        raise ValueError(f"downloaded file is not a valid MP4: {url}")
     partial.replace(target)
     return target
 
@@ -121,13 +165,11 @@ def main() -> None:
         posters = [url for url in urls if "pbs.twimg.com/" in url and "video_thumb" in url]
         images = [url for url in urls if "pbs.twimg.com/media/" in url]
         videos = [url for url in urls if "video.twimg.com/" in url and ".mp4" in url]
-        x_video = next((url for url in urls if re.search(r"/video/\d+(?:\?|$)", url)), link)
-        if item.get("source_status_note"):
-            x_video = link
         assets: list[dict] = []
         selected_source_urls: list[str] = []
 
         if posters or videos:
+            video_source_url = select_video_variant(videos)
             if number in LEGACY_VIDEO_CASES:
                 assets.append({
                     "kind": "video",
@@ -135,18 +177,23 @@ def main() -> None:
                     "poster_url": f"{R2_ROOT}/media/cases/case-{nn}-poster.jpg",
                     "play_label": f"Play case {number} demo video",
                 })
+                item["poster_path"] = f"media/cases/case-{nn}-poster.jpg"
+                item["playable_video_path"] = f"media/cases/case-{nn}.mp4"
             else:
                 if not posters:
                     raise ValueError(f"case {number} has video media but no source poster")
                 poster_path = download_image(posters[0], args.download_dir / f"case-{nn}-poster")
-                downloaded.append(poster_path)
+                video_path = download_video(video_source_url, args.download_dir / f"case-{nn}.mp4")
+                downloaded.extend((poster_path, video_path))
                 assets.append({
                     "kind": "video",
-                    "url": x_video,
+                    "url": r2_url(video_path),
                     "poster_url": r2_url(poster_path),
-                    "play_label": f"Watch case {number} source video on X",
+                    "play_label": f"Play case {number} demo video",
                 })
-            selected_source_urls.extend(posters[:1])
+                item["poster_path"] = poster_path.relative_to(ROOT).as_posix()
+                item["playable_video_path"] = video_path.relative_to(ROOT).as_posix()
+            selected_source_urls.append(video_source_url)
         elif not images:
             raise ValueError(f"case {number} has no usable source media")
 

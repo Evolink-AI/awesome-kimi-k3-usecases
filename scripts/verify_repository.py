@@ -24,6 +24,11 @@ MODEL_PAGE_PREFIX = "https://evolink.ai/kimi-k3"
 API_DOCS_PREFIX = "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
 ARTICLE_PREFIX = "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
 API_ENDPOINT = "https://direct.evolink.ai/v1/chat/completions"
+KIMIK3_IO_BY_LOCALE = {
+    "zh-TW": "https://kimik3.io/zh",
+    "zh-CN": "https://kimik3.io/zh",
+    "ru": "https://kimik3.io/ru/",
+}
 
 
 def fail(errors: list[str]) -> int:
@@ -45,6 +50,7 @@ def main() -> int:
         ".github/ISSUE_TEMPLATE/correction.yml", "docs/maintenance.md",
         "docs/update-log.md", "data/use-cases.json", "data/localization-cache.json",
         "data/ingested_tweets.json", "data/link-audit-exceptions.json",
+        "data/source-fidelity-manifest.json",
     ]
     required.extend(f"data/localizations/{locale}.json" for locale in LOCALES[1:])
     errors.extend(f"missing required file: {path}" for path in required if not (ROOT / path).is_file())
@@ -82,6 +88,8 @@ def main() -> int:
         for asset in item.get("media_assets", []):
             if asset.get("kind") == "video" and not asset.get("poster_url", "").startswith(R2_PREFIX):
                 errors.append(f'case {item.get("public_number")}: video poster is not on repository R2')
+            if asset.get("kind") == "video" and not asset.get("url", "").startswith(R2_PREFIX):
+                errors.append(f'case {item.get("public_number")}: playable video is not on repository R2')
             if asset.get("kind") == "image" and not asset.get("url", "").startswith(R2_PREFIX):
                 errors.append(f'case {item.get("public_number")}: source image is not on repository R2')
     if sum(bool(item.get("prompt_public")) for item in items) != 1:
@@ -102,6 +110,49 @@ def main() -> int:
     unavailable = [item for item in items if item.get("source_status_note")]
     if len(unavailable) != 1 or unavailable[0].get("public_number") != 67:
         errors.append("source availability disclosure must identify only case 67")
+
+    fidelity = json.loads((ROOT / "data/source-fidelity-manifest.json").read_text(encoding="utf-8"))
+    fidelity_cases = fidelity.get("cases", [])
+    if fidelity.get("selected_case_count") != EXPECTED_CASES:
+        errors.append("source fidelity selected case denominator is not 70")
+    if fidelity.get("cases_with_source_media") != EXPECTED_CASES:
+        errors.append("source fidelity media case denominator is not 70")
+    if fidelity.get("expected_public_visual_count") != 79:
+        errors.append("source fidelity expected media denominator is not 79")
+    if not re.fullmatch(r"[0-9a-f]{64}", str(fidelity.get("source_manifest_sha256", ""))):
+        errors.append("source fidelity manifest lacks a valid source SHA256")
+    expected_presentation = {
+        "menu_layout": "centralized-single-table",
+        "acknowledge_layout": "inline-comma",
+        "quick_start_position": "penultimate-section",
+        "media_policy": "all-source-media",
+        "video_playback_policy": "r2-playable",
+        "localization_fallback": "english",
+    }
+    if fidelity.get("owner_presentation") != expected_presentation:
+        errors.append("source fidelity owner presentation differs from the locked contract")
+    if len(fidelity_cases) != EXPECTED_CASES:
+        errors.append("source fidelity case set is not complete")
+    else:
+        for item, manifest_case in zip(items, fidelity_cases):
+            expected_visuals = [
+                asset["poster_url"] if asset["kind"] == "video" else asset["url"]
+                for asset in item.get("media_assets", [])
+            ]
+            expected_playable = next(
+                (asset["url"] for asset in item.get("media_assets", []) if asset["kind"] == "video"),
+                None,
+            )
+            if manifest_case.get("public_number") != item.get("public_number"):
+                errors.append(f'case {item.get("public_number")}: source fidelity number differs')
+            if manifest_case.get("source_url") != item.get("source_url"):
+                errors.append(f'case {item.get("public_number")}: source fidelity URL differs')
+            if manifest_case.get("source_media_urls") != item.get("media_source_urls"):
+                errors.append(f'case {item.get("public_number")}: source fidelity media lineage differs')
+            if manifest_case.get("expected_public_media_urls") != expected_visuals:
+                errors.append(f'case {item.get("public_number")}: source fidelity expected visuals differ')
+            if manifest_case.get("playable_video_url") != expected_playable:
+                errors.append(f'case {item.get("public_number")}: source fidelity playable video differs')
 
     link_exceptions = json.loads((ROOT / "data/link-audit-exceptions.json").read_text(encoding="utf-8"))
     exception_items = link_exceptions.get("exceptions", [])
@@ -159,6 +210,13 @@ def main() -> int:
             errors.append(f"{filename}: missing exact EvoLink Kimi K3 API docs")
         if text.count(ARTICLE_PREFIX) != 1:
             errors.append(f"{filename}: related article must appear exactly once as a jump link")
+        locale = LOCALES[index]
+        expected_kimik3_io = KIMIK3_IO_BY_LOCALE.get(locale, "https://kimik3.io/")
+        kimik3_io_urls = re.findall(r"https://kimik3\.io/[^)\s]*", text)
+        if kimik3_io_urls != [expected_kimik3_io]:
+            errors.append(
+                f"{filename}: KimiK3.io route is {kimik3_io_urls}, expected only {expected_kimik3_io}"
+            )
         if text.count(API_ENDPOINT) != 1:
             errors.append(f"{filename}: copyable Quick API endpoint must appear exactly once")
         if text.count('"model": "kimi-k3"') != 1:
@@ -180,6 +238,18 @@ def main() -> int:
                 errors.append(f"{filename}: case menu tables are repeated inside category sections")
             if menu_text.count("| Case | Category | What it shows | Type |") != 1:
                 errors.append(f"{filename}: centralized case menu table is missing or duplicated")
+        quick_start = text.find('<a id="quick-api-access"></a>')
+        related_resources = text.find('<a id="related-resources"></a>')
+        acknowledge_start = text.find('<a id="acknowledge"></a>')
+        if not (first_category < related_resources < quick_start < acknowledge_start):
+            errors.append(f"{filename}: Quick Start is not the penultimate section after Related Resources")
+        headings = re.findall(r"^## .+$", text, re.MULTILINE)
+        if len(headings) < 2 or "⚡" not in headings[-2] or "🙏" not in headings[-1]:
+            errors.append(f"{filename}: Quick Start and Acknowledge are not the final two sections")
+        early_conversion = text[:first_category]
+        for required_route in (MODEL_PAGE_PREFIX, "https://evolink.ai/dashboard/keys", API_DOCS_PREFIX):
+            if required_route not in early_conversion:
+                errors.append(f"{filename}: compact pre-case conversion path is missing {required_route}")
         acknowledge = text.split('<a id="acknowledge"></a>', 1)[-1]
         if re.search(r'^- \[@', acknowledge, re.MULTILINE):
             errors.append(f"{filename}: Acknowledge creators are still one-per-line bullets")
@@ -197,6 +267,8 @@ def main() -> int:
                     errors.append(
                         f'{filename}: case {item["public_number"]} media is missing or duplicated: {url}'
                     )
+        if text.count(f'src="{R2_PREFIX}media/') != 79:
+            errors.append(f"{filename}: rendered case-media denominator is not exactly 79")
         if text.count("The original source permalink returned HTTP 404 during the 2026-07-17 audit") != 1:
             errors.append(f"{filename}: unavailable source disclosure must appear exactly once")
         if "https://evolink.ai/?utm_" in text:
@@ -221,7 +293,6 @@ def main() -> int:
                 errors.append(f"{filename}: type or date differs from English")
             if any(a == b for a, b in zip(titles, english_titles or [])):
                 errors.append(f"{filename}: at least one title is unchanged from English")
-            locale = LOCALES[index]
             correction = locale_configs[locale]["correction_text"]
             if f"*{correction}*" not in text:
                 errors.append(f"{filename}: correction statement is not italicized")
@@ -243,10 +314,14 @@ def main() -> int:
     print(f"localized_case_instances={EXPECTED_CASES * len(FILENAMES)}")
     print("public_prompt_cases=1")
     print("r2_policy=pass")
+    print("r2_playable_video_cases=53")
+    print("source_fidelity_expected_media=79")
     print("evolink_model_route=pass")
     print("evolink_api_docs_route=pass")
     print("quick_api_access=pass")
+    print("quick_api_access_position=penultimate-section")
     print("evolink_article_route=pass")
+    print("kimik3_io_locale_routes=pass")
     return 0
 
 

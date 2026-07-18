@@ -31,6 +31,12 @@ BANNER_ALT = {
 MODEL_PAGE = "https://evolink.ai/kimi-k3"
 API_DOCS = "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
 ARTICLE_URL = "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
+KIMIK3_IO_DEFAULT = "https://kimik3.io/"
+KIMIK3_IO_BY_LOCALE = {
+    "zh-CN": "https://kimik3.io/zh",
+    "zh-TW": "https://kimik3.io/zh",
+    "ru": "https://kimik3.io/ru/",
+}
 EVOLINK_URL = f"{MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta"
 API_EXAMPLE = [
     "```bash",
@@ -93,6 +99,44 @@ def append_case_menu(lines: list[str], items: list[dict], category_names: dict[s
         )
 
 
+def english_quickstart_block() -> list[str]:
+    return [
+        '<a id="quick-api-access"></a>',
+        "## ⚡ Quick API Access",
+        "",
+        "EvoLink publishes Kimi K3 with the model ID `kimi-k3` and an OpenAI-compatible Chat Completions API",
+        "",
+        f"1. [View Kimi K3 details and pricing on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)",
+        "2. [Create or manage an EvoLink API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)",
+        f"3. [Run your first Kimi K3 Chat Completions call]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
+        "",
+        *API_EXAMPLE,
+        "",
+        "> [!IMPORTANT]",
+        "> The EvoLink model page and API documentation verify the public route and model ID. This usecase repository links to those surfaces but does not claim an independent credit-consuming API smoke test",
+        "",
+    ]
+
+
+def localized_quickstart_block(config: dict) -> list[str]:
+    return [
+        '<a id="quick-api-access"></a>',
+        f'## ⚡ {config["quickstart_heading"]}',
+        "",
+        config["quickstart_intro"],
+        "",
+        f'1. [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)',
+        f'2. [{config["manage_key"]}](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)',
+        f'3. [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)',
+        "",
+        *API_EXAMPLE,
+        "",
+        "> [!IMPORTANT]",
+        f'> {config["important"]}',
+        "",
+    ]
+
+
 def render_english(items: list[dict]) -> str:
     categories = ["games-3d", "frontend-motion", "coding-integrations", "evaluation-limits"]
     handles = list(dict.fromkeys(item["author_handle"] for item in items))
@@ -131,18 +175,10 @@ def render_english(items: list[dict]) -> str:
         "> [!NOTE]",
         "> This collection favors concrete evidence over hype. It does not reconstruct missing prompts, infer unpublished setup steps, or turn one person's observation into a general benchmark",
         "",
-        "## ⚡ Quick API Access",
-        "",
-        "EvoLink publishes Kimi K3 with the model ID `kimi-k3` and an OpenAI-compatible Chat Completions API",
-        "",
-        f"1. [View Kimi K3 details and pricing on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)",
-        "2. [Create or manage an EvoLink API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)",
-        f"3. [Run your first Kimi K3 Chat Completions call]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
-        "",
-        *API_EXAMPLE,
-        "",
-        "> [!IMPORTANT]",
-        "> The EvoLink model page and API documentation verify the public route and model ID. This usecase repository links to those surfaces but does not claim an independent credit-consuming API smoke test",
+        "**Start here:** "
+        f"[explore Kimi K3]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link) · "
+        "[get an API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key) · "
+        f"[open the API docs]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
         "",
         "## 📑 Menu",
         "",
@@ -152,6 +188,8 @@ def render_english(items: list[dict]) -> str:
     for key in categories:
         count = sum(1 for item in items if item["category_key"] == key)
         lines.append(f'| [{CATEGORY_EMOJI[key]} {CATEGORY_ENGLISH[key]}](#{key}) | {count} Cases |')
+    lines.append("| [Related Resources](#related-resources) | Model and ecosystem links |")
+    lines.append("| [Quick API Access](#quick-api-access) | Model, API key, docs, and first call |")
     lines.append("| [Acknowledge](#acknowledge) | Credits and correction policy |")
     append_case_menu(lines, items, CATEGORY_ENGLISH)
 
@@ -183,13 +221,16 @@ def render_english(items: list[dict]) -> str:
             lines.extend([f'Type: {item["type"]} | Date: {item["date"]}', "", "---", ""])
 
     lines.extend([
+        '<a id="related-resources"></a>',
         "## Related Resources",
         "",
         f"- [Kimi K3 model details and pricing on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model) — availability, model ID, context, and pricing",
         f"- [Kimi K3 OpenAI-compatible API documentation]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs) — Chat Completions endpoint and request format",
         f"- [Learn more about Kimi K3 on EvoLink]({ARTICLE_URL}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)",
+        f"- [KimiK3.io]({KIMIK3_IO_DEFAULT})",
         "- No installable EvoLink Kimi K3 skill was independently verified for this update",
         "",
+        *english_quickstart_block(),
         '<a id="acknowledge"></a>',
         "## 🙏 Acknowledge",
         "",
@@ -242,18 +283,9 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         "> [!NOTE]",
         f'> {config["note"]}',
         "",
-        f'## ⚡ {config["quickstart_heading"]}',
-        "",
-        config["quickstart_intro"],
-        "",
-        f'1. [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)',
-        f'2. [{config["manage_key"]}](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)',
-        f'3. [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)',
-        "",
-        *API_EXAMPLE,
-        "",
-        "> [!IMPORTANT]",
-        f'> {config["important"]}',
+        f'**1. [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link) · '
+        f'2. [{config["manage_key"]}](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key) · '
+        f'3. [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)**',
         "",
         f'## 📑 {config["menu_heading"]}',
         "",
@@ -263,6 +295,8 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
     for key in categories:
         count = sum(1 for item in items if item["category_key"] == key)
         lines.append(f'| [{config["categories"][key]}](#{key}) | {count} |')
+    lines.append(f'| [{config["resources_heading"]}](#related-resources) | {config["resources_heading"]} |')
+    lines.append(f'| [{config["quickstart_heading"]}](#quick-api-access) | {config["quickstart_heading"]} |')
     lines.append(f'| [{config["ack_heading"]}](#acknowledge) | {config["credits"]} |')
     append_case_menu(lines, items, config["categories"], config["cases"])
 
@@ -295,13 +329,16 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
             lines.extend([f'Type: {item["type"]} | Date: {item["date"]}', "", "---", ""])
 
     lines.extend([
+        '<a id="related-resources"></a>',
         f'## {config["resources_heading"]}',
         "",
         f'- [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)',
         f'- [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)',
         f'- [{config["learn_more_article"]}]({ARTICLE_URL}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)',
+        f'- [KimiK3.io]({KIMIK3_IO_BY_LOCALE.get(locale, KIMIK3_IO_DEFAULT)})',
         f'- {config["no_evolink_surface"]}',
         "",
+        *localized_quickstart_block(config),
         '<a id="acknowledge"></a>',
         f'## 🙏 {config["ack_heading"]}',
         "",
