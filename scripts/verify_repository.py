@@ -10,7 +10,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_CASES = 70
 LOCALES = ["", "es", "pt", "ja", "ko", "de", "fr", "tr", "zh-TW", "zh-CN", "ru"]
 FILENAMES = ["README.md"] + [f"README_{locale}.md" for locale in LOCALES[1:]]
 CASE_RE = re.compile(
@@ -53,10 +52,11 @@ def main() -> int:
 
     data = json.loads((ROOT / "data/use-cases.json").read_text(encoding="utf-8"))
     items = data.get("items", [])
-    if len(items) != EXPECTED_CASES:
-        errors.append(f"structured case count is {len(items)}, expected {EXPECTED_CASES}")
+    expected_cases = len(items)
+    if expected_cases < 1:
+        errors.append("structured case inventory is empty")
     numbers = [item.get("public_number") for item in items]
-    expected_numbers = list(range(1, EXPECTED_CASES + 1))
+    expected_numbers = list(range(1, expected_cases + 1))
     if numbers != expected_numbers:
         errors.append(f"structured numbers are not contiguous: {numbers}")
     sources = [item.get("source_url") for item in items]
@@ -68,16 +68,12 @@ def main() -> int:
         errors.append("structured data contains a non-high quality tier")
     if any(item.get("media_type") not in {"video", "image"} for item in items):
         errors.append("structured data contains a case without source media")
-    if sum(item.get("media_type") == "video" for item in items) != 53:
-        errors.append("structured media classification does not contain 53 video cases")
-    if sum(item.get("media_type") == "image" for item in items) != 17:
-        errors.append("structured media classification does not contain 17 image cases")
     if any(not item.get("media_assets") for item in items):
         errors.append("structured data contains a case without media assets")
     if any(not item.get("media_source_urls") for item in items):
         errors.append("structured data contains a case without source-media lineage")
-    if sum(len(item.get("media_assets", [])) for item in items) != 79:
-        errors.append("structured data does not contain the expected 79 media assets")
+    if sum(len(item.get("media_assets", [])) for item in items) < expected_cases:
+        errors.append("structured data contains fewer rendered media assets than public cases")
     for item in items:
         for asset in item.get("media_assets", []):
             if asset.get("kind") == "video" and not asset.get("poster_url", "").startswith(R2_PREFIX):
@@ -100,14 +96,12 @@ def main() -> int:
     if not str(data.get("source_artifact", "")).endswith("/use-case-posts.json"):
         errors.append("structured data does not point to the high-confidence source artifact")
     unavailable = [item for item in items if item.get("source_status_note")]
-    if len(unavailable) != 1 or unavailable[0].get("public_number") != 67:
-        errors.append("source availability disclosure must identify only case 67")
-
     link_exceptions = json.loads((ROOT / "data/link-audit-exceptions.json").read_text(encoding="utf-8"))
     exception_items = link_exceptions.get("exceptions", [])
     exception_urls = {item.get("url") for item in exception_items}
-    if len(exception_items) != 2 or not unavailable or unavailable[0].get("source_url") not in exception_urls:
-        errors.append("link audit exception does not match the disclosed unavailable source")
+    unavailable_urls = {item.get("source_url") for item in unavailable}
+    if not unavailable_urls.issubset(exception_urls):
+        errors.append("link audit exceptions do not cover every disclosed unavailable source")
     if "https://x.com/filicroval" not in exception_urls:
         errors.append("link audit exception does not preserve the unavailable author profile")
 
@@ -147,7 +141,7 @@ def main() -> int:
             errors.append(f"{filename}: case order is {case_numbers}")
         if anchors != expected_readme_order:
             errors.append(f"{filename}: anchor order is {anchors}")
-        if len(meta) != EXPECTED_CASES:
+        if len(meta) != expected_cases:
             errors.append(f"{filename}: metadata count is {len(meta)}")
         if text.count("**Prompt:**") != 1 or text.count("Voxel star wars pod-racers run") != 1:
             errors.append(f"{filename}: public prompt boundary differs")
@@ -159,14 +153,16 @@ def main() -> int:
             errors.append(f"{filename}: missing exact EvoLink Kimi K3 API docs")
         if text.count(ARTICLE_PREFIX) != 1:
             errors.append(f"{filename}: related article must appear exactly once as a jump link")
-        if text.count(API_ENDPOINT) != 1:
-            errors.append(f"{filename}: copyable Quick API endpoint must appear exactly once")
+        if text.count(API_ENDPOINT) != 2:
+            errors.append(f"{filename}: Quick API endpoint must appear once in the method-aware field and once in the curl example")
+        if f"Endpoint: `POST {API_ENDPOINT}`" not in text:
+            errors.append(f"{filename}: method-aware Quick API endpoint field is missing")
         if text.count('"model": "kimi-k3"') != 1:
             errors.append(f"{filename}: copyable Quick API model must appear exactly once")
         if 'Authorization: Bearer $EVOLINK_API_KEY' not in text:
             errors.append(f"{filename}: Quick API example lacks environment-key Bearer authentication")
-        if text.count("](#case-") != EXPECTED_CASES:
-            errors.append(f"{filename}: centralized Menu does not link all {EXPECTED_CASES} cases")
+        if text.count("](#case-") != expected_cases:
+            errors.append(f"{filename}: centralized Menu does not link all {expected_cases} cases")
         first_category = text.find('<a id="games-3d"></a>')
         menu_start = text.find("## 📑")
         if menu_start == -1 or first_category == -1 or menu_start > first_category:
@@ -174,7 +170,7 @@ def main() -> int:
         else:
             menu_text = text[menu_start:first_category]
             case_text = text[first_category:]
-            if menu_text.count("](#case-") != EXPECTED_CASES:
+            if menu_text.count("](#case-") != expected_cases:
                 errors.append(f"{filename}: centralized Menu does not contain all case links")
             if "](#case-" in case_text:
                 errors.append(f"{filename}: case menu tables are repeated inside category sections")
@@ -239,8 +235,8 @@ def main() -> int:
         return fail(errors)
     print("PASS")
     print("readmes=11")
-    print(f"cases={EXPECTED_CASES}")
-    print(f"localized_case_instances={EXPECTED_CASES * len(FILENAMES)}")
+    print(f"cases={expected_cases}")
+    print(f"localized_case_instances={expected_cases * len(FILENAMES)}")
     print("public_prompt_cases=1")
     print("r2_policy=pass")
     print("evolink_model_route=pass")

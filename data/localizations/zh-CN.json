@@ -5,10 +5,10 @@
   "introduction_heading": "简介",
   "intro": "欢迎来到 Kimi K3 高信号使用案例库",
   "mission": "我们收录有公开来源支持的游戏、3D 场景、动态设计、集成、评估与实际限制",
-  "source_boundary": "本案例库收录指定来源中的全部 70 个高置信案例，排除 31 个中等置信案例，并保留广泛的使用场景覆盖",
+  "source_boundary": "全部 79 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
   "overview_heading": "概览",
   "overview": [
-    "70 个来自创作者和从业者的高置信案例，未遗漏任何高置信条目",
+    "79 个来自创作者和从业者的高置信案例",
     "覆盖互动游戏、3D、前端与动态设计、编程、研究、评估、可视化和代理限制",
     "每个案例保留来源、作者、类型、日期和 prompt 边界",
     "不把个人观察包装成 benchmark"
@@ -20,7 +20,7 @@
   "official_quickstart": "查看 EvoLink Kimi K3 API 文档",
   "explore_evolink": "查看 EvoLink 上的 Kimi K3 详情与价格",
   "manage_key": "创建或管理 EvoLink API 密钥",
-  "important": "EvoLink 模型页与 API 文档验证了公开路由和模型 ID，本案例库不声称已独立完成付费 API 测试",
+  "important": "EvoLink 模型页与 API 文档验证了公开路由和模型 ID；目前未验证独立的 Kimi K3 浏览器或无代码试用界面，本案例库也不声称已独立完成付费 API 测试",
   "menu_heading": "目录",
   "categories": {
     "games-3d": "互动游戏与 3D",
@@ -385,6 +385,15 @@
       "title": "用一个 prompt 创建用户界面",
       "takeaway": "使用单次请求生成并检查完整 UI 设计",
       "notes": "创作者展示了归因于 Kimi K3 单 prompt 运行的 UI 设计，并给出强烈正面的主观评价，来源未提供完整 prompt 或评分标准"
-    }
+    },
+    "71": {"title": "构建独立太空飞船游戏", "takeaway": "先用 Kimi K3 Standard 制作游戏初版，再比较一致性、缺陷、视觉质量和 token 成本", "notes": "ChrisGPT 报告 Kimi K3 Standard 以约 2.50 美元 API token 成本完成独立太空飞船游戏初版；它比 GPT-5.5 初版更连贯、bug 更少，但 Fable 5 的视觉效果仍更精致"},
+    "72": {"title": "用相同 Arena prompt 比较前端", "takeaway": "固定 prompt 并并排检查输出，比只看一个排行榜分数更可靠", "notes": "Arena.ai 发布 Kimi K3 与 Fable 5 的 Frontend Code Arena 对比，并声明双方使用相同 prompt；视频保留两侧输出，便于检查实现和呈现差异"},
+    "73": {"title": "让 Summer Engine 游戏自测", "takeaway": "让 Kimi K3 运行游戏、检查截图和日志并在同一会话中修复可见缺陷", "notes": "Mathias Heide 报告 Kimi K3 在 27 分钟的一次会话中构建可运行的纸飞机游戏；模型启动游戏、截图、读取日志、修复 bug，并把错误的黑色纸飞机改为白色"},
+    "74": {"title": "评测 Kimi Code 编码 agent", "takeaway": "结合多个编码 agent 测试集和单任务成本评估 Kimi K3，不把单一前端榜单当成总体能力", "notes": "Artificial Analysis 报告 Kimi K3 在 Coding Agent Index 得分 57、并列第五；Terminal-Bench v2 为 84%，DeepSWE 为 64%，SWE-Atlas-QnA 为 23%，平均每任务成本 3.18 美元"},
+    "75": {"title": "将 Kimi 配置为 Codex 子 agent", "takeaway": "让 Codex 保持编排职责，把前端执行交给 Kimi K3 OpenCode 子 agent，并明确密钥边界", "notes": "nauczymycieAI 给出三阶段教程：安装并验证 OpenCode，手动创建且不粘贴到 Codex 的 Kimi API Key，连接 Kimi K3，并创建全局 Codex skill 路由前端任务"},
+    "76": {"title": "比较 Arena 与修复测试结果", "takeaway": "同时看前端偏好和仓库修复评测，因为 Kimi K3 可在一个榜单第一、在另一测试中第七", "notes": "AlphaSignal 报告 Kimi K3 在 Frontend Code Arena 以 1679 分排名第一，但在编码 agent 修复测试中只完成 67 次尝试中的 53 次，即 79%，排名第七"},
+    "77": {"title": "迭代浏览器大逃杀游戏", "takeaway": "构建功能丰富的浏览器游戏时，要预期长时间自主迭代和有针对性的后续 prompt", "notes": "Ananth 报告 Kimi K3 用 130 多分钟和 40 多轮 Chrome 截图反馈构建 PUBG 风格游戏，并在首个输出后又用两个 prompt 修复剩余 bug"},
+    "78": {"title": "构建获奖风格网站", "takeaway": "通过完整录屏评估 Kimi K3 的精致网站构建过程，而不只看最终截图", "notes": "Viktor Oddy 发布 13 分钟教程，展示如何用 Kimi K3 构建获奖风格网站；完整视频提供了过程证据"},
+    "79": {"title": "通过 ChatLLM 路由简单编码", "takeaway": "创建任务路由，将简单编码交给 Kimi K3，把困难编码和设计保留给其他模型", "notes": "Abacus AI 宣布 ChatLLM 支持 Kimi K3：简单编码用 Kimi K3，困难编码用 Fable 5，设计用 GPT-5.6 Sol；同一路由可用于 ChatLLM、Abacus AI agent 或 Claude Code"}
   }
 }

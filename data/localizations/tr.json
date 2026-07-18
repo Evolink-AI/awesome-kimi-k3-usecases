@@ -5,10 +5,10 @@
   "introduction_heading": "Giriş",
   "intro": "Kimi K3 için yüksek sinyalli kullanım örnekleri deposuna hoş geldiniz",
   "mission": "Kamuya açık kaynaklara dayanan oyunları, 3D sahneleri, hareketli tasarımları, entegrasyonları, değerlendirmeleri ve pratik sınırları topluyoruz",
-  "source_boundary": "Sağlanan paketteki yüksek güvenli 70 örneğin tamamı dahil edildi; orta güvenli 31 örnek dışarıda bırakıldı. Başlıklar ve yazarlar özgün kaynaklara bağlanır",
+  "source_boundary": "79 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
   "overview_heading": "Genel bakış",
   "overview": [
-    "Geniş görev kapsamına sahip yüksek güvenli 70 örneğin tamamı",
+    "Geniş görev kapsamına sahip yüksek güvenli 79 örnek",
     "Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi",
     "Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur",
     "Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz"
@@ -20,7 +20,7 @@
   "official_quickstart": "EvoLink Kimi K3 API belgelerini aç",
   "explore_evolink": "EvoLink’te Kimi K3 ayrıntılarını ve fiyatlarını gör",
   "manage_key": "EvoLink API anahtarı oluştur veya yönet",
-  "important": "EvoLink model sayfası ve API belgeleri genel rotayı ve kimliği doğrular. Bu depo bağımsız ücretli API testi yaptığını iddia etmez",
+  "important": "EvoLink model sayfası ve API belgeleri genel rotayı ve kimliği doğrular. Bağımsız Kimi K3 tarayıcı veya kodsuz yüzeyi doğrulanmadı ve bu depo bağımsız ücretli API testi yaptığını iddia etmez",
   "menu_heading": "Menü",
   "categories": {"games-3d": "Etkileşimli oyunlar ve 3D", "frontend-motion": "Frontend ve hareketli tasarım", "coding-integrations": "Kodlama ve entegrasyonlar", "evaluation-limits": "Değerlendirme ve sınırlar"},
   "credits": "Katkılar ve düzeltmeler",
@@ -100,6 +100,15 @@
     "67": {"title": "Çalışan bir zombi birinci şahıs nişancı oyunu kur", "takeaway": "Eksiksiz oynanabilir FPS eserini incelemek için somut bir zombi nişancı hedefi kullan", "notes": "Kaynak Kimi K3'e atfedilen tam çalışan bir zombi FPS gösteriyor. Prompt, uygulama ayrıntıları veya dış oynanış değerlendirmesi sunulmuyor"},
     "68": {"title": "Post-training için pazarlama PDF'i oluştur", "takeaway": "Pazarlama belgesi üretmek için adı belirtilmiş ürün ve teslim formatı kullan", "notes": "Üretici Kimi K3'ten Thinking Machines'in Inkling post-training ürünü hakkında pazarlama PDF'i istediğini, sonucu paylaştığını ve perde arkası süreci övdüğünü bildiriyor. Prompt veya değerlendirme ölçütleri sunulmuyor"},
     "69": {"title": "3D cephanelik sahnesinin ayrıntı ve ışığını karşılaştır", "takeaway": "Sınırları belli Kimi K3 ve Opus 4.8 karşılaştırmasında nesne yoğunluğu, aydınlatma ve sahne ayrıntısını incele", "notes": "Kaynak Kimi K3'ün dolu raflar, kutular ve gerçekçi aydınlatmayla ayrıntılı cephanelik sahnesi; Opus 4.8'in ise seyrek bir oda ürettiğini bildiriyor. Bu üçüncü taraf karşılaştırma raporudur, bağımsız benchmark değildir"},
-    "70": {"title": "Tek promptla kullanıcı arayüzü oluştur", "takeaway": "Eksiksiz UI tasarımı üretmek ve incelemek için tek istek kullan", "notes": "Üretici tek promptlu Kimi K3 çalışmasına atfedilen UI tasarımını gösteriyor ve son derece olumlu öznel değerlendirme yapıyor. Tam prompt ve rubric sunulmuyor"}
+    "70": {"title": "Tek promptla kullanıcı arayüzü oluştur", "takeaway": "Eksiksiz UI tasarımı üretmek ve incelemek için tek istek kullan", "notes": "Üretici tek promptlu Kimi K3 çalışmasına atfedilen UI tasarımını gösteriyor ve son derece olumlu öznel değerlendirme yapıyor. Tam prompt ve rubric sunulmuyor"},
+    "71": {"title": "Bağımsız bir uzay gemisi oyunu oluştur", "takeaway": "Kimi K3 Standard ile ilk sürümü üretip tutarlılık, hata, görsel kalite ve token maliyetini karşılaştır", "notes": "ChrisGPT yaklaşık 2,50 dolarlık API token maliyetiyle ilk uzay gemisi oyunu sürümünü bildirdi. GPT-5.5 sürümünden daha tutarlı ve az hatalıydı, ancak Fable 5 görsel olarak daha cilalı kaldı"},
+    "72": {"title": "Aynı Arena promptlarıyla frontendleri karşılaştır", "takeaway": "Tek bir sıralama puanı yerine aynı promptları ve yan yana çıktıları kullan", "notes": "Arena.ai, Kimi K3 ile Fable 5'i aynı promptlarla karşılaştıran Frontend Code Arena videosu yayımladı. Video iki çıktıyı aynı koşulda koruyor"},
+    "73": {"title": "Summer Engine oyununu kendi kendine test et", "takeaway": "Kimi K3'ün oyunu çalıştırmasını, ekran görüntülerini ve logları inceleyip aynı oturumda hataları düzeltmesini sağla", "notes": "Mathias Heide, Kimi K3'ün 27 dakikalık tek oturumda kağıt uçak oyunu yaptığını, ekran görüntüsü ve logları okuyup hataları düzelttiğini ve siyah uçağı beyaza çevirdiğini bildiriyor"},
+    "74": {"title": "Kimi Code'u kodlama ajanlarında değerlendir", "takeaway": "Kimi K3'ü birden fazla test ve görev maliyetiyle değerlendir; tek frontend sıralamasını genelleme", "notes": "Artificial Analysis 57 puan ve ortak beşincilik; Terminal-Bench v2'de %84, DeepSWE'de %64, SWE-Atlas-QnA'da %23 ve görev başına 3,18 dolar bildiriyor"},
+    "75": {"title": "Kimi'yi Codex alt ajanı olarak yapılandır", "takeaway": "Orkestrasyonu Codex'te tut, frontend uygulamasını gizli bilgi sınırıyla Kimi K3 OpenCode alt ajanına devret", "notes": "nauczymycieAI, OpenCode kurulumu, Kimi API anahtarının Codex'e yapıştırılmadan elle oluşturulması, Kimi K3 bağlantısı ve frontend işleri için global Codex skill adımlarını yayımlıyor"},
+    "76": {"title": "Arena ve onarım testini karşılaştır", "takeaway": "Kimi K3 birinde birinci, diğerinde yedinci olabildiği için frontend tercihi ve depo onarımını birlikte incele", "notes": "AlphaSignal Frontend Code Arena'da 1679 puanla birincilik, ancak kodlama ajanı onarım testinde 67 denemede 53 başarı, %79 ve yedincilik bildiriyor"},
+    "77": {"title": "Tarayıcı battle royale oyununu yinele", "takeaway": "Özellikli tarayıcı oyunlarında uzun otonom yinelemeler ve hedefli ek promptlar bekle", "notes": "Ananth, PUBG tarzı oyun için 130 dakikadan fazla ve 40'tan fazla Chrome ekran görüntüsü döngüsü, ardından kalan hatalar için iki ek prompt bildiriyor"},
+    "78": {"title": "Ödüllü stilde web sitesi oluştur", "takeaway": "Sadece son ekran görüntüsü yerine tam kayıtlı oturumu değerlendir", "notes": "Viktor Oddy, Kimi K3 ile ödüllü stilde web sitesi oluşturmaya yönelik 13 dakikalık tutorial yayımlayarak sürecin tamamını gösteriyor"},
+    "79": {"title": "Basit kodlamayı ChatLLM ile yönlendir", "takeaway": "Basit kodlamayı Kimi K3'e gönder, zor kodlama ve tasarımı diğer modellere ayır", "notes": "Abacus AI, ChatLLM'de Kimi K3'ü duyuruyor: basit kodlama Kimi K3, zor kodlama Fable 5, tasarım GPT-5.6 Sol. Router ChatLLM, Abacus AI Agent ve Claude Code'da çalışıyor"}
   }
 }

@@ -3,20 +3,19 @@
 <a href="https://evolink.ai/kimi-k3?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/images/zh-TW-v2.png" alt="帶月面場景與 EvoLink 使用入口的繁體中文 Kimi K3 banner" width="760"></a>
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)
-[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)
-[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
+[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
 
-[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
-[![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
-[![🇵🇹 Português](https://img.shields.io/badge/🇵🇹_Português-Ver-2a9d8f)](README_pt.md)
-[![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵_日本語-表示-52b788)](README_ja.md)
-[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷_한국어-보기-4ea8de)](README_ko.md)
-[![🇩🇪 Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-Ansehen-f4a261)](README_de.md)
-[![🇫🇷 Français](https://img.shields.io/badge/🇫🇷_Français-Voir-e76f51)](README_fr.md)
-[![🇹🇷 Türkçe](https://img.shields.io/badge/🇹🇷_Türkçe-Görüntüle-d62828)](README_tr.md)
-[![🇹🇼 繁體中文](https://img.shields.io/badge/🇹🇼_繁體中文-查看-8338ec)](README_zh-TW.md)
-[![🇨🇳 简体中文](https://img.shields.io/badge/🇨🇳_简体中文-查看-ef476f)](README_zh-CN.md)
-[![🇷🇺 Русский](https://img.shields.io/badge/🇷🇺_Русский-Смотреть-577590)](README_ru.md)
+[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-English-111111)](README.md)
+[![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Español-ffb703)](README_es.md)
+[![🇵🇹 Português](https://img.shields.io/badge/🇵🇹_Português-Português-2a9d8f)](README_pt.md)
+[![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵_日本語-日本語-52b788)](README_ja.md)
+[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷_한국어-한국어-4ea8de)](README_ko.md)
+[![🇩🇪 Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-Deutsch-f4a261)](README_de.md)
+[![🇫🇷 Français](https://img.shields.io/badge/🇫🇷_Français-Français-e76f51)](README_fr.md)
+[![🇹🇷 Türkçe](https://img.shields.io/badge/🇹🇷_Türkçe-Türkçe-d62828)](README_tr.md)
+[![🇹🇼 繁體中文](https://img.shields.io/badge/🇹🇼_繁體中文-繁體中文-8338ec)](README_zh-TW.md)
+[![🇨🇳 简体中文](https://img.shields.io/badge/🇨🇳_简体中文-简体中文-ef476f)](README_zh-CN.md)
+[![🇷🇺 Русский](https://img.shields.io/badge/🇷🇺_Русский-Русский-577590)](README_ru.md)
 
 </div>
 
@@ -28,13 +27,11 @@
 
 **我們收錄具有公開來源的遊戲、3D 場景、動態設計、整合、評估與實務限制**
 
-本版收錄指定來源中全部 70 個 high-confidence 案例，並排除全部 31 個 medium-confidence 項目；標題與作者名稱都連回原始貼文與個人頁面
-
-[EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta)
+全部 79 個案例均來自高信心公開來源；標題與作者連回原文，弱證據、重複或證據不足的候選不會收錄
 
 ## 📊 概覽
 
-- 70 個來自創作者與實務工作者的 high-confidence 案例，完整納入且沒有挑漏
+- 79 個來自創作者與實務工作者的 high-confidence 案例
 - 廣泛涵蓋互動遊戲、Three.js、動態設計、前端、研究、評估、工具整合與實務限制
 - 每個案例保留來源、作者、類型、日期與 prompt 邊界
 - 排除全部 31 個 medium-confidence 項目，也不把個人觀察包裝成 benchmark
@@ -46,9 +43,10 @@
 
 EvoLink 文件記載的模型 ID 為 `kimi-k3`，模型詳情頁與 Chat Completions API 文件均已提供
 
-1. [查看 EvoLink 上的 Kimi K3 詳情與價格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
-2. [建立或管理 EvoLink API 金鑰](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
-3. [查看 EvoLink Kimi K3 API 文件](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
+1. [建立或管理 EvoLink API 金鑰](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+2. [查看 EvoLink Kimi K3 API 文件](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
+
+Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 
 ```bash
 curl --request POST \
@@ -64,16 +62,16 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLink 模型頁與 API 文件驗證了公開路由和模型 ID，本案例庫不聲稱已獨立完成付費 API 測試
+> EvoLink 模型頁與 API 文件驗證了公開路由和模型 ID；目前未驗證獨立的 Kimi K3 瀏覽器或無程式碼試用介面，本案例庫也不聲稱已獨立完成付費 API 測試
 
 ## 📑 目錄
 
 | Section | Cases |
 |---|---|
-| [互動遊戲與 3D](#games-3d) | 22 |
-| [前端與動態設計](#frontend-motion) | 15 |
-| [程式開發與整合](#coding-integrations) | 8 |
-| [評估與限制](#evaluation-limits) | 25 |
+| [互動遊戲與 3D](#games-3d) | 25 |
+| [前端與動態設計](#frontend-motion) | 16 |
+| [程式開發與整合](#coding-integrations) | 10 |
+| [評估與限制](#evaluation-limits) | 28 |
 | [致謝](#acknowledge) | 致謝與更正 |
 
 | Case | Category | What it shows | Type |
@@ -148,6 +146,15 @@ curl --request POST \
 | [製作後訓練行銷 PDF](#case-68) | 前端與動態設計 | 用指定產品與交付格式生成行銷文件 | Demo |
 | [比較 3D 軍火庫場景的細節與照明](#case-69) | 評估與限制 | 在有邊界的 Kimi K3 與 Opus 4.8 比較中檢視物件密度、照明與場景細節 | Evaluation |
 | [用一個 prompt 建立使用者介面](#case-70) | 前端與動態設計 | 用單次要求生成並檢視完整 UI 設計 | Demo |
+| [建立獨立太空船遊戲](#case-71) | 互動遊戲與 3D | 先用 Kimi K3 Standard 製作遊戲初版，再比較一致性、缺陷、視覺品質與 token 成本 | Demo |
+| [用相同 Arena prompt 比較前端](#case-72) | 評估與限制 | 固定 prompt 並並排檢查輸出，比只看一個排行榜分數更可靠 | Benchmark |
+| [讓 Summer Engine 遊戲自測](#case-73) | 互動遊戲與 3D | 讓 Kimi K3 執行遊戲、檢查截圖與日誌，並在同一會話中修復可見缺陷 | Demo |
+| [評測 Kimi Code 編碼 agent](#case-74) | 評估與限制 | 結合多個編碼 agent 測試集與單任務成本評估 Kimi K3，不把單一前端榜單當成整體能力 | Benchmark |
+| [將 Kimi 設定為 Codex 子 agent](#case-75) | 程式開發與整合 | 讓 Codex 保留編排職責，把前端執行交給 Kimi K3 OpenCode 子 agent，並明確密鑰邊界 | Tutorial |
+| [比較 Arena 與修復測試結果](#case-76) | 評估與限制 | 同時看前端偏好與儲存庫修復評測，因為 Kimi K3 可在一個榜單第一、在另一測試中第七 | Benchmark |
+| [迭代瀏覽器大逃殺遊戲](#case-77) | 互動遊戲與 3D | 建立功能豐富的瀏覽器遊戲時，要預期長時間自主迭代與有針對性的後續 prompt | Demo |
+| [建立獲獎風格網站](#case-78) | 前端與動態設計 | 透過完整錄影評估 Kimi K3 的精緻網站建立過程，而不只看最終截圖 | Tutorial |
+| [透過 ChatLLM 路由簡單編碼](#case-79) | 程式開發與整合 | 建立任務路由，將簡單編碼交給 Kimi K3，把困難編碼與設計保留給其他模型 | Integration |
 
 <a id="games-3d"></a>
 ## 🎮 互動遊戲與 3D
@@ -495,6 +502,51 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-71"></a>
+### Case 71: [建立獨立太空船遊戲](https://x.com/ChrisGPT/status/2078261217924087999) (by [@ChrisGPT](https://x.com/ChrisGPT))
+
+**先用 Kimi K3 Standard 製作遊戲初版，再比較一致性、缺陷、視覺品質與 token 成本**
+
+ChrisGPT 報告 Kimi K3 Standard 以約 2.50 美元 API token 成本完成獨立太空船遊戲初版；它比 GPT-5.5 初版更連貫、bug 更少，但 Fable 5 的視覺效果仍更精緻
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-71.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-71-poster.jpg" alt="Case 71 source video poster" height="360"></a>
+
+[Play case 71 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-71.mp4)
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-73"></a>
+### Case 73: [讓 Summer Engine 遊戲自測](https://x.com/MathiasHeide/status/2078231589436465199) (by [@MathiasHeide](https://x.com/MathiasHeide))
+
+**讓 Kimi K3 執行遊戲、檢查截圖與日誌，並在同一會話中修復可見缺陷**
+
+Mathias Heide 報告 Kimi K3 在 27 分鐘的一次會話中建立可執行的紙飛機遊戲；模型啟動遊戲、截圖、讀取日誌、修復 bug，並把黑色紙飛機改為白色
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-73.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-73-poster.jpg" alt="Case 73 source video poster" height="360"></a>
+
+[Play case 73 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-73.mp4)
+
+Type: Demo | Date: 2026-07-17
+
+---
+
+<a id="case-77"></a>
+### Case 77: [迭代瀏覽器大逃殺遊戲](https://x.com/Ananth7e/status/2078158089929601203) (by [@Ananth7e](https://x.com/Ananth7e))
+
+**建立功能豐富的瀏覽器遊戲時，要預期長時間自主迭代與有針對性的後續 prompt**
+
+Ananth 報告 Kimi K3 用 130 多分鐘與 40 多輪 Chrome 截圖回饋建立 PUBG 風格遊戲，之後又用兩個 prompt 修復剩餘 bug
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-77.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-77-poster.jpg" alt="Case 77 source video poster" height="360"></a>
+
+[Play case 77 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-77.mp4)
+
+Type: Demo | Date: 2026-07-17
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 前端與動態設計
@@ -726,6 +778,21 @@ Type: Demo | Date: 2026-07-16
 
 ---
 
+<a id="case-78"></a>
+### Case 78: [建立獲獎風格網站](https://x.com/viktoroddy/status/2078140696910037002) (by [@viktoroddy](https://x.com/viktoroddy))
+
+**透過完整錄影評估 Kimi K3 的精緻網站建立過程，而不只看最終截圖**
+
+Viktor Oddy 發布 13 分鐘教學，展示如何用 Kimi K3 建立獲獎風格網站；完整影片提供過程證據
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78-poster.jpg" alt="Case 78 source video poster" height="360"></a>
+
+[Play case 78 tutorial video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78.mp4)
+
+Type: Tutorial | Date: 2026-07-17
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 程式開發與整合
@@ -839,6 +906,32 @@ Type: Demo | Date: 2026-07-17
 [Watch case 64 source video on X](https://x.com/MinLiBuilds/status/2077939461510615376/video/1)
 
 Type: Tutorial | Date: 2026-07-17
+
+---
+
+<a id="case-75"></a>
+### Case 75: [將 Kimi 設定為 Codex 子 agent](https://x.com/nauczymycieAI/status/2078181182701736132) (by [@nauczymycieAI](https://x.com/nauczymycieAI))
+
+**讓 Codex 保留編排職責，把前端執行交給 Kimi K3 OpenCode 子 agent，並明確密鑰邊界**
+
+nauczymycieAI 提供三階段教學：安裝並驗證 OpenCode，手動建立且不貼入 Codex 的 Kimi API Key，連接 Kimi K3，並建立全域 Codex skill 路由前端任務
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-75.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-75.jpg" alt="Case 75 source image 1" height="360"></a>
+
+Type: Tutorial | Date: 2026-07-17
+
+---
+
+<a id="case-79"></a>
+### Case 79: [透過 ChatLLM 路由簡單編碼](https://x.com/abacusai/status/2078022418661257411) (by [@abacusai](https://x.com/abacusai))
+
+**建立任務路由，將簡單編碼交給 Kimi K3，把困難編碼與設計保留給其他模型**
+
+Abacus AI 宣布 ChatLLM 支援 Kimi K3：簡單編碼用 Kimi K3、困難編碼用 Fable 5、設計用 GPT-5.6 Sol；同一路由可用於 ChatLLM、Abacus AI agent 或 Claude Code
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-79.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-79.jpg" alt="Case 79 source image 1" height="360"></a>
+
+Type: Integration | Date: 2026-07-17
 
 ---
 
@@ -1207,10 +1300,51 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-## 相關資源
+<a id="case-72"></a>
+### Case 72: [用相同 Arena prompt 比較前端](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
-- [查看 EvoLink 上的 Kimi K3 詳情與價格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)
-- [查看 EvoLink Kimi K3 API 文件](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)
+**固定 prompt 並並排檢查輸出，比只看一個排行榜分數更可靠**
+
+Arena.ai 發布 Kimi K3 與 Fable 5 的 Frontend Code Arena 對比，雙方使用相同 prompt；影片保留兩側輸出，便於檢查實作與呈現差異
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-72.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-72-poster.jpg" alt="Case 72 source video poster" height="360"></a>
+
+[Play case 72 comparison video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-72.mp4)
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-74"></a>
+### Case 74: [評測 Kimi Code 編碼 agent](https://x.com/ArtificialAnlys/status/2078230240766345330) (by [@ArtificialAnlys](https://x.com/ArtificialAnlys))
+
+**結合多個編碼 agent 測試集與單任務成本評估 Kimi K3，不把單一前端榜單當成整體能力**
+
+Artificial Analysis 報告 Kimi K3 在 Coding Agent Index 得分 57、並列第五；Terminal-Bench v2 為 84%，DeepSWE 為 64%，SWE-Atlas-QnA 為 23%，平均每任務成本 3.18 美元
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-74.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-74.jpg" alt="Case 74 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+<a id="case-76"></a>
+### Case 76: [比較 Arena 與修復測試結果](https://x.com/AlphaSignalAI/status/2078172629496746183) (by [@AlphaSignalAI](https://x.com/AlphaSignalAI))
+
+**同時看前端偏好與儲存庫修復評測，因為 Kimi K3 可在一個榜單第一、在另一測試中第七**
+
+AlphaSignal 報告 Kimi K3 在 Frontend Code Arena 以 1679 分排名第一，但在編碼 agent 修復測試中只完成 67 次嘗試中的 53 次，即 79%，排名第七
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-76.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-76.jpg" alt="Case 76 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-17
+
+---
+
+## Related Repositories
+
+- [查看 EvoLink 上的 Kimi K3 詳情與價格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
+- [查看 EvoLink Kimi K3 API 文件](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
 - [進一步了解 EvoLink 上的 Kimi K3](https://evolink.ai/blog/is-kimi-k3-available-on-evolink?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)
 - EvoLink 模型頁與 API 文件已驗證，但尚未驗證可安裝的 Kimi K3 skill
 
@@ -1219,6 +1353,6 @@ Type: Evaluation | Date: 2026-07-16
 
 感謝所有公開分享 Kimi K3 作品的創作者與實務工作者
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai)
 
 *若需更正歸屬或文字，請附上公開來源建立 issue*

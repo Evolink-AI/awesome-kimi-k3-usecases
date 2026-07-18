@@ -5,10 +5,10 @@
   "introduction_heading": "はじめに",
   "intro": "Kimi K3 の実例を厳選したリポジトリです",
   "mission": "公開情報に基づくゲーム、3D、モーションデザイン、統合、評価、実用上の制約を収録します",
-  "source_boundary": "提供されたソースパッケージからhigh-confidenceと判定された70件をすべて収録し、medium-confidenceの31件は除外しています。タイトルと著者名から原典へ移動できます",
+  "source_boundary": "79件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています",
   "overview_heading": "概要",
   "overview": [
-    "クリエイターと実務家によるhigh-confidenceの70事例をすべて収録",
+    "クリエイターと実務家によるhigh-confidenceの79事例",
     "ゲーム、Three.js、モーション、フロントエンド、コーディング、研究、評価、実用上の制約を幅広く収録",
     "各事例で出典、著者、種別、日付、プロンプト境界を保持",
     "個人の報告をベンチマークとして扱いません"
@@ -20,7 +20,7 @@
   "official_quickstart": "EvoLinkのKimi K3 API文書を開く",
   "explore_evolink": "EvoLinkでKimi K3の詳細と料金を見る",
   "manage_key": "EvoLink APIキーを作成・管理",
-  "important": "EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。本リポジトリは独自の有料APIテストを主張しません",
+  "important": "EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。独立したKimi K3のブラウザ／ノーコード画面は確認できておらず、本リポジトリは独自の有料APIテストも主張しません",
   "menu_heading": "目次",
   "categories": {
     "games-3d": "インタラクティブゲームと3D",
@@ -385,6 +385,15 @@
       "title": "1つのプロンプトからユーザーインターフェースを作る",
       "takeaway": "1回の依頼で完全なUIデザインを生成し、結果を確認します",
       "notes": "作者は1プロンプトのKimi K3実行によるUIを示し、主観的に非常に高く評価しています。正確なプロンプトと評価基準はありません"
-    }
+    },
+    "71": {"title": "インディー宇宙船ゲームを作る", "takeaway": "Kimi K3 Standardで初版を作り、一貫性、不具合、視覚品質、トークン費用を比較します", "notes": "ChrisGPTは約2.50ドルのAPIトークン費用で宇宙船ゲームの初版を作成したと報告しています。GPT-5.5の初版より一貫性が高く不具合が少ない一方、Fable 5の方が視覚的に洗練されていました"},
+    "72": {"title": "同一Arenaプロンプトでフロントエンドを比較", "takeaway": "同じプロンプトと並列出力で比較し、単一のランキング値への依存を避けます", "notes": "Arena.aiは同一プロンプトでKimi K3とFable 5を比較するFrontend Code Arena動画を公開し、実装と表現の違いを同じ条件で確認できるようにしています"},
+    "73": {"title": "Summer Engineゲームを自己テスト", "takeaway": "Kimi K3にゲームを実行させ、スクリーンショットとログを確認し、同じセッションで欠陥を修正させます", "notes": "Mathias Heideによると、Kimi K3は27分の1セッションで紙飛行機ゲームを構築し、実行、スクリーンショット、ログ確認、バグ修正を行い、黒い機体を白に直しました"},
+    "74": {"title": "Kimi Codeをコーディングエージェントで評価", "takeaway": "複数のテスト群とタスク単価でKimi K3を評価し、フロントエンド順位だけを総合能力と見なしません", "notes": "Artificial AnalysisはCoding Agent Indexで57点、同率5位と報告しています。Terminal-Bench v2は84%、DeepSWEは64%、SWE-Atlas-QnAは23%、平均費用は1タスク3.18ドルです"},
+    "75": {"title": "KimiをCodexサブエージェントに設定", "takeaway": "Codexが統括を担い、フロントエンド実行をKimi K3 OpenCodeサブエージェントに委任し、秘密情報の境界を明確にします", "notes": "nauczymycieAIはOpenCodeの導入確認、Codexに貼らずにKimi APIキーを手動作成、Kimi K3への接続、フロントエンド作業を委任するグローバルCodex skill作成という手順を公開しています"},
+    "76": {"title": "Arenaと修復ハーネスの結果を比較", "takeaway": "Kimi K3が一方で1位、別の評価で7位になり得るため、フロントエンド選好とリポジトリ修復の両方を見ます", "notes": "AlphaSignalはFrontend Code Arenaで1679点の1位と報告する一方、7モデルの修復ハーネスでは67試行中53件、79%で7位だったと報告しています"},
+    "77": {"title": "ブラウザ版バトルロイヤルを反復改善", "takeaway": "機能の多いブラウザゲームでは、長い自律反復と的を絞った追加プロンプトを見込みます", "notes": "Ananthによると、Kimi K3は130分以上、40回以上のChromeスクリーンショット反復でPUBG風ゲームを作り、その後さらに2つのプロンプトで残るバグを直しました"},
+    "78": {"title": "受賞級スタイルのWebサイトを作る", "takeaway": "最終画像だけでなく、完全な録画セッションでKimi K3のWeb制作工程を評価します", "notes": "Viktor OddyはKimi K3で受賞級スタイルのWebサイトを作る13分のチュートリアルを公開し、工程全体の証拠を提供しています"},
+    "79": {"title": "ChatLLMで簡単なコーディングをルーティング", "takeaway": "簡単なコーディングをKimi K3に送り、難しいコーディングとデザインを別モデルに割り当てます", "notes": "Abacus AIはChatLLMでKimi K3を提供し、簡単なコーディングはKimi K3、難しい作業はFable 5、デザインはGPT-5.6 Solというルートを示しています。同じルーターはChatLLM、Abacus AI agent、Claude Codeで使えます"}
   }
 }

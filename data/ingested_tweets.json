@@ -1,7 +1,7 @@
 {
-  "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
-  "source_generated_at": "2026-07-17T15:57:58+0800",
-  "source_sample_count": 70,
+  "source_artifact": ".codex/usecase-update-loop/source/20260718T031851Z-twitterapi.json",
+  "source_generated_at": "2026-07-18T03:18:51Z",
+  "source_sample_count": 624,
   "selected_ids": [
     "2077763009657627055",
     "2077754781964054825",
@@ -72,7 +72,16 @@
     "2077902793449296203",
     "2077859673517023313",
     "2077887013332636032",
-    "2077891942088671689"
+    "2077891942088671689",
+    "2078261217924087999",
+    "2078240399517524365",
+    "2078231589436465199",
+    "2078230240766345330",
+    "2078181182701736132",
+    "2078172629496746183",
+    "2078158089929601203",
+    "2078140696910037002",
+    "2078022418661257411"
   ],
-  "note": "This manifest records all 70 high-confidence selections from use-case-posts.json. Medium-confidence items are excluded. Public case data lives in data/use-cases.json."
+  "note": "This manifest records 79 published high-confidence selections. The 2026-07-18 recurring run reviewed 79 in-window candidates from a 624-candidate Twitter API artifact, selected 9, deferred 8, marked 5 unsure, and dropped 57. Public case data lives in data/use-cases.json."
 }

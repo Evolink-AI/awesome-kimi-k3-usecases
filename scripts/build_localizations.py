@@ -31,7 +31,6 @@ BANNER_ALT = {
 MODEL_PAGE = "https://evolink.ai/kimi-k3"
 API_DOCS = "https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat"
 ARTICLE_URL = "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
-EVOLINK_URL = f"{MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=introduction_cta"
 API_EXAMPLE = [
     "```bash",
     "curl --request POST \\",
@@ -46,17 +45,17 @@ API_EXAMPLE = [
     "  }'",
     "```",
 ]
-BADGES = """[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-Default_Source-111111)](README.md)
-[![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Ver-ffb703)](README_es.md)
-[![🇵🇹 Português](https://img.shields.io/badge/🇵🇹_Português-Ver-2a9d8f)](README_pt.md)
-[![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵_日本語-表示-52b788)](README_ja.md)
-[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷_한국어-보기-4ea8de)](README_ko.md)
-[![🇩🇪 Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-Ansehen-f4a261)](README_de.md)
-[![🇫🇷 Français](https://img.shields.io/badge/🇫🇷_Français-Voir-e76f51)](README_fr.md)
-[![🇹🇷 Türkçe](https://img.shields.io/badge/🇹🇷_Türkçe-Görüntüle-d62828)](README_tr.md)
-[![🇹🇼 繁體中文](https://img.shields.io/badge/🇹🇼_繁體中文-查看-8338ec)](README_zh-TW.md)
-[![🇨🇳 简体中文](https://img.shields.io/badge/🇨🇳_简体中文-查看-ef476f)](README_zh-CN.md)
-[![🇷🇺 Русский](https://img.shields.io/badge/🇷🇺_Русский-Смотреть-577590)](README_ru.md)"""
+BADGES = """[![🇺🇸 English](https://img.shields.io/badge/🇺🇸_English-English-111111)](README.md)
+[![🇪🇸 Español](https://img.shields.io/badge/🇪🇸_Español-Español-ffb703)](README_es.md)
+[![🇵🇹 Português](https://img.shields.io/badge/🇵🇹_Português-Português-2a9d8f)](README_pt.md)
+[![🇯🇵 日本語](https://img.shields.io/badge/🇯🇵_日本語-日本語-52b788)](README_ja.md)
+[![🇰🇷 한국어](https://img.shields.io/badge/🇰🇷_한국어-한국어-4ea8de)](README_ko.md)
+[![🇩🇪 Deutsch](https://img.shields.io/badge/🇩🇪_Deutsch-Deutsch-f4a261)](README_de.md)
+[![🇫🇷 Français](https://img.shields.io/badge/🇫🇷_Français-Français-e76f51)](README_fr.md)
+[![🇹🇷 Türkçe](https://img.shields.io/badge/🇹🇷_Türkçe-Türkçe-d62828)](README_tr.md)
+[![🇹🇼 繁體中文](https://img.shields.io/badge/🇹🇼_繁體中文-繁體中文-8338ec)](README_zh-TW.md)
+[![🇨🇳 简体中文](https://img.shields.io/badge/🇨🇳_简体中文-简体中文-ef476f)](README_zh-CN.md)
+[![🇷🇺 Русский](https://img.shields.io/badge/🇷🇺_Русский-Русский-577590)](README_ru.md)"""
 
 
 def media_block(item: dict) -> str:
@@ -95,6 +94,7 @@ def append_case_menu(lines: list[str], items: list[dict], category_names: dict[s
 
 def render_english(items: list[dict]) -> str:
     categories = ["games-3d", "frontend-motion", "coding-integrations", "evaluation-limits"]
+    case_count = len(items)
     handles = list(dict.fromkeys(item["author_handle"] for item in items))
     lines = [
         '<div align="center">',
@@ -102,8 +102,7 @@ def render_english(items: list[dict]) -> str:
         f'<a href="{MODEL_PAGE}?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="{R2}/images/en-v2.png" alt="Awesome Kimi K3 usecases banner with moon landscape and EvoLink call to action" width="760"></a>',
         "",
         "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)",
-        f"[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)]({MODEL_PAGE}?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)",
-        f"[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
+        f"[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)",
         "",
         BADGES,
         "",
@@ -117,13 +116,11 @@ def render_english(items: list[dict]) -> str:
         "",
         "**We collect source-backed Kimi K3 games, 3D builds, motion designs, integrations, evaluations, and practical limits from public creator evidence**",
         "",
-        "All 70 cases come from the supplied high-confidence source set. Case titles link to the original posts and author handles link to creator profiles",
-        "",
-        f"[View Kimi K3 on EvoLink]({EVOLINK_URL})",
+        f"All {case_count} cases come from high-confidence public sources. Case titles link to the original posts and author handles link to creator profiles",
         "",
         "## 📊 Overview",
         "",
-        "- **70 high-confidence Kimi K3 cases from public creators and practitioners**",
+        f"- **{case_count} high-confidence Kimi K3 cases from public creators and practitioners**",
         "- Covers interactive games, 3D and scientific visualization, frontend and motion design, coding workflows, research, benchmarks, and practical limits",
         "- Each case preserves its original source, creator attribution, evidence type, date, and prompt boundary",
         "- Medium-confidence candidates and unsupported extrapolations are excluded",
@@ -135,14 +132,15 @@ def render_english(items: list[dict]) -> str:
         "",
         "EvoLink publishes Kimi K3 with the model ID `kimi-k3` and an OpenAI-compatible Chat Completions API",
         "",
-        f"1. [View Kimi K3 details and pricing on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)",
-        "2. [Create or manage an EvoLink API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)",
-        f"3. [Run your first Kimi K3 Chat Completions call]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
+        "1. [Create or manage an EvoLink API key](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)",
+        f"2. [Read the current Kimi K3 API documentation]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)",
+        "",
+        "Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`",
         "",
         *API_EXAMPLE,
         "",
         "> [!IMPORTANT]",
-        "> The EvoLink model page and API documentation verify the public route and model ID. This usecase repository links to those surfaces but does not claim an independent credit-consuming API smoke test",
+        "> The EvoLink model page and API documentation verify the public route and model ID. No independent browser/no-code Kimi K3 surface was verified, and this repository does not claim an independent credit-consuming API smoke test",
         "",
         "## 📑 Menu",
         "",
@@ -183,10 +181,10 @@ def render_english(items: list[dict]) -> str:
             lines.extend([f'Type: {item["type"]} | Date: {item["date"]}', "", "---", ""])
 
     lines.extend([
-        "## Related Resources",
+        "## Related Repositories",
         "",
-        f"- [Kimi K3 model details and pricing on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model) — availability, model ID, context, and pricing",
-        f"- [Kimi K3 OpenAI-compatible API documentation]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs) — Chat Completions endpoint and request format",
+        f"- [Kimi K3 model overview on EvoLink]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview) — availability, model ID, context, and pricing",
+        f"- [Kimi K3 OpenAI-compatible API documentation]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link) — Chat Completions endpoint and request format",
         f"- [Learn more about Kimi K3 on EvoLink]({ARTICLE_URL}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)",
         "- No installable EvoLink Kimi K3 skill was independently verified for this update",
         "",
@@ -216,8 +214,7 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         f'<a href="{MODEL_PAGE}?utm_source=github&utm_medium=banner&utm_campaign=awesome-kimi-k3-usecases&utm_content=readme_banner"><img src="{R2}/images/{config["banner"]}" alt="{BANNER_ALT[locale]}" width="760"></a>',
         "",
         "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](LICENSE)",
-        f"[![Kimi K3 on EvoLink](https://img.shields.io/badge/Kimi_K3-Available_on_EvoLink-111111)]({MODEL_PAGE}?utm_source=github&utm_medium=badge&utm_campaign=awesome-kimi-k3-usecases&utm_content=top_badge)",
-        f"[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)",
+        f"[![API Quick Start](https://img.shields.io/badge/Kimi_K3-API_Quick_Start-22c55e)]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)",
         "",
         BADGES,
         "",
@@ -233,8 +230,6 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         "",
         config["source_boundary"],
         "",
-        f'[EvoLink]({EVOLINK_URL})',
-        "",
         f'## 📊 {config["overview_heading"]}',
         "",
         *[f'- {entry}' for entry in config["overview"]],
@@ -246,9 +241,10 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
         "",
         config["quickstart_intro"],
         "",
-        f'1. [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)',
-        f'2. [{config["manage_key"]}](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)',
-        f'3. [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)',
+        f'1. [{config["manage_key"]}](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)',
+        f'2. [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)',
+        "",
+        "Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`",
         "",
         *API_EXAMPLE,
         "",
@@ -295,10 +291,10 @@ def render(locale: str, config: dict, items: list[dict]) -> str:
             lines.extend([f'Type: {item["type"]} | Date: {item["date"]}', "", "---", ""])
 
     lines.extend([
-        f'## {config["resources_heading"]}',
+        '## Related Repositories',
         "",
-        f'- [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_model)',
-        f'- [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_api_docs)',
+        f'- [{config["explore_evolink"]}]({MODEL_PAGE}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)',
+        f'- [{config["official_quickstart"]}]({API_DOCS}?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)',
         f'- [{config["learn_more_article"]}]({ARTICLE_URL}?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=related_article)',
         f'- {config["no_evolink_surface"]}',
         "",

@@ -5,10 +5,10 @@
   "introduction_heading": "Introdução",
   "intro": "Bem-vindo ao repositório de casos de uso de alto sinal do Kimi K3",
   "mission": "Reunimos jogos, cenas 3D, motion design, integrações, avaliações e limites práticos do Kimi K3 apoiados por fontes públicas",
-  "source_boundary": "Esta edição inclui todos os 70 casos de alta confiança do pacote fornecido e exclui os 31 casos de confiança média. Títulos e autores levam às fontes e perfis originais",
+  "source_boundary": "Os 79 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
   "overview_heading": "Visão geral",
   "overview": [
-    "Todos os 70 casos de alta confiança selecionados de criadores e profissionais; 31 casos de confiança média foram excluídos",
+    "79 casos de alta confiança de criadores e profissionais",
     "Abrange amplamente jogos, Three.js, motion graphics, frontend, pesquisa, ferramentas de agentes, benchmarks, raciocínio e limites práticos",
     "Cada caso preserva fonte, autor, tipo, data e limite do prompt",
     "Relatos individuais não viram benchmarks"
@@ -20,7 +20,7 @@
   "official_quickstart": "Abrir a documentação da API Kimi K3 na EvoLink",
   "explore_evolink": "Ver detalhes e preços do Kimi K3 na EvoLink",
   "manage_key": "Criar ou gerenciar uma chave API da EvoLink",
-  "important": "A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Este repositório não afirma ter feito um teste pago independente",
+  "important": "A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Nenhuma superfície independente de navegador ou sem código para Kimi K3 foi verificada, e este repositório não afirma ter feito um teste pago independente",
   "menu_heading": "Menu",
   "categories": {
     "games-3d": "Jogos interativos e 3D",
@@ -385,6 +385,15 @@
       "title": "Criar uma interface de usuário a partir de um prompt",
       "takeaway": "Use um único pedido para gerar e examinar um design completo de interface",
       "notes": "O criador mostra um design de interface atribuído a uma execução com um prompt no Kimi K3 e faz uma avaliação subjetiva muito positiva. O prompt exato e a rubrica não foram incluídos"
-    }
+    },
+    "71": {"title": "Criar um jogo indie de nave", "takeaway": "Use Kimi K3 Standard para uma primeira versão e compare coerência, falhas, qualidade visual e custo de tokens", "notes": "ChrisGPT relata uma primeira versão de um jogo de nave por cerca de US$ 2,50 em tokens de API. Ela foi mais coerente e teve menos bugs que a versão GPT-5.5, mas Fable 5 continuou mais polido visualmente"},
+    "72": {"title": "Comparar frontends com prompts Arena idênticos", "takeaway": "Use prompts idênticos e resultados lado a lado em vez de depender de uma única posição no ranking", "notes": "Arena.ai publica uma comparação Frontend Code Arena entre Kimi K3 e Fable 5 com prompts idênticos. O vídeo preserva os dois resultados sob a mesma condição"},
+    "73": {"title": "Autotestar um jogo no Summer Engine", "takeaway": "Faça Kimi K3 executar o jogo, verificar capturas e logs e corrigir defeitos visíveis na mesma sessão", "notes": "Mathias Heide relata que Kimi K3 criou um jogo de avião de papel em uma sessão de 27 minutos, executou, examinou capturas e logs, corrigiu bugs e mudou o avião preto para branco"},
+    "74": {"title": "Avaliar Kimi Code em agentes de código", "takeaway": "Avalie Kimi K3 em vários testes e no custo por tarefa sem generalizar um ranking de frontend", "notes": "Artificial Analysis relata 57 pontos e quinto lugar conjunto: 84% no Terminal-Bench v2, 64% no DeepSWE, 23% no SWE-Atlas-QnA e custo médio de US$ 3,18 por tarefa"},
+    "75": {"title": "Configurar Kimi como subagente do Codex", "takeaway": "Mantenha a orquestração no Codex e delegue o frontend a um subagente Kimi K3 OpenCode com limite claro para segredos", "notes": "nauczymycieAI explica a instalação do OpenCode, criação manual da chave Kimi sem colá-la no Codex, conexão com Kimi K3 e um skill global do Codex para rotear tarefas de frontend"},
+    "76": {"title": "Comparar Arena e o teste de reparo", "takeaway": "Veja preferência de frontend e reparo de repositório porque Kimi K3 pode ficar em primeiro em um e sétimo em outro", "notes": "AlphaSignal relata primeiro lugar com 1.679 pontos no Frontend Code Arena, mas 53 acertos em 67, ou 79%, e sétimo lugar em um teste de reparo de agentes"},
+    "77": {"title": "Iterar um battle royale no navegador", "takeaway": "Espere iterações autônomas longas e prompts posteriores específicos em jogos de navegador ricos em recursos", "notes": "Ananth relata mais de 130 minutos e 40 ciclos de capturas do Chrome para um jogo estilo PUBG, seguidos de dois prompts extras para corrigir bugs restantes"},
+    "78": {"title": "Criar um site com estilo premiado", "takeaway": "Avalie a sessão gravada completa, não apenas a captura final", "notes": "Viktor Oddy publica um tutorial de 13 minutos para criar com Kimi K3 um site de estilo premiado e fornece evidência do processo completo"},
+    "79": {"title": "Rotear código simples pelo ChatLLM", "takeaway": "Envie código simples ao Kimi K3 e reserve código difícil e design para outros modelos", "notes": "Abacus AI anuncia Kimi K3 no ChatLLM: código simples com Kimi K3, código difícil com Fable 5 e design com GPT-5.6 Sol. O roteador funciona no ChatLLM, Abacus AI Agent e Claude Code"}
   }
 }

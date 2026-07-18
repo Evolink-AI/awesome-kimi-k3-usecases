@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-18 — Daily recurring update to 79 cases
+
+- Collected 624 deduplicated X/Twitter candidates across 10 Kimi K3 queries with a fixed `20260718T031851Z` timestamp, a 24-hour window, minimum 11 likes, and at most three pages per query
+- Semantically reviewed all 79 in-window candidates: 9 high-confidence updates, 8 deferred, 5 unsure, and 57 dropped
+- Added Cases 71–79 to the English source and all ten localized editions, including games, self-testing workflows, frontend comparisons, coding-agent evaluations, a Codex/OpenCode integration, a website tutorial, and a ChatLLM router
+- Uploaded 14 source-backed images, video posters, and playable videos to the approved R2 namespace; local staging media remains ignored
+- Reduced Quick Start to two pre-code actions, added the explicit `POST https://direct.evolink.ai/v1/chat/completions` endpoint, removed misleading browser-trial copy, and recorded that neither an independent browser surface nor a paid API smoke was verified
+- Generalized repository verification from a hard-coded 70-case baseline to the structured public case count
+
 ## 2026-07-17 — Complete source media and centralized navigation
 
 - Restored source-backed media for all 70 high-confidence cases, including 53 video cases and 17 image cases

@@ -9,9 +9,11 @@
 - Language-specific translation sources: `data/localizations/*.json`
 - Aggregate localization cache: `data/localization-cache.json`
 - Localization build: `python3 scripts/build_localizations.py`
-- Source-media sync: `python3 scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`
+- Recurring-update config: `data/usecase-update-config.json`
+- Recurring-update agent: `model-repo-pipeline/bundled-skills/usecase-update-loop`
+- Legacy source-media sync: `python3 scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`
 
-The current source artifact is `/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json`, filtered at `2026-07-17T15:57:58+0800` to retain all 70 high-confidence items and exclude all 31 medium-confidence items. Future public updates must record a new source artifact and fixed collection timestamp
+The latest recurring source artifact is `.codex/usecase-update-loop/source/20260718T031851Z-twitterapi.json`. It contains 624 deduplicated candidates; 79 fell inside the review window and were classified as 9 high-confidence updates, 8 deferred, 5 unsure, and 57 dropped. The artifact and review package remain ignored local evidence, while `data/ingested_tweets.json` records the public lineage. Future updates must use a new fixed collection timestamp
 
 ## Case contract
 
@@ -24,7 +26,7 @@ Do not invent prompts, workflow steps, results, pricing, benchmark numbers, date
 1. Collect candidates with a fixed timestamp and deduplicate by canonical source URL
 2. Classify every candidate, retain only high-confidence cases for publication, and record a decision reason
 3. Update `data/use-cases.json` and English README first
-4. Run `scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`, upload the prepared files to the approved R2 namespace, and verify every public object before rebuilding READMEs
+4. Resolve and verify the complete handoff package before mutating public files, then upload selected media to the approved R2 namespace and verify every public object before rebuilding READMEs
 5. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, prompt text, and media order
 6. Run the framework verifier, repository verifier, media audit, link audit, and `git diff --check`
 7. Fix every P0/P1 issue, then re-run the complete audit before commit or push
@@ -48,4 +50,4 @@ The complete case index belongs inside the top `## 📑 Menu`. Do not repeat cas
 
 ## Related surfaces
 
-This repository links the verified EvoLink Kimi K3 model page and OpenAI-compatible Chat Completions documentation. Any installable skill or independent paid API smoke-test claim must still be verified in the appropriate release pipeline before the README can claim it
+This repository links the verified EvoLink Kimi K3 landing page and OpenAI-compatible Chat Completions documentation. No distinct browser/no-code Kimi K3 surface has been verified. Any installable skill, browser-trial claim, or independent paid API smoke-test claim must be verified in the appropriate release pipeline before the README can claim it
