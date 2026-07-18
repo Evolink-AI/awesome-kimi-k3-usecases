@@ -45,10 +45,10 @@ Alle 79 Fälle stammen aus öffentlichen Quellen mit hoher Konfidenz. Titel und 
 
 | Section | Cases |
 |---|---|
-| [Interaktive Spiele und 3D](#games-3d) | 22 |
-| [Frontend und Motion Design](#frontend-motion) | 15 |
-| [Coding und Integrationen](#coding-integrations) | 8 |
-| [Bewertung und Grenzen](#evaluation-limits) | 25 |
+| [Interaktive Spiele und 3D](#games-3d) | 25 |
+| [Frontend und Motion Design](#frontend-motion) | 16 |
+| [Coding und Integrationen](#coding-integrations) | 10 |
+| [Bewertung und Grenzen](#evaluation-limits) | 28 |
 | [Verwandte Ressourcen](#related-resources) | Verwandte Ressourcen |
 | [Schnellstart](#quick-api-access) | Schnellstart |
 | [Danksagung](#acknowledge) | Danksagung und Korrekturen |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Verwandte Ressourcen
+<a id="case-72"></a>
+### Case 72: [Frontends mit identischen Arena-Prompts vergleichen](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Identische Prompts und parallele Ausgaben verwenden, statt sich auf einen einzelnen Ranglistenwert zu verlassen**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Verwandte Ressourcen
 
 - [Kimi K3 Details und Preise auf EvoLink ansehen](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [EvoLink Kimi K3 API-Dokumentation öffnen](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLink-Modellseite und API-Dokumentation bestätigen den öffentlichen Zugang und die ID. Dieses Repository beansprucht keinen unabhängigen bezahlten API-Test
+> EvoLink-Modellseite und API-Dokumentation bestätigen den öffentlichen Zugang und die ID. Eine eigenständige Browser-/No-Code-Oberfläche für Kimi K3 wurde nicht verifiziert, und dieses Repository beansprucht keinen unabhängigen bezahlten API-Test
 
 <a id="acknowledge"></a>
 ## 🙏 Danksagung

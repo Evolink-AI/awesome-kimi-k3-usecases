@@ -45,10 +45,10 @@ Les 79 cas proviennent de sources publiques à forte confiance. Les titres et au
 
 | Section | Cases |
 |---|---|
-| [Jeux interactifs et 3D](#games-3d) | 22 |
-| [Frontend et motion design](#frontend-motion) | 15 |
-| [Code et intégrations](#coding-integrations) | 8 |
-| [Évaluation et limites](#evaluation-limits) | 25 |
+| [Jeux interactifs et 3D](#games-3d) | 25 |
+| [Frontend et motion design](#frontend-motion) | 16 |
+| [Code et intégrations](#coding-integrations) | 10 |
+| [Évaluation et limites](#evaluation-limits) | 28 |
 | [Ressources associées](#related-resources) | Ressources associées |
 | [Démarrage rapide](#quick-api-access) | Démarrage rapide |
 | [Remerciements](#acknowledge) | Crédits et corrections |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Ressources associées
+<a id="case-72"></a>
+### Case 72: [Comparer des frontends avec des invites Arena identiques](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Utilisez des invites identiques et des sorties côte à côte plutôt qu'un seul rang**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Ressources associées
 
 - [Voir les détails et tarifs de Kimi K3 sur EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [Ouvrir la documentation API Kimi K3 d’EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> La page du modèle et la documentation EvoLink vérifient la route publique et l’ID. Ce dépôt ne revendique pas de test API payant indépendant
+> La page du modèle et la documentation EvoLink vérifient la route publique et l’ID. Aucune interface Kimi K3 indépendante dans le navigateur ou sans code n’a été vérifiée, et ce dépôt ne revendique pas de test API payant indépendant
 
 <a id="acknowledge"></a>
 ## 🙏 Remerciements

@@ -67,7 +67,7 @@ def main() -> int:
         for url in urls
         if "img.shields.io" not in url and url.rstrip(".,`") != API_ENDPOINT
     }
-    with ThreadPoolExecutor(max_workers=2) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         results = sorted(pool.map(check, urls))
     failures = []
     accepted = []

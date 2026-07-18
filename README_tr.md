@@ -45,10 +45,10 @@ Kimi K3 için yüksek sinyalli kullanım örnekleri deposuna hoş geldiniz
 
 | Section | Cases |
 |---|---|
-| [Etkileşimli oyunlar ve 3D](#games-3d) | 22 |
-| [Frontend ve hareketli tasarım](#frontend-motion) | 15 |
-| [Kodlama ve entegrasyonlar](#coding-integrations) | 8 |
-| [Değerlendirme ve sınırlar](#evaluation-limits) | 25 |
+| [Etkileşimli oyunlar ve 3D](#games-3d) | 25 |
+| [Frontend ve hareketli tasarım](#frontend-motion) | 16 |
+| [Kodlama ve entegrasyonlar](#coding-integrations) | 10 |
+| [Değerlendirme ve sınırlar](#evaluation-limits) | 28 |
 | [İlgili kaynaklar](#related-resources) | İlgili kaynaklar |
 | [Hızlı başlangıç](#quick-api-access) | Hızlı başlangıç |
 | [Teşekkürler](#acknowledge) | Katkılar ve düzeltmeler |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## İlgili kaynaklar
+<a id="case-72"></a>
+### Case 72: [Aynı Arena promptlarıyla frontendleri karşılaştır](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Tek bir sıralama puanı yerine aynı promptları ve yan yana çıktıları kullan**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## İlgili kaynaklar
 
 - [EvoLink’te Kimi K3 ayrıntılarını ve fiyatlarını gör](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [EvoLink Kimi K3 API belgelerini aç](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLink model sayfası ve API belgeleri genel rotayı ve kimliği doğrular. Bu depo bağımsız ücretli API testi yaptığını iddia etmez
+> EvoLink model sayfası ve API belgeleri genel rotayı ve kimliği doğrular. Bağımsız Kimi K3 tarayıcı veya kodsuz yüzeyi doğrulanmadı ve bu depo bağımsız ücretli API testi yaptığını iddia etmez
 
 <a id="acknowledge"></a>
 ## 🙏 Teşekkürler

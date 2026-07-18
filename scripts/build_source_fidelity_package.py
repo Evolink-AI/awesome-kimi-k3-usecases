@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 
@@ -31,6 +32,15 @@ def sha256_file(path: Path) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument(
+        "--supplemental-git-ref",
+        help="Immutable git commit containing additional reviewed public cases",
+    )
+    parser.add_argument(
+        "--combined-source",
+        type=Path,
+        help="Generated source package that binds the primary artifact and supplemental commit",
+    )
     parser.add_argument("--package", type=Path, required=True)
     parser.add_argument(
         "--public-manifest",
@@ -42,10 +52,72 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    source = args.source.expanduser().resolve()
+    primary_source = args.source.expanduser().resolve()
     curated_path = ROOT / "data/use-cases.json"
     curated = json.loads(curated_path.read_text(encoding="utf-8"))
     items = curated["items"]
+    source = primary_source
+    source_inputs = [
+        {
+            "kind": "primary-file",
+            "path": str(primary_source),
+            "sha256": sha256_file(primary_source),
+        }
+    ]
+
+    if args.supplemental_git_ref:
+        if not args.combined_source:
+            raise ValueError("--combined-source is required with --supplemental-git-ref")
+        commit = subprocess.check_output(
+            ["git", "rev-parse", f"{args.supplemental_git_ref}^{{commit}}"],
+            cwd=ROOT,
+            text=True,
+        ).strip()
+        supplemental_payload = subprocess.check_output(
+            ["git", "show", f"{commit}:data/use-cases.json"],
+            cwd=ROOT,
+            text=True,
+        )
+        supplemental_data = json.loads(supplemental_payload)
+        primary_data = json.loads(primary_source.read_text(encoding="utf-8"))
+        primary_items = primary_data.get("items", [])
+        primary_urls = {item.get("url") or item.get("source_url") for item in primary_items}
+        supplemental_items = [
+            item
+            for item in supplemental_data.get("items", [])
+            if item.get("source_url") not in primary_urls
+        ]
+        curated_by_url = {item["source_url"]: item for item in items}
+        for item in supplemental_items:
+            current = curated_by_url.get(item.get("source_url"))
+            if not current:
+                raise ValueError(f"supplemental source missing from curated data: {item.get('source_url')}")
+            for field in ("title", "decision", "quality_tier", "media_assets"):
+                if current.get(field) != item.get(field):
+                    raise ValueError(
+                        f"supplemental source differs from curated data for {item.get('source_url')}: {field}"
+                    )
+        combined = {
+            "schema_version": 1,
+            "primary_source": source_inputs[0],
+            "supplemental_source": {
+                "kind": "git-commit",
+                "commit": commit,
+                "path": "data/use-cases.json",
+            },
+            "items": [*primary_items, *supplemental_items],
+        }
+        source = args.combined_source.expanduser().resolve()
+        source.parent.mkdir(parents=True, exist_ok=True)
+        source.write_text(json.dumps(combined, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        source_inputs.append(combined["supplemental_source"])
+
+    source_urls = {item.get("url") or item.get("source_url") for item in json.loads(source.read_text(encoding="utf-8")).get("items", [])}
+    curated_urls = {item["source_url"] for item in items}
+    if source_urls != curated_urls:
+        raise ValueError(
+            f"source package differs from curated public set: source={len(source_urls)}, curated={len(curated_urls)}"
+        )
     source_sha = sha256_file(source)
     cases: list[dict] = []
     public_cases: list[dict] = []
@@ -119,6 +191,7 @@ def main() -> None:
         "schema_version": 1,
         "source_artifact": source.name,
         "source_manifest_sha256": source_sha,
+        "source_inputs": source_inputs,
         "selected_case_count": len(cases),
         "cases_with_source_media": len(cases),
         "expected_public_visual_count": expected_media_count,
@@ -132,6 +205,7 @@ def main() -> None:
         "existing_public_set_audit": True,
         "repo": str(ROOT),
         "source_package": str(source),
+        "source_inputs": source_inputs,
         "source_index_policy": "data/use-cases.json is the canonical public index",
         "case_namespace": {
             "name": "Kimi K3 public use cases",

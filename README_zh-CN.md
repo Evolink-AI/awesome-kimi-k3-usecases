@@ -45,10 +45,10 @@
 
 | Section | Cases |
 |---|---|
-| [互动游戏与 3D](#games-3d) | 22 |
-| [前端与动态设计](#frontend-motion) | 15 |
-| [编程与集成](#coding-integrations) | 8 |
-| [评估与限制](#evaluation-limits) | 25 |
+| [互动游戏与 3D](#games-3d) | 25 |
+| [前端与动态设计](#frontend-motion) | 16 |
+| [编程与集成](#coding-integrations) | 10 |
+| [评估与限制](#evaluation-limits) | 28 |
 | [相关资源](#related-resources) | 相关资源 |
 | [快速开始](#quick-api-access) | 快速开始 |
 | [致谢](#acknowledge) | 致谢与更正 |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## 相关资源
+<a id="case-72"></a>
+### Case 72: [用相同 Arena prompt 比较前端](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **固定 prompt 并并排检查输出，比只看一个排行榜分数更可靠**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## 相关资源
 
 - [查看 EvoLink 上的 Kimi K3 详情与价格](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [查看 EvoLink Kimi K3 API 文档](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLink 模型页与 API 文档验证了公开路由和模型 ID，本案例库不声称已独立完成付费 API 测试
+> EvoLink 模型页与 API 文档验证了公开路由和模型 ID；目前未验证独立的 Kimi K3 浏览器或无代码试用界面，本案例库也不声称已独立完成付费 API 测试
 
 <a id="acknowledge"></a>
 ## 🙏 致谢

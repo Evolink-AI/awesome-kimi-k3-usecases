@@ -80,6 +80,13 @@ def main() -> int:
         errors.append("structured data contains a case without source-media lineage")
     if sum(len(item.get("media_assets", [])) for item in items) < expected_cases:
         errors.append("structured data contains fewer rendered media assets than public cases")
+    expected_visual_count = sum(len(item.get("media_assets", [])) for item in items)
+    expected_video_count = sum(
+        1
+        for item in items
+        for asset in item.get("media_assets", [])
+        if asset.get("kind") == "video"
+    )
     for item in items:
         for asset in item.get("media_assets", []):
             if asset.get("kind") == "video" and not asset.get("poster_url", "").startswith(R2_PREFIX):
@@ -109,12 +116,12 @@ def main() -> int:
 
     fidelity = json.loads((ROOT / "data/source-fidelity-manifest.json").read_text(encoding="utf-8"))
     fidelity_cases = fidelity.get("cases", [])
-    if fidelity.get("selected_case_count") != EXPECTED_CASES:
-        errors.append("source fidelity selected case denominator is not 70")
-    if fidelity.get("cases_with_source_media") != EXPECTED_CASES:
-        errors.append("source fidelity media case denominator is not 70")
-    if fidelity.get("expected_public_visual_count") != 79:
-        errors.append("source fidelity expected media denominator is not 79")
+    if fidelity.get("selected_case_count") != expected_cases:
+        errors.append(f"source fidelity selected case denominator is not {expected_cases}")
+    if fidelity.get("cases_with_source_media") != expected_cases:
+        errors.append(f"source fidelity media case denominator is not {expected_cases}")
+    if fidelity.get("expected_public_visual_count") != expected_visual_count:
+        errors.append(f"source fidelity expected media denominator is not {expected_visual_count}")
     if not re.fullmatch(r"[0-9a-f]{64}", str(fidelity.get("source_manifest_sha256", ""))):
         errors.append("source fidelity manifest lacks a valid source SHA256")
     expected_presentation = {
@@ -127,7 +134,7 @@ def main() -> int:
     }
     if fidelity.get("owner_presentation") != expected_presentation:
         errors.append("source fidelity owner presentation differs from the locked contract")
-    if len(fidelity_cases) != EXPECTED_CASES:
+    if len(fidelity_cases) != expected_cases:
         errors.append("source fidelity case set is not complete")
     else:
         for item, manifest_case in zip(items, fidelity_cases):
@@ -264,8 +271,10 @@ def main() -> int:
                     errors.append(
                         f'{filename}: case {item["public_number"]} media is missing or duplicated: {url}'
                     )
-        if text.count(f'src="{R2_PREFIX}media/') != 79:
-            errors.append(f"{filename}: rendered case-media denominator is not exactly 79")
+        if text.count(f'src="{R2_PREFIX}media/') != expected_visual_count:
+            errors.append(
+                f"{filename}: rendered case-media denominator is not exactly {expected_visual_count}"
+            )
         if text.count("The original source permalink returned HTTP 404 during the 2026-07-17 audit") != 1:
             errors.append(f"{filename}: unavailable source disclosure must appear exactly once")
         if "https://evolink.ai/?utm_" in text:
@@ -311,8 +320,8 @@ def main() -> int:
     print(f"localized_case_instances={expected_cases * len(FILENAMES)}")
     print("public_prompt_cases=1")
     print("r2_policy=pass")
-    print("r2_playable_video_cases=53")
-    print("source_fidelity_expected_media=79")
+    print(f"r2_playable_video_cases={expected_video_count}")
+    print(f"source_fidelity_expected_media={expected_visual_count}")
     print("evolink_model_route=pass")
     print("evolink_api_docs_route=pass")
     print("quick_api_access=pass")

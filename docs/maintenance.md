@@ -12,6 +12,7 @@
 - Localization build: `python3 scripts/build_localizations.py`
 - Source-media sync: `python3 scripts/sync_source_media.py --source /path/to/use-case-posts.json --apply-data`
 - Source-fidelity build: `python3 scripts/build_source_fidelity_package.py --source /path/to/use-case-posts.json --package .codex/audits/source-fidelity-package.json`
+- Multi-source fidelity build for this release: `python3 scripts/build_source_fidelity_package.py --source /path/to/use-case-posts.json --supplemental-git-ref 6228470f7726a4385b3a098f9acdb151a9608ec2 --combined-source .codex/audits/combined-use-case-source.json --package .codex/audits/source-fidelity-package.json`
 
 The latest recurring source artifact is `.codex/usecase-update-loop/source/20260718T031851Z-twitterapi.json`. It contains 624 deduplicated candidates; 79 fell inside the review window and were classified as 9 high-confidence updates, 8 deferred, 5 unsure, and 57 dropped. The artifact and review package remain ignored local evidence, while `data/ingested_tweets.json` records the public lineage. Future updates must use a new fixed collection timestamp
 
@@ -31,6 +32,7 @@ Do not invent prompts, workflow steps, results, pricing, benchmark numbers, date
 6. Update each language-specific file under `data/localizations/` with a language-specific agent while preserving anchors, source URLs, author URLs, types, dates, model IDs, code, prompt text, and media order
 7. Run the framework verifier, repository verifier, R2 source-media audit, public-link audit, and `git diff --check`
 8. Fix every P0/P1 issue, then re-run the complete audit before commit or push
+9. Immediately before the pre-push completion gate, fetch the target branch and prove that `HEAD` contains the current remote SHA; any remote advance invalidates the previous gate and requires integration plus a full re-audit
 
 If an owner-required source permalink becomes unavailable after collection, preserve the exact permalink, add a visible case-level disclosure, and record the reviewed HTTP status plus source-package evidence in `data/link-audit-exceptions.json`
 

@@ -18,7 +18,7 @@ python3 scripts/audit_public_links.py --report .codex/audits/public-link-audit.m
 git diff --check
 ```
 
-All 11 README files must preserve source URLs, author URLs, type, date, anchors, model IDs, exact public prompt text, and the 79-item visual expected set. Any media change must update `data/source-fidelity-manifest.json`, preserve source lineage, and keep every video poster and playable MP4 on the approved R2 namespace
+All 11 README files must preserve source URLs, author URLs, type, date, anchors, model IDs, exact public prompt text, and the complete visual expected set derived from `data/use-cases.json`. Any media change must update `data/source-fidelity-manifest.json`, preserve source lineage, and keep every video poster and playable MP4 on the approved R2 namespace
 
 ## Corrections
 

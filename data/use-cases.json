@@ -10,9 +10,14 @@
     "evolink_article_url": "https://evolink.ai/blog/is-kimi-k3-available-on-evolink"
   },
   "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
-  "source_generated_at": "2026-07-17T15:57:58+0800",
-  "curated_at": "2026-07-17",
-  "selection_policy": "Includes all 70 and only the source items whose use_case.confidence is high, in original source order after preserving the existing public cases 1-6; excludes all 31 medium-confidence source items.",
+  "supplemental_source_artifact": {
+    "git_commit": "6228470f7726a4385b3a098f9acdb151a9608ec2",
+    "path": "data/use-cases.json",
+    "collector_artifact": ".codex/usecase-update-loop/source/20260718T031851Z-twitterapi.json"
+  },
+  "source_generated_at": "2026-07-18T03:18:51Z",
+  "curated_at": "2026-07-18",
+  "selection_policy": "Includes all 70 high-confidence cases from the owner-supplied use-case-posts.json plus all 9 high-confidence cases from the reviewed supplemental run in commit 6228470; excludes every medium-confidence, deferred, unsure, dropped, and unsupported candidate.",
   "items": [
     {
       "public_number": 1,
@@ -2791,6 +2796,340 @@
       ],
       "poster_path": "media/source-cases/case-70-poster.jpg",
       "playable_video_path": "media/source-cases/case-70.mp4"
+    },
+    {
+      "public_number": 71,
+      "dedup_key": "https://x.com/ChrisGPT/status/2078261217924087999",
+      "source_url": "https://x.com/ChrisGPT/status/2078261217924087999",
+      "author_url": "https://x.com/ChrisGPT",
+      "author_handle": "@ChrisGPT",
+      "title": "Build an Indie Spaceship Game",
+      "takeaway": "Use Kimi K3 Standard for a first-pass indie game prototype, then compare cohesion, defects, visual polish, and token cost before choosing a model for later iterations.",
+      "body_notes": "ChrisGPT reports that Kimi K3 Standard produced the first pass of an indie spaceship game for an estimated $2.50 in API tokens. The creator judged the result more cohesive and less buggy than a GPT-5.5 first pass while noting that Fable 5 still looked more polished and would require further Kimi iterations to match.",
+      "type": "Demo",
+      "date": "2026-07-17",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Firsthand build with a concrete first-pass comparison, reported cost, explicit visual-quality limit, and playable video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The post describes the game and outcome but does not publish the full generation prompt.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 187,
+        "view_count": 13852,
+        "bookmark_count": 39,
+        "retweet_count": 11
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-71.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-71-poster.jpg",
+          "play_label": "Play case 71 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078261141768224768/img/j0G2dSCNDdBnnUbQ.jpg"
+      ]
+    },
+    {
+      "public_number": 72,
+      "dedup_key": "https://x.com/arena/status/2078240399517524365",
+      "source_url": "https://x.com/arena/status/2078240399517524365",
+      "author_url": "https://x.com/arena",
+      "author_handle": "@arena",
+      "title": "Compare Frontends With Identical Arena Prompts",
+      "takeaway": "Use identical prompts and side-by-side outputs to compare Kimi K3 with Fable 5 on frontend implementation instead of relying on one leaderboard number.",
+      "body_notes": "Arena.ai publishes a head-to-head Frontend Code Arena comparison between Kimi K3 and Fable 5 using identical prompts. The video preserves both outputs, making the case useful for inspecting implementation and presentation differences while keeping the prompt condition fixed.",
+      "type": "Benchmark",
+      "date": "2026-07-17",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-party Frontend Code Arena comparison using identical prompts and side-by-side video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The source states that prompts were identical but does not reproduce every prompt in the collected post.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 332,
+        "view_count": 33903,
+        "bookmark_count": 80,
+        "retweet_count": 38
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-72.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-72-poster.jpg",
+          "play_label": "Play case 72 comparison video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078239491811430400/img/178NcLkgz61UmxJd.jpg"
+      ]
+    },
+    {
+      "public_number": 73,
+      "dedup_key": "https://x.com/MathiasHeide/status/2078231589436465199",
+      "source_url": "https://x.com/MathiasHeide/status/2078231589436465199",
+      "author_url": "https://x.com/MathiasHeide",
+      "author_handle": "@MathiasHeide",
+      "title": "Self-Test a Summer Engine Game",
+      "takeaway": "Let Kimi K3 run a game, inspect screenshots and logs, and fix visible defects inside one engine session instead of stopping at initial code generation.",
+      "body_notes": "Mathias Heide reports that Kimi K3 built a working paper-plane game in Summer Engine in 27 minutes and one session. The model launched the game, watched it run, captured screenshots, read logs, fixed bugs, and corrected the plane color after noticing that paper should be white rather than black.",
+      "type": "Demo",
+      "date": "2026-07-17",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Firsthand engine build with elapsed time, one-session boundary, screenshot and log feedback loop, self-fixes, and playable video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The source describes the session and feedback loop but does not publish the complete starting prompt.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 41,
+        "view_count": 2790,
+        "bookmark_count": 3,
+        "retweet_count": 4
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-73.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-73-poster.jpg",
+          "play_label": "Play case 73 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078231143501922304/img/LvWUR6vl7U5H-QOx.jpg"
+      ]
+    },
+    {
+      "public_number": 74,
+      "dedup_key": "https://x.com/ArtificialAnlys/status/2078230240766345330",
+      "source_url": "https://x.com/ArtificialAnlys/status/2078230240766345330",
+      "author_url": "https://x.com/ArtificialAnlys",
+      "author_handle": "@ArtificialAnlys",
+      "title": "Benchmark Kimi Code on Coding Agents",
+      "takeaway": "Compare Kimi K3 across multiple coding-agent suites and per-task cost before treating a single frontend leaderboard as general coding-agent performance.",
+      "body_notes": "Artificial Analysis reports Kimi K3 in Kimi Code CLI at 57 on its Coding Agent Index, tied for fifth overall. The post breaks the result into Terminal-Bench v2 at 84%, DeepSWE at 64%, and SWE-Atlas-QnA at 23%, with an average reported cost of $3.18 per task and named comparisons against other frontier models.",
+      "type": "Benchmark",
+      "date": "2026-07-17",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Named coding-agent index with task-suite scores, peer comparisons, per-task cost, and image evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The post reports aggregate benchmark results; individual benchmark tasks and prompts are not reproduced.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 316,
+        "view_count": 26599,
+        "bookmark_count": 38,
+        "retweet_count": 31
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-74.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNdbIz9bAAAkOnJ.jpg"
+      ]
+    },
+    {
+      "public_number": 75,
+      "dedup_key": "https://x.com/nauczymycieAI/status/2078181182701736132",
+      "source_url": "https://x.com/nauczymycieAI/status/2078181182701736132",
+      "author_url": "https://x.com/nauczymycieAI",
+      "author_handle": "@nauczymycieAI",
+      "title": "Configure Kimi as a Codex Subagent",
+      "takeaway": "Keep Codex responsible for orchestration and delegate frontend execution to a Kimi K3 OpenCode subagent with an explicit secret-handling boundary.",
+      "body_notes": "nauczymycieAI publishes a three-stage setup: install and verify OpenCode, create a Kimi API key manually without pasting it into Codex, connect OpenCode to Kimi K3, and create a global Codex skill that routes frontend, UI, layout, presentation, and animation tasks to the subagent while Codex keeps logic and orchestration responsibility.",
+      "type": "Tutorial",
+      "date": "2026-07-17",
+      "category": "Coding & Integrations",
+      "category_key": "coding-integrations",
+      "decision": "high_confidence_update",
+      "decision_reason": "Detailed Codex and OpenCode subagent tutorial with explicit roles, setup steps, secret-handling boundary, and image evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The source publishes setup prompts; this case summarizes the workflow and does not reproduce secrets or API keys.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 72,
+        "view_count": 4449,
+        "bookmark_count": 163,
+        "retweet_count": 4
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-75.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNctz12WUAA0iyI.jpg"
+      ]
+    },
+    {
+      "public_number": 76,
+      "dedup_key": "https://x.com/AlphaSignalAI/status/2078172629496746183",
+      "source_url": "https://x.com/AlphaSignalAI/status/2078172629496746183",
+      "author_url": "https://x.com/AlphaSignalAI",
+      "author_handle": "@AlphaSignalAI",
+      "title": "Compare Arena and Repair Harness Results",
+      "takeaway": "Use both frontend preference and repository-repair evaluations because Kimi K3 can rank first on one surface and last in a seven-model repair harness.",
+      "body_notes": "AlphaSignal reports Kimi K3 at 1,679 and first place on Frontend Code Arena, then tests it on a coding-agent repair harness against six peers. In that separate harness Kimi completed 53 of 67 attempts, or 79%, and ranked seventh, illustrating how evaluation format changes the conclusion.",
+      "type": "Benchmark",
+      "date": "2026-07-17",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Named coding-agent repair harness with peer set, attempt count, success rate, leaderboard contrast, and image evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The post reports aggregate harness outcomes but does not reproduce all repair tasks or prompts.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 30,
+        "view_count": 5524,
+        "bookmark_count": 11,
+        "retweet_count": 2
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-76.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNckCphWoAAJodc.jpg"
+      ]
+    },
+    {
+      "public_number": 77,
+      "dedup_key": "https://x.com/Ananth7e/status/2078158089929601203",
+      "source_url": "https://x.com/Ananth7e/status/2078158089929601203",
+      "author_url": "https://x.com/Ananth7e",
+      "author_handle": "@Ananth7e",
+      "title": "Iterate a Browser Battle Royale",
+      "takeaway": "Expect long autonomous iteration plus targeted follow-up prompts when building a feature-rich browser game instead of treating the first visible output as finished.",
+      "body_notes": "Ananth reports that Kimi K3 spent more than 130 minutes and over 40 rounds taking Chrome screenshots, finding issues, and fixing them before producing a PUBG-style browser game. The result included terrain, buildings, two gun types, loot, bots, kill updates, and a shrinking zone, then needed two additional prompts to fix remaining bugs.",
+      "type": "Demo",
+      "date": "2026-07-17",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Original battle-royale build with runtime, iteration count, screenshot feedback loop, follow-up fixes, feature list, and playable video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The source calls the initial prompt simple but does not publish its complete text.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 22,
+        "view_count": 3637,
+        "bookmark_count": 8,
+        "retweet_count": 5
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-77.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-77-poster.jpg",
+          "play_label": "Play case 77 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078153410277457920/img/JkRgIPVNThSJIWvu.jpg"
+      ]
+    },
+    {
+      "public_number": 78,
+      "dedup_key": "https://x.com/viktoroddy/status/2078140696910037002",
+      "source_url": "https://x.com/viktoroddy/status/2078140696910037002",
+      "author_url": "https://x.com/viktoroddy",
+      "author_handle": "@viktoroddy",
+      "title": "Build an Award-Winning Website",
+      "takeaway": "Follow a complete recorded session when evaluating Kimi K3 for a polished website build so the process can be inspected beyond a final screenshot.",
+      "body_notes": "Viktor Oddy publishes a 13-minute tutorial showing how to create an award-style website with Kimi K3. The full-length source video provides a process-oriented reference for frontend builders and is stronger evidence than a short launch montage or isolated finished image.",
+      "type": "Tutorial",
+      "date": "2026-07-17",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Original 13-minute website tutorial with a concrete build target and full video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The collected post links the full tutorial but does not include a reusable text prompt.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 616,
+        "view_count": 31469,
+        "bookmark_count": 734,
+        "retweet_count": 61
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78-poster.jpg",
+          "play_label": "Play case 78 tutorial video"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078139825467838464/img/CK95tYnOel3pZt5a.jpg"
+      ]
+    },
+    {
+      "public_number": 79,
+      "dedup_key": "https://x.com/abacusai/status/2078022418661257411",
+      "source_url": "https://x.com/abacusai/status/2078022418661257411",
+      "author_url": "https://x.com/abacusai",
+      "author_handle": "@abacusai",
+      "title": "Route Simple Coding Through ChatLLM",
+      "takeaway": "Create a task router that sends simple coding to Kimi K3 while reserving harder coding and design work for different models.",
+      "body_notes": "Abacus AI announces Kimi K3 availability in ChatLLM and gives an explicit routing example: simple coding to Kimi K3, hard coding to Fable 5, and design to GPT-5.6 Sol. The source says the same custom router can be used in ChatLLM, an Abacus AI agent, or Claude Code.",
+      "type": "Integration",
+      "date": "2026-07-17",
+      "category": "Coding & Integrations",
+      "category_key": "coding-integrations",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-party ChatLLM integration with explicit task-to-model routing rules, compatible agent surfaces, and image evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "The source publishes routing rules but not a complete reusable router prompt or configuration file.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 262,
+        "view_count": 1439049,
+        "bookmark_count": 104,
+        "retweet_count": 53
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-79.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNaeBdMaIAAL3pG.jpg"
+      ]
     }
   ]
 }

@@ -520,3 +520,25 @@ Actions success 和 raw README hash 只能作为补充证据，不能替代 rend
 - public link audit 覆盖 282 个唯一 URL，1 个 owner-recorded exception，0 个 unhandled failure
 
 这次纠正说明 contract 不只要约束内容和 verifier，也必须约束 agent 的 completion label，避免通过重新定义当前任务来逃避已知失败
+
+## 15. 第三次失败：pre-push gate 通过后忽略远端并发变化
+
+首次完整 pre-push gate 绑定 `a9e44f8` 通过，但 `git push origin main` 被 non-fast-forward 拒绝，因为远端已经新增 commit `6228470`，包含 Cases 71–79 和 14 个新的 R2 媒体对象
+
+被拒绝的 push 不能重试为 force push，也不能继续使用旧的 70-case denominator 声称发布完成
+
+这次失败暴露了两个新的 contract 缺口：
+
+- pre-push gate 之前没有先 fetch 并证明本地分支包含最新 `origin/main`
+- repo verifier 虽已把 README case count 改成动态值，但 source-fidelity 和 R2 审计仍残留 70 cases、79 visuals、53 videos 的 hard-coded denominator
+
+恢复动作：
+
+- fetch 后识别远端 9 个 high-confidence case 为必须保留的并发公开更新
+- 合并 `6228470`，将 canonical set 提升为 79 cases
+- 将 primary `use-case-posts.json` 与 supplemental git commit 一起绑定为可复现的 combined source package
+- 将 source-fidelity expected set 提升为 79 cases、88 visuals、58 playable videos
+- 将 verifier 和 R2 audit 的 denominator 改成由 `data/use-cases.json` 与 source manifest 动态推导
+- 重新生成 11 份 README，并从 source fidelity、R2、public links、completion gate 重新开始审计
+
+下一轮 publication contract 必须增加一条 fetch-first freshness gate：pre-push evidence 只有在 `HEAD` 已包含最新远端分支且 working tree clean 时才有效，任何远端 SHA 变化都会使旧 gate 自动失效

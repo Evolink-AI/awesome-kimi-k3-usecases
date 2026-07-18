@@ -45,10 +45,10 @@
 
 | Section | Cases |
 |---|---|
-| [Интерактивные игры и 3D](#games-3d) | 22 |
-| [Frontend и motion-дизайн](#frontend-motion) | 15 |
-| [Код и интеграции](#coding-integrations) | 8 |
-| [Оценка и ограничения](#evaluation-limits) | 25 |
+| [Интерактивные игры и 3D](#games-3d) | 25 |
+| [Frontend и motion-дизайн](#frontend-motion) | 16 |
+| [Код и интеграции](#coding-integrations) | 10 |
+| [Оценка и ограничения](#evaluation-limits) | 28 |
 | [Связанные ресурсы](#related-resources) | Связанные ресурсы |
 | [Быстрый старт](#quick-api-access) | Быстрый старт |
 | [Благодарности](#acknowledge) | Благодарности и исправления |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Связанные ресурсы
+<a id="case-72"></a>
+### Case 72: [Сравнить фронтенды на одинаковых prompt Arena](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Использовать одинаковые prompt и параллельные результаты вместо одного места в рейтинге**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Связанные ресурсы
 
 - [Посмотреть Kimi K3 и цены на EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [Открыть документацию EvoLink Kimi K3 API](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> Страница модели и документация EvoLink подтверждают публичный маршрут и ID. Репозиторий не заявляет о независимом платном API-тесте
+> Страница модели и документация EvoLink подтверждают публичный маршрут и ID. Отдельная браузерная или no-code поверхность Kimi K3 не подтверждена, и репозиторий не заявляет о независимом платном API-тесте
 
 <a id="acknowledge"></a>
 ## 🙏 Благодарности

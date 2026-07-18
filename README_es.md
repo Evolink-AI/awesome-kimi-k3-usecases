@@ -45,10 +45,10 @@ Los 79 casos proceden de fuentes públicas de alta confianza. Los títulos y aut
 
 | Section | Cases |
 |---|---|
-| [Juegos interactivos y 3D](#games-3d) | 22 |
-| [Frontend y diseño en movimiento](#frontend-motion) | 15 |
-| [Programación e integraciones](#coding-integrations) | 8 |
-| [Evaluación y límites](#evaluation-limits) | 25 |
+| [Juegos interactivos y 3D](#games-3d) | 25 |
+| [Frontend y diseño en movimiento](#frontend-motion) | 16 |
+| [Programación e integraciones](#coding-integrations) | 10 |
+| [Evaluación y límites](#evaluation-limits) | 28 |
 | [Recursos relacionados](#related-resources) | Recursos relacionados |
 | [Inicio rápido](#quick-api-access) | Inicio rápido |
 | [Agradecimientos](#acknowledge) | Créditos y correcciones |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Recursos relacionados
+<a id="case-72"></a>
+### Case 72: [Comparar frontends con prompts Arena idénticos](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Usa prompts idénticos y resultados paralelos en lugar de depender de una sola posición en el ranking**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Recursos relacionados
 
 - [Ver detalles y precios de Kimi K3 en EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [Abrir la documentación API de Kimi K3 en EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> La página del modelo y la documentación de EvoLink verifican la ruta pública y el ID. Este repositorio no afirma una prueba API de pago independiente
+> La página del modelo y la documentación de EvoLink verifican la ruta pública y el ID. No se verificó una superficie independiente de navegador o sin código para Kimi K3, y este repositorio no afirma una prueba API de pago independiente
 
 <a id="acknowledge"></a>
 ## 🙏 Agradecimientos

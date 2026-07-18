@@ -45,10 +45,10 @@ Kimi K3의 근거가 분명한 활용 사례를 모은 저장소입니다
 
 | Section | Cases |
 |---|---|
-| [인터랙티브 게임과 3D](#games-3d) | 22 |
-| [프론트엔드와 모션 디자인](#frontend-motion) | 15 |
-| [코딩과 통합](#coding-integrations) | 8 |
-| [평가와 한계](#evaluation-limits) | 25 |
+| [인터랙티브 게임과 3D](#games-3d) | 25 |
+| [프론트엔드와 모션 디자인](#frontend-motion) | 16 |
+| [코딩과 통합](#coding-integrations) | 10 |
+| [평가와 한계](#evaluation-limits) | 28 |
 | [관련 자료](#related-resources) | 관련 자료 |
 | [빠른 시작](#quick-api-access) | 빠른 시작 |
 | [감사의 말](#acknowledge) | 감사와 수정 |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## 관련 자료
+<a id="case-72"></a>
+### Case 72: [동일한 Arena 프롬프트로 프런트엔드 비교](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **같은 프롬프트와 나란한 출력을 사용해 단일 리더보드 점수 의존을 피합니다**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## 관련 자료
 
 - [EvoLink에서 Kimi K3 세부 정보와 가격 보기](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [EvoLink Kimi K3 API 문서 열기](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLink 모델 페이지와 API 문서가 공개 경로와 ID를 확인합니다. 이 저장소는 독립적인 유료 API 테스트를 주장하지 않습니다
+> EvoLink 모델 페이지와 API 문서가 공개 경로와 ID를 확인합니다. 독립적인 Kimi K3 브라우저 또는 노코드 화면은 확인되지 않았으며, 이 저장소는 독립적인 유료 API 테스트도 주장하지 않습니다
 
 <a id="acknowledge"></a>
 ## 🙏 감사의 말

@@ -101,9 +101,9 @@ def main() -> int:
 
     passed = (
         not failures
-        and len(visual_urls) == manifest["expected_public_visual_count"] == 79
-        and len(set(visual_urls)) == 79
-        and len(playable_urls) == len(set(playable_urls)) == 53
+        and len(visual_urls) == manifest["expected_public_visual_count"]
+        and len(set(visual_urls)) == len(visual_urls)
+        and len(playable_urls) == len(set(playable_urls))
     )
     lines = [
         "# R2 Source Media Audit v1",

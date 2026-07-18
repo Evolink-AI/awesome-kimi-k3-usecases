@@ -45,10 +45,10 @@ All 79 cases come from high-confidence public sources. Case titles link to the o
 
 | Section | Cases |
 |---|---|
-| [🎮 Interactive Games & 3D](#games-3d) | 22 Cases |
-| [🎨 Frontend & Motion Design](#frontend-motion) | 15 Cases |
-| [💻 Coding & Integrations](#coding-integrations) | 8 Cases |
-| [🧪 Evaluation & Limits](#evaluation-limits) | 25 Cases |
+| [🎮 Interactive Games & 3D](#games-3d) | 25 Cases |
+| [🎨 Frontend & Motion Design](#frontend-motion) | 16 Cases |
+| [💻 Coding & Integrations](#coding-integrations) | 10 Cases |
+| [🧪 Evaluation & Limits](#evaluation-limits) | 28 Cases |
 | [Related Resources](#related-resources) | Model and ecosystem links |
 | [Quick API Access](#quick-api-access) | Model, API key, docs, and first call |
 | [Acknowledge](#acknowledge) | Credits and correction policy |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Related Resources
+<a id="case-72"></a>
+### Case 72: [Compare Frontends With Identical Arena Prompts](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Use identical prompts and side-by-side outputs to compare Kimi K3 with Fable 5 on frontend implementation instead of relying on one leaderboard number.**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Related Resources
 
 - [Kimi K3 model overview on EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview) — availability, model ID, context, and pricing
 - [Kimi K3 OpenAI-compatible API documentation](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link) — Chat Completions endpoint and request format

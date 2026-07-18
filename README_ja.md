@@ -45,10 +45,10 @@ Kimi K3 の実例を厳選したリポジトリです
 
 | Section | Cases |
 |---|---|
-| [インタラクティブゲームと3D](#games-3d) | 22 |
-| [フロントエンドとモーションデザイン](#frontend-motion) | 15 |
-| [コーディングと統合](#coding-integrations) | 8 |
-| [評価と制約](#evaluation-limits) | 25 |
+| [インタラクティブゲームと3D](#games-3d) | 25 |
+| [フロントエンドとモーションデザイン](#frontend-motion) | 16 |
+| [コーディングと統合](#coding-integrations) | 10 |
+| [評価と制約](#evaluation-limits) | 28 |
 | [関連リソース](#related-resources) | 関連リソース |
 | [クイックスタート](#quick-api-access) | クイックスタート |
 | [謝辞](#acknowledge) | 謝辞と訂正 |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## 関連リソース
+<a id="case-72"></a>
+### Case 72: [同一Arenaプロンプトでフロントエンドを比較](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **同じプロンプトと並列出力で比較し、単一のランキング値への依存を避けます**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## 関連リソース
 
 - [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。本リポジトリは独自の有料APIテストを主張しません
+> EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。独立したKimi K3のブラウザ／ノーコード画面は確認できておらず、本リポジトリは独自の有料APIテストも主張しません
 
 <a id="acknowledge"></a>
 ## 🙏 謝辞

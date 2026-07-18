@@ -45,10 +45,10 @@ Os 79 casos vêm de fontes públicas de alta confiança. Títulos e autores leva
 
 | Section | Cases |
 |---|---|
-| [Jogos interativos e 3D](#games-3d) | 22 |
-| [Frontend e motion design](#frontend-motion) | 15 |
-| [Código e integrações](#coding-integrations) | 8 |
-| [Avaliação e limites](#evaluation-limits) | 25 |
+| [Jogos interativos e 3D](#games-3d) | 25 |
+| [Frontend e motion design](#frontend-motion) | 16 |
+| [Código e integrações](#coding-integrations) | 10 |
+| [Avaliação e limites](#evaluation-limits) | 28 |
 | [Recursos relacionados](#related-resources) | Recursos relacionados |
 | [Início rápido](#quick-api-access) | Início rápido |
 | [Agradecimentos](#acknowledge) | Créditos e correções |
@@ -1279,8 +1279,8 @@ Type: Evaluation | Date: 2026-07-16
 
 ---
 
-<a id="related-resources"></a>
-## Recursos relacionados
+<a id="case-72"></a>
+### Case 72: [Comparar frontends com prompts Arena idênticos](https://x.com/arena/status/2078240399517524365) (by [@arena](https://x.com/arena))
 
 **Use prompts idênticos e resultados lado a lado em vez de depender de uma única posição no ranking**
 
@@ -1320,7 +1320,8 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
-## Related Repositories
+<a id="related-resources"></a>
+## Recursos relacionados
 
 - [Ver detalhes e preços do Kimi K3 na EvoLink](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
 - [Abrir a documentação da API Kimi K3 na EvoLink](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=docs_link)
@@ -1351,7 +1352,7 @@ curl --request POST \
 ```
 
 > [!IMPORTANT]
-> A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Este repositório não afirma ter feito um teste pago independente
+> A página do modelo e a documentação da EvoLink verificam a rota pública e o ID. Nenhuma superfície independente de navegador ou sem código para Kimi K3 foi verificada, e este repositório não afirma ter feito um teste pago independente
 
 <a id="acknowledge"></a>
 ## 🙏 Agradecimentos

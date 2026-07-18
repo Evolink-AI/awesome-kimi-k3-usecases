@@ -1,5 +1,15 @@
 # Update Log
 
+## 2026-07-18 — Concurrent update reconciliation and 79-case full-set audit
+
+- Preserved the concurrent public update in commit `6228470`, adding all 9 newly reviewed high-confidence cases instead of force-pushing the earlier 70-case build
+- Rebuilt all 11 README editions from the 79-case canonical set, preserving one centralized case menu and one inline comma-separated Acknowledge list
+- Bound the original 70-case `use-case-posts.json` and the immutable supplemental commit into one reproducible combined source package
+- Expanded source fidelity to 79 cases, 88 expected public visuals, and 58 playable R2 videos
+- Removed hard-coded 70-case, 79-visual, and 53-video assumptions from repository and R2 verification
+- Added a fetch-first publication failure analysis after the first push was correctly rejected as non-fast-forward
+- Passed the reconciled R2 audit at 88/88 visuals and 58/58 playable videos, plus a 312-URL public audit with one recorded exception and zero unhandled failures
+
 ## 2026-07-18 — KimiK3.io locale routing and Quick Start placement
 
 - Added KimiK3.io to Related Resources in all 11 README editions
