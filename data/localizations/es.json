@@ -5,10 +5,10 @@
   "introduction_heading": "Introducción",
   "intro": "Bienvenido al repositorio de casos de uso de alta señal de Kimi K3",
   "mission": "Recopilamos juegos, escenas 3D, diseños en movimiento, integraciones, evaluaciones y límites prácticos de Kimi K3 respaldados por fuentes públicas",
-  "source_boundary": "Los 79 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
+  "source_boundary": "Los 89 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
   "overview_heading": "Resumen",
   "overview": [
-    "79 casos de alta confianza de creadores y profesionales",
+    "89 casos de alta confianza de creadores y profesionales",
     "Incluye juegos interactivos, 3D, frontend, motion graphics, programación, integraciones, investigación, evaluaciones y límites prácticos",
     "Cada caso conserva fuente, autor, tipo, fecha y límite del prompt",
     "Las experiencias individuales no se presentan como benchmarks"
@@ -386,14 +386,100 @@
       "takeaway": "Usa una sola petición para generar y examinar un diseño completo de interfaz de usuario",
       "notes": "El creador muestra un diseño de interfaz atribuido a una ejecución de Kimi K3 con un prompt y ofrece una valoración subjetiva muy positiva. No se incluyen el prompt exacto ni una rúbrica"
     },
-    "71": {"title": "Crear un juego indie de naves", "takeaway": "Usa Kimi K3 Standard para una primera versión y compara coherencia, fallos, calidad visual y coste de tokens", "notes": "ChrisGPT informa de una primera versión de un juego de naves por unos 2,50 dólares en tokens API. La consideró más coherente y con menos errores que GPT-5.5, aunque Fable 5 seguía siendo más pulido visualmente"},
-    "72": {"title": "Comparar frontends con prompts Arena idénticos", "takeaway": "Usa prompts idénticos y resultados paralelos en lugar de depender de una sola posición en el ranking", "notes": "Arena.ai publica una comparación de Kimi K3 y Fable 5 en Frontend Code Arena con prompts idénticos. El video conserva ambos resultados bajo la misma condición"},
-    "73": {"title": "Autoprobar un juego en Summer Engine", "takeaway": "Haz que Kimi K3 ejecute el juego, revise capturas y registros y corrija fallos visibles en la misma sesión", "notes": "Mathias Heide informa de que Kimi K3 creó un juego de aviones de papel en una sesión de 27 minutos, lo ejecutó, revisó capturas y logs, corrigió errores y cambió el avión negro a blanco"},
-    "74": {"title": "Evaluar Kimi Code con agentes de código", "takeaway": "Evalúa Kimi K3 con varias pruebas y coste por tarea sin generalizar un único ranking frontend", "notes": "Artificial Analysis informa de 57 puntos y quinto puesto conjunto: 84 % en Terminal-Bench v2, 64 % en DeepSWE, 23 % en SWE-Atlas-QnA y 3,18 dólares de coste medio por tarea"},
-    "75": {"title": "Configurar Kimi como subagente de Codex", "takeaway": "Mantén la orquestación en Codex y delega el frontend a un subagente Kimi K3 OpenCode con un límite claro para secretos", "notes": "nauczymycieAI explica cómo instalar y verificar OpenCode, crear manualmente una clave Kimi sin pegarla en Codex, conectar Kimi K3 y crear un skill global de Codex para enrutar tareas frontend"},
-    "76": {"title": "Comparar Arena y el arnés de reparación", "takeaway": "Mira tanto preferencia frontend como reparación de repositorios porque Kimi K3 puede quedar primero en una y séptimo en otra", "notes": "AlphaSignal informa del primer puesto con 1679 puntos en Frontend Code Arena, pero de 53 aciertos en 67 intentos, 79 %, y séptimo puesto en un arnés de reparación de agentes"},
-    "77": {"title": "Iterar un battle royale en el navegador", "takeaway": "Prevé iteraciones autónomas largas y prompts posteriores específicos para juegos de navegador con muchas funciones", "notes": "Ananth informa de más de 130 minutos y 40 rondas de capturas de Chrome para un juego estilo PUBG, seguidas de dos prompts adicionales para corregir errores restantes"},
-    "78": {"title": "Crear un sitio web de estilo premiado", "takeaway": "Evalúa la sesión grabada completa y no solo la captura final", "notes": "Viktor Oddy publica un tutorial de 13 minutos para crear con Kimi K3 un sitio web de estilo premiado, aportando evidencia del proceso completo"},
-    "79": {"title": "Enrutar código simple mediante ChatLLM", "takeaway": "Envía código simple a Kimi K3 y reserva el código difícil y el diseño para otros modelos", "notes": "Abacus AI anuncia Kimi K3 en ChatLLM: código simple con Kimi K3, código difícil con Fable 5 y diseño con GPT-5.6 Sol. El router sirve en ChatLLM, Abacus AI Agent y Claude Code"}
+    "71": {
+      "title": "Crear un juego indie de naves",
+      "takeaway": "Usa Kimi K3 Standard para una primera versión y compara coherencia, fallos, calidad visual y coste de tokens",
+      "notes": "ChrisGPT informa de una primera versión de un juego de naves por unos 2,50 dólares en tokens API. La consideró más coherente y con menos errores que GPT-5.5, aunque Fable 5 seguía siendo más pulido visualmente"
+    },
+    "72": {
+      "title": "Comparar frontends con prompts Arena idénticos",
+      "takeaway": "Usa prompts idénticos y resultados paralelos en lugar de depender de una sola posición en el ranking",
+      "notes": "Arena.ai publica una comparación de Kimi K3 y Fable 5 en Frontend Code Arena con prompts idénticos. El video conserva ambos resultados bajo la misma condición"
+    },
+    "73": {
+      "title": "Autoprobar un juego en Summer Engine",
+      "takeaway": "Haz que Kimi K3 ejecute el juego, revise capturas y registros y corrija fallos visibles en la misma sesión",
+      "notes": "Mathias Heide informa de que Kimi K3 creó un juego de aviones de papel en una sesión de 27 minutos, lo ejecutó, revisó capturas y logs, corrigió errores y cambió el avión negro a blanco"
+    },
+    "74": {
+      "title": "Evaluar Kimi Code con agentes de código",
+      "takeaway": "Evalúa Kimi K3 con varias pruebas y coste por tarea sin generalizar un único ranking frontend",
+      "notes": "Artificial Analysis informa de 57 puntos y quinto puesto conjunto: 84 % en Terminal-Bench v2, 64 % en DeepSWE, 23 % en SWE-Atlas-QnA y 3,18 dólares de coste medio por tarea"
+    },
+    "75": {
+      "title": "Configurar Kimi como subagente de Codex",
+      "takeaway": "Mantén la orquestación en Codex y delega el frontend a un subagente Kimi K3 OpenCode con un límite claro para secretos",
+      "notes": "nauczymycieAI explica cómo instalar y verificar OpenCode, crear manualmente una clave Kimi sin pegarla en Codex, conectar Kimi K3 y crear un skill global de Codex para enrutar tareas frontend"
+    },
+    "76": {
+      "title": "Comparar Arena y el arnés de reparación",
+      "takeaway": "Mira tanto preferencia frontend como reparación de repositorios porque Kimi K3 puede quedar primero en una y séptimo en otra",
+      "notes": "AlphaSignal informa del primer puesto con 1679 puntos en Frontend Code Arena, pero de 53 aciertos en 67 intentos, 79 %, y séptimo puesto en un arnés de reparación de agentes"
+    },
+    "77": {
+      "title": "Iterar un battle royale en el navegador",
+      "takeaway": "Prevé iteraciones autónomas largas y prompts posteriores específicos para juegos de navegador con muchas funciones",
+      "notes": "Ananth informa de más de 130 minutos y 40 rondas de capturas de Chrome para un juego estilo PUBG, seguidas de dos prompts adicionales para corregir errores restantes"
+    },
+    "78": {
+      "title": "Crear un sitio web de estilo premiado",
+      "takeaway": "Evalúa la sesión grabada completa y no solo la captura final",
+      "notes": "Viktor Oddy publica un tutorial de 13 minutos para crear con Kimi K3 un sitio web de estilo premiado, aportando evidencia del proceso completo"
+    },
+    "79": {
+      "title": "Enrutar código simple mediante ChatLLM",
+      "takeaway": "Envía código simple a Kimi K3 y reserva el código difícil y el diseño para otros modelos",
+      "notes": "Abacus AI anuncia Kimi K3 en ChatLLM: código simple con Kimi K3, código difícil con Fable 5 y diseño con GPT-5.6 Sol. El router sirve en ChatLLM, Abacus AI Agent y Claude Code"
+    },
+    "80": {
+      "title": "Evaluar Kimi K3 en Prinzbench",
+      "takeaway": "Usa una actualización independiente de benchmark para comparar Kimi K3 con modelos abiertos y frontera en búsqueda, razonamiento y consistencia.",
+      "notes": "El autor agrega Kimi K3 a Prinzbench y reporta 47/99, por encima de GLM-5.2 con 30/99 y cerca de un resultado antiguo de Gemini 3.1 Pro con 50/99. La publicación destaca buena búsqueda, razonamiento lógico más débil y más inconsistencia que modelos frontera comparables."
+    },
+    "81": {
+      "title": "Crear un frontend con metaballs al desplazarse",
+      "takeaway": "Pide a Kimi K3 una página estilo Awwwards con desplazamiento y revisa si los efectos matemáticos pueden reemplazar mallas o texturas pesadas.",
+      "notes": "El creador informa una sesión frontend de Kimi K3 que produjo un sitio con metaballs al hacer scroll usando comportamiento visual basado en matemáticas, sin mallas ni texturas. El video adjunto es el artefacto visible; no se publica prompt reutilizable ni pasos de implementación."
+    },
+    "82": {
+      "title": "Rediseñar un sitio personal entre modelos",
+      "takeaway": "Ejecuta el mismo brief de rediseño con varios harnesses de código y compara tiempo, dirección visual y ajuste a la identidad existente.",
+      "notes": "El creador probó Fable 5, GPT-5.6 Sol y Kimi K3 en el rediseño de su sitio personal con el harness oficial y modo de máximo esfuerzo de cada modelo. Kimi K3 tardó unos 50 minutos, Fable 35 y Sol unos 70; la publicación lo presenta como un mini benchmark específico de la tarea."
+    },
+    "83": {
+      "title": "Ampliar el paisaje de un juego espacial",
+      "takeaway": "Usa Kimi K3 como una pasada larga para sustituir terreno provisional por un entorno de juego más grande inspirado en datos reales.",
+      "notes": "El creador describe el segundo día de un juego espacial: Kimi K3 reemplazó una costa provisional por un paisaje de 8 x 8 km inspirado en Islandia, añadió océano animado sensible a la costa, reconstruyó la nave y generó recursos ambientales para una pasada posterior. También señala ejecución lenta y problemas pendientes de captura de fotogramas."
+    },
+    "84": {
+      "title": "Desbloquear un renderizador físico en Three.js",
+      "takeaway": "Introduce Kimi K3 en un proyecto de física Three.js estancado cuando la matemática funciona pero el render necesita avanzar.",
+      "notes": "El creador indica que su constructor de mundos físicos llevaba meses bloqueado porque el pipeline de render no progresaba, aunque la matemática y la física funcionaban. La pasada con Kimi K3 movió el proyecto y el video muestra el resultado interactivo actual."
+    },
+    "85": {
+      "title": "Comparar generación de un gemelo digital ISS",
+      "takeaway": "Usa un reto 3D con el mismo prompt para comparar Kimi K3 y GPT-5.6 Sol en reconstrucción, controles, etiquetas y detalle visual.",
+      "notes": "AIsaOneHQ reporta un benchmark one-shot donde ambos modelos debían reconstruir un gemelo digital interactivo de la Estación Espacial Internacional sin modelo preconstruido, con Tierra, luz orbital, controles, etiquetas, visitas guiadas, vista explotada, pruebas y refinamiento. La publicación dice que Kimi K3 terminó más rápido, costó menos y logró mejor render en esa ejecución."
+    },
+    "86": {
+      "title": "Crear un explorador interactivo de cuero cabelludo",
+      "takeaway": "Usa Kimi K3 para una escena educativa 3D de una sola pasada con capas anatómicas, cabello responsivo y puntos interactivos.",
+      "notes": "El creador reporta que Kimi K3 single-shot un explorador realista de cuero cabelludo usando unas 105k tokens, con iluminación cinematográfica, anatomía por capas, hebras de pelo responsivas, cortes transversales y hotspots educativos. La fuente dice que el resultado fue impresionante pero no barato y enlaza una versión para probar."
+    },
+    "87": {
+      "title": "Compartir un prompt de dashboard globo 3D",
+      "takeaway": "Estudia un setup con prompt e imagen de referencia para un dashboard globo 3D de Kimi K3 en vez de inferir el flujo solo por la imagen final.",
+      "notes": "El creador responde a solicitudes del prompt y la imagen de referencia detrás de una demo de dashboard globo 3D con Kimi K3 y comparte ambos en imágenes adjuntas. El repositorio registra la fuente como límite de prompt tutorial, pero no transcribe texto desde imágenes."
+    },
+    "88": {
+      "title": "Crear Counter-Strike en navegador en un archivo",
+      "takeaway": "Usa Kimi K3 para generar un FPS de navegador en un solo archivo y verifica mapa, bots, armas, reglas de ronda y audio procedural.",
+      "notes": "El creador reporta un juego tipo Counter-Strike con Kimi K3 en un único HTML de más de 3.700 líneas y sin build step. El artefacto incluye mapa inspirado en Dust2, varias armas, recargas, bots que patrullan y empujan, headshots, kill feed, ronda de dos minutos, audio procedural, Three.js, PBR y coste API inferior a 5 dólares."
+    },
+    "89": {
+      "title": "Revisar un mundo forestal WebGPU",
+      "takeaway": "Evalúa Kimi K3 como cerebro de agente de código en una construcción larga con Three.js y WebGPU, incluyendo calidad, velocidad, consistencia y tasa de edición.",
+      "notes": "El creador reporta una revisión profunda de Kimi K3 con un mundo de lago y bosque en Three.js y WebGPU, con agua viva, clima, fauna, ciclos día-noche y cámaras cinematográficas. La publicación dice que Kimi K3 produjo alta calidad, fue más lento que una generación comparable con GPT-5.6 Sol, mantuvo consistencia y solo necesitó un ajuste manual de luminosidad."
+    }
   }
 }

@@ -5,10 +5,10 @@
   "introduction_heading": "简介",
   "intro": "欢迎来到 Kimi K3 高信号使用案例库",
   "mission": "我们收录有公开来源支持的游戏、3D 场景、动态设计、集成、评估与实际限制",
-  "source_boundary": "全部 79 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
+  "source_boundary": "全部 89 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
   "overview_heading": "概览",
   "overview": [
-    "79 个来自创作者和从业者的高置信案例",
+    "89 个来自创作者和从业者的高置信案例",
     "覆盖互动游戏、3D、前端与动态设计、编程、研究、评估、可视化和代理限制",
     "每个案例保留来源、作者、类型、日期和 prompt 边界",
     "不把个人观察包装成 benchmark"
@@ -386,14 +386,100 @@
       "takeaway": "使用单次请求生成并检查完整 UI 设计",
       "notes": "创作者展示了归因于 Kimi K3 单 prompt 运行的 UI 设计，并给出强烈正面的主观评价，来源未提供完整 prompt 或评分标准"
     },
-    "71": {"title": "构建独立太空飞船游戏", "takeaway": "先用 Kimi K3 Standard 制作游戏初版，再比较一致性、缺陷、视觉质量和 token 成本", "notes": "ChrisGPT 报告 Kimi K3 Standard 以约 2.50 美元 API token 成本完成独立太空飞船游戏初版；它比 GPT-5.5 初版更连贯、bug 更少，但 Fable 5 的视觉效果仍更精致"},
-    "72": {"title": "用相同 Arena prompt 比较前端", "takeaway": "固定 prompt 并并排检查输出，比只看一个排行榜分数更可靠", "notes": "Arena.ai 发布 Kimi K3 与 Fable 5 的 Frontend Code Arena 对比，并声明双方使用相同 prompt；视频保留两侧输出，便于检查实现和呈现差异"},
-    "73": {"title": "让 Summer Engine 游戏自测", "takeaway": "让 Kimi K3 运行游戏、检查截图和日志并在同一会话中修复可见缺陷", "notes": "Mathias Heide 报告 Kimi K3 在 27 分钟的一次会话中构建可运行的纸飞机游戏；模型启动游戏、截图、读取日志、修复 bug，并把错误的黑色纸飞机改为白色"},
-    "74": {"title": "评测 Kimi Code 编码 agent", "takeaway": "结合多个编码 agent 测试集和单任务成本评估 Kimi K3，不把单一前端榜单当成总体能力", "notes": "Artificial Analysis 报告 Kimi K3 在 Coding Agent Index 得分 57、并列第五；Terminal-Bench v2 为 84%，DeepSWE 为 64%，SWE-Atlas-QnA 为 23%，平均每任务成本 3.18 美元"},
-    "75": {"title": "将 Kimi 配置为 Codex 子 agent", "takeaway": "让 Codex 保持编排职责，把前端执行交给 Kimi K3 OpenCode 子 agent，并明确密钥边界", "notes": "nauczymycieAI 给出三阶段教程：安装并验证 OpenCode，手动创建且不粘贴到 Codex 的 Kimi API Key，连接 Kimi K3，并创建全局 Codex skill 路由前端任务"},
-    "76": {"title": "比较 Arena 与修复测试结果", "takeaway": "同时看前端偏好和仓库修复评测，因为 Kimi K3 可在一个榜单第一、在另一测试中第七", "notes": "AlphaSignal 报告 Kimi K3 在 Frontend Code Arena 以 1679 分排名第一，但在编码 agent 修复测试中只完成 67 次尝试中的 53 次，即 79%，排名第七"},
-    "77": {"title": "迭代浏览器大逃杀游戏", "takeaway": "构建功能丰富的浏览器游戏时，要预期长时间自主迭代和有针对性的后续 prompt", "notes": "Ananth 报告 Kimi K3 用 130 多分钟和 40 多轮 Chrome 截图反馈构建 PUBG 风格游戏，并在首个输出后又用两个 prompt 修复剩余 bug"},
-    "78": {"title": "构建获奖风格网站", "takeaway": "通过完整录屏评估 Kimi K3 的精致网站构建过程，而不只看最终截图", "notes": "Viktor Oddy 发布 13 分钟教程，展示如何用 Kimi K3 构建获奖风格网站；完整视频提供了过程证据"},
-    "79": {"title": "通过 ChatLLM 路由简单编码", "takeaway": "创建任务路由，将简单编码交给 Kimi K3，把困难编码和设计保留给其他模型", "notes": "Abacus AI 宣布 ChatLLM 支持 Kimi K3：简单编码用 Kimi K3，困难编码用 Fable 5，设计用 GPT-5.6 Sol；同一路由可用于 ChatLLM、Abacus AI agent 或 Claude Code"}
+    "71": {
+      "title": "构建独立太空飞船游戏",
+      "takeaway": "先用 Kimi K3 Standard 制作游戏初版，再比较一致性、缺陷、视觉质量和 token 成本",
+      "notes": "ChrisGPT 报告 Kimi K3 Standard 以约 2.50 美元 API token 成本完成独立太空飞船游戏初版；它比 GPT-5.5 初版更连贯、bug 更少，但 Fable 5 的视觉效果仍更精致"
+    },
+    "72": {
+      "title": "用相同 Arena prompt 比较前端",
+      "takeaway": "固定 prompt 并并排检查输出，比只看一个排行榜分数更可靠",
+      "notes": "Arena.ai 发布 Kimi K3 与 Fable 5 的 Frontend Code Arena 对比，并声明双方使用相同 prompt；视频保留两侧输出，便于检查实现和呈现差异"
+    },
+    "73": {
+      "title": "让 Summer Engine 游戏自测",
+      "takeaway": "让 Kimi K3 运行游戏、检查截图和日志并在同一会话中修复可见缺陷",
+      "notes": "Mathias Heide 报告 Kimi K3 在 27 分钟的一次会话中构建可运行的纸飞机游戏；模型启动游戏、截图、读取日志、修复 bug，并把错误的黑色纸飞机改为白色"
+    },
+    "74": {
+      "title": "评测 Kimi Code 编码 agent",
+      "takeaway": "结合多个编码 agent 测试集和单任务成本评估 Kimi K3，不把单一前端榜单当成总体能力",
+      "notes": "Artificial Analysis 报告 Kimi K3 在 Coding Agent Index 得分 57、并列第五；Terminal-Bench v2 为 84%，DeepSWE 为 64%，SWE-Atlas-QnA 为 23%，平均每任务成本 3.18 美元"
+    },
+    "75": {
+      "title": "将 Kimi 配置为 Codex 子 agent",
+      "takeaway": "让 Codex 保持编排职责，把前端执行交给 Kimi K3 OpenCode 子 agent，并明确密钥边界",
+      "notes": "nauczymycieAI 给出三阶段教程：安装并验证 OpenCode，手动创建且不粘贴到 Codex 的 Kimi API Key，连接 Kimi K3，并创建全局 Codex skill 路由前端任务"
+    },
+    "76": {
+      "title": "比较 Arena 与修复测试结果",
+      "takeaway": "同时看前端偏好和仓库修复评测，因为 Kimi K3 可在一个榜单第一、在另一测试中第七",
+      "notes": "AlphaSignal 报告 Kimi K3 在 Frontend Code Arena 以 1679 分排名第一，但在编码 agent 修复测试中只完成 67 次尝试中的 53 次，即 79%，排名第七"
+    },
+    "77": {
+      "title": "迭代浏览器大逃杀游戏",
+      "takeaway": "构建功能丰富的浏览器游戏时，要预期长时间自主迭代和有针对性的后续 prompt",
+      "notes": "Ananth 报告 Kimi K3 用 130 多分钟和 40 多轮 Chrome 截图反馈构建 PUBG 风格游戏，并在首个输出后又用两个 prompt 修复剩余 bug"
+    },
+    "78": {
+      "title": "构建获奖风格网站",
+      "takeaway": "通过完整录屏评估 Kimi K3 的精致网站构建过程，而不只看最终截图",
+      "notes": "Viktor Oddy 发布 13 分钟教程，展示如何用 Kimi K3 构建获奖风格网站；完整视频提供了过程证据"
+    },
+    "79": {
+      "title": "通过 ChatLLM 路由简单编码",
+      "takeaway": "创建任务路由，将简单编码交给 Kimi K3，把困难编码和设计保留给其他模型",
+      "notes": "Abacus AI 宣布 ChatLLM 支持 Kimi K3：简单编码用 Kimi K3，困难编码用 Fable 5，设计用 GPT-5.6 Sol；同一路由可用于 ChatLLM、Abacus AI agent 或 Claude Code"
+    },
+    "80": {
+      "title": "用 Prinzbench 评估 Kimi K3",
+      "takeaway": "用独立 benchmark 更新对比 Kimi K3 与开源、前沿模型在搜索、推理和一致性上的表现。",
+      "notes": "作者把 Kimi K3 加入 Prinzbench，并报告总分 47/99，高于 GLM-5.2 的 30/99，接近旧版 Gemini 3.1 Pro 的 50/99。帖子强调它搜索能力强，但逻辑推理较弱，稳定性也不如可比前沿模型。"
+    },
+    "81": {
+      "title": "构建滚动 Metaball 前端",
+      "takeaway": "让 Kimi K3 生成 Awwwards 风格滚动页面，并检查数学效果是否能替代重型 mesh 或贴图资源。",
+      "notes": "创作者报告一次 Kimi K3 前端会话生成了随滚动反应的 metaball 网站，视觉行为由数学驱动，没有使用 mesh 或贴图。附带视频是可见成品；来源没有公开可复用 prompt 或实现步骤。"
+    },
+    "82": {
+      "title": "跨模型重设计个人网站",
+      "takeaway": "用多个 coding harness 执行同一个网站重设计 brief，并比较耗时、视觉方向和与现有身份的匹配度。",
+      "notes": "创作者用官方 harness 和最高 effort 模式测试 Fable 5、GPT-5.6 Sol 与 Kimi K3 重设计个人网站。Kimi K3 用时约 50 分钟，Fable 约 35 分钟，Sol 约 70 分钟；帖子把它定位为单任务 mini benchmark。"
+    },
+    "83": {
+      "title": "扩展太空游戏地形",
+      "takeaway": "把 Kimi K3 作为长时间构建 pass，把占位地形替换成更大的真实地貌启发游戏环境。",
+      "notes": "创作者描述太空游戏第二天进展：Kimi K3 将小型占位海岸替换为 8 x 8 km 的冰岛启发地形，加入海岸感知的动画海洋，重建飞船外观，并生成下一步要用的环境资产。来源也说明执行较慢，录制帧率问题仍待解决。"
+    },
+    "84": {
+      "title": "解锁 Three.js 物理渲染器",
+      "takeaway": "当数学和物理逻辑可用但渲染管线停滞时，把 Kimi K3 引入 Three.js 物理项目。",
+      "notes": "创作者表示物理世界构建器已停滞数月，底层数学和物理可用，但渲染管线无法推进。Kimi K3 的一次 pass 推动项目继续前进，视频展示了当前交互结果。"
+    },
+    "85": {
+      "title": "对比 ISS 数字孪生生成",
+      "takeaway": "用同 prompt 3D 挑战，对比 Kimi K3 与 GPT-5.6 Sol 在重建、控制、标签和视觉细节上的表现。",
+      "notes": "AIsaOneHQ 报告一个 one-shot benchmark：两个模型都需要在没有预建模型的情况下重建可交互国际空间站数字孪生，包括地球、轨道光照、控制、标签、导览、爆炸视图、测试和优化。帖子称 Kimi K3 在该轮更快、更便宜，渲染效果更强。"
+    },
+    "86": {
+      "title": "构建交互式头皮探索器",
+      "takeaway": "用 Kimi K3 一次生成包含解剖层、响应式发丝和交互热点的 3D 教育场景。",
+      "notes": "创作者报告 Kimi K3 用约 105k tokens 一次生成真实感头皮探索器，包含电影级光照、分层解剖结构、响应式发丝、横截面和教育热点。来源称效果令人印象深刻但成本不低，并提供可试用链接。"
+    },
+    "87": {
+      "title": "分享 3D 地球仪仪表盘 Prompt",
+      "takeaway": "研究 Kimi K3 3D 地球仪仪表盘的 prompt 与参考图设置，而不是只从最终图反推工作流。",
+      "notes": "创作者回应他人对 Kimi K3 3D 地球仪仪表盘 demo 的 prompt 与参考图请求，并在附图中公开两者。本仓库将其记录为教程型 prompt 边界，但不从图片中转录 prompt 文本。"
+    },
+    "88": {
+      "title": "用单文件构建浏览器 Counter-Strike",
+      "takeaway": "用 Kimi K3 生成单文件浏览器 FPS，并检查地图、机器人、武器、回合规则和程序化音频是否完整。",
+      "notes": "创作者报告用 Kimi K3 在一个超过 3,700 行的 HTML 文件里构建了类 Counter-Strike 浏览器游戏，无需 build step。成品包含 Dust2 风格地图、多种武器、换弹、巡逻与推进机器人、爆头、击杀信息、两分钟回合、程序化音频、Three.js、PBR，API 成本低于 5 美元。"
+    },
+    "89": {
+      "title": "评测 WebGPU 森林世界",
+      "takeaway": "在长周期 Three.js 与 WebGPU 世界构建中，把 Kimi K3 作为 coding agent brain，从质量、速度、一致性和人工修改率评估它。",
+      "notes": "创作者用一个梦幻森林湖泊世界深度评测 Kimi K3，场景包含动态水体、天气、野生动物、昼夜变化和电影镜头。帖子称 Kimi K3 质量很高，比类似 GPT-5.6 Sol 生成更慢，但长周期一致性好，只手动调整了一次湖面亮度。"
+    }
   }
 }

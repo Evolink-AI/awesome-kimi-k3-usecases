@@ -127,7 +127,7 @@ def main() -> int:
     expected_presentation = {
         "menu_layout": "centralized-single-table",
         "acknowledge_layout": "inline-comma",
-        "quick_start_position": "penultimate-section",
+        "quick_start_position": "pre-case-section",
         "media_policy": "all-source-media",
         "video_playback_policy": "r2-playable",
         "localization_fallback": "english",
@@ -221,8 +221,8 @@ def main() -> int:
             errors.append(
                 f"{filename}: KimiK3.io route is {kimik3_io_urls}, expected only {expected_kimik3_io}"
             )
-        if text.count(API_ENDPOINT) != 1:
-            errors.append(f"{filename}: copyable Quick API endpoint must appear exactly once")
+        if text.count(API_ENDPOINT) != 2:
+            errors.append(f"{filename}: copyable Quick API endpoint and method literal must appear exactly twice")
         if text.count('"model": "kimi-k3"') != 1:
             errors.append(f"{filename}: copyable Quick API model must appear exactly once")
         if 'Authorization: Bearer $EVOLINK_API_KEY' not in text:
@@ -245,11 +245,11 @@ def main() -> int:
         quick_start = text.find('<a id="quick-api-access"></a>')
         related_resources = text.find('<a id="related-resources"></a>')
         acknowledge_start = text.find('<a id="acknowledge"></a>')
-        if not (first_category < related_resources < quick_start < acknowledge_start):
-            errors.append(f"{filename}: Quick Start is not the penultimate section after Related Resources")
+        if not (quick_start != -1 and quick_start < menu_start < first_category < related_resources < acknowledge_start):
+            errors.append(f"{filename}: Quick Start is not before Menu and case sections")
         headings = re.findall(r"^## .+$", text, re.MULTILINE)
-        if len(headings) < 2 or "⚡" not in headings[-2] or "🙏" not in headings[-1]:
-            errors.append(f"{filename}: Quick Start and Acknowledge are not the final two sections")
+        if len(headings) < 4 or "⚡" not in headings[2] or "🙏" not in headings[-1]:
+            errors.append(f"{filename}: Quick Start is not the first post-overview section or Acknowledge is not final")
         early_conversion = text[:first_category]
         for required_route in (MODEL_PAGE_PREFIX, "https://evolink.ai/dashboard/keys", API_DOCS_PREFIX):
             if required_route not in early_conversion:
@@ -325,7 +325,7 @@ def main() -> int:
     print("evolink_model_route=pass")
     print("evolink_api_docs_route=pass")
     print("quick_api_access=pass")
-    print("quick_api_access_position=penultimate-section")
+    print("quick_api_access_position=pre-case-section")
     print("evolink_article_route=pass")
     print("kimik3_io_locale_routes=pass")
     return 0

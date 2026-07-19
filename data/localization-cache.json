@@ -6,10 +6,10 @@
     "introduction_heading": "Einführung",
     "intro": "Willkommen bei der kuratierten Sammlung aussagekräftiger Kimi-K3-Anwendungsfälle",
     "mission": "Wir sammeln quellengestützte Spiele, 3D-Szenen, Motion Design, Integrationen, Bewertungen und praktische Grenzen",
-    "source_boundary": "Alle 79 Fälle stammen aus öffentlichen Quellen mit hoher Konfidenz. Titel und Autoren verlinken auf die Originale; schwache, doppelte und nicht ausreichend belegte Kandidaten bleiben ausgeschlossen",
+    "source_boundary": "Alle 89 Fälle stammen aus öffentlichen Quellen mit hoher Konfidenz. Titel und Autoren verlinken auf die Originale; schwache, doppelte und nicht ausreichend belegte Kandidaten bleiben ausgeschlossen",
     "overview_heading": "Überblick",
     "overview": [
-      "79 ausgewählte Fälle von Kreativen und Praktikern",
+      "89 ausgewählte Fälle von Kreativen und Praktikern",
       "Spiele, 3D, Frontend, Motion Design, Coding, Forschung, Integrationen, Bewertungen und Grenzen",
       "Quelle, Autor, Typ, Datum und Prompt-Grenze bleiben erhalten",
       "Einzelbeobachtungen und interne Tests werden nicht zu allgemeinen Benchmarks erklärt"
@@ -431,6 +431,56 @@
         "title": "Einfaches Coding über ChatLLM routen",
         "takeaway": "Einfaches Coding an Kimi K3 senden und schwieriges Coding sowie Design anderen Modellen zuweisen",
         "notes": "Abacus AI kündigt Kimi K3 in ChatLLM an: einfaches Coding an Kimi K3, schwieriges Coding an Fable 5 und Design an GPT-5.6 Sol. Der Router funktioniert in ChatLLM, Abacus AI Agent und Claude Code"
+      },
+      "80": {
+        "title": "Kimi K3 mit Prinzbench bewerten",
+        "takeaway": "Prinzbench vergleicht Kimi K3 mit OpenAI o3 und anderen Modellen und zeigt Rang sowie Grenzen im selben Benchmark.",
+        "notes": "Der Beitrag platziert Kimi K3 in einer Prinzbench-Vergleichstabelle und macht Abstand zu Spitzenmodellen sowie relative Stärken in Evaluationsaufgaben nachvollziehbar."
+      },
+      "81": {
+        "title": "Ein Metaball-Scroll-Frontend bauen",
+        "takeaway": "Kimi K3 erstellt eine hochwertige Weboberfläche mit leuchtenden Metaballs und scrollgebundener Animation.",
+        "notes": "Das Video zeigt eine fertige dynamische Oberfläche und belegt, dass visuelle Effekte, Layout und Bewegung aus einem Prompt zusammengeführt wurden."
+      },
+      "82": {
+        "title": "Eine persönliche Website modellübergreifend neu gestalten",
+        "takeaway": "Dieselbe Redesign-Aufgabe wird mit Kimi K3 und anderen Modellen verglichen, um visuelle Qualität und Struktur zu beurteilen.",
+        "notes": "Der Vergleich zeigt mehrere Modellausgaben nebeneinander und macht Designentscheidungen, Abschnittsaufbau und Ausarbeitung von Kimi K3 sichtbar."
+      },
+      "83": {
+        "title": "Eine Weltraumspiel-Landschaft erweitern",
+        "takeaway": "Kimi K3 erweitert eine Space-Game-Szene zu einer breiten visuellen Umgebung mit Gelände, Schiffen und Licht.",
+        "notes": "Das öffentliche Bild zeigt eine spielartige Science-Fiction-Szene und demonstriert, wie Kimi K3 Raumtiefe, Objekte und Farbgebung kombiniert."
+      },
+      "84": {
+        "title": "Einen Three.js-Physikrenderer entblocken",
+        "takeaway": "Kimi K3 wurde als Implementierungshilfe genutzt, um ein Three.js-Physik-Renderingproblem voranzubringen.",
+        "notes": "Der Autor berichtet, dass ein blockierendes 3D-Renderingproblem mit Kimi K3 gelöst wurde, und zeigt die Browser-Physikszene im Video."
+      },
+      "85": {
+        "title": "ISS-Digital-Twin-Erzeugung vergleichen",
+        "takeaway": "Kimi K3 wird bei einer ISS-Digital-Twin-Aufgabe mit anderen Modellen verglichen und zeigt Unterschiede bei komplexer 3D-Visualisierung.",
+        "notes": "Der Beitrag vergleicht mehrere Ergebnisse zur gleichen ISS-Aufgabe und hilft, Strukturverständnis und Grenzen der visuellen Ausgabe von Kimi K3 einzuordnen."
+      },
+      "86": {
+        "title": "Einen interaktiven Kopfhaut-Explorer bauen",
+        "takeaway": "Kimi K3 erzeugt einen pädagogischen Kopfhaut-Visualizer und zeigt Nutzen für erklärende Oberflächen.",
+        "notes": "Die Demo zeigt eine interaktive Ansicht anatomischer Kopfhautstrukturen und belegt Potenzial für medizinische und didaktische Visualisierungs-UIs."
+      },
+      "87": {
+        "title": "Einen Prompt für ein 3D-Globus-Dashboard teilen",
+        "takeaway": "Ein öffentlicher Prompt zeigt, wie Kimi K3 eine 3D-Globus-Dashboard-Oberfläche erzeugt.",
+        "notes": "Der Beitrag enthält Prompt und Ergebnisvideo; sichtbar werden Globus, Datenanzeige und Dashboard-Layout als kombinierte Kimi-K3-Ausgabe."
+      },
+      "88": {
+        "title": "Browser-Counter-Strike in einer Datei bauen",
+        "takeaway": "Kimi K3 erstellt ein FPS-artiges Browserspiel als einzelne HTML-Datei.",
+        "notes": "Der Autor zeigt ein Counter-Strike-artiges Spiel, das aus einer Datei läuft, inklusive Spielschleife, Eingabe, Rendering und einfacher UI."
+      },
+      "89": {
+        "title": "Eine WebGPU-Waldwelt prüfen",
+        "takeaway": "Eine von Kimi K3 erzeugte WebGPU-Waldwelt wird bewertet und zeigt Ausdruckskraft sowie Grenzen immersiver 3D-Szenen.",
+        "notes": "Das Video zeigt eine im Browser laufende Waldumgebung und liefert Material zur Einschätzung von Kimi K3 bei WebGPU- und 3D-Szenen."
       }
     }
   },
@@ -441,10 +491,10 @@
     "introduction_heading": "Introducción",
     "intro": "Bienvenido al repositorio de casos de uso de alta señal de Kimi K3",
     "mission": "Recopilamos juegos, escenas 3D, diseños en movimiento, integraciones, evaluaciones y límites prácticos de Kimi K3 respaldados por fuentes públicas",
-    "source_boundary": "Los 79 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
+    "source_boundary": "Los 89 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
     "overview_heading": "Resumen",
     "overview": [
-      "79 casos de alta confianza de creadores y profesionales",
+      "89 casos de alta confianza de creadores y profesionales",
       "Incluye juegos interactivos, 3D, frontend, motion graphics, programación, integraciones, investigación, evaluaciones y límites prácticos",
       "Cada caso conserva fuente, autor, tipo, fecha y límite del prompt",
       "Las experiencias individuales no se presentan como benchmarks"
@@ -866,6 +916,56 @@
         "title": "Enrutar código simple mediante ChatLLM",
         "takeaway": "Envía código simple a Kimi K3 y reserva el código difícil y el diseño para otros modelos",
         "notes": "Abacus AI anuncia Kimi K3 en ChatLLM: código simple con Kimi K3, código difícil con Fable 5 y diseño con GPT-5.6 Sol. El router sirve en ChatLLM, Abacus AI Agent y Claude Code"
+      },
+      "80": {
+        "title": "Evaluar Kimi K3 en Prinzbench",
+        "takeaway": "Usa una actualización independiente de benchmark para comparar Kimi K3 con modelos abiertos y frontera en búsqueda, razonamiento y consistencia.",
+        "notes": "El autor agrega Kimi K3 a Prinzbench y reporta 47/99, por encima de GLM-5.2 con 30/99 y cerca de un resultado antiguo de Gemini 3.1 Pro con 50/99. La publicación destaca buena búsqueda, razonamiento lógico más débil y más inconsistencia que modelos frontera comparables."
+      },
+      "81": {
+        "title": "Crear un frontend con metaballs al desplazarse",
+        "takeaway": "Pide a Kimi K3 una página estilo Awwwards con desplazamiento y revisa si los efectos matemáticos pueden reemplazar mallas o texturas pesadas.",
+        "notes": "El creador informa una sesión frontend de Kimi K3 que produjo un sitio con metaballs al hacer scroll usando comportamiento visual basado en matemáticas, sin mallas ni texturas. El video adjunto es el artefacto visible; no se publica prompt reutilizable ni pasos de implementación."
+      },
+      "82": {
+        "title": "Rediseñar un sitio personal entre modelos",
+        "takeaway": "Ejecuta el mismo brief de rediseño con varios harnesses de código y compara tiempo, dirección visual y ajuste a la identidad existente.",
+        "notes": "El creador probó Fable 5, GPT-5.6 Sol y Kimi K3 en el rediseño de su sitio personal con el harness oficial y modo de máximo esfuerzo de cada modelo. Kimi K3 tardó unos 50 minutos, Fable 35 y Sol unos 70; la publicación lo presenta como un mini benchmark específico de la tarea."
+      },
+      "83": {
+        "title": "Ampliar el paisaje de un juego espacial",
+        "takeaway": "Usa Kimi K3 como una pasada larga para sustituir terreno provisional por un entorno de juego más grande inspirado en datos reales.",
+        "notes": "El creador describe el segundo día de un juego espacial: Kimi K3 reemplazó una costa provisional por un paisaje de 8 x 8 km inspirado en Islandia, añadió océano animado sensible a la costa, reconstruyó la nave y generó recursos ambientales para una pasada posterior. También señala ejecución lenta y problemas pendientes de captura de fotogramas."
+      },
+      "84": {
+        "title": "Desbloquear un renderizador físico en Three.js",
+        "takeaway": "Introduce Kimi K3 en un proyecto de física Three.js estancado cuando la matemática funciona pero el render necesita avanzar.",
+        "notes": "El creador indica que su constructor de mundos físicos llevaba meses bloqueado porque el pipeline de render no progresaba, aunque la matemática y la física funcionaban. La pasada con Kimi K3 movió el proyecto y el video muestra el resultado interactivo actual."
+      },
+      "85": {
+        "title": "Comparar generación de un gemelo digital ISS",
+        "takeaway": "Usa un reto 3D con el mismo prompt para comparar Kimi K3 y GPT-5.6 Sol en reconstrucción, controles, etiquetas y detalle visual.",
+        "notes": "AIsaOneHQ reporta un benchmark one-shot donde ambos modelos debían reconstruir un gemelo digital interactivo de la Estación Espacial Internacional sin modelo preconstruido, con Tierra, luz orbital, controles, etiquetas, visitas guiadas, vista explotada, pruebas y refinamiento. La publicación dice que Kimi K3 terminó más rápido, costó menos y logró mejor render en esa ejecución."
+      },
+      "86": {
+        "title": "Crear un explorador interactivo de cuero cabelludo",
+        "takeaway": "Usa Kimi K3 para una escena educativa 3D de una sola pasada con capas anatómicas, cabello responsivo y puntos interactivos.",
+        "notes": "El creador reporta que Kimi K3 single-shot un explorador realista de cuero cabelludo usando unas 105k tokens, con iluminación cinematográfica, anatomía por capas, hebras de pelo responsivas, cortes transversales y hotspots educativos. La fuente dice que el resultado fue impresionante pero no barato y enlaza una versión para probar."
+      },
+      "87": {
+        "title": "Compartir un prompt de dashboard globo 3D",
+        "takeaway": "Estudia un setup con prompt e imagen de referencia para un dashboard globo 3D de Kimi K3 en vez de inferir el flujo solo por la imagen final.",
+        "notes": "El creador responde a solicitudes del prompt y la imagen de referencia detrás de una demo de dashboard globo 3D con Kimi K3 y comparte ambos en imágenes adjuntas. El repositorio registra la fuente como límite de prompt tutorial, pero no transcribe texto desde imágenes."
+      },
+      "88": {
+        "title": "Crear Counter-Strike en navegador en un archivo",
+        "takeaway": "Usa Kimi K3 para generar un FPS de navegador en un solo archivo y verifica mapa, bots, armas, reglas de ronda y audio procedural.",
+        "notes": "El creador reporta un juego tipo Counter-Strike con Kimi K3 en un único HTML de más de 3.700 líneas y sin build step. El artefacto incluye mapa inspirado en Dust2, varias armas, recargas, bots que patrullan y empujan, headshots, kill feed, ronda de dos minutos, audio procedural, Three.js, PBR y coste API inferior a 5 dólares."
+      },
+      "89": {
+        "title": "Revisar un mundo forestal WebGPU",
+        "takeaway": "Evalúa Kimi K3 como cerebro de agente de código en una construcción larga con Three.js y WebGPU, incluyendo calidad, velocidad, consistencia y tasa de edición.",
+        "notes": "El creador reporta una revisión profunda de Kimi K3 con un mundo de lago y bosque en Three.js y WebGPU, con agua viva, clima, fauna, ciclos día-noche y cámaras cinematográficas. La publicación dice que Kimi K3 produjo alta calidad, fue más lento que una generación comparable con GPT-5.6 Sol, mantuvo consistencia y solo necesitó un ajuste manual de luminosidad."
       }
     }
   },
@@ -876,10 +976,10 @@
     "introduction_heading": "Introduction",
     "intro": "Bienvenue dans la sélection de cas d’usage Kimi K3 à forte valeur informative",
     "mission": "Nous rassemblons des jeux, scènes 3D, créations animées, intégrations, évaluations et limites pratiques étayés par des sources publiques",
-    "source_boundary": "Les 79 cas proviennent de sources publiques à forte confiance. Les titres et auteurs renvoient aux originaux; les candidats faibles, dupliqués ou insuffisamment documentés sont exclus",
+    "source_boundary": "Les 89 cas proviennent de sources publiques à forte confiance. Les titres et auteurs renvoient aux originaux; les candidats faibles, dupliqués ou insuffisamment documentés sont exclus",
     "overview_heading": "Vue d’ensemble",
     "overview": [
-      "79 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
+      "89 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
       "Jeux, 3D, frontend, motion design, développement, intégrations, benchmarks et limites pratiques",
       "Chaque cas conserve la source, l’auteur, le type, la date et les limites factuelles",
       "Les cas à confiance moyenne sont exclus et les observations individuelles ne deviennent pas des conclusions générales"
@@ -1301,6 +1401,56 @@
         "title": "Router le code simple via ChatLLM",
         "takeaway": "Envoyez le code simple à Kimi K3 et réservez le code difficile et le design à d'autres modèles",
         "notes": "Abacus AI annonce Kimi K3 dans ChatLLM : code simple avec Kimi K3, code difficile avec Fable 5, design avec GPT-5.6 Sol. Le routeur fonctionne dans ChatLLM, Abacus AI Agent et Claude Code"
+      },
+      "80": {
+        "title": "Évaluer Kimi K3 avec Prinzbench",
+        "takeaway": "Prinzbench compare Kimi K3 à OpenAI o3 et à d’autres modèles, avec un classement et des limites sur le même banc d’essai.",
+        "notes": "Le post place Kimi K3 dans un tableau Prinzbench et rend visibles son écart avec les meilleurs modèles ainsi que ses forces relatives sur des tâches d’évaluation."
+      },
+      "81": {
+        "title": "Créer un frontend à métaballes synchronisé au défilement",
+        "takeaway": "Kimi K3 assemble une interface web soignée avec des métaballes lumineuses et des animations liées au scroll.",
+        "notes": "La vidéo montre un frontend dynamique terminé, reliant effets visuels, mise en page et mouvement à partir du prompt."
+      },
+      "82": {
+        "title": "Comparer la refonte d’un site personnel entre modèles",
+        "takeaway": "La même tâche de refonte est donnée à Kimi K3 et à d’autres modèles afin de comparer qualité visuelle et structure.",
+        "notes": "Le post met plusieurs sorties côte à côte et permet d’observer les choix de design, l’organisation des sections et le niveau de finition de Kimi K3."
+      },
+      "83": {
+        "title": "Étendre un paysage de jeu spatial",
+        "takeaway": "Kimi K3 transforme une scène de jeu spatial en environnement plus large avec terrain, vaisseaux et éclairage.",
+        "notes": "L’image publique montre une scène SF de type jeu et illustre la gestion de la profondeur, des objets multiples et de la palette par Kimi K3."
+      },
+      "84": {
+        "title": "Débloquer un rendu physique Three.js",
+        "takeaway": "Kimi K3 sert d’aide d’implémentation pour faire avancer un problème de rendu physique Three.js.",
+        "notes": "L’auteur indique avoir résolu un blocage de rendu 3D avec Kimi K3 et montre en vidéo une scène physique dans le navigateur."
+      },
+      "85": {
+        "title": "Comparer la génération d’un jumeau numérique de l’ISS",
+        "takeaway": "Kimi K3 est comparé à d’autres modèles sur un jumeau numérique de l’ISS, révélant des écarts en visualisation 3D complexe.",
+        "notes": "Le post compare plusieurs sorties sur la même tâche ISS et aide à juger la compréhension structurelle et les limites visuelles de Kimi K3."
+      },
+      "86": {
+        "title": "Créer un explorateur interactif du cuir chevelu",
+        "takeaway": "Kimi K3 génère un visualiseur pédagogique du cuir chevelu, utile pour des interfaces explicatives.",
+        "notes": "La démo montre une exploration interactive des structures du cuir chevelu, avec un cas d’usage médical et éducatif plausible."
+      },
+      "87": {
+        "title": "Partager un prompt de tableau de bord avec globe 3D",
+        "takeaway": "Un prompt public montre comment produire avec Kimi K3 une interface de tableau de bord centrée sur un globe 3D.",
+        "notes": "Le post inclut le prompt et la vidéo finale, combinant globe, affichage de données et composition de dashboard."
+      },
+      "88": {
+        "title": "Créer un Counter-Strike navigateur en un seul fichier",
+        "takeaway": "Kimi K3 produit un jeu FPS de style Counter-Strike dans un fichier HTML unique.",
+        "notes": "L’auteur montre un jeu exécutable depuis un seul fichier, avec boucle de jeu, entrées, rendu et interface simple."
+      },
+      "89": {
+        "title": "Évaluer une forêt WebGPU",
+        "takeaway": "Une scène de forêt WebGPU créée avec Kimi K3 est évaluée pour sa qualité immersive et ses limites 3D.",
+        "notes": "La vidéo présente un environnement forestier dans le navigateur et sert d’évidence pour les capacités WebGPU/3D de Kimi K3."
       }
     }
   },
@@ -1311,10 +1461,10 @@
     "introduction_heading": "はじめに",
     "intro": "Kimi K3 の実例を厳選したリポジトリです",
     "mission": "公開情報に基づくゲーム、3D、モーションデザイン、統合、評価、実用上の制約を収録します",
-    "source_boundary": "79件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています",
+    "source_boundary": "89件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています",
     "overview_heading": "概要",
     "overview": [
-      "クリエイターと実務家によるhigh-confidenceの79事例",
+      "クリエイターと実務家によるhigh-confidenceの89事例",
       "ゲーム、Three.js、モーション、フロントエンド、コーディング、研究、評価、実用上の制約を幅広く収録",
       "各事例で出典、著者、種別、日付、プロンプト境界を保持",
       "個人の報告をベンチマークとして扱いません"
@@ -1736,6 +1886,56 @@
         "title": "ChatLLMで簡単なコーディングをルーティング",
         "takeaway": "簡単なコーディングをKimi K3に送り、難しいコーディングとデザインを別モデルに割り当てます",
         "notes": "Abacus AIはChatLLMでKimi K3を提供し、簡単なコーディングはKimi K3、難しい作業はFable 5、デザインはGPT-5.6 Solというルートを示しています。同じルーターはChatLLM、Abacus AI agent、Claude Codeで使えます"
+      },
+      "80": {
+        "title": "PrinzbenchでKimi K3をベンチマークする",
+        "takeaway": "PrinzbenchでKimi K3をOpenAI o3などと比較し、同じ評価ベンチでの順位と限界を示す。",
+        "notes": "投稿はKimi K3をPrinzbenchの比較表に入れ、トップ層モデルとの差と、評価タスクにおける相対的な強みを公開している。"
+      },
+      "81": {
+        "title": "メタボールのスクロール連動フロントエンドを作る",
+        "takeaway": "Kimi K3が、発光するメタボールとスクロール連動アニメーションを含む洗練されたWeb UIを組み立てた。",
+        "notes": "作者は完成した動的フロントエンドを映像で示しており、プロンプトから視覚演出、レイアウト、アニメーションまで一体で生成されたことが確認できる。"
+      },
+      "82": {
+        "title": "個人サイトを複数モデルで再設計して比較する",
+        "takeaway": "同じ個人サイト再設計タスクでKimi K3を他モデルと並べ、ビジュアル品質と構成の違いを比較している。",
+        "notes": "投稿は複数モデルの出力をまとめて比較し、Kimi K3のデザイン判断、セクション構成、仕上げの傾向を観察できる素材になっている。"
+      },
+      "83": {
+        "title": "宇宙ゲームの景観を拡張する",
+        "takeaway": "Kimi K3で一枚の宇宙ゲーム風景を、地形・宇宙船・ライティングを含む広いビジュアルへ展開した。",
+        "notes": "公開画像はゲーム的なSFシーンを示し、Kimi K3が空間の奥行き、複数オブジェクト、色調をまとめて扱えることを示すデモになっている。"
+      },
+      "84": {
+        "title": "Three.js物理レンダラーの詰まりを解消する",
+        "takeaway": "Kimi K3を実装支援に使い、Three.jsの物理レンダリング問題を前進させた事例。",
+        "notes": "作者は詰まっていた3Dレンダリングの問題をKimi K3で解決したと報告し、ブラウザ上の物理シーンを映像で示している。"
+      },
+      "85": {
+        "title": "ISSデジタルツイン生成を比較する",
+        "takeaway": "ISSデジタルツイン生成タスクでKimi K3と他モデルを比較し、複雑な3D/科学ビジュアルでの出力差を示す。",
+        "notes": "投稿は同じISSデジタルツイン課題に対する複数モデルの結果を比較しており、Kimi K3の構造把握とビジュアル生成の限界を確認できる。"
+      },
+      "86": {
+        "title": "インタラクティブな頭皮エクスプローラーを作る",
+        "takeaway": "Kimi K3が教育用途の人体頭皮ビジュアライザーを生成し、視覚化UIの使い道を示した。",
+        "notes": "公開デモは頭皮構造を探索するインタラクティブ画面で、医療・教育系の説明UIを短い入力から作れる可能性を示している。"
+      },
+      "87": {
+        "title": "3D地球儀ダッシュボードのプロンプトを共有する",
+        "takeaway": "公開プロンプトを使い、Kimi K3で3D地球儀ダッシュボード風のUIを作る流れを示している。",
+        "notes": "投稿には参照プロンプトと完成映像が含まれ、Kimi K3で地球儀、データ表示、ダッシュボード風レイアウトを組み合わせる方法を確認できる。"
+      },
+      "88": {
+        "title": "ブラウザ版Counter-Strikeを単一ファイルで作る",
+        "takeaway": "Kimi K3が単一HTMLファイルでブラウザ向けFPS風ゲームを構築したデモ。",
+        "notes": "作者は一つのファイルで動くCounter-Strike風ゲームを示し、Kimi K3がゲームループ、入力、描画、簡易UIをまとめて生成できることを示している。"
+      },
+      "89": {
+        "title": "WebGPUの森ワールドをレビューする",
+        "takeaway": "Kimi K3生成のWebGPU森ワールドを評価し、没入型3Dシーンでの表現力と限界を示す。",
+        "notes": "投稿はブラウザ内で動く森の3D環境を映像で示し、Kimi K3のWebGPU/3Dシーン生成の実用性を評価する材料になる。"
       }
     }
   },
@@ -1746,10 +1946,10 @@
     "introduction_heading": "소개",
     "intro": "Kimi K3의 근거가 분명한 활용 사례를 모은 저장소입니다",
     "mission": "공개 출처에 기반한 게임, 3D, 모션 디자인, 통합, 평가와 실무적 한계를 수집합니다",
-    "source_boundary": "79개 사례는 모두 신뢰도 높은 공개 출처에 근거합니다. 제목과 작성자는 원문으로 연결되며 약한 후보, 중복, 근거가 부족한 후보는 제외됩니다",
+    "source_boundary": "89개 사례는 모두 신뢰도 높은 공개 출처에 근거합니다. 제목과 작성자는 원문으로 연결되며 약한 후보, 중복, 근거가 부족한 후보는 제외됩니다",
     "overview_heading": "개요",
     "overview": [
-      "크리에이터와 실무자의 high-confidence 사례 79개",
+      "크리에이터와 실무자의 high-confidence 사례 89개",
       "게임, 3D, 프론트엔드, 모션, 코딩, 연구, 평가와 한계를 폭넓게 다룸",
       "각 사례에 출처, 작성자, 유형, 날짜와 프롬프트 경계 보존",
       "개인 경험을 벤치마크로 일반화하지 않음"
@@ -2171,6 +2371,56 @@
         "title": "ChatLLM으로 간단한 코딩 라우팅",
         "takeaway": "간단한 코딩은 Kimi K3로 보내고 어려운 코딩과 디자인은 다른 모델에 배정합니다",
         "notes": "Abacus AI는 ChatLLM에서 Kimi K3를 지원하며 간단한 코딩은 Kimi K3, 어려운 코딩은 Fable 5, 디자인은 GPT-5.6 Sol로 라우팅하는 예시를 제시했습니다. 같은 라우터를 ChatLLM, Abacus AI agent, Claude Code에서 사용할 수 있습니다"
+      },
+      "80": {
+        "title": "Prinzbench에서 Kimi K3 벤치마크하기",
+        "takeaway": "Prinzbench에서 Kimi K3를 OpenAI o3 등과 비교해 같은 평가표 안에서의 순위와 한계를 보여준다.",
+        "notes": "게시물은 Kimi K3를 Prinzbench 비교표에 포함해 상위 모델과의 격차, 평가 과제에서의 상대적 강점을 공개 자료로 제시한다."
+      },
+      "81": {
+        "title": "메타볼 스크롤 프런트엔드 만들기",
+        "takeaway": "Kimi K3가 빛나는 메타볼과 스크롤 연동 애니메이션을 포함한 세련된 웹 UI를 구성했다.",
+        "notes": "작성자는 완성된 동적 프런트엔드를 영상으로 보여 주며, 프롬프트에서 시각 효과, 레이아웃, 애니메이션까지 연결된 결과를 확인할 수 있다."
+      },
+      "82": {
+        "title": "개인 사이트를 여러 모델로 재설계해 비교하기",
+        "takeaway": "같은 개인 사이트 재설계 과제에서 Kimi K3를 다른 모델과 나란히 비교해 시각 품질과 구성 차이를 보여준다.",
+        "notes": "게시물은 여러 모델의 결과를 함께 비교하며 Kimi K3의 디자인 판단, 섹션 구성, 마감 품질을 관찰할 수 있게 한다."
+      },
+      "83": {
+        "title": "우주 게임 풍경 확장하기",
+        "takeaway": "Kimi K3로 우주 게임 장면을 지형, 우주선, 조명까지 포함한 넓은 비주얼로 확장했다.",
+        "notes": "공개 이미지는 게임형 SF 장면을 보여 주며, Kimi K3가 공간 깊이, 여러 오브젝트, 색감을 함께 처리할 수 있음을 보여 주는 데모다."
+      },
+      "84": {
+        "title": "Three.js 물리 렌더러 문제 풀기",
+        "takeaway": "Kimi K3를 구현 보조로 사용해 Three.js 물리 렌더링 문제를 진전시킨 사례다.",
+        "notes": "작성자는 막혀 있던 3D 렌더링 문제를 Kimi K3로 해결했다고 설명하고, 브라우저에서 동작하는 물리 장면을 영상으로 제시한다."
+      },
+      "85": {
+        "title": "ISS 디지털 트윈 생성 비교하기",
+        "takeaway": "ISS 디지털 트윈 생성 과제에서 Kimi K3와 다른 모델을 비교해 복잡한 3D/과학 시각화의 출력 차이를 보여준다.",
+        "notes": "게시물은 같은 ISS 디지털 트윈 과제에 대한 여러 모델 결과를 비교하며 Kimi K3의 구조 이해와 시각 생성 한계를 확인하게 한다."
+      },
+      "86": {
+        "title": "인터랙티브 두피 탐색기 만들기",
+        "takeaway": "Kimi K3가 교육용 인체 두피 시각화 도구를 생성해 설명형 UI 활용 가능성을 보여준다.",
+        "notes": "공개 데모는 두피 구조를 탐색하는 인터랙티브 화면이며, 의료·교육 설명 UI를 짧은 입력으로 만들 수 있음을 보여준다."
+      },
+      "87": {
+        "title": "3D 지구본 대시보드 프롬프트 공유하기",
+        "takeaway": "공개 프롬프트로 Kimi K3에서 3D 지구본 대시보드형 UI를 만드는 흐름을 보여준다.",
+        "notes": "게시물에는 참조 프롬프트와 완성 영상이 포함되어 지구본, 데이터 표시, 대시보드 레이아웃을 결합하는 방식을 확인할 수 있다."
+      },
+      "88": {
+        "title": "브라우저 Counter-Strike를 단일 파일로 만들기",
+        "takeaway": "Kimi K3가 단일 HTML 파일로 브라우저용 FPS 스타일 게임을 만든 데모다.",
+        "notes": "작성자는 하나의 파일에서 실행되는 Counter-Strike 스타일 게임을 보여 주며, Kimi K3가 게임 루프, 입력, 렌더링, 간단한 UI를 함께 생성할 수 있음을 보여준다."
+      },
+      "89": {
+        "title": "WebGPU 숲 월드 리뷰하기",
+        "takeaway": "Kimi K3가 만든 WebGPU 숲 월드를 평가해 몰입형 3D 장면에서의 표현력과 한계를 보여준다.",
+        "notes": "게시물은 브라우저에서 동작하는 숲 3D 환경을 영상으로 보여 주며, Kimi K3의 WebGPU/3D 장면 생성 실용성을 판단할 수 있게 한다."
       }
     }
   },
@@ -2181,10 +2431,10 @@
     "introduction_heading": "Introdução",
     "intro": "Bem-vindo ao repositório de casos de uso de alto sinal do Kimi K3",
     "mission": "Reunimos jogos, cenas 3D, motion design, integrações, avaliações e limites práticos do Kimi K3 apoiados por fontes públicas",
-    "source_boundary": "Os 79 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
+    "source_boundary": "Os 89 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
     "overview_heading": "Visão geral",
     "overview": [
-      "79 casos de alta confiança de criadores e profissionais",
+      "89 casos de alta confiança de criadores e profissionais",
       "Abrange amplamente jogos, Three.js, motion graphics, frontend, pesquisa, ferramentas de agentes, benchmarks, raciocínio e limites práticos",
       "Cada caso preserva fonte, autor, tipo, data e limite do prompt",
       "Relatos individuais não viram benchmarks"
@@ -2606,6 +2856,56 @@
         "title": "Rotear código simples pelo ChatLLM",
         "takeaway": "Envie código simples ao Kimi K3 e reserve código difícil e design para outros modelos",
         "notes": "Abacus AI anuncia Kimi K3 no ChatLLM: código simples com Kimi K3, código difícil com Fable 5 e design com GPT-5.6 Sol. O roteador funciona no ChatLLM, Abacus AI Agent e Claude Code"
+      },
+      "80": {
+        "title": "Avaliar Kimi K3 no Prinzbench",
+        "takeaway": "Use uma atualização independente de benchmark para comparar Kimi K3 com modelos abertos e de fronteira em busca, raciocínio e consistência.",
+        "notes": "O autor adiciona Kimi K3 ao Prinzbench e relata pontuação geral de 47/99, acima do GLM-5.2 com 30/99 e perto de um resultado antigo do Gemini 3.1 Pro com 50/99. A postagem destaca busca forte, raciocínio lógico mais fraco e maior inconsistência que modelos de fronteira comparáveis."
+      },
+      "81": {
+        "title": "Criar frontend com metaballs no scroll",
+        "takeaway": "Peça a Kimi K3 uma página estilo Awwwards com scroll e verifique se efeitos matemáticos substituem malhas ou texturas pesadas.",
+        "notes": "O criador relata uma sessão frontend com Kimi K3 que produziu um site com metaballs reativos ao scroll usando comportamento visual matemático, sem malhas nem texturas. O vídeo anexado é o artefato visível; não há prompt reutilizável nem passos de implementação publicados."
+      },
+      "82": {
+        "title": "Redesenhar um site pessoal entre modelos",
+        "takeaway": "Rode o mesmo brief de redesign em vários harnesses de código e compare tempo, direção visual e aderência à identidade existente.",
+        "notes": "O criador testou Fable 5, GPT-5.6 Sol e Kimi K3 no redesign de seu site pessoal usando o harness oficial e esforço máximo de cada modelo. Kimi K3 levou cerca de 50 minutos, Fable 35 e Sol cerca de 70; a postagem trata o resultado como mini benchmark específico da tarefa."
+      },
+      "83": {
+        "title": "Expandir a paisagem de um jogo espacial",
+        "takeaway": "Use Kimi K3 como uma passada longa para trocar terreno provisório por um ambiente maior inspirado em dados reais.",
+        "notes": "O criador descreve o segundo dia de um jogo espacial: Kimi K3 substituiu uma costa provisória por uma paisagem de 8 x 8 km inspirada na Islândia, adicionou oceano animado sensível à costa, refez a nave e gerou recursos ambientais para uma etapa futura. A fonte também nota execução lenta e problemas de captura de quadros."
+      },
+      "84": {
+        "title": "Desbloquear renderização física em Three.js",
+        "takeaway": "Traga Kimi K3 para um projeto físico em Three.js quando a matemática funciona, mas o pipeline de renderização precisa avançar.",
+        "notes": "O criador relata que um construtor de mundos físicos estava parado havia meses porque o pipeline de renderização não evoluía, embora matemática e física funcionassem. A passada com Kimi K3 fez o projeto avançar e o vídeo mostra o resultado interativo atual."
+      },
+      "85": {
+        "title": "Comparar geração de gêmeo digital da ISS",
+        "takeaway": "Use um desafio 3D com o mesmo prompt para comparar Kimi K3 e GPT-5.6 Sol em reconstrução, controles, rótulos e detalhe visual.",
+        "notes": "AIsaOneHQ relata um benchmark one-shot no qual ambos os modelos reconstruíram um gêmeo digital interativo da Estação Espacial Internacional sem modelo pronto, incluindo Terra, iluminação orbital, controles, rótulos, tours, vista explodida, testes e refinamento. A postagem diz que Kimi K3 terminou mais rápido, custou menos e renderizou melhor nessa rodada."
+      },
+      "86": {
+        "title": "Criar explorador interativo de couro cabeludo",
+        "takeaway": "Use Kimi K3 para uma cena educacional 3D de uma passada com camadas anatômicas, fios responsivos e hotspots interativos.",
+        "notes": "O criador relata que Kimi K3 gerou em uma passada um explorador realista de couro cabeludo com cerca de 105k tokens, iluminação cinematográfica, anatomia em camadas, fios de cabelo responsivos, cortes e hotspots educacionais. A fonte diz que o resultado impressiona, mas não é barato, e traz um link para testar."
+      },
+      "87": {
+        "title": "Compartilhar prompt de dashboard globo 3D",
+        "takeaway": "Estude um prompt e uma imagem de referência para um dashboard globo 3D em Kimi K3 em vez de inferir o fluxo apenas pelo resultado final.",
+        "notes": "O criador responde a pedidos pelo prompt e pela imagem de referência da demo de dashboard globo 3D feita com Kimi K3 e compartilha ambos nas imagens anexas. O repositório registra a fonte como fronteira tutorial de prompt, mas não transcreve texto a partir das imagens."
+      },
+      "88": {
+        "title": "Criar Counter-Strike no navegador em um arquivo",
+        "takeaway": "Use Kimi K3 para gerar um FPS de navegador em arquivo único e conferir mapa, bots, armas, regras de rodada e áudio procedural.",
+        "notes": "O criador relata um jogo tipo Counter-Strike feito com Kimi K3 em um único HTML com mais de 3.700 linhas e sem etapa de build. O artefato inclui mapa inspirado em Dust2, várias armas, recargas, bots, headshots, kill feed, rodada de dois minutos, áudio procedural, Three.js, PBR e custo de API abaixo de 5 dólares."
+      },
+      "89": {
+        "title": "Revisar um mundo florestal WebGPU",
+        "takeaway": "Avalie Kimi K3 como cérebro de agente de código em uma construção longa com Three.js e WebGPU, incluindo qualidade, velocidade, consistência e taxa de edição.",
+        "notes": "O criador relata uma revisão profunda usando Kimi K3 em um mundo de floresta e lago com Three.js e WebGPU, água viva, clima, fauna, ciclo dia-noite e câmeras cinematográficas. A postagem diz que Kimi K3 entregou qualidade alta, foi mais lento que uma geração comparável com GPT-5.6 Sol, manteve consistência e exigiu só um ajuste manual de luminosidade."
       }
     }
   },
@@ -2616,10 +2916,10 @@
     "introduction_heading": "Введение",
     "intro": "Добро пожаловать в подборку содержательных сценариев Kimi K3",
     "mission": "Мы собираем игры, 3D-сцены, motion-дизайн, интеграции, оценки и практические ограничения, подтвержденные публичными источниками",
-    "source_boundary": "Все 79 сценариев основаны на публичных источниках высокой достоверности. Заголовки и авторы ведут к оригиналам; слабые, дублирующие и недостаточно подтвержденные кандидаты исключены",
+    "source_boundary": "Все 89 сценариев основаны на публичных источниках высокой достоверности. Заголовки и авторы ведут к оригиналам; слабые, дублирующие и недостаточно подтвержденные кандидаты исключены",
     "overview_heading": "Обзор",
     "overview": [
-      "79 сценариев с высокой достоверностью и широким охватом задач",
+      "89 сценариев с высокой достоверностью и широким охватом задач",
       "Игры, 3D, frontend, motion-графика, код, исследования, дизайн и оценка ограничений",
       "Для каждого сценария сохранены источник, автор, тип, дата и граница prompt",
       "31 сценарий со средней достоверностью исключен; отдельные наблюдения не выдаются за benchmark"
@@ -3041,6 +3341,56 @@
         "title": "Маршрутизировать простой код через ChatLLM",
         "takeaway": "Отправлять простой код Kimi K3, а сложный код и дизайн — другим моделям",
         "notes": "Abacus AI объявляет Kimi K3 в ChatLLM: простой код — Kimi K3, сложный — Fable 5, дизайн — GPT-5.6 Sol. Роутер работает в ChatLLM, Abacus AI Agent и Claude Code"
+      },
+      "80": {
+        "title": "Проверить Kimi K3 в Prinzbench",
+        "takeaway": "Prinzbench сравнивает Kimi K3 с OpenAI o3 и другими моделями, показывая место и ограничения в одном бенчмарке.",
+        "notes": "Пост включает Kimi K3 в таблицу Prinzbench и показывает разрыв с ведущими моделями, а также относительные сильные стороны в задачах оценки."
+      },
+      "81": {
+        "title": "Собрать frontend с metaball-анимацией при прокрутке",
+        "takeaway": "Kimi K3 создает аккуратный веб-интерфейс со светящимися metaball-элементами и scroll-анимацией.",
+        "notes": "Видео показывает готовый динамический frontend, где визуальные эффекты, компоновка и движение собраны из одного задания."
+      },
+      "82": {
+        "title": "Сравнить редизайн личного сайта между моделями",
+        "takeaway": "Одна задача редизайна личного сайта сравнивает Kimi K3 с другими моделями по визуальному качеству и структуре.",
+        "notes": "Пост показывает несколько результатов рядом и помогает оценить дизайн-решения, структуру секций и уровень отделки Kimi K3."
+      },
+      "83": {
+        "title": "Расширить пейзаж космической игры",
+        "takeaway": "Kimi K3 превращает сцену космической игры в более широкое изображение с ландшафтом, кораблями и освещением.",
+        "notes": "Публичное изображение показывает игровую sci-fi сцену и демонстрирует работу Kimi K3 с глубиной, объектами и цветом."
+      },
+      "84": {
+        "title": "Разблокировать Three.js physics renderer",
+        "takeaway": "Kimi K3 использован как помощник в реализации, чтобы продвинуть проблему физического рендера на Three.js.",
+        "notes": "Автор сообщает, что решил блокирующую 3D-проблему с Kimi K3, и показывает физическую сцену в браузере на видео."
+      },
+      "85": {
+        "title": "Сравнить генерацию цифрового двойника МКС",
+        "takeaway": "Kimi K3 сравнивается с другими моделями на задаче цифрового двойника МКС, показывая различия в сложной 3D-визуализации.",
+        "notes": "Пост сравнивает несколько результатов для одной задачи про МКС и помогает увидеть структурное понимание и визуальные ограничения Kimi K3."
+      },
+      "86": {
+        "title": "Создать интерактивный исследователь кожи головы",
+        "takeaway": "Kimi K3 генерирует образовательный визуализатор кожи головы и показывает применение для объясняющих интерфейсов.",
+        "notes": "Демо показывает интерактивный экран для изучения структур кожи головы, с понятным медицинским и учебным контекстом."
+      },
+      "87": {
+        "title": "Поделиться prompt для 3D-глобус dashboard",
+        "takeaway": "Публичный prompt показывает, как создать в Kimi K3 интерфейс dashboard с 3D-глобусом.",
+        "notes": "Пост содержит prompt и итоговое видео, где глобус, данные и dashboard-композиция собраны вместе."
+      },
+      "88": {
+        "title": "Собрать браузерный Counter-Strike в одном файле",
+        "takeaway": "Kimi K3 создает FPS-игру в стиле Counter-Strike как один HTML-файл.",
+        "notes": "Автор показывает игру, запускаемую из одного файла, с игровым циклом, вводом, рендером и простой UI."
+      },
+      "89": {
+        "title": "Оценить WebGPU-лес",
+        "takeaway": "Лесная WebGPU-сцена, созданная Kimi K3, оценивается по выразительности и ограничениям иммерсивного 3D.",
+        "notes": "Видео показывает лесное окружение в браузере и служит доказательством возможностей Kimi K3 для WebGPU/3D-сцен."
       }
     }
   },
@@ -3051,10 +3401,10 @@
     "introduction_heading": "Giriş",
     "intro": "Kimi K3 için yüksek sinyalli kullanım örnekleri deposuna hoş geldiniz",
     "mission": "Kamuya açık kaynaklara dayanan oyunları, 3D sahneleri, hareketli tasarımları, entegrasyonları, değerlendirmeleri ve pratik sınırları topluyoruz",
-    "source_boundary": "79 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
+    "source_boundary": "89 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
     "overview_heading": "Genel bakış",
     "overview": [
-      "Geniş görev kapsamına sahip yüksek güvenli 79 örnek",
+      "Geniş görev kapsamına sahip yüksek güvenli 89 örnek",
       "Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi",
       "Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur",
       "Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz"
@@ -3476,6 +3826,56 @@
         "title": "Basit kodlamayı ChatLLM ile yönlendir",
         "takeaway": "Basit kodlamayı Kimi K3'e gönder, zor kodlama ve tasarımı diğer modellere ayır",
         "notes": "Abacus AI, ChatLLM'de Kimi K3'ü duyuruyor: basit kodlama Kimi K3, zor kodlama Fable 5, tasarım GPT-5.6 Sol. Router ChatLLM, Abacus AI Agent ve Claude Code'da çalışıyor"
+      },
+      "80": {
+        "title": "Kimi K3ü Prinzbench ile ölçmek",
+        "takeaway": "Prinzbench, Kimi K3ü OpenAI o3 ve diğer modellerle aynı değerlendirme tablosunda karşılaştırarak sırasını ve sınırlarını gösteriyor.",
+        "notes": "Gönderi Kimi K3ü Prinzbench tablosuna ekliyor; üst modellerle farkı ve değerlendirme görevlerindeki göreli güçlü yanları görünür kılıyor."
+      },
+      "81": {
+        "title": "Metaball kaydırma ön yüzü oluşturmak",
+        "takeaway": "Kimi K3, parlayan metaball öğeleri ve kaydırmaya bağlı animasyonlarla rafine bir web arayüzü kuruyor.",
+        "notes": "Yayınlanan video, görsel efekt, yerleşim ve hareketin tek bir çıktıda birleştiği tamamlanmış dinamik ön yüzü gösteriyor."
+      },
+      "82": {
+        "title": "Kişisel siteyi modeller arasında yeniden tasarlamak",
+        "takeaway": "Aynı kişisel site yeniden tasarım görevi Kimi K3 ve diğer modellerle karşılaştırılarak görsel kalite ve yapı farkları gösteriliyor.",
+        "notes": "Gönderi birden fazla model çıktısını yan yana veriyor; Kimi K3ün tasarım kararları, bölüm yapısı ve bitiş kalitesi izlenebiliyor."
+      },
+      "83": {
+        "title": "Bir uzay oyunu manzarasını genişletmek",
+        "takeaway": "Kimi K3, uzay oyunu sahnesini arazi, gemiler ve ışıklandırma içeren geniş bir görsele dönüştürüyor.",
+        "notes": "Kamuya açık görsel, oyun tarzı bir bilim kurgu sahnesi sunuyor ve Kimi K3ün derinlik, nesne ve renk düzenini birlikte ele alışını gösteriyor."
+      },
+      "84": {
+        "title": "Three.js fizik rendererını açmak",
+        "takeaway": "Kimi K3, Three.js fizik render sorununu ilerletmek için uygulama yardımcısı olarak kullanıldı.",
+        "notes": "Yazar, takıldığı 3D render problemini Kimi K3 ile çözdüğünü belirtiyor ve tarayıcıdaki fizik sahnesini video ile gösteriyor."
+      },
+      "85": {
+        "title": "ISS dijital ikiz üretimini karşılaştırmak",
+        "takeaway": "Kimi K3, ISS dijital ikiz görevi üzerinde diğer modellerle karşılaştırılarak karmaşık 3D görselleştirmedeki farkları gösteriyor.",
+        "notes": "Gönderi aynı ISS görevi için birden fazla sonucu kıyaslıyor; Kimi K3ün yapısal anlayışı ve görsel sınırları değerlendirilebiliyor."
+      },
+      "86": {
+        "title": "Etkileşimli saç derisi keşif aracı yapmak",
+        "takeaway": "Kimi K3, eğitim amaçlı insan saç derisi görselleştiricisi üreterek açıklayıcı UI kullanımını gösteriyor.",
+        "notes": "Demo, saç derisi yapılarını keşfetmeye yönelik etkileşimli bir ekran sunuyor; tıbbi ve eğitim odaklı anlatım arayüzleri için kanıt sağlıyor."
+      },
+      "87": {
+        "title": "3D küre panosu promptu paylaşmak",
+        "takeaway": "Açık bir prompt, Kimi K3 ile 3D küre tabanlı pano arayüzü üretme akışını gösteriyor.",
+        "notes": "Gönderide referans prompt ve sonuç videosu var; küre, veri gösterimi ve pano yerleşiminin birleşimi izlenebiliyor."
+      },
+      "88": {
+        "title": "Tarayıcıda tek dosyalık Counter-Strike yapmak",
+        "takeaway": "Kimi K3, tek HTML dosyasında çalışan FPS tarzı bir tarayıcı oyunu oluşturuyor.",
+        "notes": "Yazar tek dosyada çalışan Counter-Strike benzeri oyunu gösteriyor; oyun döngüsü, giriş, render ve basit UI birlikte üretilmiş."
+      },
+      "89": {
+        "title": "WebGPU orman dünyasını değerlendirmek",
+        "takeaway": "Kimi K3 ile oluşturulan WebGPU orman dünyası, etkileyici 3D sahne kalitesi ve sınırları açısından değerlendiriliyor.",
+        "notes": "Video tarayıcıda çalışan bir orman ortamını gösteriyor ve Kimi K3ün WebGPU/3D sahne üretimini değerlendirmek için kanıt sağlıyor."
       }
     }
   },
@@ -3486,10 +3886,10 @@
     "introduction_heading": "简介",
     "intro": "欢迎来到 Kimi K3 高信号使用案例库",
     "mission": "我们收录有公开来源支持的游戏、3D 场景、动态设计、集成、评估与实际限制",
-    "source_boundary": "全部 79 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
+    "source_boundary": "全部 89 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
     "overview_heading": "概览",
     "overview": [
-      "79 个来自创作者和从业者的高置信案例",
+      "89 个来自创作者和从业者的高置信案例",
       "覆盖互动游戏、3D、前端与动态设计、编程、研究、评估、可视化和代理限制",
       "每个案例保留来源、作者、类型、日期和 prompt 边界",
       "不把个人观察包装成 benchmark"
@@ -3911,6 +4311,56 @@
         "title": "通过 ChatLLM 路由简单编码",
         "takeaway": "创建任务路由，将简单编码交给 Kimi K3，把困难编码和设计保留给其他模型",
         "notes": "Abacus AI 宣布 ChatLLM 支持 Kimi K3：简单编码用 Kimi K3，困难编码用 Fable 5，设计用 GPT-5.6 Sol；同一路由可用于 ChatLLM、Abacus AI agent 或 Claude Code"
+      },
+      "80": {
+        "title": "用 Prinzbench 评估 Kimi K3",
+        "takeaway": "用独立 benchmark 更新对比 Kimi K3 与开源、前沿模型在搜索、推理和一致性上的表现。",
+        "notes": "作者把 Kimi K3 加入 Prinzbench，并报告总分 47/99，高于 GLM-5.2 的 30/99，接近旧版 Gemini 3.1 Pro 的 50/99。帖子强调它搜索能力强，但逻辑推理较弱，稳定性也不如可比前沿模型。"
+      },
+      "81": {
+        "title": "构建滚动 Metaball 前端",
+        "takeaway": "让 Kimi K3 生成 Awwwards 风格滚动页面，并检查数学效果是否能替代重型 mesh 或贴图资源。",
+        "notes": "创作者报告一次 Kimi K3 前端会话生成了随滚动反应的 metaball 网站，视觉行为由数学驱动，没有使用 mesh 或贴图。附带视频是可见成品；来源没有公开可复用 prompt 或实现步骤。"
+      },
+      "82": {
+        "title": "跨模型重设计个人网站",
+        "takeaway": "用多个 coding harness 执行同一个网站重设计 brief，并比较耗时、视觉方向和与现有身份的匹配度。",
+        "notes": "创作者用官方 harness 和最高 effort 模式测试 Fable 5、GPT-5.6 Sol 与 Kimi K3 重设计个人网站。Kimi K3 用时约 50 分钟，Fable 约 35 分钟，Sol 约 70 分钟；帖子把它定位为单任务 mini benchmark。"
+      },
+      "83": {
+        "title": "扩展太空游戏地形",
+        "takeaway": "把 Kimi K3 作为长时间构建 pass，把占位地形替换成更大的真实地貌启发游戏环境。",
+        "notes": "创作者描述太空游戏第二天进展：Kimi K3 将小型占位海岸替换为 8 x 8 km 的冰岛启发地形，加入海岸感知的动画海洋，重建飞船外观，并生成下一步要用的环境资产。来源也说明执行较慢，录制帧率问题仍待解决。"
+      },
+      "84": {
+        "title": "解锁 Three.js 物理渲染器",
+        "takeaway": "当数学和物理逻辑可用但渲染管线停滞时，把 Kimi K3 引入 Three.js 物理项目。",
+        "notes": "创作者表示物理世界构建器已停滞数月，底层数学和物理可用，但渲染管线无法推进。Kimi K3 的一次 pass 推动项目继续前进，视频展示了当前交互结果。"
+      },
+      "85": {
+        "title": "对比 ISS 数字孪生生成",
+        "takeaway": "用同 prompt 3D 挑战，对比 Kimi K3 与 GPT-5.6 Sol 在重建、控制、标签和视觉细节上的表现。",
+        "notes": "AIsaOneHQ 报告一个 one-shot benchmark：两个模型都需要在没有预建模型的情况下重建可交互国际空间站数字孪生，包括地球、轨道光照、控制、标签、导览、爆炸视图、测试和优化。帖子称 Kimi K3 在该轮更快、更便宜，渲染效果更强。"
+      },
+      "86": {
+        "title": "构建交互式头皮探索器",
+        "takeaway": "用 Kimi K3 一次生成包含解剖层、响应式发丝和交互热点的 3D 教育场景。",
+        "notes": "创作者报告 Kimi K3 用约 105k tokens 一次生成真实感头皮探索器，包含电影级光照、分层解剖结构、响应式发丝、横截面和教育热点。来源称效果令人印象深刻但成本不低，并提供可试用链接。"
+      },
+      "87": {
+        "title": "分享 3D 地球仪仪表盘 Prompt",
+        "takeaway": "研究 Kimi K3 3D 地球仪仪表盘的 prompt 与参考图设置，而不是只从最终图反推工作流。",
+        "notes": "创作者回应他人对 Kimi K3 3D 地球仪仪表盘 demo 的 prompt 与参考图请求，并在附图中公开两者。本仓库将其记录为教程型 prompt 边界，但不从图片中转录 prompt 文本。"
+      },
+      "88": {
+        "title": "用单文件构建浏览器 Counter-Strike",
+        "takeaway": "用 Kimi K3 生成单文件浏览器 FPS，并检查地图、机器人、武器、回合规则和程序化音频是否完整。",
+        "notes": "创作者报告用 Kimi K3 在一个超过 3,700 行的 HTML 文件里构建了类 Counter-Strike 浏览器游戏，无需 build step。成品包含 Dust2 风格地图、多种武器、换弹、巡逻与推进机器人、爆头、击杀信息、两分钟回合、程序化音频、Three.js、PBR，API 成本低于 5 美元。"
+      },
+      "89": {
+        "title": "评测 WebGPU 森林世界",
+        "takeaway": "在长周期 Three.js 与 WebGPU 世界构建中，把 Kimi K3 作为 coding agent brain，从质量、速度、一致性和人工修改率评估它。",
+        "notes": "创作者用一个梦幻森林湖泊世界深度评测 Kimi K3，场景包含动态水体、天气、野生动物、昼夜变化和电影镜头。帖子称 Kimi K3 质量很高，比类似 GPT-5.6 Sol 生成更慢，但长周期一致性好，只手动调整了一次湖面亮度。"
       }
     }
   },
@@ -3921,10 +4371,10 @@
     "introduction_heading": "簡介",
     "intro": "歡迎來到 Kimi K3 高訊號使用案例庫",
     "mission": "我們收錄具有公開來源的遊戲、3D 場景、動態設計、整合、評估與實務限制",
-    "source_boundary": "全部 79 個案例均來自高信心公開來源；標題與作者連回原文，弱證據、重複或證據不足的候選不會收錄",
+    "source_boundary": "全部 89 個案例均來自高信心公開來源；標題與作者連回原文，弱證據、重複或證據不足的候選不會收錄",
     "overview_heading": "概覽",
     "overview": [
-      "79 個來自創作者與實務工作者的 high-confidence 案例",
+      "89 個來自創作者與實務工作者的 high-confidence 案例",
       "廣泛涵蓋互動遊戲、Three.js、動態設計、前端、研究、評估、工具整合與實務限制",
       "每個案例保留來源、作者、類型、日期與 prompt 邊界",
       "排除全部 31 個 medium-confidence 項目，也不把個人觀察包裝成 benchmark"
@@ -4346,6 +4796,56 @@
         "title": "透過 ChatLLM 路由簡單編碼",
         "takeaway": "建立任務路由，將簡單編碼交給 Kimi K3，把困難編碼與設計保留給其他模型",
         "notes": "Abacus AI 宣布 ChatLLM 支援 Kimi K3：簡單編碼用 Kimi K3、困難編碼用 Fable 5、設計用 GPT-5.6 Sol；同一路由可用於 ChatLLM、Abacus AI agent 或 Claude Code"
+      },
+      "80": {
+        "title": "用 Prinzbench 評估 Kimi K3",
+        "takeaway": "用独立 benchmark 更新对比 Kimi K3 与開源、前沿模型在搜索、推理和一致性上的表现。",
+        "notes": "作者把 Kimi K3 加入 Prinzbench，并報告總分 47/99，高於 GLM-5.2 的 30/99，接近舊版 Gemini 3.1 Pro 的 50/99。帖子强调它搜索能力强，但逻輯推理较弱，穩定性也不如可比前沿模型。"
+      },
+      "81": {
+        "title": "構建滾动 Metaball 前端",
+        "takeaway": "让 Kimi K3 生成 Awwwards 风格滚动页面，并檢查数学效果是否能替代重型 mesh 或貼圖资源。",
+        "notes": "創作者報告一次 Kimi K3 前端会话生成了隨滚动反应的 metaball 網站，视觉行为由数学驱动，没有使用 mesh 或貼图。附带影片是可见成品；来源没有公开可复用 prompt 或實作步骤。"
+      },
+      "82": {
+        "title": "跨模型重设计個人網站",
+        "takeaway": "用多个 coding harness 執行同一个網站重设计 brief，并比较耗時、视觉方向和与现有身份的匹配度。",
+        "notes": "創作者用官方 harness 和最高 effort 模式測試 Fable 5、GPT-5.6 Sol 与 Kimi K3 重设计个人網站。Kimi K3 用时約 50 分鐘，Fable 約 35 分鐘，Sol 約 70 分鐘；帖子把它定位为单任务 mini benchmark。"
+      },
+      "83": {
+        "title": "擴展太空游戏地形",
+        "takeaway": "把 Kimi K3 作为长時间构建 pass，把佔位地形替换成更大的真实地貌启髮游戏環境。",
+        "notes": "創作者描述太空游戏第二天進展：Kimi K3 将小型占位海岸替换为 8 x 8 km 的冰岛启发地形，加入海岸感知的动画海洋，重建飛船外观，并生成下一步要用的环境資產。来源也说明执行较慢，錄制帧率问题仍待解决。"
+      },
+      "84": {
+        "title": "解鎖 Three.js 物理渲染器",
+        "takeaway": "当数学和物理邏辑可用但渲染管线停滯時，把 Kimi K3 引入 Three.js 物理项目。",
+        "notes": "創作者表示物理世界构建器已停滞數月，底层数学和物理可用，但渲染管线无法推進。Kimi K3 的一次 pass 推动项目继续前進，影片展示了当前交互结果。"
+      },
+      "85": {
+        "title": "对比 ISS 数字孪生生成",
+        "takeaway": "用同 prompt 3D 挑战，对比 Kimi K3 与 GPT-5.6 Sol 在重建、控制、標签和视觉细节上的表现。",
+        "notes": "AIsaOneHQ 報告一个 one-shot benchmark：两个模型都需要在没有预建模型的情况下重建可交互國際太空站數位孿生，包括地球、轨道光照、控制、標籤、導覽、爆炸視圖、測試和優化。帖子称 Kimi K3 在该轮更快、更便宜，渲染效果更强。"
+      },
+      "86": {
+        "title": "構建交互式頭皮探索器",
+        "takeaway": "用 Kimi K3 一次生成包含解剖层、響应式髮丝和交互热点的 3D 教育场景。",
+        "notes": "創作者報告 Kimi K3 用約 105k tokens 一次生成真实感頭皮探索器，包含电影级光照、分层解剖结构、響應式髮絲、橫截面和教育热点。来源称效果令人印象深刻但成本不低，并提供可试用链接。"
+      },
+      "87": {
+        "title": "分享 3D 地球儀儀表盘 Prompt",
+        "takeaway": "研究 Kimi K3 3D 地球儀儀表盤的 prompt 与参考圖设置，而不是只从最终圖反推工作流。",
+        "notes": "創作者回应他人对 Kimi K3 3D 地球仪儀表板 demo 的 prompt 与参考图请求，并在附图中公开两者。本仓库将其记錄为教程型 prompt 边界，但不从图片中转錄 prompt 文本。"
+      },
+      "88": {
+        "title": "用单文件構建瀏覽器 Counter-Strike",
+        "takeaway": "用 Kimi K3 生成单文件瀏覽器 FPS，并檢查地圖、机器人、武器、回合规则和程序化音频是否完整。",
+        "notes": "創作者報告用 Kimi K3 在一个超过 3,700 行的 HTML 文件里构建了类 Counter-Strike 瀏覽器游戏，无需 build step。成品包含 Dust2 风格地图、多种武器、换弹、巡逻与推進機器人、爆头、擊殺信息、两分鐘回合、程式化音频、Three.js、PBR，API 成本低于 5 美元。"
+      },
+      "89": {
+        "title": "評测 WebGPU 森林世界",
+        "takeaway": "在长周期 Three.js 与 WebGPU 世界构建中，把 Kimi K3 作为 coding agent brain，从质量、速度、一致性和人工修改率評估它。",
+        "notes": "創作者用一个梦幻森林湖泊世界深度評測 Kimi K3，場景包含動態水体、天气、野生动物、晝夜变化和电影鏡頭。帖子称 Kimi K3 质量很高，比类似 GPT-5.6 Sol 生成更慢，但长周期一致性好，只手动調整了一次湖面亮度。"
       }
     }
   }

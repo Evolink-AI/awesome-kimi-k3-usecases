@@ -11,13 +11,15 @@
   },
   "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
   "supplemental_source_artifact": {
-    "git_commit": "6228470f7726a4385b3a098f9acdb151a9608ec2",
-    "path": "data/use-cases.json",
-    "collector_artifact": ".codex/usecase-update-loop/source/20260718T031851Z-twitterapi.json"
+    "kind": "recurring-update",
+    "run_id": "20260719T010350Z",
+    "candidate_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260719T010350Z/candidate_tweets.json",
+    "semantic_review": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260719T010350Z/semantic_review.json",
+    "selected_source_package": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260719T010350Z/selected-source-package.json"
   },
-  "source_generated_at": "2026-07-18T03:18:51Z",
-  "curated_at": "2026-07-18",
-  "selection_policy": "Includes all 70 high-confidence cases from the owner-supplied use-case-posts.json plus all 9 high-confidence cases from the reviewed supplemental run in commit 6228470; excludes every medium-confidence, deferred, unsure, dropped, and unsupported candidate.",
+  "source_generated_at": "2026-07-19T01:07:51Z",
+  "curated_at": "2026-07-19",
+  "selection_policy": "Includes the 79 previously published high-confidence cases plus 10 high-confidence cases from the 20260719T010350Z recurring update; excludes every deferred, unsure, dropped, unsupported, duplicate, promotional, or unverifiable candidate.",
   "items": [
     {
       "public_number": 1,
@@ -3130,6 +3132,405 @@
       "media_source_urls": [
         "https://pbs.twimg.com/media/HNaeBdMaIAAL3pG.jpg"
       ]
+    },
+    {
+      "public_number": 80,
+      "dedup_key": "https://x.com/deredleritt3r/status/2078606700496773166",
+      "source_url": "https://x.com/deredleritt3r/status/2078606700496773166",
+      "author_url": "https://x.com/deredleritt3r",
+      "author_handle": "@deredleritt3r",
+      "title": "Benchmark Kimi K3 on Prinzbench",
+      "takeaway": "Use an independent benchmark update to compare Kimi K3 with open and frontier models across search, reasoning, and consistency.",
+      "body_notes": "The author adds Kimi K3 to Prinzbench and reports an overall score of 47/99, above GLM-5.2 at 30/99 and near an older Gemini 3.1 Pro result at 50/99. The post highlights strong search performance, weaker logical reasoning, and higher inconsistency than comparable frontier models.",
+      "type": "Benchmark",
+      "date": "2026-07-18",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-party benchmark maintainer reports the new Kimi K3 row, score, comparison context, and a source chart image.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 150,
+        "view_count": 11862,
+        "bookmark_count": 19,
+        "retweet_count": 17
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-80-01.png"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNiv8SrWcAAcovM.png"
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-80-01.png"
+      ]
+    },
+    {
+      "public_number": 81,
+      "dedup_key": "https://x.com/abhinavflac/status/2078603131055993130",
+      "source_url": "https://x.com/abhinavflac/status/2078603131055993130",
+      "author_url": "https://x.com/abhinavflac",
+      "author_handle": "@abhinavflac",
+      "title": "Build a Metaball Scroll Frontend",
+      "takeaway": "Ask Kimi K3 for an Awwwards-style scrolling page and inspect whether mathematical effects can replace heavy mesh or texture assets.",
+      "body_notes": "The creator reports one Kimi K3 frontend session that produced a scrolling metaball-style site using math-driven visual behavior rather than meshes or textures. The attached source video is the visible artifact; no reusable prompt or implementation steps are published.",
+      "type": "Demo",
+      "date": "2026-07-18",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct creator demo with Kimi K3 attribution, frontend target, source video, and bounded prompt description.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 15,
+        "view_count": 1856,
+        "bookmark_count": 10,
+        "retweet_count": 1
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81-poster.jpg",
+          "play_label": "Play case 81 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078603088563425280/vid/avc1/734x360/r1ChN7RRvU0CXxeH.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81.mp4"
+    },
+    {
+      "public_number": 82,
+      "dedup_key": "https://x.com/fabriciocarraro/status/2078574831466078265",
+      "source_url": "https://x.com/fabriciocarraro/status/2078574831466078265",
+      "author_url": "https://x.com/fabriciocarraro",
+      "author_handle": "@fabriciocarraro",
+      "title": "Redesign a Personal Site Across Models",
+      "takeaway": "Run the same site-redesign brief through multiple coding harnesses and compare execution time, visual direction, and fit to the existing identity.",
+      "body_notes": "The creator reports testing Fable 5, GPT-5.6 Sol, and Kimi K3 on a personal-site redesign using each model's official harness and maximum effort mode. Kimi K3 took about 50 minutes, while Fable took 35 minutes and Sol took about 70 minutes; the post frames the outcome as a task-specific mini benchmark rather than a general leaderboard.",
+      "type": "Evaluation",
+      "date": "2026-07-18",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Original evaluator shares method, same-prompt setup, timing, harnesses, and source video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 24,
+        "view_count": 1794,
+        "bookmark_count": 3,
+        "retweet_count": 0
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82-poster.jpg",
+          "play_label": "Play case 82 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078574464480985088/vid/avc1/1280x720/rJe82VstJhpPT5VO.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82.mp4"
+    },
+    {
+      "public_number": 83,
+      "dedup_key": "https://x.com/startracker/status/2078543423167160342",
+      "source_url": "https://x.com/startracker/status/2078543423167160342",
+      "author_url": "https://x.com/startracker",
+      "author_handle": "@startracker",
+      "title": "Expand a Space Game Landscape",
+      "takeaway": "Use Kimi K3 as a long-running pass to replace placeholder terrain with a larger real-world-inspired game environment.",
+      "body_notes": "The creator describes day two of a space-game build where Kimi K3 replaced a small placeholder coast with an 8 x 8 km Iceland-inspired landscape, added coastline-aware animated ocean, rebuilt the spacecraft exterior, and generated additional environment assets for a later pass. The source also notes slow, deliberate execution and remaining frame-capture issues.",
+      "type": "Demo",
+      "date": "2026-07-18",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct development update with concrete before/after game-world changes, source video, and stated limitations.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 18,
+        "view_count": 1218,
+        "bookmark_count": 2,
+        "retweet_count": 1
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83-poster.jpg",
+          "play_label": "Play case 83 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078543335242055680/vid/avc1/1280x720/zlyZvJCommxz8U-J.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83.mp4"
+    },
+    {
+      "public_number": 84,
+      "dedup_key": "https://x.com/mattwatkajtys/status/2078523373861339475",
+      "source_url": "https://x.com/mattwatkajtys/status/2078523373861339475",
+      "author_url": "https://x.com/mattwatkajtys",
+      "author_handle": "@mattwatkajtys",
+      "title": "Unblock a Three.js Physics Renderer",
+      "takeaway": "Bring Kimi K3 into a stalled Three.js physics project when the math works but the render pipeline needs progress.",
+      "body_notes": "The creator reports that a physics world builder had been stuck for months because the render pipeline was not progressing, while the underlying math and physics already worked. The Kimi K3 pass moved the project forward and the attached video shows the current interactive result.",
+      "type": "Demo",
+      "date": "2026-07-18",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct creator report ties Kimi K3 to a specific stalled Three.js render-pipeline problem and visible source media.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 161,
+        "view_count": 12192,
+        "bookmark_count": 51,
+        "retweet_count": 11
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84-poster.jpg",
+          "play_label": "Play case 84 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078522895756914688/vid/avc1/1080x1080/3LH5CGL98JQYyHiR.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84.mp4"
+    },
+    {
+      "public_number": 85,
+      "dedup_key": "https://x.com/AIsaOneHQ/status/2078519527588200536",
+      "source_url": "https://x.com/AIsaOneHQ/status/2078519527588200536",
+      "author_url": "https://x.com/AIsaOneHQ",
+      "author_handle": "@AIsaOneHQ",
+      "title": "Compare ISS Digital Twin Generation",
+      "takeaway": "Use a same-prompt 3D modeling challenge to compare Kimi K3 and GPT-5.6 Sol on reconstruction, controls, labels, and visual detail.",
+      "body_notes": "AIsaOneHQ reports a one-shot benchmark where both models had to reconstruct an interactive International Space Station digital twin without a prebuilt model, including Earth, orbital lighting, cinematic controls, labels, guided tours, exploded view, testing, and refinement. The post says Kimi K3 finished faster, cost less, and delivered stronger rendering in that run.",
+      "type": "Benchmark",
+      "date": "2026-07-18",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Publisher supplies same-prompt benchmark conditions, comparison dimensions, and source video evidence.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 28,
+        "view_count": 110072,
+        "bookmark_count": 3,
+        "retweet_count": 2
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85-poster.jpg",
+          "play_label": "Play case 85 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078516178557800448/vid/avc1/1080x1080/PuD01XTqYXO4x3p8.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85.mp4"
+    },
+    {
+      "public_number": 86,
+      "dedup_key": "https://x.com/MiaAI_lab/status/2078508824752017757",
+      "source_url": "https://x.com/MiaAI_lab/status/2078508824752017757",
+      "author_url": "https://x.com/MiaAI_lab",
+      "author_handle": "@MiaAI_lab",
+      "title": "Build an Interactive Human Scalp Explorer",
+      "takeaway": "Use Kimi K3 for a single-shot educational 3D scene with anatomical layers, responsive hair strands, and interactive hotspots.",
+      "body_notes": "The creator reports that Kimi K3 single-shot a realistic 3D human scalp explorer using about 105k tokens, with cinematic lighting, layered anatomy, responsive hair strands, cross-sections, and educational hotspots. The source says the result was impressive but not cheap, and links a try-it-yourself target.",
+      "type": "Demo",
+      "date": "2026-07-18",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct creator demo includes concrete 3D/educational features, token count, cost caveat, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 25,
+        "view_count": 2321,
+        "bookmark_count": 2,
+        "retweet_count": 4
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86-poster.jpg",
+          "play_label": "Play case 86 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078501655742447616/vid/avc1/1280x720/9vu-qwUBWoPrJX0o.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86.mp4"
+    },
+    {
+      "public_number": 87,
+      "dedup_key": "https://x.com/hqmank/status/2078465403349840144",
+      "source_url": "https://x.com/hqmank/status/2078465403349840144",
+      "author_url": "https://x.com/hqmank",
+      "author_handle": "@hqmank",
+      "title": "Share a 3D Globe Dashboard Prompt",
+      "takeaway": "Study a shared prompt and reference-image setup for a Kimi K3 3D globe dashboard instead of inferring the workflow from the final image alone.",
+      "body_notes": "The creator responds to requests for the prompt and reference image behind a Kimi K3 3D globe dashboard demo and shares both in attached source images. The repo records the source as a tutorial-style prompt boundary but does not transcribe prompt text from images.",
+      "type": "Tutorial",
+      "date": "2026-07-18",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Original creator supplies public prompt/reference-image evidence for a concrete Kimi K3 dashboard demo.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 28,
+        "view_count": 2099,
+        "bookmark_count": 33,
+        "retweet_count": 3
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87-poster.jpg",
+          "play_label": "Play case 87 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078104007995019264/vid/avc1/1110x720/qyVprYIuzp0MlXuv.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87.mp4"
+    },
+    {
+      "public_number": 88,
+      "dedup_key": "https://x.com/prasenx/status/2078453069021659477",
+      "source_url": "https://x.com/prasenx/status/2078453069021659477",
+      "author_url": "https://x.com/prasenx",
+      "author_handle": "@prasenx",
+      "title": "Build Browser Counter-Strike in One File",
+      "takeaway": "Use Kimi K3 to generate a single-file browser FPS and check whether the result covers map layout, bots, weapons, round rules, and procedural audio.",
+      "body_notes": "The creator reports building a Counter-Strike-like browser game with Kimi K3 in one HTML file of more than 3,700 lines and no build step. The described artifact includes a Dust2-inspired map, several weapons, reloads, patrolling and pushing bots, headshots, kill feed, a two-minute round, procedural audio, Three.js, PBR, and under-$5 API cost.",
+      "type": "Demo",
+      "date": "2026-07-18",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct creator source lists concrete game mechanics, technical constraints, cost boundary, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 120,
+        "view_count": 7967,
+        "bookmark_count": 38,
+        "retweet_count": 11
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88-poster.jpg",
+          "play_label": "Play case 88 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078452851207204865/vid/avc1/1280x720/_GzgGD8yJCgO9nCv.mp4?tag=29"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88.mp4"
+    },
+    {
+      "public_number": 89,
+      "dedup_key": "https://x.com/stas_sorokin_/status/2078435840728908093",
+      "source_url": "https://x.com/stas_sorokin_/status/2078435840728908093",
+      "author_url": "https://x.com/stas_sorokin_",
+      "author_handle": "@stas_sorokin_",
+      "title": "Review a WebGPU Forest World",
+      "takeaway": "Evaluate Kimi K3 as a coding-agent brain on a long-horizon Three.js and WebGPU world build, including quality, speed, consistency, and edit rate.",
+      "body_notes": "The creator reports a deep Kimi K3 coding-agent review using a dreamlike Three.js and WebGPU forest-lake world with living water, weather, wildlife, time-of-day changes, and cinematic cameras. The post says Kimi K3 produced very high quality, ran slower than a comparable GPT-5.6 Sol generation, kept consistency over a long horizon, and needed only one manual luminosity tweak.",
+      "type": "Evaluation",
+      "date": "2026-07-18",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Original evaluator provides test setup, result dimensions, speed/quality/consistency observations, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 17,
+        "view_count": 51829,
+        "bookmark_count": 16,
+        "retweet_count": 6
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89-poster.jpg",
+          "play_label": "Play case 89 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/ext_tw_video/2078435785989095424/pu/vid/avc1/640x360/dawHqU-26vKTepI1.mp4?tag=12"
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89.mp4"
     }
   ]
 }

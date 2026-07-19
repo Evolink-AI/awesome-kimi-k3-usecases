@@ -81,7 +81,18 @@
     "2078172629496746183",
     "2078158089929601203",
     "2078140696910037002",
-    "2078022418661257411"
+    "2078022418661257411",
+    "2078606700496773166",
+    "2078603131055993130",
+    "2078574831466078265",
+    "2078543423167160342",
+    "2078523373861339475",
+    "2078519527588200536",
+    "2078508824752017757",
+    "2078465403349840144",
+    "2078453069021659477",
+    "2078435840728908093"
   ],
-  "note": "This manifest records 79 published high-confidence selections. The 2026-07-18 recurring run reviewed 79 in-window candidates from a 624-candidate Twitter API artifact, selected 9, deferred 8, marked 5 unsure, and dropped 57. Public case data lives in data/use-cases.json."
+  "note": "This manifest records 79 published high-confidence selections. The 2026-07-18 recurring run reviewed 79 in-window candidates from a 624-candidate Twitter API artifact, selected 9, deferred 8, marked 5 unsure, and dropped 57. Public case data lives in data/use-cases.json.",
+  "updated_at": "2026-07-19T01:07:51Z"
 }

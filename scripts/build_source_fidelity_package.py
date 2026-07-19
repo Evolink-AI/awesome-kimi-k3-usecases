@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OWNER_PRESENTATION = {
     "menu_layout": "centralized-single-table",
     "acknowledge_layout": "inline-comma",
-    "quick_start_position": "penultimate-section",
+    "quick_start_position": "pre-case-section",
     "media_policy": "all-source-media",
     "video_playback_policy": "r2-playable",
     "localization_fallback": "english",

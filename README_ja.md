@@ -27,11 +27,11 @@ Kimi K3 の実例を厳選したリポジトリです
 
 **公開情報に基づくゲーム、3D、モーションデザイン、統合、評価、実用上の制約を収録します**
 
-79件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています
+89件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています
 
 ## 📊 概要
 
-- クリエイターと実務家によるhigh-confidenceの79事例
+- クリエイターと実務家によるhigh-confidenceの89事例
 - ゲーム、Three.js、モーション、フロントエンド、コーディング、研究、評価、実用上の制約を幅広く収録
 - 各事例で出典、著者、種別、日付、プロンプト境界を保持
 - 個人の報告をベンチマークとして扱いません
@@ -39,16 +39,42 @@ Kimi K3 の実例を厳選したリポジトリです
 > [!NOTE]
 > 具体的な証拠を優先し、未公開のプロンプトや手順を補完しません
 
-**1. [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link) · 2. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key) · 3. [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)**
+<a id="quick-api-access"></a>
+## ⚡ クイックスタート
+
+EvoLinkの文書化されたモデルIDは `kimi-k3` で、モデルページとChat Completions API文書が利用できます
+
+1. [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=readme&utm_campaign=awesome-kimi-k3-usecases&utm_content=landing_overview)
+2. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
+
+```bash
+curl --request POST \
+  --url "https://direct.evolink.ai/v1/chat/completions" \
+  --header "Authorization: Bearer $EVOLINK_API_KEY" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "model": "kimi-k3",
+    "messages": [
+      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
+    ]
+  }'
+```
+
+Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
+
+[EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
+
+> [!IMPORTANT]
+> EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。独立したKimi K3のブラウザ／ノーコード画面は確認できておらず、本リポジトリは独自の有料APIテストも主張しません
 
 ## 📑 目次
 
 | Section | Cases |
 |---|---|
-| [インタラクティブゲームと3D](#games-3d) | 25 |
-| [フロントエンドとモーションデザイン](#frontend-motion) | 16 |
+| [インタラクティブゲームと3D](#games-3d) | 28 |
+| [フロントエンドとモーションデザイン](#frontend-motion) | 20 |
 | [コーディングと統合](#coding-integrations) | 10 |
-| [評価と制約](#evaluation-limits) | 28 |
+| [評価と制約](#evaluation-limits) | 31 |
 | [関連リソース](#related-resources) | 関連リソース |
 | [クイックスタート](#quick-api-access) | クイックスタート |
 | [謝辞](#acknowledge) | 謝辞と訂正 |
@@ -134,6 +160,16 @@ Kimi K3 の実例を厳選したリポジトリです
 | [ブラウザ版バトルロイヤルを反復改善](#case-77) | インタラクティブゲームと3D | 機能の多いブラウザゲームでは、長い自律反復と的を絞った追加プロンプトを見込みます | Demo |
 | [受賞級スタイルのWebサイトを作る](#case-78) | フロントエンドとモーションデザイン | 最終画像だけでなく、完全な録画セッションでKimi K3のWeb制作工程を評価します | Tutorial |
 | [ChatLLMで簡単なコーディングをルーティング](#case-79) | コーディングと統合 | 簡単なコーディングをKimi K3に送り、難しいコーディングとデザインを別モデルに割り当てます | Integration |
+| [PrinzbenchでKimi K3をベンチマークする](#case-80) | 評価と制約 | PrinzbenchでKimi K3をOpenAI o3などと比較し、同じ評価ベンチでの順位と限界を示す。 | Benchmark |
+| [メタボールのスクロール連動フロントエンドを作る](#case-81) | フロントエンドとモーションデザイン | Kimi K3が、発光するメタボールとスクロール連動アニメーションを含む洗練されたWeb UIを組み立てた。 | Demo |
+| [個人サイトを複数モデルで再設計して比較する](#case-82) | フロントエンドとモーションデザイン | 同じ個人サイト再設計タスクでKimi K3を他モデルと並べ、ビジュアル品質と構成の違いを比較している。 | Evaluation |
+| [宇宙ゲームの景観を拡張する](#case-83) | インタラクティブゲームと3D | Kimi K3で一枚の宇宙ゲーム風景を、地形・宇宙船・ライティングを含む広いビジュアルへ展開した。 | Demo |
+| [Three.js物理レンダラーの詰まりを解消する](#case-84) | インタラクティブゲームと3D | Kimi K3を実装支援に使い、Three.jsの物理レンダリング問題を前進させた事例。 | Demo |
+| [ISSデジタルツイン生成を比較する](#case-85) | 評価と制約 | ISSデジタルツイン生成タスクでKimi K3と他モデルを比較し、複雑な3D/科学ビジュアルでの出力差を示す。 | Benchmark |
+| [インタラクティブな頭皮エクスプローラーを作る](#case-86) | フロントエンドとモーションデザイン | Kimi K3が教育用途の人体頭皮ビジュアライザーを生成し、視覚化UIの使い道を示した。 | Demo |
+| [3D地球儀ダッシュボードのプロンプトを共有する](#case-87) | フロントエンドとモーションデザイン | 公開プロンプトを使い、Kimi K3で3D地球儀ダッシュボード風のUIを作る流れを示している。 | Tutorial |
+| [ブラウザ版Counter-Strikeを単一ファイルで作る](#case-88) | インタラクティブゲームと3D | Kimi K3が単一HTMLファイルでブラウザ向けFPS風ゲームを構築したデモ。 | Demo |
+| [WebGPUの森ワールドをレビューする](#case-89) | 評価と制約 | Kimi K3生成のWebGPU森ワールドを評価し、没入型3Dシーンでの表現力と限界を示す。 | Evaluation |
 
 <a id="games-3d"></a>
 ## 🎮 インタラクティブゲームと3D
@@ -526,6 +562,51 @@ Type: Demo | Date: 2026-07-17
 
 ---
 
+<a id="case-83"></a>
+### Case 83: [宇宙ゲームの景観を拡張する](https://x.com/startracker/status/2078543423167160342) (by [@startracker](https://x.com/startracker))
+
+**Kimi K3で一枚の宇宙ゲーム風景を、地形・宇宙船・ライティングを含む広いビジュアルへ展開した。**
+
+公開画像はゲーム的なSFシーンを示し、Kimi K3が空間の奥行き、複数オブジェクト、色調をまとめて扱えることを示すデモになっている。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83-poster.jpg" alt="Case 83 source video poster" height="360"></a>
+
+[Play case 83 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-83.mp4)
+
+Type: Demo | Date: 2026-07-18
+
+---
+
+<a id="case-84"></a>
+### Case 84: [Three.js物理レンダラーの詰まりを解消する](https://x.com/mattwatkajtys/status/2078523373861339475) (by [@mattwatkajtys](https://x.com/mattwatkajtys))
+
+**Kimi K3を実装支援に使い、Three.jsの物理レンダリング問題を前進させた事例。**
+
+作者は詰まっていた3Dレンダリングの問題をKimi K3で解決したと報告し、ブラウザ上の物理シーンを映像で示している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84-poster.jpg" alt="Case 84 source video poster" height="360"></a>
+
+[Play case 84 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-84.mp4)
+
+Type: Demo | Date: 2026-07-18
+
+---
+
+<a id="case-88"></a>
+### Case 88: [ブラウザ版Counter-Strikeを単一ファイルで作る](https://x.com/prasenx/status/2078453069021659477) (by [@prasenx](https://x.com/prasenx))
+
+**Kimi K3が単一HTMLファイルでブラウザ向けFPS風ゲームを構築したデモ。**
+
+作者は一つのファイルで動くCounter-Strike風ゲームを示し、Kimi K3がゲームループ、入力、描画、簡易UIをまとめて生成できることを示している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88-poster.jpg" alt="Case 88 source video poster" height="360"></a>
+
+[Play case 88 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-88.mp4)
+
+Type: Demo | Date: 2026-07-18
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 フロントエンドとモーションデザイン
@@ -769,6 +850,66 @@ Viktor OddyはKimi K3で受賞級スタイルのWebサイトを作る13分のチ
 [Play case 78 tutorial video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-78.mp4)
 
 Type: Tutorial | Date: 2026-07-17
+
+---
+
+<a id="case-81"></a>
+### Case 81: [メタボールのスクロール連動フロントエンドを作る](https://x.com/abhinavflac/status/2078603131055993130) (by [@abhinavflac](https://x.com/abhinavflac))
+
+**Kimi K3が、発光するメタボールとスクロール連動アニメーションを含む洗練されたWeb UIを組み立てた。**
+
+作者は完成した動的フロントエンドを映像で示しており、プロンプトから視覚演出、レイアウト、アニメーションまで一体で生成されたことが確認できる。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81-poster.jpg" alt="Case 81 source video poster" height="360"></a>
+
+[Play case 81 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-81.mp4)
+
+Type: Demo | Date: 2026-07-18
+
+---
+
+<a id="case-82"></a>
+### Case 82: [個人サイトを複数モデルで再設計して比較する](https://x.com/fabriciocarraro/status/2078574831466078265) (by [@fabriciocarraro](https://x.com/fabriciocarraro))
+
+**同じ個人サイト再設計タスクでKimi K3を他モデルと並べ、ビジュアル品質と構成の違いを比較している。**
+
+投稿は複数モデルの出力をまとめて比較し、Kimi K3のデザイン判断、セクション構成、仕上げの傾向を観察できる素材になっている。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82-poster.jpg" alt="Case 82 source video poster" height="360"></a>
+
+[Play case 82 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-82.mp4)
+
+Type: Evaluation | Date: 2026-07-18
+
+---
+
+<a id="case-86"></a>
+### Case 86: [インタラクティブな頭皮エクスプローラーを作る](https://x.com/MiaAI_lab/status/2078508824752017757) (by [@MiaAI_lab](https://x.com/MiaAI_lab))
+
+**Kimi K3が教育用途の人体頭皮ビジュアライザーを生成し、視覚化UIの使い道を示した。**
+
+公開デモは頭皮構造を探索するインタラクティブ画面で、医療・教育系の説明UIを短い入力から作れる可能性を示している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86-poster.jpg" alt="Case 86 source video poster" height="360"></a>
+
+[Play case 86 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-86.mp4)
+
+Type: Demo | Date: 2026-07-18
+
+---
+
+<a id="case-87"></a>
+### Case 87: [3D地球儀ダッシュボードのプロンプトを共有する](https://x.com/hqmank/status/2078465403349840144) (by [@hqmank](https://x.com/hqmank))
+
+**公開プロンプトを使い、Kimi K3で3D地球儀ダッシュボード風のUIを作る流れを示している。**
+
+投稿には参照プロンプトと完成映像が含まれ、Kimi K3で地球儀、データ表示、ダッシュボード風レイアウトを組み合わせる方法を確認できる。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87-poster.jpg" alt="Case 87 source video poster" height="360"></a>
+
+[Play case 87 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-87.mp4)
+
+Type: Tutorial | Date: 2026-07-18
 
 ---
 
@@ -1320,6 +1461,49 @@ Type: Benchmark | Date: 2026-07-17
 
 ---
 
+<a id="case-80"></a>
+### Case 80: [PrinzbenchでKimi K3をベンチマークする](https://x.com/deredleritt3r/status/2078606700496773166) (by [@deredleritt3r](https://x.com/deredleritt3r))
+
+**PrinzbenchでKimi K3をOpenAI o3などと比較し、同じ評価ベンチでの順位と限界を示す。**
+
+投稿はKimi K3をPrinzbenchの比較表に入れ、トップ層モデルとの差と、評価タスクにおける相対的な強みを公開している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-80-01.png"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-80-01.png" alt="Case 80 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-18
+
+---
+
+<a id="case-85"></a>
+### Case 85: [ISSデジタルツイン生成を比較する](https://x.com/AIsaOneHQ/status/2078519527588200536) (by [@AIsaOneHQ](https://x.com/AIsaOneHQ))
+
+**ISSデジタルツイン生成タスクでKimi K3と他モデルを比較し、複雑な3D/科学ビジュアルでの出力差を示す。**
+
+投稿は同じISSデジタルツイン課題に対する複数モデルの結果を比較しており、Kimi K3の構造把握とビジュアル生成の限界を確認できる。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85-poster.jpg" alt="Case 85 source video poster" height="360"></a>
+
+[Play case 85 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-85.mp4)
+
+Type: Benchmark | Date: 2026-07-18
+
+---
+
+<a id="case-89"></a>
+### Case 89: [WebGPUの森ワールドをレビューする](https://x.com/stas_sorokin_/status/2078435840728908093) (by [@stas_sorokin_](https://x.com/stas_sorokin_))
+
+**Kimi K3生成のWebGPU森ワールドを評価し、没入型3Dシーンでの表現力と限界を示す。**
+
+投稿はブラウザ内で動く森の3D環境を映像で示し、Kimi K3のWebGPU/3Dシーン生成の実用性を評価する材料になる。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89-poster.jpg" alt="Case 89 source video poster" height="360"></a>
+
+[Play case 89 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89.mp4)
+
+Type: Evaluation | Date: 2026-07-18
+
+---
+
 <a id="related-resources"></a>
 ## 関連リソース
 
@@ -1329,36 +1513,11 @@ Type: Benchmark | Date: 2026-07-17
 - [KimiK3.io](https://kimik3.io/)
 - EvoLinkのモデルページとAPI文書は確認済みですが、インストール可能なKimi K3 skillは未確認です
 
-<a id="quick-api-access"></a>
-## ⚡ クイックスタート
-
-EvoLinkの文書化されたモデルIDは `kimi-k3` で、モデルページとChat Completions API文書が利用できます
-
-1. [EvoLinkでKimi K3の詳細と料金を見る](https://evolink.ai/kimi-k3?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=model_link)
-2. [EvoLink APIキーを作成・管理](https://evolink.ai/dashboard/keys?utm_source=github&utm_medium=quickstart&utm_campaign=awesome-kimi-k3-usecases&utm_content=api_key)
-3. [EvoLinkのKimi K3 API文書を開く](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
-
-```bash
-curl --request POST \
-  --url "https://direct.evolink.ai/v1/chat/completions" \
-  --header "Authorization: Bearer $EVOLINK_API_KEY" \
-  --header "Content-Type: application/json" \
-  --data '{
-    "model": "kimi-k3",
-    "messages": [
-      {"role": "user", "content": "Introduce Kimi K3 in three sentences."}
-    ]
-  }'
-```
-
-> [!IMPORTANT]
-> EvoLinkのモデルページとAPI文書が公開ルートとIDを確認しています。独立したKimi K3のブラウザ／ノーコード画面は確認できておらず、本リポジトリは独自の有料APIテストも主張しません
-
 <a id="acknowledge"></a>
 ## 🙏 謝辞
 
 Kimi K3の成果を公開した皆さまに感謝します
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_)
 
 *帰属や記述の訂正は公開ソースを添えてissueを作成してください*

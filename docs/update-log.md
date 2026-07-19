@@ -1,5 +1,16 @@
 # Update Log
 
+## 2026-07-19 — Daily recurring update to 89 cases
+
+- Collected the fixed 24-hour Kimi K3 window through registered TwitterAPI queries with max 3 pages per query and minimum likes 11
+- Classified all 80 review-queue candidates and selected 10 high-confidence source-backed cases; deferred 6, marked 6 unsure, and dropped 58
+- Expanded the canonical public set from 79 to 89 cases while preserving contiguous numbering, stable anchors, source URLs, authors, Type, dates, model ID, endpoint, code, prompt boundary, and media order across English plus ten localized READMEs
+- Uploaded 19 new source media files to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, including playable MP4 links with poster frames
+- Moved Quick API Access before the case collection and aligned the conversion-surface contract with the unavailable browser/no-code detail surface
+- Rebuilt source fidelity to 89 cases, 98 expected public visuals, and 67 playable R2 videos
+- Passed handoff, usecase, repository, R2 readback, public-link, conversion-surface, localization, and diff audits before publication
+- Preserved the owner boundary that no credit-consuming paid API runtime test is required or claimed
+
 ## 2026-07-18 — Concurrent update reconciliation and 79-case full-set audit
 
 - Preserved the concurrent public update in commit `6228470`, adding all 9 newly reviewed high-confidence cases instead of force-pushing the earlier 70-case build
