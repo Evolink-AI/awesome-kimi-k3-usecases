@@ -65,7 +65,7 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 [Read the Kimi K3 API documentation](https://docs.evolink.ai/en/api-manual/language-series/kimi-k3/kimi-k3-chat?utm_source=github&utm_medium=docs&utm_campaign=awesome-kimi-k3-usecases&utm_content=first_run)
 
 > [!IMPORTANT]
-> The EvoLink model page and API documentation verify the public route and model ID. This usecase repository links to those surfaces but does not claim an independent credit-consuming API smoke test
+> The EvoLink model page and API documentation verify the public route and model ID. No independent Kimi K3 browser or no-code trial surface has been verified, and this usecase repository does not claim an independent credit-consuming API smoke test
 
 ## 📑 Menu
 
