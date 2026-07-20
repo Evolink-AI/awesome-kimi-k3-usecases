@@ -1,5 +1,15 @@
 # Update Log
 
+## 2026-07-20 — Daily recurring update to 99 cases
+
+- Collected the fixed 24-hour Kimi K3 window through registered TwitterAPI queries with max 3 pages per query and minimum likes 11
+- Classified all 85 review-queue candidates and selected 10 high-confidence source-backed cases; deferred 13, marked 11 unsure, and dropped 51
+- Expanded the canonical public set from 89 to 99 cases while preserving contiguous numbering, stable anchors, source URLs, authors, Type, dates, model ID, endpoint, code, prompt boundary, and media order across English plus ten localized READMEs
+- Uploaded 20 new source media files to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, including playable MP4 links with poster frames
+- Added cases covering same-prompt architectural comparison, CS asset integration, browser animation benchmarks, Minecraft review, Figma/MCP design testing, Command Code integration, 3D game exploration, landing-page workflow, API tier limits, and Limbo-style game comparison
+- Rebuilt source fidelity to 99 cases, 108 expected public visuals, and 77 playable R2 videos
+- Preserved the unavailable browser/no-code Kimi K3 surface disclosure and the owner boundary that no credit-consuming paid API runtime test is required or claimed
+
 ## 2026-07-19 — Daily recurring update to 89 cases
 
 - Collected the fixed 24-hour Kimi K3 window through registered TwitterAPI queries with max 3 pages per query and minimum likes 11

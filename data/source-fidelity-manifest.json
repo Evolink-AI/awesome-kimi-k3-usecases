@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "source_artifact": "combined-use-case-source.json",
-  "source_manifest_sha256": "d4586457c4b9aab38f549ef813b952e2123727f5466ab3e6ebb6583aa89aaab2",
+  "source_manifest_sha256": "85db30a6bc13f0f8e2c52684b339f5d8c6ad467e7df2e7aaadbfd9f8d49840e2",
   "source_inputs": [
     {
       "kind": "primary-file",
-      "path": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260719T010350Z/combined-use-case-source.json",
-      "sha256": "d4586457c4b9aab38f549ef813b952e2123727f5466ab3e6ebb6583aa89aaab2"
+      "path": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260720T010226Z/combined-use-case-source.json",
+      "sha256": "85db30a6bc13f0f8e2c52684b339f5d8c6ad467e7df2e7aaadbfd9f8d49840e2"
     }
   ],
-  "selected_case_count": 89,
-  "cases_with_source_media": 89,
-  "expected_public_visual_count": 98,
+  "selected_case_count": 99,
+  "cases_with_source_media": 99,
+  "expected_public_visual_count": 108,
   "media_policy": "all-source-media",
   "owner_presentation": {
     "menu_layout": "centralized-single-table",
@@ -1085,6 +1085,126 @@
         "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89-poster.jpg"
       ],
       "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-89.mp4"
+    },
+    {
+      "public_number": 90,
+      "source_url": "https://x.com/RoundtableSpace/status/2079004612070416755",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078998002232926208/vid/avc1/1280x720/Qb4Q7BG6pJeat8AC.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-90-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-90.mp4"
+    },
+    {
+      "public_number": 91,
+      "source_url": "https://x.com/karankendre/status/2078938615900688728",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078938200698216448/vid/avc1/1280x720/Xuz1HDRtSrPYRPzS.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-91-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-91.mp4"
+    },
+    {
+      "public_number": 92,
+      "source_url": "https://x.com/0xzynex/status/2078920667542487230",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078920529222733825/vid/avc1/576x1024/7y027rsWdFBvLnlU.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-92-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-92.mp4"
+    },
+    {
+      "public_number": 93,
+      "source_url": "https://x.com/ashen_one/status/2078892418976666071",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078891869082107905/vid/avc1/1280x720/UQ7Sf29uwzgP2J5P.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-93-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-93.mp4"
+    },
+    {
+      "public_number": 94,
+      "source_url": "https://x.com/MAXdeg0/status/2078855257686196399",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078854726741786624/vid/avc1/1280x720/TGOSfgAzqQaehIHT.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-94-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-94.mp4"
+    },
+    {
+      "public_number": 95,
+      "source_url": "https://x.com/MrAhmadAwais/status/2078841789205934547",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078766298620985344/vid/avc1/1212x720/iagJd18i2K5CNtgr.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-95-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-95.mp4"
+    },
+    {
+      "public_number": 96,
+      "source_url": "https://x.com/ice_bearcute/status/2078828887468056763",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078828715602276352/vid/avc1/712x360/SRt9VWwjQr2yBvfD.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-96-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-96.mp4"
+    },
+    {
+      "public_number": 97,
+      "source_url": "https://x.com/MAXdeg0/status/2078776969072877715",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078453137099104256/vid/avc1/1108x720/DC_gKn-DzrdEa9HB.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-97-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-97.mp4"
+    },
+    {
+      "public_number": 98,
+      "source_url": "https://x.com/mnmn94253156337/status/2078739859154620497",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078739468719374336/vid/avc1/1280x720/MIVo6WZxmyugtrtt.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-98-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-98.mp4"
+    },
+    {
+      "public_number": 99,
+      "source_url": "https://x.com/ChrisGPT/status/2078679211116835017",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2078679101301202944/vid/avc1/1264x588/4ipgLcsGLZo0CS9P.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-99-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-99.mp4"
     }
   ]
 }

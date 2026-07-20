@@ -480,6 +480,56 @@
       "title": "評测 WebGPU 森林世界",
       "takeaway": "在长周期 Three.js 与 WebGPU 世界构建中，把 Kimi K3 作为 coding agent brain，从质量、速度、一致性和人工修改率評估它。",
       "notes": "創作者用一个梦幻森林湖泊世界深度評測 Kimi K3，場景包含動態水体、天气、野生动物、晝夜变化和电影鏡頭。帖子称 Kimi K3 质量很高，比类似 GPT-5.6 Sol 生成更慢，但长周期一致性好，只手动調整了一次湖面亮度。"
+    },
+    "90": {
+      "title": "比較玻璃屋同題提示",
+      "takeaway": "用同一個建築場景提示比較 Kimi K3 與 Opus 4.8 在氛圍、光照和空間完整度上的差異。",
+      "notes": "Roundtable Space 報告 Kimi K3 與 Claude Opus 4.8 在接近價格下的同提示對比。Kimi 的結果被描述為藍調時刻的玻璃屋、溫暖室內光、反射水池和藍圖細節；Opus 的結果更偏字體設計，空間完成度較弱。"
+    },
+    "91": {
+      "title": "用生成資產建構 CS",
+      "takeaway": "原型化小型 Counter-Strike 風格瀏覽器遊戲時，用 Kimi K3 寫遊戲程式碼，用 GPT Image 2 生成資產。",
+      "notes": "Karan Kendre 報告使用 Kimi K3 建構遊戲、GPT Image 2 建構資產，做出一個 Counter-Strike 風格專案，總成本約 10 美元。來源影片是可見成品，因此該記錄更適合作為多工具組合 workflow，而不是 Kimi 單模型 benchmark。"
+    },
+    "92": {
+      "title": "評測體素足球進球",
+      "takeaway": "把同一個純 HTML/CSS/JS 足球動畫提示交給兩個模型，比較動作品質和成本。",
+      "notes": "0xzynex 報告了一次同提示、一次生成、無重試的比較：Kimi K3 與 GPT-5.6 Sol High 都要在瀏覽器程式碼中生成方塊風足球高光，包含盤帶、進球、動態鏡頭和慶祝。貼文稱 Kimi 動作更流暢且成本更低，影片保留了對比結果。"
+    },
+    "93": {
+      "title": "審看 Minecraft benchmark",
+      "takeaway": "在把發布 hype 或模型價格當作證據前，先看結構化 Minecraft 測評。",
+      "notes": "ashen_one 發布了 Kimi K3 錄影測評，章節包括 hype 與現實、benchmark、定價、Minecraft 測試、首次執行 bug 和最終判斷。這個來源把測評框架和早期可靠性問題放進一個可審看的影片中。"
+    },
+    "94": {
+      "title": "執行五項 UI UX 測試",
+      "takeaway": "不要只看一張 frontend 截圖，而是用多項 UI、Logo 和 Figma MCP 任務評估 Kimi K3。",
+      "notes": "MAXdeg0 報告用 Claude Code 和 Figma MCP server 對 Kimi K3 做了五項 UI/UX 與 logo 設計測試。來源列出 landing page 重建、hero section 重建和品牌設計等任務，並至少給出了 landing pass 的時間與成本。"
+    },
+    "95": {
+      "title": "使用 Command Code Design skill",
+      "takeaway": "在 token 預算內建構視覺遊戲原型時，把 Kimi K3 與 Command Code 的專用 design skill 結合使用。",
+      "notes": "Ahmad Awais 報告用 Kimi K3、Command Code 和 /design skill 建構 Forza 風追車視角遊戲。貼文稱整次 session 成本 0.97 美元，並包含道路/車輛比例、背景、動畫、霧效等修復步驟，是具體的 agent harness workflow。"
+    },
+    "96": {
+      "title": "建構金字塔探險遊戲",
+      "takeaway": "用 Kimi K3 做一次完整的一日 3D 探索遊戲建構，再檢查任務、室內空間和探索範圍後評價品質。",
+      "notes": "ice_bearcute 報告一天內完全用 Kimi K3 建構了 3D Pyramid Expedition 遊戲。來源說明這不是簡單外景，玩家可以探索古墓並完成任務；附帶媒體提供了可見 gameplay 證據。"
+    },
+    "97": {
+      "title": "從參考圖建立 landing",
+      "takeaway": "用參考圖板、Figma AI、Motion Sites 與 Kimi K3，把視覺方向轉成可複用的 landing page section。",
+      "notes": "MAXdeg0 描述了一個 landing page workflow：從 Pinterest 拉取風格參考，用 Figma AI remix 質感，或把 UI reference 加 prompt 貼進 Motion Sites，讓 Kimi K3 建構頁面。貼文還說該方法可複用於更多 section，並連結完整 prompting guide。"
+    },
+    "98": {
+      "title": "衡量 API 檔位限制",
+      "takeaway": "規劃 Kimi K3 agent run 時，要看 token、tier、TPM 和 TPD，不只看模型標價。",
+      "notes": "中文來源記錄了一次個人 Kimi K3 API 試用：充值 5 美元後，setup 階段約消耗 1.1 美元，隨後觸發 Tier0 限制。它列出輸入、快取輸入、輸出價格，以及 TPM/TPD 等限額概念，因此適合作為早期限制案例而非普遍定價結論。"
+    },
+    "99": {
+      "title": "比較 Limbo 風格 demo",
+      "takeaway": "在同一個遊戲原型上比較 Kimi K3 與 Fable 5 的可玩範圍、視覺打磨、成本和 bug。",
+      "notes": "ChrisGPT 比較了 Fable 5 與 Kimi K3 的 Limbo clone demo。貼文稱 Fable 輸出 2,400 行程式碼、24K output tokens，成本 1.20 美元；Kimi 輸出 3,000 行和 30K tokens，成本 0.12 美元，Kimi 增加了更多 gameplay，但 bug 也更多。"
     }
   }
 }

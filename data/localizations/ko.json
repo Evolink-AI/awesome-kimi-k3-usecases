@@ -480,6 +480,56 @@
       "title": "WebGPU 숲 월드 리뷰하기",
       "takeaway": "Kimi K3가 만든 WebGPU 숲 월드를 평가해 몰입형 3D 장면에서의 표현력과 한계를 보여준다.",
       "notes": "게시물은 브라우저에서 동작하는 숲 3D 환경을 영상으로 보여 주며, Kimi K3의 WebGPU/3D 장면 생성 실용성을 판단할 수 있게 한다."
+    },
+    "90": {
+      "title": "유리 집 프롬프트 비교",
+      "takeaway": "같은 건축 장면 프롬프트로 Kimi K3와 Opus 4.8의 분위기, 조명, 공간 완성도를 비교한다.",
+      "notes": "Roundtable Space는 비슷한 가격 조건에서 Kimi K3와 Claude Opus 4.8에 같은 프롬프트를 준 비교를 보고했다. Kimi 결과는 블루아워 유리 집, 따뜻한 실내 조명, 반사되는 수영장, 설계도 디테일로 설명되고, Opus 결과는 더 타이포그래피 중심이며 공간 완성도가 낮다고 정리된다."
+    },
+    "91": {
+      "title": "생성 에셋으로 CS 만들기",
+      "takeaway": "작은 Counter-Strike식 브라우저 게임을 프로토타이핑할 때 Kimi K3는 게임 코드, GPT Image 2는 에셋에 사용한다.",
+      "notes": "Karan Kendre는 Counter-Strike식 프로젝트에서 Kimi K3가 게임을 만들고 GPT Image 2가 에셋을 만들었으며 총비용은 약 10달러였다고 보고했다. 소스 영상이 보이는 산출물이므로, 이 항목은 Kimi 단독 벤치마크가 아니라 도구 조합 워크플로로 기록한다."
+    },
+    "92": {
+      "title": "복셀 축구 골 벤치마크",
+      "takeaway": "같은 순수 HTML/CSS/JS 축구 애니메이션 프롬프트를 두 모델에 실행해 움직임 품질과 비용을 비교한다.",
+      "notes": "0xzynex는 Kimi K3와 GPT-5.6 Sol High에 드리블, 골, 동적 카메라, 세리머니를 포함한 블록 스타일 축구 장면을 브라우저 코드로 만들게 한 원샷 비교를 보고했다. 게시물은 Kimi가 더 부드러운 움직임과 낮은 비용을 냈다고 말하며, 영상이 비교 산출물을 보존한다."
+    },
+    "93": {
+      "title": "Minecraft 벤치마크 검토",
+      "takeaway": "출시 hype나 가격만으로 판단하기 전에 구조화된 Minecraft 리뷰를 확인한다.",
+      "notes": "ashen_one은 Kimi K3 리뷰 영상을 올렸고, hype와 현실, 벤치마크, 가격, Minecraft 테스트, 첫 실행 버그, 최종 판단 챕터를 포함했다. 하나의 확인 가능한 영상 안에 벤치마크 프레임과 초기 신뢰성 메모가 함께 있어 유용하다."
+    },
+    "94": {
+      "title": "다섯 가지 UI UX 테스트 실행",
+      "takeaway": "frontend 스크린샷 하나 대신 UI, 로고, Figma MCP 작업 여러 개로 Kimi K3를 평가한다.",
+      "notes": "MAXdeg0는 Claude Code와 Figma MCP 서버를 사용해 Kimi K3로 다섯 가지 UI/UX 및 로고 디자인 테스트를 했다고 보고했다. 랜딩 페이지 재구성, hero section 재구성, 로고 작업 등이 포함되며, 최소한 landing 작업의 시간과 비용이 구체적으로 제시된다."
+    },
+    "95": {
+      "title": "Command Code Design skill 사용",
+      "takeaway": "토큰 예산 안에서 시각적 게임 프로토타입을 만들 때 Kimi K3와 Command Code의 전용 design skill을 결합한다.",
+      "notes": "Ahmad Awais는 Command Code와 /design skill에서 Kimi K3를 사용해 Forza식 추격 카메라 게임을 만들었다고 보고했다. 세션 비용은 0.97달러였고 도로와 자동차 스케일, 배경, 애니메이션, 안개 수정이 포함되어 구체적인 agent harness 워크플로다."
+    },
+    "96": {
+      "title": "피라미드 탐험 게임 만들기",
+      "takeaway": "Kimi K3로 하루 동안 3D 탐험 게임을 만든 뒤 퀘스트, 내부 공간, 탐험 범위를 보고 품질을 판단한다.",
+      "notes": "ice_bearcute는 Kimi K3만으로 하루 만에 3D Pyramid Expedition 게임을 만들었다고 보고했다. 단순 외부 장면이 아니라 고대 무덤을 탐험하고 퀘스트를 완료할 수 있다고 설명하며, 첨부 미디어가 gameplay 증거를 제공한다."
+    },
+    "97": {
+      "title": "레퍼런스로 landing 만들기",
+      "takeaway": "레퍼런스 보드, Figma AI, Motion Sites와 Kimi K3를 사용해 시각 방향성을 재사용 가능한 landing 섹션으로 바꾼다.",
+      "notes": "MAXdeg0는 Pinterest에서 스타일 레퍼런스를 모으고 Figma AI로 룩을 리믹스하거나, UI 레퍼런스와 prompt를 Motion Sites에 넣어 Kimi K3가 페이지를 만들게 하는 흐름을 설명했다. 같은 기법을 다른 섹션에도 재사용할 수 있으며 전체 prompting guide 링크도 제공한다."
+    },
+    "98": {
+      "title": "API tier 제한 측정",
+      "takeaway": "Kimi K3 agent 실행은 headline 가격뿐 아니라 token, tier, TPM, TPD 기준으로 예산을 잡는다.",
+      "notes": "중국어 소스는 5달러를 충전해 Kimi K3 API를 가볍게 시험한 뒤 설정 중 약 1.1달러가 소모되고 Tier0 제한에 걸린 개인 경험을 보고한다. 입력, 캐시 입력, 출력 가격과 TPM/TPD 같은 제한 개념을 함께 제시해 초기 제한 사례로 유용하다."
+    },
+    "99": {
+      "title": "Limbo식 demo 비교",
+      "takeaway": "같은 게임 프로토타입에서 Kimi K3와 Fable 5를 비교하며 플레이 범위, 완성도, 비용, 버그를 본다.",
+      "notes": "ChrisGPT는 Limbo 클론 demo에서 Fable 5와 Kimi K3를 비교했다. Fable은 2,400줄과 24K output token에 1.20달러, Kimi는 3,000줄과 30K output token에 0.12달러였고, Kimi는 더 많은 gameplay를 추가했지만 버그도 더 많았다고 보고한다."
     }
   }
 }

@@ -480,6 +480,56 @@
       "title": "Revisar um mundo florestal WebGPU",
       "takeaway": "Avalie Kimi K3 como cérebro de agente de código em uma construção longa com Three.js e WebGPU, incluindo qualidade, velocidade, consistência e taxa de edição.",
       "notes": "O criador relata uma revisão profunda usando Kimi K3 em um mundo de floresta e lago com Three.js e WebGPU, água viva, clima, fauna, ciclo dia-noite e câmeras cinematográficas. A postagem diz que Kimi K3 entregou qualidade alta, foi mais lento que uma geração comparável com GPT-5.6 Sol, manteve consistência e exigiu só um ajuste manual de luminosidade."
+    },
+    "90": {
+      "title": "Comparar prompts de casa de vidro",
+      "takeaway": "Use uma cena arquitetônica com o mesmo prompt para comparar Kimi K3 e Opus 4.8 em atmosfera, iluminação e completude espacial.",
+      "notes": "Roundtable Space relata uma comparação com o mesmo prompt entre Kimi K3 e Claude Opus 4.8 por preço parecido. O resultado do Kimi é descrito como uma casa de vidro na hora azul com luz interna quente, piscina refletiva e detalhes de plantas, enquanto o Opus aparece como uma saída mais tipográfica e menos espacial."
+    },
+    "91": {
+      "title": "Criar CS com assets gerados",
+      "takeaway": "Combine Kimi K3 para o código do jogo com GPT Image 2 para os assets ao prototipar um pequeno jogo estilo Counter-Strike no navegador.",
+      "notes": "Karan Kendre relata usar Kimi K3 para criar o jogo e GPT Image 2 para criar os assets de um projeto estilo Counter-Strike, com custo total perto de 10 dólares. O vídeo fonte é o artefato visível, então o registro vale como fluxo de combinação de ferramentas, não como benchmark só de Kimi."
+    },
+    "92": {
+      "title": "Avaliar um gol de futebol voxel",
+      "takeaway": "Execute o mesmo prompt de animação de futebol em HTML/CSS/JS puro em dois modelos para comparar movimento e custo.",
+      "notes": "0xzynex relata uma comparação one-shot, sem tentativas extras, na qual Kimi K3 e GPT-5.6 Sol High criaram uma jogada de futebol em blocos com drible, gol, câmera dinâmica e comemoração em código de navegador. O post diz que Kimi gerou movimento mais fluido e custo menor, com o vídeo preservando o artefato."
+    },
+    "93": {
+      "title": "Revisar uma prova Minecraft",
+      "takeaway": "Assista a uma revisão estruturada de Minecraft antes de aceitar hype de lançamento ou preço como evidência suficiente.",
+      "notes": "ashen_one publica uma revisão gravada de Kimi K3 com capítulos sobre hype versus realidade, benchmarks, preço, teste Minecraft, bugs de primeira execução e veredito final. A fonte é útil por reunir enquadramento de benchmark e notas iniciais de confiabilidade em um vídeo inspecionável."
+    },
+    "94": {
+      "title": "Executar cinco testes UI UX",
+      "takeaway": "Avalie Kimi K3 em várias tarefas de UI, logo e Figma MCP em vez de confiar em um único screenshot frontend.",
+      "notes": "MAXdeg0 relata cinco testes de UI/UX e design de logo com Kimi K3 usando Claude Code e o servidor Figma MCP. A fonte lista tipos de tarefa como reconstrução de landing page, hero section e design visual, com tempo e custo concretos para pelo menos a landing."
+    },
+    "95": {
+      "title": "Usar a skill Design do Command Code",
+      "takeaway": "Combine Kimi K3 com uma skill dedicada de design no Command Code ao criar um protótipo visual de jogo dentro de orçamento de tokens.",
+      "notes": "Ahmad Awais relata usar Kimi K3 com Command Code e a skill /design para um jogo com câmera de perseguição estilo Forza. O post diz que a sessão custou 0,97 dólar e incluiu correções de escala da estrada e do carro, fundo, animação e neblina, formando um fluxo concreto de harness de agente."
+    },
+    "96": {
+      "title": "Construir um jogo de pirâmide",
+      "takeaway": "Use Kimi K3 em uma passada de um dia para um jogo 3D de exploração, depois inspecione missões, interiores e escopo antes de julgar qualidade.",
+      "notes": "ice_bearcute relata ter construído em um dia um jogo 3D Pyramid Expedition com Kimi K3. A fonte diz que o resultado não é só uma cena externa: jogadores podem explorar uma tumba antiga e completar missões, enquanto a mídia anexada fornece evidência visível de gameplay."
+    },
+    "97": {
+      "title": "Criar landings a partir de referências",
+      "takeaway": "Use boards de referência, Figma AI e Motion Sites com Kimi K3 para transformar direção visual em seções reutilizáveis de landing page.",
+      "notes": "MAXdeg0 descreve um fluxo para landing pages: buscar estilos no Pinterest, remixar o visual com Figma AI ou colar referência de UI mais prompt no Motion Sites para Kimi K3 construir a página. O post diz que a técnica se reutiliza em mais seções e aponta para um guia completo."
+    },
+    "98": {
+      "title": "Medir limites de nível da API",
+      "takeaway": "Planeje execuções de agente com Kimi K3 por tokens, nível, TPM e TPD, não só pelo preço de manchete do modelo.",
+      "notes": "A fonte em chinês relata uma experiência pessoal com a API do Kimi K3 após carregar 5 dólares, vendo cerca de 1,1 dólar consumido na configuração e depois batendo limites Tier0. Ela lista preços de entrada, entrada em cache e saída, além de TPM e TPD, servindo como relatório inicial de limitação."
+    },
+    "99": {
+      "title": "Comparar um demo estilo Limbo",
+      "takeaway": "Compare escopo jogável, polimento, custo e bugs ao testar Kimi K3 contra Fable 5 no mesmo protótipo de jogo.",
+      "notes": "ChrisGPT compara Fable 5 e Kimi K3 em um demo tipo Limbo. O post informa 2.400 linhas e 24K tokens por 1,20 dólar para Fable, contra 3.000 linhas e 30K tokens por 0,12 dólar para Kimi, com mais gameplay, mas também mais bugs."
     }
   }
 }

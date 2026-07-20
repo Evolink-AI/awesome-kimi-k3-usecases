@@ -480,6 +480,56 @@
       "title": "Оценить WebGPU-лес",
       "takeaway": "Лесная WebGPU-сцена, созданная Kimi K3, оценивается по выразительности и ограничениям иммерсивного 3D.",
       "notes": "Видео показывает лесное окружение в браузере и служит доказательством возможностей Kimi K3 для WebGPU/3D-сцен."
+    },
+    "90": {
+      "title": "Сравнить промпты стеклянного дома",
+      "takeaway": "Используйте одну архитектурную сцену, чтобы сравнить Kimi K3 и Opus 4.8 по атмосфере, свету и пространственной завершенности.",
+      "notes": "Roundtable Space сообщает о сравнении Kimi K3 и Claude Opus 4.8 на одном промпте и примерно близкой цене. Результат Kimi описан как стеклянный дом в синий час с теплым внутренним светом, отражающим бассейном и чертежами, тогда как Opus выглядит более типографическим и менее пространственно полным."
+    },
+    "91": {
+      "title": "Собрать CS с генеративными ассетами",
+      "takeaway": "Совмещайте Kimi K3 для кода игры и GPT Image 2 для ассетов при прототипировании небольшого браузерного проекта в стиле Counter-Strike.",
+      "notes": "Karan Kendre сообщает, что Kimi K3 собрал игру, а GPT Image 2 создал ассеты для проекта в стиле Counter-Strike с общей стоимостью около 10 долларов. Видео является видимым артефактом, поэтому кейс полезен как workflow сочетания инструментов, а не как чистый benchmark Kimi."
+    },
+    "92": {
+      "title": "Проверить voxel-футбольный гол",
+      "takeaway": "Запустите один и тот же prompt для футбольной анимации на чистом HTML/CSS/JS в двух моделях, чтобы сравнить движение и стоимость.",
+      "notes": "0xzynex сообщает об one-shot сравнении без повторов: Kimi K3 и GPT-5.6 Sol High строили блочную футбольную сцену с дриблингом, голом, динамичной камерой и празднованием в браузерном коде. В посте сказано, что Kimi дал более плавное движение и меньшую стоимость; видео сохраняет артефакт сравнения."
+    },
+    "93": {
+      "title": "Разобрать Minecraft benchmark",
+      "takeaway": "Посмотрите структурированный Minecraft-обзор, прежде чем считать хайп запуска или цену достаточным доказательством.",
+      "notes": "ashen_one публикует записанный обзор Kimi K3 с разделами о hype versus reality, benchmarks, pricing, Minecraft test, first-run bugs и final verdict. Источник полезен тем, что объединяет рамку benchmark и ранние заметки о надежности в одном проверяемом видео."
+    },
+    "94": {
+      "title": "Провести пять UI UX тестов",
+      "takeaway": "Оценивайте Kimi K3 на нескольких задачах UI, logo и Figma MCP, а не по одному frontend-скриншоту.",
+      "notes": "MAXdeg0 сообщает о пяти UI/UX и logo design тестах Kimi K3 с Claude Code и сервером Figma MCP. Источник перечисляет задачи вроде landing page rebuild, hero section rebuild и logo/design work, а также дает конкретные время и стоимость как минимум для landing."
+    },
+    "95": {
+      "title": "Использовать Design skill Command Code",
+      "takeaway": "Соединяйте Kimi K3 с выделенным design skill в Command Code, когда делаете визуальный игровой прототип под token budget.",
+      "notes": "Ahmad Awais сообщает об использовании Kimi K3 с Command Code и /design skill для игры с chase camera в стиле Forza. Пост указывает стоимость сессии 0,97 доллара и исправления масштаба дороги и машины, фона, анимации и тумана, поэтому это конкретный agent-harness workflow."
+    },
+    "96": {
+      "title": "Построить игру про пирамиду",
+      "takeaway": "Используйте Kimi K3 для однодневной 3D exploration game итерации, затем проверяйте quests, interiors и scope перед оценкой качества.",
+      "notes": "ice_bearcute сообщает, что за день построил 3D игру Pyramid Expedition с Kimi K3. Источник говорит, что это не просто внешняя сцена: игрок может исследовать древнюю гробницу и выполнять задания, а приложенное media дает видимое доказательство gameplay."
+    },
+    "97": {
+      "title": "Создавать landing из референсов",
+      "takeaway": "Используйте reference boards, Figma AI и Motion Sites с Kimi K3, чтобы превращать visual direction в переиспользуемые landing sections.",
+      "notes": "MAXdeg0 описывает landing-page workflow: брать style references из Pinterest, remix через Figma AI или вставлять UI reference плюс prompt в Motion Sites, чтобы Kimi K3 построил страницу. Пост также говорит, что метод можно повторять для новых sections, и ссылается на полный prompting guide."
+    },
+    "98": {
+      "title": "Измерить API tier limits",
+      "takeaway": "Планируйте Kimi K3 agent runs по tokens, tier, TPM и TPD, а не только по headline model pricing.",
+      "notes": "Китайскоязычный источник описывает личный тест Kimi K3 API после пополнения на 5 долларов: около 1,1 доллара ушло во время настройки, затем сработали Tier0 limits. Он перечисляет цены input, cached input и output, а также TPM/TPD, поэтому это ранний отчет об ограничениях."
+    },
+    "99": {
+      "title": "Сравнить Limbo-style demo",
+      "takeaway": "Сравнивайте playable scope, polish, cost и bugs при тестировании Kimi K3 против Fable 5 на одном игровом prototype.",
+      "notes": "ChrisGPT сравнивает Fable 5 и Kimi K3 на Limbo clone demo. В посте указано: Fable дал 2 400 lines и 24K output tokens за 1,20 доллара, Kimi дал 3 000 lines и 30K tokens за 0,12 доллара; Kimi добавил больше gameplay, но и больше bugs."
     }
   }
 }

@@ -71,10 +71,10 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 
 | Section | Cases |
 |---|---|
-| [Juegos interactivos y 3D](#games-3d) | 28 |
-| [Frontend y diseño en movimiento](#frontend-motion) | 20 |
-| [Programación e integraciones](#coding-integrations) | 10 |
-| [Evaluación y límites](#evaluation-limits) | 31 |
+| [Juegos interactivos y 3D](#games-3d) | 29 |
+| [Frontend y diseño en movimiento](#frontend-motion) | 22 |
+| [Programación e integraciones](#coding-integrations) | 12 |
+| [Evaluación y límites](#evaluation-limits) | 36 |
 | [Recursos relacionados](#related-resources) | Recursos relacionados |
 | [Inicio rápido](#quick-api-access) | Inicio rápido |
 | [Agradecimientos](#acknowledge) | Créditos y correcciones |
@@ -170,6 +170,16 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 | [Compartir un prompt de dashboard globo 3D](#case-87) | Frontend y diseño en movimiento | Estudia un setup con prompt e imagen de referencia para un dashboard globo 3D de Kimi K3 en vez de inferir el flujo solo por la imagen final. | Tutorial |
 | [Crear Counter-Strike en navegador en un archivo](#case-88) | Juegos interactivos y 3D | Usa Kimi K3 para generar un FPS de navegador en un solo archivo y verifica mapa, bots, armas, reglas de ronda y audio procedural. | Demo |
 | [Revisar un mundo forestal WebGPU](#case-89) | Evaluación y límites | Evalúa Kimi K3 como cerebro de agente de código en una construcción larga con Three.js y WebGPU, incluyendo calidad, velocidad, consistencia y tasa de edición. | Evaluation |
+| [Comparar prompts de casa de cristal](#case-90) | Evaluación y límites | Usa una escena arquitectónica con el mismo prompt para comparar Kimi K3 y Opus 4.8 en atmósfera, iluminación y completitud espacial. | Evaluation |
+| [Crear CS con recursos generados](#case-91) | Programación e integraciones | Combina Kimi K3 para el código del juego con GPT Image 2 para los recursos al prototipar un pequeño juego estilo Counter-Strike en navegador. | Integration |
+| [Evaluar un gol de fútbol vóxel](#case-92) | Evaluación y límites | Ejecuta el mismo prompt de animación de fútbol en HTML/CSS/JS puro en dos modelos para comparar calidad de movimiento y coste. | Benchmark |
+| [Revisar una prueba Minecraft](#case-93) | Evaluación y límites | Mira una revisión estructurada de Minecraft antes de tratar la publicidad de lanzamiento o el precio como evidencia suficiente. | Benchmark |
+| [Ejecutar cinco pruebas UI UX](#case-94) | Frontend y diseño en movimiento | Evalúa Kimi K3 con varias tareas de UI, logotipo y Figma MCP en lugar de confiar en una sola captura frontend. | Evaluation |
+| [Usar la skill Design de Command Code](#case-95) | Programación e integraciones | Combina Kimi K3 con una skill de diseño dedicada en Command Code al crear un prototipo visual de juego con presupuesto de tokens. | Integration |
+| [Construir un juego de pirámide](#case-96) | Juegos interactivos y 3D | Usa Kimi K3 para una pasada de un día en un juego 3D de exploración, luego inspecciona misiones, interiores y alcance antes de juzgar la calidad. | Demo |
+| [Crear landings desde referencias](#case-97) | Frontend y diseño en movimiento | Usa tableros de referencia, Figma AI y Motion Sites con Kimi K3 para convertir dirección visual en secciones de landing reutilizables. | Tutorial |
+| [Medir límites de nivel API](#case-98) | Evaluación y límites | Planifica ejecuciones de agente con Kimi K3 según tokens, nivel, TPM y TPD, no solo por el precio principal del modelo. | Limit |
+| [Comparar un demo estilo Limbo](#case-99) | Evaluación y límites | Compara alcance jugable, pulido, coste y fallos al probar Kimi K3 frente a Fable 5 en el mismo prototipo de juego. | Benchmark |
 
 <a id="games-3d"></a>
 ## 🎮 Juegos interactivos y 3D
@@ -607,6 +617,21 @@ Type: Demo | Date: 2026-07-18
 
 ---
 
+<a id="case-96"></a>
+### Case 96: [Construir un juego de pirámide](https://x.com/ice_bearcute/status/2078828887468056763) (by [@ice_bearcute](https://x.com/ice_bearcute))
+
+**Usa Kimi K3 para una pasada de un día en un juego 3D de exploración, luego inspecciona misiones, interiores y alcance antes de juzgar la calidad.**
+
+ice_bearcute informa haber construido en un día un juego 3D Pyramid Expedition con Kimi K3. La fuente dice que el resultado no es solo una escena exterior: los jugadores pueden explorar una tumba antigua y completar misiones, mientras que el medio adjunto aporta evidencia visible de jugabilidad.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-96.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-96-poster.jpg" alt="Case 96 source video poster" height="360"></a>
+
+[Play case 96 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-96.mp4)
+
+Type: Demo | Date: 2026-07-19
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 Frontend y diseño en movimiento
@@ -913,6 +938,36 @@ Type: Tutorial | Date: 2026-07-18
 
 ---
 
+<a id="case-94"></a>
+### Case 94: [Ejecutar cinco pruebas UI UX](https://x.com/MAXdeg0/status/2078855257686196399) (by [@MAXdeg0](https://x.com/MAXdeg0))
+
+**Evalúa Kimi K3 con varias tareas de UI, logotipo y Figma MCP en lugar de confiar en una sola captura frontend.**
+
+MAXdeg0 informa cinco pruebas de UI/UX y diseño de logotipos con Kimi K3 usando Claude Code y el servidor Figma MCP. La fuente enumera tareas como reconstrucción de landing page, reconstrucción de hero section y trabajo de marca, e incluye tiempo y coste concretos para al menos la landing.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-94.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-94-poster.jpg" alt="Case 94 source video poster" height="360"></a>
+
+[Play case 94 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-94.mp4)
+
+Type: Evaluation | Date: 2026-07-19
+
+---
+
+<a id="case-97"></a>
+### Case 97: [Crear landings desde referencias](https://x.com/MAXdeg0/status/2078776969072877715) (by [@MAXdeg0](https://x.com/MAXdeg0))
+
+**Usa tableros de referencia, Figma AI y Motion Sites con Kimi K3 para convertir dirección visual en secciones de landing reutilizables.**
+
+MAXdeg0 describe un flujo para landing pages: obtener referencias de estilo en Pinterest, remezclar el look con Figma AI o pegar una referencia de UI más prompt en Motion Sites para que Kimi K3 construya la página. El post añade que la técnica se reutiliza en más secciones y enlaza una guía de prompts.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-97.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-97-poster.jpg" alt="Case 97 source video poster" height="360"></a>
+
+[Play case 97 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-97.mp4)
+
+Type: Tutorial | Date: 2026-07-19
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 Programación e integraciones
@@ -1052,6 +1107,36 @@ Abacus AI anuncia Kimi K3 en ChatLLM: código simple con Kimi K3, código difíc
 <a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-79.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/cases/case-79.jpg" alt="Case 79 source image 1" height="360"></a>
 
 Type: Integration | Date: 2026-07-17
+
+---
+
+<a id="case-91"></a>
+### Case 91: [Crear CS con recursos generados](https://x.com/karankendre/status/2078938615900688728) (by [@karankendre](https://x.com/karankendre))
+
+**Combina Kimi K3 para el código del juego con GPT Image 2 para los recursos al prototipar un pequeño juego estilo Counter-Strike en navegador.**
+
+Karan Kendre informa que usó Kimi K3 para construir el juego y GPT Image 2 para crear los recursos de un proyecto estilo Counter-Strike, con un coste total aproximado de 10 dólares. El video fuente es el artefacto visible, por lo que el registro sirve como flujo de combinación de herramientas más que como benchmark exclusivo de Kimi.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-91.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-91-poster.jpg" alt="Case 91 source video poster" height="360"></a>
+
+[Play case 91 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-91.mp4)
+
+Type: Integration | Date: 2026-07-19
+
+---
+
+<a id="case-95"></a>
+### Case 95: [Usar la skill Design de Command Code](https://x.com/MrAhmadAwais/status/2078841789205934547) (by [@MrAhmadAwais](https://x.com/MrAhmadAwais))
+
+**Combina Kimi K3 con una skill de diseño dedicada en Command Code al crear un prototipo visual de juego con presupuesto de tokens.**
+
+Ahmad Awais informa usar Kimi K3 con Command Code y su skill /design para un juego con cámara de persecución estilo Forza. El post dice que la sesión costó 0,97 dólares e incluyó correcciones de escala de carretera y coche, fondo, animación y niebla, por lo que es un flujo concreto de harness de agente.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-95.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-95-poster.jpg" alt="Case 95 source video poster" height="360"></a>
+
+[Play case 95 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-95.mp4)
+
+Type: Integration | Date: 2026-07-19
 
 ---
 
@@ -1504,6 +1589,81 @@ Type: Evaluation | Date: 2026-07-18
 
 ---
 
+<a id="case-90"></a>
+### Case 90: [Comparar prompts de casa de cristal](https://x.com/RoundtableSpace/status/2079004612070416755) (by [@RoundtableSpace](https://x.com/RoundtableSpace))
+
+**Usa una escena arquitectónica con el mismo prompt para comparar Kimi K3 y Opus 4.8 en atmósfera, iluminación y completitud espacial.**
+
+Roundtable Space informa una comparación con el mismo prompt entre Kimi K3 y Claude Opus 4.8 a un precio parecido. El resultado de Kimi se describe como una casa de cristal en hora azul con luz interior cálida, piscina reflectante y detalles de planos, mientras que Opus queda como una salida más tipográfica y menos espacial.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-90.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-90-poster.jpg" alt="Case 90 source video poster" height="360"></a>
+
+[Play case 90 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-90.mp4)
+
+Type: Evaluation | Date: 2026-07-20
+
+---
+
+<a id="case-92"></a>
+### Case 92: [Evaluar un gol de fútbol vóxel](https://x.com/0xzynex/status/2078920667542487230) (by [@0xzynex](https://x.com/0xzynex))
+
+**Ejecuta el mismo prompt de animación de fútbol en HTML/CSS/JS puro en dos modelos para comparar calidad de movimiento y coste.**
+
+0xzynex informa una comparación de una sola ejecución, sin reintentos, donde Kimi K3 y GPT-5.6 Sol High debían crear una jugada de fútbol en bloques con regate, gol, cámara dinámica y celebración en código de navegador. El post dice que Kimi produjo un movimiento más fluido y menor coste, y el video conserva el artefacto comparativo.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-92.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-92-poster.jpg" alt="Case 92 source video poster" height="360"></a>
+
+[Play case 92 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-92.mp4)
+
+Type: Benchmark | Date: 2026-07-19
+
+---
+
+<a id="case-93"></a>
+### Case 93: [Revisar una prueba Minecraft](https://x.com/ashen_one/status/2078892418976666071) (by [@ashen_one](https://x.com/ashen_one))
+
+**Mira una revisión estructurada de Minecraft antes de tratar la publicidad de lanzamiento o el precio como evidencia suficiente.**
+
+ashen_one publica una revisión grabada de Kimi K3 con capítulos sobre expectativa frente a realidad, benchmarks, precios, una prueba de Minecraft, errores de primera ejecución y veredicto final. La fuente es útil porque combina benchmark y notas tempranas de fiabilidad en un video inspeccionable.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-93.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-93-poster.jpg" alt="Case 93 source video poster" height="360"></a>
+
+[Play case 93 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-93.mp4)
+
+Type: Benchmark | Date: 2026-07-19
+
+---
+
+<a id="case-98"></a>
+### Case 98: [Medir límites de nivel API](https://x.com/mnmn94253156337/status/2078739859154620497) (by [@mnmn94253156337](https://x.com/mnmn94253156337))
+
+**Planifica ejecuciones de agente con Kimi K3 según tokens, nivel, TPM y TPD, no solo por el precio principal del modelo.**
+
+La fuente en chino informa una prueba personal de la API de Kimi K3 tras cargar 5 dólares, con alrededor de 1,1 dólares consumidos durante la preparación y posterior límite Tier0. Enumera precios de entrada, entrada cacheada y salida, además de conceptos de límite como TPM y TPD, por lo que funciona como reporte temprano de limitación.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-98.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-98-poster.jpg" alt="Case 98 source video poster" height="360"></a>
+
+[Play case 98 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-98.mp4)
+
+Type: Limit | Date: 2026-07-19
+
+---
+
+<a id="case-99"></a>
+### Case 99: [Comparar un demo estilo Limbo](https://x.com/ChrisGPT/status/2078679211116835017) (by [@ChrisGPT](https://x.com/ChrisGPT))
+
+**Compara alcance jugable, pulido, coste y fallos al probar Kimi K3 frente a Fable 5 en el mismo prototipo de juego.**
+
+ChrisGPT compara Fable 5 y Kimi K3 en un demo tipo Limbo. El post reporta 2.400 líneas y 24K tokens de salida por 1,20 dólares para Fable, frente a 3.000 líneas y 30K tokens por 0,12 dólares para Kimi, con más gameplay añadido pero también más errores.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-99.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-99-poster.jpg" alt="Case 99 source video poster" height="360"></a>
+
+[Play case 99 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-99.mp4)
+
+Type: Benchmark | Date: 2026-07-19
+
+---
+
 <a id="related-resources"></a>
 ## Recursos relacionados
 
@@ -1518,6 +1678,6 @@ Type: Evaluation | Date: 2026-07-18
 
 Este repositorio existe gracias a quienes compartieron públicamente su trabajo con Kimi K3
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337)
 
 *Si la atribución o el texto necesitan una corrección, abre una issue con una fuente pública*
