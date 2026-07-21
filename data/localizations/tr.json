@@ -8,7 +8,7 @@
   "source_boundary": "89 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
   "overview_heading": "Genel bakış",
   "overview": [
-    "Geniş görev kapsamına sahip yüksek güvenli 89 örnek",
+    "Geniş görev kapsamına sahip yüksek güvenli 109 örnek",
     "Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi",
     "Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur",
     "Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz"
@@ -530,6 +530,56 @@
       "title": "Limbo tarzı demo karşılaştır",
       "takeaway": "Aynı oyun prototipinde Kimi K3 ile Fable 5’i oynanabilir kapsam, görsel polish, maliyet ve bug açısından karşılaştır.",
       "notes": "ChrisGPT, Limbo clone demo üzerinde Fable 5 ve Kimi K3’ü karşılaştırıyor. Gönderi Fable için 2.400 satır, 24K output token ve 1,20 dolar; Kimi için 3.000 satır, 30K token ve 0,12 dolar bildiriyor. Kimi daha fazla gameplay ekliyor ama daha fazla bug da taşıyor."
+    },
+    "100": {
+      "title": "VulcanBench maliyetlerini incele",
+      "takeaway": "Bu örnekle Kimi K3ün “VulcanBench maliyetlerini incele” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “VulcanBench maliyetlerini incele” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "101": {
+      "title": "Minecraft derinliğini karşılaştır",
+      "takeaway": "Bu örnekle Kimi K3ün “Minecraft derinliğini karşılaştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Minecraft derinliğini karşılaştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "102": {
+      "title": "Fallout FPS klonu oluştur",
+      "takeaway": "Bu örnekle Kimi K3ün “Fallout FPS klonu oluştur” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Fallout FPS klonu oluştur” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "103": {
+      "title": "Premium web sitesi eğitimini izle",
+      "takeaway": "Bu örnekle Kimi K3ün “Premium web sitesi eğitimini izle” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Premium web sitesi eğitimini izle” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "104": {
+      "title": "Çift sarkaç fiziğini benchmark et",
+      "takeaway": "Bu örnekle Kimi K3ün “Çift sarkaç fiziğini benchmark et” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Çift sarkaç fiziğini benchmark et” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "105": {
+      "title": "Veri merkezi RPG yayımla",
+      "takeaway": "Bu örnekle Kimi K3ün “Veri merkezi RPG yayımla” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Veri merkezi RPG yayımla” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "106": {
+      "title": "Humanoid frontend maliyetlerini karşılaştır",
+      "takeaway": "Bu örnekle Kimi K3ün “Humanoid frontend maliyetlerini karşılaştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Humanoid frontend maliyetlerini karşılaştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "107": {
+      "title": "ReactBench hazır oluşunu incele",
+      "takeaway": "Bu örnekle Kimi K3ün “ReactBench hazır oluşunu incele” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “ReactBench hazır oluşunu incele” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "108": {
+      "title": "3D araba oyunu oluştur",
+      "takeaway": "Bu örnekle Kimi K3ün “3D araba oyunu oluştur” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “3D araba oyunu oluştur” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "109": {
+      "title": "Kimi K3ü Claude Codeda çalıştır",
+      "takeaway": "Bu örnekle Kimi K3ün “Kimi K3ü Claude Codeda çalıştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+      "notes": "Kaynak gönderi “Kimi K3ü Claude Codeda çalıştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
     }
   }
 }

@@ -8,7 +8,7 @@
   "source_boundary": "Los 89 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
   "overview_heading": "Resumen",
   "overview": [
-    "89 casos de alta confianza de creadores y profesionales",
+    "109 casos de alta confianza de creadores y profesionales",
     "Incluye juegos interactivos, 3D, frontend, motion graphics, programación, integraciones, investigación, evaluaciones y límites prácticos",
     "Cada caso conserva fuente, autor, tipo, fecha y límite del prompt",
     "Las experiencias individuales no se presentan como benchmarks"
@@ -530,6 +530,56 @@
       "title": "Comparar un demo estilo Limbo",
       "takeaway": "Compara alcance jugable, pulido, coste y fallos al probar Kimi K3 frente a Fable 5 en el mismo prototipo de juego.",
       "notes": "ChrisGPT compara Fable 5 y Kimi K3 en un demo tipo Limbo. El post reporta 2.400 líneas y 24K tokens de salida por 1,20 dólares para Fable, frente a 3.000 líneas y 30K tokens por 0,12 dólares para Kimi, con más gameplay añadido pero también más errores."
+    },
+    "100": {
+      "title": "Revisar costes de VulcanBench",
+      "takeaway": "Usa los resultados de VulcanBench para comparar precisión, coste y evidencia abierta de Kimi K3 antes de elegir un modelo de producción.",
+      "notes": "Morgan Linton comparte una tabla de VulcanBench y dice que el desglose, la suite de evaluación y el código del benchmark están disponibles públicamente. El post informa que Grok 4.5 ganó en precisión y coste, mientras Kimi K3 resultó caro en este benchmark pese a sus menores precios por token."
+    },
+    "101": {
+      "title": "Comparar profundidad en Minecraft",
+      "takeaway": "Compara profundidad, gráficos, velocidad y valor de suscripción en un juego Minecraft one-shot de Kimi K3 frente a Fable 5.",
+      "notes": "Vikktorrrre probó el mismo prompt en Kimi K3 y Fable 5 sin ajustes. Kimi tardó 1 hora y 20 minutos, razonó primero la lógica y mecánicas, y según el post produjo mejores gráficos y un resultado más jugable; Fable 5 fue más rápido pero más superficial."
+    },
+    "102": {
+      "title": "Construir un FPS de Fallout",
+      "takeaway": "Usa un FPS estilo Fallout hecho en tres intentos para estimar alcance jugable y coste de tokens con Kimi K3.",
+      "notes": "Kirill cuenta que Kimi K3 creó un clon FPS Vault-Tec de Fallout en tres intentos por unos 2,48 dólares de API. El post compara el mismo conteo de tokens con 5,34 dólares en GPT-5.6 Sol y presenta el resultado como un prototipo FPS jugable de bajo coste."
+    },
+    "103": {
+      "title": "Seguir un tutorial web premium",
+      "takeaway": "Sigue un tutorial corto en español para usar Kimi K3 en la generación de sitios web con acabado visual premium.",
+      "notes": "Guille Casaus comparte un tutorial de 13 minutos para crear páginas web con Kimi K3. El post dice que explica paso a paso cómo usar el modelo para lograr un acabado visual mucho más premium."
+    },
+    "104": {
+      "title": "Evaluar física de doble péndulo",
+      "takeaway": "Evalúa Kimi K3 con una simulación de doble péndulo usando coste por iteración, puntuaciones de juez y criterios físicos.",
+      "notes": "Alican Kiraz compara Qwen3.6-35B y Kimi-K3 en una tarea de doble péndulo con OpenCode juzgada por ChatGPT 5.6 Pro. El post reporta 3 iteraciones y 0,59 dólares para Kimi, 90,6/100 puntos y ventaja en arquitectura física, caos, trails, rendimiento largo y riesgo."
+    },
+    "105": {
+      "title": "Lanzar un RPG de data center",
+      "takeaway": "Estudia cómo un flujo con lead agent convirtió con Kimi K3 un brief de dos frases en un RPG completo de navegador.",
+      "notes": "Demian describe Charlie & the Token Factory a partir de un prompt breve sobre un mundo tipo Pokemon de centros de datos. El post menciona combates, captura, progreso, jefes, guardado, música y postgame, además de agentes especialistas, gates de build y verificadores que encontraron bugs reales."
+    },
+    "106": {
+      "title": "Comparar costes de frontend humanoide",
+      "takeaway": "Compara Kimi K3 y GPT-5.6 en un prompt general de frontend de robot humanoide usando líneas, tokens y coste.",
+      "notes": "ChrisGPT compara GPT-5.6 y Kimi K3 en una web frontend de robot humanoide con un prompt amplio. El post reporta 2.100 LOC y 21K tokens por 0,63 dólares para GPT-5.6, frente a 2.400 LOC y 24K tokens por 0,36 dólares para Kimi K3."
+    },
+    "107": {
+      "title": "Revisar preparación en ReactBench",
+      "takeaway": "Usa ReactBench para juzgar dónde Kimi K3 es más barato y fuerte que Opus 4.8, pero aún detrás de los modelos frontera en frontend de producción.",
+      "notes": "Aiden Bai informa que Kimi K3 ocupa el puesto 6 en ReactBench, supera a Opus 4.8 con más de 2x de ahorro y sube 10 puntos frente a K2.7. El mismo post aclara que sigue por detrás de Fable y Sol en preparación de frontend de producción."
+    },
+    "108": {
+      "title": "Construir un juego 3D de coches",
+      "takeaway": "Usa Kimi K3 para prototipar un juego 3D de coches con assets externos, agua, clima, carreteras y ciclo día-noche.",
+      "notes": "LexnLin dice que Kimi K3 construyó un juego 3D de coches con assets externos. El post destaca agua realista, paisajes, carreteras, clima, ciclo día-noche y varios medios de evidencia."
+    },
+    "109": {
+      "title": "Ejecutar Kimi K3 en Claude Code",
+      "takeaway": "Conecta Kimi K3 a Claude Code con un VPS para mantener el flujo de coding y cambiar el backend del modelo.",
+      "notes": "Boxmining comparte una guía de setup para ejecutar Kimi K3 dentro de Claude Code. El post describe Claude Code como harness de programación y Kimi K3 en un VPS 24/7 para loops, subagents y workflows de coding de mayor rendimiento."
     }
   }
 }

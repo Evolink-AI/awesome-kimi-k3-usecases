@@ -12,13 +12,13 @@
   "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
   "supplemental_source_artifact": {
     "kind": "recurring-update",
-    "run_id": "20260720T010226Z",
-    "candidate_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260720T010226Z/candidate_tweets.json",
-    "semantic_review": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260720T010226Z/semantic_review.json",
-    "selected_source_package": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260720T010226Z/selected-source-package.json"
+    "run_id": "20260721T010157Z",
+    "candidate_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/candidate_tweets.json",
+    "semantic_review": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/semantic_review.json",
+    "selected_source_package": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/selected-source-package.json"
   },
-  "source_generated_at": "2026-07-20T01:05:45Z",
-  "curated_at": "2026-07-20",
+  "source_generated_at": "2026-07-21T01:06:29Z",
+  "curated_at": "2026-07-21",
   "selection_policy": "Includes the 89 previously published high-confidence cases plus 10 high-confidence cases from the 20260720T010226Z recurring update; excludes every deferred, unsure, dropped, unsupported, duplicate, promotional, or unverifiable candidate.",
   "items": [
     {
@@ -3931,6 +3931,442 @@
       ],
       "poster_path": "media/source-cases/case-99-poster.jpg",
       "playable_video_path": "media/source-cases/case-99.mp4"
+    },
+    {
+      "public_number": 100,
+      "dedup_key": "https://x.com/morganlinton/status/2079358902194569357",
+      "source_url": "https://x.com/morganlinton/status/2079358902194569357",
+      "author_url": "https://x.com/morganlinton",
+      "author_handle": "@morganlinton",
+      "title": "Review VulcanBench Cost Results",
+      "takeaway": "Use VulcanBench results to compare Kimi K3 accuracy, cost, and open benchmark evidence before choosing a production model.",
+      "body_notes": "Morgan Linton shares a VulcanBench result table and says the detailed benchmark, eval suite, and benchmarking tool source are available publicly. The post reports Grok 4.5 won on accuracy and cost, while Kimi K3 came out expensive in this benchmark despite lower listed token prices.",
+      "type": "Benchmark",
+      "date": "2026-07-21",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct benchmark author post with result table, cost/accuracy claim, and public benchmark/source-code availability.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 29,
+        "view_count": 1288,
+        "bookmark_count": 4,
+        "retweet_count": 3
+      },
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-100-01.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HNtdeDab0AAWnlt.jpg"
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-100-01.jpg"
+      ]
+    },
+    {
+      "public_number": 101,
+      "dedup_key": "https://x.com/vikktorrrre/status/2079294696459804762",
+      "source_url": "https://x.com/vikktorrrre/status/2079294696459804762",
+      "author_url": "https://x.com/vikktorrrre",
+      "author_handle": "@vikktorrrre",
+      "title": "Compare Minecraft Build Depth",
+      "takeaway": "Compare one-shot Minecraft game depth, graphics, speed, and subscription value when testing Kimi K3 against Fable 5.",
+      "body_notes": "Vikktorrrre reports building a Minecraft game with the same prompt in Kimi K3 and Fable 5 with no adjustments. The post says Kimi K3 took 1 hour 20 minutes, reasoned through game logic first, and produced stronger graphics and a more playable result, while Fable 5 finished faster but felt more surface-level.",
+      "type": "Evaluation",
+      "date": "2026-07-20",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-person same-prompt comparison with timing, qualitative gameplay observations, cost/subscription context, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 65,
+        "view_count": 1825,
+        "bookmark_count": 1,
+        "retweet_count": 1
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-101.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-101-poster.jpg",
+          "play_label": "Play case 101 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079294662376890368/vid/avc1/1280x720/VjwNBzYHjJajPA33.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-101-poster.jpg",
+      "playable_video_path": "media/source-cases/case-101.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-101-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-101.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 102,
+      "dedup_key": "https://x.com/kirillk_web3/status/2079290747585437781",
+      "source_url": "https://x.com/kirillk_web3/status/2079290747585437781",
+      "author_url": "https://x.com/kirillk_web3",
+      "author_handle": "@kirillk_web3",
+      "title": "Build a Fallout FPS Clone",
+      "takeaway": "Use a three-shot Fallout-style FPS build to estimate playable game scope and token-cost tradeoffs for Kimi K3.",
+      "body_notes": "Kirill reports that Kimi K3 produced a Fallout Vault-Tec FPS clone in three shots for about $2.48 of API usage. The post compares the same token count against GPT-5.6 Sol at $5.34 and frames the result as a playable FPS prototype built at low cost.",
+      "type": "Demo",
+      "date": "2026-07-20",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-person game-build report with source video, API usage cost, comparison cost, and clear prototype scope.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 50,
+        "view_count": 6922,
+        "bookmark_count": 25,
+        "retweet_count": 9
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-102.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-102-poster.jpg",
+          "play_label": "Play case 102 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079266461328044033/vid/avc1/720x1280/AEWNLJ0adJK8a0yw.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-102-poster.jpg",
+      "playable_video_path": "media/source-cases/case-102.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-102-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-102.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 103,
+      "dedup_key": "https://x.com/_guillecasaus/status/2079258261014908980",
+      "source_url": "https://x.com/_guillecasaus/status/2079258261014908980",
+      "author_url": "https://x.com/_guillecasaus",
+      "author_handle": "@_guillecasaus",
+      "title": "Follow a Premium Website Tutorial",
+      "takeaway": "Follow a short Spanish tutorial to use Kimi K3 for visually polished website generation.",
+      "body_notes": "Guille Casaus shares a 13-minute tutorial for creating polished websites with Kimi K3. The post says the walkthrough explains step by step how to use the model to reach a more premium visual finish.",
+      "type": "Tutorial",
+      "date": "2026-07-20",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Tutorial post with duration, topic, step-by-step claim, and attached source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 81,
+        "view_count": 3790,
+        "bookmark_count": 100,
+        "retweet_count": 9
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-103.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-103-poster.jpg",
+          "play_label": "Play case 103 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2078139825467838464/vid/avc1/1108x720/T9A9i1arW2W35Jrw.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-103-poster.jpg",
+      "playable_video_path": "media/source-cases/case-103.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-103-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-103.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 104,
+      "dedup_key": "https://x.com/AlicanKiraz0/status/2079241239736504768",
+      "source_url": "https://x.com/AlicanKiraz0/status/2079241239736504768",
+      "author_url": "https://x.com/AlicanKiraz0",
+      "author_handle": "@AlicanKiraz0",
+      "title": "Benchmark Double Pendulum Physics",
+      "takeaway": "Benchmark Kimi K3 on a double-pendulum simulation task with iteration cost, judge scores, and physics-quality criteria.",
+      "body_notes": "Alican Kiraz compares Qwen3.6-35B and Kimi-K3 on an OpenCode double-pendulum task judged by ChatGPT 5.6 Pro. The post reports Kimi K3 used 3 iterations and $0.59, scored 90.6/100, and led on physics architecture, chaotic behavior, trail correctness, long-run performance, and risk.",
+      "type": "Benchmark",
+      "date": "2026-07-20",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Detailed benchmark post with task prompt, judge, agent, iteration count, cost, score breakdown, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 59,
+        "view_count": 13198,
+        "bookmark_count": 26,
+        "retweet_count": 3
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-104.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-104-poster.jpg",
+          "play_label": "Play case 104 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079239631640334336/vid/avc1/1080x1176/gAkNccwgSQwhn5Ru.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-104-poster.jpg",
+      "playable_video_path": "media/source-cases/case-104.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-104-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-104.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 105,
+      "dedup_key": "https://x.com/demian_ai/status/2079239035596218578",
+      "source_url": "https://x.com/demian_ai/status/2079239035596218578",
+      "author_url": "https://x.com/demian_ai",
+      "author_handle": "@demian_ai",
+      "title": "Ship a Data Center RPG",
+      "takeaway": "Study how a lead-agent workflow used Kimi K3 to turn a two-sentence brief into a full browser RPG with QA loops.",
+      "body_notes": "Demian describes building Charlie & the Token Factory from a two-sentence prompt about a Pokemon-like data-center world. The post says Kimi produced a playable v1 with battles, captures, progression, bosses, saves, music, and post-game content, then used specialist agents, build gates, and verifier passes to catch and fix real bugs.",
+      "type": "Demo",
+      "date": "2026-07-20",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Detailed first-person workflow with public prompt excerpt, architecture notes, QA findings, playable link, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 84,
+        "view_count": 15643,
+        "bookmark_count": 23,
+        "retweet_count": 6
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-105.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-105-poster.jpg",
+          "play_label": "Play case 105 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079239009734164480/vid/avc1/1280x720/OjjhfJqT-pGnCVv7.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-105-poster.jpg",
+      "playable_video_path": "media/source-cases/case-105.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-105-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-105.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 106,
+      "dedup_key": "https://x.com/ChrisGPT/status/2079236298464796958",
+      "source_url": "https://x.com/ChrisGPT/status/2079236298464796958",
+      "author_url": "https://x.com/ChrisGPT",
+      "author_handle": "@ChrisGPT",
+      "title": "Compare Humanoid Frontend Costs",
+      "takeaway": "Compare Kimi K3 and GPT-5.6 on a general humanoid-robot frontend prompt using lines of code, tokens, and cost.",
+      "body_notes": "ChrisGPT compares GPT-5.6 and Kimi K3 on a humanoid robot frontend website from a broad prompt. The post reports GPT-5.6 generated 2,100 lines and 21K output tokens for $0.63, while Kimi K3 generated 2,400 lines and 24K output tokens for $0.36.",
+      "type": "Benchmark",
+      "date": "2026-07-20",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct same-task frontend comparison with source video, LOC, token count, and cost for both models.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 104,
+        "view_count": 8017,
+        "bookmark_count": 17,
+        "retweet_count": 2
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-106.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-106-poster.jpg",
+          "play_label": "Play case 106 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079236153467654144/vid/avc1/780x720/N_ifrTo89weUsaqu.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-106-poster.jpg",
+      "playable_video_path": "media/source-cases/case-106.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-106-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-106.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 107,
+      "dedup_key": "https://x.com/aidenybai/status/2079233934693650567",
+      "source_url": "https://x.com/aidenybai/status/2079233934693650567",
+      "author_url": "https://x.com/aidenybai",
+      "author_handle": "@aidenybai",
+      "title": "Review ReactBench Production Readiness",
+      "takeaway": "Use ReactBench to judge where Kimi K3 is cheaper and stronger than Opus 4.8 but still behind frontier models for production frontend work.",
+      "body_notes": "Aiden Bai reports Kimi K3 ranked #6 on ReactBench, beating Opus 4.8 while costing over 2x less and improving 10 percentage points over K2.7. The same post notes Kimi K3 still lags Fable and Sol in frontend production readiness.",
+      "type": "Benchmark",
+      "date": "2026-07-20",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Benchmark maintainer-style post with rank, relative cost, prior-model delta, and explicit limitation.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 404,
+        "view_count": 43851,
+        "bookmark_count": 73,
+        "retweet_count": 18
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-107.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-107-poster.jpg",
+          "play_label": "Play case 107 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079105516383719424/vid/avc1/1228x720/9au6H_6noh4qj5Ft.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-107-poster.jpg",
+      "playable_video_path": "media/source-cases/case-107.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-107-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-107.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 108,
+      "dedup_key": "https://x.com/LexnLin/status/2079233761242235081",
+      "source_url": "https://x.com/LexnLin/status/2079233761242235081",
+      "author_url": "https://x.com/LexnLin",
+      "author_handle": "@LexnLin",
+      "title": "Build a 3D Car Game",
+      "takeaway": "Use Kimi K3 to prototype a 3D car game with external assets, water, weather, roads, and day-night cycling.",
+      "body_notes": "LexnLin reports that Kimi K3 built a 3D car game using external assets. The post highlights realistic water, landscapes, roads, weather, a day-night cycle, and multiple supporting visuals/videos.",
+      "type": "Demo",
+      "date": "2026-07-20",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "First-person 3D demo post with concrete features and multiple source media assets.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 43,
+        "view_count": 5088,
+        "bookmark_count": 2,
+        "retweet_count": 2
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108-poster.jpg",
+          "play_label": "Play case 108 demo video"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108-01.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108-02.jpg"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079230897652461569/vid/avc1/1232x720/2fUg-Jpjphsjoa9_.mp4?tag=29",
+        "https://pbs.twimg.com/media/HNrpnf4W0AA845o.jpg",
+        "https://pbs.twimg.com/media/HNrqZNHXEAAKmrb.jpg"
+      ],
+      "poster_path": "media/source-cases/case-108-poster.jpg",
+      "playable_video_path": "media/source-cases/case-108.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-108.mp4",
+      "r2_media_urls": []
+    },
+    {
+      "public_number": 109,
+      "dedup_key": "https://x.com/boxmining/status/2079115758618239337",
+      "source_url": "https://x.com/boxmining/status/2079115758618239337",
+      "author_url": "https://x.com/boxmining",
+      "author_handle": "@boxmining",
+      "title": "Run Kimi K3 in Claude Code",
+      "takeaway": "Route Kimi K3 through Claude Code with a VPS setup to preserve coding workflows while changing the model backend.",
+      "body_notes": "Boxmining shares a setup guide for running Kimi K3 inside Claude Code. The post describes using Claude Code as the coding harness while pairing it with Kimi K3 on a 24/7 VPS for loops, subagents, and higher-throughput coding workflows.",
+      "type": "Integration",
+      "date": "2026-07-20",
+      "category": "Coding & Integrations",
+      "category_key": "coding-integrations",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete integration/tutorial post with setup-guide framing, target toolchain, VPS context, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 395,
+        "view_count": 32859,
+        "bookmark_count": 709,
+        "retweet_count": 45
+      },
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109-poster.jpg",
+          "play_label": "Play case 109 demo video"
+        }
+      ],
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079115657774616576/vid/avc1/1280x720/ePwyHoS0Bz9KcXXt.mp4?tag=29"
+      ],
+      "poster_path": "media/source-cases/case-109-poster.jpg",
+      "playable_video_path": "media/source-cases/case-109.mp4",
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109.mp4",
+      "r2_media_urls": []
     }
   ]
 }

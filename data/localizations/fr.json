@@ -8,7 +8,7 @@
   "source_boundary": "Les 89 cas proviennent de sources publiques à forte confiance. Les titres et auteurs renvoient aux originaux; les candidats faibles, dupliqués ou insuffisamment documentés sont exclus",
   "overview_heading": "Vue d’ensemble",
   "overview": [
-    "89 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
+    "109 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
     "Jeux, 3D, frontend, motion design, développement, intégrations, benchmarks et limites pratiques",
     "Chaque cas conserve la source, l’auteur, le type, la date et les limites factuelles",
     "Les cas à confiance moyenne sont exclus et les observations individuelles ne deviennent pas des conclusions générales"
@@ -530,6 +530,56 @@
       "title": "Comparer une démo façon Limbo",
       "takeaway": "Compare portée jouable, finition, coût et bugs en testant Kimi K3 contre Fable 5 sur le même prototype de jeu.",
       "notes": "ChrisGPT compare Fable 5 et Kimi K3 sur une démo clone de Limbo. Le post donne 2 400 lignes et 24K tokens de sortie pour 1,20 dollar côté Fable, contre 3 000 lignes et 30K tokens pour 0,12 dollar côté Kimi, avec plus de gameplay mais aussi plus de bugs."
+    },
+    "100": {
+      "title": "Examiner les coûts VulcanBench",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Examiner les coûts VulcanBench ».",
+      "notes": "Le post source fournit une preuve publique sur « Examiner les coûts VulcanBench », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "101": {
+      "title": "Comparer la profondeur Minecraft",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Comparer la profondeur Minecraft ».",
+      "notes": "Le post source fournit une preuve publique sur « Comparer la profondeur Minecraft », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "102": {
+      "title": "Créer un FPS Fallout",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Créer un FPS Fallout ».",
+      "notes": "Le post source fournit une preuve publique sur « Créer un FPS Fallout », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "103": {
+      "title": "Suivre un tutoriel web premium",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Suivre un tutoriel web premium ».",
+      "notes": "Le post source fournit une preuve publique sur « Suivre un tutoriel web premium », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "104": {
+      "title": "Évaluer la physique du double pendule",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Évaluer la physique du double pendule ».",
+      "notes": "Le post source fournit une preuve publique sur « Évaluer la physique du double pendule », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "105": {
+      "title": "Livrer un RPG de data center",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Livrer un RPG de data center ».",
+      "notes": "Le post source fournit une preuve publique sur « Livrer un RPG de data center », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "106": {
+      "title": "Comparer les coûts frontend humanoïde",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Comparer les coûts frontend humanoïde ».",
+      "notes": "Le post source fournit une preuve publique sur « Comparer les coûts frontend humanoïde », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "107": {
+      "title": "Examiner la maturité ReactBench",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Examiner la maturité ReactBench ».",
+      "notes": "Le post source fournit une preuve publique sur « Examiner la maturité ReactBench », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "108": {
+      "title": "Créer un jeu de voiture 3D",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Créer un jeu de voiture 3D ».",
+      "notes": "Le post source fournit une preuve publique sur « Créer un jeu de voiture 3D », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+    },
+    "109": {
+      "title": "Exécuter Kimi K3 dans Claude Code",
+      "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Exécuter Kimi K3 dans Claude Code ».",
+      "notes": "Le post source fournit une preuve publique sur « Exécuter Kimi K3 dans Claude Code », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "source_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/source/20260720T010226Z-twitterapi.json",
-  "source_generated_at": "2026-07-20T01:05:45Z",
-  "source_sample_count": 699,
+  "source_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/combined-use-case-source.json",
+  "source_generated_at": "2026-07-21T01:06:29Z",
+  "source_sample_count": 109,
   "selected_ids": [
     "2077763009657627055",
     "2077754781964054825",
@@ -101,8 +101,18 @@
     "2078828887468056763",
     "2078776969072877715",
     "2078739859154620497",
-    "2078679211116835017"
+    "2078679211116835017",
+    "2079358902194569357",
+    "2079294696459804762",
+    "2079290747585437781",
+    "2079258261014908980",
+    "2079241239736504768",
+    "2079239035596218578",
+    "2079236298464796958",
+    "2079233934693650567",
+    "2079233761242235081",
+    "2079115758618239337"
   ],
   "note": "This manifest records 99 published high-confidence selections. The 2026-07-20 recurring run reviewed 85 in-window candidates from a 699-candidate Twitter API artifact, selected 10, deferred 13, marked 11 unsure, and dropped 51. Public case data lives in data/use-cases.json.",
-  "updated_at": "2026-07-20T01:14:37Z"
+  "updated_at": "2026-07-21T01:06:29Z"
 }

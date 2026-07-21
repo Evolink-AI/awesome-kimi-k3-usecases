@@ -8,7 +8,7 @@
   "source_boundary": "Os 89 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
   "overview_heading": "Visão geral",
   "overview": [
-    "89 casos de alta confiança de criadores e profissionais",
+    "109 casos de alta confiança de criadores e profissionais",
     "Abrange amplamente jogos, Three.js, motion graphics, frontend, pesquisa, ferramentas de agentes, benchmarks, raciocínio e limites práticos",
     "Cada caso preserva fonte, autor, tipo, data e limite do prompt",
     "Relatos individuais não viram benchmarks"
@@ -530,6 +530,56 @@
       "title": "Comparar um demo estilo Limbo",
       "takeaway": "Compare escopo jogável, polimento, custo e bugs ao testar Kimi K3 contra Fable 5 no mesmo protótipo de jogo.",
       "notes": "ChrisGPT compara Fable 5 e Kimi K3 em um demo tipo Limbo. O post informa 2.400 linhas e 24K tokens por 1,20 dólar para Fable, contra 3.000 linhas e 30K tokens por 0,12 dólar para Kimi, com mais gameplay, mas também mais bugs."
+    },
+    "100": {
+      "title": "Revisar custos do VulcanBench",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Revisar custos do VulcanBench”.",
+      "notes": "O post original traz evidência pública sobre “Revisar custos do VulcanBench”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "101": {
+      "title": "Comparar profundidade no Minecraft",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Comparar profundidade no Minecraft”.",
+      "notes": "O post original traz evidência pública sobre “Comparar profundidade no Minecraft”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "102": {
+      "title": "Criar um FPS de Fallout",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Criar um FPS de Fallout”.",
+      "notes": "O post original traz evidência pública sobre “Criar um FPS de Fallout”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "103": {
+      "title": "Seguir tutorial de site premium",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Seguir tutorial de site premium”.",
+      "notes": "O post original traz evidência pública sobre “Seguir tutorial de site premium”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "104": {
+      "title": "Avaliar física de pêndulo duplo",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Avaliar física de pêndulo duplo”.",
+      "notes": "O post original traz evidência pública sobre “Avaliar física de pêndulo duplo”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "105": {
+      "title": "Lançar RPG de data center",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Lançar RPG de data center”.",
+      "notes": "O post original traz evidência pública sobre “Lançar RPG de data center”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "106": {
+      "title": "Comparar custos de frontend humanoide",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Comparar custos de frontend humanoide”.",
+      "notes": "O post original traz evidência pública sobre “Comparar custos de frontend humanoide”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "107": {
+      "title": "Revisar prontidão no ReactBench",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Revisar prontidão no ReactBench”.",
+      "notes": "O post original traz evidência pública sobre “Revisar prontidão no ReactBench”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "108": {
+      "title": "Criar jogo 3D de carros",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Criar jogo 3D de carros”.",
+      "notes": "O post original traz evidência pública sobre “Criar jogo 3D de carros”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+    },
+    "109": {
+      "title": "Rodar Kimi K3 no Claude Code",
+      "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Rodar Kimi K3 no Claude Code”.",
+      "notes": "O post original traz evidência pública sobre “Rodar Kimi K3 no Claude Code”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
     }
   }
 }

@@ -1,5 +1,13 @@
 # Update Log
 
+## 2026-07-21
+
+- Added cases 100-109 from the Kimi K3 24-hour recurring update window ending 2026-07-21T01:06:29Z.
+- Published 10 high-confidence source-backed cases covering VulcanBench, Minecraft/Fallout/Data-center RPG game builds, premium website tutorial, double-pendulum benchmark, humanoid frontend comparison, ReactBench limitation evidence, 3D car game demo, and Claude Code integration.
+- Uploaded new source media to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, using poster frames plus playable MP4 links for video cases.
+- Rebuilt source fidelity, English README, 10 localized READMEs, localization cache, and public structured data from the verified handoff package.
+- No credit-consuming API test was run or claimed, per owner 2026-07-18 waiver; non-paid method-aware endpoint audit remains required.
+
 ## 2026-07-20 — Daily recurring update to 99 cases
 
 - Collected the fixed 24-hour Kimi K3 window through registered TwitterAPI queries with max 3 pages per query and minimum likes 11

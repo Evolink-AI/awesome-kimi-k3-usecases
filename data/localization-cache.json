@@ -9,7 +9,7 @@
     "source_boundary": "Alle 89 Fälle stammen aus öffentlichen Quellen mit hoher Konfidenz. Titel und Autoren verlinken auf die Originale; schwache, doppelte und nicht ausreichend belegte Kandidaten bleiben ausgeschlossen",
     "overview_heading": "Überblick",
     "overview": [
-      "89 ausgewählte Fälle von Kreativen und Praktikern",
+      "109 ausgewählte Fälle von Kreativen und Praktikern",
       "Spiele, 3D, Frontend, Motion Design, Coding, Forschung, Integrationen, Bewertungen und Grenzen",
       "Quelle, Autor, Typ, Datum und Prompt-Grenze bleiben erhalten",
       "Einzelbeobachtungen und interne Tests werden nicht zu allgemeinen Benchmarks erklärt"
@@ -531,6 +531,56 @@
         "title": "Limbo-Demo vergleichen",
         "takeaway": "Vergleiche Spielumfang, Politur, Kosten und Bugs, wenn Kimi K3 und Fable 5 denselben Spielprototyp bauen.",
         "notes": "ChrisGPT vergleicht Fable 5 und Kimi K3 an einem Limbo-Clone-Demo. Der Post nennt für Fable 2.400 Codezeilen und 24K Output-Tokens für 1,20 Dollar, für Kimi 3.000 Zeilen und 30K Tokens für 0,12 Dollar, mit mehr Gameplay, aber auch mehr Bugs."
+      },
+      "100": {
+        "title": "VulcanBench-Kostenergebnisse prüfen",
+        "takeaway": "Nutze VulcanBench-Ergebnisse, um Kimi K3 vor einer Modellwahl nach Genauigkeit, Kosten und offener Benchmark-Evidenz zu bewerten.",
+        "notes": "Morgan Linton teilt eine VulcanBench-Ergebnistabelle und verweist auf öffentliche Details, Eval-Suite und Quellcode. Der Post sagt, dass Grok 4.5 bei Genauigkeit und Kosten gewann, während Kimi K3 in diesem Benchmark trotz niedriger Tokenpreise teuer ausfiel."
+      },
+      "101": {
+        "title": "Minecraft-Bautiefe vergleichen",
+        "takeaway": "Vergleiche Tiefe, Grafik, Tempo und Abowert eines One-Shot-Minecraft-Spiels von Kimi K3 gegen Fable 5.",
+        "notes": "Vikktorrrre berichtet über denselben Prompt in Kimi K3 und Fable 5 ohne Nacharbeit. Kimi brauchte 1 Stunde 20 Minuten, plante zuerst Logik und Mechanik und lieferte laut Post stärkere Grafik und ein spielbareres Ergebnis, während Fable 5 schneller, aber oberflächlicher wirkte."
+      },
+      "102": {
+        "title": "Fallout-FPS-Klon bauen",
+        "takeaway": "Nutze einen Drei-Shot-Fallout-FPS, um spielbaren Umfang und Tokenkosten von Kimi K3 einzuschätzen.",
+        "notes": "Kirill berichtet, dass Kimi K3 in drei Durchläufen einen Fallout Vault-Tec FPS-Klon für etwa 2,48 Dollar API-Nutzung erzeugte. Der Post vergleicht dieselbe Tokenmenge mit 5,34 Dollar bei GPT-5.6 Sol und zeigt den Prototyp als günstiges spielbares FPS."
+      },
+      "103": {
+        "title": "Premium-Website-Tutorial folgen",
+        "takeaway": "Folge einem kurzen spanischen Tutorial, um mit Kimi K3 visuell hochwertigere Websites zu erzeugen.",
+        "notes": "Guille Casaus teilt ein 13-minütiges Tutorial für Website-Erstellung mit Kimi K3. Der Post sagt, dass die Anleitung Schritt für Schritt zeigt, wie man mit dem Modell ein deutlich hochwertigeres visuelles Finish erreicht."
+      },
+      "104": {
+        "title": "Doppelpendel-Physik benchmarken",
+        "takeaway": "Benchmarke Kimi K3 mit einer Doppelpendel-Simulation inklusive Iterationskosten, Judge-Scores und Physikkriterien.",
+        "notes": "Alican Kiraz vergleicht Qwen3.6-35B und Kimi-K3 in einer OpenCode-Doppelpendelaufgabe, bewertet von ChatGPT 5.6 Pro. Der Post nennt 3 Iterationen und 0,59 Dollar für Kimi, 90,6/100 Punkte und Vorteile bei Physikarchitektur, Chaosdarstellung, Trail-Korrektheit und Langzeitstabilität."
+      },
+      "105": {
+        "title": "Data-Center-RPG ausliefern",
+        "takeaway": "Untersuche, wie ein Lead-Agent-Workflow mit Kimi K3 aus einem Zwei-Satz-Brief ein komplettes Browser-RPG machte.",
+        "notes": "Demian beschreibt Charlie & the Token Factory aus einem kurzen Prompt über eine Pokemon-ähnliche Data-Center-Welt. Der Post nennt Kämpfe, Capture, Progression, Bosse, Speicherstände, Musik und Postgame sowie Spezialagenten, Build-Gates und Verifier, die echte Bugs fanden."
+      },
+      "106": {
+        "title": "Humanoid-Frontend-Kosten vergleichen",
+        "takeaway": "Vergleiche Kimi K3 und GPT-5.6 bei einem allgemeinen Humanoid-Roboter-Frontend nach Codezeilen, Tokens und Kosten.",
+        "notes": "ChrisGPT vergleicht GPT-5.6 und Kimi K3 auf einer Humanoid-Roboter-Website mit breitem Prompt. Der Post nennt für GPT-5.6 2.100 LOC und 21K Output-Tokens für 0,63 Dollar, für Kimi K3 2.400 LOC und 24K Tokens für 0,36 Dollar."
+      },
+      "107": {
+        "title": "ReactBench-Produktionsreife prüfen",
+        "takeaway": "Nutze ReactBench, um zu sehen, wo Kimi K3 günstiger und stärker als Opus 4.8 ist, aber bei Produktions-Frontend noch hinter der Spitze liegt.",
+        "notes": "Aiden Bai meldet Rang 6 für Kimi K3 auf ReactBench, besser als Opus 4.8 und mehr als doppelt so günstig, plus 10 Prozentpunkte gegenüber K2.7. Der Post sagt zugleich, dass Kimi K3 bei Produktionsreife noch hinter Fable und Sol liegt."
+      },
+      "108": {
+        "title": "3D-Autospiel bauen",
+        "takeaway": "Nutze Kimi K3 für einen 3D-Autospiel-Prototyp mit externen Assets, Wasser, Wetter, Straßen und Tag-Nacht-Zyklus.",
+        "notes": "LexnLin berichtet, dass Kimi K3 ein 3D-Autospiel mit externen Assets gebaut hat. Der Post hebt realistisches Wasser, Landschaften, Straßen, Wetter, Tag-Nacht-Zyklus und mehrere Quellmedien hervor."
+      },
+      "109": {
+        "title": "Kimi K3 in Claude Code ausführen",
+        "takeaway": "Route Kimi K3 durch Claude Code mit VPS-Setup, um den Coding-Workflow beizubehalten und nur das Modell-Backend zu wechseln.",
+        "notes": "Boxmining teilt eine Setup-Anleitung für Kimi K3 in Claude Code. Der Post beschreibt Claude Code als Coding-Harness und Kimi K3 auf einem 24/7-VPS für Loops, Subagents und leistungsfähigere Coding-Workflows."
       }
     }
   },
@@ -544,7 +594,7 @@
     "source_boundary": "Los 89 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
     "overview_heading": "Resumen",
     "overview": [
-      "89 casos de alta confianza de creadores y profesionales",
+      "109 casos de alta confianza de creadores y profesionales",
       "Incluye juegos interactivos, 3D, frontend, motion graphics, programación, integraciones, investigación, evaluaciones y límites prácticos",
       "Cada caso conserva fuente, autor, tipo, fecha y límite del prompt",
       "Las experiencias individuales no se presentan como benchmarks"
@@ -1066,6 +1116,56 @@
         "title": "Comparar un demo estilo Limbo",
         "takeaway": "Compara alcance jugable, pulido, coste y fallos al probar Kimi K3 frente a Fable 5 en el mismo prototipo de juego.",
         "notes": "ChrisGPT compara Fable 5 y Kimi K3 en un demo tipo Limbo. El post reporta 2.400 líneas y 24K tokens de salida por 1,20 dólares para Fable, frente a 3.000 líneas y 30K tokens por 0,12 dólares para Kimi, con más gameplay añadido pero también más errores."
+      },
+      "100": {
+        "title": "Revisar costes de VulcanBench",
+        "takeaway": "Usa los resultados de VulcanBench para comparar precisión, coste y evidencia abierta de Kimi K3 antes de elegir un modelo de producción.",
+        "notes": "Morgan Linton comparte una tabla de VulcanBench y dice que el desglose, la suite de evaluación y el código del benchmark están disponibles públicamente. El post informa que Grok 4.5 ganó en precisión y coste, mientras Kimi K3 resultó caro en este benchmark pese a sus menores precios por token."
+      },
+      "101": {
+        "title": "Comparar profundidad en Minecraft",
+        "takeaway": "Compara profundidad, gráficos, velocidad y valor de suscripción en un juego Minecraft one-shot de Kimi K3 frente a Fable 5.",
+        "notes": "Vikktorrrre probó el mismo prompt en Kimi K3 y Fable 5 sin ajustes. Kimi tardó 1 hora y 20 minutos, razonó primero la lógica y mecánicas, y según el post produjo mejores gráficos y un resultado más jugable; Fable 5 fue más rápido pero más superficial."
+      },
+      "102": {
+        "title": "Construir un FPS de Fallout",
+        "takeaway": "Usa un FPS estilo Fallout hecho en tres intentos para estimar alcance jugable y coste de tokens con Kimi K3.",
+        "notes": "Kirill cuenta que Kimi K3 creó un clon FPS Vault-Tec de Fallout en tres intentos por unos 2,48 dólares de API. El post compara el mismo conteo de tokens con 5,34 dólares en GPT-5.6 Sol y presenta el resultado como un prototipo FPS jugable de bajo coste."
+      },
+      "103": {
+        "title": "Seguir un tutorial web premium",
+        "takeaway": "Sigue un tutorial corto en español para usar Kimi K3 en la generación de sitios web con acabado visual premium.",
+        "notes": "Guille Casaus comparte un tutorial de 13 minutos para crear páginas web con Kimi K3. El post dice que explica paso a paso cómo usar el modelo para lograr un acabado visual mucho más premium."
+      },
+      "104": {
+        "title": "Evaluar física de doble péndulo",
+        "takeaway": "Evalúa Kimi K3 con una simulación de doble péndulo usando coste por iteración, puntuaciones de juez y criterios físicos.",
+        "notes": "Alican Kiraz compara Qwen3.6-35B y Kimi-K3 en una tarea de doble péndulo con OpenCode juzgada por ChatGPT 5.6 Pro. El post reporta 3 iteraciones y 0,59 dólares para Kimi, 90,6/100 puntos y ventaja en arquitectura física, caos, trails, rendimiento largo y riesgo."
+      },
+      "105": {
+        "title": "Lanzar un RPG de data center",
+        "takeaway": "Estudia cómo un flujo con lead agent convirtió con Kimi K3 un brief de dos frases en un RPG completo de navegador.",
+        "notes": "Demian describe Charlie & the Token Factory a partir de un prompt breve sobre un mundo tipo Pokemon de centros de datos. El post menciona combates, captura, progreso, jefes, guardado, música y postgame, además de agentes especialistas, gates de build y verificadores que encontraron bugs reales."
+      },
+      "106": {
+        "title": "Comparar costes de frontend humanoide",
+        "takeaway": "Compara Kimi K3 y GPT-5.6 en un prompt general de frontend de robot humanoide usando líneas, tokens y coste.",
+        "notes": "ChrisGPT compara GPT-5.6 y Kimi K3 en una web frontend de robot humanoide con un prompt amplio. El post reporta 2.100 LOC y 21K tokens por 0,63 dólares para GPT-5.6, frente a 2.400 LOC y 24K tokens por 0,36 dólares para Kimi K3."
+      },
+      "107": {
+        "title": "Revisar preparación en ReactBench",
+        "takeaway": "Usa ReactBench para juzgar dónde Kimi K3 es más barato y fuerte que Opus 4.8, pero aún detrás de los modelos frontera en frontend de producción.",
+        "notes": "Aiden Bai informa que Kimi K3 ocupa el puesto 6 en ReactBench, supera a Opus 4.8 con más de 2x de ahorro y sube 10 puntos frente a K2.7. El mismo post aclara que sigue por detrás de Fable y Sol en preparación de frontend de producción."
+      },
+      "108": {
+        "title": "Construir un juego 3D de coches",
+        "takeaway": "Usa Kimi K3 para prototipar un juego 3D de coches con assets externos, agua, clima, carreteras y ciclo día-noche.",
+        "notes": "LexnLin dice que Kimi K3 construyó un juego 3D de coches con assets externos. El post destaca agua realista, paisajes, carreteras, clima, ciclo día-noche y varios medios de evidencia."
+      },
+      "109": {
+        "title": "Ejecutar Kimi K3 en Claude Code",
+        "takeaway": "Conecta Kimi K3 a Claude Code con un VPS para mantener el flujo de coding y cambiar el backend del modelo.",
+        "notes": "Boxmining comparte una guía de setup para ejecutar Kimi K3 dentro de Claude Code. El post describe Claude Code como harness de programación y Kimi K3 en un VPS 24/7 para loops, subagents y workflows de coding de mayor rendimiento."
       }
     }
   },
@@ -1079,7 +1179,7 @@
     "source_boundary": "Les 89 cas proviennent de sources publiques à forte confiance. Les titres et auteurs renvoient aux originaux; les candidats faibles, dupliqués ou insuffisamment documentés sont exclus",
     "overview_heading": "Vue d’ensemble",
     "overview": [
-      "89 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
+      "109 cas à forte confiance sélectionnés auprès de créateurs et de praticiens",
       "Jeux, 3D, frontend, motion design, développement, intégrations, benchmarks et limites pratiques",
       "Chaque cas conserve la source, l’auteur, le type, la date et les limites factuelles",
       "Les cas à confiance moyenne sont exclus et les observations individuelles ne deviennent pas des conclusions générales"
@@ -1601,6 +1701,56 @@
         "title": "Comparer une démo façon Limbo",
         "takeaway": "Compare portée jouable, finition, coût et bugs en testant Kimi K3 contre Fable 5 sur le même prototype de jeu.",
         "notes": "ChrisGPT compare Fable 5 et Kimi K3 sur une démo clone de Limbo. Le post donne 2 400 lignes et 24K tokens de sortie pour 1,20 dollar côté Fable, contre 3 000 lignes et 30K tokens pour 0,12 dollar côté Kimi, avec plus de gameplay mais aussi plus de bugs."
+      },
+      "100": {
+        "title": "Examiner les coûts VulcanBench",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Examiner les coûts VulcanBench ».",
+        "notes": "Le post source fournit une preuve publique sur « Examiner les coûts VulcanBench », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "101": {
+        "title": "Comparer la profondeur Minecraft",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Comparer la profondeur Minecraft ».",
+        "notes": "Le post source fournit une preuve publique sur « Comparer la profondeur Minecraft », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "102": {
+        "title": "Créer un FPS Fallout",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Créer un FPS Fallout ».",
+        "notes": "Le post source fournit une preuve publique sur « Créer un FPS Fallout », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "103": {
+        "title": "Suivre un tutoriel web premium",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Suivre un tutoriel web premium ».",
+        "notes": "Le post source fournit une preuve publique sur « Suivre un tutoriel web premium », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "104": {
+        "title": "Évaluer la physique du double pendule",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Évaluer la physique du double pendule ».",
+        "notes": "Le post source fournit une preuve publique sur « Évaluer la physique du double pendule », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "105": {
+        "title": "Livrer un RPG de data center",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Livrer un RPG de data center ».",
+        "notes": "Le post source fournit une preuve publique sur « Livrer un RPG de data center », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "106": {
+        "title": "Comparer les coûts frontend humanoïde",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Comparer les coûts frontend humanoïde ».",
+        "notes": "Le post source fournit une preuve publique sur « Comparer les coûts frontend humanoïde », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "107": {
+        "title": "Examiner la maturité ReactBench",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Examiner la maturité ReactBench ».",
+        "notes": "Le post source fournit une preuve publique sur « Examiner la maturité ReactBench », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "108": {
+        "title": "Créer un jeu de voiture 3D",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Créer un jeu de voiture 3D ».",
+        "notes": "Le post source fournit une preuve publique sur « Créer un jeu de voiture 3D », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
+      },
+      "109": {
+        "title": "Exécuter Kimi K3 dans Claude Code",
+        "takeaway": "Utilisez ce cas pour évaluer le workflow réel, le coût ou les limites de Kimi K3 sur « Exécuter Kimi K3 dans Claude Code ».",
+        "notes": "Le post source fournit une preuve publique sur « Exécuter Kimi K3 dans Claude Code », avec description de l’auteur, média du résultat ou informations de benchmark/tutoriel. Le dépôt conserve seulement les faits vérifiables et ne reconstruit pas les prompts ou étapes non publiés."
       }
     }
   },
@@ -2136,6 +2286,56 @@
         "title": "Limbo 風 demo を比較",
         "takeaway": "同じゲーム試作で Kimi K3 と Fable 5 を比べ、遊べる範囲、仕上がり、コスト、バグを見る。",
         "notes": "ChrisGPT は Limbo クローン demo で Fable 5 と Kimi K3 を比較している。Fable は2,400行、24K output token、1.20ドル、Kimi は3,000行、30K output token、0.12ドルとされ、Kimi は gameplay を多く追加した一方でバグも多かった。"
+      },
+      "100": {
+        "title": "VulcanBenchのコスト結果を確認",
+        "takeaway": "この事例で、Kimi K3の「VulcanBenchのコスト結果を確認」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「VulcanBenchのコスト結果を確認」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "101": {
+        "title": "Minecraft構築の深さを比較",
+        "takeaway": "この事例で、Kimi K3の「Minecraft構築の深さを比較」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「Minecraft構築の深さを比較」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "102": {
+        "title": "Fallout風FPSを構築",
+        "takeaway": "この事例で、Kimi K3の「Fallout風FPSを構築」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「Fallout風FPSを構築」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "103": {
+        "title": "高品質Webサイトのチュートリアルを追う",
+        "takeaway": "この事例で、Kimi K3の「高品質Webサイトのチュートリアルを追う」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「高品質Webサイトのチュートリアルを追う」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "104": {
+        "title": "二重振り子物理を評価",
+        "takeaway": "この事例で、Kimi K3の「二重振り子物理を評価」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「二重振り子物理を評価」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "105": {
+        "title": "データセンターRPGを出荷",
+        "takeaway": "この事例で、Kimi K3の「データセンターRPGを出荷」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「データセンターRPGを出荷」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "106": {
+        "title": "ヒューマノイドFrontend費用を比較",
+        "takeaway": "この事例で、Kimi K3の「ヒューマノイドFrontend費用を比較」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「ヒューマノイドFrontend費用を比較」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "107": {
+        "title": "ReactBenchの実運用度を確認",
+        "takeaway": "この事例で、Kimi K3の「ReactBenchの実運用度を確認」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「ReactBenchの実運用度を確認」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "108": {
+        "title": "3Dカーゲームを構築",
+        "takeaway": "この事例で、Kimi K3の「3Dカーゲームを構築」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「3Dカーゲームを構築」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+      },
+      "109": {
+        "title": "Claude CodeでKimi K3を動かす",
+        "takeaway": "この事例で、Kimi K3の「Claude CodeでKimi K3を動かす」における実ワークフロー、コスト、または制約を確認できます。",
+        "notes": "元投稿は「Claude CodeでKimi K3を動かす」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
       }
     }
   },
@@ -2671,6 +2871,56 @@
         "title": "Limbo식 demo 비교",
         "takeaway": "같은 게임 프로토타입에서 Kimi K3와 Fable 5를 비교하며 플레이 범위, 완성도, 비용, 버그를 본다.",
         "notes": "ChrisGPT는 Limbo 클론 demo에서 Fable 5와 Kimi K3를 비교했다. Fable은 2,400줄과 24K output token에 1.20달러, Kimi는 3,000줄과 30K output token에 0.12달러였고, Kimi는 더 많은 gameplay를 추가했지만 버그도 더 많았다고 보고한다."
+      },
+      "100": {
+        "title": "VulcanBench 비용 결과 검토",
+        "takeaway": "이 사례로 Kimi K3가 「VulcanBench 비용 결과 검토」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「VulcanBench 비용 결과 검토」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "101": {
+        "title": "Minecraft 빌드 깊이 비교",
+        "takeaway": "이 사례로 Kimi K3가 「Minecraft 빌드 깊이 비교」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「Minecraft 빌드 깊이 비교」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "102": {
+        "title": "Fallout FPS 클론 제작",
+        "takeaway": "이 사례로 Kimi K3가 「Fallout FPS 클론 제작」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「Fallout FPS 클론 제작」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "103": {
+        "title": "프리미엄 웹사이트 튜토리얼 따라가기",
+        "takeaway": "이 사례로 Kimi K3가 「프리미엄 웹사이트 튜토리얼 따라가기」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「프리미엄 웹사이트 튜토리얼 따라가기」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "104": {
+        "title": "이중 진자 물리 벤치마크",
+        "takeaway": "이 사례로 Kimi K3가 「이중 진자 물리 벤치마크」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「이중 진자 물리 벤치마크」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "105": {
+        "title": "데이터센터 RPG 출시",
+        "takeaway": "이 사례로 Kimi K3가 「데이터센터 RPG 출시」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「데이터센터 RPG 출시」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "106": {
+        "title": "휴머노이드 프론트엔드 비용 비교",
+        "takeaway": "이 사례로 Kimi K3가 「휴머노이드 프론트엔드 비용 비교」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「휴머노이드 프론트엔드 비용 비교」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "107": {
+        "title": "ReactBench 프로덕션 준비도 검토",
+        "takeaway": "이 사례로 Kimi K3가 「ReactBench 프로덕션 준비도 검토」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「ReactBench 프로덕션 준비도 검토」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "108": {
+        "title": "3D 자동차 게임 제작",
+        "takeaway": "이 사례로 Kimi K3가 「3D 자동차 게임 제작」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「3D 자동차 게임 제작」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
+      },
+      "109": {
+        "title": "Claude Code에서 Kimi K3 실행",
+        "takeaway": "이 사례로 Kimi K3가 「Claude Code에서 Kimi K3 실행」 작업에서 보이는 실제 워크플로, 비용 또는 한계를 평가합니다.",
+        "notes": "원본 게시물은 「Claude Code에서 Kimi K3 실행」와 관련된 공개 근거를 제공하며 작성자 설명, 결과 미디어 또는 벤치마크/튜토리얼 정보를 포함합니다. 이 저장소는 검증 가능한 사실만 보존하고 공개되지 않은 prompt나 절차는 만들지 않습니다."
       }
     }
   },
@@ -2684,7 +2934,7 @@
     "source_boundary": "Os 89 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
     "overview_heading": "Visão geral",
     "overview": [
-      "89 casos de alta confiança de criadores e profissionais",
+      "109 casos de alta confiança de criadores e profissionais",
       "Abrange amplamente jogos, Three.js, motion graphics, frontend, pesquisa, ferramentas de agentes, benchmarks, raciocínio e limites práticos",
       "Cada caso preserva fonte, autor, tipo, data e limite do prompt",
       "Relatos individuais não viram benchmarks"
@@ -3206,6 +3456,56 @@
         "title": "Comparar um demo estilo Limbo",
         "takeaway": "Compare escopo jogável, polimento, custo e bugs ao testar Kimi K3 contra Fable 5 no mesmo protótipo de jogo.",
         "notes": "ChrisGPT compara Fable 5 e Kimi K3 em um demo tipo Limbo. O post informa 2.400 linhas e 24K tokens por 1,20 dólar para Fable, contra 3.000 linhas e 30K tokens por 0,12 dólar para Kimi, com mais gameplay, mas também mais bugs."
+      },
+      "100": {
+        "title": "Revisar custos do VulcanBench",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Revisar custos do VulcanBench”.",
+        "notes": "O post original traz evidência pública sobre “Revisar custos do VulcanBench”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "101": {
+        "title": "Comparar profundidade no Minecraft",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Comparar profundidade no Minecraft”.",
+        "notes": "O post original traz evidência pública sobre “Comparar profundidade no Minecraft”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "102": {
+        "title": "Criar um FPS de Fallout",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Criar um FPS de Fallout”.",
+        "notes": "O post original traz evidência pública sobre “Criar um FPS de Fallout”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "103": {
+        "title": "Seguir tutorial de site premium",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Seguir tutorial de site premium”.",
+        "notes": "O post original traz evidência pública sobre “Seguir tutorial de site premium”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "104": {
+        "title": "Avaliar física de pêndulo duplo",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Avaliar física de pêndulo duplo”.",
+        "notes": "O post original traz evidência pública sobre “Avaliar física de pêndulo duplo”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "105": {
+        "title": "Lançar RPG de data center",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Lançar RPG de data center”.",
+        "notes": "O post original traz evidência pública sobre “Lançar RPG de data center”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "106": {
+        "title": "Comparar custos de frontend humanoide",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Comparar custos de frontend humanoide”.",
+        "notes": "O post original traz evidência pública sobre “Comparar custos de frontend humanoide”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "107": {
+        "title": "Revisar prontidão no ReactBench",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Revisar prontidão no ReactBench”.",
+        "notes": "O post original traz evidência pública sobre “Revisar prontidão no ReactBench”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "108": {
+        "title": "Criar jogo 3D de carros",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Criar jogo 3D de carros”.",
+        "notes": "O post original traz evidência pública sobre “Criar jogo 3D de carros”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
+      },
+      "109": {
+        "title": "Rodar Kimi K3 no Claude Code",
+        "takeaway": "Use este caso para avaliar o fluxo real, o custo ou os limites do Kimi K3 em “Rodar Kimi K3 no Claude Code”.",
+        "notes": "O post original traz evidência pública sobre “Rodar Kimi K3 no Claude Code”, incluindo descrição do autor, mídia do resultado ou dados de benchmark/tutorial. O repositório preserva apenas fatos verificáveis e não reconstrói prompts ou etapas não publicados."
       }
     }
   },
@@ -3219,7 +3519,7 @@
     "source_boundary": "Все 89 сценариев основаны на публичных источниках высокой достоверности. Заголовки и авторы ведут к оригиналам; слабые, дублирующие и недостаточно подтвержденные кандидаты исключены",
     "overview_heading": "Обзор",
     "overview": [
-      "89 сценариев с высокой достоверностью и широким охватом задач",
+      "109 сценариев с высокой достоверностью и широким охватом задач",
       "Игры, 3D, frontend, motion-графика, код, исследования, дизайн и оценка ограничений",
       "Для каждого сценария сохранены источник, автор, тип, дата и граница prompt",
       "31 сценарий со средней достоверностью исключен; отдельные наблюдения не выдаются за benchmark"
@@ -3741,6 +4041,56 @@
         "title": "Сравнить Limbo-style demo",
         "takeaway": "Сравнивайте playable scope, polish, cost и bugs при тестировании Kimi K3 против Fable 5 на одном игровом prototype.",
         "notes": "ChrisGPT сравнивает Fable 5 и Kimi K3 на Limbo clone demo. В посте указано: Fable дал 2 400 lines и 24K output tokens за 1,20 доллара, Kimi дал 3 000 lines и 30K tokens за 0,12 доллара; Kimi добавил больше gameplay, но и больше bugs."
+      },
+      "100": {
+        "title": "Проверить затраты VulcanBench",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Проверить затраты VulcanBench». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Проверить затраты VulcanBench»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "101": {
+        "title": "Сравнить глубину Minecraft-сборки",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Сравнить глубину Minecraft-сборки». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Сравнить глубину Minecraft-сборки»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "102": {
+        "title": "Создать FPS-клон Fallout",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Создать FPS-клон Fallout». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Создать FPS-клон Fallout»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "103": {
+        "title": "Пройти премиальный веб-туториал",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Пройти премиальный веб-туториал». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Пройти премиальный веб-туториал»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "104": {
+        "title": "Оценить физику двойного маятника",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Оценить физику двойного маятника». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Оценить физику двойного маятника»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "105": {
+        "title": "Выпустить RPG про дата-центр",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Выпустить RPG про дата-центр». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Выпустить RPG про дата-центр»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "106": {
+        "title": "Сравнить стоимость humanoid frontend",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Сравнить стоимость humanoid frontend». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Сравнить стоимость humanoid frontend»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "107": {
+        "title": "Проверить готовность ReactBench",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Проверить готовность ReactBench». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Проверить готовность ReactBench»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "108": {
+        "title": "Создать 3D-игру с машиной",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Создать 3D-игру с машиной». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Создать 3D-игру с машиной»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
+      },
+      "109": {
+        "title": "Запустить Kimi K3 в Claude Code",
+        "takeaway": "Используйте этот кейс, чтобы оценить реальный workflow, стоимость или ограничения Kimi K3 в задаче «Запустить Kimi K3 в Claude Code». ",
+        "notes": "Исходный пост дает публичные доказательства по теме «Запустить Kimi K3 в Claude Code»: описание автора, медиа результата или данные benchmark/tutorial. Репозиторий сохраняет только проверяемые факты и не восстанавливает закрытые prompts или шаги."
       }
     }
   },
@@ -3754,7 +4104,7 @@
     "source_boundary": "89 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
     "overview_heading": "Genel bakış",
     "overview": [
-      "Geniş görev kapsamına sahip yüksek güvenli 89 örnek",
+      "Geniş görev kapsamına sahip yüksek güvenli 109 örnek",
       "Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi",
       "Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur",
       "Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz"
@@ -4276,6 +4626,56 @@
         "title": "Limbo tarzı demo karşılaştır",
         "takeaway": "Aynı oyun prototipinde Kimi K3 ile Fable 5’i oynanabilir kapsam, görsel polish, maliyet ve bug açısından karşılaştır.",
         "notes": "ChrisGPT, Limbo clone demo üzerinde Fable 5 ve Kimi K3’ü karşılaştırıyor. Gönderi Fable için 2.400 satır, 24K output token ve 1,20 dolar; Kimi için 3.000 satır, 30K token ve 0,12 dolar bildiriyor. Kimi daha fazla gameplay ekliyor ama daha fazla bug da taşıyor."
+      },
+      "100": {
+        "title": "VulcanBench maliyetlerini incele",
+        "takeaway": "Bu örnekle Kimi K3ün “VulcanBench maliyetlerini incele” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “VulcanBench maliyetlerini incele” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "101": {
+        "title": "Minecraft derinliğini karşılaştır",
+        "takeaway": "Bu örnekle Kimi K3ün “Minecraft derinliğini karşılaştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Minecraft derinliğini karşılaştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "102": {
+        "title": "Fallout FPS klonu oluştur",
+        "takeaway": "Bu örnekle Kimi K3ün “Fallout FPS klonu oluştur” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Fallout FPS klonu oluştur” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "103": {
+        "title": "Premium web sitesi eğitimini izle",
+        "takeaway": "Bu örnekle Kimi K3ün “Premium web sitesi eğitimini izle” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Premium web sitesi eğitimini izle” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "104": {
+        "title": "Çift sarkaç fiziğini benchmark et",
+        "takeaway": "Bu örnekle Kimi K3ün “Çift sarkaç fiziğini benchmark et” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Çift sarkaç fiziğini benchmark et” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "105": {
+        "title": "Veri merkezi RPG yayımla",
+        "takeaway": "Bu örnekle Kimi K3ün “Veri merkezi RPG yayımla” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Veri merkezi RPG yayımla” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "106": {
+        "title": "Humanoid frontend maliyetlerini karşılaştır",
+        "takeaway": "Bu örnekle Kimi K3ün “Humanoid frontend maliyetlerini karşılaştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Humanoid frontend maliyetlerini karşılaştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "107": {
+        "title": "ReactBench hazır oluşunu incele",
+        "takeaway": "Bu örnekle Kimi K3ün “ReactBench hazır oluşunu incele” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “ReactBench hazır oluşunu incele” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "108": {
+        "title": "3D araba oyunu oluştur",
+        "takeaway": "Bu örnekle Kimi K3ün “3D araba oyunu oluştur” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “3D araba oyunu oluştur” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+      },
+      "109": {
+        "title": "Kimi K3ü Claude Codeda çalıştır",
+        "takeaway": "Bu örnekle Kimi K3ün “Kimi K3ü Claude Codeda çalıştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
+        "notes": "Kaynak gönderi “Kimi K3ü Claude Codeda çalıştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
       }
     }
   },
@@ -4289,7 +4689,7 @@
     "source_boundary": "全部 89 个案例均来自高置信公开来源；标题和作者链接回原文，弱证据、重复或证据不足的候选不会收录",
     "overview_heading": "概览",
     "overview": [
-      "89 个来自创作者和从业者的高置信案例",
+      "109 个来自创作者和从业者的高置信案例",
       "覆盖互动游戏、3D、前端与动态设计、编程、研究、评估、可视化和代理限制",
       "每个案例保留来源、作者、类型、日期和 prompt 边界",
       "不把个人观察包装成 benchmark"
@@ -4811,6 +5211,56 @@
         "title": "比较 Limbo 风格 demo",
         "takeaway": "在同一个游戏原型上比较 Kimi K3 与 Fable 5 的可玩范围、视觉打磨、成本和 bug。",
         "notes": "ChrisGPT 比较了 Fable 5 与 Kimi K3 的 Limbo clone demo。帖子称 Fable 输出 2,400 行代码、24K output tokens，成本 1.20 美元；Kimi 输出 3,000 行和 30K tokens，成本 0.12 美元，Kimi 增加了更多 gameplay，但 bug 也更多。"
+      },
+      "100": {
+        "title": "审查 VulcanBench 成本结果",
+        "takeaway": "用这个案例评估 Kimi K3 在「审查 VulcanBench 成本结果」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 审查 VulcanBench 成本结果 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "101": {
+        "title": "比较 Minecraft 构建深度",
+        "takeaway": "用这个案例评估 Kimi K3 在「比较 Minecraft 构建深度」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 比较 Minecraft 构建深度 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "102": {
+        "title": "构建 Fallout FPS 克隆",
+        "takeaway": "用这个案例评估 Kimi K3 在「构建 Fallout FPS 克隆」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 构建 Fallout FPS 克隆 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "103": {
+        "title": "跟做高级网站教程",
+        "takeaway": "用这个案例评估 Kimi K3 在「跟做高级网站教程」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 跟做高级网站教程 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "104": {
+        "title": "评测双摆物理模拟",
+        "takeaway": "用这个案例评估 Kimi K3 在「评测双摆物理模拟」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 评测双摆物理模拟 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "105": {
+        "title": "交付数据中心 RPG",
+        "takeaway": "用这个案例评估 Kimi K3 在「交付数据中心 RPG」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 交付数据中心 RPG 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "106": {
+        "title": "比较人形机器人前端成本",
+        "takeaway": "用这个案例评估 Kimi K3 在「比较人形机器人前端成本」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 比较人形机器人前端成本 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "107": {
+        "title": "审查 ReactBench 生产就绪度",
+        "takeaway": "用这个案例评估 Kimi K3 在「审查 ReactBench 生产就绪度」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 审查 ReactBench 生产就绪度 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "108": {
+        "title": "构建 3D 赛车游戏",
+        "takeaway": "用这个案例评估 Kimi K3 在「构建 3D 赛车游戏」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 构建 3D 赛车游戏 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "109": {
+        "title": "在 Claude Code 中运行 Kimi K3",
+        "takeaway": "用这个案例评估 Kimi K3 在「在 Claude Code 中运行 Kimi K3」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 在 Claude Code 中运行 Kimi K3 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
       }
     }
   },
@@ -4824,7 +5274,7 @@
     "source_boundary": "全部 89 個案例均來自高信心公開來源；標題與作者連回原文，弱證據、重複或證據不足的候選不會收錄",
     "overview_heading": "概覽",
     "overview": [
-      "89 個來自創作者與實務工作者的 high-confidence 案例",
+      "109 個來自創作者與實務工作者的 high-confidence 案例",
       "廣泛涵蓋互動遊戲、Three.js、動態設計、前端、研究、評估、工具整合與實務限制",
       "每個案例保留來源、作者、類型、日期與 prompt 邊界",
       "排除全部 31 個 medium-confidence 項目，也不把個人觀察包裝成 benchmark"
@@ -5346,6 +5796,56 @@
         "title": "比較 Limbo 風格 demo",
         "takeaway": "在同一個遊戲原型上比較 Kimi K3 與 Fable 5 的可玩範圍、視覺打磨、成本和 bug。",
         "notes": "ChrisGPT 比較了 Fable 5 與 Kimi K3 的 Limbo clone demo。貼文稱 Fable 輸出 2,400 行程式碼、24K output tokens，成本 1.20 美元；Kimi 輸出 3,000 行和 30K tokens，成本 0.12 美元，Kimi 增加了更多 gameplay，但 bug 也更多。"
+      },
+      "100": {
+        "title": "審查 VulcanBench 成本結果",
+        "takeaway": "用这个案例评估 Kimi K3 在「審查 VulcanBench 成本結果」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 審查 VulcanBench 成本結果 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "101": {
+        "title": "比較 Minecraft 構建深度",
+        "takeaway": "用这个案例评估 Kimi K3 在「比較 Minecraft 構建深度」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 比較 Minecraft 構建深度 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "102": {
+        "title": "構建 Fallout FPS 複製版",
+        "takeaway": "用这个案例评估 Kimi K3 在「構建 Fallout FPS 複製版」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 構建 Fallout FPS 複製版 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "103": {
+        "title": "跟做高級網站教學",
+        "takeaway": "用这个案例评估 Kimi K3 在「跟做高級網站教學」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 跟做高級網站教學 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "104": {
+        "title": "評測雙擺物理模擬",
+        "takeaway": "用这个案例评估 Kimi K3 在「評測雙擺物理模擬」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 評測雙擺物理模擬 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "105": {
+        "title": "交付資料中心 RPG",
+        "takeaway": "用这个案例评估 Kimi K3 在「交付資料中心 RPG」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 交付資料中心 RPG 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "106": {
+        "title": "比較人形機器人前端成本",
+        "takeaway": "用这个案例评估 Kimi K3 在「比較人形機器人前端成本」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 比較人形機器人前端成本 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "107": {
+        "title": "檢視 ReactBench 生產就緒度",
+        "takeaway": "用这个案例评估 Kimi K3 在「檢視 ReactBench 生產就緒度」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 檢視 ReactBench 生產就緒度 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "108": {
+        "title": "構建 3D 賽車遊戲",
+        "takeaway": "用这个案例评估 Kimi K3 在「構建 3D 賽車遊戲」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 構建 3D 賽車遊戲 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+      },
+      "109": {
+        "title": "在 Claude Code 中執行 Kimi K3",
+        "takeaway": "用这个案例评估 Kimi K3 在「在 Claude Code 中執行 Kimi K3」任务中的实际工作流、成本或限制。",
+        "notes": "来源帖提供了与 在 Claude Code 中執行 Kimi K3 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
       }
     }
   }
