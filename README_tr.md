@@ -71,10 +71,10 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 
 | Section | Cases |
 |---|---|
-| [Etkileşimli oyunlar ve 3D](#games-3d) | 33 |
-| [Frontend ve hareketli tasarım](#frontend-motion) | 24 |
-| [Kodlama ve entegrasyonlar](#coding-integrations) | 13 |
-| [Değerlendirme ve sınırlar](#evaluation-limits) | 39 |
+| [Etkileşimli oyunlar ve 3D](#games-3d) | 37 |
+| [Frontend ve hareketli tasarım](#frontend-motion) | 25 |
+| [Kodlama ve entegrasyonlar](#coding-integrations) | 14 |
+| [Değerlendirme ve sınırlar](#evaluation-limits) | 43 |
 | [İlgili kaynaklar](#related-resources) | İlgili kaynaklar |
 | [Hızlı başlangıç](#quick-api-access) | Hızlı başlangıç |
 | [Teşekkürler](#acknowledge) | Katkılar ve düzeltmeler |
@@ -190,6 +190,16 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 | [ReactBench hazır oluşunu incele](#case-107) | Değerlendirme ve sınırlar | Bu örnekle Kimi K3ün “ReactBench hazır oluşunu incele” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin. | Benchmark |
 | [3D araba oyunu oluştur](#case-108) | Etkileşimli oyunlar ve 3D | Bu örnekle Kimi K3ün “3D araba oyunu oluştur” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin. | Demo |
 | [Kimi K3ü Claude Codeda çalıştır](#case-109) | Kodlama ve entegrasyonlar | Bu örnekle Kimi K3ün “Kimi K3ü Claude Codeda çalıştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin. | Integration |
+| [AA-Briefcase ile Kimi K3ü değerlendir](#case-110) | Değerlendirme ve sınırlar | Leaderboard iddialarına güvenmeden önce Kimi K3ün agentic bilgi işi görevlerindeki durumunu AA-Briefcase sonuçlarıyla değerlendir. | Benchmark |
+| [Geometry Dash klonlarını karşılaştır](#case-111) | Etkileşimli oyunlar ve 3D | Aynı brief ile yapılan oyun buildlerini karşılaştırarak Kimi K3ün oynanabilir mobil tarzı prototipler için yeterli olup olmadığını değerlendir. | Evaluation |
+| [Command Code retro oyun testi](#case-112) | Etkileşimli oyunlar ve 3D | Command Codeda çok modelli bir design run kullanarak Kimi K3ün gameplay özelliklerini ve model maliyetlerini karşılaştır. | Evaluation |
+| [Frontend leaderboard uyarılarını denetle](#case-113) | Değerlendirme ve sınırlar | Kimi K3ün leaderboard zaferlerini daha geniş coding ve cost iddialarından ayırmak için bu limitation notunu kullan. | Limit |
+| [StackPerf mimari sonuçlarını karşılaştır](#case-114) | Değerlendirme ve sınırlar | StackPerf ile Kimi K3 ve Qwen 3.8i architecture quality, speed ve tool-call behavior açısından karşılaştır. | Benchmark |
+| [Three.js Kimi-vs-GLM build karşılaştır](#case-115) | Frontend ve hareketli tasarım | Aynı procedural Three.js promptlarını Kimi K3 ve GLM 5.2 ile çalıştırarak frontend ve 3D build davranışını karşılaştır. | Benchmark |
+| [Space Discoverer oyununu benchmarkla](#case-116) | Etkileşimli oyunlar ve 3D | Generic 3D browser-game brief altında model çıktılarını karşılaştırmak için Space Discoverer mini-benchmarkını kullan. | Benchmark |
+| [Gerçek yolla driving game yap](#case-117) | Etkileşimli oyunlar ve 3D | Kimi K3ü Blender ve Godot ile birleştirerek gerçek yerel yol haritası etrafında driving game prototiple. | Demo |
+| [Monument Valley prompt maliyetlerini karşılaştır](#case-118) | Değerlendirme ve sınırlar | Tek bir Monument Valley-style prompt ile Kimi K3 ve benzer modellerin visual quality, runtime ve cost değerlerini karşılaştır. | Benchmark |
+| [Kimiyi claude-code-router ile yönlendir](#case-119) | Kodlama ve entegrasyonlar | Gereksiz proxy mode kullanmadan Kimi K3ü mevcut Claude Code workflow içinde claude-code-router ile dene. | Integration |
 
 <a id="games-3d"></a>
 ## 🎮 Etkileşimli oyunlar ve 3D
@@ -706,6 +716,66 @@ Type: Demo | Date: 2026-07-20
 
 ---
 
+<a id="case-111"></a>
+### Case 111: [Geometry Dash klonlarını karşılaştır](https://x.com/Nekt_0/status/2079629004483465473) (by [@Nekt_0](https://x.com/Nekt_0))
+
+**Aynı brief ile yapılan oyun buildlerini karşılaştırarak Kimi K3ün oynanabilir mobil tarzı prototipler için yeterli olup olmadığını değerlendir.**
+
+Nekt, Kimi K3ün yaklaşık 30 dakika ve 200.000 token harcayarak zıplama, engeller, seviyeler, müzik ve görsel efektler içeren Geometry Dash tarzı bir klon yaptığını ve videoda Claude Fable 5 buildi ile karşılaştırdığını söylüyor.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111-poster.jpg" alt="Case 111 source video poster" height="360"></a>
+
+[Play case 111 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111.mp4)
+
+Type: Evaluation | Date: 2026-07-21
+
+---
+
+<a id="case-112"></a>
+### Case 112: [Command Code retro oyun testi](https://x.com/naymur_dev/status/2079627963000398334) (by [@naymur_dev](https://x.com/naymur_dev))
+
+**Command Codeda çok modelli bir design run kullanarak Kimi K3ün gameplay özelliklerini ve model maliyetlerini karşılaştır.**
+
+Naymur, Command Codeda Fable 5, GPT-5.6 Sol, Grok 4.5 ve Kimi K3 ile aynı /design promptunu çalıştırdığını bildiriyor. Posta göre Kimi K3 gameplay, level up, bullets ve boss fights içeren ASCII retro game üretmiş ve maliyeti $0.15 olmuş.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112-poster.jpg" alt="Case 112 source video poster" height="360"></a>
+
+[Play case 112 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112.mp4)
+
+Type: Evaluation | Date: 2026-07-21
+
+---
+
+<a id="case-116"></a>
+### Case 116: [Space Discoverer oyununu benchmarkla](https://x.com/fabriciocarraro/status/2079548607393382528) (by [@fabriciocarraro](https://x.com/fabriciocarraro))
+
+**Generic 3D browser-game brief altında model çıktılarını karşılaştırmak için Space Discoverer mini-benchmarkını kullan.**
+
+Fabricio Carraro, Claude Fable 5, GPT-5.6 Sol ve Kimi K3ü maksimum reasoning ayarlarında karşılaştıran mini-benchmarkı bildiriyor. Görev Space Discoverer adlı 3D browser game ve üç model de WebGL 2 üzerinde Three.jsye yönelmiş.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116-poster.jpg" alt="Case 116 source video poster" height="360"></a>
+
+[Play case 116 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-117"></a>
+### Case 117: [Gerçek yolla driving game yap](https://x.com/bijanbowen/status/2079526003643179102) (by [@bijanbowen](https://x.com/bijanbowen))
+
+**Kimi K3ü Blender ve Godot ile birleştirerek gerçek yerel yol haritası etrafında driving game prototiple.**
+
+Bijan Bowen, Kimi K3ün Blender ve Godot kullanarak yaratıcının yakınındaki gerçek bir yol parçasını map basis alan bir driving game yaptığını gösteriyor. Ekli video build durumunun public evidenceıdır.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117-poster.jpg" alt="Case 117 source video poster" height="360"></a>
+
+[Play case 117 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117.mp4)
+
+Type: Demo | Date: 2026-07-21
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 Frontend ve hareketli tasarım
@@ -1072,6 +1142,21 @@ Type: Benchmark | Date: 2026-07-20
 
 ---
 
+<a id="case-115"></a>
+### Case 115: [Three.js Kimi-vs-GLM build karşılaştır](https://x.com/thehypedotnews/status/2079553731218325840) (by [@thehypedotnews](https://x.com/thehypedotnews))
+
+**Aynı procedural Three.js promptlarını Kimi K3 ve GLM 5.2 ile çalıştırarak frontend ve 3D build davranışını karşılaştır.**
+
+The Hype, Kimi K3 ve GLM 5.2yi üç single-file HTML ve Three.js promptuyla test ettiğini söylüyor: live CRT canvas texturelı 80ler salonu, drivetrain kinematicsli road bike ve glass aquarium scene.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115-poster.jpg" alt="Case 115 source video poster" height="360"></a>
+
+[Play case 115 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 Kodlama ve entegrasyonlar
@@ -1256,6 +1341,21 @@ Kaynak gönderi “Kimi K3ü Claude Codeda çalıştır” için yazar açıklam
 [Play case 109 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109.mp4)
 
 Type: Integration | Date: 2026-07-20
+
+---
+
+<a id="case-119"></a>
+### Case 119: [Kimiyi claude-code-router ile yönlendir](https://x.com/sairahul1/status/2079393675885588855) (by [@sairahul1](https://x.com/sairahul1))
+
+**Gereksiz proxy mode kullanmadan Kimi K3ü mevcut Claude Code workflow içinde claude-code-router ile dene.**
+
+Sai Rahul, Moonshot sponsorlu claude-code-router Kimi K3 desteğini anlatıyor: built-in presets, API key veya subscription import, native subscription routing, balance/usage dashboard, failover, cache pricing ve gerekmedikçe proxy modeu kapalı tutma uyarısı.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119-poster.jpg" alt="Case 119 source video poster" height="360"></a>
+
+[Play case 119 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119.mp4)
+
+Type: Integration | Date: 2026-07-21
 
 ---
 
@@ -1826,6 +1926,62 @@ Type: Benchmark | Date: 2026-07-20
 
 ---
 
+<a id="case-110"></a>
+### Case 110: [AA-Briefcase ile Kimi K3ü değerlendir](https://x.com/ArtificialAnlys/status/2079715807983210572) (by [@ArtificialAnlys](https://x.com/ArtificialAnlys))
+
+**Leaderboard iddialarına güvenmeden önce Kimi K3ün agentic bilgi işi görevlerindeki durumunu AA-Briefcase sonuçlarıyla değerlendir.**
+
+Artificial Analysis, Kimi K3ün AA-Briefcase üzerinde 1543 Elo ile Claude Fable 5in arkasında ikinci olduğunu; ancak bu benchmarkta görev başına neredeyse bir saat sürdüğünü ve Opus 4.8den pahalıya geldiğini bildiriyor.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-110-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-110-01.jpg" alt="Case 110 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-113"></a>
+### Case 113: [Frontend leaderboard uyarılarını denetle](https://x.com/RetroChainer/status/2079622227796885850) (by [@RetroChainer](https://x.com/RetroChainer))
+
+**Kimi K3ün leaderboard zaferlerini daha geniş coding ve cost iddialarından ayırmak için bu limitation notunu kullan.**
+
+RetroChainer Frontend Code Arena liderliğini ve listelenen fiyatı doğruluyor; ancak sıralamanın tek boarda özel olduğunu, weightslerin post sırasında public olmadığını, job başı tasarrufun tek tasktan geldiğini ve max reasoningin küçük işlerde çok token yakabildiğini belirtiyor.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113-poster.jpg" alt="Case 113 source video poster" height="360"></a>
+
+[Play case 113 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113.mp4)
+
+Type: Limit | Date: 2026-07-21
+
+---
+
+<a id="case-114"></a>
+### Case 114: [StackPerf mimari sonuçlarını karşılaştır](https://x.com/tamsi_besson/status/2079573266855834071) (by [@tamsi_besson](https://x.com/tamsi_besson))
+
+**StackPerf ile Kimi K3 ve Qwen 3.8i architecture quality, speed ve tool-call behavior açısından karşılaştır.**
+
+Tamsi Bessonun StackPerf snapshotına göre Kimi K3 kalite tarafında Qwen 3.8 Max Previewı az farkla geçiyor ve toplamda daha hızlı; buna karşılık Qwende failed tool call yokken Kimi daha çok tool call içinde 2 hata yapıyor.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-114-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-114-01.jpg" alt="Case 114 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-118"></a>
+### Case 118: [Monument Valley prompt maliyetlerini karşılaştır](https://x.com/AiHubMix/status/2079507420083294557) (by [@AiHubMix](https://x.com/AiHubMix))
+
+**Tek bir Monument Valley-style prompt ile Kimi K3 ve benzer modellerin visual quality, runtime ve cost değerlerini karşılaştır.**
+
+AiHubMix, Claude Fable 5, Kimi K3 ve GPT-5.6 Solu tek Monument Valley-style prompt üzerinde karşılaştırıyor. Post Fableı en coherent, Kimiyi 52m30s ve $1.50 ile en yavaş, GPT-5.6 Solu en hızlı ve ucuz ama spatial logicte daha zayıf olarak bildiriyor.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118-poster.jpg" alt="Case 118 source video poster" height="360"></a>
+
+[Play case 118 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
 <a id="related-resources"></a>
 ## İlgili kaynaklar
 
@@ -1840,6 +1996,6 @@ Type: Benchmark | Date: 2026-07-20
 
 Kimi K3 çalışmalarını kamuya açık paylaşan herkese teşekkür ederiz
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining), [@Nekt_0](https://x.com/Nekt_0), [@RetroChainer](https://x.com/RetroChainer), [@tamsi_besson](https://x.com/tamsi_besson), [@thehypedotnews](https://x.com/thehypedotnews), [@AiHubMix](https://x.com/AiHubMix), [@sairahul1](https://x.com/sairahul1)
 
 *Atıf veya metin düzeltmesi için kamuya açık kaynakla bir issue açın*

@@ -580,6 +580,56 @@
       "title": "Ejecutar Kimi K3 en Claude Code",
       "takeaway": "Conecta Kimi K3 a Claude Code con un VPS para mantener el flujo de coding y cambiar el backend del modelo.",
       "notes": "Boxmining comparte una guía de setup para ejecutar Kimi K3 dentro de Claude Code. El post describe Claude Code como harness de programación y Kimi K3 en un VPS 24/7 para loops, subagents y workflows de coding de mayor rendimiento."
+    },
+    "110": {
+      "title": "Evaluar Kimi K3 en AA-Briefcase",
+      "takeaway": "Usa los resultados de AA-Briefcase para juzgar Kimi K3 en tareas agentic de trabajo del conocimiento antes de confiar en afirmaciones de leaderboard.",
+      "notes": "Artificial Analysis informa que Kimi K3 obtuvo 1543 Elo en AA-Briefcase, segundo detrás de Claude Fable 5, y señala que el modelo promedió casi una hora por tarea y costó más que Opus 4.8 en este benchmark."
+    },
+    "111": {
+      "title": "Comparar clones de Geometry Dash",
+      "takeaway": "Compara builds de juegos con el mismo brief para decidir si Kimi K3 basta para prototipos jugables de estilo móvil.",
+      "notes": "Nekt dice que Kimi K3 dedicó unos 30 minutos y 200.000 tokens a construir un clon tipo Geometry Dash con saltos, obstáculos, niveles, música y efectos visuales, y lo compara con una build de Claude Fable 5 en el video adjunto."
+    },
+    "112": {
+      "title": "Probar un juego retro en Command Code",
+      "takeaway": "Usa una prueba de diseño multi-modelo en Command Code para comparar funciones de gameplay de Kimi K3 y coste por modelo.",
+      "notes": "Naymur reporta el mismo prompt /design en Command Code con Fable 5, GPT-5.6 Sol, Grok 4.5 y Kimi K3. El post dice que Kimi K3 produjo un juego retro ASCII con gameplay, niveles, balas y jefes, con coste reportado de $0.15."
+    },
+    "113": {
+      "title": "Auditar salvedades del leaderboard frontend",
+      "takeaway": "Usa esta nota de limitación para separar las victorias de Kimi K3 en leaderboards de afirmaciones más amplias sobre coding y coste.",
+      "notes": "RetroChainer verifica el liderazgo en Frontend Code Arena y los precios listados, y luego marca salvedades: el rango es específico de ese tablero, los pesos aún no eran públicos al publicarse, los ahorros por trabajo venían de una sola tarea y el razonamiento máximo puede gastar muchos tokens en trabajos pequeños."
+    },
+    "114": {
+      "title": "Comparar resultados de arquitectura StackPerf",
+      "takeaway": "Usa StackPerf para comparar Kimi K3 y Qwen 3.8 en calidad de arquitectura, velocidad y comportamiento de tool calls.",
+      "notes": "Tamsi Besson comparte una instantánea de StackPerf donde Kimi K3 supera ligeramente a Qwen 3.8 Max Preview en calidad y corre más rápido en total, mientras Qwen registra cero tool calls fallidos frente a dos de Kimi pese a que Kimi hizo más llamadas."
+    },
+    "115": {
+      "title": "Comparar builds Three.js Kimi-vs-GLM",
+      "takeaway": "Ejecuta los mismos prompts procedurales de Three.js con Kimi K3 y GLM 5.2 para comparar comportamiento frontend y 3D.",
+      "notes": "The Hype dice que probó Kimi K3 y GLM 5.2 con tres prompts de HTML de un solo archivo y Three.js: una sala ochentera con textura de canvas en un CRT, una bici de ruta con cinemática de transmisión y una escena de acuario de vidrio."
+    },
+    "116": {
+      "title": "Evaluar el juego Space Discoverer",
+      "takeaway": "Usa el mini-benchmark Space Discoverer para comparar salidas de modelos en un brief genérico de juego 3D de navegador.",
+      "notes": "Fabricio Carraro reporta un mini-benchmark con Claude Fable 5, GPT-5.6 Sol y Kimi K3 en máximos niveles de razonamiento. La tarea fue un juego 3D de navegador llamado Space Discoverer, y el post dice que los tres convergieron en Three.js sobre WebGL 2."
+    },
+    "117": {
+      "title": "Construir juego de conducción con ruta real",
+      "takeaway": "Prototipa un juego de conducción combinando Kimi K3 con Blender y Godot alrededor de un mapa de una carretera local real.",
+      "notes": "Bijan Bowen muestra a Kimi K3 creando un juego de conducción con Blender y Godot, usando como mapa un tramo real de carretera cercano al creador. El video adjunto es la evidencia pública del estado de la build."
+    },
+    "118": {
+      "title": "Comparar costes con prompt Monument Valley",
+      "takeaway": "Usa un único prompt estilo Monument Valley para comparar calidad visual, tiempo de ejecución y coste entre Kimi K3 y otros modelos.",
+      "notes": "AiHubMix compara Claude Fable 5, Kimi K3 y GPT-5.6 Sol con un prompt estilo Monument Valley. El post reporta Fable como el más coherente, Kimi como el más lento con 52m30s y $1.50, y GPT-5.6 Sol como el más rápido y barato pero más débil en lógica espacial."
+    },
+    "119": {
+      "title": "Enrutar Kimi con claude-code-router",
+      "takeaway": "Prueba Kimi K3 en un flujo existente de Claude Code mediante claude-code-router evitando el modo proxy innecesario.",
+      "notes": "Sai Rahul describe soporte patrocinado por Moonshot para Kimi K3 en claude-code-router, con presets integrados, importación de API key o suscripción, enrutamiento nativo de suscripción, balance y uso en dashboard, failover, precios de caché y una advertencia para dejar el modo proxy apagado salvo que haga falta."
     }
   }
 }

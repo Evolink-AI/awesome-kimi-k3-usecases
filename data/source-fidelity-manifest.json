@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "source_artifact": "combined-use-case-source.json",
-  "source_manifest_sha256": "cc9ac6bb615e3fee17a21380442e18290f11686ee7039785bd7f63a89cfee3f1",
+  "source_manifest_sha256": "ac6c77db5eb377e60117c002a34ad6aea1d9a5344a9dab13e07d5e8e6f59d65d",
   "source_inputs": [
     {
       "kind": "primary-file",
-      "path": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/combined-use-case-source.json",
-      "sha256": "cc9ac6bb615e3fee17a21380442e18290f11686ee7039785bd7f63a89cfee3f1"
+      "path": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260722T010301Z/combined-use-case-source.json",
+      "sha256": "ac6c77db5eb377e60117c002a34ad6aea1d9a5344a9dab13e07d5e8e6f59d65d"
     }
   ],
-  "selected_case_count": 109,
-  "cases_with_source_media": 109,
-  "expected_public_visual_count": 120,
+  "selected_case_count": 119,
+  "cases_with_source_media": 119,
+  "expected_public_visual_count": 130,
   "media_policy": "all-source-media",
   "owner_presentation": {
     "menu_layout": "centralized-single-table",
@@ -1328,6 +1328,124 @@
         "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109-poster.jpg"
       ],
       "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109.mp4"
+    },
+    {
+      "public_number": 110,
+      "source_url": "https://x.com/ArtificialAnlys/status/2079715807983210572",
+      "source_media_urls": [
+        "https://pbs.twimg.com/media/HNyf77PaoAA8QS5.jpg"
+      ],
+      "public_media_disposition": "r2-image",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-110-01.jpg"
+      ]
+    },
+    {
+      "public_number": 111,
+      "source_url": "https://x.com/Nekt_0/status/2079629004483465473",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079618844570570753/vid/avc1/720x1280/bmQj4UFFnlKahEjE.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111.mp4"
+    },
+    {
+      "public_number": 112,
+      "source_url": "https://x.com/naymur_dev/status/2079627963000398334",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079626523586564096/vid/avc1/1046x720/As9wbZlttI1t7p_M.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112.mp4"
+    },
+    {
+      "public_number": 113,
+      "source_url": "https://x.com/RetroChainer/status/2079622227796885850",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079620697874178048/vid/avc1/576x1024/tfr7-ohtPBOcjLyl.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113.mp4"
+    },
+    {
+      "public_number": 114,
+      "source_url": "https://x.com/tamsi_besson/status/2079573266855834071",
+      "source_media_urls": [
+        "https://pbs.twimg.com/media/HNwf9pmXsAATmVE.jpg"
+      ],
+      "public_media_disposition": "r2-image",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-114-01.jpg"
+      ]
+    },
+    {
+      "public_number": 115,
+      "source_url": "https://x.com/thehypedotnews/status/2079553731218325840",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079553387171901440/vid/avc1/1280x720/5Q0Hm4uHl11Oadzz.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115.mp4"
+    },
+    {
+      "public_number": 116,
+      "source_url": "https://x.com/fabriciocarraro/status/2079548607393382528",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079544780359446528/vid/avc1/1280x720/XrIhNdGJAJ_yU7Hd.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116.mp4"
+    },
+    {
+      "public_number": 117,
+      "source_url": "https://x.com/bijanbowen/status/2079526003643179102",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079525515694608384/vid/avc1/1280x720/8xg58eAj0y9Y8wBI.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117.mp4"
+    },
+    {
+      "public_number": 118,
+      "source_url": "https://x.com/AiHubMix/status/2079507420083294557",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079503441005780992/vid/avc1/1280x720/nIX2209_LnrAnlln.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118.mp4"
+    },
+    {
+      "public_number": 119,
+      "source_url": "https://x.com/sairahul1/status/2079393675885588855",
+      "source_media_urls": [
+        "https://video.twimg.com/amplify_video/2079102483914436608/vid/avc1/1224x720/vojnbFwlfXk2z1rN.mp4?tag=29"
+      ],
+      "public_media_disposition": "r2-video",
+      "expected_public_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119-poster.jpg"
+      ],
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119.mp4"
     }
   ]
 }

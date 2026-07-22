@@ -71,10 +71,10 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 
 | Section | Cases |
 |---|---|
-| [インタラクティブゲームと3D](#games-3d) | 33 |
-| [フロントエンドとモーションデザイン](#frontend-motion) | 24 |
-| [コーディングと統合](#coding-integrations) | 13 |
-| [評価と制約](#evaluation-limits) | 39 |
+| [インタラクティブゲームと3D](#games-3d) | 37 |
+| [フロントエンドとモーションデザイン](#frontend-motion) | 25 |
+| [コーディングと統合](#coding-integrations) | 14 |
+| [評価と制約](#evaluation-limits) | 43 |
 | [関連リソース](#related-resources) | 関連リソース |
 | [クイックスタート](#quick-api-access) | クイックスタート |
 | [謝辞](#acknowledge) | 謝辞と訂正 |
@@ -190,6 +190,16 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 | [ReactBenchの実運用度を確認](#case-107) | 評価と制約 | この事例で、Kimi K3の「ReactBenchの実運用度を確認」における実ワークフロー、コスト、または制約を確認できます。 | Benchmark |
 | [3Dカーゲームを構築](#case-108) | インタラクティブゲームと3D | この事例で、Kimi K3の「3Dカーゲームを構築」における実ワークフロー、コスト、または制約を確認できます。 | Demo |
 | [Claude CodeでKimi K3を動かす](#case-109) | コーディングと統合 | この事例で、Kimi K3の「Claude CodeでKimi K3を動かす」における実ワークフロー、コスト、または制約を確認できます。 | Integration |
+| [AA-BriefcaseでKimi K3を評価](#case-110) | 評価と制約 | リーダーボードの主張を鵜呑みにする前に、AA-Briefcaseの結果でKimi K3の知識労働系エージェント能力を判断する。 | Benchmark |
+| [Geometry Dashクローンを比較](#case-111) | インタラクティブゲームと3D | 同じ要件のゲームbuildを比較し、Kimi K3がモバイル風の遊べるプロトタイプに十分か判断する。 | Evaluation |
+| [Command Codeでレトロゲームを試す](#case-112) | インタラクティブゲームと3D | Command Codeの複数モデル設計テストで、Kimi K3のゲーム機能とモデル別コストを比較する。 | Evaluation |
+| [フロントエンド順位の注意点を確認](#case-113) | 評価と制約 | Kimi K3のleaderboard勝利と、より広いcodingやcost主張を切り分けるための制約メモとして使う。 | Limit |
+| [StackPerfの設計結果を比較](#case-114) | 評価と制約 | StackPerfでKimi K3とQwen 3.8の設計品質、速度、tool call挙動を比較する。 | Benchmark |
+| [Three.jsのKimi対GLMを検証](#case-115) | フロントエンドとモーションデザイン | 同じ手続き型Three.js promptをKimi K3とGLM 5.2で走らせ、frontendと3D buildの挙動を比較する。 | Benchmark |
+| [Space Discovererを評価](#case-116) | インタラクティブゲームと3D | Space Discovererミニベンチマークで、汎用的な3Dブラウザゲーム要件に対するモデル出力を比較する。 | Benchmark |
+| [実道路のドライブゲームを作る](#case-117) | インタラクティブゲームと3D | Kimi K3をBlenderとGodotに組み合わせ、実在する近所の道路地図を使ったドライブゲームを試作する。 | Demo |
+| [Monument Valley風promptの費用比較](#case-118) | 評価と制約 | 単一のMonument Valley風promptで、Kimi K3と他モデルの視覚品質、実行時間、費用を比較する。 | Benchmark |
+| [claude-code-routerでKimiを使う](#case-119) | コーディングと統合 | 不要なproxy modeを避けながら、claude-code-router経由で既存のClaude Code workflowにKimi K3を組み込む。 | Integration |
 
 <a id="games-3d"></a>
 ## 🎮 インタラクティブゲームと3D
@@ -706,6 +716,66 @@ Type: Demo | Date: 2026-07-20
 
 ---
 
+<a id="case-111"></a>
+### Case 111: [Geometry Dashクローンを比較](https://x.com/Nekt_0/status/2079629004483465473) (by [@Nekt_0](https://x.com/Nekt_0))
+
+**同じ要件のゲームbuildを比較し、Kimi K3がモバイル風の遊べるプロトタイプに十分か判断する。**
+
+Nektは、Kimi K3が約30分と20万tokenで、ジャンプ、障害物、レベル、音楽、視覚効果を備えたGeometry Dash風クローンを作ったと述べ、添付動画でClaude Fable 5のbuildと比較している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111-poster.jpg" alt="Case 111 source video poster" height="360"></a>
+
+[Play case 111 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-111.mp4)
+
+Type: Evaluation | Date: 2026-07-21
+
+---
+
+<a id="case-112"></a>
+### Case 112: [Command Codeでレトロゲームを試す](https://x.com/naymur_dev/status/2079627963000398334) (by [@naymur_dev](https://x.com/naymur_dev))
+
+**Command Codeの複数モデル設計テストで、Kimi K3のゲーム機能とモデル別コストを比較する。**
+
+NaymurはCommand CodeでFable 5、GPT-5.6 Sol、Grok 4.5、Kimi K3に同じ/design promptを実行したと報告。Kimi K3はゲームプレイ、レベルアップ、弾、ボス戦を持つASCIIレトロゲームを生成し、費用は$0.15だったという。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112-poster.jpg" alt="Case 112 source video poster" height="360"></a>
+
+[Play case 112 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-112.mp4)
+
+Type: Evaluation | Date: 2026-07-21
+
+---
+
+<a id="case-116"></a>
+### Case 116: [Space Discovererを評価](https://x.com/fabriciocarraro/status/2079548607393382528) (by [@fabriciocarraro](https://x.com/fabriciocarraro))
+
+**Space Discovererミニベンチマークで、汎用的な3Dブラウザゲーム要件に対するモデル出力を比較する。**
+
+Fabricio CarraroはClaude Fable 5、GPT-5.6 Sol、Kimi K3を最大reasoningで比較したミニベンチマークを報告。課題はSpace Discovererという3Dブラウザゲームで、3モデルすべてがWebGL 2上のThree.jsに収束したという。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116-poster.jpg" alt="Case 116 source video poster" height="360"></a>
+
+[Play case 116 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-116.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-117"></a>
+### Case 117: [実道路のドライブゲームを作る](https://x.com/bijanbowen/status/2079526003643179102) (by [@bijanbowen](https://x.com/bijanbowen))
+
+**Kimi K3をBlenderとGodotに組み合わせ、実在する近所の道路地図を使ったドライブゲームを試作する。**
+
+Bijan Bowenは、Kimi K3がBlenderとGodotを使い、作者の近くの実際の道路区間をマップにしたドライブゲームを作っている様子を示している。添付動画がbuild状態の公開証拠である。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117-poster.jpg" alt="Case 117 source video poster" height="360"></a>
+
+[Play case 117 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-117.mp4)
+
+Type: Demo | Date: 2026-07-21
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 フロントエンドとモーションデザイン
@@ -1072,6 +1142,21 @@ Type: Benchmark | Date: 2026-07-20
 
 ---
 
+<a id="case-115"></a>
+### Case 115: [Three.jsのKimi対GLMを検証](https://x.com/thehypedotnews/status/2079553731218325840) (by [@thehypedotnews](https://x.com/thehypedotnews))
+
+**同じ手続き型Three.js promptをKimi K3とGLM 5.2で走らせ、frontendと3D buildの挙動を比較する。**
+
+The HypeはKimi K3とGLM 5.2に、CRT上のcanvas texture付き80年代リビング、駆動系kinematics付きロードバイク、ガラス水槽という3つの単一HTML/Three.js promptを実行したという。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115-poster.jpg" alt="Case 115 source video poster" height="360"></a>
+
+[Play case 115 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-115.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 コーディングと統合
@@ -1256,6 +1341,21 @@ Type: Integration | Date: 2026-07-19
 [Play case 109 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-109.mp4)
 
 Type: Integration | Date: 2026-07-20
+
+---
+
+<a id="case-119"></a>
+### Case 119: [claude-code-routerでKimiを使う](https://x.com/sairahul1/status/2079393675885588855) (by [@sairahul1](https://x.com/sairahul1))
+
+**不要なproxy modeを避けながら、claude-code-router経由で既存のClaude Code workflowにKimi K3を組み込む。**
+
+Sai RahulはMoonshot支援のclaude-code-routerにおけるKimi K3対応を説明し、preset、API keyまたはsubscription import、native subscription routing、残高/利用量dashboard、failover、cache pricing、必要な場合以外proxy modeを切る注意点を挙げている。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119-poster.jpg" alt="Case 119 source video poster" height="360"></a>
+
+[Play case 119 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-119.mp4)
+
+Type: Integration | Date: 2026-07-21
 
 ---
 
@@ -1826,6 +1926,62 @@ Type: Benchmark | Date: 2026-07-20
 
 ---
 
+<a id="case-110"></a>
+### Case 110: [AA-BriefcaseでKimi K3を評価](https://x.com/ArtificialAnlys/status/2079715807983210572) (by [@ArtificialAnlys](https://x.com/ArtificialAnlys))
+
+**リーダーボードの主張を鵜呑みにする前に、AA-Briefcaseの結果でKimi K3の知識労働系エージェント能力を判断する。**
+
+Artificial Analysisは、Kimi K3がAA-Briefcaseで1543 Eloを記録しClaude Fable 5に次ぐ2位だった一方、このベンチマークでは1タスク平均が約1時間で、Opus 4.8より高コストだったと報告している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-110-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-110-01.jpg" alt="Case 110 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-113"></a>
+### Case 113: [フロントエンド順位の注意点を確認](https://x.com/RetroChainer/status/2079622227796885850) (by [@RetroChainer](https://x.com/RetroChainer))
+
+**Kimi K3のleaderboard勝利と、より広いcodingやcost主張を切り分けるための制約メモとして使う。**
+
+RetroChainerはFrontend Code Arena首位と公開価格を確認しつつ、順位はそのボード固有であること、投稿時点でweightsは未公開だったこと、作業単価の節約は1タスク由来であること、max reasoningが小さな作業でtokensを消費し得ることを指摘している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113-poster.jpg" alt="Case 113 source video poster" height="360"></a>
+
+[Play case 113 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-113.mp4)
+
+Type: Limit | Date: 2026-07-21
+
+---
+
+<a id="case-114"></a>
+### Case 114: [StackPerfの設計結果を比較](https://x.com/tamsi_besson/status/2079573266855834071) (by [@tamsi_besson](https://x.com/tamsi_besson))
+
+**StackPerfでKimi K3とQwen 3.8の設計品質、速度、tool call挙動を比較する。**
+
+Tamsi BessonはStackPerfの結果を共有し、Kimi K3がQwen 3.8 Max Previewを品質でわずかに上回り総時間も速い一方、Qwenはtool call失敗0件、Kimiは2件だったと述べている。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-114-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-114-01.jpg" alt="Case 114 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
+<a id="case-118"></a>
+### Case 118: [Monument Valley風promptの費用比較](https://x.com/AiHubMix/status/2079507420083294557) (by [@AiHubMix](https://x.com/AiHubMix))
+
+**単一のMonument Valley風promptで、Kimi K3と他モデルの視覚品質、実行時間、費用を比較する。**
+
+AiHubMixはClaude Fable 5、Kimi K3、GPT-5.6 Solを1つのMonument Valley風promptで比較。Fableは最も一貫し、Kimiは52分30秒・$1.50で最も遅く、GPT-5.6 Solは最速最安だが空間ロジックは弱いと報告している。
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118-poster.jpg" alt="Case 118 source video poster" height="360"></a>
+
+[Play case 118 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-118.mp4)
+
+Type: Benchmark | Date: 2026-07-21
+
+---
+
 <a id="related-resources"></a>
 ## 関連リソース
 
@@ -1840,6 +1996,6 @@ Type: Benchmark | Date: 2026-07-20
 
 Kimi K3の成果を公開した皆さまに感謝します
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining), [@Nekt_0](https://x.com/Nekt_0), [@RetroChainer](https://x.com/RetroChainer), [@tamsi_besson](https://x.com/tamsi_besson), [@thehypedotnews](https://x.com/thehypedotnews), [@AiHubMix](https://x.com/AiHubMix), [@sairahul1](https://x.com/sairahul1)
 
 *帰属や記述の訂正は公開ソースを添えてissueを作成してください*

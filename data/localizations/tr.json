@@ -580,6 +580,56 @@
       "title": "Kimi K3ü Claude Codeda çalıştır",
       "takeaway": "Bu örnekle Kimi K3ün “Kimi K3ü Claude Codeda çalıştır” görevindeki gerçek iş akışını, maliyetini veya sınırlarını değerlendirin.",
       "notes": "Kaynak gönderi “Kimi K3ü Claude Codeda çalıştır” için yazar açıklaması, sonuç medyası veya benchmark/eğitim bilgisi gibi açık kanıtlar sunar. Bu depo yalnızca doğrulanabilir bilgileri korur; yayımlanmamış prompt veya adımları uydurmaz."
+    },
+    "110": {
+      "title": "AA-Briefcase ile Kimi K3ü değerlendir",
+      "takeaway": "Leaderboard iddialarına güvenmeden önce Kimi K3ün agentic bilgi işi görevlerindeki durumunu AA-Briefcase sonuçlarıyla değerlendir.",
+      "notes": "Artificial Analysis, Kimi K3ün AA-Briefcase üzerinde 1543 Elo ile Claude Fable 5in arkasında ikinci olduğunu; ancak bu benchmarkta görev başına neredeyse bir saat sürdüğünü ve Opus 4.8den pahalıya geldiğini bildiriyor."
+    },
+    "111": {
+      "title": "Geometry Dash klonlarını karşılaştır",
+      "takeaway": "Aynı brief ile yapılan oyun buildlerini karşılaştırarak Kimi K3ün oynanabilir mobil tarzı prototipler için yeterli olup olmadığını değerlendir.",
+      "notes": "Nekt, Kimi K3ün yaklaşık 30 dakika ve 200.000 token harcayarak zıplama, engeller, seviyeler, müzik ve görsel efektler içeren Geometry Dash tarzı bir klon yaptığını ve videoda Claude Fable 5 buildi ile karşılaştırdığını söylüyor."
+    },
+    "112": {
+      "title": "Command Code retro oyun testi",
+      "takeaway": "Command Codeda çok modelli bir design run kullanarak Kimi K3ün gameplay özelliklerini ve model maliyetlerini karşılaştır.",
+      "notes": "Naymur, Command Codeda Fable 5, GPT-5.6 Sol, Grok 4.5 ve Kimi K3 ile aynı /design promptunu çalıştırdığını bildiriyor. Posta göre Kimi K3 gameplay, level up, bullets ve boss fights içeren ASCII retro game üretmiş ve maliyeti $0.15 olmuş."
+    },
+    "113": {
+      "title": "Frontend leaderboard uyarılarını denetle",
+      "takeaway": "Kimi K3ün leaderboard zaferlerini daha geniş coding ve cost iddialarından ayırmak için bu limitation notunu kullan.",
+      "notes": "RetroChainer Frontend Code Arena liderliğini ve listelenen fiyatı doğruluyor; ancak sıralamanın tek boarda özel olduğunu, weightslerin post sırasında public olmadığını, job başı tasarrufun tek tasktan geldiğini ve max reasoningin küçük işlerde çok token yakabildiğini belirtiyor."
+    },
+    "114": {
+      "title": "StackPerf mimari sonuçlarını karşılaştır",
+      "takeaway": "StackPerf ile Kimi K3 ve Qwen 3.8i architecture quality, speed ve tool-call behavior açısından karşılaştır.",
+      "notes": "Tamsi Bessonun StackPerf snapshotına göre Kimi K3 kalite tarafında Qwen 3.8 Max Previewı az farkla geçiyor ve toplamda daha hızlı; buna karşılık Qwende failed tool call yokken Kimi daha çok tool call içinde 2 hata yapıyor."
+    },
+    "115": {
+      "title": "Three.js Kimi-vs-GLM build karşılaştır",
+      "takeaway": "Aynı procedural Three.js promptlarını Kimi K3 ve GLM 5.2 ile çalıştırarak frontend ve 3D build davranışını karşılaştır.",
+      "notes": "The Hype, Kimi K3 ve GLM 5.2yi üç single-file HTML ve Three.js promptuyla test ettiğini söylüyor: live CRT canvas texturelı 80ler salonu, drivetrain kinematicsli road bike ve glass aquarium scene."
+    },
+    "116": {
+      "title": "Space Discoverer oyununu benchmarkla",
+      "takeaway": "Generic 3D browser-game brief altında model çıktılarını karşılaştırmak için Space Discoverer mini-benchmarkını kullan.",
+      "notes": "Fabricio Carraro, Claude Fable 5, GPT-5.6 Sol ve Kimi K3ü maksimum reasoning ayarlarında karşılaştıran mini-benchmarkı bildiriyor. Görev Space Discoverer adlı 3D browser game ve üç model de WebGL 2 üzerinde Three.jsye yönelmiş."
+    },
+    "117": {
+      "title": "Gerçek yolla driving game yap",
+      "takeaway": "Kimi K3ü Blender ve Godot ile birleştirerek gerçek yerel yol haritası etrafında driving game prototiple.",
+      "notes": "Bijan Bowen, Kimi K3ün Blender ve Godot kullanarak yaratıcının yakınındaki gerçek bir yol parçasını map basis alan bir driving game yaptığını gösteriyor. Ekli video build durumunun public evidenceıdır."
+    },
+    "118": {
+      "title": "Monument Valley prompt maliyetlerini karşılaştır",
+      "takeaway": "Tek bir Monument Valley-style prompt ile Kimi K3 ve benzer modellerin visual quality, runtime ve cost değerlerini karşılaştır.",
+      "notes": "AiHubMix, Claude Fable 5, Kimi K3 ve GPT-5.6 Solu tek Monument Valley-style prompt üzerinde karşılaştırıyor. Post Fableı en coherent, Kimiyi 52m30s ve $1.50 ile en yavaş, GPT-5.6 Solu en hızlı ve ucuz ama spatial logicte daha zayıf olarak bildiriyor."
+    },
+    "119": {
+      "title": "Kimiyi claude-code-router ile yönlendir",
+      "takeaway": "Gereksiz proxy mode kullanmadan Kimi K3ü mevcut Claude Code workflow içinde claude-code-router ile dene.",
+      "notes": "Sai Rahul, Moonshot sponsorlu claude-code-router Kimi K3 desteğini anlatıyor: built-in presets, API key veya subscription import, native subscription routing, balance/usage dashboard, failover, cache pricing ve gerekmedikçe proxy modeu kapalı tutma uyarısı."
     }
   }
 }

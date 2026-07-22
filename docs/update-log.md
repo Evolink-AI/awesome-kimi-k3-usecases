@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-22
+
+- Added cases 110-119 from the Kimi K3 24-hour recurring update window ending 2026-07-22T01:06:18Z.
+- Classified all 92 review-queue candidates: selected 10 high-confidence source-backed cases, deferred 17, marked 13 unsure, and dropped 52 from 670 raw deduplicated candidates.
+- Published workflows and evidence covering AA-Briefcase, Geometry Dash clone comparison, Command Code retro game testing, frontend leaderboard caveats, StackPerf architecture, Three.js Kimi-vs-GLM comparison, Space Discoverer, real-road driving game, Monument Valley prompt costs, and claude-code-router integration.
+- Uploaded 18 new source media files to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, including poster frames plus playable MP4 links for video cases.
+- Rebuilt source fidelity, English README, 10 localized READMEs, localization cache, and public structured data from the verified handoff package.
+- No credit-consuming API test was run or claimed, per owner 2026-07-18 waiver; non-paid method-aware endpoint audit remains required.
+
 ## 2026-07-21
 
 - Added cases 100-109 from the Kimi K3 24-hour recurring update window ending 2026-07-21T01:06:29Z.

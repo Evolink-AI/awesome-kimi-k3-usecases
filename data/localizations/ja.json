@@ -580,6 +580,56 @@
       "title": "Claude CodeでKimi K3を動かす",
       "takeaway": "この事例で、Kimi K3の「Claude CodeでKimi K3を動かす」における実ワークフロー、コスト、または制約を確認できます。",
       "notes": "元投稿は「Claude CodeでKimi K3を動かす」に関する公開証拠を示し、作者の説明、結果メディア、またはベンチマーク/チュートリアル情報を含みます。このリポジトリは検証可能な事実だけを残し、未公開のpromptや手順は補いません。"
+    },
+    "110": {
+      "title": "AA-BriefcaseでKimi K3を評価",
+      "takeaway": "リーダーボードの主張を鵜呑みにする前に、AA-Briefcaseの結果でKimi K3の知識労働系エージェント能力を判断する。",
+      "notes": "Artificial Analysisは、Kimi K3がAA-Briefcaseで1543 Eloを記録しClaude Fable 5に次ぐ2位だった一方、このベンチマークでは1タスク平均が約1時間で、Opus 4.8より高コストだったと報告している。"
+    },
+    "111": {
+      "title": "Geometry Dashクローンを比較",
+      "takeaway": "同じ要件のゲームbuildを比較し、Kimi K3がモバイル風の遊べるプロトタイプに十分か判断する。",
+      "notes": "Nektは、Kimi K3が約30分と20万tokenで、ジャンプ、障害物、レベル、音楽、視覚効果を備えたGeometry Dash風クローンを作ったと述べ、添付動画でClaude Fable 5のbuildと比較している。"
+    },
+    "112": {
+      "title": "Command Codeでレトロゲームを試す",
+      "takeaway": "Command Codeの複数モデル設計テストで、Kimi K3のゲーム機能とモデル別コストを比較する。",
+      "notes": "NaymurはCommand CodeでFable 5、GPT-5.6 Sol、Grok 4.5、Kimi K3に同じ/design promptを実行したと報告。Kimi K3はゲームプレイ、レベルアップ、弾、ボス戦を持つASCIIレトロゲームを生成し、費用は$0.15だったという。"
+    },
+    "113": {
+      "title": "フロントエンド順位の注意点を確認",
+      "takeaway": "Kimi K3のleaderboard勝利と、より広いcodingやcost主張を切り分けるための制約メモとして使う。",
+      "notes": "RetroChainerはFrontend Code Arena首位と公開価格を確認しつつ、順位はそのボード固有であること、投稿時点でweightsは未公開だったこと、作業単価の節約は1タスク由来であること、max reasoningが小さな作業でtokensを消費し得ることを指摘している。"
+    },
+    "114": {
+      "title": "StackPerfの設計結果を比較",
+      "takeaway": "StackPerfでKimi K3とQwen 3.8の設計品質、速度、tool call挙動を比較する。",
+      "notes": "Tamsi BessonはStackPerfの結果を共有し、Kimi K3がQwen 3.8 Max Previewを品質でわずかに上回り総時間も速い一方、Qwenはtool call失敗0件、Kimiは2件だったと述べている。"
+    },
+    "115": {
+      "title": "Three.jsのKimi対GLMを検証",
+      "takeaway": "同じ手続き型Three.js promptをKimi K3とGLM 5.2で走らせ、frontendと3D buildの挙動を比較する。",
+      "notes": "The HypeはKimi K3とGLM 5.2に、CRT上のcanvas texture付き80年代リビング、駆動系kinematics付きロードバイク、ガラス水槽という3つの単一HTML/Three.js promptを実行したという。"
+    },
+    "116": {
+      "title": "Space Discovererを評価",
+      "takeaway": "Space Discovererミニベンチマークで、汎用的な3Dブラウザゲーム要件に対するモデル出力を比較する。",
+      "notes": "Fabricio CarraroはClaude Fable 5、GPT-5.6 Sol、Kimi K3を最大reasoningで比較したミニベンチマークを報告。課題はSpace Discovererという3Dブラウザゲームで、3モデルすべてがWebGL 2上のThree.jsに収束したという。"
+    },
+    "117": {
+      "title": "実道路のドライブゲームを作る",
+      "takeaway": "Kimi K3をBlenderとGodotに組み合わせ、実在する近所の道路地図を使ったドライブゲームを試作する。",
+      "notes": "Bijan Bowenは、Kimi K3がBlenderとGodotを使い、作者の近くの実際の道路区間をマップにしたドライブゲームを作っている様子を示している。添付動画がbuild状態の公開証拠である。"
+    },
+    "118": {
+      "title": "Monument Valley風promptの費用比較",
+      "takeaway": "単一のMonument Valley風promptで、Kimi K3と他モデルの視覚品質、実行時間、費用を比較する。",
+      "notes": "AiHubMixはClaude Fable 5、Kimi K3、GPT-5.6 Solを1つのMonument Valley風promptで比較。Fableは最も一貫し、Kimiは52分30秒・$1.50で最も遅く、GPT-5.6 Solは最速最安だが空間ロジックは弱いと報告している。"
+    },
+    "119": {
+      "title": "claude-code-routerでKimiを使う",
+      "takeaway": "不要なproxy modeを避けながら、claude-code-router経由で既存のClaude Code workflowにKimi K3を組み込む。",
+      "notes": "Sai RahulはMoonshot支援のclaude-code-routerにおけるKimi K3対応を説明し、preset、API keyまたはsubscription import、native subscription routing、残高/利用量dashboard、failover、cache pricing、必要な場合以外proxy modeを切る注意点を挙げている。"
     }
   }
 }

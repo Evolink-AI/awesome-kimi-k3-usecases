@@ -580,6 +580,56 @@
       "title": "在 Claude Code 中執行 Kimi K3",
       "takeaway": "用这个案例评估 Kimi K3 在「在 Claude Code 中執行 Kimi K3」任务中的实际工作流、成本或限制。",
       "notes": "来源帖提供了与 在 Claude Code 中執行 Kimi K3 相关的公开证据，包括作者描述、结果媒体或基准/教程信息；本仓库只保留可核验事实，不补写未公开的 prompt 或步骤。"
+    },
+    "110": {
+      "title": "用 AA-Briefcase 評估 Kimi K3",
+      "takeaway": "先用 AA-Briefcase 結果判斷 Kimi K3 的知識工作 agent 任務表現，再相信排行榜敘事。",
+      "notes": "Artificial Analysis 報告稱，Kimi K3 在 AA-Briefcase 上得到 1543 Elo，位列 Claude Fable 5 之後第二；同時該模型在這個基準中平均每個任務接近一小時，成本高於 Opus 4.8。"
+    },
+    "111": {
+      "title": "對比 Geometry Dash 複製版",
+      "takeaway": "用同一需求的遊戲 build 對比，判斷 Kimi K3 是否足夠做可玩的行動風格原型。",
+      "notes": "Nekt 表示 Kimi K3 用約 30 分鐘和 20 萬 tokens 建構了 Geometry Dash 風格複製版，包含跳躍、障礙、關卡、音樂和視覺效果，並在公開影片中與 Claude Fable 5 的 build 對比。"
+    },
+    "112": {
+      "title": "執行 Command Code 復古遊戲測試",
+      "takeaway": "用 Command Code 的多模型設計測試對比 Kimi K3 的 gameplay 功能和各模型成本。",
+      "notes": "Naymur 稱在 Command Code 中對 Fable 5、GPT-5.6 Sol、Grok 4.5 和 Kimi K3 執行同一個 /design prompt。貼文說 Kimi K3 生成了有 gameplay、升級、子彈和 boss 戰的 ASCII 復古遊戲，報告成本為 $0.15。"
+    },
+    "113": {
+      "title": "審計前端榜單限制",
+      "takeaway": "用這條限制說明區分 Kimi K3 的榜單勝利和更寬泛的 coding、成本主張。",
+      "notes": "RetroChainer 核實了 Frontend Code Arena 第一和公開價格，同時指出：該排名只適用單一榜單；發文時權重尚未公開；每任務節省來自單一任務；max reasoning 可能在小任務上消耗大量 tokens。"
+    },
+    "114": {
+      "title": "對比 StackPerf 架構結果",
+      "takeaway": "用 StackPerf 對比 Kimi K3 和 Qwen 3.8 的架構品質、速度和 tool call 行為。",
+      "notes": "Tamsi Besson 分享的 StackPerf 快照顯示，Kimi K3 在品質上略高於 Qwen 3.8 Max Preview，總體速度更快；但 Qwen 的失敗 tool call 為 0，而 Kimi 雖呼叫更多工具卻有 2 次失敗。"
+    },
+    "115": {
+      "title": "對比 Three.js Kimi-vs-GLM 建構",
+      "takeaway": "用同一組程序化 Three.js prompts 跑 Kimi K3 和 GLM 5.2，比較前端與 3D build 行為。",
+      "notes": "The Hype 稱對 Kimi K3 和 GLM 5.2 執行了三個單檔 HTML + Three.js prompts：帶 CRT canvas texture 的 80 年代客廳、帶傳動系統運動學的公路車，以及玻璃水族箱場景。"
+    },
+    "116": {
+      "title": "評測 Space Discoverer 遊戲",
+      "takeaway": "用 Space Discoverer 小基準比較模型在通用 3D 瀏覽器遊戲 brief 下的輸出。",
+      "notes": "Fabricio Carraro 報告了 Claude Fable 5、GPT-5.6 Sol 和 Kimi K3 在最高 reasoning 設定下的小基準。任務是名為 Space Discoverer 的 3D 瀏覽器遊戲，貼文稱三個模型都收斂到 WebGL 2 上的 Three.js。"
+    },
+    "117": {
+      "title": "建構真實道路駕駛遊戲",
+      "takeaway": "把 Kimi K3 與 Blender、Godot 結合，用真實本地道路地圖原型化一個駕駛遊戲。",
+      "notes": "Bijan Bowen 展示 Kimi K3 使用 Blender 和 Godot 製作駕駛遊戲，並以作者附近的一段真實道路作為地圖基礎。附帶影片是該 build 狀態的公開證據。"
+    },
+    "118": {
+      "title": "對比 Monument Valley prompt 成本",
+      "takeaway": "用單個 Monument Valley 風格 prompt 對比 Kimi K3 與其他模型的視覺品質、執行時間和成本。",
+      "notes": "AiHubMix 用一個 Monument Valley 風格 prompt 對比 Claude Fable 5、Kimi K3 和 GPT-5.6 Sol。貼文稱 Fable 最連貫，Kimi 最慢為 52m30s 且花費 $1.50，GPT-5.6 Sol 最快最便宜但空間邏輯較弱。"
+    },
+    "119": {
+      "title": "透過 claude-code-router 路由 Kimi",
+      "takeaway": "在現有 Claude Code workflow 中透過 claude-code-router 試用 Kimi K3，同時避免不必要的 proxy mode。",
+      "notes": "Sai Rahul 描述 Moonshot 贊助的 claude-code-router Kimi K3 支援，包括內建 presets、API key 或訂閱匯入、原生訂閱路由、餘額和用量 dashboard、failover、快取價格，並提醒除非需要否則保持 proxy mode 關閉。"
     }
   }
 }
