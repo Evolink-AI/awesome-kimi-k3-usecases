@@ -12,14 +12,14 @@
   "source_artifact": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
   "supplemental_source_artifact": {
     "kind": "recurring-update",
-    "run_id": "20260721T010157Z",
-    "candidate_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/candidate_tweets.json",
-    "semantic_review": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/semantic_review.json",
-    "selected_source_package": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260721T010157Z/selected-source-package.json"
+    "run_id": "20260723T010416Z",
+    "candidate_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260723T010416Z/candidate_tweets.json",
+    "semantic_review": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260723T010416Z/semantic_review.json",
+    "selected_source_package": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260723T010416Z/selected-source-package.json"
   },
-  "source_generated_at": "2026-07-21T01:06:29Z",
-  "curated_at": "2026-07-21",
-  "selection_policy": "Includes the 89 previously published high-confidence cases plus 10 high-confidence cases from the 20260720T010226Z recurring update; excludes every deferred, unsure, dropped, unsupported, duplicate, promotional, or unverifiable candidate.",
+  "source_generated_at": "2026-07-23T01:08:24Z",
+  "curated_at": "2026-07-23",
+  "selection_policy": "Includes the 89 first-publication high-confidence cases plus recurring high-confidence updates through case 129; excludes every deferred, unsure, dropped, unsupported, duplicate, promotional, or unverifiable candidate.",
   "items": [
     {
       "public_number": 1,
@@ -4781,6 +4781,423 @@
       ],
       "poster_path": "media/source-cases/case-119-poster.jpg",
       "playable_video_path": "media/source-cases/case-119.mp4"
+    },
+    {
+      "public_number": 120,
+      "dedup_key": "https://x.com/echen/status/2080021575190110523",
+      "source_url": "https://x.com/echen/status/2080021575190110523",
+      "author_url": "https://x.com/echen",
+      "author_handle": "@echen",
+      "title": "Benchmark Kimi K3 on Surge Index",
+      "takeaway": "Use SurgeAI's split benchmark results to separate Kimi K3 everyday-chat strength from weaker enterprise-agent and science performance.",
+      "body_notes": "Eric Chen reports that SurgeAI ran Kimi K3 across an index spanning everyday chatbots, enterprise agents, deep reasoning, and frontier science. The post says Kimi K3 is competitive on everyday chat, while Fable remains ahead and Kimi trails Fable and Sol on enterprise-agent and science tasks.",
+      "type": "Benchmark",
+      "date": "2026-07-22",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct benchmark post with named benchmark scope, model-specific result split, and attached result media.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 20,
+        "view_count": 1323,
+        "bookmark_count": 4,
+        "retweet_count": 2
+      },
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HN23rIFWoAAgZc9.jpg"
+      ],
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-120-01.jpg"
+        }
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-120-01.jpg"
+      ]
+    },
+    {
+      "public_number": 121,
+      "dedup_key": "https://x.com/Oluwaphilemon1/status/2079951300108697683",
+      "source_url": "https://x.com/Oluwaphilemon1/status/2079951300108697683",
+      "author_url": "https://x.com/Oluwaphilemon1",
+      "author_handle": "@Oluwaphilemon1",
+      "title": "Build Referenced Landing Pages",
+      "takeaway": "Give Kimi K3 strong visual references and iterative guidance when testing landing-page generation.",
+      "body_notes": "Oluwaphilemon describes giving Kimi K3 an image reference plus a detailed prompt for a landing page. The source notes Kimi first tried to generate the bike as a 3D model, then improved after a few guidance iterations, making the case useful for visual-reference frontend workflows.",
+      "type": "Demo",
+      "date": "2026-07-22",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete frontend generation demo with visual reference, iteration behavior, limitation note, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 13,
+        "view_count": 915,
+        "bookmark_count": 2,
+        "retweet_count": 3
+      },
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079951217615106048/vid/avc1/1152x720/LMHaRHGQ1jAF-tmx.mp4?tag=29"
+      ],
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-121.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-121-poster.jpg",
+          "play_label": "Play case 121 demo video"
+        }
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-121-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-121.mp4",
+      "poster_path": "media/source-cases/case-121-poster.jpg",
+      "playable_video_path": "media/source-cases/case-121.mp4"
+    },
+    {
+      "public_number": 122,
+      "dedup_key": "https://x.com/diegocabezas01/status/2079946676270219488",
+      "source_url": "https://x.com/diegocabezas01/status/2079946676270219488",
+      "author_url": "https://x.com/diegocabezas01",
+      "author_handle": "@diegocabezas01",
+      "title": "Build Vertical Platform Game",
+      "takeaway": "Use a concise game brief to test whether Kimi K3 can return a one-file browser prototype.",
+      "body_notes": "Diego Cabezas shows a Kimi K3 Max run for a satisfying vertical platform game where the player keeps jumping higher as platforms move. The post records a one-shot, single-HTML result and includes playable source media.",
+      "type": "Demo",
+      "date": "2026-07-22",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete one-shot game demo with task description, implementation boundary, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 24,
+        "view_count": 1426,
+        "bookmark_count": 1,
+        "retweet_count": 2
+      },
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079946460800462848/vid/avc1/1194x720/j6bRMBqTD9SpKQ46.mp4?tag=29"
+      ],
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-122.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-122-poster.jpg",
+          "play_label": "Play case 122 demo video"
+        }
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-122-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-122.mp4",
+      "poster_path": "media/source-cases/case-122-poster.jpg",
+      "playable_video_path": "media/source-cases/case-122.mp4"
+    },
+    {
+      "public_number": 123,
+      "dedup_key": "https://x.com/lanyon_ai/status/2079931884511887740",
+      "source_url": "https://x.com/lanyon_ai/status/2079931884511887740",
+      "author_url": "https://x.com/lanyon_ai",
+      "author_handle": "@lanyon_ai",
+      "title": "Benchmark PDE Solver Errors",
+      "takeaway": "Use PDE benchmark failures to decide where symbolic or numerical tasks need verification around Kimi K3.",
+      "body_notes": "Lanyon AI reports an official benchmark comparing its neurosymbolic architecture against frontier models including Kimi K3 on simple linear PDE problems such as linear advection and Maxwell equations. The source says frontier models made mathematical, algorithmic, and computational errors even with detailed prompting, so the case is a limitation-oriented benchmark rather than a capability claim.",
+      "type": "Benchmark",
+      "date": "2026-07-22",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Official benchmark/limitation post with named task family, model set, error classes, and source image.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 112,
+        "view_count": 35260,
+        "bookmark_count": 54,
+        "retweet_count": 17
+      },
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HN1m7XLW8AEM8Im.png"
+      ],
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-123-01.jpg"
+        }
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-123-01.jpg"
+      ]
+    },
+    {
+      "public_number": 124,
+      "dedup_key": "https://x.com/mkurman88/status/2079918374977413534",
+      "source_url": "https://x.com/mkurman88/status/2079918374977413534",
+      "author_url": "https://x.com/mkurman88",
+      "author_handle": "@mkurman88",
+      "title": "Review ClinicalBench EHR Cases",
+      "takeaway": "Use ClinicalBench's EHR cases to inspect where Kimi K3 succeeds and where diagnosis reasoning still fails.",
+      "body_notes": "Michael Kurman reports ClinicalBench v0.0.4 results for Kimi K3 in a virtual EHR sandbox with 10 emergency-department cases. The source says Kimi K3 solved 7 of 10 cases, struggled on the sixth case, and frames the use case as an autonomous EHR operator or clinical decision-support workflow.",
+      "type": "Benchmark",
+      "date": "2026-07-22",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Named clinical benchmark with case count, result summary, limitation note, and multiple source images.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 33,
+        "view_count": 1206,
+        "bookmark_count": 2,
+        "retweet_count": 1
+      },
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HN1aLPlWwAAJdEi.jpg",
+        "https://pbs.twimg.com/media/HN1aN8EWIAAjgDJ.jpg",
+        "https://pbs.twimg.com/media/HN1aO5nXsAAUWow.jpg"
+      ],
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-01.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-02.jpg"
+        },
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-03.jpg"
+        }
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-01.jpg",
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-02.jpg",
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-124-03.jpg"
+      ]
+    },
+    {
+      "public_number": 125,
+      "dedup_key": "https://x.com/ShenSeanChen/status/2079914609222221976",
+      "source_url": "https://x.com/ShenSeanChen/status/2079914609222221976",
+      "author_url": "https://x.com/ShenSeanChen",
+      "author_handle": "@ShenSeanChen",
+      "title": "Run Open-Source Agent Harness",
+      "takeaway": "Use a shared agent harness to compare Kimi K3 against other frontier models on tool-using tasks.",
+      "body_notes": "Sean Chen describes racing Kimi K3 against multiple frontier models in an open-source AI agent harness with an agent loop, memory retrieval gate, tool calls, evaluation, tracing, and a live cost board. The post links the repo and docs, making it a source-backed integration and benchmark workflow.",
+      "type": "Benchmark",
+      "date": "2026-07-22",
+      "category": "Coding & Integrations",
+      "category_key": "coding-integrations",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete tool-using agent harness benchmark with repo/docs pointers, model set, workflow stages, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 37,
+        "view_count": 3135,
+        "bookmark_count": 27,
+        "retweet_count": 6
+      },
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079861536647008256/vid/avc1/1280x720/4jr4lCKzqQU9HAN6.mp4?tag=29"
+      ],
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-125.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-125-poster.jpg",
+          "play_label": "Play case 125 demo video"
+        }
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-125-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-125.mp4",
+      "poster_path": "media/source-cases/case-125-poster.jpg",
+      "playable_video_path": "media/source-cases/case-125.mp4"
+    },
+    {
+      "public_number": 126,
+      "dedup_key": "https://x.com/michaelrbock/status/2079913117698666964",
+      "source_url": "https://x.com/michaelrbock/status/2079913117698666964",
+      "author_url": "https://x.com/michaelrbock",
+      "author_handle": "@michaelrbock",
+      "title": "Benchmark Tax Return Calculations",
+      "takeaway": "Test Kimi K3 separately on tax-calculation workloads instead of assuming frontend strength transfers.",
+      "body_notes": "Michael Bock reports testing Kimi K3 on 50 hyper-realistic federal and state tax returns. The source says Kimi K3 scored 6% on the strict TaxCalcBench evaluation, versus 58% for GPT-5.6 Sol and 4% for Fable 5, so this is a domain-transfer limitation case.",
+      "type": "Limit",
+      "date": "2026-07-22",
+      "category": "Evaluation & Limits",
+      "category_key": "evaluation-limits",
+      "decision": "high_confidence_update",
+      "decision_reason": "Named domain benchmark with task count, comparative scores, explicit limitation framing, and source image.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 13,
+        "view_count": 1697,
+        "bookmark_count": 4,
+        "retweet_count": 1
+      },
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HN1V9TEakAAgL8K.jpg"
+      ],
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-126-01.jpg"
+        }
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-126-01.jpg"
+      ]
+    },
+    {
+      "public_number": 127,
+      "dedup_key": "https://x.com/Kirratr/status/2079902410042909108",
+      "source_url": "https://x.com/Kirratr/status/2079902410042909108",
+      "author_url": "https://x.com/Kirratr",
+      "author_handle": "@Kirratr",
+      "title": "Machine-Verify Geometry Dash Build",
+      "takeaway": "Pair a Kimi K3 game build with solver and browser playtest automation before treating it as a finished prototype.",
+      "body_notes": "Kirratr reports that Kimi K3 took 36 minutes 53 seconds on the same Geometry Dash-style brief given to another model: mobile controls, jump pads, portals, gravity flips, a flying section, victory screen, and no copyrighted assets. The source says a beam-search solver found a 64-jump winning run, replayed it in the browser, tested phone-sized viewports, and observed zero console errors.",
+      "type": "Benchmark",
+      "date": "2026-07-22",
+      "category": "Interactive Games & 3D",
+      "category_key": "games-3d",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete same-brief game benchmark with verification method, browser replay, mobile viewport checks, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 30,
+        "view_count": 1709,
+        "bookmark_count": 12,
+        "retweet_count": 5
+      },
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079902115502206976/vid/avc1/720x1280/FLquCJQp5lFlMpqP.mp4?tag=29"
+      ],
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-127.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-127-poster.jpg",
+          "play_label": "Play case 127 demo video"
+        }
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-127-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-127.mp4",
+      "poster_path": "media/source-cases/case-127-poster.jpg",
+      "playable_video_path": "media/source-cases/case-127.mp4"
+    },
+    {
+      "public_number": 128,
+      "dedup_key": "https://x.com/jadeferrara_/status/2079884161251262540",
+      "source_url": "https://x.com/jadeferrara_/status/2079884161251262540",
+      "author_url": "https://x.com/jadeferrara_",
+      "author_handle": "@jadeferrara_",
+      "title": "Simulate 3D Particle System",
+      "takeaway": "Use particle-simulation prompts to compare Kimi K3's motion quality against closed models.",
+      "body_notes": "Jade Ferrara reports giving Kimi K3 and Opus 4.8 the same 3D particle-system prompt. The source says Kimi produced a more organic distribution, smoother motion, and more natural clustering and drift, while also reporting lower API cost for the run.",
+      "type": "Evaluation",
+      "date": "2026-07-22",
+      "category": "Frontend & Motion Design",
+      "category_key": "frontend-motion",
+      "decision": "high_confidence_update",
+      "decision_reason": "Direct same-prompt visual simulation comparison with motion-quality observations, cost context, and source video.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "video",
+      "source_engagement": {
+        "like_count": 134,
+        "view_count": 32148,
+        "bookmark_count": 10,
+        "retweet_count": 8
+      },
+      "media_source_urls": [
+        "https://video.twimg.com/amplify_video/2079884137121361920/vid/avc1/888x484/Rui4ajkZ_NeiWcgG.mp4?tag=29"
+      ],
+      "media_assets": [
+        {
+          "kind": "video",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-128.mp4",
+          "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-128-poster.jpg",
+          "play_label": "Play case 128 demo video"
+        }
+      ],
+      "poster_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-128-poster.jpg",
+      "playable_video_url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-128.mp4",
+      "poster_path": "media/source-cases/case-128-poster.jpg",
+      "playable_video_path": "media/source-cases/case-128.mp4"
+    },
+    {
+      "public_number": 129,
+      "dedup_key": "https://x.com/biscuitweb3/status/2079844959843197342",
+      "source_url": "https://x.com/biscuitweb3/status/2079844959843197342",
+      "author_url": "https://x.com/biscuitweb3",
+      "author_handle": "@biscuitweb3",
+      "title": "Run Kimi Inside Codex OAuth",
+      "takeaway": "Use the Codex OAuth route when a Kimi K3 coding workflow should avoid manual API-key setup.",
+      "body_notes": "biscuitweb3 reports Kimi K3 running inside Codex through OAuth with no extra API-key setup. The post says users can choose K3 and continue working in the Codex workflow, and the attached screenshot provides the integration evidence.",
+      "type": "Integration",
+      "date": "2026-07-22",
+      "category": "Coding & Integrations",
+      "category_key": "coding-integrations",
+      "decision": "high_confidence_update",
+      "decision_reason": "Concrete coding integration with named surface, setup boundary, no-API-key claim, and source screenshot.",
+      "quality_tier": "high",
+      "prompt_boundary": "No exact reusable prompt is transcribed in this repository unless the source text exposes it directly; attached media may contain visual prompt/reference evidence.",
+      "prompt_public": false,
+      "prompt_text": "",
+      "media_type": "image",
+      "source_engagement": {
+        "like_count": 65,
+        "view_count": 6038,
+        "bookmark_count": 1,
+        "retweet_count": 0
+      },
+      "media_source_urls": [
+        "https://pbs.twimg.com/media/HN0X98WWoAA2FZ1.jpg"
+      ],
+      "media_assets": [
+        {
+          "kind": "image",
+          "url": "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-129-01.jpg"
+        }
+      ],
+      "r2_media_urls": [
+        "https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-129-01.jpg"
+      ]
     }
   ]
 }

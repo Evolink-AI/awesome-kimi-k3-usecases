@@ -5,10 +5,10 @@
   "introduction_heading": "簡介",
   "intro": "歡迎來到 Kimi K3 高訊號使用案例庫",
   "mission": "我們收錄具有公開來源的遊戲、3D 場景、動態設計、整合、評估與實務限制",
-  "source_boundary": "全部 89 個案例均來自高信心公開來源；標題與作者連回原文，弱證據、重複或證據不足的候選不會收錄",
+  "source_boundary": "全部 129 個案例都來自高置信度公開來源。標題和作者連結指向原始來源；弱證據、重複或無法充分核驗的候選不會收錄",
   "overview_heading": "概覽",
   "overview": [
-    "109 個來自創作者與實務工作者的 high-confidence 案例",
+    "來自公開創作者和實踐者的 129 個高置信度案例",
     "廣泛涵蓋互動遊戲、Three.js、動態設計、前端、研究、評估、工具整合與實務限制",
     "每個案例保留來源、作者、類型、日期與 prompt 邊界",
     "排除全部 31 個 medium-confidence 項目，也不把個人觀察包裝成 benchmark"
@@ -630,6 +630,56 @@
       "title": "透過 claude-code-router 路由 Kimi",
       "takeaway": "在現有 Claude Code workflow 中透過 claude-code-router 試用 Kimi K3，同時避免不必要的 proxy mode。",
       "notes": "Sai Rahul 描述 Moonshot 贊助的 claude-code-router Kimi K3 支援，包括內建 presets、API key 或訂閱匯入、原生訂閱路由、餘額和用量 dashboard、failover、快取價格，並提醒除非需要否則保持 proxy mode 關閉。"
+    },
+    "120": {
+      "title": "用 Surge 指数評估 Kimi K3",
+      "takeaway": "用 SurgeAI 的分项结果区分 Kimi K3 在日常聊天中的优势，以及在企业 agent 和科学任務中的弱项。",
+      "notes": "Eric Chen 報告 SurgeAI 在覆盖日常聊天机器人、企业 agent、深度推理和前沿科学的指数中測試了 Kimi K3。來源称 Kimi K3 在日常聊天上有竞争力，但在企业 agent 和科学任務上落后于 Fable 与 Sol。"
+    },
+    "121": {
+      "title": "用参考图生成落地页",
+      "takeaway": "測試落地页生成时，给 Kimi K3 提供强视觉参考和分轮指导。",
+      "notes": "Oluwaphilemon 描述了给 Kimi K3 一张图片参考和详细 prompt 来生成落地页的过程。來源指出 Kimi 起初尝试把自行车做成 3D 模型，经过几轮指导后得到更干净的結果。"
+    },
+    "122": {
+      "title": "建構纵向平台游戏",
+      "takeaway": "用简洁游戏 brief 測試 Kimi K3 能否返回单文件浏览器原型。",
+      "notes": "Diego Cabezas 展示了 Kimi K3 Max 生成纵向平台游戏的執行結果，玩家会在移动平台上不断向上跳。帖子记录这是一次生成的单 HTML 結果。"
+    },
+    "123": {
+      "title": "評估 PDE 求解错误",
+      "takeaway": "用 PDE benchmark 失败案例判断 Kimi K3 在符号或数值任務中哪些环节需要额外驗證。",
+      "notes": "Lanyon AI 将其神经符号架构与包括 Kimi K3 在内的前沿模型，在简单线性 PDE 上进行比较。來源称，即使给出详细 prompt，前沿模型仍出现数学、算法和计算錯誤。"
+    },
+    "124": {
+      "title": "复查 ClinicalBench EHR 案例",
+      "takeaway": "用 ClinicalBench 的 EHR 案例检查 Kimi K3 哪些地方成功，哪些诊断推理仍会失败。",
+      "notes": "Michael Kurman 報告 Kimi K3 在虚拟 EHR 沙盒中 10 个急诊案例的 ClinicalBench v0.0.4 結果。來源称 Kimi K3 解出 7/10，在第 6 个案例上耗时且未准确诊断。"
+    },
+    "125": {
+      "title": "執行开源 agent harness",
+      "takeaway": "用共享 agent harness 对比 Kimi K3 与其他前沿模型在工具调用任務中的表现。",
+      "notes": "Sean Chen 描述了在开源 AI agent harness 中让 Kimi K3 与多种模型竞赛：包含 agent loop、memory retrieval gate、工具调用、eval、tracing 和实时成本面板。"
+    },
+    "126": {
+      "title": "評估报税计算能力",
+      "takeaway": "不要假设前端强项会迁移到税务计算；应单独測試 Kimi K3 的该类负载。",
+      "notes": "Michael Bock 報告用 50 份高度真实的联邦和州税表測試 Kimi K3。來源称 Kimi K3 在严格 TaxCalcBench 中得分 6%，GPT-5.6 Sol 为 58%，Fable 5 为 4%。"
+    },
+    "127": {
+      "title": "驗證 Geometry Dash 生成结果",
+      "takeaway": "把 Kimi K3 游戏构建与 solver 和浏览器回放測試结合，再判断它是否可作为完成原型。",
+      "notes": "Kirratr 報告 Kimi K3 在同一个 Geometry Dash 风格 brief 上耗时 36 分 53 秒。來源称 beam-search solver 找到 64 跳通关路径，并在真实浏览器中回放，移动视口測試无控制台錯誤。"
+    },
+    "128": {
+      "title": "模拟 3D 粒子系统",
+      "takeaway": "用粒子模拟 prompt 对比 Kimi K3 与闭源模型的运动质量。",
+      "notes": "Jade Ferrara 報告给 Kimi K3 和 Opus 4.8 相同的 3D 粒子系统 prompt。來源称 Kimi 的分布更自然、运动更平滑、聚集和漂移更像物理过程，同时 API 成本更低。"
+    },
+    "129": {
+      "title": "通过 Codex OAuth 執行 Kimi",
+      "takeaway": "当 Kimi K3 编码工作流需要避免手动配置 API key 时，使用 Codex OAuth 路径。",
+      "notes": "biscuitweb3 報告 Kimi K3 已可通过 OAuth 在 Codex 内執行，无需额外 API key 设置。附图提供了该集成界面的证据。"
     }
   }
 }

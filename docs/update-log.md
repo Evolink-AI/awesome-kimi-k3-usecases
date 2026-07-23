@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-23
+
+- Added cases 120-129 from the Kimi K3 24-hour recurring update window ending 2026-07-23T01:08:24Z.
+- Classified all 59 review-queue candidates: selected 10 high-confidence source-backed cases, deferred 15, marked 14 unsure, and dropped 20 from 698 deduplicated TwitterAPI candidates.
+- Published workflows and evidence covering SurgeAI benchmark results, referenced landing-page generation, vertical platform game generation, PDE solver limitations, ClinicalBench EHR cases, open-source agent harness benchmarking, TaxCalcBench limitations, machine-verified Geometry Dash gameplay, 3D particle simulation, and Codex OAuth integration.
+- Uploaded 17 new source media files to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, including poster frames plus playable MP4 links for video cases.
+- Rebuilt source fidelity, English README, 10 localized READMEs, localization cache, and public structured data from the verified handoff package.
+- No credit-consuming API test was run or claimed, per owner 2026-07-18 waiver; non-paid method-aware endpoint audit remains required.
+
 ## 2026-07-22
 
 - Added cases 110-119 from the Kimi K3 24-hour recurring update window ending 2026-07-22T01:06:18Z.

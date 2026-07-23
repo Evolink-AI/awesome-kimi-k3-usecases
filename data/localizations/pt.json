@@ -5,10 +5,10 @@
   "introduction_heading": "Introdução",
   "intro": "Bem-vindo ao repositório de casos de uso de alto sinal do Kimi K3",
   "mission": "Reunimos jogos, cenas 3D, motion design, integrações, avaliações e limites práticos do Kimi K3 apoiados por fontes públicas",
-  "source_boundary": "Os 89 casos vêm de fontes públicas de alta confiança. Títulos e autores levam aos originais; candidatos fracos, duplicados ou sem evidência suficiente são excluídos",
+  "source_boundary": "Os 129 casos vêm de fontes públicas de alta confiança. Títulos e autores apontam para os originais; candidatos fracos, duplicados ou sem evidência suficiente ficam de fora",
   "overview_heading": "Visão geral",
   "overview": [
-    "109 casos de alta confiança de criadores e profissionais",
+    "129 casos de alta confiança de criadores e profissionais",
     "Abrange amplamente jogos, Three.js, motion graphics, frontend, pesquisa, ferramentas de agentes, benchmarks, raciocínio e limites práticos",
     "Cada caso preserva fonte, autor, tipo, data e limite do prompt",
     "Relatos individuais não viram benchmarks"
@@ -630,6 +630,56 @@
       "title": "Roteiar Kimi via claude-code-router",
       "takeaway": "Teste Kimi K3 em um fluxo Claude Code existente via claude-code-router evitando modo proxy desnecessário.",
       "notes": "Sai Rahul descreve suporte patrocinado pela Moonshot para Kimi K3 no claude-code-router, com presets, importação de chave ou assinatura, roteamento nativo, dashboard de saldo e uso, failover, preço de cache e alerta para deixar proxy desligado salvo necessidade."
+    },
+    "120": {
+      "title": "Avaliar Kimi K3 no índice Surge",
+      "takeaway": "Use os resultados separados da SurgeAI para distinguir a força do Kimi K3 em chat cotidiano de seu desempenho mais fraco em agentes empresariais e ciência.",
+      "notes": "Eric Chen relata que a SurgeAI testou Kimi K3 em um índice de chatbots cotidianos, agentes corporativos, raciocínio profundo e ciência de fronteira. A publicação diz que Kimi K3 é competitivo no chat diário, mas fica atrás em agentes e ciência."
+    },
+    "121": {
+      "title": "Criar landing pages com referência",
+      "takeaway": "Dê ao Kimi K3 referências visuais fortes e orientação iterativa ao testar geração de landing pages.",
+      "notes": "Oluwaphilemon descreve uma imagem de referência e um prompt detalhado para uma landing page. A fonte observa que Kimi primeiro tentou criar a bicicleta em 3D e melhorou após algumas iterações guiadas."
+    },
+    "122": {
+      "title": "Criar um jogo vertical de plataforma",
+      "takeaway": "Use um briefing curto de jogo para testar se o Kimi K3 devolve um protótipo de navegador em arquivo único.",
+      "notes": "Diego Cabezas mostra uma execução do Kimi K3 Max para um jogo vertical no qual o jogador salta cada vez mais alto enquanto plataformas se movem. A publicação registra um resultado de uma tentativa em HTML."
+    },
+    "123": {
+      "title": "Avaliar erros em PDE",
+      "takeaway": "Use falhas em benchmarks de PDE para decidir onde tarefas simbólicas ou numéricas precisam de verificação com Kimi K3.",
+      "notes": "A Lanyon AI compara sua arquitetura neurossimbólica com modelos de fronteira, incluindo Kimi K3, em PDEs lineares simples. A fonte relata erros matemáticos, algorítmicos e computacionais mesmo com prompts detalhados."
+    },
+    "124": {
+      "title": "Revisar casos EHR do ClinicalBench",
+      "takeaway": "Use os casos EHR do ClinicalBench para ver onde Kimi K3 acerta e onde o diagnóstico ainda falha.",
+      "notes": "Michael Kurman relata resultados do ClinicalBench v0.0.4 para Kimi K3 em um sandbox EHR virtual com 10 casos de emergência. A fonte diz que Kimi K3 resolveu 7 de 10 e teve dificuldade no caso 6."
+    },
+    "125": {
+      "title": "Executar um harness aberto de agentes",
+      "takeaway": "Use um harness compartilhado para comparar Kimi K3 com outros modelos de fronteira em tarefas com ferramentas.",
+      "notes": "Sean Chen descreve uma disputa com Kimi K3 em um harness aberto com loop de agente, recuperação de memória, chamadas de ferramentas, avaliação, rastreamento e painel de custo."
+    },
+    "126": {
+      "title": "Avaliar cálculos de impostos",
+      "takeaway": "Teste Kimi K3 separadamente em cargas tributárias em vez de assumir que a força em frontend se transfere.",
+      "notes": "Michael Bock relata um teste com 50 declarações federais e estaduais hiper-realistas. A fonte diz que Kimi K3 marcou 6% no TaxCalcBench, contra 58% do GPT-5.6 Sol e 4% do Fable 5."
+    },
+    "127": {
+      "title": "Verificar um Geometry Dash gerado",
+      "takeaway": "Combine um jogo criado por Kimi K3 com solver e testes no navegador antes de tratá-lo como protótipo finalizado.",
+      "notes": "Kirratr relata que Kimi K3 levou 36:53 no mesmo briefing de Geometry Dash. A fonte diz que um solver encontrou uma rota vencedora de 64 saltos e a reproduziu no navegador sem erros de console."
+    },
+    "128": {
+      "title": "Simular um sistema de partículas 3D",
+      "takeaway": "Use prompts de simulação de partículas para comparar a qualidade de movimento do Kimi K3 com modelos fechados.",
+      "notes": "Jade Ferrara relata ter dado o mesmo prompt de partículas 3D a Kimi K3 e Opus 4.8. A fonte diz que Kimi gerou movimento mais orgânico e menor custo de API."
+    },
+    "129": {
+      "title": "Executar Kimi no Codex OAuth",
+      "takeaway": "Use a rota OAuth do Codex quando um fluxo de codificação com Kimi K3 deve evitar configuração manual de chave API.",
+      "notes": "biscuitweb3 relata Kimi K3 rodando dentro do Codex via OAuth sem configuração extra de API key. A captura anexada fornece evidência da integração."
     }
   }
 }

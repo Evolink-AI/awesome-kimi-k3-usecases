@@ -5,10 +5,10 @@
   "introduction_heading": "はじめに",
   "intro": "Kimi K3 の実例を厳選したリポジトリです",
   "mission": "公開情報に基づくゲーム、3D、モーションデザイン、統合、評価、実用上の制約を収録します",
-  "source_boundary": "89件はいずれも信頼度の高い公開ソースに基づきます。タイトルと著者名から原典へ移動でき、弱い候補、重複、証拠不足の候補は除外しています",
+  "source_boundary": "129件のケースはすべて高信頼の公開ソースに基づきます。タイトルと作者は元投稿へリンクし、弱い候補、重複、証拠不足の候補は除外します",
   "overview_heading": "概要",
   "overview": [
-    "クリエイターと実務家によるhigh-confidenceの89事例",
+    "公開クリエイターと実務者による高信頼ケース 129 件",
     "ゲーム、Three.js、モーション、フロントエンド、コーディング、研究、評価、実用上の制約を幅広く収録",
     "各事例で出典、著者、種別、日付、プロンプト境界を保持",
     "個人の報告をベンチマークとして扱いません"
@@ -630,6 +630,56 @@
       "title": "claude-code-routerでKimiを使う",
       "takeaway": "不要なproxy modeを避けながら、claude-code-router経由で既存のClaude Code workflowにKimi K3を組み込む。",
       "notes": "Sai RahulはMoonshot支援のclaude-code-routerにおけるKimi K3対応を説明し、preset、API keyまたはsubscription import、native subscription routing、残高/利用量dashboard、failover、cache pricing、必要な場合以外proxy modeを切る注意点を挙げている。"
+    },
+    "120": {
+      "title": "Surge指数でKimi K3を評価",
+      "takeaway": "SurgeAIの分割結果を使い、Kimi K3の日常チャットでの強さと企業エージェントや科学での弱さを切り分けます。",
+      "notes": "Eric Chenは、SurgeAIが日常チャットボット、企業エージェント、深い推論、先端科学を含む指数でKimi K3を評価したと報告しています。投稿では、日常チャットでは競争力がある一方、企業エージェントと科学ではFableやSolに遅れると述べています。"
+    },
+    "121": {
+      "title": "参照付きランディングページを作成",
+      "takeaway": "ランディングページ生成を試すときは、Kimi K3に強い視覚参照と反復的な指示を与えます。",
+      "notes": "Oluwaphilemonは、画像参照と詳細なプロンプトを与えたランディングページ生成を説明しています。Kimiは最初に自転車を3Dモデル化しようとし、その後の指示でより良い結果に落ち着いたとされています。"
+    },
+    "122": {
+      "title": "縦型プラットフォームゲームを作成",
+      "takeaway": "短いゲーム概要で、Kimi K3が単一HTMLのブラウザ試作を返せるかを試します。",
+      "notes": "Diego Cabezasは、足場が動く中でプレイヤーが上へ跳び続ける縦型プラットフォームゲームのKimi K3 Max実行を示しています。投稿は一回の実行で単一HTMLになったと記録しています。"
+    },
+    "123": {
+      "title": "PDEソルバーの誤りを評価",
+      "takeaway": "PDEベンチマークの失敗を使い、Kimi K3周辺で記号・数値タスクに検証が必要な箇所を判断します。",
+      "notes": "Lanyon AIは、単純な線形PDEでKimi K3を含む frontier モデルと自社の神経記号アーキテクチャを比較しています。詳細なプロンプトでも数学的、アルゴリズム的、計算的な誤りが出たと報告しています。"
+    },
+    "124": {
+      "title": "ClinicalBenchのEHRケースを確認",
+      "takeaway": "ClinicalBenchのEHRケースを使い、Kimi K3が成功する場面と診断推論が失敗する場面を確認します。",
+      "notes": "Michael Kurmanは、仮想EHRサンドボックスの救急10ケースでKimi K3のClinicalBench v0.0.4結果を報告しています。Kimi K3は10件中7件を解き、6番目のケースで苦戦したとされています。"
+    },
+    "125": {
+      "title": "オープンなエージェントハーネスを実行",
+      "takeaway": "共有エージェントハーネスを使い、ツール利用タスクでKimi K3と他の frontier モデルを比較します。",
+      "notes": "Sean Chenは、エージェントループ、メモリ取得ゲート、ツール呼び出し、評価、トレース、コストボードを備えたオープンソースハーネスでKimi K3を競わせたと説明しています。"
+    },
+    "126": {
+      "title": "税務計算を評価",
+      "takeaway": "フロントエンドでの強さが税務計算にも移ると仮定せず、Kimi K3を個別にテストします。",
+      "notes": "Michael Bockは、連邦および州の現実的な税申告50件でKimi K3をテストしたと報告しています。TaxCalcBenchではKimi K3が6%、GPT-5.6 Solが58%、Fable 5が4%だったとされています。"
+    },
+    "127": {
+      "title": "生成Geometry Dashを検証",
+      "takeaway": "Kimi K3のゲーム生成を完成品扱いする前に、ソルバーとブラウザ再生テストを組み合わせます。",
+      "notes": "Kirratrは、同じGeometry Dash風ブリーフでKimi K3が36分53秒かかったと報告しています。ビームサーチソルバーが64ジャンプの勝利経路を見つけ、ブラウザで再生し、コンソールエラーなしだったとされています。"
+    },
+    "128": {
+      "title": "3D粒子システムをシミュレート",
+      "takeaway": "粒子シミュレーションのプロンプトで、Kimi K3の動きの質をクローズドモデルと比較します。",
+      "notes": "Jade Ferraraは、Kimi K3とOpus 4.8に同じ3D粒子システムのプロンプトを与えたと報告しています。Kimiはより有機的な分布、滑らかな動き、低いAPIコストを示したとされています。"
+    },
+    "129": {
+      "title": "Codex OAuthでKimiを実行",
+      "takeaway": "Kimi K3のコーディング作業で手動APIキー設定を避けたい場合、Codex OAuth経路を使います。",
+      "notes": "biscuitweb3は、Kimi K3がOAuth経由でCodex内で動き、追加のAPIキー設定なしで選択して作業できると報告しています。添付スクリーンショットが統合の証拠です。"
     }
   }
 }

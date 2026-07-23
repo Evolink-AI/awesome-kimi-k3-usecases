@@ -5,10 +5,10 @@
   "introduction_heading": "Giriş",
   "intro": "Kimi K3 için yüksek sinyalli kullanım örnekleri deposuna hoş geldiniz",
   "mission": "Kamuya açık kaynaklara dayanan oyunları, 3D sahneleri, hareketli tasarımları, entegrasyonları, değerlendirmeleri ve pratik sınırları topluyoruz",
-  "source_boundary": "89 örneğin tamamı yüksek güvenli açık kaynaklara dayanır. Başlıklar ve yazarlar özgün kaynaklara bağlanır; zayıf, yinelenen ve yetersiz kanıtlı adaylar dışarıda bırakılır",
+  "source_boundary": "129 vaka yüksek güvenilirlikli herkese açık kaynaklardan gelir. Başlıklar ve yazarlar orijinale bağlanır; zayıf, yinelenen veya yetersiz kanıtlı adaylar dışarıda kalır",
   "overview_heading": "Genel bakış",
   "overview": [
-    "Geniş görev kapsamına sahip yüksek güvenli 109 örnek",
+    "Üreticiler ve uygulayıcılardan 129 yüksek güven vakası",
     "Oyunlar, 3D, frontend, hareketli grafikler, kodlama, araştırma, tasarım ve sınır değerlendirmesi",
     "Her örnek kaynak, yazar, tür, tarih ve prompt sınırını korur",
     "Orta güvenli 31 örnek dışarıda bırakıldı; tekil gözlemler benchmark olarak sunulmaz"
@@ -630,6 +630,56 @@
       "title": "Kimiyi claude-code-router ile yönlendir",
       "takeaway": "Gereksiz proxy mode kullanmadan Kimi K3ü mevcut Claude Code workflow içinde claude-code-router ile dene.",
       "notes": "Sai Rahul, Moonshot sponsorlu claude-code-router Kimi K3 desteğini anlatıyor: built-in presets, API key veya subscription import, native subscription routing, balance/usage dashboard, failover, cache pricing ve gerekmedikçe proxy modeu kapalı tutma uyarısı."
+    },
+    "120": {
+      "title": "Kimi K3ü Surge Indexte ölç",
+      "takeaway": "SurgeAI sonuçlarını kullanarak Kimi K3ün günlük sohbet gücünü kurumsal ajan ve bilim görevlerindeki zayıflıklarından ayır.",
+      "notes": "Eric Chen, SurgeAIın Kimi K3ü günlük sohbet botları, kurumsal ajanlar, derin akıl yürütme ve frontier bilim kapsayan bir dizinde çalıştırdığını aktarıyor. Gönderi, Kimi K3ün günlük sohbette güçlü; ajan ve bilim görevlerinde Fable ile Solun gerisinde olduğunu söylüyor."
+    },
+    "121": {
+      "title": "Referansla landing page oluştur",
+      "takeaway": "Landing page üretimini test ederken Kimi K3e güçlü görsel referanslar ve yinelemeli yönlendirme ver.",
+      "notes": "Oluwaphilemon, bir görsel referans ve ayrıntılı prompt ile landing page oluşturmayı anlatıyor. Kaynak, Kiminin önce bisikleti 3D modellemeye çalıştığını, ardından birkaç yönlendirme ile daha temiz sonuca ulaştığını belirtiyor."
+    },
+    "122": {
+      "title": "Dikey platform oyunu yap",
+      "takeaway": "Kısa bir oyun brifiyle Kimi K3ün tek dosyalı tarayıcı prototipi döndürüp döndürmediğini test et.",
+      "notes": "Diego Cabezas, oyuncunun hareketli platformlarda sürekli daha yükseğe zıpladığı bir dikey platform oyununu Kimi K3 Max ile gösteriyor. Gönderi tek denemelik, tek HTML sonucunu kaydediyor."
+    },
+    "123": {
+      "title": "PDE solver hatalarını ölç",
+      "takeaway": "PDE benchmark hatalarını kullanarak Kimi K3 çevresinde sembolik veya sayısal görevlerin nerede doğrulama istediğini belirle.",
+      "notes": "Lanyon AI, basit doğrusal PDElerde kendi nörosembolik mimarisini Kimi K3 dahil frontier modellerle karşılaştırıyor. Kaynak, ayrıntılı promptlara rağmen matematiksel ve hesaplamalı hatalar bildiriyor."
+    },
+    "124": {
+      "title": "ClinicalBench EHR vakalarını incele",
+      "takeaway": "ClinicalBench EHR vakalarıyla Kimi K3ün nerede başarılı olduğunu ve tanı akıl yürütmesinin nerede zorlandığını incele.",
+      "notes": "Michael Kurman, sanal EHR ortamındaki 10 acil servis vakasında Kimi K3 için ClinicalBench v0.0.4 sonuçlarını aktarıyor. Kimi K3 10 vakanın 7sini çözüyor ve 6. vakada zorlanıyor."
+    },
+    "125": {
+      "title": "Açık ajan harness çalıştır",
+      "takeaway": "Araç kullanan görevlerde Kimi K3ü diğer frontier modellerle karşılaştırmak için ortak ajan harness kullan.",
+      "notes": "Sean Chen; ajan döngüsü, bellek alma kapısı, araç çağrıları, değerlendirme, tracing ve maliyet panosu içeren açık kaynak harness ile Kimi K3ü yarıştırdığını anlatıyor."
+    },
+    "126": {
+      "title": "Vergi hesaplarını değerlendir",
+      "takeaway": "Frontend gücünün vergi hesaplarına taşındığını varsaymak yerine Kimi K3ü bu yüklerde ayrı test et.",
+      "notes": "Michael Bock, 50 gerçekçi federal ve eyalet vergi beyannamesinde Kimi K3ü test ettiğini bildiriyor. Kaynak TaxCalcBenchte Kimi K3 için 6%, GPT-5.6 Sol için 58%, Fable 5 için 4% veriyor."
+    },
+    "127": {
+      "title": "Üretilen Geometry Dashi doğrula",
+      "takeaway": "Kimi K3 oyun çıktısını bitmiş prototip saymadan önce solver ve tarayıcı playtesti ile birlikte kullan.",
+      "notes": "Kirratr, aynı Geometry Dash tarzı briefte Kimi K3ün 36:53 sürdüğünü bildiriyor. Beam-search solver 64 zıplamalı kazanan rota bulup tarayıcıda yeniden oynatıyor ve konsol hatası görmüyor."
+    },
+    "128": {
+      "title": "3D parçacık sistemi simüle et",
+      "takeaway": "Parçacık simülasyonu promptlarıyla Kimi K3ün hareket kalitesini kapalı modellerle karşılaştır.",
+      "notes": "Jade Ferrara, Kimi K3 ve Opus 4.8e aynı 3D parçacık sistemi promptunu verdiğini bildiriyor. Kimi daha organik dağılım, daha akıcı hareket ve daha düşük API maliyeti göstermiş."
+    },
+    "129": {
+      "title": "Kimi Codex OAuth ile çalıştır",
+      "takeaway": "Kimi K3 kodlama akışında manuel API key kurulumundan kaçınmak gerektiğinde Codex OAuth yolunu kullan.",
+      "notes": "biscuitweb3, Kimi K3ün OAuth ile Codex içinde çalıştığını ve ek API key kurulumu gerektirmediğini bildiriyor. Ekteki ekran görüntüsü entegrasyon kanıtı sağlıyor."
     }
   }
 }

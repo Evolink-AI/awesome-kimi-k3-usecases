@@ -5,10 +5,10 @@
   "introduction_heading": "Introducción",
   "intro": "Bienvenido al repositorio de casos de uso de alta señal de Kimi K3",
   "mission": "Recopilamos juegos, escenas 3D, diseños en movimiento, integraciones, evaluaciones y límites prácticos de Kimi K3 respaldados por fuentes públicas",
-  "source_boundary": "Los 89 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
+  "source_boundary": "Los 129 casos proceden de fuentes públicas de alta confianza. Los títulos y autores enlazan a los originales; se excluyen candidatos débiles, duplicados o insuficientemente documentados",
   "overview_heading": "Resumen",
   "overview": [
-    "109 casos de alta confianza de creadores y profesionales",
+    "129 casos de alta confianza de creadores y profesionales",
     "Incluye juegos interactivos, 3D, frontend, motion graphics, programación, integraciones, investigación, evaluaciones y límites prácticos",
     "Cada caso conserva fuente, autor, tipo, fecha y límite del prompt",
     "Las experiencias individuales no se presentan como benchmarks"
@@ -630,6 +630,56 @@
       "title": "Enrutar Kimi con claude-code-router",
       "takeaway": "Prueba Kimi K3 en un flujo existente de Claude Code mediante claude-code-router evitando el modo proxy innecesario.",
       "notes": "Sai Rahul describe soporte patrocinado por Moonshot para Kimi K3 en claude-code-router, con presets integrados, importación de API key o suscripción, enrutamiento nativo de suscripción, balance y uso en dashboard, failover, precios de caché y una advertencia para dejar el modo proxy apagado salvo que haga falta."
+    },
+    "120": {
+      "title": "Evaluar Kimi K3 en el índice Surge",
+      "takeaway": "Usa los resultados divididos de SurgeAI para separar la fortaleza de Kimi K3 en chat cotidiano de su rendimiento más débil en agentes empresariales y ciencia.",
+      "notes": "Eric Chen informa que SurgeAI probó Kimi K3 en un índice que cubre chatbots cotidianos, agentes empresariales, razonamiento profundo y ciencia de frontera. La publicación dice que Kimi K3 compite bien en chat diario, mientras Fable sigue por delante y Kimi queda detrás de Fable y Sol en agentes empresariales y ciencia."
+    },
+    "121": {
+      "title": "Crear landing pages con referencia",
+      "takeaway": "Da a Kimi K3 referencias visuales sólidas y guía iterativa al probar generación de landing pages.",
+      "notes": "Oluwaphilemon describe una imagen de referencia y un prompt detallado para una landing page. La fuente señala que Kimi primero intentó crear la bicicleta como modelo 3D y luego mejoró tras varias iteraciones guiadas."
+    },
+    "122": {
+      "title": "Crear un juego vertical de plataformas",
+      "takeaway": "Usa un brief de juego conciso para probar si Kimi K3 devuelve un prototipo web de un solo archivo.",
+      "notes": "Diego Cabezas muestra una ejecución de Kimi K3 Max para un juego vertical donde el jugador salta cada vez más alto mientras las plataformas se mueven. La publicación registra un resultado de una sola toma en HTML."
+    },
+    "123": {
+      "title": "Evaluar errores en PDE",
+      "takeaway": "Usa fallos en benchmarks de PDE para decidir dónde las tareas simbólicas o numéricas requieren verificación alrededor de Kimi K3.",
+      "notes": "Lanyon AI compara su arquitectura neurosimbólica con modelos frontera, incluido Kimi K3, en PDE lineales simples. La fuente informa errores matemáticos, algorítmicos y computacionales incluso con prompts detallados."
+    },
+    "124": {
+      "title": "Revisar casos EHR de ClinicalBench",
+      "takeaway": "Usa los casos EHR de ClinicalBench para inspeccionar dónde Kimi K3 acierta y dónde falla el razonamiento diagnóstico.",
+      "notes": "Michael Kurman informa resultados de ClinicalBench v0.0.4 para Kimi K3 en un sandbox EHR virtual con 10 casos de urgencias. La fuente dice que Kimi K3 resolvió 7 de 10 y tuvo problemas con el caso 6."
+    },
+    "125": {
+      "title": "Ejecutar un harness de agentes abierto",
+      "takeaway": "Usa un harness de agentes compartido para comparar Kimi K3 con otros modelos frontera en tareas con herramientas.",
+      "notes": "Sean Chen describe una carrera de Kimi K3 contra varios modelos en un harness abierto con bucle de agente, recuperación de memoria, llamadas a herramientas, evaluación, trazas y panel de coste."
+    },
+    "126": {
+      "title": "Evaluar cálculos de impuestos",
+      "takeaway": "Prueba Kimi K3 por separado en cargas fiscales en vez de asumir que su fortaleza frontend se transfiere.",
+      "notes": "Michael Bock informa una prueba de Kimi K3 en 50 declaraciones federales y estatales hiperrealistas. La fuente dice que Kimi K3 logró 6% en TaxCalcBench, frente a 58% de GPT-5.6 Sol y 4% de Fable 5."
+    },
+    "127": {
+      "title": "Verificar un Geometry Dash generado",
+      "takeaway": "Combina un juego de Kimi K3 con solver y pruebas en navegador antes de tratarlo como prototipo terminado.",
+      "notes": "Kirratr informa que Kimi K3 tardó 36:53 en el mismo brief de Geometry Dash. La fuente dice que un solver encontró una ruta ganadora de 64 saltos y la reprodujo en el navegador sin errores de consola."
+    },
+    "128": {
+      "title": "Simular un sistema de partículas 3D",
+      "takeaway": "Usa prompts de simulación de partículas para comparar la calidad de movimiento de Kimi K3 con modelos cerrados.",
+      "notes": "Jade Ferrara informa que dio el mismo prompt de sistema de partículas 3D a Kimi K3 y Opus 4.8. La fuente dice que Kimi produjo movimiento más orgánico y menor coste API."
+    },
+    "129": {
+      "title": "Ejecutar Kimi en Codex OAuth",
+      "takeaway": "Usa la ruta OAuth de Codex cuando un flujo de programación con Kimi K3 deba evitar configurar una clave API manual.",
+      "notes": "biscuitweb3 informa que Kimi K3 funciona dentro de Codex mediante OAuth sin configuración adicional de API key. La captura adjunta aporta evidencia de la integración."
     }
   }
 }
