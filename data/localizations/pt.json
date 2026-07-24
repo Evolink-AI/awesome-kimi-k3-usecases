@@ -680,6 +680,56 @@
       "title": "Executar Kimi no Codex OAuth",
       "takeaway": "Use a rota OAuth do Codex quando um fluxo de codificação com Kimi K3 deve evitar configuração manual de chave API.",
       "notes": "biscuitweb3 relata Kimi K3 rodando dentro do Codex via OAuth sem configuração extra de API key. A captura anexada fornece evidência da integração."
+    },
+    "130": {
+      "title": "Avaliar uso computacional composto",
+      "takeaway": "Use o Composite-Bench para comparar o Kimi K3 com outros modelos open-weight em tarefas longas de uso de computador.",
+      "notes": "YangFanYun publicou o Composite-Bench com respostas otimas certificadas e computacao verificada. A publicacao diz que o GLM-5.2 supera o Kimi K3 por 32 pontos nesse benchmark e que apenas Claude supera mais modelos fechados testados."
+    },
+    "131": {
+      "title": "Criar um explicador submarino",
+      "takeaway": "Use o Kimi K3 para coordenar um pipeline de video em etapas em vez de regenerar todo o filme a cada ajuste.",
+      "notes": "N01ennn descreve um explicador submarino de 75 segundos feito com HTML/SVG/JS, captura Playwright 4K, ffmpeg, legendas, timing, musica e voz Kimi TTS. O Kimi K3 manteve oito passes ligados a etapas especificas, embora ritmo e julgamento visual ainda precisassem de revisao humana."
+    },
+    "132": {
+      "title": "Simular um robo hexapode",
+      "takeaway": "Use o Kimi K3 para prototipar simuladores roboticos com cinematica inversa e logica de marcha antes de testar servos fisicos.",
+      "notes": "Dilum Sanjaya mostra um simulador de robo hexapode codificado com Kimi K3. A fonte diz que ele usa cinematica inversa e algoritmos de marcha escritos do zero, ideias tambem usadas no controle de robos caminhantes reais."
+    },
+    "133": {
+      "title": "Testar landing pages as cegas",
+      "takeaway": "Use avaliacao cega de designers em briefs reais para ver se os ganhos do Kimi K3 em rankings frontend passam para trabalho de cliente.",
+      "notes": "contraben relata um teste com mais de dez briefs de landing page. Oito designers avaliaram as saidas as cegas contra GPT 5.6 Sol, Gemini 3.5 Flash e Claude Fable 5; Kimi empatou com o melhor modelo e venceu em briefs detalhados."
+    },
+    "134": {
+      "title": "Prototipar detalhe 3D mecanico",
+      "takeaway": "Use o Kimi K3 quando uma construcao 3D criativa depende de detalhes fisicos ou mecanicos, nao apenas de React ou Three.js valido.",
+      "notes": "0xDominiqq relata rodar os mesmos prompts em varios modelos e achar o Kimi K3 mais forte em fidelidade visual e fisica de primeira passagem. Cita um painel de globo 3D e um Strandbeest em Three.js com movimento coerente."
+    },
+    "135": {
+      "title": "Recriar uma UI movel Expo",
+      "takeaway": "Use o Kimi K3 para recriar UI movel baseada em referencias quando for preciso preservar formas, gradientes, imagens e migracao de SDK.",
+      "notes": "thebuggeddev compara o mesmo prompt de uma UI Expo React Native de tres telas em GPT 5.6 Sol e Kimi K3. A fonte diz que Kimi preservou SVGs, gradientes, marca, imagens combinadas, subagentes de revisao e migracao para o SDK Expo mais recente."
+    },
+    "136": {
+      "title": "Estressar um backend produtivo",
+      "takeaway": "Use um backend real para verificar se o Kimi K3 lida com APIs e banco de dados em escala de producao alem do frontend.",
+      "notes": "hqmank enquadra o teste no backend de um produto de aprendizado de IA: FastAPI, PostgreSQL, 68K linhas em mais de 400 arquivos e 307 endpoints. A publicacao aponta para um fio completo e video."
+    },
+    "137": {
+      "title": "Roteirizar Codex pelo opencodex",
+      "takeaway": "Use opencodex quando um fluxo Codex precisa alternar entre Kimi K3 e outros provedores por um proxy local compativel com OpenAI.",
+      "notes": "cyrilXBT descreve opencodex como proxy local que traduz o formato de API do Codex para provedores escolhidos, incluindo Kimi K3. A fonte mostra instalar o pacote, executar `ocx init`, iniciar o proxy e rotear Codex com streaming, tools, imagens e compatibilidade com Claude Code."
+    },
+    "138": {
+      "title": "Automatizar loops de ajuste",
+      "takeaway": "Use o Kimi K3 para criar um harness que grava gameplay, analisa, ajusta parametros e roda outro teste.",
+      "notes": "Oluwaphilemon1 relata projetos Three.js com Kimi K3 e destaca um harness de ajuste dentro do jogo. O loop grava um clipe curto, analisa resultados, aplica ajustes e executa novo teste, reduzindo playtesting manual."
+    },
+    "139": {
+      "title": "Seguir tutorial de web design",
+      "takeaway": "Use um tutorial completo de web design para inspecionar como o Kimi K3 cria movimento e layout polidos a partir de um guia real.",
+      "notes": "cyrilXBT compartilha um tutorial de 13 minutos para construir um site personalizado com movimento e acabamento visual usando Kimi K3. A publicacao diz que o passo a passo cobre a construcao real do inicio ao fim."
     }
   }
 }

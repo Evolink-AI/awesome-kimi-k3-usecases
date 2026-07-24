@@ -680,6 +680,56 @@
       "title": "Codex OAuthでKimiを実行",
       "takeaway": "Kimi K3のコーディング作業で手動APIキー設定を避けたい場合、Codex OAuth経路を使います。",
       "notes": "biscuitweb3は、Kimi K3がOAuth経由でCodex内で動き、追加のAPIキー設定なしで選択して作業できると報告しています。添付スクリーンショットが統合の証拠です。"
+    },
+    "130": {
+      "title": "複合 computer use ベンチマーク",
+      "takeaway": "合成スコアだけでなく、複合的な computer use タスクで Kimi K3 を比較する。",
+      "notes": "出典: YangFanYun は Kimi K3 を Gemini 3、GPT-5、GLM 4.6 と並べた複合 computer use benchmark として紹介している。長いタスクでの実用上の限界を見るための自己申告ベースの評価として扱う。"
+    },
+    "131": {
+      "title": "深海解説パイプラインを作る",
+      "takeaway": "物語型の prompt を、シーン、テキスト、動き、解説を整理する視覚パイプラインに変換する。",
+      "notes": "出典: N01ennn は Kimi K3 で深海テーマの解説コンテンツを作る流れを示している。投稿は、ナラティブ構造、ビジュアル、アニメーションを結び付ける具体的なデモとして有用。"
+    },
+    "132": {
+      "title": "六脚ロボットをシミュレートする",
+      "takeaway": "Kimi K3 で脚の動きと見える挙動を持つ 3D ロボットシーンを試作する。",
+      "notes": "出典: DilumSanjaya は Kimi K3 で作成した六脚ロボットのシミュレーションを共有している。物理ロボットの検証ではなく、インタラクティブ 3D デモとして保存する。"
+    },
+    "133": {
+      "title": "ランディングページをブラインドテストする",
+      "takeaway": "モデル名を伏せた landing page 比較で、Kimi K3 の frontend 出力を評価する。",
+      "notes": "出典: contraben は複数モデルの landing page をブラインドテストとして公開している。このケースは視覚評価の方法を記録するもので、一般化された benchmark とはしない。"
+    },
+    "134": {
+      "title": "機械的な 3D ディテールを試作する",
+      "takeaway": "Kimi K3 に、視覚ディテールとレンダリング制約を持つ小さな機械系 3D シーンを作らせる。",
+      "notes": "出典: 0xDominiqq は Kimi K3 で作成した機械的または工業的なパーツを示している。有用な信号は、共有されたデモで確認できる精密な視覚プロトタイピングに限る。"
+    },
+    "135": {
+      "title": "Expo モバイル UI を再現する",
+      "takeaway": "Kimi K3 を mobile Expo UI で試し、構造、コンポーネント、視覚的な仕上げを確認する。",
+      "notes": "出典: thebuggeddev は Kimi K3 によるモバイル UI 再現を共有している。これは frontend 出力の評価であり、本番品質全体を保証するものではない。"
+    },
+    "136": {
+      "title": "production backend をストレステストする",
+      "takeaway": "より現実的な backend フローで Kimi K3 の統合、コード推論、限界を調べる。",
+      "notes": "出典: hqmank は production backend で Kimi K3 を試した内容を述べている。コード統合評価として扱い、独立した有料 runtime test は実行していない。"
+    },
+    "137": {
+      "title": "opencodex 経由で Codex をルーティングする",
+      "takeaway": "Kimi K3 を Codex/opencodex ループに接続し、具体的な agent routing を試す。",
+      "notes": "出典: cyrilXBT は Kimi K3 を使う opencodex 構成を共有している。ツール統合を記録しつつ、報告された設定とローカル検証の境界を保つ。"
+    },
+    "138": {
+      "title": "ゲーム調整ループを自動化する",
+      "takeaway": "gameplay を録画し、分析し、パラメータを変え、再テストする harness を作る。",
+      "notes": "出典: Oluwaphilemon1 は Three.js プロジェクトでの Kimi K3 利用と、ゲーム内調整ループを説明している。手動 playtesting を減らす流れだが、公開投稿に基づく範囲に留める。"
+    },
+    "139": {
+      "title": "Web デザイン tutorial を追う",
+      "takeaway": "完整な tutorial を使い、Kimi K3 が layout、動き、視覚的な磨き込みをどう組むかを見る。",
+      "notes": "出典: cyrilXBT は Kimi K3 でカスタムサイトを作る 13 分の tutorial を共有している。これは source-backed な学習 workflow であり、prompt gallery ではない。"
     }
   }
 }

@@ -680,6 +680,56 @@
       "title": "Exécuter Kimi via Codex OAuth",
       "takeaway": "Utilise la route OAuth de Codex quand un workflow de code Kimi K3 doit éviter la configuration manuelle d’une clé API.",
       "notes": "biscuitweb3 rapporte que Kimi K3 fonctionne dans Codex via OAuth sans configuration API key supplémentaire. La capture jointe fournit la preuve d’intégration."
+    },
+    "130": {
+      "title": "Composer un banc d essai computer use",
+      "takeaway": "Comparer Kimi K3 sur des taches de computer use composites au lieu de se limiter a des scores synthetiques.",
+      "notes": "Source : YangFanYun presente Kimi K3 dans un benchmark composite de computer use et situe le resultat parmi Gemini 3, GPT-5 et GLM 4.6. Le cas reste une evaluation auto-rapportee, utile pour suivre les limites pratiques sur des taches longues."
+    },
+    "131": {
+      "title": "Construire un pipeline d explication sous-marine",
+      "takeaway": "Transformer un prompt narratif en pipeline visuel qui organise scene, texte, mouvement et explication.",
+      "notes": "Source : N01ennn montre un flux Kimi K3 pour generer un explicateur sur les grands fonds marins. Le post met en avant la capacite a lier structure narrative, visuels et animation dans une demo de contenu."
+    },
+    "132": {
+      "title": "Simuler un robot hexapode",
+      "takeaway": "Utiliser Kimi K3 pour prototyper une scene robotique 3D avec mouvement de pattes et comportement visible.",
+      "notes": "Source : DilumSanjaya partage une simulation de robot hexapode realisee avec Kimi K3. Le cas est conserve comme demo interactive 3D, sans extrapoler vers une validation robotique physique."
+    },
+    "133": {
+      "title": "Tester des landing pages a l aveugle",
+      "takeaway": "Evaluer la sortie frontend de Kimi K3 en comparant des landing pages sans annoncer le modele au lecteur.",
+      "notes": "Source : contraben publie un test aveugle de landing pages generees par plusieurs modeles. Le cas documente une methode d evaluation visuelle, pas un benchmark generalise."
+    },
+    "134": {
+      "title": "Prototyper un detail mecanique 3D",
+      "takeaway": "Faire produire a Kimi K3 une micro-scene mecanique 3D avec details visuels et contraintes de rendu.",
+      "notes": "Source : 0xDominiqq montre une piece mecanique ou industrielle creee avec Kimi K3. Le signal utile est la capacite de prototypage visuel precis, verifiee seulement par la demo partagee."
+    },
+    "135": {
+      "title": "Recreer une interface mobile Expo",
+      "takeaway": "Tester Kimi K3 sur une interface mobile Expo en observant structure, composants et finition visuelle.",
+      "notes": "Source : thebuggeddev partage une recreation d interface mobile avec Kimi K3. Le cas reste une evaluation de sortie frontend et ne pretend pas couvrir toute la qualite de production."
+    },
+    "136": {
+      "title": "Mettre sous pression un backend de production",
+      "takeaway": "Utiliser Kimi K3 pour inspecter un flux backend plus realiste et reperer limites, integration et raisonnement code.",
+      "notes": "Source : hqmank decrit un essai Kimi K3 sur un backend de production. Le cas est retenu comme evaluation d integration code, avec prudence sur la portee et sans test runtime payant independant."
+    },
+    "137": {
+      "title": "Router Codex via opencodex",
+      "takeaway": "Connecter Kimi K3 a une boucle Codex/opencodex pour experimenter un routage agentique concret.",
+      "notes": "Source : cyrilXBT partage un montage opencodex utilisant Kimi K3. Le cas documente une integration d outillage et conserve la frontiere entre configuration rapportee et verification locale."
+    },
+    "138": {
+      "title": "Automatiser des boucles de tuning de jeu",
+      "takeaway": "Construire un harnais qui enregistre le gameplay, l analyse, ajuste des parametres puis relance un test.",
+      "notes": "Source : Oluwaphilemon1 decrit des usages Kimi K3 dans des projets Three.js et mentionne une boucle de tuning en jeu. Le flux reduit le playtesting manuel mais reste base sur le temoignage public."
+    },
+    "139": {
+      "title": "Suivre un tutoriel de design web",
+      "takeaway": "Utiliser un tutoriel complet pour observer comment Kimi K3 construit mise en page, mouvement et finition visuelle.",
+      "notes": "Source : cyrilXBT partage un tutoriel de 13 minutes pour creer un site personnalise avec Kimi K3. Le cas est un workflow pedagogique source-backed, pas une galerie de prompts."
     }
   }
 }

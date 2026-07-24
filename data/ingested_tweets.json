@@ -1,7 +1,7 @@
 {
-  "source_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260723T010416Z/selected-source-package.json",
-  "source_generated_at": "2026-07-23T01:08:24.199065Z",
-  "source_sample_count": 129,
+  "source_artifact": "/Users/evolink/Desktop/github-repo/awesome-kimi-k3-usecases/.codex/usecase-update-loop/runs/20260724T034504Z/use-case-posts.json",
+  "source_generated_at": "2026-07-24T03:49:12.113468+00:00",
+  "source_sample_count": 139,
   "selected_ids": [
     "2077763009657627055",
     "2077754781964054825",
@@ -131,8 +131,18 @@
     "2079913117698666964",
     "2079902410042909108",
     "2079884161251262540",
-    "2079844959843197342"
+    "2079844959843197342",
+    "2080442432794325003",
+    "2080391368644657460",
+    "2080335531108716750",
+    "2080329043639947338",
+    "2080316573210784230",
+    "2080295524142587933",
+    "2080267878256005255",
+    "2080252333829628163",
+    "2080187637806043200",
+    "2080176332890345501"
   ],
-  "note": "This manifest records 129 published high-confidence selections. The 2026-07-23 recurring run reviewed 59 in-window candidates from a 698-deduplicated Twitter API artifact, selected 10, deferred 15, marked 14 unsure, and dropped 20. Public case data lives in data/use-cases.json.",
-  "updated_at": "2026-07-23T01:08:24.199065Z"
+  "note": "This manifest records 139 published high-confidence selections. The 2026-07-24 recurring run reviewed 66 in-window candidates from a 667-deduplicated Twitter API artifact, selected 10, deferred 15, marked 14 unsure, and dropped 27. Public case data lives in data/use-cases.json.",
+  "updated_at": "2026-07-24T03:49:12.113468+00:00"
 }

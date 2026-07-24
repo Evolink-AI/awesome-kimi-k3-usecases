@@ -680,6 +680,56 @@
       "title": "通过 Codex OAuth 執行 Kimi",
       "takeaway": "当 Kimi K3 编码工作流需要避免手动配置 API key 时，使用 Codex OAuth 路径。",
       "notes": "biscuitweb3 報告 Kimi K3 已可通过 OAuth 在 Codex 内執行，无需额外 API key 设置。附图提供了该集成界面的证据。"
+    },
+    "130": {
+      "title": "複合 computer use 基準測試",
+      "takeaway": "不只看合成分數，而是在複合 computer use 任務中比較 Kimi K3。",
+      "notes": "來源：YangFanYun 把 Kimi K3 放在 Gemini 3、GPT-5 和 GLM 4.6 同場的複合 computer use benchmark 中。此案例作為自回報評測保留，用於觀察長任務中的實際邊界。"
+    },
+    "131": {
+      "title": "建立深海解說流水線",
+      "takeaway": "把敘事型 prompt 轉成包含場景、文字、動作與解釋結構的視覺化流水線。",
+      "notes": "來源：N01ennn 展示用 Kimi K3 生成深海主題解說內容的流程。該貼文的有效訊號，是把敘事結構、視覺和動畫串成具體 demo。"
+    },
+    "132": {
+      "title": "模擬六足機器人",
+      "takeaway": "用 Kimi K3 原型化一個帶腿部動作和可見行為的 3D 機器人場景。",
+      "notes": "來源：DilumSanjaya 分享用 Kimi K3 做出的六足機器人模擬。這裡按互動式 3D demo 收錄，不外推為物理機器人驗證。"
+    },
+    "133": {
+      "title": "盲測登陸頁輸出",
+      "takeaway": "在不揭示模型名稱的 landing page 對比中評估 Kimi K3 的 frontend 輸出。",
+      "notes": "來源：contraben 發布多個模型生成 landing page 的盲測。此案例記錄一種視覺評估方法，不包裝成通用 benchmark。"
+    },
+    "134": {
+      "title": "原型化機械 3D 細節",
+      "takeaway": "讓 Kimi K3 生成帶視覺細節和渲染約束的小型機械 3D 場景。",
+      "notes": "來源：0xDominiqq 展示用 Kimi K3 生成的機械或工業部件。有效訊號限定為公開 demo 能支持的精細視覺原型能力。"
+    },
+    "135": {
+      "title": "復刻 Expo 行動端 UI",
+      "takeaway": "用行動 Expo UI 檢查 Kimi K3 的結構、元件組織和視覺完成度。",
+      "notes": "來源：thebuggeddev 分享用 Kimi K3 復刻行動端介面的結果。此案例是 frontend 輸出評估，不聲稱覆蓋完整 production 品質。"
+    },
+    "136": {
+      "title": "壓力測試 production backend",
+      "takeaway": "在更真實的 backend 流程中觀察 Kimi K3 的整合、程式碼推理和限制。",
+      "notes": "來源：hqmank 描述在 production backend 場景中試用 Kimi K3。此案例按程式碼整合評估收錄；本次沒有執行獨立付費 runtime test。"
+    },
+    "137": {
+      "title": "透過 opencodex 路由 Codex",
+      "takeaway": "把 Kimi K3 接入 Codex/opencodex 迴圈，做具體的 agent routing 整合實驗。",
+      "notes": "來源：cyrilXBT 分享使用 Kimi K3 的 opencodex 配置。此案例記錄工具整合，同時保留公開配置與本地驗證之間的邊界。"
+    },
+    "138": {
+      "title": "自動化遊戲調參迴圈",
+      "takeaway": "建立會錄製 gameplay、分析結果、調整參數並重新測試的 harness。",
+      "notes": "來源：Oluwaphilemon1 描述 Kimi K3 在 Three.js 專案中的用法，並提到遊戲內調參迴圈。該流程減少手動 playtesting，但僅按公開貼文可驗證範圍收錄。"
+    },
+    "139": {
+      "title": "跟隨網頁設計教學",
+      "takeaway": "用完整 tutorial 觀察 Kimi K3 如何建立 layout、動效和視覺 polish。",
+      "notes": "來源：cyrilXBT 分享一個 13 分鐘的 Kimi K3 自訂網站教學。此案例是 source-backed 教學 workflow，不是 prompt gallery。"
     }
   }
 }

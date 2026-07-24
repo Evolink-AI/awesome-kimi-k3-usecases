@@ -17,6 +17,15 @@
       "reason": "The collected author profile is unavailable while both attributed source posts remain publicly reachable; preserve the supplied attribution",
       "source_evidence": "/Users/cheercheung/X-info/热词搜索/kimi-k3/use-case-posts.json",
       "reviewed_at": "2026-07-17"
+    },
+    {
+      "url": "https://x.com/doutorcaleb",
+      "allowed_statuses": [
+        404
+      ],
+      "reason": "The collected author profile became unavailable while the attributed source post remains publicly reachable; preserve the supplied attribution",
+      "source_evidence": "data/use-cases.json#case-29",
+      "reviewed_at": "2026-07-24"
     }
   ]
 }

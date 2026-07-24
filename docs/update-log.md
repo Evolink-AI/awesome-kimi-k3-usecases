@@ -1,5 +1,14 @@
 # Update Log
 
+## 2026-07-24
+
+- Added cases 130-139 from the Kimi K3 24-hour recurring update window ending 2026-07-24T03:49:12Z.
+- Classified all 66 review-queue candidates: selected 10 high-confidence source-backed cases, deferred 15, marked 14 unsure, and dropped 27 from 667 deduplicated TwitterAPI candidates.
+- Published workflows and evidence covering composite computer-use benchmarking, deep-sea explainer generation, hexapod robot simulation, blind landing-page testing, mechanical 3D prototyping, Expo mobile UI recreation, production backend stress testing, opencodex routing, game tuning loops, and a web-design tutorial.
+- Uploaded 19 new source media files to R2 under `github-repo-media/awesome-kimi-k3-usecases/`, including poster frames plus playable MP4 links for video cases.
+- Rebuilt source fidelity, English README, 10 localized READMEs, localization cache, and public structured data from the verified handoff package.
+- No credit-consuming API test was run or claimed, per owner 2026-07-18 waiver; non-paid method-aware endpoint audit remains required.
+
 ## 2026-07-23
 
 - Added cases 120-129 from the Kimi K3 24-hour recurring update window ending 2026-07-23T01:08:24Z.

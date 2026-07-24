@@ -71,10 +71,10 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 
 | Section | Cases |
 |---|---|
-| [Interaktive Spiele und 3D](#games-3d) | 39 |
-| [Frontend und Motion Design](#frontend-motion) | 27 |
-| [Coding und Integrationen](#coding-integrations) | 16 |
-| [Bewertung und Grenzen](#evaluation-limits) | 47 |
+| [Interaktive Spiele und 3D](#games-3d) | 41 |
+| [Frontend und Motion Design](#frontend-motion) | 32 |
+| [Coding und Integrationen](#coding-integrations) | 18 |
+| [Bewertung und Grenzen](#evaluation-limits) | 48 |
 | [Verwandte Ressourcen](#related-resources) | Verwandte Ressourcen |
 | [Schnellstart](#quick-api-access) | Schnellstart |
 | [Danksagung](#acknowledge) | Danksagung und Korrekturen |
@@ -210,6 +210,16 @@ Endpoint: `POST https://direct.evolink.ai/v1/chat/completions`
 | [Geometry-Dash-Build verifizieren](#case-127) | Interaktive Spiele und 3D | Kombiniere ein Kimi K3 Spiel mit Solver und Browser-Playtests, bevor du es als fertigen Prototyp behandelst. | Benchmark |
 | [3D-Partikelsystem simulieren](#case-128) | Frontend und Motion Design | Nutze Partikelsimulations-Prompts, um Kimi K3s Bewegungsqualität mit geschlossenen Modellen zu vergleichen. | Evaluation |
 | [Kimi per Codex OAuth ausführen](#case-129) | Coding und Integrationen | Nutze die Codex-OAuth-Route, wenn ein Kimi K3 Coding-Workflow keine manuelle API-Key-Konfiguration haben soll. | Integration |
+| [Composite-Computer-Use bewerten](#case-130) | Bewertung und Grenzen | Nutze Composite-Bench, um Kimi K3 mit anderen Open-Weight-Modellen bei langen Computer-Use-Aufgaben zu vergleichen. | Benchmark |
+| [Deep-Sea-Erklaervideo bauen](#case-131) | Frontend und Motion Design | Nutze Kimi K3, um eine mehrstufige Videopipeline zu koordinieren, statt den ganzen Film nach jeder Aenderung neu zu erzeugen. | Demo |
+| [Hexapod-Roboter simulieren](#case-132) | Interaktive Spiele und 3D | Nutze Kimi K3, um Robotiksimulatoren mit inverser Kinematik und Ganglogik zu prototypisieren, bevor physische Servos getestet werden. | Demo |
+| [Landingpages blind testen](#case-133) | Frontend und Motion Design | Nutze blinde Designer-Bewertung mit realen Briefings, um zu pruefen, ob Kimi K3s Frontend-Rankinggewinne auf Kundenarbeit uebertragbar sind. | Benchmark |
+| [Mechanische 3D-Details prototypisieren](#case-134) | Frontend und Motion Design | Nutze Kimi K3, wenn ein kreativer 3D-Build physische oder mechanische Details braucht, nicht nur gueltigen React- oder Three.js-Code. | Demo |
+| [Expo-Mobile-UI nachbauen](#case-135) | Frontend und Motion Design | Nutze Kimi K3 fuer referenzlastige Mobile-UI-Rekonstruktion, wenn Formen, Verlaeufe, Bilder und SDK-Migration erhalten bleiben muessen. | Evaluation |
+| [Produktionsbackend stressen](#case-136) | Coding und Integrationen | Nutze ein echtes Backend, um zu pruefen, ob Kimi K3 API- und Datenbankarbeit in Produktionsgroesse jenseits von Frontend-Aufgaben bewaeltigt. | Evaluation |
+| [Codex ueber opencodex routen](#case-137) | Coding und Integrationen | Nutze opencodex, wenn ein Codex-Workflow zwischen Kimi K3 und anderen Providern ueber einen lokalen OpenAI-kompatiblen Proxy wechseln soll. | Integration |
+| [Game-Tuning-Schleifen automatisieren](#case-138) | Interaktive Spiele und 3D | Nutze Kimi K3, um ein Harness zu bauen, das Gameplay aufzeichnet, analysiert, Parameter anpasst und erneut testet. | Integration |
+| [Webdesign-Tutorial folgen](#case-139) | Frontend und Motion Design | Nutze ein vollstaendiges Webdesign-Tutorial, um zu sehen, wie Kimi K3 polierte Bewegung und Layouts aus einem echten Walkthrough baut. | Tutorial |
 
 <a id="games-3d"></a>
 ## 🎮 Interaktive Spiele und 3D
@@ -816,6 +826,36 @@ Type: Benchmark | Date: 2026-07-22
 
 ---
 
+<a id="case-132"></a>
+### Case 132: [Hexapod-Roboter simulieren](https://x.com/DilumSanjaya/status/2080335531108716750) (by [@DilumSanjaya](https://x.com/DilumSanjaya))
+
+**Nutze Kimi K3, um Robotiksimulatoren mit inverser Kinematik und Ganglogik zu prototypisieren, bevor physische Servos getestet werden.**
+
+Dilum Sanjaya zeigt einen mit Kimi K3 gebauten Hexapod-Simulator. Die Quelle sagt, dass inverse Kinematik und von Grund auf geschriebene Gangalgorithmen genutzt werden, aehnlich wie bei echten Laufrobotern.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-132.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-132-poster.jpg" alt="Case 132 source video poster" height="360"></a>
+
+[Play case 132 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-132.mp4)
+
+Type: Demo | Date: 2026-07-23
+
+---
+
+<a id="case-138"></a>
+### Case 138: [Game-Tuning-Schleifen automatisieren](https://x.com/Oluwaphilemon1/status/2080187637806043200) (by [@Oluwaphilemon1](https://x.com/Oluwaphilemon1))
+
+**Nutze Kimi K3, um ein Harness zu bauen, das Gameplay aufzeichnet, analysiert, Parameter anpasst und erneut testet.**
+
+Oluwaphilemon1 berichtet von Kimi K3 in Three.js-Spielprojekten und hebt ein In-Game-Tuning-Harness hervor. Die Schleife nimmt einen kurzen Gameplay-Clip auf, analysiert Ergebnisse, passt Parameter an und startet einen neuen Test.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-138.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-138-poster.jpg" alt="Case 138 source video poster" height="360"></a>
+
+[Play case 138 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-138.mp4)
+
+Type: Integration | Date: 2026-07-23
+
+---
+
 
 <a id="frontend-motion"></a>
 ## 🎨 Frontend und Motion Design
@@ -1227,6 +1267,81 @@ Type: Evaluation | Date: 2026-07-22
 
 ---
 
+<a id="case-131"></a>
+### Case 131: [Deep-Sea-Erklaervideo bauen](https://x.com/N01ennn/status/2080391368644657460) (by [@N01ennn](https://x.com/N01ennn))
+
+**Nutze Kimi K3, um eine mehrstufige Videopipeline zu koordinieren, statt den ganzen Film nach jeder Aenderung neu zu erzeugen.**
+
+N01ennn beschreibt ein 75-Sekunden-Deep-Sea-Erklaervideo mit HTML/SVG/JS, Playwright-4K-Capture, ffmpeg, Untertiteln, Timing, Musik und Kimi-TTS. Kimi K3 hielt acht Bearbeitungsrunden an konkrete Pipeline-Stufen gebunden; Tempo und visuelles Urteil brauchten weiter menschliche Pruefung.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-131.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-131-poster.jpg" alt="Case 131 source video poster" height="360"></a>
+
+[Play case 131 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-131.mp4)
+
+Type: Demo | Date: 2026-07-23
+
+---
+
+<a id="case-133"></a>
+### Case 133: [Landingpages blind testen](https://x.com/contraben/status/2080329043639947338) (by [@contraben](https://x.com/contraben))
+
+**Nutze blinde Designer-Bewertung mit realen Briefings, um zu pruefen, ob Kimi K3s Frontend-Rankinggewinne auf Kundenarbeit uebertragbar sind.**
+
+contraben berichtet von mehr als zehn Landingpage-Briefings. Acht Designer bewerteten blind gegen GPT 5.6 Sol, Gemini 3.5 Flash und Claude Fable 5; Kimi lag insgesamt gleichauf mit dem besten Modell und gewann bei detaillierten Briefings.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-133.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-133-poster.jpg" alt="Case 133 source video poster" height="360"></a>
+
+[Play case 133 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-133.mp4)
+
+Type: Benchmark | Date: 2026-07-23
+
+---
+
+<a id="case-134"></a>
+### Case 134: [Mechanische 3D-Details prototypisieren](https://x.com/0xDominiqq/status/2080316573210784230) (by [@0xDominiqq](https://x.com/0xDominiqq))
+
+**Nutze Kimi K3, wenn ein kreativer 3D-Build physische oder mechanische Details braucht, nicht nur gueltigen React- oder Three.js-Code.**
+
+0xDominiqq berichtet, dieselben Prompts ueber Modelle hinweg getestet zu haben, wobei Kimi K3 bei visueller und physischer First-Pass-Fidelity staerker war. Genannt werden ein 3D-Globus-Dashboard und ein Three.js-Strandbeest mit stimmiger Gestangemechanik.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-134.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-134-poster.jpg" alt="Case 134 source video poster" height="360"></a>
+
+[Play case 134 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-134.mp4)
+
+Type: Demo | Date: 2026-07-23
+
+---
+
+<a id="case-135"></a>
+### Case 135: [Expo-Mobile-UI nachbauen](https://x.com/thebuggeddev/status/2080295524142587933) (by [@thebuggeddev](https://x.com/thebuggeddev))
+
+**Nutze Kimi K3 fuer referenzlastige Mobile-UI-Rekonstruktion, wenn Formen, Verlaeufe, Bilder und SDK-Migration erhalten bleiben muessen.**
+
+thebuggeddev vergleicht denselben Prompt fuer eine dreiseitige Expo-React-Native-UI in GPT 5.6 Sol und Kimi K3. Die Quelle sagt, Kimi habe SVG-Formen, Glassmorphismus, Branding, passende Bilder, Review-Subagenten und die Migration auf das neueste Expo SDK geschafft.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-135.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-135-poster.jpg" alt="Case 135 source video poster" height="360"></a>
+
+[Play case 135 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-135.mp4)
+
+Type: Evaluation | Date: 2026-07-23
+
+---
+
+<a id="case-139"></a>
+### Case 139: [Webdesign-Tutorial folgen](https://x.com/cyrilXBT/status/2080176332890345501) (by [@cyrilXBT](https://x.com/cyrilXBT))
+
+**Nutze ein vollstaendiges Webdesign-Tutorial, um zu sehen, wie Kimi K3 polierte Bewegung und Layouts aus einem echten Walkthrough baut.**
+
+cyrilXBT teilt ein 13-minuetiges Tutorial fuer eine individuelle Website mit Bewegung und visuellem Feinschliff mit Kimi K3. Der Post sagt, dass der reale Build von Anfang bis Ende gezeigt wird.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-139.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-139-poster.jpg" alt="Case 139 source video poster" height="360"></a>
+
+[Play case 139 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-139.mp4)
+
+Type: Tutorial | Date: 2026-07-23
+
+---
+
 
 <a id="coding-integrations"></a>
 ## 💻 Coding und Integrationen
@@ -1454,6 +1569,36 @@ biscuitweb3 berichtet, dass Kimi K3 per OAuth in Codex läuft, ohne zusätzliche
 <a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-129-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-129-01.jpg" alt="Case 129 source image 1" height="360"></a>
 
 Type: Integration | Date: 2026-07-22
+
+---
+
+<a id="case-136"></a>
+### Case 136: [Produktionsbackend stressen](https://x.com/hqmank/status/2080267878256005255) (by [@hqmank](https://x.com/hqmank))
+
+**Nutze ein echtes Backend, um zu pruefen, ob Kimi K3 API- und Datenbankarbeit in Produktionsgroesse jenseits von Frontend-Aufgaben bewaeltigt.**
+
+hqmank setzt den Test auf das Backend eines AI-Lernprodukts: FastAPI, PostgreSQL, 68K Zeilen ueber mehr als 400 Dateien und 307 API-Endpunkte. Der Post verweist auf einen vollstaendigen Thread und Video.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-136.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-136-poster.jpg" alt="Case 136 source video poster" height="360"></a>
+
+[Play case 136 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-136.mp4)
+
+Type: Evaluation | Date: 2026-07-23
+
+---
+
+<a id="case-137"></a>
+### Case 137: [Codex ueber opencodex routen](https://x.com/cyrilXBT/status/2080252333829628163) (by [@cyrilXBT](https://x.com/cyrilXBT))
+
+**Nutze opencodex, wenn ein Codex-Workflow zwischen Kimi K3 und anderen Providern ueber einen lokalen OpenAI-kompatiblen Proxy wechseln soll.**
+
+cyrilXBT beschreibt opencodex als lokalen Proxy, der das Codex-API-Format zu ausgewaehlten Providern einschliesslich Kimi K3 uebersetzt. Die Quelle nennt Paketinstallation, `ocx init`, Proxy-Start und Routing fuer Streaming, Tool Calls, Bilder und Claude-Code-Kompatibilitaet.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-137.mp4"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-137-poster.jpg" alt="Case 137 source video poster" height="360"></a>
+
+[Play case 137 demo video](https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-137.mp4)
+
+Type: Integration | Date: 2026-07-23
 
 ---
 
@@ -2136,6 +2281,19 @@ Type: Limit | Date: 2026-07-22
 
 ---
 
+<a id="case-130"></a>
+### Case 130: [Composite-Computer-Use bewerten](https://x.com/YangFanYun/status/2080442432794325003) (by [@YangFanYun](https://x.com/YangFanYun))
+
+**Nutze Composite-Bench, um Kimi K3 mit anderen Open-Weight-Modellen bei langen Computer-Use-Aufgaben zu vergleichen.**
+
+YangFanYun veroeffentlichte Composite-Bench mit zertifiziert optimalen Antworten und verifizierter Rechenbasis. Der Post sagt, dass GLM-5.2 Kimi K3 in diesem Benchmark um 32 Punkte schlaegt und nur Claude mehr der getesteten geschlossenen Modelle uebertrifft.
+
+<a href="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-130-01.jpg"><img src="https://pub-62cf7640cd0f4066b60933bd2e9b85ef.r2.dev/github-repo-media/awesome-kimi-k3-usecases/media/source-cases/case-130-01.jpg" alt="Case 130 source image 1" height="360"></a>
+
+Type: Benchmark | Date: 2026-07-23
+
+---
+
 <a id="related-resources"></a>
 ## Verwandte Ressourcen
 
@@ -2150,6 +2308,6 @@ Type: Limit | Date: 2026-07-22
 
 Danke an alle, die ihre Arbeit mit Kimi K3 öffentlich geteilt haben
 
-[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining), [@Nekt_0](https://x.com/Nekt_0), [@RetroChainer](https://x.com/RetroChainer), [@tamsi_besson](https://x.com/tamsi_besson), [@thehypedotnews](https://x.com/thehypedotnews), [@AiHubMix](https://x.com/AiHubMix), [@sairahul1](https://x.com/sairahul1), [@echen](https://x.com/echen), [@Oluwaphilemon1](https://x.com/Oluwaphilemon1), [@diegocabezas01](https://x.com/diegocabezas01), [@lanyon_ai](https://x.com/lanyon_ai), [@mkurman88](https://x.com/mkurman88), [@ShenSeanChen](https://x.com/ShenSeanChen), [@michaelrbock](https://x.com/michaelrbock), [@Kirratr](https://x.com/Kirratr), [@jadeferrara_](https://x.com/jadeferrara_), [@biscuitweb3](https://x.com/biscuitweb3)
+[@ivanfioravanti](https://x.com/ivanfioravanti), [@TheAhmadOsman](https://x.com/TheAhmadOsman), [@HarshithLucky3](https://x.com/HarshithLucky3), [@chetaslua](https://x.com/chetaslua), [@abhinavflac](https://x.com/abhinavflac), [@bridgemindai](https://x.com/bridgemindai), [@Whats_AI](https://x.com/Whats_AI), [@chongdashu](https://x.com/chongdashu), [@MrAhmadAwais](https://x.com/MrAhmadAwais), [@bijanbowen](https://x.com/bijanbowen), [@CommandCodeAI](https://x.com/CommandCodeAI), [@emollick](https://x.com/emollick), [@nicky_sap](https://x.com/nicky_sap), [@Lentils80](https://x.com/Lentils80), [@scottstts](https://x.com/scottstts), [@aisearchio](https://x.com/aisearchio), [@gmi_cloud](https://x.com/gmi_cloud), [@karminski3](https://x.com/karminski3), [@VORTEX_Promos](https://x.com/VORTEX_Promos), [@rohanpaul_ai](https://x.com/rohanpaul_ai), [@mirochill](https://x.com/mirochill), [@aimlapi](https://x.com/aimlapi), [@minchoi](https://x.com/minchoi), [@doutorcaleb](https://x.com/doutorcaleb), [@adxtyahq](https://x.com/adxtyahq), [@higgsfield_ai](https://x.com/higgsfield_ai), [@AlicanKiraz0](https://x.com/AlicanKiraz0), [@1littlecoder](https://x.com/1littlecoder), [@op7418](https://x.com/op7418), [@adamuchigabriel](https://x.com/adamuchigabriel), [@s_batzoglou](https://x.com/s_batzoglou), [@servasyy_ai](https://x.com/servasyy_ai), [@filicroval](https://x.com/filicroval), [@doodlestein](https://x.com/doodlestein), [@dejavucoder](https://x.com/dejavucoder), [@Angaisb_](https://x.com/Angaisb_), [@AngryTomtweets](https://x.com/AngryTomtweets), [@Alezander907](https://x.com/Alezander907), [@teortaxesTex](https://x.com/teortaxesTex), [@jun_song](https://x.com/jun_song), [@ridark_eth](https://x.com/ridark_eth), [@naymur_dev](https://x.com/naymur_dev), [@tphuang](https://x.com/tphuang), [@TokenGremlin](https://x.com/TokenGremlin), [@IntuitMachine](https://x.com/IntuitMachine), [@wangfeng0315](https://x.com/wangfeng0315), [@twid](https://x.com/twid), [@pengchujin](https://x.com/pengchujin), [@aayushman2703](https://x.com/aayushman2703), [@goncalo_canhoto](https://x.com/goncalo_canhoto), [@LinearUncle](https://x.com/LinearUncle), [@gagarot200](https://x.com/gagarot200), [@MinLiBuilds](https://x.com/MinLiBuilds), [@izutorishima](https://x.com/izutorishima), [@X2worldtech](https://x.com/X2worldtech), [@Satvik_Pen](https://x.com/Satvik_Pen), [@hakki_alkan](https://x.com/hakki_alkan), [@BrianMRey](https://x.com/BrianMRey), [@ChrisGPT](https://x.com/ChrisGPT), [@arena](https://x.com/arena), [@MathiasHeide](https://x.com/MathiasHeide), [@ArtificialAnlys](https://x.com/ArtificialAnlys), [@nauczymycieAI](https://x.com/nauczymycieAI), [@AlphaSignalAI](https://x.com/AlphaSignalAI), [@Ananth7e](https://x.com/Ananth7e), [@viktoroddy](https://x.com/viktoroddy), [@abacusai](https://x.com/abacusai), [@deredleritt3r](https://x.com/deredleritt3r), [@fabriciocarraro](https://x.com/fabriciocarraro), [@startracker](https://x.com/startracker), [@mattwatkajtys](https://x.com/mattwatkajtys), [@AIsaOneHQ](https://x.com/AIsaOneHQ), [@MiaAI_lab](https://x.com/MiaAI_lab), [@hqmank](https://x.com/hqmank), [@prasenx](https://x.com/prasenx), [@stas_sorokin_](https://x.com/stas_sorokin_), [@RoundtableSpace](https://x.com/RoundtableSpace), [@karankendre](https://x.com/karankendre), [@0xzynex](https://x.com/0xzynex), [@ashen_one](https://x.com/ashen_one), [@MAXdeg0](https://x.com/MAXdeg0), [@ice_bearcute](https://x.com/ice_bearcute), [@mnmn94253156337](https://x.com/mnmn94253156337), [@morganlinton](https://x.com/morganlinton), [@vikktorrrre](https://x.com/vikktorrrre), [@kirillk_web3](https://x.com/kirillk_web3), [@_guillecasaus](https://x.com/_guillecasaus), [@demian_ai](https://x.com/demian_ai), [@aidenybai](https://x.com/aidenybai), [@LexnLin](https://x.com/LexnLin), [@boxmining](https://x.com/boxmining), [@Nekt_0](https://x.com/Nekt_0), [@RetroChainer](https://x.com/RetroChainer), [@tamsi_besson](https://x.com/tamsi_besson), [@thehypedotnews](https://x.com/thehypedotnews), [@AiHubMix](https://x.com/AiHubMix), [@sairahul1](https://x.com/sairahul1), [@echen](https://x.com/echen), [@Oluwaphilemon1](https://x.com/Oluwaphilemon1), [@diegocabezas01](https://x.com/diegocabezas01), [@lanyon_ai](https://x.com/lanyon_ai), [@mkurman88](https://x.com/mkurman88), [@ShenSeanChen](https://x.com/ShenSeanChen), [@michaelrbock](https://x.com/michaelrbock), [@Kirratr](https://x.com/Kirratr), [@jadeferrara_](https://x.com/jadeferrara_), [@biscuitweb3](https://x.com/biscuitweb3), [@YangFanYun](https://x.com/YangFanYun), [@N01ennn](https://x.com/N01ennn), [@DilumSanjaya](https://x.com/DilumSanjaya), [@contraben](https://x.com/contraben), [@0xDominiqq](https://x.com/0xDominiqq), [@thebuggeddev](https://x.com/thebuggeddev), [@cyrilXBT](https://x.com/cyrilXBT)
 
 *Für Korrekturen an Zuordnung oder Text bitte eine issue mit öffentlicher Quelle öffnen*

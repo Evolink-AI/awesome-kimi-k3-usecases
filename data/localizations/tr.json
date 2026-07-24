@@ -680,6 +680,56 @@
       "title": "Kimi Codex OAuth ile çalıştır",
       "takeaway": "Kimi K3 kodlama akışında manuel API key kurulumundan kaçınmak gerektiğinde Codex OAuth yolunu kullan.",
       "notes": "biscuitweb3, Kimi K3ün OAuth ile Codex içinde çalıştığını ve ek API key kurulumu gerektirmediğini bildiriyor. Ekteki ekran görüntüsü entegrasyon kanıtı sağlıyor."
+    },
+    "130": {
+      "title": "Bileşik computer use kıyaslaması",
+      "takeaway": "Kimi K3 u sentetik skorlar yerine birleşik computer use görevlerinde karşılaştırmak.",
+      "notes": "Kaynak: YangFanYun, Kimi K3 u Gemini 3, GPT-5 ve GLM 4.6 ile birlikte bileşik computer use benchmark ında konumlandırıyor. Bu, uzun görevlerde pratik sınırları izlemek için kullanılan öz bildirime dayalı bir değerlendirmedir."
+    },
+    "131": {
+      "title": "Derin deniz anlatım hattı kurmak",
+      "takeaway": "Anlatı odaklı bir promptu sahne, metin, hareket ve açıklamayı düzenleyen görsel bir hatta dönüştürmek.",
+      "notes": "Kaynak: N01ennn, Kimi K3 ile derin deniz üzerine açıklayıcı bir içerik akışı gösteriyor. Paylaşım, anlatı yapısı ile görsel ve animasyonu birleştiren somut bir demo sunuyor."
+    },
+    "132": {
+      "title": "Altı bacaklı robot simülasyonu",
+      "takeaway": "Kimi K3 ile bacak hareketi ve görünür davranış içeren 3D robotik sahne prototipi üretmek.",
+      "notes": "Kaynak: DilumSanjaya, Kimi K3 ile hazırlanmış bir altı bacaklı robot simülasyonu paylaşıyor. Vaka 3D etkileşim demosu olarak korunur; fiziksel robot doğrulaması iddia edilmez."
+    },
+    "133": {
+      "title": "Landing page leri kör test etmek",
+      "takeaway": "Model adını açıklamadan landing page çıktıları üzerinden Kimi K3 ün frontend kalitesini değerlendirmek.",
+      "notes": "Kaynak: contraben, farklı modellerin ürettiği landing page leri kör test olarak paylaşıyor. Bu vaka görsel değerlendirme yöntemini belgeler; genel benchmark iddiası taşımaz."
+    },
+    "134": {
+      "title": "Mekanik 3D ayrıntı prototiplemek",
+      "takeaway": "Kimi K3 e görsel detay ve render kısıtları olan küçük bir mekanik 3D sahne ürettirmek.",
+      "notes": "Kaynak: 0xDominiqq, Kimi K3 ile oluşturulmuş mekanik veya endüstriyel bir parça gösteriyor. Faydalı sinyal, yalnızca paylaşılan demo ile desteklenen hassas görsel prototiplemedir."
+    },
+    "135": {
+      "title": "Expo mobil arayüzünü yeniden kurmak",
+      "takeaway": "Kimi K3 ü mobil Expo arayüzünde yapı, bileşenler ve görsel bitiş açısından test etmek.",
+      "notes": "Kaynak: thebuggeddev, Kimi K3 ile yapılmış bir mobil arayüz yeniden üretimini paylaşıyor. Vaka frontend çıktısı değerlendirmesidir; üretim kalitesinin tamamını kapsadığı iddia edilmez."
+    },
+    "136": {
+      "title": "Üretim backend ini stres testine almak",
+      "takeaway": "Kimi K3 ü daha gerçekçi backend akışında entegrasyon, kod muhakemesi ve sınırlar açısından incelemek.",
+      "notes": "Kaynak: hqmank, Kimi K3 ü üretim backend senaryosunda denediğini aktarıyor. Vaka kod entegrasyonu değerlendirmesi olarak tutulur; bağımsız ücretli runtime testi yapılmamıştır."
+    },
+    "137": {
+      "title": "Codex i opencodex üzerinden yönlendirmek",
+      "takeaway": "Kimi K3 ü Codex/opencodex döngüsüne bağlayarak somut bir agent yönlendirme denemesi yapmak.",
+      "notes": "Kaynak: cyrilXBT, Kimi K3 kullanan bir opencodex kurulumu paylaşıyor. Vaka araç entegrasyonunu belgeler ve bildirilen kurulum ile yerel doğrulama sınırını korur."
+    },
+    "138": {
+      "title": "Oyun ayar döngülerini otomatikleştirmek",
+      "takeaway": "Gameplay kaydeden, analiz eden, parametreleri değiştiren ve testi yeniden çalıştıran bir harnais kurmak.",
+      "notes": "Kaynak: Oluwaphilemon1, Three.js projelerinde Kimi K3 kullanımını ve oyun içi ayar döngüsünü anlatıyor. Akış manuel playtesting ihtiyacını azaltır, ancak kamuya açık paylaşıma dayanır."
+    },
+    "139": {
+      "title": "Web tasarım öğreticisini izlemek",
+      "takeaway": "Tam bir öğretici üzerinden Kimi K3 ün layout, hareket ve görsel parlatmayı nasıl kurduğunu incelemek.",
+      "notes": "Kaynak: cyrilXBT, Kimi K3 ile özel bir site yapımını anlatan 13 dakikalık bir öğretici paylaşıyor. Vaka kaynak destekli eğitim akışıdır; prompt galerisi değildir."
     }
   }
 }

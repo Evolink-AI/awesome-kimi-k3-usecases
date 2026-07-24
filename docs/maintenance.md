@@ -14,7 +14,7 @@
 - Source-fidelity build: `python3 scripts/build_source_fidelity_package.py --source /path/to/use-case-posts.json --package .codex/audits/source-fidelity-package.json`
 - Multi-source fidelity build for this release: `python3 scripts/build_source_fidelity_package.py --source /path/to/use-case-posts.json --supplemental-git-ref 6228470f7726a4385b3a098f9acdb151a9608ec2 --combined-source .codex/audits/combined-use-case-source.json --package .codex/audits/source-fidelity-package.json`
 
-The latest recurring source artifacts are under `.codex/usecase-update-loop/runs/20260722T010301Z/` with fixed collector window end `2026-07-22T01:06:18.708073+00:00`. The collector returned 670 deduplicated candidates; 92 fell inside the review window and were classified as 10 high-confidence updates, 17 deferred, 13 unsure, and 52 dropped. The artifact and review package remain ignored local evidence, while `data/ingested_tweets.json` records the public lineage. Future updates must use a new fixed collection timestamp
+The latest recurring source artifacts are under `.codex/usecase-update-loop/runs/20260724T034504Z/` with fixed collector window end `2026-07-24T03:49:12.113468+00:00`. The collector returned 667 deduplicated candidates; 66 fell inside the review window and were classified as 10 high-confidence updates, 15 deferred, 14 unsure, and 27 dropped. The artifact and review package remain ignored local evidence, while `data/ingested_tweets.json` records the public lineage. Future updates must use a new fixed collection timestamp
 
 ## Case format and contract
 
